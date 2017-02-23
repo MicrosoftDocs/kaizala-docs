@@ -1,6 +1,6 @@
 ﻿# README
 
-Thank you for your interest in [Kaizala developer documentation](kaizala\platform\v1\docs\README.md)!
+Thank you for your interest in [Kaizala developer documentation](kaizala/platform/v1/docs/README.md).
 
 ##Legal Notices
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
