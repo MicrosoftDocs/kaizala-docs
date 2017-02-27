@@ -1,6 +1,6 @@
 # Kaizala API Documentation
 
-Before you get started, please refer to [Setup for using the Kaizala Connectors](connectors_setup.md)
+Before you get started, please refer to [Setup for using the Kaizala Connectors](setup.md)
 
 ## Root Domain
 
@@ -41,9 +41,9 @@ As a developer, you would have a Connector ID, Secret and a Refresh Token passed
 The Kaizala API runs on the secure Microsoft Azure cloud, and interacts with the Kaizala platform to perform various actions for end users.
 The API works with the following Kaizala resources:
 
-*   [/groups](connectors_groups.md)
-*   [/members](connectors_members.md)
-*   [/messages](connectors_messages.md)
-*   [/media](connectors_media.md)
-*   [/actions](connectors_actions.md)
+*   [/groups](groups.md)
+*   [/members](members.md)
+*   [/messages](messages.md)
+*   [/media](media.md)
+*   [/actions](actions.md)
 

@@ -78,4 +78,4 @@ There are four major infrastructure components involved in working with the Kaiz
     *   Developer can now use the token to call the REST API (more info below)
 
 
-Next: [API Documentation](connectors_API.md)
+Next: [API Documentation](API.md)
