@@ -3,7 +3,7 @@
 
 The Kaizala product team responds to the developer community across several channels. Please tell us about your:
 
-- **General questions:** Please send mail to [Kaizala developer support](mailto:kaizalaext@microsoft.com).
+- **General questions:** Please send mail to [Kaizala developer support](mailto:kaizalaDev@microsoft.com).
 
 - **Documentation bugs:** If you find a bug in the Kaizala SDK documentation, open an [issue](https://github.com/microsoft/kaizala-docs/issues) on GitHub. Be sure to tell us which topic is factually incorrect or unclear. To help us fix the problem more quickly, quote the text to be changed. 
 
