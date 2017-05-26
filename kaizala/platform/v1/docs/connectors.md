@@ -7,5 +7,5 @@ individual endpoints need to be called to perform specific actions. The PUSH mod
 
 Kaizala Connectors are currently group-scoped - i.e. each Kaizala Connector needs to explicitly be granted permissions to a Conversation group - and then can perform actions through the API end-points only within the context of the group. However, each Kaizala Connector can be granted access to multiple groups.
 
-* [Setup for using the Kaizala Connectors](connectors_setup.md)
-* [API Documentation](connectors_API.md)
+* [Setup for using the Kaizala Connectors](connectors/setup.md)
+* [API Documentation](connectors/API.md)
