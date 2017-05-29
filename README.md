@@ -6,7 +6,10 @@ Please note that Kaizala Developer Platform is currently in Public Preview and r
 
 > **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](kaizala/platform/v1/docs/install.md).**
 
-We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaext@microsoft.com and we will keep you informed.
+We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaDev@microsoft.com and we will keep you informed.
+
+
+
 
 ##Legal Notices
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
