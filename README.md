@@ -1,10 +1,12 @@
 ﻿# README
 
-Thank you for your interest in [Kaizala Developer Preview documentation](kaizala/platform/v1/docs/README.md).
-
-Please note that Kaizala Developer Platform is currently in Public Preview and requires a valid Office365 organizational subscription. 
+Thank you for your interest in [Microsoft Kaizala Developer documentation](kaizala/platform/v1/docs/README.md).
 
 > **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](kaizala/platform/v1/docs/install.md).**
+
+Please note that he Microsoft Kaizala Developer Platform requires a valid Office365 organizational subscription.
+
+> **[Microsoft Kaizala Developer documentation](kaizala/platform/v1/docs/README.md)**
 
 We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaDev@microsoft.com and we will keep you informed.
 

@@ -42,8 +42,16 @@ The Kaizala API runs on the secure Microsoft Azure cloud, and interacts with the
 The API works with the following Kaizala resources:
 
 *   [/groups](groups.md)
+*   [/subGroups](subGroups.md)
 *   [/members](members.md)
 *   [/messages](messages.md)
 *   [/media](media.md)
 *   [/actions](actions.md)
+
+### WebHooks
+
+The Microsoft Kaizala API also provides a way for developers to register for specific events within the Kaizala platform via WebHooks.
+
+*   [/webhook](webHooks.md)
+
 

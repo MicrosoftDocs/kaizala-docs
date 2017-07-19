@@ -13,13 +13,12 @@ Posting media attachments to Kaizala is a two step process. First, you will need
 
 ### POST /media
 
-    POST https://{api_root}/groups/{group_ID}/media
+    POST https://{api_root}/media
 
 ##### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
-| URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | To indicate that a file is being uploaded. value: multipart/form-data |
@@ -28,7 +27,7 @@ Posting media attachments to Kaizala is a two step process. First, you will need
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
-| POST Body | File | Media file to be uploaded in a multipart/form-data format |
+| POST Body | files | Media file to be uploaded in a multipart/form-data format |
 
 ##### Response body
 

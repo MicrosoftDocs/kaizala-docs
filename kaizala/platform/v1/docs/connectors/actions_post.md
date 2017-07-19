@@ -83,6 +83,24 @@
 }
 ```
 
+###### actionBody for a Media attachment
+
+| Parameter | Type | Optional? | Description |
+| :---: | :---: | :---:	| :--- |
+| mediaId | String | No | GUID from a previous call to /media where you need to upload the attachment  |
+
+####### Sample JSON Request for a Job Action
+
+```javascript
+{
+    actionType:"Image",
+    actionBody: {
+                mediaId: "853654b2-guid-462d-b709-0c4e43a7083f"
+                }
+}
+
+```
+
 ###### Response body
 
 | Parameter | Type | Description |
