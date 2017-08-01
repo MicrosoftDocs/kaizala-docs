@@ -83,19 +83,21 @@
 }
 ```
 
-###### actionBody for a Media attachment
+###### actionBody for a Media(Image/Album/Audio/Document) attachment
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
-| mediaId | String | No | GUID from a previous call to /media where you need to upload the attachment  |
+| mediaResource | String | No | MediaResource string from a previous call to /media where you need to upload the attachment  |
+| caption | String | Yes | Caption that will appear on Kaizala client alongwith media  |
 
-####### Sample JSON Request for a Job Action
+####### Sample JSON Request for a Media Action
 
 ```javascript
 {
     actionType:"Image",
     actionBody: {
-                mediaId: "853654b2-guid-462d-b709-0c4e43a7083f"
+                mediaResource: "{{MediaResource return in response of /media api call}}",
+                caption: "Sample test caption"
                 }
 }
 
