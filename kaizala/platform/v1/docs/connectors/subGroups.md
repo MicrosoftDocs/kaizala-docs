@@ -65,7 +65,7 @@ API end-point to interact with the conversation sub-groups inside Kaizala. Curre
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
-| groupName | String | No | Name of the sub group |
+| Name | String | No | Name of the sub group |
 | groupImageURL | String | Yes | Media URL of the group image; Image needs to be uploaded through the /media path |
 | members | Array | Yes | String array of well-formatted phone numbers |
 | welcomeMessage | Array | No | String array of well-formatted phone numbers  |
@@ -76,7 +76,7 @@ API end-point to interact with the conversation sub-groups inside Kaizala. Curre
 
 ```javascript
 {
-  "groupName": "Test Group",
+  "Name": "Test Group",
   "groupImageUrl": "",
   "members": [ "+919652000000", "+919910000005"],
   "welcomeMessage": "Hello",
