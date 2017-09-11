@@ -87,7 +87,7 @@
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
-| mediaResource | String | No | MediaResource string from a previous call to /media where you need to upload the attachment  |
+| mediaResources | String Array | No | Array of MediaResource strings from a previous call to /media where you need to upload the attachment  |
 | caption | String | Yes | Caption that will appear on Kaizala client alongwith media  |
 
 ####### Sample JSON Request for a Media Action
