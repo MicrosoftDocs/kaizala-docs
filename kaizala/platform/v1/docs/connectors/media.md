@@ -37,11 +37,11 @@ Corresponding content-type(mime type) needs to be set in content header of the m
 | :---: | :---: | :--- |
 | mediaResource | String | Encoded media data to be used in subsequent send action calls |
 
-### POST /groups/{groupId}
+### POST /groups/{groupId}/actions
 
-You can get additional details about a specific resource member (a group here) by specifying the identifier as a URL path parameter.
+You can post media files 
 
-    GET https://{api_root}/groups/{groupId}/actions
+    POST https://{api_root}/groups/{groupId}/actions
 
 ##### Request Parameters
 
@@ -63,9 +63,22 @@ You can get additional details about a specific resource member (a group here) b
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
-| MediaResource | String | No | MediaResource string from a previous call to /media where you need to upload the attachment |
-| Caption | String | Yes | Text String that is shown alongwith the media file as a part of the message |
+| mediaResource | String | No | MediaResource string from a previous call to /media where you need to upload the attachment |
+| caption | String | Yes | Text String that is shown alongwith the media file as a part of the message |
 
+
+####### Sample JSON Request for a Media Action
+
+```javascript
+{
+    actionType:"Image",
+    actionBody: {
+                mediaResource: "{{MediaResource return in response of /media api call}}",
+                caption: "Sample test caption"
+                }
+}
+
+```
 
 ###### Sample JSON Response
 
