@@ -3,8 +3,8 @@ API end-point to send media attachments to conversation groups inside Kaizala.
 
 Supported file formats are:
 
-||||
-|---|---|---|
+| Media Type | Extension |
+|---|---|
 | Images | .jpg, .jpeg, .png |
 | Audio Files | .mp3, .wav |
 | Documents | .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf |
@@ -39,7 +39,7 @@ Corresponding content-type(mime type) needs to be set in content header of the m
 
 ### POST /groups/{groupId}/actions
 
-You can post media files 
+Once you have uploaded the media file, you can post a media file to a group by using below API
 
     POST https://{api_root}/groups/{groupId}/actions
 
