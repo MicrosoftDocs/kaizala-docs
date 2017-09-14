@@ -28,7 +28,7 @@ As an interim solution, we have implemented a custom token based authorization m
 to manage access authorization for the Kaizala Platform APIs.
 
 *   Access tokens carry the necessary information to access a Kaizala resource. A 3rd party client needs to pass an access token to the Kaizala Platform with each API request. Access tokens for Kaizala Connectors have an expiration time of 24 hours.
-*   Refresh tokens carry the information necessary to get a new access token. They need to be passed on to the Token Service when an access token expires, or when an access token needs to be generated for the first time. Refresh tokens for Kaizala Connectors also expire and have an expiration time of 356 days. Refresh tokens can be invalidated by the server in two ways - by generating new Refresh Tokens for the same Kaizala Connector or deleting the corresponding Kaizala Connector altogether.
+*   Refresh tokens carry the information necessary to get a new access token. They need to be passed on to the Token Service when an access token expires, or when an access token needs to be generated for the first time. Refresh tokens for Kaizala Connectors also expire and have an expiration time of 365 days. Refresh tokens can be invalidated by the server in two ways - by generating new Refresh Tokens for the same Kaizala Connector or deleting the corresponding Kaizala Connector altogether.
 
 ## Set-up steps (Developer & Group admin)
 
@@ -69,9 +69,9 @@ There are four major infrastructure components involved in working with the Kaiz
     *   Tap on “Add Connector”
     *   Note the Refresh Token that gets generated and displayed on the portal
 
-*   **Step 3: Group Admin shares the Token with the App Developer**
+*   **Step 3: Group Admin shares the Refresh Token with the App Developer**
 
-    *   Admin needs to manually share the token received in Step 2 with the app developer
+    *   Admin needs to manually share the refresh token received in Step 2 with the app developer
 
 *   **Step 4: App Developer calls the Kaizala Platform Rest API using the token**
 
