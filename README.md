@@ -4,7 +4,7 @@ Thank you for your interest in [Microsoft Kaizala Developer documentation](kaiza
 
 > **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](kaizala/platform/v1/docs/install.md).**
 
-Please note that he Microsoft Kaizala Developer Platform requires a valid Kaizala Pro or Office365 organizational subscription.
+Please note that Microsoft Kaizala Developer Platform requires a valid Kaizala Pro or Office365 organizational subscription.
 
 > **[Microsoft Kaizala Developer documentation](kaizala/platform/v1/docs/README.md)**
 
