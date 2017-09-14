@@ -19,20 +19,24 @@ As a developer, you would have a Connector ID, Secret and a Refresh Token passed
 |            	| Parameter         	| Type   	| Optional? 	| Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | HTTP Header 	| `applicationId`     	| String 	| No        	| ID associated with the Connector 	|
-| HTTP Header 	| `applicationSecret` 	| String 	| No        	| Secret associated with the Connector                                                                                     	|
-| HTTP Header 	| `refreshToken`      	| String 	| No        	| refreshToken shared by the Kaizala Group Admin when the respective Connector was granted access to the group             	|
+| HTTP Header 	| `applicationSecret` 	| String 	| No        	| Secret associated with the Connector |
+| HTTP Header 	| `refreshToken`      	| String 	| No        	| refreshToken shared by the Kaizala Group Admin when the respective Connector was granted access to the group |
 
 ##### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | `accessToken` | String | On successful auth, an application token is returned that can be used for making subsequent API calls |
+| `endpointUrl` | String | On successful auth, an endpoint url is returned that should be used as api-base-url for making subsequent API calls |
+| `accessTokenExpiry` | Long | It indicates the expiry time for accessToken in epoch time(milliseconds) |
 
 ##### Sample JSON Response
 
 ```javascript
 { 
-    "accessToken" :"qwassasaswadheenqqwertyasdfghjkl"
+    "accessToken" :"qwassasaswadheenqqwertyasdfghjkl",
+    "endpointUrl": "https://inc-001.KaizalaMessaging.osi.office.net",
+    "accessTokenExpiry": 1505470472895,
 }
 ```
 
