@@ -21,7 +21,7 @@ to manage access authorization for the Kaizala Platform APIs.
 
 ## Different types of Refresh Tokens
 
-Kaizala Connectors allow options to generate two different types of Refresh Token.
+Kaizala Connectors allow options to generate two different types of Refresh Token. Users token can be generated either through Kaizala Management Portal or oAuth.
 
 |              |   Tools to generate  | Scope of Access   | Who can generate | Details |
 | :---: | :---: | :---: | :---: | :---: |
