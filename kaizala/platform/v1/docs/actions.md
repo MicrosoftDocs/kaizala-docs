@@ -14,3 +14,5 @@ You can create new Kaizala Actions that leverage Kaizala’s people network and 
 
 * **Design a new Kaizala Action through the Kaizala Management Portal** - You can design a custom Kaizala Action through the Action Designer interface by building on the out-of-box Survey Action.
 * **Develop a new Kaizala Action package** - You can create complex new Kaizala Actions that provide custom functionality using web technologies like HTML, CSS and JavaScript. This feature is currently being tested with a select few partners. Please write to kaizalaDev@microsoft.com to pilot this in your organization.
+
+* [Read more about Kaizala Actions](https://support.office.com/en-US/article/Kaizala-Actions-1eacc59a-dd14-43e9-b6b0-3c78773d5496)
