@@ -9,3 +9,4 @@ Kaizala Connectors are currently group-scoped - i.e. each Kaizala Connector need
 
 * [Setup for using the Kaizala Connectors](setup.md)
 * [API Documentation](API.md)
+* [Read more about Connectors](https://support.office.com/en-US/article/Kaizala-Connectors-223791c8-718d-4669-8c5e-a76804ae1ddd)
