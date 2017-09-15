@@ -1,15 +1,14 @@
 ## /subGroups
-API end-point to interact with the conversation sub-groups inside Kaizala. Current scope is to support retrieving and creating sub groups.
+API end-point to interact with the conversation sub-groups inside Kaizala.
 
 ### GET /subGroups
 
-    GET https://{api_root}/groups/{groupId}/subGroups
+    GET {endpoint-url}/v1/groups/{groupId}/subGroups
 
 ##### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
-| HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | URL Query Parameter | fetchAllGroups | Boolean | Yes | Parameter to specify if you would like to fetch all the subGroups across the hierarchy |
@@ -51,13 +50,12 @@ API end-point to interact with the conversation sub-groups inside Kaizala. Curre
 
 ### POST /subGroups
 
-    POST https://{api_root}/groups/{groupId}/subGroups
+    POST {endpoint-url}/v1/groups/{groupId}/subGroups
 
 ##### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
-| HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 
@@ -88,7 +86,7 @@ API end-point to interact with the conversation sub-groups inside Kaizala. Curre
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
-| groupId | String | GUID representing the group created |
+| groupId | String | Group Identifier |
 | groupName | String | Name of the group created |
 
 
