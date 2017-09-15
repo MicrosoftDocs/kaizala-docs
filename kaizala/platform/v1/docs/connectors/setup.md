@@ -88,5 +88,5 @@ There are four major infrastructure components involved in working with the Kaiz
     *   Developer can now use the Refresh token. a Connector ID and Connector Secret to call the REST API inorder to generate Access Token (more info below)
 
 
-Next:  [Generate Access token](Token.md)<br/>
+Next:  [Generate Access token](Tokens.md)<br/>
 More:  [API Documentation](API.md)
