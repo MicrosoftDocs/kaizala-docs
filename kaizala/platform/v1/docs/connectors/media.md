@@ -17,7 +17,7 @@ Corresponding content-type(mime type) needs to be set in content header of the m
 
 ### POST /media
 
-    POST https://{api_root}/media
+    POST {endpoint-url}/v1/media
 
 ##### Request Parameters
 
@@ -42,7 +42,7 @@ Corresponding content-type(mime type) needs to be set in content header of the m
 
 Once you have uploaded the media file, you can post a media file to a group by using below API
 
-    POST https://{api_root}/groups/{groupId}/actions
+    POST {endpoint-url}/v1/groups/{groupId}/actions
 
 ##### Request Parameters
 
