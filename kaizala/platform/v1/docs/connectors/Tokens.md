@@ -42,7 +42,7 @@ As a developer, you would now have a Connector ID, Secret and a Refresh Token th
 
 Kaizala presents 2 method to generate Access tokens
 * Using API
-* Using oAuth
+* Using oAuth (Will add soon)
 
 
 ### Generate Access Token using API
