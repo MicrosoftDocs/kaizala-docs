@@ -26,7 +26,6 @@ Kaizala Connectors will soon be integrated with Azure Active Directory (Azure AD
 
 As an interim solution, we have implemented a custom token based authorization mechanism based on the OAUTH framework. This mechanism uses the concept of Refresh and Access Tokens
 to manage access authorization for the Kaizala Platform APIs.
-
 *   Refresh tokens carry the information necessary to get a new access token. They need to be passed on to the Token Service when an access token expires, or when an access token needs to be generated for the first time. Refresh tokens for Kaizala Connectors also expire and have an expiration time of 365 days. 
 
 *   Access tokens carry the necessary information to access a Kaizala resource. A 3rd party client needs to pass an access token to the Kaizala Platform with each API request. Access tokens for Kaizala Connectors have an expiration time of 24 hours.
@@ -84,9 +83,10 @@ There are four major infrastructure components involved in working with the Kaiz
 
     *   Admin needs to manually share the refresh token received in Step 2 with the app developer
 
-*   **Step 4: App Developer calls the Kaizala Platform Rest API using the token**
+*   **Step 4: App Developer calls the Kaizala Platform Rest API to generate Access Token**
 
-    *   Developer can now use the token to call the REST API (more info below)
+    *   Developer can now use the Refresh token. a Connector ID and Connector Secret to call the REST API inorder to generate Access Token (more info below)
 
 
-Next: [API Documentation](API.md)
+Next:  [Generate Access token](Token.md)<br/>
+More:  [API Documentation](API.md)
