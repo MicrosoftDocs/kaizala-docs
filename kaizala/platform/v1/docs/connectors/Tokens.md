@@ -1,5 +1,7 @@
 # Authentication Mechanism
 
+Before you get started, please refer to [Setup for using the Kaizala Connectors](setup.md)
+
 ## Authentication for Kaizala Connectors
 
 Kaizala Connectors will soon be integrated with Azure Active Directory (Azure AD) to provide secure sign in and authorization.
@@ -7,7 +9,7 @@ Kaizala Connectors will soon be integrated with Azure Active Directory (Azure AD
 As an interim solution, we have implemented a custom token based authorization mechanism based on the OAUTH framework. This mechanism uses the concept of Refresh and Access Tokens
 to manage access authorization for the Kaizala Platform APIs.
 
-*   Refresh tokens carry the information necessary to get a new access token. They need to be passed on to the Token Service when an access token expires, or when an access token needs to be generated for the first time. Refresh tokens for Kaizala Connectors also expire and have an expiration time of 365 days. 
+*   Refresh tokens carry the information necessary to get a new access token. They need to be passed on to the Token Service when an access token expires, or when an access token needs to be generated for the first time. Refresh tokens for Kaizala Connectors have an expiration time of 365 days. 
 
 *   Access tokens carry the necessary information to access a Kaizala resource. A 3rd party client needs to pass an access token to the Kaizala Platform with each API request. Access tokens for Kaizala Connectors have an expiration time of 24 hours.
 
@@ -32,9 +34,51 @@ Kaizala Connectors allow options to generate two different types of Refresh Toke
 *   In case of User Tokens, single token provides access to all groups a user is part of
 *   For a single connector, developers can generate tokens for multiple groups
 
+Once Refresh Token is provided by either Group-Admin or user to the Developer, it should be used to generate Access Token.
 
 ## Methods to generate Access Token
+
+As a developer, you would now have a Connector ID, Secret and a Refresh Token that should be passed on to you. Using this, you can generate an access token.
 
 Kaizala presents 2 method to generate Access tokens
 * Using API
 * Using oAuth
+
+
+### Generate Access Token using API
+
+The root domain for invoking the Kazaila APIs is:
+
+    https://api.kaiza.la/v1/
+
+You will need to use the following end-point to get an access token (both the first time & later when the access token expires):
+
+    GET https://{api_root}/accessToken
+
+##### Request Parameters
+
+|            	| Parameter         	| Type   	| Optional? 	| Description |
+| :---: | :---: | :---: | :---:	| :--- |
+| HTTP Header 	| `applicationId`     	| String 	| No        	| ID associated with the Connector 	|
+| HTTP Header 	| `applicationSecret` 	| String 	| No        	| Secret associated with the Connector |
+| HTTP Header 	| `refreshToken`      	| String 	| No        	| refreshToken shared by the Kaizala Group Admin when the respective Connector was granted access to the group |
+
+##### Response body
+
+| Parameter | Type | Description |
+| :---: | :---: | :--- |
+| `accessToken` | String | On successful auth, an application token is returned that can be used for making subsequent API calls |
+| `endpointUrl` | String | On successful auth, an endpoint url is returned that should be used as api-base-url for making subsequent API calls |
+| `accessTokenExpiry` | Long | It indicates the expiry time for accessToken in epoch time(milliseconds) |
+
+##### Sample JSON Response
+
+```javascript
+{ 
+    "accessToken" :"qwassasaswadheenqqwertyasdfghjkl",
+    "endpointUrl": "https://inc-001.KaizalaMessaging.osi.office.net",
+    "accessTokenExpiry": 1505470472895,
+}
+```
+
+Next: [API Documentation](API.md)
