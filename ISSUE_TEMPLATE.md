@@ -1,4 +1,4 @@
-Thank you for helping us to improve the Microsoft Teams developer documentation.
+Thank you for helping us to improve the Microsoft Kaizala developer documentation.
 
 So that we can better assist you, please note the following:
 - If you have a feature suggestion, please post your idea on our [**User Voice**](https://kaizala.uservoice.com/) page, and vote for your suggestions there.
@@ -7,6 +7,10 @@ So that we can better assist you, please note the following:
 Please remove this text before posting your documentation issue. thank you
 ------------
 	 
-Article:
-
 Issue: 
+
+Category: Issue/New Feature Request/Question
+
+Area: API/Android/Ios/Windows/Portal
+
+Description: Detailed description. In case of Category:Issues and Area:API, please include request and response payload. 
