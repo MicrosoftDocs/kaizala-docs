@@ -11,7 +11,7 @@ to integrate Kaizala with your business processes and design custom Actions thro
 
 Kaizala Connectors enable 3rd party developers to integrate Kaizala into their business processes by providing the ability to perform a curated set of actions in Kaizala 
 using REST based API calls. The scope of the API is for external systems to call the end-point and perform actions on-demand. That is, this will be a PULL model – where 
-individual endpoints need to be called to perform specific actions. The PUSH model where Kaizala platform can trigger actions is on the roadmap.
+individual endpoints need to be called to perform specific actions. The PUSH model where Kaizala platform can trigger actions can be configured using **[webhooks](webHooks.md)**.
 
 [Get started with Connectors](connectors/README.md)
 
