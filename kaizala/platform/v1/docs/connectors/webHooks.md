@@ -49,7 +49,6 @@ Using WebHooks, you can subscribe to various events that occur within a conversa
 ##### Response body
 
 | Parameter | Type | Description |
-
 | :---: | :---: | :--- |
 | webhooks | JSON Object Array | Array of webhooks subscribed on the objectId |
 
