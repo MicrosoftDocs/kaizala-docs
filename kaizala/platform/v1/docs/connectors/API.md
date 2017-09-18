@@ -31,7 +31,6 @@ As a developer, you would have a Connector ID, Secret and a Refresh Token passed
 | `accessTokenExpiry` | Long | It indicates the expiry time for accessToken in epoch time(milliseconds) |
 
 ##### Sample JSON Response
-
 ```javascript
 { 
     "accessToken" :"qwassasaswadheenqqwertyasdfghjkl",
@@ -58,7 +57,7 @@ The Microsoft Kaizala API also provides a way for developers to register for spe
 
 *   [/webhook](webHooks.md)
 
-### Postman COllection
+### Postman Collection
 
 You can import postman collection containing samples and schema for all the Microsoft Kaizala apis:
 
