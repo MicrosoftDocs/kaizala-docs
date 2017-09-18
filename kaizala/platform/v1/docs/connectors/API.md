@@ -4,7 +4,7 @@ Before you get started, please refer to [Setup for using the Kaizala Connectors]
 
 ## Root Domain
 
-The root domain for invoking the Kazaila APIs is:
+The root domain for invoking the Kaizala APIs is:
 
     https://{endpoint-url}/v1/
     
