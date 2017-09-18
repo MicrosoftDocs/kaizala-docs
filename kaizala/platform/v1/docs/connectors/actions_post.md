@@ -1,13 +1,12 @@
 ### POST /actions
 
-    POST https://{api_root}/groups/{groupId}/actions
+    POST {endpoint-url}/groups/{groupId}/actions
 
 ##### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
-| HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | value: application/json |
 
@@ -15,104 +14,73 @@
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
-| id | String | Id of the Kaizala Action to send. Please refer to the table above for supported Actions and their respective IDs. |
+| id | String | Id of the Kaizala Action package. Either of actionType or Id should be specified |
+| actionType | String | Enum "Survey"/"Job". Either of actionType or Id should be specified |
+| responseId | String | For updating existing response |
 | actionBody | JSON Object | Object representing data needed for the respective Action. Parameters defined below for each of the supported Actions. |
 
 ###### actionBody for a Job Action
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
-| title | String | No | Title for the job |
-| assignedTo | String Array | No | Array of well formatted phone numbers to whom the job needs to be assigned |
-| dueDate | Numeric | Yes | Time to complete the job in Hours (Default: 24hrs) |
+| isCompleted | Bool | No | Mark the job as completed |
 
-####### Sample JSON Request for a Job Action
+
+###### Sample JSON Request for a Job Action
 
 ```javascript
 {
     actionType:"Job",
     actionBody: {
-        title:"Sample job request",
-        assignedTo:[
-            "+91900000000"],
-        dueDate:10}
-        }
+        isCompleted : true
+    }
 }
 ```
 
-###### actionBody for a Survey Action:
+###### actionBody for a Survey Action Or Action package instance(id) :
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
-| title | String | No | Title for the survey |
-| questions | JSON Object Array | No | Array of questions for the survey. Format for the json object is given below. |
-| isAnonymous | Boolean | Yes | If set to true, the responses will be anonymous. |
-| dueDate | Numeric | Yes | Time in which the survey closes in Hours (Default: 24hrs) |
+| responseName | String | Yes | For uniquely identifying a response |
+| responseLocation | Location object | Yes | For identifying response's location |
+| answers | object[] | No | Answer of each question(based on index). object will be of type string for question type: SingleOption/Text/Image, object will be of type string[] for question type: MultiOption/AttachmentList, object will be of type double for question type: Numeric/Date |
 
-####### Structure for questions[] inside a survey
+###### Structure for Location object
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
-| title | String | No | Question Title |
-| type | String | No | Has to be one of TEXT MULTIOPTION SINGLEOPTION NUMERIC IMAGE |
-| options | JSON Object Array | Yes | Options for selection type questions in an array format. Array containing strings of name “title” with the option values. |
+| latitude | Double | No | Latitude of the location |
+| longitude | Double | No | Longitude of the location |
+| name | String | No | Name of the location |
 
-####### Sample JSON Request for a Survey Action
+###### Sample JSON Request for a Survey Action
 
 ```javascript
 {
-    actionType:"Survey",
-    actionBody: {
-        title:"Sample survey",
-        questions:[
-                {title:"Provide a name for this response",
-                type:"Text"},
-                {title:"Test multiple",
-                type:"MultiOption",
-                options:[
-                    {title:"Yes"},
-                    {title:"No"},
-                    {title:"Maybe"}
-                    ]},
-                {title:"Test number",
-                type:"Numeric"},
-                {title:"Test",
-                type:"Image"}
-                ]
-            }
+  "actionType" : "Survey",
+  "actionBody" : 
+  {
+    "responseName" : "API response",
+    "responseLocation" : 
+    {
+      "latitude" : 1, 
+      "longitude" : 1, 
+      "name" : "locationName234"
+    },
+    "Answers" : ["Response from API", "Opt1", ["MOpt1","MOpt2"],123,{"lt" : 1, "lg" : 1, "n":"cool"}, 1500377471, "eyJUaHVtYm5haWwiOiIvOWovNEFBUVNrWkpSZ0FCQVFFQVlBQmdBQUQvMndCREFJVmNaSFZrVTRWMWJIV1dqb1dleVAvWnlMZTN5UC8vLy9MLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8yd0JEQVk2V2xzaXZ5UC9aMmYvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL3dBQVJDQUNTQVFRREFTSUFBaEVCQXhFQi84UUFId0FBQVFVQkFRRUJBUUVBQUFBQUFBQUFBQUVDQXdRRkJnY0lDUW9MLzhRQXRSQUFBZ0VEQXdJRUF3VUZCQVFBQUFGOUFRSURBQVFSQlJJaE1VRUdFMUZoQnlKeEZES0JrYUVJSTBLeHdSVlMwZkFrTTJKeWdna0tGaGNZR1JvbEppY29LU28wTlRZM09EazZRMFJGUmtkSVNVcFRWRlZXVjFoWldtTmtaV1puYUdscWMzUjFkbmQ0ZVhxRGhJV0doNGlKaXBLVGxKV1dsNWlabXFLanBLV21wNmlwcXJLenRMVzJ0N2k1dXNMRHhNWEd4OGpKeXRMVDFOWFcxOWpaMnVIaTQrVGw1dWZvNmVyeDh2UDA5ZmIzK1BuNi84UUFId0VBQXdFQkFRRUJBUUVCQVFBQUFBQUFBQUVDQXdRRkJnY0lDUW9MLzhRQXRSRUFBZ0VDQkFRREJBY0ZCQVFBQVFKM0FBRUNBeEVFQlNFeEJoSkJVUWRoY1JNaU1vRUlGRUtSb2JIQkNTTXpVdkFWWW5MUkNoWWtOT0VsOFJjWUdSb21KeWdwS2pVMk56ZzVPa05FUlVaSFNFbEtVMVJWVmxkWVdWcGpaR1ZtWjJocGFuTjBkWFozZUhsNmdvT0VoWWFIaUltS2twT1VsWmFYbUptYW9xT2twYWFucUttcXNyTzB0YmEzdUxtNndzUEV4Y2JIeU1uSzB0UFUxZGJYMk5uYTR1UGs1ZWJuNk9ucTh2UDA5ZmIzK1BuNi85b0FEQU1CQUFJUkF4RUFQd0N4UlJSUUFVVVVVQUZGRkZBQlJSUlFBVVVVVUFGRkZGQUJSUlJRQVVVVVVBRkZGRkFCUlJSUUFVVVVVQUZGRkZBQlJSUlFBVVVVVUFGRkZGQUJSUlJRQVVVVVVBRkZGRkFCUlJSUUFVVVVsQUMwVW1hTTByZ0xSU1pvelJjQmFLVE5HYUxnTFJTWm96UmNCYUtUTkdhTGdMUlNab3pSY0JhS1ROR2FMb0JhS0tLWUJSUlJRQVVVVVVBRkZGRkFCUlJSUUFVVVVVQUZGRkZBQlJSUlFBVVVVVUFGSWVsTFNIcFNld0MwVVVVd0NpaWs3MEFMUlNZb3hTMUFXaWt4UmlqVUJhS1RGR0tOUUZvcE1VWW8xQVdrUFNqRkJIRkR2WUJhS1RGR0tOUUZvcE1VWW8xQVdpa3hSaWpVQmFLVEZHS05RRm9wQlMwd0NpaWlnQW9vb29BS0tLS0FDaWlpZ0FwRDBwYVE5S1QyQVdpaWltQVVuZWxwTzlJQmFLS0tZQlJSUlFBVVVVVUFGRkZGQUJTSHBTMGg2VW5zQXRGRkZNQW9vb29BS0tLS0FDaWlpZ0JPOUxTZDZXa2dDaWlpbUFVVVVVQUZGRkZBQlJSUlFBVVVVVUFKaWpGTFJTc2dFeFJpbHBPOUZrQVlveFMwVVdRQ1lveFMwVVdRQ1lveFMwVVdRQ1lveFMwVVdRQ1lveFMwVVdRQlJSUlRBS0tLS0FDaWlpZ0Fvb29vQVR2UzBuZWxwSUFvb29wZ0ZGRkZBQlJSUlFBVVVVVUFGRkZGQUJSUlJRQVVuZWxwTzlMc0F0RkZGTUFvb29vQUtLS0tBQ2lpaWdBb29vb0FLS0tLQUNpaWlnQW9vb29BS0tLS0FFNzB0SjNwYVNBS0tLS1lCUlJSUUFVVVVVQUZGRkZBQlJSUlFBVVVVVUFGSjNwYVR2U0FXaWlpbUFVVVVVQUZGRkZBQlJSUlFBVVVVVUFGRkZGQUJSUlJRQVVVVVVBRkZGRkFDZDZXazcwdEpBRkZGRk1Bb29vb0FLS0tLQUNpaWlnQW9vb29BS0tLS0FDa3BhS0FFeFJpbG9wV1FDWW94UzBVV1FDWW94UzBVV1FDWW94UzBVV1FDWW94UzBVV1FDWW94UzBVV1FDWW94UzBVV1FDWW94UzBVV1FDWW94UzBVV1FDVXRGRk1Bb29vb0FLS0tLQUNpaWlnQW9vb29BS0tLS0FDaWlpZ0Fvb29vQUtLS0tBQ2lpaWdBb29vb0FLS0tLQUNpaWlnQW9vb29BS0tLS0FDaWlpZ0Fvb29vQUtLS0tBQ2lpaWdBb29vb0FLS0tLQUNpaWlnQW9vb29BS0tLS0FDaWlpZ0Fvb29vQUtLS0tBQ2lpaWdBb29vb0FLS0tLQUNpaWlnQW9vb29BS0tLS0FDaWlpZ0Fvb29vQUtLS0tBQ2lpaWdELzlrPSIsIkFjdGlvblR5cGUiOjMsIkZpbGVzIjpbeyJJZCI6ImU1Y2YyMWJmLWQ3OGItNGY4Yi1iYjY3LTM2NTJlNDk1ZDEyZSIsIk5hbWUiOiJ0ZXN0LnBuZyIsIlNpemUiOjQsIlVybCI6Imh0dHBzOi8vY2RuLmthc2NvcmUub3NpLm9mZmljZS5uZXQvNzVlOGU3YjYzZDJhNGMxMGNkYzMwMjA4YWEyN2YxYzI5ODdkODY4YTBlNzY0ZmM3NDJhOTRmNjU0OWQ4YmRiMi5wbmc/c3Y9MjAxNS0xMi0xMSZzcj1iJnNpZz00aXFzd2pGVll5cUdxeUtnNmNkTWRVUW1pQWV6OHNWOTUxVVNjVW1MekxrJTNEJnN0PTIwMTctMDUtMTdUMDclM0EwNCUzQTQxWiZzZT0yMjkxLTAzLTAyVDA4JTNBMDQlM0E0MVomc3A9ciJ9XX0="]
+  }
 }
 ```
-
-###### actionBody for a Media(Image/Album/Audio/Document) attachment
-
-| Parameter | Type | Optional? | Description |
-| :---: | :---: | :---:	| :--- |
-| mediaResource | String | No | MediaResource string from a previous call to /media where you need to upload the attachment  |
-| caption | String | Yes | Caption that will appear on Kaizala client alongwith media  |
-
-####### Sample JSON Request for a Media Action
-
-```javascript
-{
-    actionType:"Image",
-    actionBody: {
-                mediaResource: "{{MediaResource return in response of /media api call}}",
-                caption: "Sample test caption"
-                }
-}
-
-```
+You need to upload image (v1/media api) and then use mediaResource of the response as answer to Image type question.
 
 ###### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
-| referenceId | String | GUID representing the succesful completion of the request |
-| actionId | String | GUID representing the specific instance of the Action that was sent. This can be used later to retrieve information about this specific Action instance. |
+| responseId | String | Response Identifier. Can you be used for updating response |
 
 ```javascript
 {
-    "referenceId": "853654b2-5874-462d-b709-0c4e43a7083f",
-    "actionId": "e478e860-8cb5-4660-999d-6435aaee8c87"
+    "responseId": "bbcf469e-4027-40b7-a80b-a961a48619e7"
 }
 ```
