@@ -15,15 +15,18 @@ API end-point to send messages to conversation groups inside Kaizala.
 
 ##### Request body
 
-| Parameter | Type | Description |
-| :---: | :---: | :--- |
-| message | String | Text message to be sent (Max limit of 1000 Characters) |
+| Parameter | Type | Optional? | Description |
+| :---: | :---: | :--- | :--- |
+| message | String | No | Text message to be sent (Max limit of 1000 Characters) |
+| sendToAllSubscribers | Bool | Yes | Default: false. Valid only in case the groupId belongs to a Public Group. True to send the text message to all subscribers which requires the token's user to be admin of the Public Group |
+| subscribers | String[] | Yes | Each element corresponds to a mobile number(with country code. Eg. +911999999999). Text message will be sent only to the selected subscribers. To be used for selective communication to subscribers in context of a Public Group |
 
 ###### Sample JSON Request
 
 ```javascript
 {
-  "message": "Hello All! Welcome to Kaizala."
+  "message": "Hello All! Welcome to Kaizala.",
+  "subscribers": ["+911999999999","+911999999998"]
 }
 ```
 
