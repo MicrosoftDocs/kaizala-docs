@@ -3,14 +3,13 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 
 ### GET /members
 
-    GET https://{api_root}/groups/{groupId}/members
+    GET {endpoint-url}/v1/groups/{groupId}/members
 
 ##### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
-| HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 
 ##### Response body
@@ -42,14 +41,13 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 
 ### PUT /members
 
-    PUT https://{api_root}/groups/{groupId}/members
+    PUT {endpoint-url}/v1/groups/{groupId}/members
 
 ##### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
-| HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | value: application/json |
 
@@ -86,7 +84,7 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 
 ### DELETE /members
 
-    DELETE https://{api_root}/groups/{groupId}/members/{memberId}
+    DELETE {endpoint-url}/v1/groups/{groupId}/members/{memberId}
 
 ##### Request Parameters
 
@@ -94,9 +92,7 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 | :---: | :---: | :---: | :---:	| :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | URL Path Parameter | memberId | String | No | GUID representing the memberId of the specific member |
-| HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
-| HTTP Header | Content-Type | String | No | value: application/json |
 
 ##### Response body
 
