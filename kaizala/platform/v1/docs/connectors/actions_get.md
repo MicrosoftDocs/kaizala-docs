@@ -1,13 +1,12 @@
 ### GET /actions
 
-    GET https://{api_root}/groups/{groupId}/actions?actionType={action_Type}
+    GET {endpoint-url}/v1/groups/{groupId}/actions?actionType={action_Type}
 
 #### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
-| HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | URL Query Parameter | actionType | String | No | Type of action to retrieve |
 | URL Query Parameter | fromDate | DateTime (epoch time) | Yes | Time from which the actions need to be retrieved |
