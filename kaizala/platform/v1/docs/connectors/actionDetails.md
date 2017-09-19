@@ -2,7 +2,7 @@
 
 Check-out the API for retrieving the list of action instances sent to a group using the [API for get /actions here](actions_get.md). You can retrieve further details about a specific action instance referenced by an actionId.
 
-    GET https://{api_root}/groups/{groupId}/actions/{actionId}/
+    GET {endpoint-url}/v1/groups/{groupId}/actions/{actionId}/
 
 #### Request Parameters
 
@@ -10,7 +10,6 @@ Check-out the API for retrieving the list of action instances sent to a group us
 | :---: | :---: | :---: | :---:	| :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | URL Path Parameter | actionId | String | No | GUID representing the specific action instance |
-| HTTP Header | applicationId | String | No | ID associated with the Connector that was registered by the developer – on behalf of which the API calls need to be made |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | URL Query Parameter | getDetails | Boolean | Yes | Use to get drill-down details of the specific action; Default is False |
 
