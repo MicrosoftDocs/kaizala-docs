@@ -6,7 +6,7 @@ Before you get started, please refer to [Setup for using the Kaizala Connectors]
 
 The root domain for invoking the Kaizala APIs is:
 
-    https://{endpoint-url}/v1/
+    {endpoint-url}
     
 |            	| Parameter         	| Type   	| Optional? 	| Description |
 | :---: | :---: | :---: | :---:	| :--- |
