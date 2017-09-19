@@ -67,7 +67,7 @@ Once you have uploaded the media file, you can post a media file to a group by u
 | caption | String | Yes | Text String that is shown alongwith the media file as a part of the message |
 
 
-####### Sample JSON Request for a Media Action
+###### Sample JSON Request for a Media Action
 
 ```javascript
 {
