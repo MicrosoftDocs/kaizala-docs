@@ -9,4 +9,4 @@ The Kaizala product team responds to the developer community across several chan
 
 - **Sample application bugs:** If you find a bug in one of our samples, open an issue on GitHub. Be sure to describe the steps to reproduce the bug.
 
-- **Feature requests:** If our platform doesn't empower you to what you need, please make your features suggestions on the [Kaizala portal on UserVoice](https://aka.ms/kaizalafeedback).
+- **Feature requests:** If our platform doesn't empower you to what you need, please make your features suggestions on the [Kaizala on UserVoice](https://kaizala.uservoice.com/).
