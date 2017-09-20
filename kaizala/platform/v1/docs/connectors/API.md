@@ -24,6 +24,7 @@ The API works with the following Kaizala resources:
 *   [/messages](messages.md)
 *   [/media](media.md)
 *   [/actions](actions.md)
+*   [/subscribers](subscribers.md)
 
 ### WebHooks
 
