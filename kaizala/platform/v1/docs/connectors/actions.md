@@ -19,4 +19,5 @@ API end-point to send/retrieve instances of Kaizala Actions to/from conversation
 
 
 *   API to retreive [Actions](actions_get.md) and [Action details](actionDetails.md)
-*   [API to post new instances of Actions and Action responses](actions_post.md)
+*   [API to post new instances of Actions](actions_post.md)
+*   [API to post new action responses/edit existing action responses](action_responses.md)
