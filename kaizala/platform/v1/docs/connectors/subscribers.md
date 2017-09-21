@@ -46,7 +46,7 @@ API end-point to add, get or delete subscribers from Managed Public group.
 
 ### GET /subscribers
 
-    GET {endpoint-url}/v1/groups/{groupId}/subscribers
+    POST {endpoint-url}/v1/groups/{groupId}/subscribers
 
 ##### Request Parameters
 |  | Parameter | Type | Optional? | Description |
@@ -54,11 +54,19 @@ API end-point to add, get or delete subscribers from Managed Public group.
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 
+##### Request body
+
+| Parameter | Type | Optional? | Description |
+| :---: | :---: | :--- | :--- |
+| cursor | String | Yes | Start of resultset. For pagination. Returned in Response Body |
+| count | int | Yes | Default: 50. Max: 50. Number of subscribers to be returned in a resultset|
+
 ##### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | subscribers | JSON Array | Array of JSON objects each representing a subscriber of the group |
+| cursor | String | Start of resultset. For pagination. To be used in Request body for fetching next result set. Present in response only if there is a valid next result set. |
 
 ###### Sample JSON Response
 
