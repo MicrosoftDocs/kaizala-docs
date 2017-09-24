@@ -29,15 +29,19 @@ Kaizala Connectors allow options to generate two different types of Refresh Toke
 *   In case of User Tokens, single token provides access to all groups a user is part of
 *   For a single connector, developers can generate tokens for multiple groups
 
-Once Refresh Token is provided by either Group-Admin or user to the Developer, it should be used to generate Access Token.
-
-Kaizala presents two method to generate Refresh tokens programatically
+Kaizala provides two other methods to generate Refresh tokens programatically
 * Using API (Will add soon)
 * Using OAuth (Will add soon)
+
+Once Refresh Token is provided by either Group-Admin or user to the Developer, it should be used to generate Access Token.
 
 ## Methods to generate Access Token
 
 As a developer, you would now have a Connector ID, Secret and a Refresh Token that should be passed on to you. Using this, you can generate an access token.
+
+Kaizala provides two method to generate Access tokens
+* Using API
+* Using OAuth
 
 ### Generate Access Token using API
 
