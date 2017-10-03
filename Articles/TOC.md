@@ -1,5 +1,5 @@
 # Microsoft Kaizala Developer Documentation
-## [Overview](README.md)
+## [Overview](index.md)
 ## Connectors
 ### [About](connectors/README.md)
 ### [Setup for using the Kaizala Connectors](connectors/setup.md)
