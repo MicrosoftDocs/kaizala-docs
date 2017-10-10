@@ -30,8 +30,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/breadcrumb/toc.yml",
-      "title": "Microsoft Kaizala",
+      "breadcrumb_path": "/kaizala/breadcrumb/toc.json",
+      "extendBreadcrumb": "true",
       "author": "nitinjms",
       "ms.author": "nitinj",
       "ms.date": "10/13/2017",

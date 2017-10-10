@@ -1,3 +1,3 @@
-- name: Microsoft Kaizala Developer Documentation
-  tocHref: /Articles/
-  topicHref: /Articles/index.md
+- name: Docs
+  tocHref: /Docs/
+  topicHref: /Docs/index.md
