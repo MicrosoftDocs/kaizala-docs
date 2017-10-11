@@ -1,3 +1,9 @@
+---
+title: /subscribers
+description: Reference Article for API to get subscribers data for public groups
+topic: Reference
+author: nitinjms
+---
 ## /subscribers
 
 API end-point to add, get or delete subscribers from Managed Public group.
