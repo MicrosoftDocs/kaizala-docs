@@ -4,6 +4,7 @@ description: Reference Article for API to post action on a Kaizala group
 topic: Reference
 author: nitinjms
 ---
+# Post a Action in a group
 ### POST /actions
 
     POST {endpoint-url}/groups/{groupId}/actions

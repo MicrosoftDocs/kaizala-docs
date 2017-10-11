@@ -4,6 +4,7 @@ description: Reference Article for API to query messages sent ina group
 topic: Reference
 author: nitinjms
 ---
+# APIs to query messages sent in a group
 ## /messages
 API end-point to send messages to conversation groups inside Kaizala.
 

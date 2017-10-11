@@ -4,6 +4,7 @@ description: Reference Article for API to get subscribers data for public groups
 topic: Reference
 author: nitinjms
 ---
+# APIs to query subscribers data in a public group
 ## /subscribers
 
 API end-point to add, get or delete subscribers from Managed Public group.

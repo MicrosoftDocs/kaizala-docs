@@ -4,6 +4,7 @@ description: Reference Article for API to send media attachments to groups
 topic: Reference
 author: nitinjms
 ---
+# APIs to query media resources
 ## /media
 API end-point to send media attachments to conversation groups inside Kaizala.
 

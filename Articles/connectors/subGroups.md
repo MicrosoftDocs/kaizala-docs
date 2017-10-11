@@ -4,6 +4,7 @@ description: Reference Article for API to query subgroup data
 topic: Reference
 author: nitinjms
 ---
+# APIs to query subgroups within a group
 ## /subGroups
 API end-point to interact with the conversation sub-groups inside Kaizala.
 

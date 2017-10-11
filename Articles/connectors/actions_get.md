@@ -4,11 +4,12 @@ description: Reference Article for API to get list of actions in a group
 topic: Reference
 author: nitinjms
 ---
-### GET /actions
+# Get list of Actions in a group
+## GET /actions
 
     GET {endpoint-url}/v1/groups/{groupId}/actions?actionType={action_Type}
 
-#### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -18,7 +19,7 @@ author: nitinjms
 | URL Query Parameter | fromDate | DateTime (epoch time) | Yes | Time from which the actions need to be retrieved |
 | URL Query Parameter | count | number | Yes | Count of individual actions to be returned; Default = 30 |
 
-#### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -35,13 +36,13 @@ JSON structure for each individual action in the array actions[]:
 | sender | String | Phone number of the user who sent the action to the group |
 | sentAt | DateTime | Time when the action was posted to the group |
 
-#####  actionBody object structure for image/picture attachment:
+####  actionBody object structure for image/picture attachment:
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | imageURL | String | URL string for the picture |
 
-###### Sample JSON Response:
+##### Sample JSON Response:
 
 ```javascript
 {
@@ -59,14 +60,14 @@ JSON structure for each individual action in the array actions[]:
 }
 ```
 
-#####  actionBody object structure for the action 'Share Location':
+####  actionBody object structure for the action 'Share Location':
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | latitude | Double | Latitude coordinates for the location |
 | longitude | Double | Longitude coordinates for the location |
 
-###### Sample JSON Response:
+##### Sample JSON Response:
 
 ```javascript
 {
@@ -85,7 +86,7 @@ JSON structure for each individual action in the array actions[]:
 }
 ```
 
-#####  actionBody object structure for the action 'Photo with Location':
+#### actionBody object structure for the action 'Photo with Location':
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -93,7 +94,7 @@ JSON structure for each individual action in the array actions[]:
 | latitude | Double | Latitude coordinates for the location |
 | longitude | Double | Longitude coordinates for the location |
 
-###### Sample JSON Response:
+##### Sample JSON Response:
 
 ```javascript
 {
@@ -113,7 +114,7 @@ JSON structure for each individual action in the array actions[]:
 }
 ```
 
-#####  actionBody object structure for the action 'Job':
+####  actionBody object structure for the action 'Job':
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -123,7 +124,7 @@ JSON structure for each individual action in the array actions[]:
 | responseCount | Numeric | Number of assignees who have marked the job complete |
 | isCompleted | Boolean | True when all assignees have completed the job |
 
-###### Sample JSON Response:
+##### Sample JSON Response:
 
 ```javascript
 {
@@ -145,7 +146,7 @@ JSON structure for each individual action in the array actions[]:
 }
 ```
 
-#####  actionBody object structure for the action 'Survey':
+####  actionBody object structure for the action 'Survey':
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -154,7 +155,7 @@ JSON structure for each individual action in the array actions[]:
 | responseCount | Numeric | Number of people who responded to the Survey |
 | expiryDate | DateTime | DateTime of the Survey expiry time |
 
-###### Sample JSON Response:
+##### Sample JSON Response:
 
 ```javascript
 {
