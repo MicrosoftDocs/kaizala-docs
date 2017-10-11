@@ -1,3 +1,10 @@
+---
+title: Kaizala APIs
+description: List of APIs that Kaizala exposes to allow integration with 3rd party systems
+topic: Reference
+author: nitinjms
+---
+
 # Kaizala API Documentation
 
 Before you get started, please refer to [Setup for using the Kaizala Connectors](setup.md)

@@ -1,3 +1,10 @@
+---
+title: Set up Kaizala Connectors
+description: This Article describe steps to create Kaizala Connectors and generate permission tokens
+topic: get-started-article
+author: nitinjms
+---
+
 # Setup for using the Kaizala Connectors
 
 ## Personas

@@ -1,3 +1,9 @@
+---
+title: Overview
+description: Overview of Microsoft Kaizala Developer Platform
+topic: overview
+author: nitinjms
+---
 # Microsoft Kaizala Developer Documentation
 
 Kaizala is a messaging and productivity app that enable your mobile users to achieve more. With Kaizala, you can have 1:1 chat with individuals, group chat with your teams, and even add groups to your existing groups to communicate within large organizations or communities.
