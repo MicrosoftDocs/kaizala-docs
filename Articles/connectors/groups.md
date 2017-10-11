@@ -1,3 +1,9 @@
+---
+title: /groups
+description: Reference Article for API to query group data
+topic: Overview
+author: nitinjms
+---
 ## /groups
 API end-point to interact with the conversation groups inside Kaizala.
 
