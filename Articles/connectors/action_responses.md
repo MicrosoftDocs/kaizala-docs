@@ -4,6 +4,7 @@ description: Reference Article for API to get response data for Kaizala Actions
 topic: Reference
 author: nitinjms
 ---
+# Post response to an Action
 ### POST /responses
 
     POST {endpoint-url}/groups/{groupId}/actions/{actionId}/responses

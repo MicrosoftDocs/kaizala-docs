@@ -4,6 +4,7 @@ description: Reference Article for API to send/retrieve Action instances
 topic: Reference
 author: nitinjms
 ---
+# API to send/retrieve Action instances
 ## /actions
 API end-point to send/retrieve instances of Kaizala Actions to/from conversation groups inside Kaizala. Current scope is to support following action types:
 

@@ -4,6 +4,7 @@ description: Reference Article for API to query group data
 topic: Reference
 author: nitinjms
 ---
+# APIs to query Kaizala groups
 ## /groups
 API end-point to interact with the conversation groups inside Kaizala.
 

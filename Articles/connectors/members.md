@@ -4,6 +4,7 @@ description: Reference Article for API to query group members data
 topic: Reference
 author: nitinjms
 ---
+# APIs to query group members
 ## /members
 API end-point to add or delete members from conversation groups inside Kaizala.
 

@@ -4,13 +4,14 @@ description: Reference Article for API to query regarding details of Kaizala Act
 topic: Reference
 author: nitinjms
 ---
-### GET /actions/{actionId}/
+# Get details for an Action in a group
+## GET /actions/{actionId}/
 
 Check-out the API for retrieving the list of action instances sent to a group using the [API for get /actions here](actions_get.md). You can retrieve further details about a specific action instance referenced by an actionId.
 
     GET {endpoint-url}/v1/groups/{groupId}/actions/{actionId}/
 
-#### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -19,7 +20,7 @@ Check-out the API for retrieving the list of action instances sent to a group us
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | URL Query Parameter | getDetails | Boolean | Yes | Use to get drill-down details of the specific action; Default is False |
 
-#### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -28,7 +29,7 @@ Check-out the API for retrieving the list of action instances sent to a group us
 | sender | String | Phone number of the user who sent the action to the group |
 | sentAt | DateTime | Time when the action was posted to the group |
 
-#####  actionDetails object structure for the action 'Job':
+####  actionDetails object structure for the action 'Job':
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -39,7 +40,7 @@ Check-out the API for retrieving the list of action instances sent to a group us
 | assigneeCount | Numeric | Number of assignees |
 | responses | JSON Array | JSON Array of individual Job responses |
 
-#####  actionDetails object structure for the action 'Survey':
+####  actionDetails object structure for the action 'Survey':
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -48,7 +49,7 @@ Check-out the API for retrieving the list of action instances sent to a group us
 | responseCount | Numeric | Number of people who responded to the Survey |
 | expiryDate | DateTime | DateTime of the Survey expiry time |
 
-###### Sample JSON Response:
+##### Sample JSON Response:
 
 ```javascript
 {
