@@ -1,3 +1,9 @@
+---
+title: /subGroups
+description: Reference Article for API to query subgroup data
+topic: Reference
+author: nitinjms
+---
 ## /subGroups
 API end-point to interact with the conversation sub-groups inside Kaizala.
 
