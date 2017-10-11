@@ -1,4 +1,9 @@
-
+---
+title: /subscribers
+description: Reference Article for API to post action on a Kaizala group
+topic: Reference
+author: nitinjms
+---
 ### POST /actions
 
     POST {endpoint-url}/groups/{groupId}/actions

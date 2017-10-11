@@ -1,3 +1,9 @@
+---
+title: /responses
+description: Reference Article for API to get response data for Kaizala Actions
+topic: Reference
+author: nitinjms
+---
 ### POST /responses
 
     POST {endpoint-url}/groups/{groupId}/actions/{actionId}/responses

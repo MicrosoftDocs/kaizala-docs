@@ -1,3 +1,9 @@
+---
+title: /Action Details
+description: Reference Article for API to query regarding details of Kaizala Actions
+topic: Reference
+author: nitinjms
+---
 ### GET /actions/{actionId}/
 
 Check-out the API for retrieving the list of action instances sent to a group using the [API for get /actions here](actions_get.md). You can retrieve further details about a specific action instance referenced by an actionId.

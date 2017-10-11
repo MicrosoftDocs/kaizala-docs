@@ -1,3 +1,9 @@
+---
+title: Authentication Mechanism
+description: Article to get access tokens to query Kaizala resources
+topic: Article
+author: nitinjms
+---
 # Authentication Mechanism
 
 Before you get started, please refer to [Setup for using the Kaizala Connectors](setup.md)

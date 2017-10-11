@@ -1,3 +1,9 @@
+---
+title: /webhooks
+description: Reference Article for API to manage Kaizala subscriptions
+topic: Reference
+author: nitinjms
+---
 ## /webhook
 API end-point to manage subscriptions to events inside Kaizala.
 

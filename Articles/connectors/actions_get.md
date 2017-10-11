@@ -1,3 +1,9 @@
+---
+title: /actions
+description: Reference Article for API to get list of actions in a group
+topic: Reference
+author: nitinjms
+---
 ### GET /actions
 
     GET {endpoint-url}/v1/groups/{groupId}/actions?actionType={action_Type}

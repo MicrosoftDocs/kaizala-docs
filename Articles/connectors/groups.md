@@ -1,7 +1,7 @@
 ---
 title: /groups
 description: Reference Article for API to query group data
-topic: Overview
+topic: Reference
 author: nitinjms
 ---
 ## /groups

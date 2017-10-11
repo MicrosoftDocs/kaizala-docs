@@ -1,3 +1,9 @@
+---
+title: /messages
+description: Reference Article for API to query messages sent ina group
+topic: Reference
+author: nitinjms
+---
 ## /messages
 API end-point to send messages to conversation groups inside Kaizala.
 

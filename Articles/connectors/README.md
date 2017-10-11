@@ -1,3 +1,9 @@
+---
+title: Connectors
+description: Article for providing overview of Kaizala connectors
+topic: Overview
+author: nitinjms
+---
 # Connectors
 
 ## Overview
