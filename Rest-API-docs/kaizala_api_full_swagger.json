@@ -1564,11 +1564,11 @@
     "/media": {
       "post": {
         "description": "upload media",
-        "summary": "(a) Upload media (image / document / audio / album/ video)",
+        "summary": "(a) Upload media (image, document, audio, album or video)",
         "tags": [
           "[3.0] Content Creation APIs"
         ],
-        "operationId": "(a) Upload media (image / document / audio / album/ video)",
+        "operationId": "(a) Upload media (image, document, audio, album or video)",
         "produces": [
           "application/json"
         ],
