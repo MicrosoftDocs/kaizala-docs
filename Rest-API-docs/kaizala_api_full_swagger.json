@@ -2,18 +2,18 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0",
-    "title": "Kaizala Server APIs",
-    "description": "TODO: Add Description",
-    "license": {
-      "name": "MIT",
-      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
-    }
-  },
-  "host": "example.com",
-  "basePath": "/v1",
-  "schemes": [
-    "http"
-  ],
+    "title": "Microsoft Kaizala", 
+    "description": "Microsoft Kaizala is a mobile app that helps you connect with your entire mobile workforce and supply chain, organize and allocate tasks more efficiently with built-in and custom Actions, and get actionable information and insights to accelerate decision-making.", 
+  "x-ms-api-annotation": { 
+    "license": { 
+      "status": "Preview"  
+     } 
+   }, 
+  "host": "kms.kaiza.la", 
+   "basePath": "/v1", 
+   "schemes": [ 
+   "https"
+  ], 
   "consumes": [
     "application/json"
   ],
