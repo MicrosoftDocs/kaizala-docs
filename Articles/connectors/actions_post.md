@@ -1,5 +1,5 @@
 ---
-title: /subscribers
+title: /Actions_post
 description: Reference Article for API to post action on a Kaizala group
 topic: Reference
 author: nitinjms
