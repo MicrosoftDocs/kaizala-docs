@@ -38,7 +38,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step1  generate pinrequest"
+              "$ref": "#/definitions/Generate pinrequest"
             }
           },
           {
@@ -120,7 +120,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step2  login with pin and applicationid to get refreshtokenrequest"
+              "$ref": "#/definitions/login with pin and applicationid to get refreshtokenrequest"
             }
           },
           {
@@ -135,7 +135,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step2  login with pin and applicationid to get refreshtokenresponse"
+              "$ref": "#/definitions/login with pin and applicationid to get refreshtokenresponse"
             },
             "examples": {
               "application/json": {
@@ -226,7 +226,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step3  retrieve the access tokenresponse"
+              "$ref": "#/definitions/Retrieve the access tokenresponse"
             },
             "examples": {
               "application/json": {
@@ -298,7 +298,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step2  create a managed public grouprequest"
+              "$ref": "#/definitions/Create a managed public grouprequest"
             }
           },
           {
@@ -306,21 +306,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point "
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           }
         ],
         "responses": {
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step1  create a groupresponse"
+              "$ref": "#/definitions/Create a group response"
             },
             "examples": {
               "application/json": {
@@ -496,7 +496,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step2  create a managed public grouprequest"
+              "$ref": "#/definitions/Create a managed public grouprequest"
             }
           },
           {
@@ -554,7 +554,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step7  add group as a subGroup to another grouprequest"
+              "$ref": "#/definitions/Add group as a subGroup to another grouprequest"
             }
           },
           {
@@ -623,7 +623,7 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step8  fetch subGroup of a groupresponse"
+              "$ref": "#/definitions/fetch subGroup of a groupresponse"
             },
             "examples": {
               "application/json": {
@@ -729,7 +729,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step10  add members to a grouprequest"
+              "$ref": "#/definitions/Add members to a grouprequest"
             }
           },
           {
@@ -869,7 +869,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step14  get subscribers of a public grouprequest"
+              "$ref": "#/definitions/Get subscribers of a public grouprequest"
             }
           },
           {
@@ -927,7 +927,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step15  remove subscribers from a public grouprequest"
+              "$ref": "#/definitions/Remove subscribers from a public grouprequest"
             }
           },
           {
@@ -985,7 +985,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step15  remove subscribers from a public grouprequest"
+              "$ref": "#/definitions/Remove subscribers from a public grouprequest"
             }
           },
           {
@@ -1448,14 +1448,14 @@
             "in": "query",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Type of Action"
           },
           {
             "name": "accessToken",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
@@ -1511,7 +1511,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
@@ -1567,7 +1567,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           }
         ],
         "responses": {
@@ -1631,7 +1631,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
@@ -1697,7 +1697,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-webhook-id",
@@ -1724,8 +1724,8 @@
     }
   },
   "definitions": {
-    "Step7  add group as a subGroup to another grouprequest": {
-      "title": "Step7 - Add group as a sub-group to another groupRequest",
+    "Add group as a subGroup to another grouprequest": {
+      "title": "Add group as a sub-group to another groupRequest",
       "example": {
         "subGroups": [
           "{{test-sub-group-id}}"
@@ -1734,7 +1734,7 @@
       "type": "object",
       "properties": {
         "subGroups": {
-          "description": "",
+          "description": "Array of groups with the list of subGroups if any",
           "type": "array",
           "items": {
             "type": "string"
@@ -1745,8 +1745,8 @@
         "subGroups"
       ]
     },
-    "Step2  create a managed public grouprequest": {
-      "title": "Step2 - Create a managed public groupRequest",
+    "Create a managed public grouprequest": {
+      "title": "Create a managed public groupRequest",
       "example": {
         "name": "Kaizala Test Public Group",
         "welcomeMessage": "Welcome to public group created programmatically via Postman",
@@ -1758,22 +1758,22 @@
       "type": "object",
       "properties": {
         "name": {
-          "description": "",
+          "description": "Group name",
           "type": "string"
         },
         "welcomeMessage": {
-          "description": "",
+          "description": "Welcome message which will be displayed to new group member",
           "type": "string"
         },
         "members": {
-          "description": "",
+          "description": "Mobile number(with country code) of members to be added. Default: Access token's user will be added as admin of the group",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "groupType": {
-          "description": "",
+          "description": "Enum: Group/ConnectGroup. ConnectGroup will create Managed Public group. Default: Group",
           "type": "string"
         }
       },
@@ -1811,11 +1811,11 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "",
+          "description": "Id for the Action Instance",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody"
+          "$ref": "#/definitions/CustomActionBody"
         }
       },
       "required": [
@@ -1823,12 +1823,12 @@
         "actionBody"
       ]
     },
-    "ActionBody": {
-      "title": "ActionBody",
+    "CustomActionBody": {
+      "title": "CustomActionBody",
       "type": "object",
       "properties": {
         "properties": {
-          "description": "",
+          "description": "Each element of object[] is described below as Property Object. Only valid for creating Action Package Instance",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Property"
@@ -1844,15 +1844,15 @@
       "type": "object",
       "properties": {
         "name": {
-          "description": "",
+          "description": "Name of the property",
           "type": "string"
         },
         "value": {
-          "description": "",
+          "description": "Type of the property. Enum: Text, Numeric, Location, DateTime, StringList, Attachment, StringSet, AttachmentList",
           "type": "string"
         },
         "type": {
-          "description": "",
+          "description": "Value of the property",
           "type": "string"
         }
       },
@@ -1877,11 +1877,11 @@
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "",
+          "description": "Type of Action. Value: Job",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody6"
+          "$ref": "#/definitions/JobActionBody"
         }
       },
       "required": [
@@ -1889,23 +1889,23 @@
         "actionBody"
       ]
     },
-    "ActionBody6": {
-      "title": "ActionBody6",
+    "JobActionBody": {
+      "title": "JobActionBody",
       "type": "object",
       "properties": {
         "title": {
-          "description": "",
+          "description": "Title of the Job",
           "type": "string"
         },
         "assignedTo": {
-          "description": "",
+          "description": "Array of mobile numbers for the persons to whom Job is assigned",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "dueDate": {
-          "description": "",
+          "description": "Default: 24hrs. Number of hours before which job should be completed",
           "type": "integer",
           "format": "int32"
         }
@@ -1916,8 +1916,8 @@
         "dueDate"
       ]
     },
-    "(b1)SendImageOnAGrouprequest": {
-      "title": "(b1) Send image on a groupRequest",
+    "SendImageOnAGrouprequest": {
+      "title": "Send image on a groupRequest",
       "example": {
         "actionType": "Image",
         "actionBody": {
@@ -1928,11 +1928,11 @@
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "",
+          "description": "Type of Action",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody8"
+          "$ref": "#/definitions/ImageActionBody"
         }
       },
       "required": [
@@ -1940,16 +1940,16 @@
         "actionBody"
       ]
     },
-    "ActionBody8": {
-      "title": "ActionBody8",
+    "ImageActionBody": {
+      "title": "Image Action Body",
       "type": "object",
       "properties": {
         "caption": {
-          "description": "",
+          "description": "Text Message that would be sent along with the Image",
           "type": "string"
         },
         "mediaResource": {
-          "description": "",
+          "description": "MediaResource string from a previous call to /media where you need to upload the attachment",
           "type": "string"
         }
       },
@@ -1974,30 +1974,30 @@
       "type": "object",
       "properties": {
         "objectId": {
-          "description": "",
+          "description": "Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id",
           "type": "string"
         },
         "objectType": {
-          "description": "",
+          "description": "Enum:Group/Action/ActionPackage",
           "type": "string"
         },
         "eventTypes": {
-          "description": "",
+          "description": "Array of different types of events you need to subscribe the webhook to. Supported events are: ActionCreated,ActionResponse,SurveyCreated,JobCreated,SurveyResponse,JobResponse,TextMessageCreated,AttachmentCreated,Announcement,MemberAdded,MemberRemoved,GroupAdded,GroupRemoved",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "callBackUrl": {
-          "description": "",
+          "description": "HTTPS URL to which the subscribed events need to be notified to",
           "type": "string"
         },
         "callBackToken": {
-          "description": "",
+          "description": "Optional parameter you can set which will be sent in the HTTP header 'kz-callback-token' with every callBack made by the WebHook ",
           "type": "string"
         },
         "callBackContext": {
-          "description": "",
+          "description": "Optional parameter you can set which will be sent in the JSON payload as 'context' with every callBack made by the WebHook ",
           "type": "string"
         }
       },
@@ -2022,18 +2022,18 @@
       "type": "object",
       "properties": {
         "Message": {
-          "description": "",
+          "description": "Text message to be sent (Max limit of 1000 Characters)",
           "type": "string"
         },
         "subscribers": {
-          "description": "",
+          "description": "Each element corresponds to a mobile number(with country code. Eg. +911999999999). Text message will be sent only to the selected subscribers. To be used for selective communication to subscribers in context of a Public Group",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "sendToAllSubscribers": {
-          "description": "",
+          "description": "Default: false. Valid only in case the groupId belongs to a Public Group. True to send the text message to all subscribers which requires the token's user to be admin of the Public Group",
           "type": "boolean"
         }
       },
@@ -2043,8 +2043,8 @@
         "sendToAllSubscribers"
       ]
     },
-    "Step10  add members to a grouprequest": {
-      "title": "Step10 - Add members to a groupRequest",
+    "Add members to a grouprequest": {
+      "title": "Add members to a groupRequest",
       "example": {
         "members": [
           "{{mobile-number-2}}"
@@ -2053,7 +2053,7 @@
       "type": "object",
       "properties": {
         "members": {
-          "description": "",
+          "description": "Array of phone numbers(with countrycode) of new members to be added",
           "type": "array",
           "items": {
             "type": "string"
@@ -2091,30 +2091,30 @@
       "type": "object",
       "properties": {
         "objectId": {
-          "description": "",
+          "description": "Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id",
           "type": "string"
         },
         "objectType": {
-          "description": "",
+          "description": "Enum:Group/Action/ActionPackage",
           "type": "string"
         },
         "eventTypes": {
-          "description": "",
+          "description": "Array of different types of events you need to subscribe the webhook to. Supported events are: ActionCreated,ActionResponse,SurveyCreated,JobCreated,SurveyResponse,JobResponse,TextMessageCreated,AttachmentCreated,Announcement,MemberAdded,MemberRemoved,GroupAdded,GroupRemoved",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "callBackUrl": {
-          "description": "",
+          "description": "HTTPS URL to which the subscribed events need to be notified to",
           "type": "string"
         },
         "callBackToken": {
-          "description": "",
+          "description": "Optional parameter you can set which will be sent in the HTTP header 'kz-callback-token' with every callBack made by the WebHook ",
           "type": "string"
         },
         "callBackContext": {
-          "description": "",
+          "description": "Optional parameter you can set which will be sent in the JSON payload as 'context' with every callBack made by the WebHook ",
           "type": "string"
         }
       },
@@ -2132,11 +2132,11 @@
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "",
+          "description": "Type of action",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody14"
+          "$ref": "#/definitions/SurveyActionBody"
         }
       },
       "required": [
@@ -2144,12 +2144,12 @@
         "actionBody"
       ]
     },
-    "ActionBody14": {
-      "title": "ActionBody14",
+    "SurveyActionBody": {
+      "title": "Survey Action Body",
       "type": "object",
       "properties": {
         "responseName": {
-          "description": "",
+          "description": "Name of the response",
           "type": "string"
         },
         "responseLocation": {
@@ -2174,17 +2174,17 @@
       "type": "object",
       "properties": {
         "latitude": {
-          "description": "",
+          "description": "Latitude coordinates for the location",
           "type": "integer",
           "format": "int32"
         },
         "longitude": {
-          "description": "",
+          "description": "Longitude coordinates for the location",
           "type": "integer",
           "format": "int32"
         },
         "name": {
-          "description": "",
+          "description": "Name of the Place that Location co-ordinates corresponds to",
           "type": "string"
         }
       },
@@ -2199,12 +2199,12 @@
       "type": "object",
       "properties": {
         "lt": {
-          "description": "",
+          "description": "Latitude coordinates for the location",
           "type": "integer",
           "format": "int32"
         },
         "lg": {
-          "description": "",
+          "description": "Longitude coordinates for the location",
           "type": "integer",
           "format": "int32"
         },
@@ -2214,8 +2214,8 @@
         }
       }
     },
-    "Step3  retrieve the access tokenresponse": {
-      "title": "Step3 - Retrieve the access tokenResponse",
+    "Retrieve the access tokenresponse": {
+      "title": "Retrieve the access tokenResponse",
       "example": {
         "accessToken": "asdasadadaad",
         "endpointUrl": "https://inc-000.KaizalaMessaging.osi.office.net",
@@ -2225,20 +2225,20 @@
       "type": "object",
       "properties": {
         "accessToken": {
-          "description": "",
+          "description": "Access Token received from the auth end-point",
           "type": "string"
         },
         "endpointUrl": {
-          "description": "",
+          "description": "On successful auth, an endpoint url is returned that should be used as api-base-url for making subsequent API calls",
           "type": "string"
         },
         "accessTokenExpiry": {
-          "description": "",
+          "description": "It indicates the expiry time for accessToken in epoch time(milliseconds)",
           "type": "integer",
           "format": "int32"
         },
         "scope": {
-          "description": "",
+          "description": "Scope of permissions on Kaizala resources that given Access Token provides",
           "type": "string"
         }
       },
@@ -2262,11 +2262,11 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "",
+          "description": "ID associated with the Action Instance",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody19"
+          "$ref": "#/definitions/ActionBodyResponse"
         }
       },
       "required": [
@@ -2274,12 +2274,12 @@
         "actionBody"
       ]
     },
-    "ActionBody19": {
-      "title": "ActionBody19",
+    "ActionBodyResponse": {
+      "title": "Action Body Response",
       "type": "object",
       "properties": {
         "Answers": {
-          "description": "",
+          "description": "Array of Response items for the given Action",
           "type": "array",
           "items": {
             "type": "string"
@@ -2290,8 +2290,8 @@
         "Answers"
       ]
     },
-    "Step15  remove subscribers from a public grouprequest": {
-      "title": "Step15 - Remove Subscribers from a public groupRequest",
+    "Remove subscribers from a public grouprequest": {
+      "title": "Remove Subscribers from a public groupRequest",
       "example": {
         "subscribers": [
           "{{mobile-number-3}}"
@@ -2300,7 +2300,7 @@
       "type": "object",
       "properties": {
         "subscribers": {
-          "description": "",
+          "description": "List of subscriber mobile number with country code",
           "type": "array",
           "items": {
             "type": "string"
@@ -2311,8 +2311,8 @@
         "subscribers"
       ]
     },
-    "Step1  generate pinrequest": {
-      "title": "Step1 - Generate PinRequest",
+    "Generate pinrequest": {
+      "title": "Generate Pin Request",
       "example": {
         "mobileNumber": "{{mobile-number}}",
         "applicationId": "{{application-id}}"
@@ -2320,11 +2320,11 @@
       "type": "object",
       "properties": {
         "mobileNumber": {
-          "description": "",
+          "description": "Mobile Number for which PIN would be generated",
           "type": "string"
         },
         "applicationId": {
-          "description": "",
+          "description": "ID associated with the Connector",
           "type": "string"
         }
       },
@@ -2341,7 +2341,7 @@
       "type": "object",
       "properties": {
         "message": {
-          "description": "",
+          "description": "Text Message that would be sent in the group",
           "type": "string"
         }
       },
@@ -2350,7 +2350,7 @@
       ]
     },
     "PostCustomAnnouncementToAGrouprequest": {
-      "title": "Post custom announcement to a groupRequest",
+      "title": "Post announcement to a groupRequest",
       "example": {
         "actiontype": "Announcement",
         "actionBody": {
@@ -2360,11 +2360,11 @@
       "type": "object",
       "properties": {
         "actiontype": {
-          "description": "",
+          "description": "Type of Action. Value: Announcement",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody31"
+          "$ref": "#/definitions/AnnouncementBodyRequest"
         }
       },
       "required": [
@@ -2372,12 +2372,12 @@
         "actionBody"
       ]
     },
-    "ActionBody31": {
-      "title": "ActionBody31",
+    "AnnouncementBodyRequest": {
+      "title": "Announcement Body Request",
       "type": "object",
       "properties": {
         "message": {
-          "description": "",
+          "description": "Message that would be sent as Announcement",
           "type": "string"
         }
       },
@@ -2401,11 +2401,11 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "",
+          "description": "Action Package id",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody33"
+          "$ref": "#/definitions/SubscribersCustomActionBody"
         },
         "subscribers": {
           "description": "",
@@ -2426,16 +2426,16 @@
         "sendToAllSubscribers"
       ]
     },
-    "ActionBody33": {
-      "title": "ActionBody33",
+    "SubscribersCustomActionBody": {
+      "title": "Custom Action sent to a subscriber",
       "type": "object",
       "properties": {
         "title": {
-          "description": "",
+          "description": "Title",
           "type": "string"
         },
         "validity": {
-          "description": "",
+          "description": "Validity",
           "type": "integer",
           "format": "int32"
         }
@@ -2459,11 +2459,11 @@
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "",
+          "description": "Type of Action. Value: Announcement ",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody35"
+          "$ref": "#/definitions/AnnouncementwithImage"
         }
       },
       "required": [
@@ -2471,16 +2471,16 @@
         "actionBody"
       ]
     },
-    "ActionBody35": {
-      "title": "ActionBody35",
+    "AnnouncementwithImage": {
+      "title": "Announce Body with Images",
       "type": "object",
       "properties": {
         "Message": {
-          "description": "",
+          "description": "Message that will be sent in the group",
           "type": "string"
         },
         "MediaResources": {
-          "description": "",
+          "description": "Array of media resource objects",
           "type": "array",
           "items": {
             "type": "string"
@@ -2492,8 +2492,8 @@
         "MediaResources"
       ]
     },
-    "Step2  login with pin and applicationid to get refreshtokenrequest": {
-      "title": "Step2 - Login with pin and applicationId to get refreshTokenRequest",
+    "login with pin and applicationid to get refreshtokenrequest": {
+      "title": "Login with pin and applicationId to get refreshTokenRequest",
       "example": {
         "mobileNumber": "{{mobile-number}}",
         "applicationId": "{{application-id}}",
@@ -2502,15 +2502,15 @@
       "type": "object",
       "properties": {
         "mobileNumber": {
-          "description": "",
+          "description": "Mobile Number for which token would be generated",
           "type": "string"
         },
         "applicationId": {
-          "description": "",
+          "description": "ID associated with the Connector",
           "type": "string"
         },
         "pin": {
-          "description": "",
+          "description": "OTP sent to the given mobile number",
           "type": "integer",
           "format": "int32"
         }
@@ -2521,8 +2521,8 @@
         "pin"
       ]
     },
-    "Step2  login with pin and applicationid to get refreshtokenresponse": {
-      "title": "Step2 - Login with pin and applicationId to get refreshTokenResponse",
+    "login with pin and applicationid to get refreshtokenresponse": {
+      "title": "Login with pin and applicationId to get refreshTokenResponse",
       "example": {
         "refreshToken": "adwawaw",
         "grantedScope": "groupinfo.read,groupinfo.write,groupinfo.remove,groupinfo.update,groupmember.read,groupmember.write,groupmember.remove,textmessage.read,action.read,action.write,action.update,profile.write,media.read,webhook.read,webhook.write,webhook.remove,webhook.update",
@@ -2531,15 +2531,15 @@
       "type": "object",
       "properties": {
         "refreshToken": {
-          "description": "",
+          "description": "refreshToken shared by the Kaizala Group Admin when the respective Connector was granted access to the group",
           "type": "string"
         },
         "grantedScope": {
-          "description": "",
+          "description": "Access Scope that the given Application/Connector has been granted",
           "type": "string"
         },
         "refreshTokenExpiry": {
-          "description": "",
+          "description": "It indicates the expiry time for refreshToken in epoch time(milliseconds)",
           "type": "integer",
           "format": "int32"
         }
@@ -2550,8 +2550,8 @@
         "refreshTokenExpiry"
       ]
     },
-    "Step8  fetch subGroup of a groupresponse": {
-      "title": "Step8 - Fetch sub-group of a groupResponse",
+    "fetch subGroup of a groupresponse": {
+      "title": "Fetch sub-group of a groupResponse",
       "example": {
         "groupName": "Kaizala Test group",
         "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
@@ -2578,42 +2578,42 @@
       "type": "object",
       "properties": {
         "groupName": {
-          "description": "",
+          "description": "Name of the group",
           "type": "string"
         },
         "groupId": {
-          "description": "",
+          "description": "GUID associated with the group",
           "type": "string"
         },
         "groupImageUrl": {
-          "description": "",
+          "description": "String specifying the URL of the group profile picture ",
           "type": "string"
         },
         "hasSubGroups": {
-          "description": "",
+          "description": "Returns true, if the group has subGroups",
           "type": "boolean"
         },
         "hasParentGroups": {
-          "description": "",
+          "description": "Returns true, if the group has parent Groups",
           "type": "boolean"
         },
         "isMappedToTenant": {
-          "description": "",
+          "description": "Returns true, if the group is mapped as Organization Group",
           "type": "boolean"
         },
         "groupType": {
-          "description": "",
+          "description": "Group/ Connect Group. Connect Group refers to Managed Public Group.",
           "type": "string"
         },
         "subGroups": {
-          "description": "",
+          "description": "Array of Subgroups that given group has",
           "type": "array",
           "items": {
             "$ref": "#/definitions/SubGroup"
           }
         },
         "welcomeMessage": {
-          "description": "",
+          "description": "Welcome Message that is shown to new joinees in the group",
           "type": "string"
         }
       },
@@ -2634,39 +2634,39 @@
       "type": "object",
       "properties": {
         "groupName": {
-          "description": "",
+          "description": "Name of the group",
           "type": "string"
         },
         "groupId": {
-          "description": "",
+          "description": "GUID associated with the group",
           "type": "string"
         },
         "groupImageUrl": {
-          "description": "",
+          "description": "String specifying the URL of the group profile picture ",
           "type": "string"
         },
         "hasSubGroups": {
-          "description": "",
+          "description": "Returns true, if the group has subGroups",
           "type": "boolean"
         },
         "hasParentGroups": {
-          "description": "",
+          "description": "Returns true, if the group has parent Groups",
           "type": "boolean"
         },
         "isMappedToTenant": {
-          "description": "",
+          "description": "Returns true, if the group is mapped as Organization Group",
           "type": "boolean"
         },
         "groupType": {
-          "description": "",
+          "description": "Group/ Connect Group. Connect Group refers to Managed Public Group.",
           "type": "string"
         },
         "isDuplicate": {
-          "description": "",
+          "description": "Returns true, if provided groupid already exists",
           "type": "boolean"
         },
         "welcomeMessage": {
-          "description": "",
+          "description": "Welcome Message that is shown to new joinees in the group ",
           "type": "string"
         }
       },
@@ -2682,25 +2682,24 @@
         "welcomeMessage"
       ]
     },
-    "Step1  create a groupresponse": {
-      "title": "Step1 - Create a groupResponse",
+    "Create a group response": {
       "example": {
-        "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
-        "groupName": "Kaizala Test group",
+        "groupId": "jhj5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
+        "groupName": "Test group",
         "membersAdded": true
       },
       "type": "object",
       "properties": {
         "groupId": {
-          "description": "",
+          "description": "Group Identifier which can be used in subsequent API calls ",
           "type": "string"
         },
         "groupName": {
-          "description": "",
+          "description": "Group name",
           "type": "string"
         },
         "membersAdded": {
-          "description": "",
+          "description": "True if all members are successfully added ",
           "type": "boolean"
         }
       },
@@ -2710,17 +2709,17 @@
         "membersAdded"
       ]
     },
-    "Step14  get subscribers of a public grouprequest": {
-      "title": "Step14 - Get Subscribers of a public groupRequest",
+    "Get subscribers of a public grouprequest": {
+      "title": "Get Subscribers of a public groupRequest",
       "type": "object",
       "properties": {
         "count": {
-          "description": "",
+          "description": "Number of Subscribers in the Public Group",
           "type": "integer",
           "format": "int32"
         },
         "cursor": {
-          "description": "",
+          "description": "Start of resultset. For pagination. To be used in Request body for fetching next result set. Present in response only if there is a valid next result set.",
           "type": "string"
         }
       },
@@ -2797,7 +2796,7 @@
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody33"
+          "$ref": "#/definitions/CustomActionBody"
         }
       },
       "required": [
@@ -2873,7 +2872,7 @@
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody50"
+          "$ref": "#/definitions/SurveyActionBodyRequest"
         }
       },
       "required": [
@@ -2881,8 +2880,8 @@
         "actionBody"
       ]
     },
-    "ActionBody50": {
-      "title": "ActionBody50",
+    "SurveyActionBodyRequest": {
+      "title": "Survey Action Body",
       "type": "object",
       "properties": {
         "isAnonymous": {
