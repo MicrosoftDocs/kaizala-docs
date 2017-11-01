@@ -27,7 +27,7 @@
         "tags": [
           "Authentication"
         ],
-        "operationId": "Step1 - Generate Pin",
+        "operationId": "Generate Pin",
         "produces": [
           "application/json"
         ],
@@ -38,7 +38,26 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Generate pinrequest"
+               "title": "Generate Pin Request",
+                "example": {
+                    "mobileNumber": "{{mobile-number}}",
+                    "applicationId": "{{application-id}}"
+                },
+                "type": "object",
+                "properties": {
+                    "mobileNumber": {
+                    "description": "Mobile Number for which PIN would be generated",
+                    "type": "string"
+                    },
+                    "applicationId": {
+                    "description": "ID associated with the Connector",
+                    "type": "string"
+                    }
+                },
+                "required": [
+                    "mobileNumber",
+                    "applicationId"
+                ]
             }
           },
           {
