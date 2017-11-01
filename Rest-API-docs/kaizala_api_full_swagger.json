@@ -306,7 +306,7 @@
         "tags": [
           "Group management"
         ],
-        "operationId": "Step1 - Create a group",
+        "operationId": "Create a group",
         "produces": [
           "application/json"
         ],
