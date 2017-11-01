@@ -22,7 +22,7 @@
   "paths": {
     "/generatePin": {
       "post": {
-        "description": "This API generates One-time PIN for a mobile number, when Application/Connector Id is provided.",
+        "description": "This API generates one-time PIN for a mobile number, when Application/Connector Id is provided.",
         "summary": "Generate One-Time PIN",
         "tags": [
           "Authentication"
