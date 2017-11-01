@@ -27,7 +27,7 @@
         "tags": [
           "Authentication"
         ],
-        "operationId": "Generate Pin",
+        "operationId": "Login_GeneratePin",
         "produces": [
           "application/json"
         ],
@@ -128,7 +128,7 @@
         "tags": [
           "Authentication"
         ],
-        "operationId": "Step2 - Login with pin and applicationId to get refreshToken",
+        "operationId": "Login_getRefreshToken",
         "produces": [
           "application/json"
         ],
@@ -210,7 +210,7 @@
     "/accessToken": {
       "get": {
         "description": "This API generates Access token to access Kaizala resources, when refresh token, Application/Connector Id and Application/Connector Secret is provided",
-        "summary": "Generate Access token",
+        "summary": "Login_GenerateAccesstoken",
         "tags": [
           "Authentication"
         ],
