@@ -22,12 +22,12 @@
   "paths": {
     "/generatePin": {
       "post": {
-        "description": "This API generates one-time PIN for a mobile number, when Application/Connector Id is provided.",
+        "description": "This API generates One-time PIN for a mobile number, when Application/Connector Id is provided.",
         "summary": "Generate One-Time PIN",
         "tags": [
           "Authentication"
         ],
-        "operationId": "Login_GeneratePin",
+        "operationId": "Authentication_GeneratePin",
         "produces": [
           "application/json"
         ],
@@ -65,7 +65,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           }
         ],
         "responses": {
@@ -128,7 +128,7 @@
         "tags": [
           "Authentication"
         ],
-        "operationId": "Login_getRefreshToken",
+        "operationId": "Authentication_getRefreshToken",
         "produces": [
           "application/json"
         ],
@@ -147,7 +147,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           }
         ],
         "responses": {
@@ -210,11 +210,11 @@
     "/accessToken": {
       "get": {
         "description": "This API generates Access token to access Kaizala resources, when refresh token, Application/Connector Id and Application/Connector Secret is provided",
-        "summary": "Login_GenerateAccesstoken",
+        "summary": "Retrieve the access token",
         "tags": [
           "Authentication"
         ],
-        "operationId": "Step3 - Retrieve the access token",
+        "operationId": "Authentication_GenerateAccesstoken",
         "produces": [
           "application/json"
         ],
@@ -224,21 +224,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "ID associated with the Connector"
           },
           {
             "name": "applicationSecret",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Secret associated with the Connector"
           },
           {
             "name": "refreshToken",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "refreshToken shared by the Kaizala Group Admin when the respective Connector was granted access to the group"
           }
         ],
         "responses": {
@@ -304,9 +304,9 @@
         "description": "This API allows creation of a a group, including Managed Public Groups. It takes array of string as input. Each string is mobile number(with country code). This API can take maximum of 100 mobile numbers as input.\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group.",
         "summary": "Create a group",
         "tags": [
-          "Group management"
+          "GroupManagement"
         ],
-        "operationId": "Create a group",
+        "operationId": "GroupManagement_CreateGroup",
         "produces": [
           "application/json"
         ],
@@ -393,12 +393,12 @@
         }
       },
       "get": {
-        "description": "Fetch all direct groups",
-        "summary": "Fetch groups - direct",
+        "description": "This API returns all direct groups attached with the user",
+        "summary": "Fetch direct groups",
         "tags": [
-          "Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step3 - Fetch groups - direct",
+        "operationId": "GroupManagement_fetchDirectGroups",
         "produces": [
           "application/json"
         ],
@@ -408,7 +408,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           }
         ],
         "responses": {
@@ -450,12 +450,12 @@
     },
     "/groups/{test-group-id}": {
       "get": {
-        "description": "Fetch group details",
-        "summary": "Step5 - Fetch group details",
+        "description": "This API can be used to fetch details for a group",
+        "summary": "Fetch group details",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step5 - Fetch group details",
+        "operationId": "GroupManagement_FetchGroupDetails",
         "produces": [
           "application/json"
         ],
@@ -465,21 +465,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "ID associated with the Connector"
           },
           {
             "name": "accessToken",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -500,11 +500,11 @@
     "/groups/{test-group-id}/subgroups": {
       "post": {
         "description": "API to create a group.\nOptional parameters:\n\tMembers: string array. Each string is mobile number(with country code). Max strings-100\n\t\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group.",
-        "summary": "Step6- Create a  sub group",
+        "summary": "Create a  sub group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step6- Create a  sub group",
+        "operationId": "GroupManagement_CreateSubGroup",
         "produces": [
           "application/json"
         ],
@@ -523,21 +523,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -557,12 +557,12 @@
     },
     "/groups/{test-group-id}/subGroups": {
       "put": {
-        "description": " Add group as a sub-group to another group",
+        "description": "Add group as a sub-group to another group",
         "summary": "This API allows lets addition of group as a sub-group to another group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step7 - Add group as a sub-group to another group",
+        "operationId": "GroupManagement_AddSubgroup",
         "produces": [
           "application/json"
         ],
@@ -581,21 +581,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -616,9 +616,9 @@
         "description": " Fetch sub-groups of a group",
         "summary": "This API is used to fetch sub-groups of a group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step8 - Fetch sub-group of a group",
+        "operationId": "GroupManagement_FetchSubgroup",
         "produces": [
           "application/json"
         ],
@@ -628,14 +628,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -684,11 +684,11 @@
     "/groups/{test-group-id}/subGroups/{test-sub-group-id}": {
       "delete": {
         "description": "Remove group as a sub-group to another group",
-        "summary": "Step9 - Remove group as a sub-group to another group",
+        "summary": "Remove group as a sub-group to another group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step9 - Remove group as a sub-group to another group",
+        "operationId": "GroupManagement_RemoveGroupAsSubgroup",
         "produces": [
           "application/json"
         ],
@@ -698,14 +698,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           },
           {
             "name": "test-sub-group-id",
@@ -732,12 +732,12 @@
     },
     "/groups/{test-group-id}/members": {
       "put": {
-        "description": "Add members to a group",
-        "summary": "Step10 - Add members to a group",
+        "description": "This API lets addition of members to a group",
+        "summary": "Add members to a group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step10 - Add members to a group",
+        "operationId": "GroupManagement_AddMembers",
         "produces": [
           "application/json"
         ],
@@ -756,21 +756,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -788,12 +788,12 @@
         }
       },
       "get": {
-        "description": "Querying members of a group",
-        "summary": "Step11 - Query members of a group",
+        "description": "This API returns list of members in a group",
+        "summary": "Fetch members of a group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step11 - Query members of a group",
+        "operationId": "GroupManagement_FetchMembers",
         "produces": [
           "application/json"
         ],
@@ -803,14 +803,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -830,12 +830,12 @@
     },
     "/groups/{test-group-id}/members/364388bc-5b7f-4857-a58c-31eba18e962e": {
       "delete": {
-        "description": "Remove members from a group",
-        "summary": "Step12 - Remove members from a group",
+        "description": "This API allows removals of members from a group",
+        "summary": "Remove members from a group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step12 - Remove members from a group",
+        "operationId": "GroupManagement_RemoveMembers",
         "produces": [
           "application/json"
         ],
@@ -845,14 +845,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -872,12 +872,12 @@
     },
     "/groups/{test-public-group-id}/subscribers": {
       "post": {
-        "description": "Get subscribers of a public group",
-        "summary": "Step14 - Get Subscribers of a public group",
+        "description": "This API fetches list of subscribers of a managed public group",
+        "summary": "Get Subscribers of a public group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step14 - Get Subscribers of a public group",
+        "operationId": "GroupManagement_GetSubscribers",
         "produces": [
           "application/json"
         ],
@@ -896,14 +896,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-public-group-id",
@@ -930,12 +930,12 @@
     },
     "/groups/{test-public-group-id}/subscribers/add": {
       "put": {
-        "description": "Add subscribers to a public group",
-        "summary": "Step13 - Add Subscribers to a public group",
+        "description": "This API adds subscribers to a public group",
+        "summary": "Add Subscribers to a public group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step13 - Add Subscribers to a public group",
+        "operationId": "GroupManagement_AddSubscribers",
         "produces": [
           "application/json"
         ],
@@ -954,14 +954,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-public-group-id",
@@ -988,12 +988,12 @@
     },
     "/groups/{test-public-group-id}/subscribers/remove": {
       "put": {
-        "description": "Remove subscribers from a public group",
-        "summary": "Step15 - Remove Subscribers from a public group",
+        "description": "This API lets a user to remove subscribers from a public group",
+        "summary": "Remove Subscribers from a public group",
         "tags": [
-          "[2.0] Group management"
+          "GroupManagement"
         ],
-        "operationId": "Step15 - Remove Subscribers from a public group",
+        "operationId": "GroupManagement_RemoveSubscribers",
         "produces": [
           "application/json"
         ],
@@ -1012,14 +1012,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-public-group-id",
@@ -1046,12 +1046,12 @@
     },
     "/media": {
       "post": {
-        "description": "upload media",
-        "summary": "This API uploads media (image, document, audio, album or video)",
+        "description": "This API uploads media (image, document, audio, album or video)",
+        "summary": "Upload media",
         "tags": [
-          "[3.0] Content Creation APIs"
+          "ContentCreation"
         ],
-        "operationId": "(a) Upload media (image, document, audio, album or video)",
+        "operationId": "ContentCreation_Uploadmedia",
         "produces": [
           "application/json"
         ],
@@ -1072,7 +1072,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           }
         ],
         "responses": {
@@ -1092,12 +1092,12 @@
     },
     "/groups/{test-public-group-id}/messages": {
       "post": {
-        "description": "Send a message to subscribers in a public group",
+        "description": "This API lets you send a message to subscribers in a public group",
         "summary": "Send message to subscriber(s) in a public group",
         "tags": [
-          "[3.0] Content Creation APIs"
+          "ContentCreation"
         ],
-        "operationId": "Send message to subscriber(s) in a public group",
+        "operationId": "ContentCreation_SendmessagetoSubscriber",
         "produces": [
           "application/json"
         ],
@@ -1116,14 +1116,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-public-group-id",
@@ -1150,12 +1150,12 @@
     },
     "/groups/{test-group-id}/actions/{test-survey-id}/responses": {
       "post": {
-        "description": "Posting a survey response",
+        "description": "This API lets you post a response to a given survey",
         "summary": "Posting a response to a survey",
         "tags": [
-          "[3.0] Content Creation APIs"
+          "ContentCreation"
         ],
-        "operationId": "Posting a response to a survey",
+        "operationId": "ContentCreation_PostingSurveyResponse",
         "produces": [
           "application/json"
         ],
@@ -1174,21 +1174,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "accessToken",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           },
           {
             "name": "test-survey-id",
@@ -1215,12 +1215,12 @@
     },
     "/groups/{test-group-id}/actions/{test-action-id}/responses": {
       "post": {
-        "description": "Posting action response",
+        "description": "This API lets you post a response to an Action",
         "summary": "Posting a response to an action",
         "tags": [
-          "[3.0] Content Creation APIs"
+          "ContentCreation"
         ],
-        "operationId": "Posting a response to an action",
+        "operationId": "ContentCreation_PostingActionResponse",
         "produces": [
           "application/json"
         ],
@@ -1239,28 +1239,28 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "accessToken",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           },
           {
             "name": "test-action-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with given Action"
           }
         ],
         "responses": {
@@ -1283,9 +1283,9 @@
         "description": "Send a message on a group",
         "summary": "Send message on a group",
         "tags": [
-          "[3.0] Content Creation APIs"
+          "ContentCreation"
         ],
-        "operationId": "Send message on a group",
+        "operationId": "ContentCreation_Sendmessage",
         "produces": [
           "application/json"
         ],
@@ -1304,21 +1304,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -1338,12 +1338,12 @@
     },
     "/groups/{test-public-group-id}/actions": {
       "post": {
-        "description": "Post a custome action to subscibers in a public group",
+        "description": "This API lets you post a custom action to subscibers in a public group",
         "summary": "Post custom action to subscriber(s) in a public group",
         "tags": [
-          "[3.0] Content Creation APIs"
+          "ContentCreation"
         ],
-        "operationId": "Post custom action to subscriber(s) in a public group",
+        "operationId": "ContentCreation_PostCustomActionSubscriber",
         "produces": [
           "application/json"
         ],
@@ -1362,21 +1362,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-public-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given public group"
           }
         ],
         "responses": {
@@ -1396,12 +1396,12 @@
     },
     "/groups/{test-group-id}/actions/{test-survey-id}": {
       "get": {
-        "description": "fetch survey responses",
+        "description": "This API lets you fetch responses for a survey",
         "summary": "Fetching survey responses",
         "tags": [
-          "[4.0] Content Query APIs"
+          "ContentQuery"
         ],
-        "operationId": "Fetching survey responses",
+        "operationId": "ContentQuery_FetchingSurveyResponses",
         "produces": [
           "application/json"
         ],
@@ -1418,21 +1418,21 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           },
           {
             "name": "test-survey-id",
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given survey"
           }
         ],
         "responses": {
@@ -1455,9 +1455,9 @@
         "description": "Fetch jobs in a group",
         "summary": "Fetch jobs in a group",
         "tags": [
-          "[4.0] Content Query APIs"
+          "ContentQuery"
         ],
-        "operationId": "Fetch jobs in a group",
+        "operationId": "ContentQuery_FetchJobs",
         "produces": [
           "application/json"
         ],
@@ -1481,7 +1481,7 @@
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -1499,12 +1499,12 @@
         }
       },
       "post": {
-        "description": "Create a survey and send on a group",
+        "description": "This API lets you create a survey and send on a group",
         "summary": "Send survey on a group",
         "tags": [
-          "[3.0] Content Creation APIs"
+          "ContentCreation"
         ],
-        "operationId": "Send survey on a group",
+        "operationId": "ContentCreation_SendSurvey",
         "produces": [
           "application/json"
         ],
@@ -1523,7 +1523,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "accessToken",
@@ -1537,7 +1537,7 @@
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "GUID associated with the given group"
           }
         ],
         "responses": {
@@ -1557,12 +1557,12 @@
     },
     "/webhook": {
       "get": {
-        "description": "Get all webhooks on a group",
+        "description": "This API returns all webhooks on a group",
         "summary": "Get all webhooks on a group",
         "tags": [
-          "[5.0] Subscription APIs (webhooks)"
+          "Subscription"
         ],
-        "operationId": "Get all webhooks on a group",
+        "operationId": "Subscription_GetAllWebhooks",
         "produces": [
           "application/json"
         ],
@@ -1572,14 +1572,14 @@
             "in": "query",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id"
           },
           {
             "name": "objectType",
             "in": "query",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Enum: Group/Action/ActionPackage"
           },
           {
             "name": "accessToken",
@@ -1629,9 +1629,9 @@
         "description": "Subscribe to all events at action level",
         "summary": "Subscribe to all events at action level",
         "tags": [
-          "[5.0] Subscription APIs (webhooks)"
+          "Subscription"
         ],
-        "operationId": "Subscribe to all events at action level",
+        "operationId": "Subscription_SubscribeToAllEvents",
         "produces": [
           "application/json"
         ],
@@ -1657,7 +1657,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           }
         ],
         "responses": {
@@ -1704,9 +1704,9 @@
         "description": "Unsubscribing a webhook",
         "summary": "Unsubscribing awebhook",
         "tags": [
-          "[5.0] Subscription APIs (webhooks)"
+          "Subscription"
         ],
-        "operationId": "Unsubscribing awebhook",
+        "operationId": "Subscription_UnsubscribingaWebhook",
         "produces": [
           "application/json"
         ],
@@ -1723,7 +1723,7 @@
             "in": "path",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Identifier representing the webHook created"
           }
         ],
         "responses": {
