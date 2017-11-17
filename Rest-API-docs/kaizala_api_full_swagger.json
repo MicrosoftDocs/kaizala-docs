@@ -2,18 +2,17 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0",
-    "title": "Kaizala Server APIs",
-    "description": "TODO: Add Description",
+    "title": "Microsoft Kaizala",
+    "description": "Microsoft Kaizala is a mobile app that helps you connect with your entire mobile workforce and supply chain, organize and allocate tasks more efficiently with built-in and custom Actions, and get actionable information and insights to accelerate decision-making."
+  },
+  "x-ms-api-annotation": {
     "license": {
-      "name": "MIT",
-      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+      "status": "Preview"
     }
   },
-  "host": "example.com",
+  "host": "kms.kaiza.la",
   "basePath": "/v1",
-  "schemes": [
-    "http"
-  ],
+  "schemes": [ "https" ],
   "consumes": [
     "application/json"
   ],
@@ -21,1186 +20,14 @@
     "application/json"
   ],
   "paths": {
-    "/groups/{test-group-id}/subGroups": {
-      "get": {
-        "description": " Fetch sub-groups of a group",
-        "summary": "Step8 - Fetch sub-group of a group",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step8 - Fetch sub-group of a group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Step8  fetch subGroup of a groupresponse"
-            },
-            "examples": {
-              "application/json": {
-                "groupName": "Kaizala Test group",
-                "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
-                "groupImageUrl": "",
-                "hasSubGroups": true,
-                "hasParentGroups": false,
-                "isMappedToTenant": false,
-                "groupType": "Group",
-                "subGroups": [
-                  {
-                    "groupName": "Kaizala Test sub group",
-                    "groupId": "d15fce78-d5c5-410f-845d-a747f02de912",
-                    "groupImageUrl": "",
-                    "hasSubGroups": false,
-                    "hasParentGroups": true,
-                    "isMappedToTenant": false,
-                    "groupType": "Group",
-                    "isDuplicate": false,
-                    "welcomeMessage": "Welcome to sub group created programmatically via Postman"
-                  }
-                ],
-                "welcomeMessage": "Welcome to group created programmatically via Postman"
-              }
-            }
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "put": {
-        "description": " Add group as a sub-group to another group",
-        "summary": "Step7 - Add group as a sub-group to another group",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step7 - Add group as a sub-group to another group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Step7  add group as a subGroup to another grouprequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups": {
-      "get": {
-        "description": "Fetch all direct groups",
-        "summary": "Step3 - Fetch groups - direct",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step3 - Fetch groups - direct",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/groups",
-              "headers": {
-                "accessToken": "{{access-token}}"
-              }
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Step3 - Fetch groups - direct",
-            "x-testDescription": "Fetch all direct groups"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "post": {
-        "description": "API to create a group.\nOptional parameters:\n\tMembers: string array. Each string is mobile number(with country code). Max strings-100\n\t\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group.",
-        "summary": "Step1 - Create a group",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step1 - Create a group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Step2  create a managed public grouprequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Step1  create a groupresponse"
-            },
-            "examples": {
-              "application/json": {
-                "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
-                "groupName": "Kaizala Test group",
-                "membersAdded": true
-              }
-            }
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "POST",
-              "uri": "/groups",
-              "headers": {
-                "Content-Type": "application/json",
-                "accessToken": "{{access-token}}"
-              },
-              "body": "{name:\"Kaizala Test group\", welcomeMessage:\"Welcome to group created programmatically via Postman\", members:[\"{{mobile-number-2}}\"], groupType:\"Group\"}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "RAW",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {
-                "access-control-allow-origin": "*",
-                "content-length": "103",
-                "content-type": "application/json; charset=utf-8",
-                "date": "Thu, 14 Sep 2017 10:57:24 GMT",
-                "server": "Microsoft-IIS/10.0",
-                "status": "200",
-                "x-powered-by": "ASP.NET"
-              },
-              "body": "{\"groupId\":\"5fe5b80a-52d1-4d8a-8086-cf8f34259de2\",\"groupName\":\"Kaizala Test group\",\"membersAdded\":true}"
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Step1 - Create a group",
-            "x-testDescription": "API to create a group.\nOptional parameters:\n\tMembers: string array. Each string is mobile number(with country code). Max strings-100\n\t\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group."
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-group-id}/actions": {
-      "get": {
-        "description": "Fetch jobs in a group",
-        "summary": "Fetch jobs in a group",
-        "tags": [
-          "[4.0] Content Query APIs"
-        ],
-        "operationId": "Fetch jobs in a group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "actionType",
-            "in": "query",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "post": {
-        "description": "Create a survey and send on a group",
-        "summary": "Send survey on a group",
-        "tags": [
-          "[3.0] Content Creation APIs"
-        ],
-        "operationId": "Send survey on a group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/SendSurveyOnAGrouprequest"
-            }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/webhook": {
-      "get": {
-        "description": "Get all webhooks on a group",
-        "summary": "Get all webhooks on a group",
-        "tags": [
-          "[5.0] Subscription APIs (webhooks)"
-        ],
-        "operationId": "Get all webhooks on a group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "objectId",
-            "in": "query",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "objectType",
-            "in": "query",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/webhook?objectId={{test-group-id}}&objectType=Group",
-              "headers": {
-                "accessToken": "{{access-token}}"
-              }
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Get all webhooks on a group",
-            "x-testDescription": "Get all webhooks on a group"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "post": {
-        "description": "Subscribe to all events at action level",
-        "summary": "Subscribe to all events at action level",
-        "tags": [
-          "[5.0] Subscription APIs (webhooks)"
-        ],
-        "operationId": "Subscribe to all events at action level",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/SubscribeToAllEventsAtActionLevelrequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "POST",
-              "uri": "/webhook",
-              "headers": {
-                "Content-Type": "application/json",
-                "accessToken": "{{access-token}}"
-              },
-              "body": "{  \r\n   \"objectId\":\"{{test-action-id}}\",\r\n   \"objectType\":\"Action\",\r\n   \"eventTypes\":[  \r\n      \"ActionCreated\",\r\n      \"ActionResponse\"\r\n   ],\r\n   \"callBackUrl\":\"https://requestb.in/12786un1\",\r\n   \"callBackToken\":\"tokenToBeVerifiedByCallback\",\r\n   \"callBackContext\":\"Any data which is required to be returned in callback. Current webhook data can be seen by refreshing: https://requestb.in/12786un1?inspect\"\r\n}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Subscribe to all events at action level",
-            "x-testDescription": "Subscribe to all events at action level"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-public-group-id}/messages": {
-      "post": {
-        "description": "Send a message to subscribers in a public group",
-        "summary": "Send message to subscriber(s) in a public group",
-        "tags": [
-          "[3.0] Content Creation APIs"
-        ],
-        "operationId": "Send message to subscriber(s) in a public group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/SendMessageToSubscriber(s)InAPublicGrouprequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-public-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-group-id}/members": {
-      "get": {
-        "description": "Querying members of a group",
-        "summary": "Step11 - Query members of a group",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step11 - Query members of a group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "put": {
-        "description": "Add members to a group",
-        "summary": "Step10 - Add members to a group",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step10 - Add members to a group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Step10  add members to a grouprequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-group-id}/actions/{test-survey-id}/responses": {
-      "post": {
-        "description": "Posting a survey response",
-        "summary": "Posting a response to a survey",
-        "tags": [
-          "[3.0] Content Creation APIs"
-        ],
-        "operationId": "Posting a response to a survey",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/PostingAResponseToASurveyrequest"
-            }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-survey-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/accessToken": {
-      "get": {
-        "description": "Generate access token from refresh token, applicationId and applicationSecret",
-        "summary": "Step3 - Retrieve the access token",
-        "tags": [
-          "[1.0] Authentication"
-        ],
-        "operationId": "Step3 - Retrieve the access token",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "applicationId",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "applicationSecret",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "refreshToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Step3  retrieve the access tokenresponse"
-            },
-            "examples": {
-              "application/json": {
-                "accessToken": "asdasadadaad",
-                "endpointUrl": "https://inc-000.KaizalaMessaging.osi.office.net",
-                "accessTokenExpiry": 1505566877207,
-                "scope": "token.write"
-              }
-            }
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/accessToken",
-              "headers": {
-                "applicationId": "{{application-id}}",
-                "applicationSecret": "{{application-secret}}",
-                "refreshToken": "{{refresh-token}}"
-              }
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "RAW",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {
-                "content-length": "993",
-                "content-type": "application/json; charset=utf-8",
-                "date": "Fri, 15 Sep 2017 13:01:16 GMT",
-                "server": "Microsoft-IIS/10.0",
-                "status": "200",
-                "x-powered-by": "ASP.NET"
-              },
-              "body": "{\n    \"accessToken\": \"asdasadadaad\",\n    \"endpointUrl\": \"https://inc-000.KaizalaMessaging.osi.office.net\",\n    \"accessTokenExpiry\": 1505566877207,\n    \"scope\": \"token.write\"\n}"
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Step3 - Retrieve the access token",
-            "x-testDescription": "Generate access token from refresh token, applicationId and applicationSecret"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-group-id}/actions/{test-action-id}/responses": {
-      "post": {
-        "description": "Posting action response",
-        "summary": "Posting a response to an action",
-        "tags": [
-          "[3.0] Content Creation APIs"
-        ],
-        "operationId": "Posting a response to an action",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/PostingAResponseToAnActionrequest"
-            }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-action-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-group-id}": {
-      "get": {
-        "description": "Fetch group details",
-        "summary": "Step5 - Fetch group details",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step5 - Fetch group details",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "applicationId",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-public-group-id}/subscribers/remove": {
-      "put": {
-        "description": "Remove subscribers from a public group",
-        "summary": "Step15 - Remove Subscribers from a public group",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step15 - Remove Subscribers from a public group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Step15  remove subscribers from a public grouprequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-public-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-group-id}/actions/{test-survey-id}": {
-      "get": {
-        "description": "fetch survey responses",
-        "summary": "Fetching survey responses",
-        "tags": [
-          "[4.0] Content Query APIs"
-        ],
-        "operationId": "Fetching survey responses",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "getDetails",
-            "in": "query",
-            "required": true,
-            "type": "boolean",
-            "description": ""
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-survey-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-group-id}/subgroups": {
-      "post": {
-        "description": "API to create a group.\nOptional parameters:\n\tMembers: string array. Each string is mobile number(with country code). Max strings-100\n\t\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group.",
-        "summary": "Step6- Create a  sub group",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step6- Create a  sub group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/Step2  create a managed public grouprequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-group-id}/subGroups/{test-sub-group-id}": {
-      "delete": {
-        "description": "Remove group as a sub-group to another group",
-        "summary": "Step9 - Remove group as a sub-group to another group",
-        "tags": [
-          "[2.0] Group management"
-        ],
-        "operationId": "Step9 - Remove group as a sub-group to another group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-sub-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
     "/generatePin": {
       "post": {
-        "description": "Api to trigger Kaizala otp",
-        "summary": "Step1 - Generate Pin",
+        "description": "This API generates One-time PIN for a mobile number, when Application/Connector Id is provided.",
+        "summary": "Generate One-Time PIN",
         "tags": [
-          "[1.0] Authentication"
+          "Authentication"
         ],
-        "operationId": "Step1 - Generate Pin",
+        "operationId": "Authentication_GeneratePin",
         "produces": [
           "application/json"
         ],
@@ -1211,7 +38,26 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step1  generate pinrequest"
+               "title": "Generate Pin Request",
+                "example": {
+                    "mobileNumber": "{{mobile-number}}",
+                    "applicationId": "{{application-id}}"
+                },
+                "type": "object",
+                "properties": {
+                    "mobileNumber": {
+                    "description": "Mobile Number for which PIN would be generated",
+                    "type": "string"
+                    },
+                    "applicationId": {
+                    "description": "ID associated with the Connector",
+                    "type": "string"
+                    }
+                },
+                "required": [
+                    "mobileNumber",
+                    "applicationId"
+                ]
             }
           },
           {
@@ -1219,7 +65,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           }
         ],
         "responses": {
@@ -1233,7 +79,7 @@
             }
           }
         },
-        "security": [],
+        "security": [ ],
         "x-unitTests": [
           {
             "request": {
@@ -1275,172 +121,14 @@
         }
       }
     },
-    "/groups/{test-group-id}/messages": {
-      "post": {
-        "description": "Send a message on a group",
-        "summary": "Send message on a group",
-        "tags": [
-          "[3.0] Content Creation APIs"
-        ],
-        "operationId": "Send message on a group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/SendMessageOnAGrouprequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/groups/{test-public-group-id}/actions": {
-      "post": {
-        "description": "Post a custome action to subscibers in a public group",
-        "summary": "Post custom action to subscriber(s) in a public group",
-        "tags": [
-          "[3.0] Content Creation APIs"
-        ],
-        "operationId": "Post custom action to subscriber(s) in a public group",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/PostCustomActionToSubscriber(s)InAPublicGrouprequest"
-            }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-public-group-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/webhook/{test-webhook-id}": {
-      "delete": {
-        "description": "Unsubscribing a webhook",
-        "summary": "Unsubscribing awebhook",
-        "tags": [
-          "[5.0] Subscription APIs (webhooks)"
-        ],
-        "operationId": "Unsubscribing awebhook",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "test-webhook-id",
-            "in": "path",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
     "/loginWithPinAndApplicationId": {
       "post": {
-        "description": "Login with pin and applicationId to get refreshToken",
-        "summary": "Step2 - Login with pin and applicationId to get refreshToken",
+        "description": "This API generates refresh token for the given Application/Connector Id, when pin, mobile number & Application/Connector Id is provided.",
+        "summary": "Login with pin and applicationId to get refreshToken",
         "tags": [
-          "[1.0] Authentication"
+          "Authentication"
         ],
-        "operationId": "Step2 - Login with pin and applicationId to get refreshToken",
+        "operationId": "Authentication_getRefreshToken",
         "produces": [
           "application/json"
         ],
@@ -1451,7 +139,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step2  login with pin and applicationid to get refreshtokenrequest"
+              "$ref": "#/definitions/login with pin and applicationid to get refreshtokenrequest"
             }
           },
           {
@@ -1459,14 +147,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           }
         ],
         "responses": {
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step2  login with pin and applicationid to get refreshtokenresponse"
+              "$ref": "#/definitions/login with pin and applicationid to get refreshtokenresponse"
             },
             "examples": {
               "application/json": {
@@ -1477,7 +165,7 @@
             }
           }
         },
-        "security": [],
+        "security": [ ],
         "x-unitTests": [
           {
             "request": {
@@ -1519,14 +207,198 @@
         }
       }
     },
-    "/groups/{test-group-id}/members/364388bc-5b7f-4857-a58c-31eba18e962e": {
-      "delete": {
-        "description": "Remove members from a group",
-        "summary": "Step12 - Remove members from a group",
+    "/accessToken": {
+      "get": {
+        "description": "This API generates Access token to access Kaizala resources, when refresh token, Application/Connector Id and Application/Connector Secret is provided",
+        "summary": "Retrieve the access token",
         "tags": [
-          "[2.0] Group management"
+          "Authentication"
         ],
-        "operationId": "Step12 - Remove members from a group",
+        "operationId": "Authentication_GenerateAccesstoken",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "applicationId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "ID associated with the Connector"
+          },
+          {
+            "name": "applicationSecret",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Secret associated with the Connector"
+          },
+          {
+            "name": "refreshToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "refreshToken shared by the Kaizala Group Admin when the respective Connector was granted access to the group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Retrieve the access tokenresponse"
+            },
+            "examples": {
+              "application/json": {
+                "accessToken": "asdasadadaad",
+                "endpointUrl": "https://inc-000.KaizalaMessaging.osi.office.net",
+                "accessTokenExpiry": 1505566877207,
+                "scope": "token.write"
+              }
+            }
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/accessToken",
+              "headers": {
+                "applicationId": "{{application-id}}",
+                "applicationSecret": "{{application-secret}}",
+                "refreshToken": "{{refresh-token}}"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {
+                "content-length": "993",
+                "content-type": "application/json; charset=utf-8",
+                "date": "Fri, 15 Sep 2017 13:01:16 GMT",
+                "server": "Microsoft-IIS/10.0",
+                "status": "200",
+                "x-powered-by": "ASP.NET"
+              },
+              "body": "{\n    \"accessToken\": \"asdasadadaad\",\n    \"endpointUrl\": \"https://inc-000.KaizalaMessaging.osi.office.net\",\n    \"accessTokenExpiry\": 1505566877207,\n    \"scope\": \"token.write\"\n}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Step3 - Retrieve the access token",
+            "x-testDescription": "Generate access token from refresh token, applicationId and applicationSecret"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups": {
+      "post": {
+        "description": "This API allows creation of a a group, including Managed Public Groups. It takes array of string as input. Each string is mobile number(with country code). This API can take maximum of 100 mobile numbers as input.\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group.",
+        "summary": "Create a group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_CreateGroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create a managed public grouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point "
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create a group response"
+            },
+            "examples": {
+              "application/json": {
+                "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
+                "groupName": "Kaizala Test group",
+                "membersAdded": true
+              }
+            }
+          }
+        },
+        "security": [ ],
+        "x-ms-examples": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/groups",
+              "headers": {
+                "Content-Type": "application/json",
+                "accessToken": "{{access-token}}"
+              },
+              "body": "{name:\"Kaizala Test group\", welcomeMessage:\"Welcome to group created programmatically via Postman\", members:[\"{{mobile-number-2}}\"], groupType:\"Group\"}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {
+                "access-control-allow-origin": "*",
+                "content-length": "103",
+                "content-type": "application/json; charset=utf-8",
+                "date": "Thu, 14 Sep 2017 10:57:24 GMT",
+                "server": "Microsoft-IIS/10.0",
+                "status": "200",
+                "x-powered-by": "ASP.NET"
+              },
+              "body": "{\"groupId\":\"5fe5b80a-52d1-4d8a-8086-cf8f34259de2\",\"groupName\":\"Kaizala Test group\",\"membersAdded\":true}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Step1 - Create a group",
+            "x-testDescription": "API to create a group.\nOptional parameters:\n\tMembers: string array. Each string is mobile number(with country code). Max strings-100\n\t\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group."
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "get": {
+        "description": "This API returns all direct groups attached with the user",
+        "summary": "Fetch direct groups",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_fetchDirectGroups",
         "produces": [
           "application/json"
         ],
@@ -1536,10 +408,307 @@
             "in": "header",
             "required": true,
             "type": "string",
+            "description": "Access Token received from the auth end-point"
+          }
+        ],
+        "responses": {
+          "200": {
             "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/groups",
+              "headers": {
+                "accessToken": "{{access-token}}"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": { }
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Step3 - Fetch groups - direct",
+            "x-testDescription": "Fetch all direct groups"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}": {
+      "get": {
+        "description": "This API can be used to fetch details for a group",
+        "summary": "Fetch group details",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_FetchGroupDetails",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "applicationId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "ID associated with the Connector"
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/subgroups": {
+      "post": {
+        "description": "API to create a group.\nOptional parameters:\n\tMembers: string array. Each string is mobile number(with country code). Max strings-100\n\t\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group.",
+        "summary": "Create a  sub group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_CreateSubGroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Create a managed public grouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/subGroups": {
+      "put": {
+        "description": "Add group as a sub-group to another group",
+        "summary": "This API allows lets addition of group as a sub-group to another group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_AddSubgroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Add group as a subGroup to another grouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "get": {
+        "description": " Fetch sub-groups of a group",
+        "summary": "This API is used to fetch sub-groups of a group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_FetchSubgroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/fetch subGroup of a groupresponse"
+            },
+            "examples": {
+              "application/json": {
+                "groupName": "Kaizala Test group",
+                "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
+                "groupImageUrl": "",
+                "hasSubGroups": true,
+                "hasParentGroups": false,
+                "isMappedToTenant": false,
+                "groupType": "Group",
+                "subGroups": [
+                  {
+                    "groupName": "Kaizala Test sub group",
+                    "groupId": "d15fce78-d5c5-410f-845d-a747f02de912",
+                    "groupImageUrl": "",
+                    "hasSubGroups": false,
+                    "hasParentGroups": true,
+                    "isMappedToTenant": false,
+                    "groupType": "Group",
+                    "isDuplicate": false,
+                    "welcomeMessage": "Welcome to sub group created programmatically via Postman"
+                  }
+                ],
+                "welcomeMessage": "Welcome to group created programmatically via Postman"
+              }
+            }
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/subGroups/{test-sub-group-id}": {
+      "delete": {
+        "description": "Remove group as a sub-group to another group",
+        "summary": "Remove group as a sub-group to another group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_RemoveGroupAsSubgroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          },
+          {
+            "name": "test-sub-group-id",
             "in": "path",
             "required": true,
             "type": "string",
@@ -1551,8 +720,322 @@
             "description": ""
           }
         },
-        "security": [],
-        "x-unitTests": [],
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/members": {
+      "put": {
+        "description": "This API lets addition of members to a group",
+        "summary": "Add members to a group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_AddMembers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Add members to a grouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "get": {
+        "description": "This API returns list of members in a group",
+        "summary": "Fetch members of a group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_FetchMembers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/members/364388bc-5b7f-4857-a58c-31eba18e962e": {
+      "delete": {
+        "description": "This API allows removals of members from a group",
+        "summary": "Remove members from a group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_RemoveMembers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-public-group-id}/subscribers": {
+      "post": {
+        "description": "This API fetches list of subscribers of a managed public group",
+        "summary": "Get Subscribers of a public group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_GetSubscribers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Get subscribers of a public grouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "test-public-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-public-group-id}/subscribers/add": {
+      "put": {
+        "description": "This API adds subscribers to a public group",
+        "summary": "Add Subscribers to a public group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_AddSubscribers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Remove subscribers from a public grouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "test-public-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-public-group-id}/subscribers/remove": {
+      "put": {
+        "description": "This API lets a user to remove subscribers from a public group",
+        "summary": "Remove Subscribers from a public group",
+        "tags": [
+          "GroupManagement"
+        ],
+        "operationId": "GroupManagement_RemoveSubscribers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Remove subscribers from a public grouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "test-public-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
         "x-operation-settings": {
           "CollectParameters": false,
           "AllowDynamicQueryParameters": false,
@@ -1563,12 +1046,12 @@
     },
     "/media": {
       "post": {
-        "description": "upload media",
-        "summary": "(a) Upload media (image, document, audio, album or video)",
+        "description": "This API uploads media (image, document, audio, album or video)",
+        "summary": "Upload media",
         "tags": [
-          "[3.0] Content Creation APIs"
+          "ContentCreation"
         ],
-        "operationId": "(a) Upload media (image, document, audio, album or video)",
+        "operationId": "ContentCreation_Uploadmedia",
         "produces": [
           "application/json"
         ],
@@ -1589,7 +1072,7 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           }
         ],
         "responses": {
@@ -1597,8 +1080,8 @@
             "description": ""
           }
         },
-        "security": [],
-        "x-unitTests": [],
+        "security": [ ],
+        "x-unitTests": [ ],
         "x-operation-settings": {
           "CollectParameters": false,
           "AllowDynamicQueryParameters": false,
@@ -1607,14 +1090,14 @@
         }
       }
     },
-    "/groups/{test-public-group-id}/subscribers": {
+    "/groups/{test-public-group-id}/messages": {
       "post": {
-        "description": "Get subscribers of a public group",
-        "summary": "Step14 - Get Subscribers of a public group",
+        "description": "This API lets you send a message to subscribers in a public group",
+        "summary": "Send message to subscriber(s) in a public group",
         "tags": [
-          "[2.0] Group management"
+          "ContentCreation"
         ],
-        "operationId": "Step14 - Get Subscribers of a public group",
+        "operationId": "ContentCreation_SendmessagetoSubscriber",
         "produces": [
           "application/json"
         ],
@@ -1625,7 +1108,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step14  get subscribers of a public grouprequest"
+              "$ref": "#/definitions/SendMessageToSubscriber(s)InAPublicGrouprequest"
             }
           },
           {
@@ -1633,14 +1116,14 @@
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "Access Token received from the auth end-point"
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
             "name": "test-public-group-id",
@@ -1655,8 +1138,8 @@
             "description": ""
           }
         },
-        "security": [],
-        "x-unitTests": [],
+        "security": [ ],
+        "x-unitTests": [ ],
         "x-operation-settings": {
           "CollectParameters": false,
           "AllowDynamicQueryParameters": false,
@@ -1665,14 +1148,14 @@
         }
       }
     },
-    "/groups/{test-public-group-id}/subscribers/add": {
-      "put": {
-        "description": "Add subscribers to a public group",
-        "summary": "Step13 - Add Subscribers to a public group",
+    "/groups/{test-group-id}/actions/{test-survey-id}/responses": {
+      "post": {
+        "description": "This API lets you post a response to a given survey",
+        "summary": "Posting a response to a survey",
         "tags": [
-          "[2.0] Group management"
+          "ContentCreation"
         ],
-        "operationId": "Step13 - Add Subscribers to a public group",
+        "operationId": "ContentCreation_PostingSurveyResponse",
         "produces": [
           "application/json"
         ],
@@ -1683,25 +1166,32 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Step15  remove subscribers from a public grouprequest"
+              "$ref": "#/definitions/PostingAResponseToASurveyrequest"
             }
-          },
-          {
-            "name": "accessToken",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           },
           {
             "name": "Content-Type",
             "in": "header",
             "required": true,
             "type": "string",
-            "description": ""
+            "description": "application/json"
           },
           {
-            "name": "test-public-group-id",
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          },
+          {
+            "name": "test-survey-id",
             "in": "path",
             "required": true,
             "type": "string",
@@ -1713,8 +1203,536 @@
             "description": ""
           }
         },
-        "security": [],
-        "x-unitTests": [],
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/actions/{test-action-id}/responses": {
+      "post": {
+        "description": "This API lets you post a response to an Action",
+        "summary": "Posting a response to an action",
+        "tags": [
+          "ContentCreation"
+        ],
+        "operationId": "ContentCreation_PostingActionResponse",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/PostingAResponseToAnActionrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          },
+          {
+            "name": "test-action-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with given Action"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/messages": {
+      "post": {
+        "description": "Send a message on a group",
+        "summary": "Send message on a group",
+        "tags": [
+          "ContentCreation"
+        ],
+        "operationId": "ContentCreation_Sendmessage",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/SendMessageOnAGrouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-public-group-id}/actions": {
+      "post": {
+        "description": "This API lets you post a custom action to subscibers in a public group",
+        "summary": "Post custom action to subscriber(s) in a public group",
+        "tags": [
+          "ContentCreation"
+        ],
+        "operationId": "ContentCreation_PostCustomActionSubscriber",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/PostCustomActionToSubscriber(s)InAPublicGrouprequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "test-public-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given public group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/actions/{test-survey-id}": {
+      "get": {
+        "description": "This API lets you fetch responses for a survey",
+        "summary": "Fetching survey responses",
+        "tags": [
+          "ContentQuery"
+        ],
+        "operationId": "ContentQuery_FetchingSurveyResponses",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "getDetails",
+            "in": "query",
+            "required": true,
+            "type": "boolean",
+            "description": ""
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          },
+          {
+            "name": "test-survey-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given survey"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/groups/{test-group-id}/actions": {
+      "get": {
+        "description": "Fetch jobs in a group",
+        "summary": "Fetch jobs in a group",
+        "tags": [
+          "ContentQuery"
+        ],
+        "operationId": "ContentQuery_FetchJobs",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "actionType",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Type of Action"
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This API lets you create a survey and send on a group",
+        "summary": "Send survey on a group",
+        "tags": [
+          "ContentCreation"
+        ],
+        "operationId": "ContentCreation_SendSurvey",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/SendSurveyOnAGrouprequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-group-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "GUID associated with the given group"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/webhook": {
+      "get": {
+        "description": "This API returns all webhooks on a group",
+        "summary": "Get all webhooks on a group",
+        "tags": [
+          "Subscription"
+        ],
+        "operationId": "Subscription_GetAllWebhooks",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "objectId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id"
+          },
+          {
+            "name": "objectType",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Enum: Group/Action/ActionPackage"
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/webhook?objectId={{test-group-id}}&objectType=Group",
+              "headers": {
+                "accessToken": "{{access-token}}"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": { }
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get all webhooks on a group",
+            "x-testDescription": "Get all webhooks on a group"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "Subscribe to all events at action level",
+        "summary": "Subscribe to all events at action level",
+        "tags": [
+          "Subscription"
+        ],
+        "operationId": "Subscription_SubscribeToAllEvents",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/SubscribeToAllEventsAtActionLevelrequest"
+            }
+          },
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "application/json"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/webhook",
+              "headers": {
+                "Content-Type": "application/json",
+                "accessToken": "{{access-token}}"
+              },
+              "body": "{  \r\n   \"objectId\":\"{{test-action-id}}\",\r\n   \"objectType\":\"Action\",\r\n   \"eventTypes\":[  \r\n      \"ActionCreated\",\r\n      \"ActionResponse\"\r\n   ],\r\n   \"callBackUrl\":\"https://requestb.in/12786un1\",\r\n   \"callBackToken\":\"tokenToBeVerifiedByCallback\",\r\n   \"callBackContext\":\"Any data which is required to be returned in callback. Current webhook data can be seen by refreshing: https://requestb.in/12786un1?inspect\"\r\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": { }
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Subscribe to all events at action level",
+            "x-testDescription": "Subscribe to all events at action level"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/webhook/{test-webhook-id}": {
+      "delete": {
+        "description": "Unsubscribing a webhook",
+        "summary": "Unsubscribing awebhook",
+        "tags": [
+          "Subscription"
+        ],
+        "operationId": "Subscription_UnsubscribingaWebhook",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Access Token received from the auth end-point"
+          },
+          {
+            "name": "test-webhook-id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Identifier representing the webHook created"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [ ],
+        "x-unitTests": [ ],
         "x-operation-settings": {
           "CollectParameters": false,
           "AllowDynamicQueryParameters": false,
@@ -1725,8 +1743,8 @@
     }
   },
   "definitions": {
-    "Step7  add group as a subGroup to another grouprequest": {
-      "title": "Step7 - Add group as a sub-group to another groupRequest",
+    "Add group as a subGroup to another grouprequest": {
+      "title": "Add group as a sub-group to another groupRequest",
       "example": {
         "subGroups": [
           "{{test-sub-group-id}}"
@@ -1735,7 +1753,7 @@
       "type": "object",
       "properties": {
         "subGroups": {
-          "description": "",
+          "description": "Array of groups with the list of subGroups if any",
           "type": "array",
           "items": {
             "type": "string"
@@ -1746,8 +1764,8 @@
         "subGroups"
       ]
     },
-    "Step2  create a managed public grouprequest": {
-      "title": "Step2 - Create a managed public groupRequest",
+    "Create a managed public grouprequest": {
+      "title": "Create a managed public groupRequest",
       "example": {
         "name": "Kaizala Test Public Group",
         "welcomeMessage": "Welcome to public group created programmatically via Postman",
@@ -1759,22 +1777,22 @@
       "type": "object",
       "properties": {
         "name": {
-          "description": "",
+          "description": "Group name",
           "type": "string"
         },
         "welcomeMessage": {
-          "description": "",
+          "description": "Welcome message which will be displayed to new group member",
           "type": "string"
         },
         "members": {
-          "description": "",
+          "description": "Mobile number(with country code) of members to be added. Default: Access token's user will be added as admin of the group",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "groupType": {
-          "description": "",
+          "description": "Enum: Group/ConnectGroup. ConnectGroup will create Managed Public group. Default: Group",
           "type": "string"
         }
       },
@@ -1812,11 +1830,11 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "",
+          "description": "Id for the Action Instance",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody"
+          "$ref": "#/definitions/CustomActionBody"
         }
       },
       "required": [
@@ -1824,12 +1842,12 @@
         "actionBody"
       ]
     },
-    "ActionBody": {
-      "title": "ActionBody",
+    "CustomActionBody": {
+      "title": "CustomActionBody",
       "type": "object",
       "properties": {
         "properties": {
-          "description": "",
+          "description": "Each element of object[] is described below as Property Object. Only valid for creating Action Package Instance",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Property"
@@ -1845,15 +1863,15 @@
       "type": "object",
       "properties": {
         "name": {
-          "description": "",
+          "description": "Name of the property",
           "type": "string"
         },
         "value": {
-          "description": "",
+          "description": "Type of the property. Enum: Text, Numeric, Location, DateTime, StringList, Attachment, StringSet, AttachmentList",
           "type": "string"
         },
         "type": {
-          "description": "",
+          "description": "Value of the property",
           "type": "string"
         }
       },
@@ -1878,11 +1896,11 @@
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "",
+          "description": "Type of Action. Value: Job",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody6"
+          "$ref": "#/definitions/JobActionBody"
         }
       },
       "required": [
@@ -1890,23 +1908,23 @@
         "actionBody"
       ]
     },
-    "ActionBody6": {
-      "title": "ActionBody6",
+    "JobActionBody": {
+      "title": "JobActionBody",
       "type": "object",
       "properties": {
         "title": {
-          "description": "",
+          "description": "Title of the Job",
           "type": "string"
         },
         "assignedTo": {
-          "description": "",
+          "description": "Array of mobile numbers for the persons to whom Job is assigned",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "dueDate": {
-          "description": "",
+          "description": "Default: 24hrs. Number of hours before which job should be completed",
           "type": "integer",
           "format": "int32"
         }
@@ -1917,8 +1935,8 @@
         "dueDate"
       ]
     },
-    "(b1)SendImageOnAGrouprequest": {
-      "title": "(b1) Send image on a groupRequest",
+    "SendImageOnAGrouprequest": {
+      "title": "Send image on a groupRequest",
       "example": {
         "actionType": "Image",
         "actionBody": {
@@ -1929,11 +1947,11 @@
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "",
+          "description": "Type of Action",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody8"
+          "$ref": "#/definitions/ImageActionBody"
         }
       },
       "required": [
@@ -1941,16 +1959,16 @@
         "actionBody"
       ]
     },
-    "ActionBody8": {
-      "title": "ActionBody8",
+    "ImageActionBody": {
+      "title": "Image Action Body",
       "type": "object",
       "properties": {
         "caption": {
-          "description": "",
+          "description": "Text Message that would be sent along with the Image",
           "type": "string"
         },
         "mediaResource": {
-          "description": "",
+          "description": "MediaResource string from a previous call to /media where you need to upload the attachment",
           "type": "string"
         }
       },
@@ -1975,30 +1993,30 @@
       "type": "object",
       "properties": {
         "objectId": {
-          "description": "",
+          "description": "Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id",
           "type": "string"
         },
         "objectType": {
-          "description": "",
+          "description": "Enum:Group/Action/ActionPackage",
           "type": "string"
         },
         "eventTypes": {
-          "description": "",
+          "description": "Array of different types of events you need to subscribe the webhook to. Supported events are: ActionCreated,ActionResponse,SurveyCreated,JobCreated,SurveyResponse,JobResponse,TextMessageCreated,AttachmentCreated,Announcement,MemberAdded,MemberRemoved,GroupAdded,GroupRemoved",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "callBackUrl": {
-          "description": "",
+          "description": "HTTPS URL to which the subscribed events need to be notified to",
           "type": "string"
         },
         "callBackToken": {
-          "description": "",
+          "description": "Optional parameter you can set which will be sent in the HTTP header 'kz-callback-token' with every callBack made by the WebHook ",
           "type": "string"
         },
         "callBackContext": {
-          "description": "",
+          "description": "Optional parameter you can set which will be sent in the JSON payload as 'context' with every callBack made by the WebHook ",
           "type": "string"
         }
       },
@@ -2023,18 +2041,18 @@
       "type": "object",
       "properties": {
         "Message": {
-          "description": "",
+          "description": "Text message to be sent (Max limit of 1000 Characters)",
           "type": "string"
         },
         "subscribers": {
-          "description": "",
+          "description": "Each element corresponds to a mobile number(with country code. Eg. +911999999999). Text message will be sent only to the selected subscribers. To be used for selective communication to subscribers in context of a Public Group",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "sendToAllSubscribers": {
-          "description": "",
+          "description": "Default: false. Valid only in case the groupId belongs to a Public Group. True to send the text message to all subscribers which requires the token's user to be admin of the Public Group",
           "type": "boolean"
         }
       },
@@ -2044,8 +2062,8 @@
         "sendToAllSubscribers"
       ]
     },
-    "Step10  add members to a grouprequest": {
-      "title": "Step10 - Add members to a groupRequest",
+    "Add members to a grouprequest": {
+      "title": "Add members to a groupRequest",
       "example": {
         "members": [
           "{{mobile-number-2}}"
@@ -2054,7 +2072,7 @@
       "type": "object",
       "properties": {
         "members": {
-          "description": "",
+          "description": "Array of phone numbers(with countrycode) of new members to be added",
           "type": "array",
           "items": {
             "type": "string"
@@ -2092,30 +2110,30 @@
       "type": "object",
       "properties": {
         "objectId": {
-          "description": "",
+          "description": "Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id",
           "type": "string"
         },
         "objectType": {
-          "description": "",
+          "description": "Enum:Group/Action/ActionPackage",
           "type": "string"
         },
         "eventTypes": {
-          "description": "",
+          "description": "Array of different types of events you need to subscribe the webhook to. Supported events are: ActionCreated,ActionResponse,SurveyCreated,JobCreated,SurveyResponse,JobResponse,TextMessageCreated,AttachmentCreated,Announcement,MemberAdded,MemberRemoved,GroupAdded,GroupRemoved",
           "type": "array",
           "items": {
             "type": "string"
           }
         },
         "callBackUrl": {
-          "description": "",
+          "description": "HTTPS URL to which the subscribed events need to be notified to",
           "type": "string"
         },
         "callBackToken": {
-          "description": "",
+          "description": "Optional parameter you can set which will be sent in the HTTP header 'kz-callback-token' with every callBack made by the WebHook ",
           "type": "string"
         },
         "callBackContext": {
-          "description": "",
+          "description": "Optional parameter you can set which will be sent in the JSON payload as 'context' with every callBack made by the WebHook ",
           "type": "string"
         }
       },
@@ -2133,11 +2151,11 @@
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "",
+          "description": "Type of action",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody14"
+          "$ref": "#/definitions/SurveyActionBody"
         }
       },
       "required": [
@@ -2145,12 +2163,12 @@
         "actionBody"
       ]
     },
-    "ActionBody14": {
-      "title": "ActionBody14",
+    "SurveyActionBody": {
+      "title": "Survey Action Body",
       "type": "object",
       "properties": {
         "responseName": {
-          "description": "",
+          "description": "Name of the response",
           "type": "string"
         },
         "responseLocation": {
@@ -2175,17 +2193,17 @@
       "type": "object",
       "properties": {
         "latitude": {
-          "description": "",
+          "description": "Latitude coordinates for the location",
           "type": "integer",
           "format": "int32"
         },
         "longitude": {
-          "description": "",
+          "description": "Longitude coordinates for the location",
           "type": "integer",
           "format": "int32"
         },
         "name": {
-          "description": "",
+          "description": "Name of the Place that Location co-ordinates corresponds to",
           "type": "string"
         }
       },
@@ -2200,12 +2218,12 @@
       "type": "object",
       "properties": {
         "lt": {
-          "description": "",
+          "description": "Latitude coordinates for the location",
           "type": "integer",
           "format": "int32"
         },
         "lg": {
-          "description": "",
+          "description": "Longitude coordinates for the location",
           "type": "integer",
           "format": "int32"
         },
@@ -2215,8 +2233,8 @@
         }
       }
     },
-    "Step3  retrieve the access tokenresponse": {
-      "title": "Step3 - Retrieve the access tokenResponse",
+    "Retrieve the access tokenresponse": {
+      "title": "Retrieve the access tokenResponse",
       "example": {
         "accessToken": "asdasadadaad",
         "endpointUrl": "https://inc-000.KaizalaMessaging.osi.office.net",
@@ -2226,20 +2244,20 @@
       "type": "object",
       "properties": {
         "accessToken": {
-          "description": "",
+          "description": "Access Token received from the auth end-point",
           "type": "string"
         },
         "endpointUrl": {
-          "description": "",
+          "description": "On successful auth, an endpoint url is returned that should be used as api-base-url for making subsequent API calls",
           "type": "string"
         },
         "accessTokenExpiry": {
-          "description": "",
+          "description": "It indicates the expiry time for accessToken in epoch time(milliseconds)",
           "type": "integer",
           "format": "int32"
         },
         "scope": {
-          "description": "",
+          "description": "Scope of permissions on Kaizala resources that given Access Token provides",
           "type": "string"
         }
       },
@@ -2263,11 +2281,11 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "",
+          "description": "ID associated with the Action Instance",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody19"
+          "$ref": "#/definitions/ActionBodyResponse"
         }
       },
       "required": [
@@ -2275,12 +2293,12 @@
         "actionBody"
       ]
     },
-    "ActionBody19": {
-      "title": "ActionBody19",
+    "ActionBodyResponse": {
+      "title": "Action Body Response",
       "type": "object",
       "properties": {
         "Answers": {
-          "description": "",
+          "description": "Array of Response items for the given Action",
           "type": "array",
           "items": {
             "type": "string"
@@ -2291,8 +2309,8 @@
         "Answers"
       ]
     },
-    "Step15  remove subscribers from a public grouprequest": {
-      "title": "Step15 - Remove Subscribers from a public groupRequest",
+    "Remove subscribers from a public grouprequest": {
+      "title": "Remove Subscribers from a public groupRequest",
       "example": {
         "subscribers": [
           "{{mobile-number-3}}"
@@ -2301,7 +2319,7 @@
       "type": "object",
       "properties": {
         "subscribers": {
-          "description": "",
+          "description": "List of subscriber mobile number with country code",
           "type": "array",
           "items": {
             "type": "string"
@@ -2312,8 +2330,8 @@
         "subscribers"
       ]
     },
-    "Step1  generate pinrequest": {
-      "title": "Step1 - Generate PinRequest",
+    "Generate pinrequest": {
+      "title": "Generate Pin Request",
       "example": {
         "mobileNumber": "{{mobile-number}}",
         "applicationId": "{{application-id}}"
@@ -2321,11 +2339,11 @@
       "type": "object",
       "properties": {
         "mobileNumber": {
-          "description": "",
+          "description": "Mobile Number for which PIN would be generated",
           "type": "string"
         },
         "applicationId": {
-          "description": "",
+          "description": "ID associated with the Connector",
           "type": "string"
         }
       },
@@ -2342,7 +2360,7 @@
       "type": "object",
       "properties": {
         "message": {
-          "description": "",
+          "description": "Text Message that would be sent in the group",
           "type": "string"
         }
       },
@@ -2351,7 +2369,7 @@
       ]
     },
     "PostCustomAnnouncementToAGrouprequest": {
-      "title": "Post custom announcement to a groupRequest",
+      "title": "Post announcement to a groupRequest",
       "example": {
         "actiontype": "Announcement",
         "actionBody": {
@@ -2361,11 +2379,11 @@
       "type": "object",
       "properties": {
         "actiontype": {
-          "description": "",
+          "description": "Type of Action. Value: Announcement",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody31"
+          "$ref": "#/definitions/AnnouncementBodyRequest"
         }
       },
       "required": [
@@ -2373,12 +2391,12 @@
         "actionBody"
       ]
     },
-    "ActionBody31": {
-      "title": "ActionBody31",
+    "AnnouncementBodyRequest": {
+      "title": "Announcement Body Request",
       "type": "object",
       "properties": {
         "message": {
-          "description": "",
+          "description": "Message that would be sent as Announcement",
           "type": "string"
         }
       },
@@ -2402,11 +2420,11 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "",
+          "description": "Action Package id",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody33"
+          "$ref": "#/definitions/SubscribersCustomActionBody"
         },
         "subscribers": {
           "description": "",
@@ -2427,16 +2445,16 @@
         "sendToAllSubscribers"
       ]
     },
-    "ActionBody33": {
-      "title": "ActionBody33",
+    "SubscribersCustomActionBody": {
+      "title": "Custom Action sent to a subscriber",
       "type": "object",
       "properties": {
         "title": {
-          "description": "",
+          "description": "Title",
           "type": "string"
         },
         "validity": {
-          "description": "",
+          "description": "Validity",
           "type": "integer",
           "format": "int32"
         }
@@ -2460,11 +2478,11 @@
       "type": "object",
       "properties": {
         "actionType": {
-          "description": "",
+          "description": "Type of Action. Value: Announcement ",
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody35"
+          "$ref": "#/definitions/AnnouncementwithImage"
         }
       },
       "required": [
@@ -2472,16 +2490,16 @@
         "actionBody"
       ]
     },
-    "ActionBody35": {
-      "title": "ActionBody35",
+    "AnnouncementwithImage": {
+      "title": "Announce Body with Images",
       "type": "object",
       "properties": {
         "Message": {
-          "description": "",
+          "description": "Message that will be sent in the group",
           "type": "string"
         },
         "MediaResources": {
-          "description": "",
+          "description": "Array of media resource objects",
           "type": "array",
           "items": {
             "type": "string"
@@ -2493,8 +2511,8 @@
         "MediaResources"
       ]
     },
-    "Step2  login with pin and applicationid to get refreshtokenrequest": {
-      "title": "Step2 - Login with pin and applicationId to get refreshTokenRequest",
+    "login with pin and applicationid to get refreshtokenrequest": {
+      "title": "Login with pin and applicationId to get refreshTokenRequest",
       "example": {
         "mobileNumber": "{{mobile-number}}",
         "applicationId": "{{application-id}}",
@@ -2503,15 +2521,15 @@
       "type": "object",
       "properties": {
         "mobileNumber": {
-          "description": "",
+          "description": "Mobile Number for which token would be generated",
           "type": "string"
         },
         "applicationId": {
-          "description": "",
+          "description": "ID associated with the Connector",
           "type": "string"
         },
         "pin": {
-          "description": "",
+          "description": "OTP sent to the given mobile number",
           "type": "integer",
           "format": "int32"
         }
@@ -2522,8 +2540,8 @@
         "pin"
       ]
     },
-    "Step2  login with pin and applicationid to get refreshtokenresponse": {
-      "title": "Step2 - Login with pin and applicationId to get refreshTokenResponse",
+    "login with pin and applicationid to get refreshtokenresponse": {
+      "title": "Login with pin and applicationId to get refreshTokenResponse",
       "example": {
         "refreshToken": "adwawaw",
         "grantedScope": "groupinfo.read,groupinfo.write,groupinfo.remove,groupinfo.update,groupmember.read,groupmember.write,groupmember.remove,textmessage.read,action.read,action.write,action.update,profile.write,media.read,webhook.read,webhook.write,webhook.remove,webhook.update",
@@ -2532,15 +2550,15 @@
       "type": "object",
       "properties": {
         "refreshToken": {
-          "description": "",
+          "description": "refreshToken shared by the Kaizala Group Admin when the respective Connector was granted access to the group",
           "type": "string"
         },
         "grantedScope": {
-          "description": "",
+          "description": "Access Scope that the given Application/Connector has been granted",
           "type": "string"
         },
         "refreshTokenExpiry": {
-          "description": "",
+          "description": "It indicates the expiry time for refreshToken in epoch time(milliseconds)",
           "type": "integer",
           "format": "int32"
         }
@@ -2551,8 +2569,8 @@
         "refreshTokenExpiry"
       ]
     },
-    "Step8  fetch subGroup of a groupresponse": {
-      "title": "Step8 - Fetch sub-group of a groupResponse",
+    "fetch subGroup of a groupresponse": {
+      "title": "Fetch sub-group of a groupResponse",
       "example": {
         "groupName": "Kaizala Test group",
         "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
@@ -2579,42 +2597,42 @@
       "type": "object",
       "properties": {
         "groupName": {
-          "description": "",
+          "description": "Name of the group",
           "type": "string"
         },
         "groupId": {
-          "description": "",
+          "description": "GUID associated with the group",
           "type": "string"
         },
         "groupImageUrl": {
-          "description": "",
+          "description": "String specifying the URL of the group profile picture ",
           "type": "string"
         },
         "hasSubGroups": {
-          "description": "",
+          "description": "Returns true, if the group has subGroups",
           "type": "boolean"
         },
         "hasParentGroups": {
-          "description": "",
+          "description": "Returns true, if the group has parent Groups",
           "type": "boolean"
         },
         "isMappedToTenant": {
-          "description": "",
+          "description": "Returns true, if the group is mapped as Organization Group",
           "type": "boolean"
         },
         "groupType": {
-          "description": "",
+          "description": "Group/ Connect Group. Connect Group refers to Managed Public Group.",
           "type": "string"
         },
         "subGroups": {
-          "description": "",
+          "description": "Array of Subgroups that given group has",
           "type": "array",
           "items": {
             "$ref": "#/definitions/SubGroup"
           }
         },
         "welcomeMessage": {
-          "description": "",
+          "description": "Welcome Message that is shown to new joinees in the group",
           "type": "string"
         }
       },
@@ -2635,39 +2653,39 @@
       "type": "object",
       "properties": {
         "groupName": {
-          "description": "",
+          "description": "Name of the group",
           "type": "string"
         },
         "groupId": {
-          "description": "",
+          "description": "GUID associated with the group",
           "type": "string"
         },
         "groupImageUrl": {
-          "description": "",
+          "description": "String specifying the URL of the group profile picture ",
           "type": "string"
         },
         "hasSubGroups": {
-          "description": "",
+          "description": "Returns true, if the group has subGroups",
           "type": "boolean"
         },
         "hasParentGroups": {
-          "description": "",
+          "description": "Returns true, if the group has parent Groups",
           "type": "boolean"
         },
         "isMappedToTenant": {
-          "description": "",
+          "description": "Returns true, if the group is mapped as Organization Group",
           "type": "boolean"
         },
         "groupType": {
-          "description": "",
+          "description": "Group/ Connect Group. Connect Group refers to Managed Public Group.",
           "type": "string"
         },
         "isDuplicate": {
-          "description": "",
+          "description": "Returns true, if provided groupid already exists",
           "type": "boolean"
         },
         "welcomeMessage": {
-          "description": "",
+          "description": "Welcome Message that is shown to new joinees in the group ",
           "type": "string"
         }
       },
@@ -2683,25 +2701,24 @@
         "welcomeMessage"
       ]
     },
-    "Step1  create a groupresponse": {
-      "title": "Step1 - Create a groupResponse",
+    "Create a group response": {
       "example": {
-        "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
-        "groupName": "Kaizala Test group",
+        "groupId": "jhj5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
+        "groupName": "Test group",
         "membersAdded": true
       },
       "type": "object",
       "properties": {
         "groupId": {
-          "description": "",
+          "description": "Group Identifier which can be used in subsequent API calls ",
           "type": "string"
         },
         "groupName": {
-          "description": "",
+          "description": "Group name",
           "type": "string"
         },
         "membersAdded": {
-          "description": "",
+          "description": "True if all members are successfully added ",
           "type": "boolean"
         }
       },
@@ -2711,17 +2728,17 @@
         "membersAdded"
       ]
     },
-    "Step14  get subscribers of a public grouprequest": {
-      "title": "Step14 - Get Subscribers of a public groupRequest",
+    "Get subscribers of a public grouprequest": {
+      "title": "Get Subscribers of a public groupRequest",
       "type": "object",
       "properties": {
         "count": {
-          "description": "",
+          "description": "Number of Subscribers in the Public Group",
           "type": "integer",
           "format": "int32"
         },
         "cursor": {
-          "description": "",
+          "description": "Start of resultset. For pagination. To be used in Request body for fetching next result set. Present in response only if there is a valid next result set.",
           "type": "string"
         }
       },
@@ -2798,7 +2815,7 @@
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody33"
+          "$ref": "#/definitions/CustomActionBody"
         }
       },
       "required": [
@@ -2874,7 +2891,7 @@
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBody50"
+          "$ref": "#/definitions/SurveyActionBodyRequest"
         }
       },
       "required": [
@@ -2882,8 +2899,8 @@
         "actionBody"
       ]
     },
-    "ActionBody50": {
-      "title": "ActionBody50",
+    "SurveyActionBodyRequest": {
+      "title": "Survey Action Body",
       "type": "object",
       "properties": {
         "isAnonymous": {
