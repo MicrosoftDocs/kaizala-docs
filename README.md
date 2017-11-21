@@ -1,12 +1,12 @@
 # README
 
-Thank you for your interest in [Microsoft Kaizala Developer documentation](kaizala/platform/v1/docs/README.md).
+Thank you for your interest in [Microsoft Kaizala Developer documentation](Articles/index.md).
 
-> **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](kaizala/platform/v1/docs/install.md).**
+> **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](Articles/install.md).**
 
 Please note that Microsoft Kaizala Developer Platform requires a valid Kaizala Pro or Office365 organizational subscription.
 
-> **[Microsoft Kaizala Developer documentation](kaizala/platform/v1/docs/README.md)**
+> **[Microsoft Kaizala Developer documentation](Articles/index.md)**
 
 We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaDev@microsoft.com and we will keep you informed.
 
