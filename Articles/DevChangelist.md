@@ -1,0 +1,12 @@
+# Microsoft Kaizala Developer Platform History
+
+In this page, shall find history of major changes/new support that has been added to Microsoft Kaizala Developer Platform. This shall also point out if there are features that would be no longer supported in the near future.
+
+| Date | Title | State | Affected area | Description | Applicable Date | Links|
+|-------------|-------|-------|---------------|---------------------------|------------------|--------------|
+|28-09-2017| Change in Base url for APIs | Update | APIs | API endpoint to call Kaizala APIs would be dynamic, based on token generation. Whenever an access token is generated, Kaizala API would return a dynamic url(attached with the token) for subsequent API calls. Old method for API calls would be deprected by 31-12-2017 | 31-12-2017 | [Endpoint url Generation](https://docs.microsoft.com/en-in/kaizala/connectors/api)|
+|18-09-2017| Add Postman Collection | New | APIs | Added all Kaizala APIs as a part of collection for API reference | 18-09-2017 | [Postman Collection](https://docs.microsoft.com/en-in/kaizala/connectors/api)|
+|18-09-2017| Add support to send text message to subscribers in a public group | Update | APIs | <ol><li> Send a Text Message to all subscribers</li> <li>Send a text message to only a select set of subscribers </li></ol>| 18-09-2017 | [Send Message to Subscribers](https://docs.microsoft.com/en-in/kaizala/connectors/messages)|
+|16-09-2017| Added more Webhooks | Update |Webhooks |<ol><li> Enable Webhooks on 'Action'& 'ActionPackage' as an objectType </li> <li>New Webhooks - Text Message Created, Attachment Created, Announcement, Member Added, Member Removed, Group Added, Group Removed </li><li>Return an array of webhooks subscribed on the objectId</li> </ol>| 16-09-2017| [WebHooks](https://docs.microsoft.com/en-in/kaizala/connectors/subscribers)|
+|14-09-2017| Added API support for Album & Video | Update |APIs |<ol><li> Enable post of Album & Video through API</li> <li>Path Changed to /groups/{groupId}/actions </li><li>Parameter changed to 'mediaResource'</li> </ol>| 14-09-2017| [Post Media](https://docs.microsoft.com/en-in/kaizala/connectors/media)|
+|19-07-2017| Publishing Microsoft Kaizala Developer documentation (Preview Mode)| New |N/A | Documentation would be available only to a select group of developers. To gain access to the documentation, kindly contact KaizalaDev@microsoft.com| 19-07-2017 | [Dev Documentation](https://docs.microsoft.com/en-in/kaizala/) |
