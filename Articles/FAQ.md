@@ -29,48 +29,42 @@ To get access to Custom Action development guides, please write to us @ KaizalaD
  ````
  
 <br/><br/>
-  7. **How can I use my own WCF services with Kaizala to bind data (in drop down etc) or send data to my database?** <br/>
+7.  **How can I use my own WCF services with Kaizala to bind data (in drop down etc) or send data to my database?** <br/>
   If you are creating Actions through API then you can use your own data, and through Webhook you can even send responses back to your database.  
 <br/><br/> 
-   8. **Is it possible to create a webhook which can notify on group creation?** <br/>
+8.  **Is it possible to create a webhook which can notify on group creation?** <br/>
   It is not possible to create a webhook to get notifications on group creations because all webhooks currently operate within the context of a group. Within the context of a group you can create webhooks to get notifications on messages/actions that are sent/received, member addition and deletion, etc.  
 <br/><br/>
-9. **Do connectors have to be added manually to every group?**  <br/>
+9.  **Do connectors have to be added manually to every group?**  <br/>
   If the connector is created from Tenant Admin, then you do not have to add the connector manually to every group. 
 <br/><br/>
 10. **How can I fetch complete responses of all participants in a Survey?** <br/>
-  Use the following API to get all the responses for a particular survey in a group: 
+  Use the following API to get all the responses for a particular survey in a group:
+````
 {{endpoint-url}}/v1/groups/{{group-id}}/actions/{{survey-id}}?getDetails=true 
  
 Headers: 
 accessToken : {{access-token}} 
- 
+```` 
 <br/><br/>
 11. **How can I test/debug a Custom Action without having to upload a package every time?** <br/>
-  To deploy a Custom Action that is under development, include the following parameters to your Custom Action’s package.json 
- 
-“dials” : { 
-“forTesting”:true 
-} 
-With the forTesting flag set to true, the custom action can be pushed to any group with less than five members. This flag also bypasses the Approval workflow for actions. Please ensure that the Managed Palette setting is enabled. Only then this new action will be visible in the palette. 
-On an Android device, you can use chrome://inspect in your Chrome Browser to debug the contents loaded in the webviews.  
+  To test a custom Action, before it is sent for approval, read more about the steps/process [here](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/test.md) 
+
 <br/><br/>
 12. **How can I add and use the Excel Add-in for Kaizala?** <br/>
-  The Excel Add-in for Kaizala allows any table in Excel to be exposed as a Survey on Kaizala. All responses to the Survey will be automatically populated in the Excel table.  
-  The Excel Add-in for Kaizala can be found in the Add-ins store of Office 365. Install the Add-in. Create a table in Excel and provide headers for the table. The table headers will be exposed as questions on Kaizala. Select the table and click on Share on Kaizala button in the Kaizala Add-in. You will be prompted to login with your Kaizala registered phone number. Once you log in, a list of your groups will be available from which you can select a group to which you want to send this survey. 
+  The Excel Add-in for Kaizala allows any table in Excel to be exposed as a Survey on Kaizala. All responses to the Survey will be automatically populated in the Excel table. Read more [here](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91?ui=en-US&rs=en-US&ad=US) 
 <br/><br/>
 13. **How can I embed the reports generated on Kaizala Management Portal in my website?** <br/>
 <br/><br/>
 14. **Are there sample available online for various Kaizala features like Webhooks, Custom Actions, Reporting, etc?** <br/>
-  Custom Actions is still under preview and access is provided only on request. Please write to us with your GitHub user name and we will provide access. 
-Resources regarding connectors and webhooks can be found here:  
-https://docs.microsoft.com/kaizala/ 
+  Custom Actions is still under preview and access is provided only on request. To get access to Custom Action samples, please write to us @ KaizalaDev@microsoft.com, along with your GitHub alias and we will provide you access accordingly. 
+Resources regarding connectors and webhooks can be found [here](https://docs.microsoft.com/kaizala/)
 <br/><br/>
 15. **Can I send a message in a 1-1 conversation in Kaizala through APIs?** <br/>
   All APIs in Kaizala operate within the context of a group. So it is not possible to send a message in a 1-1 conversation using an API.  
-The following are the capabilities supported: 
-1) Sending message to a particular subscriber in a public group 
-2) Creating a group with the user and sending message to the group 
+  The following are the capabilities supported: 
+  1) Sending message to a particular subscriber in a public group 
+  2) Creating a group with the user and sending message to the group 
 <br/><br/>
 16. **Is it possible to send a message only to particular member in a group?** <br/>
   Only in the case of a public group it is possible to send a message to particular subscriber. In a normal group this is not possible. Please refer to the following link for more details on the associated API: https://docs.microsoft.com/en-gb/kaizala/connectors/messages. <br/>
