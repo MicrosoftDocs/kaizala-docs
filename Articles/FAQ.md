@@ -104,7 +104,12 @@ accessToken : {{access-token}}
   To test a custom Action, before it is sent for approval, read more about the steps/process [here](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/test.md) 
 <br/><br/>
 
-    4. Where can I access the reports corresponding to my Custom Actions on Kaizala Management Portal?
+
+    4. What are guidelines that Action Package must follow in order to get approved?
+While approving a custom Action Package, Microsoft follows guidelines/validations that an Action Package must adhere to. Please find them [here](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/validation.md).
+<br/><br/>
+
+    5. Where can I access the reports corresponding to my Custom Actions on Kaizala Management Portal?
  Kaizala Management Portal enables users to create custom actions, forms, feedback cards, etc. Such actions can then be mapped to your groups and sent repeatedly to track critical business metrics. On the portal, this data is reported under “Recurrent Survey Reports”. As an additional feature, the report aggregates responses to these cards over time and across instances. 
 <br/><br/>
 
