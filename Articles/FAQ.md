@@ -2,7 +2,7 @@
 
 ## Kaizala REST-based APIs
 
-    1. How do I get started using Kaizala APIs
+    1. How do I get started using Kaizala APIs?
 In order to start using Kaizala's REST-based API, you need to
  
 -   First [Set up Kaizala Connector and generate Refresh Token](https://docs.microsoft.com/en-in/kaizala/connectors/setup).
