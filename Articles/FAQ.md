@@ -77,7 +77,8 @@ accessToken : {{access-token}}
   All APIs in Kaizala operate within the context of a group. So it is not possible to send a message in a 1-1 conversation using an API.  
   The following are the capabilities supported: 
   1) Sending message to a particular subscriber in a public group 
-  2) Creating a group with the user and sending message to the group 
+  2) Creating a group with the user and sending message to the group
+  
 <br/><br/>
 
     12. Is it possible to send a message only to particular member in a group?
