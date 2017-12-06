@@ -27,7 +27,6 @@ Read more about [Tokens](https://docs.microsoft.com/en-in/kaizala/connectors/tok
   >Note: If you are using User Level Refresh Token, new group will be created. But if group level token is used to create a group, a sub-group for the concerned group is created.
 <br/><br/>
 
-
     4. How can I send a message through APIs in Kaizala?
   Kaizala exposes an API using which you can send a message to any group. Get more details [here](https://docs.microsoft.com/en-gb/kaizala/connectors/messages).
 <br/><br/>
@@ -74,13 +73,12 @@ accessToken : {{access-token}}
 <br/><br/>
 
     11. Can I send a message in a 1-1 conversation in Kaizala through APIs?
-  All APIs in Kaizala operate within the context of a group. So it is not possible to send a message in a 1-1 conversation using an API.  
-  The following are the capabilities supported: 
-  1) Sending message to a particular subscriber in a public group 
-  2) Creating a group with the user and sending message to the group
-  
-<br/><br/>
+  All APIs in Kaizala operate within the context of a group. So it is not possible to send a message in a 1-1 conversation using an API. Following capabilities are supported:
+-   Sending message to a particular subscriber in a public group 
+-   Creating a group with the user and sending message to the group
 
+<br/>
+    
     12. Is it possible to send a message only to particular member in a group?
   Only in the case of a public group it is possible to send a message to particular subscriber. In a normal group this is not possible. Please refer to the following link for more details on the associated API: https://docs.microsoft.com/en-gb/kaizala/connectors/messages. <br/>
 <br/><br/>
