@@ -19,7 +19,7 @@ In order to start using Kaizala's REST-based API, you need to
   **User Token** can be generated using (a) Connectors detail page in Kaizala Management portal, (b) Using API ( GeneratePin and LoginWithPinAndApplicationId api(details in postman collection shared [here](https://app.getpostman.com/run-collection/f68a8abec784cc00b0b9#?env%5BKaizala-APIs-environment%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoibW9iaWxlLW51bWJlciIsInZhbHVlIjoiKzkxOTkxMDg3MDAwNSIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJhY2Nlc3MtdG9rZW4iLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZXN0LWdyb3VwLWlkIiwidmFsdWUiOiIiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoibW9iaWxlLW51bWJlci0yIiwidmFsdWUiOiIrOTExMTk5OTk5OTk5IiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImFwaS1yb290IiwidmFsdWUiOiJodHRwczovL2FwaS5rYWl6YS5sYSIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJhcHBsaWNhdGlvbi1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImFwcGxpY2F0aW9uLXNlY3JldCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImVuZHBvaW50LXVybCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InJlZnJlc2gtdG9rZW4iLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZXN0LXB1YmxpYy1ncm91cC1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InRlc3Qtc3ViLWdyb3VwLWlkIiwidmFsdWUiOiIiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoibW9iaWxlLW51bWJlci0zIiwidmFsdWUiOiIrOTExMDk5OTk5OTkiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoidGVzdC1hY3Rpb24taWQiLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZXN0LXN1cnZleS1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InRlc3Qtd2ViaG9vay1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifV0=) ) (c) Kaizala oAuth. <br/>
   **Group Token** can be generated using Connectors detail page in Kaizala Management portal.
 
-  Read more about [Tokens](https://docs.microsoft.com/en-in/kaizala/connectors/tokens)
+Read more about [Tokens](https://docs.microsoft.com/en-in/kaizala/connectors/tokens)
 <br/><br/>
 
     3. How do I create a group using API?
@@ -33,9 +33,8 @@ In order to start using Kaizala's REST-based API, you need to
 <br/><br/>
 
 
-    5. Are there sample available online for various Kaizala features like Webhooks?
-  Custom Actions is still under preview and access is provided only on request. To get access to Custom Action samples, please write to us @ KaizalaDev@microsoft.com, along with your GitHub alias and we will provide you access accordingly. 
-Resources regarding connectors and webhooks can be found [here](https://docs.microsoft.com/kaizala/)
+    5. Are there sample available online for various Kaizala features like APIs, Webhooks?
+  You can find the sample code in C# [here](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Samples/Getting%20started%20with%20Kaizala%20REST%20APIs%20-%20C%23%20sample%20(shared).docx)
 
     6. How can I get the phone numbers of all the members/subscribers in a group?
   Kaizala exposes API to get the details of all the members in a group. Get more details [here](https://docs.microsoft.com/en-gb/kaizala/connectors/members)
@@ -74,7 +73,6 @@ accessToken : {{access-token}}
 ```` 
 <br/><br/>
 
-
     11. Can I send a message in a 1-1 conversation in Kaizala through APIs?
   All APIs in Kaizala operate within the context of a group. So it is not possible to send a message in a 1-1 conversation using an API.  
   The following are the capabilities supported: 
@@ -96,9 +94,9 @@ accessToken : {{access-token}}
   Custom Action Development and related documentation is still under Preview and is covered under NDA. To get access to Custom Action development guides, please write to us @ KaizalaDev@microsoft.com, along with your GitHub alias and we will provide you access accordingly. 
 <br/><br/>
 
-    2. How can I use my own WCF services with Kaizala to bind data (in drop down etc) or send data to my database?
+    2. How can I get the latest Kaizala Action SDK?
 
-  If you are creating Actions through API then you can use your own data, and through Webhook you can even send responses back to your database.  
+  Once you have access to the Custom Action Development guide, you can find the latest Action SDK [here](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/KASClient.zip)
 <br/><br/> 
 
     3. How can I test/debug a Custom Action without having to upload a package every time?
