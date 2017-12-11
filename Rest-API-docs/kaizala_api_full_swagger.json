@@ -10,7 +10,7 @@
       "status": "Preview"
     }
   },
-  "host": "kms.kaiza.la",
+  "host": "api.kaiza.la",
   "basePath": "/v1",
   "schemes": [ "https" ],
   "consumes": [
