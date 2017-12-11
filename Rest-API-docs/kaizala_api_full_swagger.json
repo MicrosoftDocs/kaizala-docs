@@ -27,7 +27,7 @@
         "tags": [
           "Authentication"
         ],
-        "operationId": "Authentication_GeneratePin",
+        "operationId": "GeneratePin",
         "produces": [
           "application/json"
         ],
@@ -128,7 +128,7 @@
         "tags": [
           "Authentication"
         ],
-        "operationId": "Authentication_getRefreshToken",
+        "operationId": "GetRefreshToken",
         "produces": [
           "application/json"
         ],
@@ -214,7 +214,7 @@
         "tags": [
           "Authentication"
         ],
-        "operationId": "Authentication_GenerateAccesstoken",
+        "operationId": "GenerateAccessToken",
         "produces": [
           "application/json"
         ],
@@ -306,7 +306,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_CreateGroup",
+        "operationId": "CreateGroup",
         "produces": [
           "application/json"
         ],
@@ -398,7 +398,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_fetchDirectGroups",
+        "operationId": "FetchDirectGroups",
         "produces": [
           "application/json"
         ],
@@ -455,7 +455,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_FetchGroupDetails",
+        "operationId": "FetchGroupDetails",
         "produces": [
           "application/json"
         ],
@@ -504,7 +504,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_CreateSubGroup",
+        "operationId": "CreateSubgroup",
         "produces": [
           "application/json"
         ],
@@ -562,7 +562,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_AddSubgroup",
+        "operationId": "AddSubgroup",
         "produces": [
           "application/json"
         ],
@@ -618,7 +618,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_FetchSubgroup",
+        "operationId": "FetchSubgroup",
         "produces": [
           "application/json"
         ],
@@ -688,7 +688,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_RemoveGroupAsSubgroup",
+        "operationId": "RemoveGroupAsSubgroup",
         "produces": [
           "application/json"
         ],
@@ -737,7 +737,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_AddMembers",
+        "operationId": "AddMembers",
         "produces": [
           "application/json"
         ],
@@ -793,7 +793,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_FetchMembers",
+        "operationId": "FetchMembers",
         "produces": [
           "application/json"
         ],
@@ -835,7 +835,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_RemoveMembers",
+        "operationId": "RemoveMembers",
         "produces": [
           "application/json"
         ],
@@ -877,7 +877,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_GetSubscribers",
+        "operationId": "GetSubscribers",
         "produces": [
           "application/json"
         ],
@@ -935,7 +935,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_AddSubscribers",
+        "operationId": "AddSubscribers",
         "produces": [
           "application/json"
         ],
@@ -993,7 +993,7 @@
         "tags": [
           "GroupManagement"
         ],
-        "operationId": "GroupManagement_RemoveSubscribers",
+        "operationId": "RemoveSubscribers",
         "produces": [
           "application/json"
         ],
@@ -1051,7 +1051,7 @@
         "tags": [
           "ContentCreation"
         ],
-        "operationId": "ContentCreation_Uploadmedia",
+        "operationId": "UploadMedia",
         "produces": [
           "application/json"
         ],
@@ -1097,7 +1097,7 @@
         "tags": [
           "ContentCreation"
         ],
-        "operationId": "ContentCreation_SendmessagetoSubscriber",
+        "operationId": "SendMessageToSubscriber",
         "produces": [
           "application/json"
         ],
@@ -1155,7 +1155,7 @@
         "tags": [
           "ContentCreation"
         ],
-        "operationId": "ContentCreation_PostingSurveyResponse",
+        "operationId": "PostingSurveyResponse",
         "produces": [
           "application/json"
         ],
@@ -1220,7 +1220,7 @@
         "tags": [
           "ContentCreation"
         ],
-        "operationId": "ContentCreation_PostingActionResponse",
+        "operationId": "PostingActionResponse",
         "produces": [
           "application/json"
         ],
@@ -1285,7 +1285,7 @@
         "tags": [
           "ContentCreation"
         ],
-        "operationId": "ContentCreation_Sendmessage",
+        "operationId": "SendMessage",
         "produces": [
           "application/json"
         ],
@@ -1343,7 +1343,7 @@
         "tags": [
           "ContentCreation"
         ],
-        "operationId": "ContentCreation_PostCustomActionSubscriber",
+        "operationId": "PostCustomActionSubscriber",
         "produces": [
           "application/json"
         ],
@@ -1401,7 +1401,7 @@
         "tags": [
           "ContentQuery"
         ],
-        "operationId": "ContentQuery_FetchingSurveyResponses",
+        "operationId": "FetchingSurveyResponses",
         "produces": [
           "application/json"
         ],
@@ -1457,7 +1457,7 @@
         "tags": [
           "ContentQuery"
         ],
-        "operationId": "ContentQuery_FetchJobs",
+        "operationId": "FetchJobs",
         "produces": [
           "application/json"
         ],
@@ -1504,7 +1504,7 @@
         "tags": [
           "ContentCreation"
         ],
-        "operationId": "ContentCreation_SendSurvey",
+        "operationId": "SendSurvey",
         "produces": [
           "application/json"
         ],
@@ -1562,7 +1562,7 @@
         "tags": [
           "Subscription"
         ],
-        "operationId": "Subscription_GetAllWebhooks",
+        "operationId": "GetAllWebhooks",
         "produces": [
           "application/json"
         ],
@@ -1631,7 +1631,7 @@
         "tags": [
           "Subscription"
         ],
-        "operationId": "Subscription_SubscribeToAllEvents",
+        "operationId": "SubscribeToAllEvents",
         "produces": [
           "application/json"
         ],
@@ -1706,7 +1706,7 @@
         "tags": [
           "Subscription"
         ],
-        "operationId": "Subscription_UnsubscribingaWebhook",
+        "operationId": "UnsubscribingAWebhook",
         "produces": [
           "application/json"
         ],
