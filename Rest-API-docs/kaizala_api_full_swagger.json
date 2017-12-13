@@ -366,6 +366,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -458,6 +461,9 @@
         "produces": [
           "application/json"
         ],
+        "x-ms-parameterized-host": {
+           "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -515,6 +521,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "applicationId",
@@ -564,6 +573,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -622,6 +634,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -678,6 +693,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -748,6 +766,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -797,6 +818,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -895,6 +919,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -937,6 +964,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -995,6 +1025,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1053,6 +1086,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1215,6 +1251,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1280,6 +1319,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1345,6 +1387,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1403,6 +1448,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1461,6 +1509,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "getDetails",
@@ -1517,6 +1568,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "actionType",
@@ -1564,6 +1618,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1622,6 +1679,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "objectId",
@@ -1766,6 +1826,9 @@
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -3037,4 +3100,3 @@
     }
   }
 }
-
