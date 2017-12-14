@@ -1,3 +1,4 @@
+
 # Overview
 ## [About Microsoft Kaizala Developer Platform](index.md)
 ## [Connectors](connectors/README.md)
@@ -16,6 +17,8 @@
 ## [Use Kaizala Office Add-IN](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91)
 
 # Resources
-## [Support](https://stackoverflow.com/questions/tagged/Kaizala)
+## [FAQ](FAQ.md)
+## [Ask a Question on Stack Overflow](https://stackoverflow.com/questions/tagged/Kaizala)
+## [Join Kaizala Developer Connect](https://aka.ms/KaizalaDevConnect)
 ## [Feedback](feedback.md)
 ## [Download App](install.md)
