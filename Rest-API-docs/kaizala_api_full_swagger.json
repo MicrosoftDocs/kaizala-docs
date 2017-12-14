@@ -10,7 +10,7 @@
       "status": "Preview"
     }
   },
-  "host": "kms.kaiza.la",
+  "host": "api.kaiza.la",
   "basePath": "/v1",
   "schemes": [ "https" ],
   "consumes": [
@@ -19,15 +19,71 @@
   "produces": [
     "application/json"
   ],
+  "tags":[
+        {
+            "name": "Authentication APIs",
+            "description": "These APIs help in gaining access for 3rd party systems to interact with Kaizala API platform. Kaizala implements custom token based authorization mechanism. This mechanism uses the concept of Refresh and Access Tokens to manage access authorization for the Kaizala Platform APIs. /n"
+        },
+        {
+            "name": "Group Management APIs",
+            "description": "These APIs allow group admin(s) to access group resources and manage group memberships accordingly. <br />"
+        },
+        {
+            "name": "Content Creation APIs",
+            "description": "API end-point to send instances of Kaizala Actions to conversation groups inside Kaizala. <br /> Current scope is to support following action types:
+            <Table> 
+            <tr><td> Action </td> <td>POST Supported </td><td> Id </td></tr>
+            <tr><td> Picture Attachment </td> <td> Yes </td> <td>  image  </td></tr>
+            <tr><td> Audio Attachment </td> <td> Yes </td> <td>  audio  </td></tr>
+            <tr><td> Document Attachment </td> <td> Yes </td>  <td>  document  </td></tr>
+            <tr><td> Contact Attachment </td> <td> No </td> <td>  N/A  </td></tr>
+            <tr><td> Job </td> <td> Yes </td>  <td>  Job  </td></tr>
+            <tr><td> Survey </td> <td> Yes </td> <td>  survey  </td></tr>
+            <tr><td> Photo with Location </td> <td> No </td> <td>  photoWithLocation  </td></tr>
+            <tr><td> Let's Meet </td> <td> Yes </td> <td>  LetsMeet  </td></tr>
+            <tr><td> Quick Poll </td> <td> Yes </td> <td>  Poll  </td></tr>
+            <tr><td> Share Location </td> <td> No </td> <td>  shareLocation  </td></tr>
+            <tr><td> Request Location </td> <td> No </td> <td>  N/A  </td></tr>
+            <tr><td> Live Location </td> <td> No </td> <td>  N/A  </td></tr>
+            <tr><td> Announcement </td> <td> Yes </td> <td>  Announcement  </td></tr>
+            </Table> "
+        },
+        {
+            "name": "Content Query APIs",
+            "description": "These set of APIs retrieve the list of action instances sent to a group
+            <Table> 
+            <tr><td> Action </td> <td>GET Supported </td><td> Id </td></tr>
+            <tr><td> Picture Attachment </td> <td> Yes </td> <td>  image  </td></tr>
+            <tr><td> Audio Attachment </td> <td> No </td> <td>  audio  </td></tr>
+            <tr><td> Document Attachment </td> <td> Yes </td>  <td>  document  </td></tr>
+            <tr><td> Contact Attachment </td> <td> No </td> <td>  N/A  </td></tr>
+            <tr><td> Job </td> <td> Yes </td>  <td>  Job  </td></tr>
+            <tr><td> Survey </td> <td> Yes </td> <td>  survey  </td></tr>
+            <tr><td> Photo with Location </td> <td> Yes </td> <td>  photoWithLocation  </td></tr>
+            <tr><td> Let's Meet </td> <td> Yes </td> <td>  LetsMeet  </td></tr>
+            <tr><td> Quick Poll </td> <td> Yes </td> <td>  Poll  </td></tr>
+            <tr><td> Share Location </td> <td> Yes </td> <td>  shareLocation  </td></tr>
+            <tr><td> Request Location </td> <td> No </td> <td>  N/A  </td></tr>
+            <tr><td> Live Location </td> <td> No </td> <td>  N/A  </td></tr>
+            <tr><td> Announcement </td> <td> No </td> <td>  Announcement  </td></tr>
+            </Table>  
+            "
+        },
+        {
+            "name": "Subscription Webhooks",
+            "description": "Microsoft Kaizala API also provides a way for developers to register for specific events within the Kaizala platform via WebHooks. <br /> 
+            WebHooks is a lightweight HTTP pattern providing a simple publisher/subscriber model for wiring together Web APIs and SaaS services. When an event happens in Kaizala, a notification is sent in the form of an HTTP POST request to registered subscribers. The POST request contains information about the event which makes it possible for the receiver to act accordingly. <br /> <br />  Using WebHooks, you can subscribe to various events that occur within a conversation group context in Kaizala."
+        }
+  ],
   "paths": {
     "/generatePin": {
       "post": {
         "description": "This API generates One-time PIN for a mobile number, when Application/Connector Id is provided.",
         "summary": "Generate One-Time PIN",
         "tags": [
-          "Authentication"
+          "Authentication APIs"
         ],
-        "operationId": "Authentication_GeneratePin",
+        "operationId": "GeneratePin",
         "produces": [
           "application/json"
         ],
@@ -126,9 +182,9 @@
         "description": "This API generates refresh token for the given Application/Connector Id, when pin, mobile number & Application/Connector Id is provided.",
         "summary": "Login with pin and applicationId to get refreshToken",
         "tags": [
-          "Authentication"
+          "Authentication APIs"
         ],
-        "operationId": "Authentication_getRefreshToken",
+        "operationId": "GetRefreshToken",
         "produces": [
           "application/json"
         ],
@@ -212,9 +268,9 @@
         "description": "This API generates Access token to access Kaizala resources, when refresh token, Application/Connector Id and Application/Connector Secret is provided",
         "summary": "Retrieve the access token",
         "tags": [
-          "Authentication"
+          "Authentication APIs"
         ],
-        "operationId": "Authentication_GenerateAccesstoken",
+        "operationId": "GenerateAccessToken",
         "produces": [
           "application/json"
         ],
@@ -304,12 +360,15 @@
         "description": "This API allows creation of a a group, including Managed Public Groups. It takes array of string as input. Each string is mobile number(with country code). This API can take maximum of 100 mobile numbers as input.\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group.",
         "summary": "Create a group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_CreateGroup",
+        "operationId": "CreateGroup",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -396,12 +455,15 @@
         "description": "This API returns all direct groups attached with the user",
         "summary": "Fetch direct groups",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_fetchDirectGroups",
+        "operationId": "FetchDirectGroups",
         "produces": [
           "application/json"
         ],
+        "x-ms-parameterized-host": {
+           "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -453,12 +515,15 @@
         "description": "This API can be used to fetch details for a group",
         "summary": "Fetch group details",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_FetchGroupDetails",
+        "operationId": "FetchGroupDetails",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "applicationId",
@@ -502,12 +567,15 @@
         "description": "API to create a group.\nOptional parameters:\n\tMembers: string array. Each string is mobile number(with country code). Max strings-100\n\t\n\tGroupType: Group/ConnectGroup. ConnectGroup for Managed public group.",
         "summary": "Create a  sub group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_CreateSubGroup",
+        "operationId": "CreateSubgroup",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -560,12 +628,15 @@
         "description": "Add group as a sub-group to another group",
         "summary": "This API allows lets addition of group as a sub-group to another group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_AddSubgroup",
+        "operationId": "AddSubgroup",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -616,12 +687,15 @@
         "description": " Fetch sub-groups of a group",
         "summary": "This API is used to fetch sub-groups of a group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_FetchSubgroup",
+        "operationId": "FetchSubgroup",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -686,12 +760,15 @@
         "description": "Remove group as a sub-group to another group",
         "summary": "Remove group as a sub-group to another group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_RemoveGroupAsSubgroup",
+        "operationId": "RemoveGroupAsSubgroup",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -735,12 +812,15 @@
         "description": "This API lets addition of members to a group",
         "summary": "Add members to a group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_AddMembers",
+        "operationId": "AddMembers",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -791,9 +871,9 @@
         "description": "This API returns list of members in a group",
         "summary": "Fetch members of a group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_FetchMembers",
+        "operationId": "FetchMembers",
         "produces": [
           "application/json"
         ],
@@ -833,12 +913,15 @@
         "description": "This API allows removals of members from a group",
         "summary": "Remove members from a group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_RemoveMembers",
+        "operationId": "RemoveMembers",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
@@ -875,12 +958,15 @@
         "description": "This API fetches list of subscribers of a managed public group",
         "summary": "Get Subscribers of a public group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_GetSubscribers",
+        "operationId": "GetSubscribers",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -933,12 +1019,15 @@
         "description": "This API adds subscribers to a public group",
         "summary": "Add Subscribers to a public group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_AddSubscribers",
+        "operationId": "AddSubscribers",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -991,12 +1080,15 @@
         "description": "This API lets a user to remove subscribers from a public group",
         "summary": "Remove Subscribers from a public group",
         "tags": [
-          "GroupManagement"
+          "Group Management APIs"
         ],
-        "operationId": "GroupManagement_RemoveSubscribers",
+        "operationId": "RemoveSubscribers",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1049,9 +1141,9 @@
         "description": "This API uploads media (image, document, audio, album or video)",
         "summary": "Upload media",
         "tags": [
-          "ContentCreation"
+          "Content Creation APIs"
         ],
-        "operationId": "ContentCreation_Uploadmedia",
+        "operationId": "UploadMedia",
         "produces": [
           "application/json"
         ],
@@ -1095,9 +1187,9 @@
         "description": "This API lets you send a message to subscribers in a public group",
         "summary": "Send message to subscriber(s) in a public group",
         "tags": [
-          "ContentCreation"
+          "Content Creation APIs"
         ],
-        "operationId": "ContentCreation_SendmessagetoSubscriber",
+        "operationId": "SendMessageToSubscriber",
         "produces": [
           "application/json"
         ],
@@ -1153,12 +1245,15 @@
         "description": "This API lets you post a response to a given survey",
         "summary": "Posting a response to a survey",
         "tags": [
-          "ContentCreation"
+          "Content Creation APIs"
         ],
-        "operationId": "ContentCreation_PostingSurveyResponse",
+        "operationId": "PostingSurveyResponse",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1218,12 +1313,15 @@
         "description": "This API lets you post a response to an Action",
         "summary": "Posting a response to an action",
         "tags": [
-          "ContentCreation"
+          "Content Creation APIs"
         ],
-        "operationId": "ContentCreation_PostingActionResponse",
+        "operationId": "PostingActionResponse",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1283,12 +1381,15 @@
         "description": "Send a message on a group",
         "summary": "Send message on a group",
         "tags": [
-          "ContentCreation"
+          "Content Creation APIs"
         ],
-        "operationId": "ContentCreation_Sendmessage",
+        "operationId": "SendMessage",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1341,12 +1442,15 @@
         "description": "This API lets you post a custom action to subscibers in a public group",
         "summary": "Post custom action to subscriber(s) in a public group",
         "tags": [
-          "ContentCreation"
+          "Content Creation APIs"
         ],
-        "operationId": "ContentCreation_PostCustomActionSubscriber",
+        "operationId": "PostCustomActionSubscriber",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1399,12 +1503,15 @@
         "description": "This API lets you fetch responses for a survey",
         "summary": "Fetching survey responses",
         "tags": [
-          "ContentQuery"
+          "Content Query APIs"
         ],
-        "operationId": "ContentQuery_FetchingSurveyResponses",
+        "operationId": "FetchingSurveyResponses",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "getDetails",
@@ -1455,12 +1562,15 @@
         "description": "Fetch jobs in a group",
         "summary": "Fetch jobs in a group",
         "tags": [
-          "ContentQuery"
+          "Content Query APIs"
         ],
-        "operationId": "ContentQuery_FetchJobs",
+        "operationId": "FetchJobs",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "actionType",
@@ -1502,12 +1612,15 @@
         "description": "This API lets you create a survey and send on a group",
         "summary": "Send survey on a group",
         "tags": [
-          "ContentCreation"
+          "Content Creation APIs"
         ],
-        "operationId": "ContentCreation_SendSurvey",
+        "operationId": "SendSurvey",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "Body",
@@ -1560,12 +1673,15 @@
         "description": "This API returns all webhooks on a group",
         "summary": "Get all webhooks on a group",
         "tags": [
-          "Subscription"
+          "Subscription Webhooks"
         ],
-        "operationId": "Subscription_GetAllWebhooks",
+        "operationId": "GetAllWebhooks",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "objectId",
@@ -1629,9 +1745,9 @@
         "description": "Subscribe to all events at action level",
         "summary": "Subscribe to all events at action level",
         "tags": [
-          "Subscription"
+          "Subscription Webhooks"
         ],
-        "operationId": "Subscription_SubscribeToAllEvents",
+        "operationId": "SubscribeToAllEvents",
         "produces": [
           "application/json"
         ],
@@ -1704,12 +1820,15 @@
         "description": "Unsubscribing a webhook",
         "summary": "Unsubscribing awebhook",
         "tags": [
-          "Subscription"
+          "Subscription Webhooks"
         ],
-        "operationId": "Subscription_UnsubscribingaWebhook",
+        "operationId": "UnsubscribingAWebhook",
         "produces": [
           "application/json"
         ],
+    "x-ms-parameterized-host": {
+      "hostTemplate": "{endpoint-url}"
+    },
         "parameters": [
           {
             "name": "accessToken",
