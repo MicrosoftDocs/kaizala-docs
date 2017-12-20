@@ -95,7 +95,7 @@
             "description": "",
             "schema": {
                "title": "Generate Pin Request",
-                "example": {
+                "x-ms-example": {
                     "mobileNumber": "{{mobile-number}}",
                     "applicationId": "{{application-id}}"
                 },
@@ -130,7 +130,7 @@
             "schema": {
               "type": "object"
             },
-            "examples": {
+            "x-ms-example": {
               "text/plain": "{}"
             }
           }
@@ -180,7 +180,7 @@
     "/loginWithPinAndApplicationId": {
       "post": {
         "description": "This API generates refresh token for the given Application/Connector Id, when pin, mobile number & Application/Connector Id is provided.",
-        "summary": "Login with pin and applicationId to get refreshToken",
+        "summary": "Login with pin and applicationId to get refresh token",
         "tags": [
           "Authentication APIs"
         ],
@@ -195,7 +195,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/login with pin and applicationid to get refreshtokenrequest"
+              "$ref": "#/definitions/Request - Refresh Token"
             }
           },
           {
@@ -210,9 +210,9 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/login with pin and applicationid to get refreshtokenresponse"
+              "$ref": "#/definitions/Response - Refresh Token"
             },
-            "examples": {
+            "x-ms-example": {
               "application/json": {
                 "refreshToken": "adwawaw",
                 "grantedScope": "groupinfo.read,groupinfo.write,groupinfo.remove,groupinfo.update,groupmember.read,groupmember.write,groupmember.remove,textmessage.read,action.read,action.write,action.update,profile.write,media.read,webhook.read,webhook.write,webhook.remove,webhook.update",
@@ -301,9 +301,9 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Retrieve the access tokenresponse"
+              "$ref": "#/definitions/Response - Access Token"
             },
-            "examples": {
+            "x-ms-example": {
               "application/json": {
                 "accessToken": "asdasadadaad",
                 "endpointUrl": "https://inc-000.KaizalaMessaging.osi.office.net",
@@ -376,7 +376,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Create a managed public grouprequest"
+              "$ref": "#/definitions/Request - Create a managed public group"
             }
           },
           {
@@ -398,9 +398,9 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Create a group response"
+              "$ref": "#/definitions/Response - Create a group"
             },
-            "examples": {
+            "x-ms-example": {
               "application/json": {
                 "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
                 "groupName": "Kaizala Test group",
@@ -410,7 +410,7 @@
           }
         },
         "security": [ ],
-        "x-ms-examples": [
+        "x-ms-example": [
           {
             "request": {
               "method": "POST",
@@ -583,7 +583,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Create a managed public grouprequest"
+              "$ref": "#/definitions/Request - Create a managed public group"
             }
           },
           {
@@ -644,7 +644,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Add group as a subGroup to another grouprequest"
+              "$ref": "#/definitions/Request - Add group as a subGroup to another group"
             }
           },
           {
@@ -716,9 +716,9 @@
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/fetch subGroup of a groupresponse"
+              "$ref": "#/definitions/Response - Fetch subGroup of a group"
             },
-            "examples": {
+            "x-ms-example": {
               "application/json": {
                 "groupName": "Kaizala Test group",
                 "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
@@ -818,9 +818,9 @@
         "produces": [
           "application/json"
         ],
-    "x-ms-parameterized-host": {
-      "hostTemplate": "{endpoint-url}"
-    },
+       "x-ms-parameterized-host": {
+         "hostTemplate": "{endpoint-url}"
+        },
         "parameters": [
           {
             "name": "Body",
@@ -828,7 +828,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Add members to a grouprequest"
+              "$ref": "#/definitions/Request - Add members to a group"
             }
           },
           {
@@ -974,7 +974,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Get subscribers of a public grouprequest"
+              "$ref": "#/definitions/Request - Subscribers of a public group"
             }
           },
           {
@@ -1035,7 +1035,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Remove subscribers from a public grouprequest"
+              "$ref": "#/definitions/Request - Remove subscribers"
             }
           },
           {
@@ -1096,7 +1096,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Remove subscribers from a public grouprequest"
+              "$ref": "#/definitions/Request - Remove subscribers"
             }
           },
           {
@@ -1200,7 +1200,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/SendMessageToSubscriber(s)InAPublicGrouprequest"
+              "$ref": "#/definitions/Request - SendMessageToSubscriber(s)InAPublicGroup"
             }
           },
           {
@@ -1261,7 +1261,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/PostingAResponseToASurveyrequest"
+              "$ref": "#/definitions/Request - PostingAResponseToASurvey"
             }
           },
           {
@@ -1329,7 +1329,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/PostingAResponseToAnActionrequest"
+              "$ref": "#/definitions/Request - PostingAResponseToAnAction"
             }
           },
           {
@@ -1397,7 +1397,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/SendMessageOnAGrouprequest"
+              "$ref": "#/definitions/Request - SendMessageOnAGroup"
             }
           },
           {
@@ -1458,7 +1458,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/PostCustomActionToSubscriber(s)InAPublicGrouprequest"
+              "$ref": "#/definitions/Request - Send Custom Action To Subscriber(s)"
             }
           },
           {
@@ -1628,7 +1628,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/SendSurveyOnAGrouprequest"
+              "$ref": "#/definitions/Request - SendSurveyOnAGroup"
             }
           },
           {
@@ -1758,7 +1758,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/SubscribeToAllEventsAtActionLevelrequest"
+              "$ref": "#/definitions/Request - SubscribeToAllEventsAtActionLevel"
             }
           },
           {
@@ -1862,9 +1862,9 @@
     }
   },
   "definitions": {
-    "Add group as a subGroup to another grouprequest": {
-      "title": "Add group as a sub-group to another groupRequest",
-      "example": {
+    "Request - Add group as a subGroup to another group": {
+      "title": "Add group as a sub-group to another group",
+      "x-ms-example": {
         "subGroups": [
           "{{test-sub-group-id}}"
         ]
@@ -1883,9 +1883,9 @@
         "subGroups"
       ]
     },
-    "Create a managed public grouprequest": {
-      "title": "Create a managed public groupRequest",
-      "example": {
+    "Request - Create a managed public group": {
+      "title": "Create a managed public group",
+      "x-ms-example": {
         "name": "Kaizala Test Public Group",
         "welcomeMessage": "Welcome to public group created programmatically via Postman",
         "members": [
@@ -1922,9 +1922,9 @@
         "groupType"
       ]
     },
-    "PostCustomActionToAGroup[withProperties]request": {
-      "title": "Post custom action to a group [with properties]Request",
-      "example": {
+    "Request - PostCustomActionToAGroup[withProperties]": {
+      "title": "Post custom action to a group [with properties]",
+      "x-ms-example": {
         "id": "com.microsoft.kaizala.miniapps.BdayMessage.12",
         "actionBody": {
           "properties": [
@@ -2000,9 +2000,9 @@
         "type"
       ]
     },
-    "PostAJobOnAGrouprequest": {
-      "title": "Post a job on a groupRequest",
-      "example": {
+    "Request - PostAJobOnAGroup": {
+      "title": "Post a job on a group",
+      "x-ms-example": {
         "actionType": "Job",
         "actionBody": {
           "title": "test job",
@@ -2054,9 +2054,9 @@
         "dueDate"
       ]
     },
-    "SendImageOnAGrouprequest": {
-      "title": "Send image on a groupRequest",
-      "example": {
+    "Request - SendImageOnAGroup": {
+      "title": "Send image on a group",
+      "x-ms-example": {
         "actionType": "Image",
         "actionBody": {
           "caption": "Image caption",
@@ -2096,9 +2096,9 @@
         "mediaResource"
       ]
     },
-    "SubscribeToAllEventsAtActionLevelWithActionPackageIdrequest": {
-      "title": "Subscribe to all events at action level with action package idRequest",
-      "example": {
+    "Request - SubscribeToAllEventsAtActionLevelWithActionPackageId": {
+      "title": "Subscribe to all events at action level with action package id",
+      "x-ms-example": {
         "objectId": "25b39b30-0806-4d17-b6a7-a39f21fa52e9",
         "objectType": "ActionPackage",
         "eventTypes": [
@@ -2148,9 +2148,9 @@
         "callBackContext"
       ]
     },
-    "SendMessageToSubscriber(s)InAPublicGrouprequest": {
-      "title": "Send message to subscriber(s) in a public groupRequest",
-      "example": {
+    "Request - SendMessageToSubscriber(s)InAPublicGroup": {
+      "title": "Send message to subscriber(s) in a public group",
+      "x-ms-example": {
         "Message": "message to subscribers",
         "subscribers": [
           "{{mobile-number-3}}"
@@ -2181,9 +2181,9 @@
         "sendToAllSubscribers"
       ]
     },
-    "Add members to a grouprequest": {
-      "title": "Add members to a groupRequest",
-      "example": {
+    "Request - Add members to a group": {
+      "title": "Add members to a group",
+      "x-ms-example": {
         "members": [
           "{{mobile-number-2}}"
         ]
@@ -2202,9 +2202,9 @@
         "members"
       ]
     },
-    "SubscribeToAllEventsAtGroupLevelrequest": {
+    "Request - SubscribeToAllEventsAtGroupLevel": {
       "title": "Subscribe to all events at group levelRequest",
-      "example": {
+      "x-ms-example": {
         "objectId": "{{test-group-id}}",
         "objectType": "Group",
         "eventTypes": [
@@ -2265,8 +2265,8 @@
         "callBackContext"
       ]
     },
-    "PostingAResponseToASurveyrequest": {
-      "title": "Posting a response to a surveyRequest",
+    "Request - PostingAResponseToASurvey": {
+      "title": "Posting a response to a survey",
       "type": "object",
       "properties": {
         "actionType": {
@@ -2352,9 +2352,9 @@
         }
       }
     },
-    "Retrieve the access tokenresponse": {
-      "title": "Retrieve the access tokenResponse",
-      "example": {
+    "Response - Access Token": {
+      "title": "Retrieve the Access Token",
+      "x-ms-example": {
         "accessToken": "asdasadadaad",
         "endpointUrl": "https://inc-000.KaizalaMessaging.osi.office.net",
         "accessTokenExpiry": 1505566877207,
@@ -2387,9 +2387,9 @@
         "scope"
       ]
     },
-    "PostingAResponseToAnActionrequest": {
-      "title": "Posting a response to an actionRequest",
-      "example": {
+    "Request - PostingAResponseToAnAction": {
+      "title": "Posting a response to an action",
+      "x-ms-example": {
         "id": "25b39b30-0806-4d17-b6a7-a39f21fa52e9",
         "actionBody": {
           "Answers": [
@@ -2404,7 +2404,7 @@
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/ActionBodyResponse"
+          "$ref": "#/definitions/Response - Action Body"
         }
       },
       "required": [
@@ -2412,8 +2412,8 @@
         "actionBody"
       ]
     },
-    "ActionBodyResponse": {
-      "title": "Action Body Response",
+    "Response - Action Body": {
+      "title": "Action Body",
       "type": "object",
       "properties": {
         "Answers": {
@@ -2428,9 +2428,9 @@
         "Answers"
       ]
     },
-    "Remove subscribers from a public grouprequest": {
-      "title": "Remove Subscribers from a public groupRequest",
-      "example": {
+    "Request - Remove subscribers": {
+      "title": "Remove Subscribers from a public group",
+      "x-ms-example": {
         "subscribers": [
           "{{mobile-number-3}}"
         ]
@@ -2449,9 +2449,9 @@
         "subscribers"
       ]
     },
-    "Generate pinrequest": {
-      "title": "Generate Pin Request",
-      "example": {
+    "Request - Generate pin": {
+      "title": "Generate Pin",
+      "x-ms-example": {
         "mobileNumber": "{{mobile-number}}",
         "applicationId": "{{application-id}}"
       },
@@ -2471,9 +2471,9 @@
         "applicationId"
       ]
     },
-    "SendMessageOnAGrouprequest": {
-      "title": "Send message on a groupRequest",
-      "example": {
+    "Request - SendMessageOnAGroup": {
+      "title": "Send message on a group",
+      "x-ms-example": {
         "message": "Test message via API"
       },
       "type": "object",
@@ -2487,9 +2487,9 @@
         "message"
       ]
     },
-    "PostCustomAnnouncementToAGrouprequest": {
-      "title": "Post announcement to a groupRequest",
-      "example": {
+    "Request - PostCustomAnnouncementToAGroup": {
+      "title": "Post announcement to a group",
+      "x-ms-example": {
         "actiontype": "Announcement",
         "actionBody": {
           "message": "Lets test announcement"
@@ -2523,9 +2523,9 @@
         "message"
       ]
     },
-    "PostCustomActionToSubscriber(s)InAPublicGrouprequest": {
-      "title": "Post custom action to subscriber(s) in a public groupRequest",
-      "example": {
+    "Request - Send Custom Action To Subscriber(s)": {
+      "title": "Post custom action to subscriber(s) in a public group",
+      "x-ms-example": {
         "id": "25b39b30-0806-4d17-b6a7-a39f21fa52e9",
         "actionBody": {
           "title": "override title",
@@ -2583,9 +2583,9 @@
         "validity"
       ]
     },
-    "PostCustomAnnouncementToAGroup[withImages]request": {
-      "title": "Post custom announcement to a group [with images]Request",
-      "example": {
+    "Request - PostCustomAnnouncementToAGroup[withImages]": {
+      "title": "Post custom announcement to a group [with images]",
+      "x-ms-example": {
         "actionType": "Announcement",
         "actionBody": {
           "Message": "Test announcement via API 2",
@@ -2610,7 +2610,7 @@
       ]
     },
     "AnnouncementwithImage": {
-      "title": "Announce Body with Images",
+      "title": "Announcement Body with Images",
       "type": "object",
       "properties": {
         "Message": {
@@ -2630,9 +2630,9 @@
         "MediaResources"
       ]
     },
-    "login with pin and applicationid to get refreshtokenrequest": {
-      "title": "Login with pin and applicationId to get refreshTokenRequest",
-      "example": {
+    "Request - Refresh Token": {
+      "title": "Login with pin and applicationId to get refresh token",
+      "x-ms-example": {
         "mobileNumber": "{{mobile-number}}",
         "applicationId": "{{application-id}}",
         "pin": 8876
@@ -2659,9 +2659,9 @@
         "pin"
       ]
     },
-    "login with pin and applicationid to get refreshtokenresponse": {
-      "title": "Login with pin and applicationId to get refreshTokenResponse",
-      "example": {
+    "Response - Refresh Token": {
+      "title": "Login with pin and applicationId to get refresh token",
+      "x-ms-example": {
         "refreshToken": "adwawaw",
         "grantedScope": "groupinfo.read,groupinfo.write,groupinfo.remove,groupinfo.update,groupmember.read,groupmember.write,groupmember.remove,textmessage.read,action.read,action.write,action.update,profile.write,media.read,webhook.read,webhook.write,webhook.remove,webhook.update",
         "refreshTokenExpiry": 1537016388242
@@ -2688,9 +2688,9 @@
         "refreshTokenExpiry"
       ]
     },
-    "fetch subGroup of a groupresponse": {
-      "title": "Fetch sub-group of a groupResponse",
-      "example": {
+    "Response - Fetch subGroup of a group": {
+      "title": "Fetch sub-group(s) for a group",
+      "x-ms-example": {
         "groupName": "Kaizala Test group",
         "groupId": "5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
         "groupImageUrl": "",
@@ -2820,8 +2820,8 @@
         "welcomeMessage"
       ]
     },
-    "Create a group response": {
-      "example": {
+    "Response - Create a group": {
+      "x-ms-example": {
         "groupId": "jhj5fe5b80a-52d1-4d8a-8086-cf8f34259de2",
         "groupName": "Test group",
         "membersAdded": true
@@ -2847,8 +2847,8 @@
         "membersAdded"
       ]
     },
-    "Get subscribers of a public grouprequest": {
-      "title": "Get Subscribers of a public groupRequest",
+    "Request - Subscribers of a public group": {
+      "title": "Get Subscribers of a public group",
       "type": "object",
       "properties": {
         "count": {
@@ -2866,9 +2866,9 @@
         "cursor"
       ]
     },
-    "SubscribeToAllEventsAtActionLevelrequest": {
-      "title": "Subscribe to all events at action levelRequest",
-      "example": {
+    "Request - SubscribeToAllEventsAtActionLevel": {
+      "title": "Subscribe to all events at action level",
+      "x-ms-example": {
         "objectId": "{{test-action-id}}",
         "objectType": "Action",
         "eventTypes": [
@@ -2918,9 +2918,9 @@
         "callBackContext"
       ]
     },
-    "PostCustomActionOnAGrouprequest": {
-      "title": "Post custom action on a groupRequest",
-      "example": {
+    "Request - PostCustomActionOnAGroup": {
+      "title": "Post custom action on a group",
+      "x-ms-example": {
         "id": "25b39b30-0806-4d17-b6a7-a39f21fa52e9",
         "actionBody": {
           "title": "override title",
@@ -2942,9 +2942,9 @@
         "actionBody"
       ]
     },
-    "SendSurveyOnAGrouprequest": {
-      "title": "Send survey on a groupRequest",
-      "example": {
+    "Request - SendSurveyOnAGroup": {
+      "title": "Send survey on a group",
+      "x-ms-example": {
         "actionType": "Survey",
         "actionBody": {
           "isAnonymous": false,
@@ -3010,7 +3010,7 @@
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/SurveyActionBodyRequest"
+          "$ref": "#/definitions/Request - SurveyActionBody"
         }
       },
       "required": [
@@ -3018,7 +3018,7 @@
         "actionBody"
       ]
     },
-    "SurveyActionBodyRequest": {
+    "Request - SurveyActionBody": {
       "title": "Survey Action Body",
       "type": "object",
       "properties": {

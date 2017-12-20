@@ -17,8 +17,8 @@ API end-point to send/retrieve instances of Kaizala Actions to/from conversation
 | Job | Yes | Yes | job |
 | Survey | Yes | Yes | survey |
 | Photo with Location | Yes | No | photoWithLocation |
-| Let's Meet | No | No | n/a |
-| Quick Poll | No | No | n/a |
+| Let's Meet | Yes | Yes | letsmeet |
+| Quick Poll | Yes | Yes | poll |
 | Share Location | Yes | No | shareLocation |
 | Request Location | No | No | n/a |
 | Live Location | No | No | n/a |
