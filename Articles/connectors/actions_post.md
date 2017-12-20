@@ -73,7 +73,7 @@ author: nitinjms
 | :---: | :---: | :---:	| :--- |
 | title | String | No | Title of the Meeting Request  |
 | startingTime | DateTime | No | Starting time for the meeting |
-| duration | integer | No | Default: 30 mins. Number of minutes for which a meeting would be conducted |
+| DurationInMins | Integer | No | Default: 30 mins. Number of minutes for which a meeting would be conducted |
 | place | JSON object | Yes | Meeting Location. Contains 3 components: latitude, longitude, name  |
 | agenda | String | Yes | Agenda for the Meeting / Description for the meeting |
 | isSenderOnly | Bool | Yes | For allowing only sender to view Let's Meet summary. Default: false |
