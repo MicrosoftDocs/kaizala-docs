@@ -32,7 +32,7 @@
             "name": "Content Creation APIs",
             "description": "API end-point to send instances of Kaizala Actions to conversation groups inside Kaizala. <br /> Current scope is to support following action types:
             <Table> 
-            <tr><td> Action </td> <td>POST Supported </td><td> Id </td></tr>
+            <tr><th> Action </th> <th>POST Supported </th><th> Id </th></tr>
             <tr><td> Picture Attachment </td> <td> Yes </td> <td>  image  </td></tr>
             <tr><td> Audio Attachment </td> <td> Yes </td> <td>  audio  </td></tr>
             <tr><td> Document Attachment </td> <td> Yes </td>  <td>  document  </td></tr>
@@ -52,7 +52,7 @@
             "name": "Content Query APIs",
             "description": "These set of APIs retrieve the list of action instances sent to a group
             <Table> 
-            <tr><td> Action </td> <td>GET Supported </td><td> Id </td></tr>
+            <tr><th> Action </th> <th>GET Supported </th><th> Id </th></tr>
             <tr><td> Picture Attachment </td> <td> Yes </td> <td>  image  </td></tr>
             <tr><td> Audio Attachment </td> <td> No </td> <td>  audio  </td></tr>
             <tr><td> Document Attachment </td> <td> Yes </td>  <td>  document  </td></tr>
