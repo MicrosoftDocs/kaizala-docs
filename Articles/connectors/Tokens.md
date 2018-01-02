@@ -40,7 +40,6 @@ Kaizala provides two other methods to generate Refresh tokens programatically
 * Using OAuth (Will add soon)
 
 Once Refresh Token is provided by either Group-Admin or user to the Developer, it should be used to generate Access Token.
-
 ## Methods to generate Access Token
 
 As a developer, you would now have a Connector ID, Secret and a Refresh Token that should be passed on to you. Using this, you can generate an access token.
@@ -74,14 +73,18 @@ You will need to use the following end-point to get an access token (both the fi
 | `accessToken` | String | On successful auth, an application token is returned that can be used for making subsequent API calls |
 | `endpointUrl` | String | On successful auth, an endpoint url is returned that should be used as api-base-url for making subsequent API calls |
 | `accessTokenExpiry` | Long | It indicates the expiry time for accessToken in epoch time(milliseconds) |
+| `refreshToken` | String | On completion of 328 days (90% of validity of Refresh Token), it would return the new refreshToken that should be used for generating accessToken. Otherwise after the validity of current refresh token expires, connector would stop working. The value is Null till 90% of validity of current refreshToken expires |
+| `scope` | String | Set of permissions that the connector is provided with |
 
 ##### Sample JSON Response
 
 ```javascript
-{ 
-    "accessToken" :"qwassasaswadheenqqwertyasdfghjkl",
-    "endpointUrl": "https://inc-001.KaizalaMessaging.osi.office.net",
-    "accessTokenExpiry": 1505470472895,
+{
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cm46bWljcm9zb2Z0OmNyZWRlbnRpYWxzIjoie1wicGhvbmVOdW1iZXJcIjpcIis5MTk1NTAwMDAxMTZcIixcImNJZFwiOlwiXCIsXCJ0ZXN0U2VuZGVyXCI6XCJmYWxzZVwiLFwiYXBwTmFtZVwiOlwiY29tLm1pY3Jvc29mdC5tb2JpbGUua2FpemFsYWFwaVwiLFwiYXBwbGljYXRpb25JZFwiOlwiOTExMDY3RTE4QUUCJ2ZXIiOiIyIiwibmJmIjoxNTE0ODgxNjg2LCJleHAiOjE1MTg0ODE2ODYsImlhdCI6MTUxNDg4MTY4NiwiaXNzIjoidXJuOm1pY3Jvc29mdDp3aW5kb3dzLWF6dXJlOnp1bW8iLCJhdWQiOiJ1cm46bWljcm9zb2Z0OndpbmRvd3MtYXp1cmU6enVtbyJ9.fHbIHHTdzoDYT-QIPMu6Oit6x3JMT78LSm50o5cA-N8",
+    "endpointUrl": "https://kms-alpha.kaiza.la/",
+    "accessTokenExpiry": 1518481686294,
+    "refreshToken": "",
+    "scope": "token.write"
 }
 ```
 ### Generate Access Token using oAuth 2.0
@@ -138,14 +141,18 @@ You will receive   accessToken, endpointUrl, accessToken Expiry as part of the r
 | `accessToken` | String | On successful auth, an application token is returned that can be used for making subsequent API calls |
 | `endpointUrl` | String | On successful auth, an endpoint url is returned that should be used as api-base-url for making subsequent API calls |
 | `accessTokenExpiry` | Long | It indicates the expiry time for accessToken in epoch time(milliseconds) |
+| `refreshToken` | String | On completion of 328 days (90% of validity of Refresh Token), it would return the new refreshToken that should be used for generating accessToken. Otherwise after the validity of current refresh token expires, connector would stop working. The value is Null till 90% of validity of current refreshToken expires |
+| `scope` | String | Set of permissions that the connector is provided with |
 
 ##### Sample JSON Response
 
 ```javascript
-{ 
-    "accessToken" :"qwassasaswadheenqqwertyasdfghjkl",
-    "endpointUrl": "https://inc-001.KaizalaMessaging.osi.office.net",
-    "accessTokenExpiry": 1505470472895,
+{
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cm46bWljcm9zb2Z0OmNyZWRlbnRpYWxzIjoie1wicGhvbmVOdW1iZXJcIjpcIis5MTk1NTAwMDAxMTZcIixcImNJZFwiOlwiXCIsXCJ0ZXN0U2VuZGVyXCI6XCJmYWxzZVwiLFwiYXBwTmFtZVwiOlwiY29tLm1pY3Jvc29mdC5tb2JpbGUua2FpemFsYWFwaVwiLFwiYXBwbGljYXRpb25JZFwiOlwiOTExMDY3RTE4QUUCJ2ZXIiOiIyIiwibmJmIjoxNTE0ODgxNjg2LCJleHAiOjE1MTg0ODE2ODYsImlhdCI6MTUxNDg4MTY4NiwiaXNzIjoidXJuOm1pY3Jvc29mdDp3aW5kb3dzLWF6dXJlOnp1bW8iLCJhdWQiOiJ1cm46bWljcm9zb2Z0OndpbmRvd3MtYXp1cmU6enVtbyJ9.fHbIHHTdzoDYT-QIPMu6Oit6x3JMT78LSm50o5cA-N8",
+    "endpointUrl": "https://kms-alpha.kaiza.la/",
+    "accessTokenExpiry": 1518481686294,
+    "refreshToken": "",
+    "scope": "token.write"
 }
 ```
 
