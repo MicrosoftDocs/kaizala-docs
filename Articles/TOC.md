@@ -18,6 +18,7 @@
 
 # Resources
 ## [FAQ](FAQ.md)
+## [Developer Changelist](DevChangelist.md)
 ## [Ask a Question on Stack Overflow](https://stackoverflow.com/questions/tagged/Kaizala)
 ## [Join Kaizala Developer Connect](https://aka.ms/KaizalaDevConnect)
 ## [Feedback](feedback.md)
