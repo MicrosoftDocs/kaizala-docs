@@ -105,8 +105,8 @@ You will need to use the following end-point to get an access token (both the fi
 
        |            	| Parameter         	| Type   	| Optional? 	| Description |
        | :---: | :---: | :---: | :---:	| :--- |
-       | HTTP Header 	| `client_id`     	| String 	| No        	| ID associated with the Connector 	|
-       | HTTP Header 	| `redirect_uri` 	| String 	| No        	| Secret associated with the Connector |
+       | Url parameter 	| `client_id`     	| String 	| No        	| ID associated with the Connector 	|
+       | Url parameter 	| `redirect_uri` 	| String 	| No        	| Secret associated with the Connector |
 
      *    For example, sample url would be
      
@@ -128,9 +128,10 @@ You will need to use the following end-point to get an access token (both the fi
 
        |            	| Parameter         	| Type   	| Optional? 	| Description |
        | :---: | :---: | :---: | :---:	| :--- |
-       | HTTP Header 	| `client_id`     	| String 	| No        	| ID associated with the Connector 	|
-       | HTTP Header 	| `client_secret` 	| String 	| No        	| Secret associated with the Connector |
-       | HTTP Header 	| `code` 	| String 	| No        	| Code that has been returned in the re-direct url's query parameter |
+       | HTTP Header 	| `Content-Type`     	| String 	| No        	| Allowed Value: application/x-www-form-urlencoded 	|
+       | Body Parameter 	| `client_id`     	| String 	| No        	| ID associated with the Connector 	|
+       | Body Parameter 	| `client_secret` 	| String 	| No        	| Secret associated with the Connector |
+       | Body Parameter 	| `code` 	| String 	| No        	| Code that has been returned in the re-direct url's query parameter |
      
 You will receive   accessToken, endpointUrl, accessToken Expiry as part of the response.
 
