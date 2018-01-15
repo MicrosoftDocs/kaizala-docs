@@ -2,7 +2,7 @@
 # Overview
 ## [About Microsoft Kaizala Developer Platform](index.md)
 ## [Connectors](connectors/README.md)
-## [Kaizala Actions](actions.md)
+## [Kaizala Actions](Actions/README.md)
 # Quickstarts
 ## [Use Connectors to integrate with Kaizala](connectors/setup.md)
 
