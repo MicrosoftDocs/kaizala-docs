@@ -5,6 +5,7 @@
 ## [Kaizala Actions](Actions/README.md)
 # Quickstarts
 ## [Use Connectors to integrate with Kaizala](connectors/setup.md)
+## [Build a Kaizala Action](Actions/tutorial.md)
 
 
 # Samples
