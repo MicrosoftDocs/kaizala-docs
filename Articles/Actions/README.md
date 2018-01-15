@@ -1,4 +1,4 @@
-# Kaizala Actions
+s# Kaizala Actions
 
 ## Overview
 Kaizala Actions are basic 'units of work' that help users get work done within a conversation context inside Kaizala. Some of these Actions like Job, Survey, Poll, etc. are 
@@ -36,5 +36,4 @@ You can try out building your first Kaizala Action by following our simple [tuto
 
 ## Download Sample Action Packages
 
-*  [Sample Action in Request-Response format](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/Sample%20Request-Response%20Action.zip)
-*  [Sample Action in Response only format](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/Sample%20Response%20Action.zip)
+*  [Sample Actions in Request-Response format](docs.microsoft.com/kaizala)
