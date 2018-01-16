@@ -100,12 +100,12 @@ accessToken : {{access-token}}
 
  **3. How can I test/debug a Custom Action without having to upload a package every time?**</br></br>
 
-  To test a custom Action, before it is sent for approval, read more about the steps/process [here](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/test.md) 
+  To test a custom Action, before it is sent for approval, read more about the steps/process [here](Actions/test.md) 
 <br/><br/>
 
 
  **4. What are guidelines that Action Package must follow in order to get approved?**</br></br>
-While approving a custom Action Package, Microsoft follows guidelines/validations that an Action Package must adhere to. Please find them [here](actions/validation.md).
+While approving a custom Action Package, Microsoft follows guidelines/validations that an Action Package must adhere to. Please find them [here](Actions/validation.md).
 <br/><br/>
 
 **5. Where can I access the reports corresponding to my Custom Actions on Kaizala Management Portal?**</br></br>
@@ -113,7 +113,7 @@ While approving a custom Action Package, Microsoft follows guidelines/validation
 <br/><br/>
 
 **6. How can I load external content in my action page?**</br></br>
-You can load external content in your action by whitelisting the URL which contains the data. You can find steps for URL whitelisting [here](actions/urlWhitelisting.md).
+You can load external content in your action by whitelisting the URL which contains the data. You can find steps for URL whitelisting [here](Actions/urlWhitelisting.md).
 <br/><br/>
 
 ## Integration with Microsoft Apps
