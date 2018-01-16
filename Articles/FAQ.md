@@ -113,7 +113,7 @@ While approving a custom Action Package, Microsoft follows guidelines/validation
 <br/><br/>
 
 **6. How can I load external content in my action page?**</br></br>
-You can load external content in your action by whitelisting the URL which contains the data. You can find steps for URL whitelisting [here](Actions/urlWhitelisting.md).
+You can load external content in your action by whitelisting the URL which contains the data. You can find steps for URL whitelisting [here](Actions/KASClient/UrlWhitelisting.md).
 <br/><br/>
 
 ## Integration with Microsoft Apps
