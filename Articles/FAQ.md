@@ -112,6 +112,10 @@ While approving a custom Action Package, Microsoft follows guidelines/validation
  Kaizala Management Portal enables users to create custom actions, forms, feedback cards, etc. Such actions can then be mapped to your groups and sent repeatedly to track critical business metrics. On the portal, this data is reported under “Recurrent Survey Reports”. As an additional feature, the report aggregates responses to these cards over time and across instances. 
 <br/><br/>
 
+**6. How can I load external content in my action page?**</br></br>
+You can load external content in your action by whitelisting the URL which contains the data. You can find steps for URL whitelisting [here](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/urlWhitelisting.md).
+<br/><br/>
+
 ## Integration with Microsoft Apps
 
 **1. How can we create a Kaizala Connector in PowerApps?**</br></br>
