@@ -1,4 +1,4 @@
-s# Kaizala Actions
+# Kaizala Actions
 
 ## Overview
 Kaizala Actions are basic 'units of work' that help users get work done within a conversation context inside Kaizala. Some of these Actions like Job, Survey, Poll, etc. are 
