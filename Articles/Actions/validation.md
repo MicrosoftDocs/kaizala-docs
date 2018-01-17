@@ -1,6 +1,6 @@
-# Validation policies for Kaizala Actions
+# Guidelines for Kaizala Actions
 
-This document describes the criteria that are used to validate those Kaizala Actions that are eligible to be published to the Kaizala clients.
+This document describes the criteria that must be adhered to while developing Kaizala Actions. In addition, you must consent to the [Terms of Use]() for Kaizala Client SDK. Please find the guideline policy:
 
 1.  Kaizala Actions provide value to the Kaizala client users
 
@@ -20,7 +20,7 @@ This document describes the criteria that are used to validate those Kaizala Act
 | Policy number | Description |
 | :---: | :--- |
 |3.1|Your Kaizala Action must not stop responding, end unexpectedly, or contain programming errors.|
-|3.2|Your Kaizala Action description, imagery, documentation and any other associated metadata must be consistent with the functionality of the app or add-in|
+|3.2|Your Kaizala Action description, imagery, documentation and any other associated metadata must be consistent with the functionality of the Action|
 |3.3|Your Kaizala Action must not jeopardize or compromise the security or functionality of Microsoft or third-party products|
 |3.4|Your Kaizala Action must be free of viruses, malware, and any malicious software.|
 
