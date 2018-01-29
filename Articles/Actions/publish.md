@@ -1,22 +1,36 @@
 # Publish a Kaizala Action
 
-The Kaizala Management Portal provides a convenient location for you to upload new Kaizala Actions.
+The Kaizala Management Portal provides a convenient location for you to import custom Kaizala Actions.
 
 >   You will need an active Office365 Organizational subscription to access the Management Portal.
 
-You can follow the below steps to submit your Action for approval:
+## Import Kaizala Action
+You can follow the below steps to submit your Action:
 *   Navigate to the Kaizala Management Portal @ https://manage.kaiza.la/
 *   Log in using an existing Office365 account
 *   Register a phone number on the portal by tapping on “Add a Phone Number”
 *   Tap on "Actions" on the left menu
-*   Tap on "Import a new Action"
-*   Upload your package
-*   Submit for approval
+*   Tap on "Import Action"
+*   Tap on "Accept" on 'Terms of use' page. You need to accept our 'Terms of use' for Kaizala Action SDK (*if you have not already accepted it earlier*)
+*   Upload your zip package
 
-All Kaizala Actions need to confirm to the [validation policies](validation.md) to be eligible to be published to Kaizala clients.
+All Kaizala Actions need to confirm to the [guidelines](validation.md) to be eligible to be published to Kaizala clients.
 
-Once your Action is approved, you can publish your Action to members of a specific group by following the below steps:
+## Steps to publish an Action
+*   Once your Action is successfully uploaded, it is available in **draft** state
+*   You need to 'stage' the uploaded version in order to [test & debug](test.md) your Action.
+*   After you have tested your Action, you can 'Activate' the Action. Action moves to Active state
+
+[Read More](ActionLifecycle.md) about lifecycle of a Kaizala Action
+
+## Add Action to Group
+You can add your Action to members of a specific group by following the below steps:
 *   Select the selected group from the Groups page
-*   Navigate to Action tab. Click or tap Add Action
+*   Navigate to Action tab. Click or tap Add Action
 *   Select the Action that you want to publish. Choose the user roles, for which you would like the Action to be published for.
 *   Click or tap Publish.
+
+> **Note**:<ol>
+    <li>Action in Staged/Active state only can be added to groups</li>
+    <li>Staged Action can be added to groups only for whthose groups which Action creator is an Admin </li>
+    </ol>
