@@ -35,13 +35,17 @@ Create a manifest file in JSON notation to identify the Action and its component
 
 Create a ZIP file of the package with all of it's resources at the root of the package.
 
-Upload the package on the Kaizala Management Portal.
+Upload the package on the Kaizala Management Portal. After upload, Action is in Draft state
 
-6.  **Submit the Action for Approval**
+6.  **Stage the Draft Action**
 
-Submit the Action for approval by the Kaizala team. 
+On the detail page of the Action version which is in draft state, Tap on 'Stage' button. Once an Action is staged, you can test & debug the Action 
 
-7.  **Publish the Action to respective groups or your tenancy**
+7.  **Activate the Staged Action**
 
-Once approved, you can deploy the Action to groups or tenancy associated with your organization. 
+Once an Action is in staged state, and has been tested successfully, you can activate the Action in your organization. Action moves to Active state. Other members in your organization can also add this Action to their respective groups.
+
+8.  **Add the Action to respective groups**
+
+Once Action is in Active state, you can deploy the Action to groups associated with your organization. 
 
