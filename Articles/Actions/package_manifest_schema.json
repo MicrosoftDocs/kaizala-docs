@@ -40,6 +40,18 @@
             "description": "File name of the Action's app model. Refer to the app Model JSON schema and ensure compliance.",
             "maxLength": 64
         },
+        "externalUrls": {
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "description": "The url which needs to be whitelisted for showing external content. All of these URLs must conform to https protocol."
+                }
+            },
+            "required": [
+                "url"
+            ]
+        },
         "views": {
             "type": "object",
             "properties": {
