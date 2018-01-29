@@ -4,7 +4,7 @@
 | :---: | :---: | :---: | :--- |
 | **initFormAsync** | Initializes and returns an empty form object based on the default form file present in the package |  | Form Object |
 | **submitFormRequest** | Submits the newly created form as a request. This results a new conversation card | <ul><li>Form</li><li>Boolean – should inflate/not</li></ul>| |
-| **submitFormRequestWithoutDismiss** |  |<ul><li>Form</li><li>Boolean – should inflate/not</li></ul>| |
+| **submitFormRequestWithoutDismiss** | Submits the newly created form as a request. This results a new conversation card |<ul><li>Form</li><li>Boolean – should inflate/not</li></ul>| |
 | **updateForm** | Used for making changes in form fields like title, description and settings | <ul><li>Fields that require updation</li><li>Boolean – should inflate/not</li></ul> | |
 
 ##  Initialize a Form
@@ -28,3 +28,23 @@
   */
   function submitFormRequest(form: KASForm)
   ```
+
+```typescript
+  /**
+  * Submits the newly created form as a request. This results a new conversation card
+  * @param {KASForm} form
+  */
+  function submitFormRequestWithoutDismiss(form: KASForm, shouldInflate: boolean) {
+  ```
+
+
+##  Update Form
+
+```typescript
+
+  /**
+  * use for making changes in form fields like title, description and settings.
+  */
+  function updateForm(fields: string, shouldInflate: boolean,callback: (success: boolean) => void) {
+  ```
+
