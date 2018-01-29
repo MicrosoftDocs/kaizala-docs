@@ -28,7 +28,7 @@ You can create new Kaizala Actions that leverage Kaizala’s people network and 
     *   [Test and Debug](test.md)
     *   [Publish](publish.md)
 
-All Kaizala Actions need to confirm to the [validation policies](validation.md) to be eligible to be published to Kaizala clients.
+All Kaizala Actions need to adhere to the [guidelines](validation.md) to be eligible to be published to Kaizala clients.
 
 ## Build your first Kaizala Action
 
