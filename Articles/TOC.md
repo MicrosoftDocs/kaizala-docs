@@ -3,24 +3,44 @@
 ## [About Microsoft Kaizala Developer Platform](index.md)
 ## [Connectors](connectors/README.md)
 ## [Kaizala Actions](Actions/README.md)
-# Quickstarts
-## [Use Connectors to integrate with Kaizala](connectors/setup.md)
-## [Build a Kaizala Action](Actions/tutorial.md)
 
+# Quickstarts
+
+## Use Connectors to integrate with Kaizala
+### [Set up Connectors](connectors/setup.md)
+### [Generate Access Tokens](connectors/Tokens.md)
+### [Rest APIs](connectors/API.md)
+### [Webhooks](connectors/webHooks.md)
+
+## Develop a Kaizala Action
+### [Anatomy of Kaizala Action Package](Actions/anatomy.md)
+### [Get Started](Actions/get_started.md)
+### [Develop](Actions/develop.md)
+### [Publish](Actions/publish.md)
+
+# API References
+
+## Kaizala REST APIs
+### [Authentication APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/authentication%20apis)
+### [Content Creation APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/content%20creation%20apis)
+### [Content Query APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/content%20query%20apis)
+### [Group Management APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/group%20management%20apis)
+### [Subscription WebHooks](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/subscription%20webhooks)
+
+## Custom Action APIs
+### [Form Creation APIs](Actions/KASClient/form_creation.md)
+### [Form Response APIs](Actions/KASClient/form_response.md)
+### [Form Summary APIs](Actions/KASClient/form_summary.md)
+### [App APIs](Actions/KASClient/app.md)
 
 # Samples
 ## [API Collection](https://app.getpostman.com/run-collection/f68a8abec784cc00b0b9#?env%5BKaizala-APIs-environment%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoibW9iaWxlLW51bWJlciIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImFjY2Vzcy10b2tlbiIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InRlc3QtZ3JvdXAtaWQiLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJtb2JpbGUtbnVtYmVyLTIiLCJ2YWx1ZSI6Iis5MTExOTk5OTk5OTkiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoiYXBpLXJvb3QiLCJ2YWx1ZSI6Imh0dHBzOi8vYXBpLmthaXphLmxhIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImFwcGxpY2F0aW9uLWlkIiwidmFsdWUiOiIiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoiYXBwbGljYXRpb24tc2VjcmV0IiwidmFsdWUiOiIiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoiZW5kcG9pbnQtdXJsIiwidmFsdWUiOiJodHRwczovL2luYy0wMDEuS2FpemFsYU1lc3NhZ2luZy5vc2kub2ZmaWNlLm5ldCIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJyZWZyZXNoLXRva2VuIiwidmFsdWUiOiIiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoidGVzdC1wdWJsaWMtZ3JvdXAtaWQiLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZXN0LXN1Yi1ncm91cC1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6Im1vYmlsZS1udW1iZXItMyIsInZhbHVlIjoiKzkxMTA5OTk5OTk5IiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InRlc3QtYWN0aW9uLWlkIiwidmFsdWUiOiIiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoidGVzdC1zdXJ2ZXktaWQiLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZXN0LXdlYmhvb2staWQiLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In1d)
-
-# API References
-## [Develop with Kaizala REST APIs](https://docs.microsoft.com/en-us/rest/kaizala/)
-## [Custom Action APIs](https://docs.microsoft.com/en-us/rest/kaizala/)
-### [Form Creation APIs](https://docs.microsoft.com/en-us/rest/kaizala/)
-### [Form Response APIs](https://docs.microsoft.com/en-us/rest/kaizala/)
-### [Form Summary APIs](https://docs.microsoft.com/en-us/rest/kaizala/)
+## [Sample Action Packages](https://manage.kaiza.la/MiniApps/DownloadSDK)
 
 # How-To guides
 
-## [Create an Action using Action Designer](https://support.office.com/en-us/article/Kaizala-Actions-1eacc59a-dd14-43e9-b6b0-3c78773d5496?ui=en-US&rs=en-US&ad=US)
+## [Create an Action using Action Templates](https://support.office.com/en-us/article/Kaizala-Actions-1eacc59a-dd14-43e9-b6b0-3c78773d5496?ui=en-US&rs=en-US&ad=US)
+## [Develop a custom Action](Actions/tutorial.md)
 ## [Create a Flow using Kaizala](https://support.office.com/en-us/article/Integrate-your-workflow-in-Kaizala-using-Microsoft-Flow-883343d0-6b16-4725-a23d-bc69fb264356?ui=en-US&rs=en-US&ad=US)
 ## [Use Kaizala Office Add-IN](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91)
 
