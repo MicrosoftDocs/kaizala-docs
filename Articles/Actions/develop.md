@@ -22,7 +22,7 @@ When a new instance of the Kaizala Action is invoked from the app's Action Palet
 create a new instance of the Form object as defined in the app model. 
 
 To interact with the Kaizala Aggregation Services and creating the new form instance, you can refer to the APIs in the [KASClient JS SDK](KASClient/README.md). You will need to 
-download the [KASClient JS File](../../../v1/js/KASClient.js) and include it in your package.
+download the [KASClient JS File](https://manage.kaiza.la/MiniApps/DownloadSDK) and include it in your package.
 
 Create a new HTML file that represents this creation view. In the corresponding javascript file, invoke the KASClient JS SDK and create a form object.
 
@@ -58,4 +58,4 @@ To interact with the Kaizala Aggregation Services and the Kaizala Native client 
 
 Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package.
 
-*   Next: [Test & debug](test.md)
+*   Next: [Publish](publish.md)
