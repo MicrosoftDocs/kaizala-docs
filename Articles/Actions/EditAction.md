@@ -1,12 +1,12 @@
-# Instant Edit of Actions in Test environment
+# Instant Edit of Actions in Staged environment
 
-Before you start editing Actions, please enable [test mode](test.md)
+Before you start editing Actions, please enable [Staged state](test.md)
 
 While creating a Action, the HTML views and its associated files (css, js) are bundled within the Action package and is imported on the Kaizala Management Portal. Any further modifications to the views require the package to be recreated and uploaded on the Kaizala Management Portal.
 
 In order to simplify the subsequent editing of the HTML views, Kaizala enables edit of HTML, JavaScript and CSS files locally and instantly see the updates in the Kaizala App. This involves creating a local HTTP server which will host the updated files and Kaizala App will use those files, instead of the files present in the actual package.
 
->  **Note:** In order to enable instant edit, Action must be uploaded on Kaizala Management Portal and should be in test mode
+>  **Note:** In order to enable instant edit, Action must be uploaded on Kaizala Management Portal and should be in staged state
 
 ## Enable Instant Edit in Android devices
 
