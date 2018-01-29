@@ -34,7 +34,7 @@
   * Submits the newly created form as a request. This results a new conversation card
   * @param {KASForm} form
   */
-  function submitFormRequestWithoutDismiss(form: KASForm, shouldInflate: boolean) {
+  function submitFormRequestWithoutDismiss(form: KASForm, shouldInflate: boolean)
   ```
 
 
@@ -45,6 +45,6 @@
   /**
   * use for making changes in form fields like title, description and settings.
   */
-  function updateForm(fields: string, shouldInflate: boolean,callback: (success: boolean) => void) {
+  function updateForm(fields: string, shouldInflate: boolean,callback: (success: boolean) => void)
   ```
 
