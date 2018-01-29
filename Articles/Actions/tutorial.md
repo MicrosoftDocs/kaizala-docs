@@ -5,6 +5,8 @@ In this tutorial, we will create a custom Kaizala Action utilizing the extensibl
 
 We will create an “Ask Feedback” Action which will allow Kaizala users to ask for feedback from other users in terms of 1-to-5 star ratings on questions asked – along with any comments they would like to provide.  
 
+You can download sample Kaizala Action packages from [here](https://manage.kaiza.la/MiniApps/DownloadSDK).
+
 ## Pre-requisites 
 * A smartphone (Android/iOS) with Kaizala app installed 
 * An Office365 Account 
