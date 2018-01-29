@@ -25,7 +25,6 @@ You can create new Kaizala Actions that leverage Kaizala’s people network and 
     *   [Anatomy of a Kaizala Action package](anatomy.md)
     *   [Get Started](get_started.md)
     *   [Develop](develop.md)
-    *   [Test and Debug](test.md)
     *   [Publish](publish.md)
 
 All Kaizala Actions need to adhere to the [guidelines](validation.md) to be eligible to be published to Kaizala clients.
