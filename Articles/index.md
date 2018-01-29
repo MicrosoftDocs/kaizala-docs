@@ -26,7 +26,7 @@ individual endpoints need to be called to perform specific actions using Kaizala
 Kaizala Actions are basic 'units of work' that help users get work done within a conversation context inside Kaizala. Some of these Actions like Job, Survey, Poll, etc. are
 shipped out-of-the-box and provide scoped functionality. These Actions can be discovered within the Kaizala app and can be invoked in a conversation context from the Action Palette.
 
-[Get started with Kaizala Actions](actions.md)
+[Get started with Kaizala Actions](Actions/README.md)
 
 ## Submit your questions, bugs, feature requests, and contributions
 
