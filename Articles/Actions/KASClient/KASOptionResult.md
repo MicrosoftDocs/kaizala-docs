@@ -1,3 +1,4 @@
+# KASOptionResult
 ```typescript
 class KASOptionResult {
   // Title of the option
