@@ -75,8 +75,7 @@ accessToken : {{access-token}}
 ```` 
 <br/><br/>
 
-**12. Can I send a message in a 1-1 conversation in Kaizala through APIs?**</br></br>
-  All APIs in Kaizala operate within the context of a group. So it is not possible to send a message in a 1-1 conversation using an API. Following capabilities are supported:
+**12. Can I send a message in a 1-1 conversation in Kaizala through APIs?**</br></br>  All APIs in Kaizala operate within the context of a group. So it is not possible to send a message in a 1-1 conversation using an API. Following capabilities are supported:
 -   Sending message to a particular subscriber in a public group 
 -   Creating a group with the user and sending message to the group
 
@@ -117,7 +116,7 @@ As a developer, you must adhere to guidelines while developing a custom Action P
 <br/><br/>
 
 **6. How can I load external content in my action page?**</br></br>
-You can load external content in your action by whitelisting the URL which contains the data. You can find steps for URL whitelisting [here](Actions/KASClient/UrlWhitelisting.md).
+You can load external content in your action by whitelisting the URL which contains the data. You can find steps for URL whitelisting [here](Actions/UrlWhitelisting.md).
 <br/><br/>
 
 ## Integration with Microsoft Apps

@@ -27,7 +27,7 @@ The App Model specifies the capabilities of the Kaizala Action including:
 *   Properties for the form object
 *   Settings associated with the Form object
 
-For more information, see [App Model Schema in JSON format](appModel_schema.json).
+For more information, see [App Model Schema in JSON format](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Actions/appModel_schema.json).
 
 ## Web Resources
 

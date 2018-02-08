@@ -18,17 +18,18 @@ All Kaizala Actions need to confirm to the [guidelines](validation.md) to be eli
 
 ## Steps to publish an Action
 *   Once your Action is successfully uploaded, it is available in **draft** state
-*   You need to 'stage' the uploaded version in order to [test & debug](test.md) your Action.
+*   You need to 'stage' the uploaded version in order to [test & debug](test.md) your Action
 *   After you have tested your Action, you can 'Activate' the Action. Action moves to Active state
 
 [Read More](ActionLifecycle.md) about lifecycle of a Kaizala Action
 
 ## Add Action to Group
 You can add your Action to members of a specific group by following the below steps:
-*   Select the selected group from the Groups page
-*   Navigate to Action tab. Click or tap Add Action
-*   Select the Action that you want to publish. Choose the user roles, for which you would like the Action to be published for.
-*   Click or tap Publish.
+*   Navigate to the Action that you want to add. You would find a page in which all versions of the Action is listed.
+*   Open the details page for the Action version which is in Active/Staged state
+*   Click or Tap Add to groups
+*   Select the group in which you want Action to publish. Choose the user roles, for which you would like the Action to be published for
+*   Click or tap Publish
 
 > **Note**:<ol>
     <li>Action in Staged/Active state only can be added to groups</li>
