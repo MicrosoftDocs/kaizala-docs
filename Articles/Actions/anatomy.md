@@ -18,7 +18,7 @@ The manifest specifies settings of the Kaizala Action, such as the following:
     * A summary view to view aggregated responses
 *   Labels to be used across the native views that encapsulate your custom views
 
-For more information, see [Package Manifest Schema in JSON format](package_manifest_schema.json).
+For more information, see [Package Manifest Schema in JSON format](package_manifest_schema.md).
 
 ## App Model
 
@@ -27,7 +27,7 @@ The App Model specifies the capabilities of the Kaizala Action including:
 *   Properties for the form object
 *   Settings associated with the Form object
 
-For more information, see [App Model Schema in JSON format](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Actions/appModel_schema.json).
+For more information, see [App Model Schema in JSON format](appModel_schema.md).
 
 ## Web Resources
 
