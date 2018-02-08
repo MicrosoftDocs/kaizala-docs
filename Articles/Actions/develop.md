@@ -14,7 +14,7 @@ The Kaizala Actions currently support form based data models that can be used fo
 
 So, you will first need to define the ‘questions’ you need to include to create a form object.
 
-Refer to the [app Model JSON Schema](appModel_schema.json) to create your Action's app model.
+Refer to the [app Model JSON Schema](appModel_schema.md) to create your Action's app model.
 
 ## Define the Creation View
 
@@ -32,7 +32,7 @@ Now that you have a semblance of what you want to achieve and have successfully 
 
 The Kaizala Package manifest file provides essential information for the Kaizala platform for it to recognize and run your custom Kaizala action.
 
-Refer to the [package manifest JSON Schema](package_manifest_schema.json) to create your Action's package manifest.
+Refer to the [package manifest JSON Schema](package_manifest_schema.md) to create your Action's package manifest.
 
 At this point, you should also include an icon file for your custom Action in the package.
 
