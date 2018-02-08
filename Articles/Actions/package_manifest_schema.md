@@ -1,3 +1,4 @@
+# Package manifest schema
 `````json-schema
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
