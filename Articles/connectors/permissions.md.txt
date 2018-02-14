@@ -1,0 +1,15 @@
+# Set of Permissions
+
+Kaizala allows a sets of permissions that developer can choose to have, while setting up Connectors. These selected set of permissions are granted, whenever Admin(s) for a group grant access to a particular connector.
+
+|              | Get  | Add | Update | Remove |
+| :---: | :---: | :---: | :---: | :---: |
+| Group Information |   To retrieve group-level information suce as group member count, group name, etc   | Different ways to generate refresh token are documented in next section below | 365 days           |
+| Group Member List  | Carry the necessary information to access a Kaizala resource  | Developer uses refresh Token & other connector details to query Kaizala API endpoint to generate Access Token    | 24 hours            |
+| Text Message | Carry the information necessary to get a new access token     | Different ways to generate refresh token are documented in next section below | 365 days           |
+| Action & Responses   | Carry the necessary information to access a Kaizala resource  | Developer uses refresh Token & other connector details to query Kaizala API endpoint to generate Access Token    | 24 hours            |
+| User Profile | Carry the information necessary to get a new access token     | Different ways to generate refresh token are documented in next section below | 365 days           |
+| Media   | Carry the necessary information to access a Kaizala resource  | Developer uses refresh Token & other connector details to query Kaizala API endpoint to generate Access Token    | 24 hours            |
+| Outgoing Webhooks | Carry the information necessary to get a new access token     | Different ways to generate refresh token are documented in next section below | 365 days           |
+| Organisation Data   | Carry the necessary information to access a Kaizala resource  | Developer uses refresh Token & other connector details to query Kaizala API endpoint to generate Access Token    | 24 hours            |
+
