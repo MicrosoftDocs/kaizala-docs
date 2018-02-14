@@ -1,4 +1,3 @@
-
 # Overview
 ## [About Microsoft Kaizala Developer Platform](index.md)
 ## [Connectors](connectors/README.md)
@@ -51,3 +50,4 @@
 ## [Join Kaizala Developer Connect](https://aka.ms/KaizalaDevConnect)
 ## [Feedback](feedback.md)
 ## [Download App](install.md)
+## [Terms of use](Licenses.md)
