@@ -1,12 +1,12 @@
 # Terms of use
 
-Thank you for your interest in [Microsoft Kaizala Developer documentation](Articles/index.md).
+Thank you for your interest in [Microsoft Kaizala Developer documentation](index.md).
 
-> **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](Articles/install.md).**
+> **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](install.md).**
 
 Please note that Microsoft Kaizala Developer Platform requires a valid Kaizala Pro or Office365 organizational subscription.
 
-> **[Microsoft Kaizala Developer documentation](Articles/index.md)**
+> **[Microsoft Kaizala Developer documentation](index.md)**
 
 
 > **Development of custom Kaizala Action is in public preview mode**
