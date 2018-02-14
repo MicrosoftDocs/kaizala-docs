@@ -1,4 +1,4 @@
-# README
+# Terms of use
 
 Thank you for your interest in [Microsoft Kaizala Developer documentation](Articles/index.md).
 
@@ -8,11 +8,13 @@ Please note that Microsoft Kaizala Developer Platform requires a valid Kaizala P
 
 > **[Microsoft Kaizala Developer documentation](Articles/index.md)**
 
-We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaDev@microsoft.com and we will keep you informed.
 
 > **Development of custom Kaizala Action is in public preview mode**
 
-You agree to our [Terms of Use](https://manage.kaiza.la/MiniApps/ActionConsent), if you develop custom Kaizala Action using our Action SDK.
+You agree to our [Terms of use](https://manage.kaiza.la/MiniApps/ActionConsent), if you develop custom Kaizala Action using our Action SDK.
+
+We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaDev@microsoft.com and we will keep you informed.
+
 
 
 
