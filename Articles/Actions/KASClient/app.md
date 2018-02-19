@@ -9,6 +9,7 @@
 | **downloadAttachmentAsync** | Download the attachment specified | <ul><li>*attachment with a valid server path to download*</li><li>callback on download completion</li></ul> | |
 | **cancelAttachmentDownloadAsync** | Cancel a download operation queued for an attachment | attachment | |
 | **showPlacePickerAsync** | Shows a native place picker, and returns the selected place (lt, lg, n) | Selected location | Latitude/longitude |
+| **showLocationOnMap** | Opens up native maps with given location | [KASLocation](KASLocation.md) type | |
 | **showDurationPickerAsync** | Shows a native duration picker with day/hour/minute | Default duration to be shown on picker | |
 | **isTalkBackEnabledAsync** | Gets whether talkback is enabled or not | | Boolean |
 | **generateUUIDAsync** | Gets the new UUID | | Newly generated uuid |
@@ -92,6 +93,16 @@
   * * * * @param {string} error message in case of error, null otherwise
   */
   function showPlacePickerAsync(callback: (selectedLocation: KASLocation, error: string))
+```
+
+##  Show location on maps
+
+```typescript
+/**
+  * Opens up native maps with a marker at selected location(KASLocation type)
+  * @param {KASLocation} selectedLocation
+  */
+  function showLocationOnMap(selectedLocation: KASLocation)
 ```
 
 ##  Show error message (alert or toast)
