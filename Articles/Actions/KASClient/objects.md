@@ -18,4 +18,5 @@ The following objects are referred to in the KAS Client JS SDK APIs.
 *   [KASNumericQuestionResult](KASNumericQuestionResult.md)
 *   [KASOptionQuestionResult](KASOptionQuestionResult.md)
 *   [KASOptionResult](KASOptionResult.md)
+*   [KASLocation](KASLocation.md)
 
