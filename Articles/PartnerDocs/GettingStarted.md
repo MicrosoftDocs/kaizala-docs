@@ -36,20 +36,26 @@ Kaizala provides 3 types of groups that can be used in isolation or in conjuncti
   |**Hierarchical**|<ul><li>	Groups can have direct members as well as subgroups as members </li><li>	Message sent at any level goes to all members in that group and down to all its child groups. Hence, members in parent group cannot send text messages; they can only send an Announcement card since those messages are sent to all its child groups. </li><li>	Any group member can create and assign Kaizala Actions (like Job, Survey, Poll, etc.) to anyone in the same group or below it. </li><li>	Child groups cannot send message to parent group or peer groups. </li><li>	Bottom groups (leaf nodes) of the hierarchical groups are regular flat groups. </li></ul>  |<ol><li>	You can create geographical groups mapping to districts and state level org units.</li><li>	You can create business groups headed by the parent group for CEO/all org. E.g. HR, Finance, Ops, etc. under ORG group. Each of these can have regional groups like North Sales, South Sales, etc. </li><li>	College groups with each subject/dept. group mapping to a college level parent group. </li><li>	Apartment community group with each building/tower representing a child group.</li></ol>![](Images/Hirarical.png)| 
 |**Public**|<ul><li>	Admin can connect with any number of members and send and seek information. </li><li>	These members cannot see each other or interact with each other</li><li>	These members can communicate with admin only through admin-defined custom cards like Give Feedback, Share your requirement, etc </li><li>	Members can subscribe to a public group using a link.|<ol><li>	Government agencies can create a public group to connect with citizens. </li><li>	Enterprises can create a public group to connect with customers. Enterprises can also create a managed public group to connect with their vendors, suppliers, retailers, etc.; in this case, only pre-defined members can join the group.</li>![](Images/Public%20group.png)|
 ## 3.1 Create groups and add users  
-###### Once you have identified the group types and structure for your organization, you can either create groups directly using the app or you can use the Kaizala Management Portal to create groups and add users in Bulk using Excel. 
-###### You can create a group using the ‘+’ sign and add members to that group. If you want to add child groups, you can do that on the same screen where you are adding members – just select Groups instead of Contacts and all existing groups on your phone will show up. You will have to create the individual child groups first and then add them to the parent group. 
-###### Here are quick instructions on how to create these groups using the portal:  
-###### 1.	Login on [Kaizala Management Portal][5] with your Office 365 credentials or Kaizala Pro credentials. 
-###### 2.	Click on Upload CSV file under Add users in Bulk.
-###### 3.	Download Excel templates and add mobile numbers and hierarchy information, if any.  
-###### 4.	Browse and add both the files and click on Submit.
-###### 5.	Once you see the information on the screen, click on Upload.
-###### 6.	If you want to create public groups, click on Public Group from the left menu and go through Create flow.
-###### For detailed instructions on creating groups and adding members to it, please refer [here.][6]  
-# 4. Start using Kaizala
-###### Kaizala can be installed from [Google Play Store][3] for Android or [App Store][4] for iPhones.
+  Once you have identified the group types and structure for your organization, you can either create groups directly using the app or you can use the Kaizala Management Portal to create groups and add users in Bulk using Excel. <br/><br/>
+  You can create a group using the ‘+’ sign and add members to that group. If you want to add child groups, you can do that on the same screen where you are adding members – just select Groups instead of Contacts and all existing groups on your phone will show up. You will have to create the individual child groups first and then add them to the parent group. <br/><br/>
+  
+  **Here are quick instructions on how to create these groups using the portal: ** 
+ <ol>
+<li>Login on [Kaizala Management Portal][5] with your Office 365 credentials or Kaizala Pro credentials</li>
+<li>	Click on Upload CSV file under Add users in Bulk</li>
+<li>	Download Excel templates and add mobile numbers and hierarchy information, if any</li>  
+<li>	Browse and add both the files and click on Submit</li>
+<li>	Once you see the information on the screen, click on Upload</li>
+<li>	If you want to create public groups, click on Public Group from the left menu and go through Create flow</li>
+  </ol>
+    For detailed instructions on creating groups and adding members to it, please refer [here.][6]
+  
+# 4.Start using Kaizala
+> Kaizala can be installed from [Google Play Store][3] for Android or [App Store][4] for iPhones.
+
 ## 4.1 Get Kaizala installed by your organizational users
-###### Driving app installation in your org would be very critical to the success of this project. Here are some methods used by other customers:
+
+Driving app installation in your org would be very critical to the success of this project. Here are some methods used by other customers:
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Click on Group name in Kaizala app and click on Invite All to send a text message to invite all members.
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Send out an email to people sharing value prop and a link to download.
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •	Send out messages to the organizational WhatsApp groups with the download link.   
