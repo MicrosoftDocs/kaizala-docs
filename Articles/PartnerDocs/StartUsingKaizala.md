@@ -17,15 +17,15 @@
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Login on [Kaizala Management Portal][5] with your Office 365 credentials or Kaizala Pro credentials.  
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.	Click on __Groups__ tab on the left and click on your group name.  
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.	You can see the members Registered or Unregistered (have not installed Kaizala). You can also use the Export users > Initiate new request > Download option to get these details in a CSV file.   
-![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/ExportUsers.png)
+![](Images/ExportUsers.png)
 ##  Find whether users are using Kaizala / Kaizala usage data
 ###### You can monitor whether users are using Kaizala using the Kaizala Management Portal.
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Login on [Kaizala Management Portal][5] with your Office 365 credentials or Kaizala Pro credentials.  
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.	Click on **Groups** tab on the left and click on your group name.  
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.	You can click on Reports on the left pane and click on Usage Telemetry to monitor usage of Kaizala in your groups.   
-![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/Usage%20Telemetry.png)
+![](Images/Usage%20Telemetry.png)
 ##  Send your first message<P><p>
-|Publish a Welcome Announcement  <p><p>You can send out a Welcome message to all the users in your organization to get them started on Kaizala.<p><p>Send this message from the top group as an Announcement. Add picture or audio to make it more engaging.<p><p>Incept people to write some Comments or Like the announcement to get the engagement started. |![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/EntireOrg.png)||
+|Publish a Welcome Announcement  <p><p>You can send out a Welcome message to all the users in your organization to get them started on Kaizala.<p><p>Send this message from the top group as an Announcement. Add picture or audio to make it more engaging.<p><p>Incept people to write some Comments or Like the announcement to get the engagement started. |![](Images/EntireOrg.png)||
 |-------|-------|-------|
-|**_Publish a Poll_** <p><p> Send a Quick Poll to start engaging with your users. <p>Open the group from which you want to send this out. If you want to send to all employees, send from Top group.<p>Just click on the Action icon on the top right and click on Quick Poll. Take an opinion poll on something which is dear to many. If you can make a decision or take action based on that – even better! Word of mouth will spread and people will download more willingly. |![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/Kaizala%20Pilot%20group.jpg)||
+|**_Publish a Poll_** <p><p> Send a Quick Poll to start engaging with your users. <p>Open the group from which you want to send this out. If you want to send to all employees, send from Top group.<p>Just click on the Action icon on the top right and click on Quick Poll. Take an opinion poll on something which is dear to many. If you can make a decision or take action based on that – even better! Word of mouth will spread and people will download more willingly. |![](Images/Kaizala%20Pilot%20group.jpg)||
 ###### Once you have a critical mass of your organization using Kaizala, you can evaluate creating/migrating your custom/LoB apps on Kaizala or integrating Kaizala data to your existing DB or workflows using the [Kaizala Developer Platform.][7]
