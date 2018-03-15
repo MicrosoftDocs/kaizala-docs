@@ -4,7 +4,7 @@
 ## [Kaizala Actions](PartnerDocs/KaizalaActionCards.md)
 ## [Kaizala availability and Download links](PartnerDocs/KaizalaAvailability&Downloadlinks.md)
 
-# Developer Platform
+# Microsoft Kaizala Developer Platform
 ## [About Microsoft Kaizala Developer Platform](index.md)
 ### [Connectors](connectors/README.md)
 ### [Kaizala Actions](Actions/README.md)
