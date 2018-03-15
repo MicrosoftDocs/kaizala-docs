@@ -3,22 +3,22 @@
 
 # Installation and quick start 
 ###### Download Kaizala from [Google Play Store][3] for Android or [App Store][4] for iOS now.
-![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/Appandplaystoreicons.PNG)
+![](Images/Appandplaystoreicons.PNG)
 ### Activate with your phone number and get started right away 
 
 1. Click on the ‘+’ sign to create a group and add members from your contacts list or directly add the phone numbers. Give the group a name and you are all set. 
 
-![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/Create%20Group.png)
+![](Images/Create%20Group.png)
  
 2.  To invite the people not on Kaizala to this group, just share the "Link to the Group".
 
-![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/Invitelink.png)
+![](Images/Invitelink.png)
 
 3.  Say "Hello" in the group.
 
-![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/Chatcanvashello.png)
+![](Images/Chatcanvashello.png)
 
 4. Send a Kaizala Action by clicking on the top right corner to bring up the Kaizala Actions palette. Try sending a Quick Poll or an Announcement to see Kaizala in Action.
 
-![](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/PartnerDocs/Images/Kaizal%20actions.PNG) 
+![](Images/Kaizal%20actions.PNG) 
 
