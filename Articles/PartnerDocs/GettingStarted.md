@@ -34,9 +34,9 @@
  
 | Scenario   |      Some Use Cases      |  Sample Illustration|
 |----------|:-------------:|------:|
-|**Keep your employees informed and engaged**| Use the Announcement card in Kaizala to: •	Send a Welcome announcement to all employees. •	Inform all employees about a new policy.; o	Employees can provide their inputs or ask questions using Comments section of the Announcement. They can just “Like” the announcement.•	Update the entire Sales team about the latest product launch and new targets.; o	Employees can ask clarifying questions in Comments section.•	Announce a sudden holiday or a re-organization in the team ; o	Employees will use “Likes” for sure. | ![](Images/contosoAll.png) |
-| **Data collection from field and effective work management for your team** | Use Kaizala Surveys and Polls to quickly collect data from field employees and use other Actions to manage work.  •	Get customer leads data while team is in the field. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Sales team can enter customer information while on the go. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Customer leads can automatically get into backend CRM using Kaizala APIs. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Report of this is available on the Kaizala Management Portal, in real time. •	Get daily status report from remote locations, along with photo and location of the remote site. •	Assign tasks to team in Kaizala and review status and trend in the Kaizala Management Portal. •	Invite people for meetings using Kaizala.|![](Images/contoso%20sales.png)|
-|**Connect with your customers and value chain;Get feedback instantly**|•	Use Kaizala public groups to create a private channel of communication with your lakhs of customer or citizens: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	Send them marketing content about new launch. o	Send surveys to them to get feedback on new launch. o	Create custom Kaizala cards for them to open a support request. o	View  report of all of this on the Kaizala Management Portal. •	Use managed public group to only add pre-defined members to a public group like all parents groups for schools or all dealers or vendors you work with.|![](Images/RepublicWorld.png)|
+|**Keep your employees informed and engaged**| Use the Announcement card in Kaizala to: <ul><li>Send a Welcome announcement to all employees</li><li>Inform all employees about a new policy.; </li><ul><li>Employees can provide their inputs or ask questions using Comments section of the Announcement.</li><li> They can just “Like” the announcement</li></ul><li>Update the entire Sales team about the latest product launch and new targets</li><ul><li>Employees can ask clarifying questions in Comments section.</li></ul><li>Announce a sudden holiday or a re-organization in the team. Employees will use “Likes” for sure.</li></ul> | ![](Images/contosoAll.png) |
+| **Data collection from field and effective work management for your team** | <ul><li>Use Kaizala Surveys and Polls to quickly collect data from field employees and use other Actions to manage work. </li><li> Get customer leads data while team is in the field<ul><li>Sales team can enter customer information while on the go</li><li>Customer leads can automatically get into backend CRM using Kaizala APIs</li><li>Report of this is available on the Kaizala Management Portal, in real time.</li></ul><li>Get daily status report from remote locations, along with photo and location of the remote site</li><li>Assign tasks to team in Kaizala and review status and trend in the Kaizala Management Portal</li><li>Invite people for meetings using Kaizala.</li></ul>|![](Images/contoso%20sales.png)|
+|**Connect with your customers and value chain;Get feedback instantly**|<ul><li>Use Kaizala public groups to create a private channel of communication with your lakhs of customer or citizens: <ol><li>Send them marketing content about new launch</li><li>Send surveys to them to get feedback on new launch</li><li>Create custom Kaizala cards for them to open a support request</li></ol><li>View  report of all of this on the Kaizala Management Portal</li><li>Use managed public group to only add pre-defined members to a public group like all parents groups for schools or all dealers or vendors you work with</li></ul>|![](Images/RepublicWorld.png)|
 |**Develop your LoB apps on Kaizala as Kaizala Custom Actions, available within the app**|You can create customized applications for your organization like leave application or attendance tracking using the Kaizala Extensibility Framework. These apps will show up in the Kaizala Action palette.|![](Images/Custom%20Actions1.png)|  
 
 # 3.Define groups in Kaizala for your org  
@@ -94,7 +94,7 @@ Driving app installation in your org would be very critical to the success of th
 
 	You can monitor whether users are using Kaizala using the Kaizala Management Portal.
 <ol>
-<li>Login on [Kaizala Management Portal][5] with your Office 365 credentials or Kaizala Pro credentials</li>  
+<li>Login on [Kaizala Management Portal](http://manage.kaiza.la/) with your Office 365 credentials or Kaizala Pro credentials</li>  
 <li>Click on Groups tab on the left and click on your group name</li>
 <li>You can click on Reports on the left pane and click on Usage Telemetry to monitor usage of Kaizala in your groups</li> </ol>
 
@@ -106,8 +106,13 @@ Driving app installation in your org would be very critical to the success of th
 |*Publish a Welcome Announcement*   You can send out a Welcome message to all the users in your organization to get them started on Kaizala. Send this message from the top group as an Announcement. Add picture or audio to make it more engaging. Incept people to write some Comments or Like the announcement to get the engagement started.| ![](Images/EntireOrg.png)||
 |-----------|:-------------:|------:|
 |*Publish a Poll*   Send a Quick Poll to start engaging with your users.  Open the group from which you want to send this out. If you want to send to all employees, send from Top group. Just click on the Action icon on the top right and click on Quick Poll. Take an opinion poll on something which is dear to many. If you can make a decision or take action based on that – even better! Word of mouth will spread and people will download more willingly. |![](Images/Kaizala%20Pilot%20group.jpg)||
-###### Once you have a critical mass of your organization using Kaizala, you can evaluate creating/migrating your custom/LoB apps on Kaizala or integrating Kaizala data to your existing DB or workflows using the [Kaizala Developer Platform.][7]
+###### Once you have a critical mass of your organization using Kaizala, you can evaluate creating/migrating your custom/LoB apps on Kaizala or integrating Kaizala data to your existing DB or workflows using the [Kaizala Developer Platform.](https://github.com/MicrosoftDocs/kaizala-docs)
+
 # Contact Us
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.	Send email to [KaizalaFeedback@microsoft.com][8] for any questions or suggestions.   
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.	Or, join Team Kaizala public group on Kaizala to get latest updates about Kaizala and provide your feedback/suggestions. [Kaizala > Discover > Subscribe to “Team Kaizala” > Share Feedback]. 
+
+<ol>
+<li>Send email to KaizalaFeedback@microsoft.com for any questions or suggestions</li>  
+<li>Or, join Team Kaizala public group on Kaizala to get latest updates about Kaizala and provide your feedback/suggestions</li> 
+</ol>
+		[Kaizala > Discover > Subscribe to “Team Kaizala” > Share Feedback]. 
 
