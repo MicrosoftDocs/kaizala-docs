@@ -1,16 +1,15 @@
-**Office 365 Compliance Framework and Microsoft Kaizala**
+# Office 365 Compliance Framework and Microsoft Kaizala
 
 Office 365 compliance framework document describes the compliance classification levels with required controls for various Microsoft online services. Microsoft Kaizala is following the same compliance framework to manage & operate the service as well as to handle customer data. Presently, Microsoft Kaizala is certified for compliance category A by internal Microsoft Office 365 compliance team, which is responsible for managing this framework. This essentially means that Microsoft Kaizala has strong privacy and security commitments with promise of -
 
-• No mining of customer data for advertising 
+* No mining of customer data for advertising 
+* No voluntary disclosure to law enforcement agencies 
 
-• No voluntary disclosure to law enforcement agencies 
-
-**Employee Training**
+## Employee Training
 
 While there is very minimal human intervention to keep the service running, all the engineers who work on the product are required to undergo the security and privacy awareness training. Microsoft also ensures that all personnel certify acceptance of responsibilities for privacy requirements. 
 
-**Kaizala Compliance features for customers**
+## Kaizala Compliance features for customers
 
 Microsoft Kaizala services and data are hosted on local Microsoft Azure data centers for Indian customers. All the messages, attachments, and Actions shared on Kaizala groups for Indian mobile numbers are stored only in the data centers located in India.  
 Kaizala also provides capabilities that helps customers to meet their own compliance requirements. 
