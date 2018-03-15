@@ -1,8 +1,8 @@
 # Get Started
 ## [Overview of Kaizala App](PartnerDocs/Kaizala_overview.md)
-## [Overview of Kaizala Management Portal](PartnerDocs/KaizalaManagementPortal.md )
+## [Overview of Kaizala Management Portal](PartnerDocs/KaizalaManagementPortal.md)
 ## [Kaizala Actions](PartnerDocs/KaizalaActionCards.md)
-## [Kaizala availability and Download links](PartnerDocs/KaizalaAvailability&Downloadlinks.md )
+## [Kaizala availability and Download links](PartnerDocs/KaizalaAvailability&Downloadlinks.md)
 
 # Developer Platform
 ## [About Microsoft Kaizala Developer Platform](index.md)
@@ -51,7 +51,7 @@
 # Security and Compliance
 ## [Overview](PartnerDocs/SecurityFeaturesforendcustomers.md)
 ## [Security](PartnerDocs/Security.md)
-## [Privacy](PartnerDocs/Privacy.md )
+## [Privacy](PartnerDocs/Privacy.md)
 ## [Compliance](PartnerDocs/Compliance.md)
 
 # Business Solutions using Kaizala
@@ -61,11 +61,11 @@
 # Integration with other Business Apps
 ## [Create business workflows using Flow Connector and Kaizala](PartnerDocs/IntegrateKaizalaandMailflow.md)
 ## [PowerBI Content Pack for Kaizala](https://support.office.com/en-us/article/Kaizala-content-pack-c8f9ab98-e840-4fd9-9afd-415474db8fd9)
-## [Kaizala Office Addin](PartnerDocs/ExcelAddinforKaizala.md )
+## [Kaizala Office Addin](PartnerDocs/ExcelAddinforKaizala.md)
 
 # Training and Support
 ## [End User Trainings](PartnerDocs/EndUserTrainings.md)
-## [IT Admin & Developer Trainings](PartnerTrainings.md)
+## [IT Admin & Developer Trainings](PartnerDocs/PartnerTrainings.md)
 ## [Developer FAQs](FAQ.md)
 ## [Developer Changelist](DevChangelist.md)
 ## [Feedback](feedback.md)
