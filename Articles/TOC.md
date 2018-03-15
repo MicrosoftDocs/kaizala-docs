@@ -1,8 +1,8 @@
 # Get Started
-## [Overview of Kaizala App](Articles/PartnerDocs/Kaizala_overview.md)
-## [Overview of Kaizala Management Portal](Articles/PartnerDocs/KaizalaManagementPortal.md )
-## [Kaizala Actions](Articles/PartnerDocs/KaizalaActionCards.md)
-## [Kaizala availability and Download links](Articles/PartnerDocs/KaizalaAvailability&Downloadlinks.md )
+## [Overview of Kaizala App](PartnerDocs/Kaizala_overview.md)
+## [Overview of Kaizala Management Portal](PartnerDocs/KaizalaManagementPortal.md )
+## [Kaizala Actions](PartnerDocs/KaizalaActionCards.md)
+## [Kaizala availability and Download links](PartnerDocs/KaizalaAvailability&Downloadlinks.md )
 
 # Developer Platform
 ## [About Microsoft Kaizala Developer Platform](index.md)
@@ -49,22 +49,22 @@
 ### [Use Kaizala Office Add-IN](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91)
 
 # Security and Compliance
-## [Overview](Articles/PartnerDocs/SecurityFeaturesforendcustomers.md)
-## [Security](Articles/PartnerDocs/Security.md)
-## [Privacy](Articles/PartnerDocs/Privacy.md )
-## [Compliance](Articles/PartnerDocs/Compliance.md)
+## [Overview](PartnerDocs/SecurityFeaturesforendcustomers.md)
+## [Security](PartnerDocs/Security.md)
+## [Privacy](PartnerDocs/Privacy.md )
+## [Compliance](PartnerDocs/Compliance.md)
 
 # Business Solutions using Kaizala
 ## [Ticketing System]()
-## [Integrating Kaizala data to your custom dashboards](Articles/PartnerDocs/IntegratingKaizalaData.md)
+## [Integrating Kaizala data to your custom dashboards](PartnerDocs/IntegratingKaizalaData.md)
 
 # Integration with other Business Apps
-## [Create business workflows using Flow Connector and Kaizala](Articles/PartnerDocs/IntegrateKaizalaandMailflow.md)
+## [Create business workflows using Flow Connector and Kaizala](PartnerDocs/IntegrateKaizalaandMailflow.md)
 ## [PowerBI Content Pack for Kaizala](https://support.office.com/en-us/article/Kaizala-content-pack-c8f9ab98-e840-4fd9-9afd-415474db8fd9)
-## [Kaizala Office Addin](Articles/PartnerDocs/ExcelAddinforKaizala.md )
+## [Kaizala Office Addin](PartnerDocs/ExcelAddinforKaizala.md )
 
 # Training and Support
-## [End User Trainings](Articles/PartnerDocs/EndUserTrainings.md)
+## [End User Trainings](PartnerDocs/EndUserTrainings.md)
 ## [IT Admin & Developer Trainings](PartnerTrainings.md)
 ## [Developer FAQs](FAQ.md)
 ## [Developer Changelist](DevChangelist.md)
