@@ -1,8 +1,9 @@
 # Get Started
 ## [Overview of Kaizala App](PartnerDocs/Kaizala_overview.md)
 ## [Overview of Kaizala Management Portal](PartnerDocs/KaizalaManagementPortal.md)
+## [Kaizala Groups](PartnerDocs/GroupsinKaizala.md)
 ## [Kaizala Actions](PartnerDocs/KaizalaActionCards.md)
-## [Kaizala availability and Download links](PartnerDocs/KaizalaAvailability&Downloadlinks.md)
+## [Kaizala availability and Download links](PartnerDocs/KaizalaDownloadlinks.md)
 
 # Microsoft Kaizala Developer Platform
 ## [About Microsoft Kaizala Developer Platform](index.md)
@@ -69,5 +70,4 @@
 ## [Developer FAQs](FAQ.md)
 ## [Developer Changelist](DevChangelist.md)
 ## [Feedback](feedback.md)
-## [Download App](install.md)
 ## [Terms of use](Licenses.md)
