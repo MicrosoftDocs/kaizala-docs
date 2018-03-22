@@ -35,7 +35,6 @@ Below is schema details for different webhook response for different events.
   "context": "Any data which is required to be returned in callback",
   "fromUser": "+91xxxxxxxx",
   "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
-  "isBotfromUser": false,
   "fromUserName": "Robin Richard",
   "fromUserProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg"
 }
@@ -70,7 +69,6 @@ Below is schema details for different webhook response for different events.
  "context": "Any data which is required to be returned in callback",
   "fromUser": "+91xxxxxxxx",
   "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
-  "isBotfromUser": false,
   "fromUserName": "Robin Richard",
   "fromUserProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg"
 }
@@ -105,7 +103,6 @@ Below is schema details for different webhook response for different events.
  "context": "Any data which is required to be returned in callback",
   "fromUser": "+91xxxxxxxx",
   "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
-  "isBotfromUser": false,
   "fromUserName": "Robin Richard",
   "fromUserProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg"
 }
@@ -140,7 +137,6 @@ Below is schema details for different webhook response for different events.
  "context": "Any data which is required to be returned in callback",
   "fromUser": "+91xxxxxxxx",
   "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
-  "isBotfromUser": false,
   "fromUserName": "Robin Richard",
   "fromUserProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg"
 }
