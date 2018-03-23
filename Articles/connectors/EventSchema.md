@@ -17,6 +17,8 @@ Below is schema details for different webhook response for different events.
 | fromUserName | String | Sender's registered name with Kaizala |
 | fromUserProfilePic | url | Sender's Profile Pic |
 
+The parameter 'data' would vary depending on the webHook event. You can find schema for each event below.
+
 ### data for event 'TextMessageCreated'
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -335,6 +337,40 @@ Below is schema details for different webhook response for different events.
         }
       ]
     }
+  },
+  "context": "Any data which is required to be returned in callback",
+  "fromUser": "+91xxxxxxxx",
+  "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
+  "fromUserName": "Robin Richard",
+  "fromUserProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg"
+}
+```
+
+
+### data for event 'MemberAdded' / 'MemberRemoved'
+| Parameter | Type | Description |
+| :---: | :---: | :--- |
+| member | String | Phone Number of the added Member |
+| memberName | String | Name of the added Member |
+| type | String | Membership role of the added member |
+| memberProfilePic | url | url of the assignee's profile pic |
+
+
+
+
+
+#### Sample webHook response for 'MemberAdded' /'MemberRemoved'
+```javascript
+{
+  "objectId": "8c2950-9be8-45d6-97f5-bb7013930027",
+  "objectType": "Group",
+  "eventType": "JobResponse",
+  "eventId": "3e49b367-acf6-48a7-a675-6bf4d372a070",
+  "data": {
+    "member": "+91xxxxxxxx",
+    "memberName": "Jan Decker",
+    "memberProfilePic": "https://mobileonlyapps.blob.core.windows.net/polymer-7ebb8d90e1324b5cbd61d1e10a30ada7/bbac582a4364860679d40fda7c6b.jpg",
+    "type": "Member"
   },
   "context": "Any data which is required to be returned in callback",
   "fromUser": "+91xxxxxxxx",
