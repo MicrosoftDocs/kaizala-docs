@@ -92,7 +92,7 @@ Below is schema details for different webhook response for different events.
   "eventId": "3e49b367-acf6-48a7-a675-6bf4d372a070",
   "data": {
     "text": "Caption :Testing.",
-    "title": "Sent by Nitin Jaiswal",
+    "title": "Sent by Robin Richard",
     "media": [
       {
         "url": "https://cdn.inc-000.kms.osi.office.net/contenthost/beb2cfef8732c6cc3b54652c1f6f99d64f529fd9be3d409e2966552639fb791f.jpeg",
@@ -177,6 +177,163 @@ Below is schema details for different webhook response for different events.
         "assigneeProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-f391-4e7b-84eb-4e228406fb9b/c34afc0d536285d08e6409e416.jpg",
         "isCompleted": true
       }
+    }
+  },
+  "context": "Any data which is required to be returned in callback",
+  "fromUser": "+91xxxxxxxx",
+  "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
+  "fromUserName": "Robin Richard",
+  "fromUserProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg"
+}
+```
+
+### data for event 'ActionCreated' / 'SurveyCreated'
+| Parameter | Type | Description |
+| :---: | :---: | :--- |
+| actionId | Id | Identifier for that particular instance of Job Action |
+| groupId | String | Group Identifier |
+| responseId | String | GUID for identifying that Response |
+| questions | String Array | Array of Objects |
+| responder | String | responder's Phone Number |
+| responderName | String | responder's Name |
+| responderProfilePic | url | url of the responder's profile pic |
+| isAnonymous | Boolean | Is the Survey response been submitted anonymously |
+| isUpdateResponse | Boolean | Has the response been updated by responder, since the response was submitted earlier |
+
+
+#### Schema details for 'responseWithQuestions' object
+| Parameter | Type | Description |
+| :---: | :---: | :--- |
+| title | String | Question Title |
+| type | String | QuestionType |
+| options | Array | List of options (key-value pair) applicable for Multi-choice questions |
+| isInvisible | Boolean | Is the question hidden from UI |
+
+
+
+#### Sample webHook response for 'ActionCreated' / 'SurveyCreated'
+```javascript
+{
+  "objectId": "8c2950-9be8-45d6-97f5-bb7013930027",
+  "objectType": "Group",
+  "eventType": "ActionCreated",
+  "eventId": "3e49b367-acf6-48a7-a675-6bf4d372a070",
+  "data": {
+   "actionId": "920f9802-62dafb-9bc2-8d3ba5c43609",
+    "groupId": "8c291050-9be8-4d6-97f5-bb7013930027",
+    "responseId": "420e9ef0-2a6d-405-a2bf-2688648ce79a",
+    "isUpdateResponse": false,
+    "responder": "+91xxxxxxxxx",
+    "responderName": "Robin Richard",
+    "responderProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-f391-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg",
+    "isAnonymous": false,
+    "responseDetails": {
+      "responseWithQuestions": [
+        {
+          "title": "1",
+          "type": "Text",
+          "options": [],
+          "answer": "1"
+        },
+        {
+          "title": "2",
+          "type": "AttachmentList",
+          "options": [],
+          "answer": [
+            {
+              "mediaUrl": "https://cdn.inc-000.kms.osi.office.net/att/9841be297131449fba1123ec8545ab30fa72c2017555ba4bcd4ac18d5f7850b4.jpg?sv=2015-12-11&amp;sr=b&amp;sig=Egd4wDmAfGrIoklLj70SrV7D3QtwtMEWQx673U%3D&amp;st=2018-03-23T09:26:24Z&amp;se=2292-01-06T10:26:24Z&amp;sp=r",
+              "mediaFileName": "IMG_18-03-23_155619990_1.jpg"
+            }
+          ]
+        },
+        {
+          "isInvisible": true,
+          "title": "ResponseTime",
+          "type": "DateTime",
+          "options": [],
+          "answer": 1521800782956
+        }
+      ]
+    }
+  },
+  "context": "Any data which is required to be returned in callback",
+  "fromUser": "+91xxxxxxxx",
+  "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
+  "fromUserName": "Robin Richard",
+  "fromUserProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg"
+}
+```
+
+
+
+### data for event 'SurveyResponse'/ 'ActionResponse'
+| Parameter | Type | Description |
+| :---: | :---: | :--- |
+| actionId | Id | Identifier for that particular instance of Job Action |
+| groupId | String | Group Identifier |
+| responseId | String | GUID for identifying that Response |
+| responseDetails | String Array | Array of 'responseWithQuestions' Objects |
+| responder | String | responder's Phone Number |
+| responderName | String | responder's Name |
+| responderProfilePic | url | url of the responder's profile pic |
+| isAnonymous | Boolean | Is the Survey response been submitted anonymously |
+| isUpdateResponse | Boolean | Has the response been updated by responder, since the response was submitted earlier |
+
+
+#### Schema details for 'responseWithQuestions' object
+| Parameter | Type | Description |
+| :---: | :---: | :--- |
+| title | String | Question Title |
+| type | String | QuestionType |
+| options | Array | List of options applicable for Multi-choice questions |
+| answer | Array of Json Object | Answers |
+| isInvisible | Boolean | Is the question hidden from UI |
+
+
+
+#### Sample webHook response for 'SurveyResponse' 'ActionResponse'
+```javascript
+{
+  "objectId": "8c2950-9be8-45d6-97f5-bb7013930027",
+  "objectType": "Group",
+  "eventType": "SurveyResponse",
+  "eventId": "3e49b367-acf6-48a7-a675-6bf4d372a070",
+  "data": {
+   "actionId": "920f9802-62dafb-9bc2-8d3ba5c43609",
+    "groupId": "8c291050-9be8-4d6-97f5-bb7013930027",
+    "responseId": "420e9ef0-2a6d-405-a2bf-2688648ce79a",
+    "isUpdateResponse": false,
+    "responder": "+91xxxxxxxxx",
+    "responderName": "Robin Richard",
+    "responderProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-f391-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg",
+    "isAnonymous": false,
+    "responseDetails": {
+      "responseWithQuestions": [
+        {
+          "title": "1",
+          "type": "Text",
+          "options": [],
+          "answer": "1"
+        },
+        {
+          "title": "2",
+          "type": "AttachmentList",
+          "options": [],
+          "answer": [
+            {
+              "mediaUrl": "https://cdn.inc-000.kms.osi.office.net/att/9841be297131449fba1123ec8545ab30fa72c2017555ba4bcd4ac18d5f7850b4.jpg?sv=2015-12-11&amp;sr=b&amp;sig=Egd4wDmAfGrIoklLj70SrV7D3QtwtMEWQx673U%3D&amp;st=2018-03-23T09:26:24Z&amp;se=2292-01-06T10:26:24Z&amp;sp=r",
+              "mediaFileName": "IMG_18-03-23_155619990_1.jpg"
+            }
+          ]
+        },
+        {
+          "isInvisible": true,
+          "title": "ResponseTime",
+          "type": "DateTime",
+          "options": [],
+          "answer": 1521800782956
+        }
+      ]
     }
   },
   "context": "Any data which is required to be returned in callback",
