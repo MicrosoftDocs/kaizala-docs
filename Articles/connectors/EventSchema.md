@@ -1,4 +1,4 @@
-# Schema details of Webhook response for registered events
+# Webhook response schema for registered events
 
 If a webhook is registered, Kaizala returns a webHook response for each event on the registered objectId, filtered for registered events. 
 Below is schema details for different webhook response for different events.
@@ -135,6 +135,51 @@ Below is schema details for different webhook response for different events.
     "groupId": "8c291050-9be8-6-97f5-bb7013930027"
   },
  "context": "Any data which is required to be returned in callback",
+  "fromUser": "+91xxxxxxxx",
+  "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
+  "fromUserName": "Robin Richard",
+  "fromUserProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-4e7b-84eb-4e228406fb9b/c34afc0d53614ae29285d08e6409e416.jpg"
+}
+```
+
+### data for event 'JobResponse'
+| Parameter | Type | Description |
+| :---: | :---: | :--- |
+| title | String | Title of Announcement Action |
+| text | String | Message body of Announcement Action |
+| actionId | Id | Identifier for that particular instance of Job Action |
+| groupId | String | Group Identifier |
+| responseId | String | GUID for identifying that Response |
+| responseDetails | String Array | Array of Response Objects |
+| assignee | String | Assignee's Phone Number |
+| assigneeName | String | Assignee's Name |
+| assigneeProfilePic | url | url of the assignee's profile pic |
+| isCompleted | Boolean | Is the Job completed? |
+
+
+
+
+#### Sample webHook response for 'JobResponse'
+```javascript
+{
+  "objectId": "8c2950-9be8-45d6-97f5-bb7013930027",
+  "objectType": "Group",
+  "eventType": "JobResponse",
+  "eventId": "3e49b367-acf6-48a7-a675-6bf4d372a070",
+  "data": {
+    "actionId": "2ce34820-3d67-4807-9a1d-7cf099c2e7ae",
+    "groupId": "8c291050-9be8-45d6-97f5-bb7013930027",
+    "responseId": "80a883ec-e6c7-4dc8-979d-d268bbeeee8b",
+    "responseDetails": {
+      "response": {
+        "assignee": "++91xxxxxxxx",
+        "assigneeName": "Robin Richard",
+        "assigneeProfilePic": "https://mobileonlyapps.blob.core.windows.net/72e29591-f391-4e7b-84eb-4e228406fb9b/c34afc0d536285d08e6409e416.jpg",
+        "isCompleted": true
+      }
+    }
+  },
+  "context": "Any data which is required to be returned in callback",
   "fromUser": "+91xxxxxxxx",
   "fromUserId": "72e91-f3-4e7b-84eb-4e228406fb9b",
   "fromUserName": "Robin Richard",
