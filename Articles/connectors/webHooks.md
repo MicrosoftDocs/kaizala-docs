@@ -69,6 +69,8 @@ Using WebHooks, you can subscribe to various events that occur within a conversa
 ```
 
 
+You can find webhook response schema for registered events in Kaizala [here](EventSchema.md).
+
 ### Get /webhook
 
     GET {endpoint-url}/v1/webhook
