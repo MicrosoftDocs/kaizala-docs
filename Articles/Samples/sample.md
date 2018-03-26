@@ -9,3 +9,5 @@
 ## Samples for creating custom Action in Kaizala
 
 **Sample Custom Action** - [Click here to download](https://manage.kaiza.la/MiniApps/DownloadSDK)
+
+**Practice Tutorial: Creating a new Kaizala Action** - [Click here to view](../Actions/tutorial.md)
