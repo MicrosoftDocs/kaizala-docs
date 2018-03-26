@@ -1,4 +1,5 @@
-### Approach
+# Security
+## Approach
 
 Microsoft Kaizala services and data are hosted on Office 365 & Microsoft Azure cloud platform. Microsoft is recognized as an industry leader in cloud security. Using decades of experience building enterprise software and running online services, our team is constantly learning and continuously updating our services and applications to deliver a secure cloud productivity service that meets rigorous industry standards for compliance.  
 
@@ -7,7 +8,7 @@ Security development lifecycle (SDL) addresses security at each development phas
 Industry standard physical and network protocols are supported to meet the highest security needs of any solution. These data centres are certified with industry standard certifications.  More information about Azure security can be found on this [website](https://www.microsoft.com/en-us/trustcenter/security/azure-security).
 
 
-### Service Level Security
+## Service Level Security
 
  At the service level, we use a defense-in-depth strategy that protects your data through multiple layers of security, as depicted in the diagram below:
 
@@ -23,7 +24,7 @@ A defense-in-depth strategy ensures that security controls are present at variou
 
 We continue to invest in systems automation that helps identify abnormal and suspicious behavior and respond quickly to mitigate security risk. We are also continuously evolving a highly effective system of automated patch deployment that generates and deploys solutions to problems identified by the monitoring systems—all without human intervention. This greatly enhances the security and agility of the service. We regularly conduct penetration tests to enable continuous improvement of incident response procedures. These internal tests help our security experts create a methodical, repeatable, and optimized stepwise response process and automation.
 
-### Anti-malware, Patching, and Configuration Management
+## Anti-malware, Patching, and Configuration Management
 
  The use of anti-malware software is a principal mechanism for protection of your assets from malicious software. The software detects and prevents the introduction of computer viruses and worms into the service systems. It also quarantines infected systems and prevents further damage until remediation steps are taken. Anti-malware software provides both preventive and detective control over malicious software. 
 
@@ -31,7 +32,7 @@ Our standard baseline configuration requirements for servers, network devices, a
 
 Changes, such as updates, hotfixes, and patches made to the production environment, follow the same standard change management process. Patches are implemented within the time frame specified by the issuing company. Changes are both reviewed and evaluated by our review teams and the Change Advisory Board for applicability, risk, and resource assignment prior to being implemented
 
-### Protection from Security Threats
+## Protection from Security Threats
 
 The overall cyber threat landscape has evolved from traditional opportunistic threats to also include persistent and determined adversaries. We equip you with a defense-in-depth approach to address the continuum of threats ranging from common “hacktivists” to cyber criminals to nation-state actors.   
 
@@ -45,13 +46,13 @@ The first pillar of the security strategy is referred to as “Prevent Breach.�
     - The third pillar is referred to as “Respond to Breach.” This pillar is used to mitigate the effects if a component is compromised. A diligent incident response process, standard operating procedures in case of an incident, ability to deny or stop access to sensitive data and identification tools to promptly identify involved parties helps ensure that the mitigation is successful.
     - The fourth pillar is referred to as “Recover from Breach,” which includes the standard operating procedures to return the service to operations. The pillar includes the ability to change the security principals in the environment, automatically update the affected systems, and audit the state of the deployment to identify any anomalies. 
 
-### Least Privilege Access Control
+## Least Privilege Access Control
 
 No Microsoft engineer has a standing access to the production environment. The regular deployment, management and maintenance tasks are handled through automation. This stops any possibility of a rouge Microsoft individual getting access to customer data. 
 
 We conduct regular vulnerability, risk and other threat assessments for all hosted components including operating systems, infrastructure, databases, web services, network devices, installed and running applications along with configuration on all identified information system components. A regular audit of existing permissions to the users and service accounts is conducted to adhere to least privilege access policy. 
 
-### Data Encryption at Rest
+## Data Encryption at Rest
 
 Server side encryption of all resources is enabled with service managed keys. Encryption at rest protects data in case attackers get their hands on physical media. Following Azure encryption-decryption features are enabled to ensure data encryption at rest:  
 
@@ -60,11 +61,11 @@ Server side encryption of all resources is enabled with service managed keys. En
  
 - Transparent Data Encryption (TDE) is used to perform real-time I/O encryption and decryption of the data and log files to provide data encryption at-rest. In addition, TDE can provide encryption in-transit for mirrored or log-shipped data. All replicas of data are also enabled for encryption.
 
-### Cryptography and encryption
+## Cryptography and encryption
 
 Cryptography uses data encryption, cryptographic key management, and secure random number generation. Only Microsoft Crypto Board approved cryptography algorithms are used. We are using only FIPS 140-2(Federal Information Processing Standard) compliant hashing algorithms. None of the banned hashing algorithm, banned symmetric block cyphers, banned random functions, asymmetric algorithms or crypto primitives are used, and regular scanning of source code is done to ensure future proofing. 
 
-### Secure Access
+## Secure Access
 
 Kaizala enables all communications over HTTPS protocol only, which ensures secure communication over the public Internet. TLS 1.2 is enabled, and all other versions of TLS/SSL are disabled. (available from June release). TLS configuration meet or exceed Microsoft security requirements. It doesn’t support weak key, and uses SHA256withRSA signature algorithm only. 
 
@@ -88,7 +89,7 @@ TLS configuration is setup with
 TLS session ticket resumption is enabled for faster connectivity. 
 Token based Authentication is used for authenticating and authorizing user access. 
 
-### Secret Storage and Management
+## Secret Storage and Management
 
 The fundamental mission of Secrets Management is to protect the data of the customers we serve in a manner consistent with the highest ideals within our industry and, to take advantage of automated processes to reduce human access to customer data, which will help us succeed in that endeavour.  
 
