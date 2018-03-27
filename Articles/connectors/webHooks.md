@@ -40,6 +40,37 @@ Using WebHooks, you can subscribe to various events that occur within a conversa
 | :---: | :---: | :--- |
 | webhookId | String | Identifier representing the webHook created |
 
+##### Request Body - Subscribe to all events at group level
+
+```javascript
+{  
+   "objectId":"74943849802190eaea3810",
+   "objectType":"Group",
+   "eventTypes":[
+      "ActionCreated",
+      "ActionResponse",
+      "SurveyCreated",
+      "JobCreated",
+      "SurveyResponse",
+      "JobResponse",
+      "TextMessageCreated",
+      "AttachmentCreated",
+      "Announcement",
+      "MemberAdded",
+      "MemberRemoved",
+      "GroupAdded",
+      "GroupRemoved"
+   ],
+   "callBackUrl":"https://requestb.in/123",
+   "callBackToken":"tokenToBeVerifiedByCallback",
+   "callBackContext":"Any data which is required to be returned in callback"
+}
+
+```
+
+
+You can find webhook response schema for registered events in Kaizala [here](EventSchema.md).
+
 ### Get /webhook
 
     GET {endpoint-url}/v1/webhook
