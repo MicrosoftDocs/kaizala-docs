@@ -20,6 +20,16 @@ A Kaizala Action currently contains four different views that can be defined as 
 * A **responder view** for users to respond to the Kaizala Action
 * A **summary view** to view aggregated responses
 
+For instance, in Out-of-Box(OOB) Kaizala Survey Action:
+
+| View | Sample view in OOB Survey Action |
+|------|----------------------------------|
+| Creation view| ![](../images/CreationView.png)|
+| Card view |![](../images/Chatcard.png) |
+| Responder view |![](../images/ResponseView.png) |
+| Summary view |![](../images/SummaryView.png) |
+
+In custom Actions, you can create custom views that correspond to above views.
 
 ## Create a new Kaizala Action
 You can create new Kaizala Actions that leverage Kaizala’s people network and mobile capabilities to create compelling experiences in the following ways:
