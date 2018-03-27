@@ -56,7 +56,7 @@
 ## [Compliance](PartnerDocs/Compliance.md)
 
 # Business Solutions using Kaizala
-## [Ticketing System]()
+## [Ticketing System](PartnerDocs/Customerticketingsolution.md)
 ## [Integrating Kaizala data to your custom dashboards](PartnerDocs/IntegratingKaizalaData.md)
 
 # Integration with other Business Apps
