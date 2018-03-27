@@ -1,7 +1,7 @@
 ## Get Started with Kaizala
 
 
-### Learn about kaizala
+### Learn about Microsoft Kaizala
 | Topic  | Description |  Video |
 |----|------|---------|
 | Kaizala Overview | Learn how to pitch Kaizala to your customers | <iframe width="350" height="200" src="https://www.youtube.com/embed/b3fT7clGce8" frameborder="0" allowfullscreen></iframe>   |
