@@ -1,4 +1,4 @@
-# Overview - Security & Compliance
+# Security for end users
 ## Client data protection
 
 All the data storages on android, iOS and Windows Clients are done on internal storages which provide Application Sandbox, which isolates your app data and code execution from other apps. User-granted permissions to restrict access to system features and user data are only used. Kaizala follows all the platform standards to restrict access to clients resources based on permissions allowed. No external storage which allows world read and write access, is used. MODE_WORLD_READABLE or MODE_WORLD_WRITEABLE are not enabled. 
