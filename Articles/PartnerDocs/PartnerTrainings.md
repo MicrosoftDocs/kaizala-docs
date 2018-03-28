@@ -1,9 +1,9 @@
 ## Get Started with Kaizala
 
 
-### Learn about kaizala
-|  |  | |
-|---------|---------|---------|
+### Learn about Microsoft Kaizala
+| Topic  | Description |  Video |
+|----|----|-----------------|
 | Kaizala Overview | Learn how to pitch Kaizala to your customers | <iframe width="350" height="200" src="https://www.youtube.com/embed/b3fT7clGce8" frameborder="0" allowfullscreen></iframe>   |
 | Kaizala App Demo | Learn how to do a customer demo of Kaizala App | <iframe width="350" height="200" src="https://www.youtube.com/embed/7KKTrdguxds" frameborder="0" allowfullscreen></iframe>   |
 | Kaizala Management Portal Demo | Learn how to do a customer demo of Kaizala Management Portal, including creating new actions using templates available in Management portal. | <iframe width="350" height="200" src="https://www.youtube.com/embed/Bl9nLbxHQRA" frameborder="0" allowfullscreen></iframe>   |

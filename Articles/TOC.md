@@ -50,13 +50,14 @@
 ### [Use Kaizala Office Add-IN](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91)
 
 # Security and Compliance
-## [Overview](PartnerDocs/SecurityFeaturesforendcustomers.md)
+## [Overview](PartnerDocs/SecurityOverview.md)
+## [Security for end Customers](PartnerDocs/SecurityFeaturesforendcustomers.md)
 ## [Security](PartnerDocs/Security.md)
 ## [Privacy](PartnerDocs/Privacy.md)
 ## [Compliance](PartnerDocs/Compliance.md)
 
 # Business Solutions using Kaizala
-## [Ticketing System]()
+## [Ticketing System](PartnerDocs/Customerticketingsolution.md)
 ## [Integrating Kaizala data to your custom dashboards](PartnerDocs/IntegratingKaizalaData.md)
 
 # Integration with other Business Apps
