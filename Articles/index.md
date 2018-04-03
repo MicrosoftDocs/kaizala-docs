@@ -1,33 +1,20 @@
 ---
 title: Overview
-description: Overview of Microsoft Kaizala Developer Platform
+description: Overview of Microsoft Kaizala
 topic: overview
 author: nitinjms
 ---
-# Microsoft Kaizala Developer Documentation
+## Microsoft Kaizala: An Overview
+![](PartnerDocs/Images/Microsoft%20kaizala%20overview.png)
 
-Kaizala is a messaging and productivity app that enable your mobile users to achieve more. With Kaizala, you can have 1:1 chat with individuals, group chat with your teams, and even add groups to your existing groups to communicate within large organizations or communities.
+Microsoft Kaizala is a mobile chat-based communication platform that connects your first line workers with your Information workers in Modern workplace. Microsoft Kaizala makes it easy to connect and coordinate with not just your field workers but also with your extended value chain like citizens, customers or distributors. It enables you to efficiently manage work or collect data from individuals or large groups, even if they’re not in your organization.
+Learn about value prop of at [www.microsoft.com/Kaizala](https://www.microsoft.com/Kaizala) 
 
-> **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](install.md).**
+### Kaizala’s Unique Approach
 
-## Microsoft Kaizala Developer Platform 
-The Kaizala Developer Platform offers multiple ways to integrate and extend Kaizala to suit your organizational needs. With the developer preview, you can use Connectors to integrate Kaizala with your business processes and design custom Actions through the Kaizala Management Portal.
 
-## Connectors
-
-Kaizala Connectors enable 3rd party developers to integrate Kaizala into their business processes by providing the ability to perform a curated set of actions in Kaizala 
-using REST based API calls. The scope of the API is for external systems to call the end-point and perform actions on-demand. That is, this will be a PULL model – where 
-individual endpoints need to be called to perform specific actions using Kaizala **[APIs](connectors/API.md)**. The PUSH model where Kaizala platform can trigger actions can be configured using **[webhooks](connectors/webHooks.md)**.
-
-[Get started with Connectors](connectors/README.md)
-
-## Kaizala Actions
-
-Kaizala Actions are basic 'units of work' that help users get work done within a conversation context inside Kaizala. Some of these Actions like Job, Survey, Poll, etc. are
-shipped out-of-the-box and provide scoped functionality. These Actions can be discovered within the Kaizala app and can be invoked in a conversation context from the Action Palette.
-
-[Get started with Kaizala Actions](Actions/README.md)
-
-## Submit your questions, bugs, feature requests, and contributions
-
-We listen to the developer community across [several channels](feedback.md).
+| <a href="GroupsinKaizala.md"> ![](PartnerDocs/Images/Groups.png)</a> Groups for all kinds of networks | <br><br><a href="KaizalaActionCards.md">![](PartnerDocs/Images/Actioncards.png)</a> Action Cards |<a href="https://support.office.com/en-us/article/kaizala-reports-93e22838-5c18-4181-8d12-eca6c0b4019c?ui=en-US&rs=en-US&ad=US "> ![](PartnerDocs/Images/ReportingAnalytics.png)</a> Reporting & Analytics |
+| ------------- | ------------- |------------- |
+| <ul><li>Millions of users</li><li>Hierarchical,Hub-and-Spoke</li><li>Publicly discoverable groups</li></ul>|<ul><li>10+ out-of-the-box actions</li><li>Build your own custom actions!</li></ul>|<ul><li>In-built reports</li><li>Advanced analytics with PowerBI</li></ul>|
+| <a href="https://docs.microsoft.com/en-us/kaizala/connectors/setup">![](PartnerDocs/Images/ExtensiblePlatform.png)</a><p align="center"><b>Extensible Platform </b></p> | <br><br><a href="KaizalaManagementPortal.md">![](PartnerDocs/Images/ManagementPortal.png)</a> <p align="center"><b>Management Portal </b></p> | <a href="https://www.microsoft.com/kaizala">![](PartnerDocs/Images/Optimized.png)</a><p align="center"><b>Optimized for Emerging Markets </b></p> |
+| <ul><li>Open & secure APIs </li><li>Workflow automation</li></ul>|<ul><li>Group & user management</li><li>Onboard and offboard users</li><li>Data access & governance</li></ul>|<ul><li>Small download size</li><li>2G support</li><li>Offline support</li></ul>|
