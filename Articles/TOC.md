@@ -6,7 +6,7 @@
 ## [Kaizala availability and Download links](PartnerDocs/KaizalaDownloadlinks.md)
 
 # Microsoft Kaizala Developer Platform
-## [About Microsoft Kaizala Developer Platform](index.md)
+## [About Microsoft Kaizala Developer Platform](developer-platform.md)
 ### [Connectors](connectors/README.md)
 ### [Kaizala Actions](Actions/README.md)
 
