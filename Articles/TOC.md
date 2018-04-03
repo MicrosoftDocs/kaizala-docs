@@ -1,12 +1,12 @@
 # Get Started
-## [Overview of Kaizala App](PartnerDocs/Kaizala_overview.md)
+## [Overview of Kaizala App](index.md)
 ## [Overview of Kaizala Management Portal](PartnerDocs/KaizalaManagementPortal.md)
 ## [Kaizala Groups](PartnerDocs/GroupsinKaizala.md)
 ## [Kaizala Actions](PartnerDocs/KaizalaActionCards.md)
 ## [Kaizala availability and Download links](PartnerDocs/KaizalaDownloadlinks.md)
 
 # Microsoft Kaizala Developer Platform
-## [About Microsoft Kaizala Developer Platform](index.md)
+## [About Microsoft Kaizala Developer Platform](developer-platform.md)
 ### [Connectors](connectors/README.md)
 ### [Kaizala Actions](Actions/README.md)
 
