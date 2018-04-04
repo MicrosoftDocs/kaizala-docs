@@ -1,3 +1,6 @@
+
+
+	
 # Get Started
 ## [Overview of Kaizala App](index.md)
 ## [Overview of Kaizala Management Portal](PartnerDocs/KaizalaManagementPortal.md)
@@ -5,7 +8,7 @@
 ## [Kaizala Actions](PartnerDocs/KaizalaActionCards.md)
 ## [Kaizala availability and Download links](PartnerDocs/KaizalaDownloadlinks.md)
 
-# Microsoft Kaizala Developer Platform
+# Developer Platform
 ## [About Microsoft Kaizala Developer Platform](developer-platform.md)
 ### [Connectors](connectors/README.md)
 ### [Kaizala Actions](Actions/README.md)
@@ -49,21 +52,23 @@
 ### [Create a Flow using Kaizala](https://support.office.com/en-us/article/Integrate-your-workflow-in-Kaizala-using-Microsoft-Flow-883343d0-6b16-4725-a23d-bc69fb264356?ui=en-US&rs=en-US&ad=US)
 ### [Use Kaizala Office Add-IN](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91)
 
-# Security and Compliance
+# Connectors & Add-Ins to integrate with other Business Apps
+## [Create business workflows using Flow Connector and Kaizala](PartnerDocs/IntegrateKaizalaandMailflow.md)
+## [PowerBI Content Pack for Kaizala](https://support.office.com/en-us/article/Kaizala-content-pack-c8f9ab98-e840-4fd9-9afd-415474db8fd9)
+## [Kaizala Office Addin](PartnerDocs/ExcelAddinforKaizala.md)
+
+# Business Solutions using Kaizala
+## [Ticketing System](PartnerDocs/Customerticketingsolution.md)
+## [Integrating Kaizala data to your custom dashboards](PartnerDocs/IntegratingKaizalaData.md)
+
+
+# Security, Privacy and Compliance
 ## [Overview](PartnerDocs/SecurityOverview.md)
 ## [Security for end Customers](PartnerDocs/SecurityFeaturesforendcustomers.md)
 ## [Security](PartnerDocs/Security.md)
 ## [Privacy](PartnerDocs/Privacy.md)
 ## [Compliance](PartnerDocs/Compliance.md)
 
-# Business Solutions using Kaizala
-## [Ticketing System](PartnerDocs/Customerticketingsolution.md)
-## [Integrating Kaizala data to your custom dashboards](PartnerDocs/IntegratingKaizalaData.md)
-
-# Integration with other Business Apps
-## [Create business workflows using Flow Connector and Kaizala](PartnerDocs/IntegrateKaizalaandMailflow.md)
-## [PowerBI Content Pack for Kaizala](https://support.office.com/en-us/article/Kaizala-content-pack-c8f9ab98-e840-4fd9-9afd-415474db8fd9)
-## [Kaizala Office Addin](PartnerDocs/ExcelAddinforKaizala.md)
 
 # Training and Support
 ## [End User Trainings](PartnerDocs/EndUserTrainings.md)
