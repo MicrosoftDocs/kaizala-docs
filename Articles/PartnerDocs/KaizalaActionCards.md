@@ -1,8 +1,8 @@
 # Kaizala Action Cards
 
-Kaizala offers you wide range of action cards or mini apps that make your daily work management easy and efficient. You can use the predefined Action cards or create your own customized Kaizala Actions.
+Kaizala offers you wide range of action cards or mini apps that make your daily work management easy and efficient. You can use the Out-of-box(OOB) Action cards or create your own customized Kaizala Actions.
 
-The predefined Action cards are as follows:
+Some of the OOB Action cards available are as follows:
 - Announcements
 - Quick Polls & Surveys
 - Job/Tasks
@@ -54,9 +54,8 @@ Kaizala provides various location based cards that are as follows:
 
 ## Discover More Actions
 
-You can find many more Kaizala actions under Discover. If you would like to create your own customized actions in Kaizala, you can do that as well. Refer to this section for details on customizing and creating your own Action cards.
+You can find many more Kaizala actions under Discover. If you would like to create your own customized actions in Kaizala, you can do that as well. 
 
 ![Discover More Actions](Images/ActionsDiscoverMore.PNG "Discover More Actions")
 
-
-  
+Refer to [this](../developer-platform.md) section for details on customizing and creating your own Action cards.
