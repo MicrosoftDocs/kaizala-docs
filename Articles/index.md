@@ -1,20 +1,141 @@
 ---
+layout: HubPage
+hide_bc: true
 title: Overview
 description: Overview of Microsoft Kaizala
 topic: overview
 author: nitinjms
+ms.author: nitinjms
+ms.date: 04/04/2018
 ---
-## Microsoft Kaizala: An Overview
-![](PartnerDocs/Images/Microsoft%20kaizala%20overview.png)
 
-Microsoft Kaizala is a mobile chat-based communication platform that connects your first line workers with your Information workers in Modern workplace. Microsoft Kaizala makes it easy to connect and coordinate with not just your field workers but also with your extended value chain like citizens, customers or distributors. It enables you to efficiently manage work or collect data from individuals or large groups, even if they’re not in your organization.
-Learn about value prop of at [www.microsoft.com/Kaizala](https://www.microsoft.com/Kaizala) 
-
-### Kaizala’s Unique Approach
-
-
-| <a href="PartnerDocs/GroupsinKaizala.md"> ![](PartnerDocs/Images/Groups.png)</a> Groups for all kinds of networks | <br><br><a href="PartnerDocs/KaizalaActionCards.md">![](PartnerDocs/Images/Actioncards.png)</a> Action Cards |<a href="https://support.office.com/en-us/article/kaizala-reports-93e22838-5c18-4181-8d12-eca6c0b4019c?ui=en-US&rs=en-US&ad=US "> ![](PartnerDocs/Images/ReportingAnalytics.png)</a> Reporting & Analytics |
-| ------------- | ------------- |------------- |
-| <ul><li>Millions of users</li><li>Hierarchical,Hub-and-Spoke</li><li>Publicly discoverable groups</li></ul>|<ul><li>10+ out-of-the-box actions</li><li>Build your own custom actions!</li></ul>|<ul><li>In-built reports</li><li>Advanced analytics with PowerBI</li></ul>|
-| <a href="https://docs.microsoft.com/en-us/kaizala/connectors/setup">![](PartnerDocs/Images/ExtensiblePlatform.png)</a><p align="center"><b>Extensible Platform </b></p> | <br><br><a href="PartnerDocs/KaizalaManagementPortal.md">![](PartnerDocs/Images/ManagementPortal.png)</a> <p align="center"><b>Management Portal </b></p> | <a href="https://www.microsoft.com/kaizala">![](PartnerDocs/Images/Optimized.png)</a><p align="center"><b>Optimized for Emerging Markets </b></p> |
-| <ul><li>Open & secure APIs </li><li>Workflow automation</li></ul>|<ul><li>Group & user management</li><li>Onboard and offboard users</li><li>Data access & governance</li></ul>|<ul><li>Small download size</li><li>2G support</li><li>Offline support</li></ul>|
+<div id="main" class="v2">
+<div class="container">
+    <h1>Microsoft Kaizala</h1>
+    <ul class="pivots">
+        <li>
+            <a href="#main"></a>
+            <ul id="main">
+                <li>
+                    <a href="#mainPanel"></a>
+                    <ul id="mainPanel" class="cardsA">
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/kaizala/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Get Started</h3>
+                                            <p>Identify scenarios and group structures, start deployment in your organization right away</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/kaizala/developer-platform ">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_code-automate.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Developer Platform</h3>
+                                            <p>Integrate Kaizala with existing systems as well as extend to meet customer needs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/kaizala/partnerdocs/integratekaizalaandmailflow">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_extensions.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Connectors and Addins to Integrate with other Business Apps</h3>
+                                            <p>Explore ways to integrate with popular business applications</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/kaizala/partnerdocs/customerticketingsolution">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_build.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Business Solutions using Kaizala</h3>
+                                            <p>Explore how you can create ticketing system or salesforce solutions and more using Kaizala</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/kaizala/partnerdocs/securityoverview">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Security, Privacy and Compliance</h3>
+                                            <p>Kaizala is built on O365 which assures you of Enterprise grade Security and Compliance</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/kaizala/partnerdocs/endusertrainings">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_support.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Training and Support</h3>
+                                            <p>Train your end users,  IT admins or developers and get on going or as-needed support</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
