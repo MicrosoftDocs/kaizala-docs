@@ -2,7 +2,7 @@
 
 	
 # Get Started
-## [Overview of Kaizala App](index.md)
+## [Overview of Kaizala App](PartnerDocs/Kaizala_overview.md)
 ## [Overview of Kaizala Management Portal](PartnerDocs/KaizalaManagementPortal.md)
 ## [Kaizala Groups](PartnerDocs/GroupsinKaizala.md)
 ## [Kaizala Actions](PartnerDocs/KaizalaActionCards.md)
