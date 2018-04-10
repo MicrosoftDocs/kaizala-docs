@@ -20,7 +20,7 @@ ms.date: 04/04/2018
                     <a href="#mainPanel"></a>
                     <ul id="mainPanel" class="cardsA">
                         <li>
-                            <a href="https://docs.microsoft.com/en-us/kaizala/">
+                            <a href="https://docs.microsoft.com/en-us/kaizala/partnerdocs/kaizala_overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
