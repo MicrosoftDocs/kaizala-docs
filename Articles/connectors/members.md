@@ -4,28 +4,27 @@ description: Reference Article for API to query group members data
 topic: Reference
 author: nitinjms
 ---
-# APIs to query group members
-## /members
+# /members
 API end-point to add or delete members from conversation groups inside Kaizala.
 
-### GET /members
+## GET /members
 
     GET {endpoint-url}/v1/groups/{groupId}/members
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | members | JSON Array | Array of JSON objects each representing a member of the group |
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {
@@ -46,11 +45,11 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 }
 ```
 
-### PUT /members
+## PUT /members
 
     PUT {endpoint-url}/v1/groups/{groupId}/members
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -58,13 +57,13 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | value: application/json |
 
-##### Request body
+### Request body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | members | String Array | Array of well-formatted phone numbers of new members to be added |
 
-###### Sample JSON Request
+#### Sample JSON Request
 
 ```javascript
 {
@@ -75,13 +74,13 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 }
 ```
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | result | Boolean | True when all phone numbers have succesfully been added to the group |
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {
@@ -89,11 +88,11 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 }
 ```
 
-### DELETE /members
+## DELETE /members
 
     DELETE {endpoint-url}/v1/groups/{groupId}/members/{memberId}
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -101,13 +100,13 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 | URL Path Parameter | memberId | String | No | GUID representing the memberId of the specific member |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | result | Boolean | True when the specified member has succesfully been removed from the group |
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {
