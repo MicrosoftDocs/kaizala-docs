@@ -89,7 +89,7 @@ You can download sample Kaizala Action packages from [here](https://manage.kaiza
 *   **Step 4:** Include the Kaizala Forms JS SDK 
     * To make it easy for developers to leverage the Forms Infrastructure, Kaizala provides a JavaScript wrapper library that you can include in your custom Actions 
     * Download the file below & place it in the same directory as your datamodel.json and CreationView.html 
-      *   [Kaizala Forms JS SDK ](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/KASClient.zip). [Read more](KASClient/README.md)
+      *   [Kaizala Forms JS SDK ](https://manage.kaiza.la/MiniApps/downloadSDK). [Read more](KASClient/README.md)
  
  
  
