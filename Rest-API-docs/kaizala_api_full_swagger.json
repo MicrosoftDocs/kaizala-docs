@@ -2404,20 +2404,30 @@
           "type": "string"
         },
         "actionBody": {
-          "$ref": "#/definitions/Response - Action Body"
-        }
+          "$ref": "#/definitions/Request - Action Body"
+        },
+    "responseId":{
+      "description": "For updating existing response",
+      "type": "string"
+    },
+    "actionType":{
+      "description": "Enum values: Survey/Job. Either of actionType or Id should be specified",
+      "type": "string"
+      }
       },
       "required": [
         "id",
-        "actionBody"
+        "actionBody",
+        "actionType"
       ]
     },
-    "Response - Action Body": {
+    "Request - Action Body": {
       "title": "Action Body",
+    "description":"Object representing data needed for the respective Action. Parameters would vary according to different Action-type.",
       "type": "object",
       "properties": {
         "Answers": {
-          "description": "Array of Response items for the given Action",
+          "description": "Array of Response items for the given Action.",
           "type": "array",
           "items": {
             "type": "string"
