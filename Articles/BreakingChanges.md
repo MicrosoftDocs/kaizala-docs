@@ -1,5 +1,9 @@
 # Breaking Changes communication
 
+Subscribe to [Kaizala Developer Connect](https://join.kaiza.la/g/jwoUnTyHR_Kgrd_GuDDc1w) from your mobile app to receive Breaking changes communication in Kaizala Developer Platform.
+
+<!---
+
 ## Deprecating Mobile Number data from Kaizala APIs & Webhooks
 ||Details|
 |--|--|
@@ -9,15 +13,18 @@
 |**Date of Communication**| 18-04-2018 |
 |**Date of Impact**| 15-05-2018|
 
+-->
 ## Validation of registered callBackUrl when webhook is created
 
 ||Details|
 |--|--|
 |**Impact Area**| Webhooks |
-|**Impact Summary**| Going ahead, during creation of Webhook ([POST /webhook](https://docs.microsoft.com/en-us/kaizala/connectors/webhooks#webhook)), registered callBackUrl would be validated. After suceessful validation, a webhook would be created |
-|**Required Action**| |
-|**Date of Communication**|18-04-2018|
-|**Date of Impact**|01-06-2018|
+|**Impact Summary**| Going ahead, during creation of Webhook ([POST /webhook](https://docs.microsoft.com/en-us/kaizala/connectors/webhooks#webhook)), registered callBackUrl would be validated. After successful validation, a webhook would be created |
+|**Required Action**| Older Webhook subscriptions will continue to work beyond the Date of Impact. New Webhook subscription requests would require you to ensure your service follows the process mentioned [here](connectors/WebHookValidaton.md) |
+|**Date of Communication**|09-05-2018|
+|**Date of Impact**|15-06-2018|
+
+<!---
 
 ## Webhook subscription will be cancelled, if 10 consecutive failures are received
 
@@ -28,7 +35,9 @@
 |**Required Action**||
 |**Date of Communication**| 18-04-2018 |
 |**Date of Impact**| 01-06-2018 |
+-->
 
+<!---
 ## Public groups can only be created using Tenant-level token in 'Create Group' API
 
 ||Details|
@@ -39,3 +48,4 @@
 |**Date of Communication**|18-04-2018|
 |**Date of Impact**|15-05-2018|
 
+-->
