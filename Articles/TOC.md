@@ -74,6 +74,7 @@
 ## [End User Trainings](PartnerDocs/EndUserTrainings.md)
 ## [IT Admin & Developer Trainings](PartnerDocs/PartnerTrainings.md)
 ## [Developer FAQs](FAQ.md)
+## [Breaking Changes](BreakingChanges.md)
 ## [Developer Changelist](DevChangelist.md)
 ## [Feedback](feedback.md)
 ## [Terms of use](Licenses.md)
