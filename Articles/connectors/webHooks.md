@@ -17,6 +17,8 @@ Using WebHooks, you can subscribe to various events that occur within a conversa
 
     POST {endpoint-url}/v1/webhook
 
+To ensure your webhook service endpoint is authentic and working we will verify your callback URL before creating subscription. For verification we will send you a validation token which you need to send us back within 5 seconds. [Read More](WebHookValidaton.md)
+
 ##### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
@@ -34,6 +36,7 @@ Using WebHooks, you can subscribe to various events that occur within a conversa
 | callBackToken | String | Yes | Optional parameter you can set which will be sent in the HTTP header 'kz-callback-token' with every callBack made by the WebHook |
 | callBackContext | String | Yes | Optional parameter you can set which will be sent in the JSON payload as 'context' with every callBack made by the WebHook |
 | validity | String | Yes | Validity for the WebHook to be active in EPOCH format. Default is 2 years |
+
 
 ##### Response body
 | Parameter | Type | Description |
@@ -69,7 +72,7 @@ Using WebHooks, you can subscribe to various events that occur within a conversa
 ```
 
 
-You can find webhook response schema for registered events in Kaizala [here](EventSchema.md).
+You can find webhook response schema for registered events in Kaizala [**here**](EventSchema.md).
 
 ### Get /webhook
 
