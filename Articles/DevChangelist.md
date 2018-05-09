@@ -2,6 +2,8 @@
 
 In this page, shall find history of major changes/new support that has been added to Microsoft Kaizala Developer Platform. This shall also point out if there are features that would be no longer supported in the near future.
 
+Subscribe to [Kaizala Developer Connect](https://join.kaiza.la/g/jwoUnTyHR_Kgrd_GuDDc1w) from your mobile app to receive change communication in Kaizala Developer Platform
+
 | Date | Title | State | Affected area | Description | Applicable Date | Links|
 |-------------|-------|-------|---------------|---------------------------|------------------|--------------|
 | 29-01-2018 | Support for custom Action developemt released in public preview. | New | Actions | Releasing support to build custom actions. Developers can build these actions from scratch and publish using Kaizala management portal. | 30-01-2018 | [Actions](https://docs.microsoft.com/en-us/kaizala/actions)
