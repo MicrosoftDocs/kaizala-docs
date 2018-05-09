@@ -10,7 +10,7 @@ Microsoft Kaizala APIs are governed by [Microsoft API License and Terms of use](
 
 ## Actions
 
-Development of custom Kaizala Action is in **public preview mode**. You agree to our [Terms of use](https://manage.kaiza.la/MiniApps/ActionConsent), if you develop custom Kaizala Action using our Action SDK.
+Development of custom Kaizala Action is in **public preview mode**. You agree to our [Terms of use](ActionSDKLicense.md), if you develop custom Kaizala Action using our Action SDK.
 
 
 ## Legal Notices
