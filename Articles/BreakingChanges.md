@@ -1,4 +1,5 @@
 # Breaking Changes communication
+<!---
 
 ## Deprecating Mobile Number data from Kaizala APIs & Webhooks
 ||Details|
@@ -9,15 +10,18 @@
 |**Date of Communication**| 18-04-2018 |
 |**Date of Impact**| 15-05-2018|
 
+-->
 ## Validation of registered callBackUrl when webhook is created
 
 ||Details|
 |--|--|
 |**Impact Area**| Webhooks |
-|**Impact Summary**| Going ahead, during creation of Webhook ([POST /webhook](https://docs.microsoft.com/en-us/kaizala/connectors/webhooks#webhook)), registered callBackUrl would be validated. After suceessful validation, a webhook would be created |
+|**Impact Summary**| Going ahead, during creation of Webhook ([POST /webhook](https://docs.microsoft.com/en-us/kaizala/connectors/webhooks#webhook)), registered callBackUrl would be validated. After successful validation, a webhook would be created |
 |**Required Action**| |
-|**Date of Communication**|18-04-2018|
-|**Date of Impact**|01-06-2018|
+|**Date of Communication**|09-05-2018|
+|**Date of Impact**|15-06-2018|
+
+<!---
 
 ## Webhook subscription will be cancelled, if 10 consecutive failures are received
 
@@ -28,7 +32,9 @@
 |**Required Action**||
 |**Date of Communication**| 18-04-2018 |
 |**Date of Impact**| 01-06-2018 |
+-->
 
+<!---
 ## Public groups can only be created using Tenant-level token in 'Create Group' API
 
 ||Details|
@@ -39,3 +45,4 @@
 |**Date of Communication**|18-04-2018|
 |**Date of Impact**|15-05-2018|
 
+-->
