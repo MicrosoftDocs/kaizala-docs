@@ -5,7 +5,7 @@ Once Custom Action development is done, you may want to test it to see if its wo
 The Kaizala Management Portal provides a convenient way to test & debug your new Kaizala Actions. 
 >   You will need an active Kaizala Pro or Office365 Organizational subscription to access the Management Portal.
 
-# Steps to test a Action
+## Steps to test a Action
 
 After you have satisfied the pre-requisites, you can test your action by following below steps
 
@@ -30,7 +30,7 @@ In order to make the palette 'managed', follow below steps:
      *    Click on 'Save'
 *    You can find the action in the palette of the selected groups and use it accordingly.
 
-# Steps to debug a action
+## Steps to debug a action
 
 After you have uploaded a test Action, you can debug the html views for the test Action
 
