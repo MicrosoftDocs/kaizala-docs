@@ -37,15 +37,12 @@ Subscribe to [Kaizala Developer Connect](https://join.kaiza.la/g/jwoUnTyHR_Kgrd_
 |**Date of Impact**| 01-06-2018 |
 -->
 
-<!---
-## Public groups can only be created using Tenant-level token in 'Create Group' API
+## Managed Public groups can only be created using Tenant-level user token in 'Create Group' API
 
 ||Details|
 |--|--|
 |**Impact Area**| APIs |
-|**Impact Summary**| Managed Public Groups can be created through '[Create group](https://docs.microsoft.com/en-us/kaizala/connectors/groups#groups)', only when tenant user token is used in API |
-|**Required Action**||
-|**Date of Communication**|18-04-2018|
-|**Date of Impact**|15-05-2018|
+|**Impact Summary**| Earlier Public group was allowed to be created without it being mapped to an Organization. Henceforth, Managed Public Groups can be created through '[Create group](https://docs.microsoft.com/en-us/kaizala/connectors/groups#groups)', only when tenant-level user token is used in API |
+|**Date of Communication**|06-06-2018|
+|**Date of Impact**|22-06-2018|
 
--->
