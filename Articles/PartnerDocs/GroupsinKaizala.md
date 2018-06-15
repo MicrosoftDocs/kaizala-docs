@@ -24,14 +24,14 @@ Most organizations in real world are not flat but hierarchical, and hence Kaizal
 
 Unlike a flat group where all the information shared is visible to everyone in the group, in hierarchical group, information flows from the top to the bottom. There exists a parent-child relationship between the groups. 
 
-For example, when you add Group B to Group A, Group B becomes the sub-group of Group A and any message shared in Group A is also sent to group B. 
+For example, when you add Group B to Group A, Group B becomes the sub-group of Group A. Members of Group B will start seeing a group A in their chat list. In group A, they can only view/respond to Actions sent in Group A. They would not be able to send messages in this group.
 
 Similarly, when group D is added to Group B, refer the table below to understand the relationship.
 
 |Message Sending Group|Message Recieving Group|
 |--------|--------|
-|Messages sent in Group A|Group B and Group D receives the message|
-|Messages sent in Group B|Group D receives the message|
+|Messages sent in Group A|Members of Group B and Group D receives the message in group A in the chat list|
+|Messages sent in Group B|Members of Group D receives the message in group B in the chat list|
 |Messages sent in Group D|Only Group D receives the message|
 
 <br/> ![](Images/Hierarchical1.png)
