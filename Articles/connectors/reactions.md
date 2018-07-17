@@ -57,7 +57,7 @@ API end-point to query reactions data on any Action sent in a group.
     GET {endpoint-url}/v1/groups/{groupId}/reaction/{referenceId}/summary?sourceGroupId={sourceGroupId}
 
 
-## Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -66,7 +66,7 @@ API end-point to query reactions data on any Action sent in a group.
 | URL Path Parameter | sourceGroupId | String | No | GUID of the group in which the Action has been sent |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 
-## Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
