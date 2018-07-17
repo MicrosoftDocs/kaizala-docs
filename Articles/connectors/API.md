@@ -33,6 +33,7 @@ The API works with the following Kaizala resources:
 *   [/media](media.md)
 *   [/actions](actions.md)
 *   [/subscribers](subscribers.md)
+*	 [/reaction](reactions.md)
 
 ### WebHooks
 
