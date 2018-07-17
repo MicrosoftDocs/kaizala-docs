@@ -4,15 +4,14 @@ description: Reference Article for API to query subgroup data
 topic: Reference
 author: nitinjms
 ---
-# APIs to query subgroups within a group
-## /subGroups
+# /subGroups
 API end-point to interact with the conversation sub-groups inside Kaizala.
 
-### GET /subGroups
+## GET /subGroups
 
     GET {endpoint-url}/v1/groups/{groupId}/subGroups
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -20,13 +19,13 @@ API end-point to interact with the conversation sub-groups inside Kaizala.
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | URL Query Parameter | fetchAllGroups | Boolean | Yes | Parameter to specify if you would like to fetch all the subGroups across the hierarchy |
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | groups | JSON Object Array | Array of groups with the list of subGroups if any |
 
-######  JSON structure for each individual group in the array groups[]:
+####  JSON structure for each individual group in the array groups[]:
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -34,7 +33,7 @@ API end-point to interact with the conversation sub-groups inside Kaizala.
 | groupName | String | Name of the group |
 | groupImageURL | String | String specifying the URL of the group profile picture |
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {
@@ -55,18 +54,18 @@ API end-point to interact with the conversation sub-groups inside Kaizala.
 }
 ```
 
-### POST /subGroups
+## POST /subGroups
 
     POST {endpoint-url}/v1/groups/{groupId}/subGroups
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 
-##### Request body
+### Request body
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -77,7 +76,7 @@ API end-point to interact with the conversation sub-groups inside Kaizala.
 | addUserToGroup | Boolean | Yes | Set to False if the calling user should not be added to the group by default  |
 
 
-###### Sample JSON Request
+#### Sample JSON Request
 
 ```javascript
 {
@@ -89,7 +88,7 @@ API end-point to interact with the conversation sub-groups inside Kaizala.
 }
 ```
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -97,7 +96,7 @@ API end-point to interact with the conversation sub-groups inside Kaizala.
 | groupName | String | Name of the group created |
 
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {
