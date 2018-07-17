@@ -4,22 +4,21 @@ description: Reference Article for API to query group data
 topic: Reference
 author: nitinjms
 ---
-# APIs to query Kaizala groups
-## /groups
+# /groups
 API end-point to interact with the conversation groups inside Kaizala.
 
-### POST /groups
+## POST /groups
 
     Post {endpoint-url}/v1/groups
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | "application/json" |
 
-##### Request body
+### Request body
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :--- | :--- |
@@ -28,7 +27,7 @@ API end-point to interact with the conversation groups inside Kaizala.
 | members | String[] | Yes | Mobile number(with country code) of members to be added. Default: Access token's user will be added as admin of the group |
 | groupType | String | Yes | Enum: Group/ConnectGroup. ConnectGroup will create Managed Public group. Default: Group |
 
-###### Sample JSON Request for Create Group
+#### Sample JSON Request for Create Group
 
 ```javascript
 {
@@ -39,7 +38,7 @@ API end-point to interact with the conversation groups inside Kaizala.
 }
 ```
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -47,7 +46,7 @@ API end-point to interact with the conversation groups inside Kaizala.
 | groupId | String | Group Identifier which can be used in subsequent api calls |
 | membersAdded | bool | True if all members are successfully added |
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {
@@ -58,11 +57,11 @@ API end-point to interact with the conversation groups inside Kaizala.
 ```
 
 
-### GET /groups
+## GET /groups
 
     GET {endpoint-url}/v1/groups
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -70,13 +69,13 @@ API end-point to interact with the conversation groups inside Kaizala.
 | Query parameter | showDetail | bool | Yes | Default: false. True to return all group details |
 | Query parameter | fetchAllGroups | bool | Yes | Default: false. True to return all parent and sub groups |
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | groups | JSON Object Array | Array of groups that the user has access to with the accessToken |
 
-######  JSON structure for each individual group in the array groups[]:
+####  JSON structure for each individual group in the array groups[]:
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -90,7 +89,7 @@ API end-point to interact with the conversation groups inside Kaizala.
 | userCount | Numeric | Total number of users under this group across the hierarchy |
 | currentLevelUserCount | Numeric | Total number of individual members of the group at the current level |
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {
@@ -119,20 +118,20 @@ API end-point to interact with the conversation groups inside Kaizala.
 }
 ```
 
-### GET /groups/{groupId}
+## GET /groups/{groupId}
 
 You can get details about a specific resource member (a group here) by specifying the identifier as a URL path parameter
 
     GET {endpoint-url}/groups/{groupId}
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -152,7 +151,7 @@ JSON structure for each individual group in the array groups[]:
 | userCount | Numeric | Total number of users under this group across the hierarchy |
 | currentLevelUserCount | Numeric | Total number of individual members of the group at the current level |
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {

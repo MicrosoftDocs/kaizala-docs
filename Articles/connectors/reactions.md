@@ -4,7 +4,7 @@ description: Reference Article for API to query reactions on any Action sent in 
 topic: Reference
 author: nitinjms
 ---
-# /reaction - APIs to query likes & comments related data on any Action
+# /reaction
 API end-point to query reactions data on any Action sent in a group.
 
 ## POST /reaction

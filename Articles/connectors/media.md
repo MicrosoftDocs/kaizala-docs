@@ -4,8 +4,7 @@ description: Reference Article for API to send media attachments to groups
 topic: Reference
 author: nitinjms
 ---
-# APIs to query media resources
-## /media
+# /media
 API end-point to send media attachments to conversation groups inside Kaizala.
 
 Supported file formats are:
@@ -22,36 +21,36 @@ Posting media attachments to Kaizala is a two step process. First, you will need
 
 Corresponding content-type(mime type) needs to be set in content header of the media file. Without this api will throw unsupported Media(415) error. 
 
-### POST /media
+## POST /media
 
     POST {endpoint-url}/v1/media
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | To indicate that a file is being uploaded. value: multipart/form-data |
 
-##### Request body
+### Request body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | POST Body | files | Media file to be uploaded in a multipart/form-data format |
 
-##### Response body
+### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | mediaResource | String | Encoded media data to be used in subsequent send action calls |
 
-### POST /groups/{groupId}/actions
+## POST /groups/{groupId}/actions
 
 Once you have uploaded the media file, you can post a media file to a group by using below API
 
     POST {endpoint-url}/v1/groups/{groupId}/actions
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -59,14 +58,14 @@ Once you have uploaded the media file, you can post a media file to a group by u
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | value: application/json |
 
-##### Request body
+### Request body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | actionType | String | Id of the Kaizala Action to send. Please refer to the table above for supported file formats and their respective ActionType. |
 | actionBody | JSON Object | Object representing data needed for the respective Action. Parameters defined below for each of the supported MediaType. |
 
-###### actionBody for media files
+#### actionBody for media files
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -74,7 +73,7 @@ Once you have uploaded the media file, you can post a media file to a group by u
 | caption | String | Yes | Text String that is shown alongwith the media file as a part of the message |
 
 
-###### Sample JSON Request for a Media Action
+#### Sample JSON Request for a Media Action
 
 ```javascript
 {
@@ -87,7 +86,7 @@ Once you have uploaded the media file, you can post a media file to a group by u
 
 ```
 
-###### Sample JSON Response
+#### Sample JSON Response
 
 ```javascript
 {
