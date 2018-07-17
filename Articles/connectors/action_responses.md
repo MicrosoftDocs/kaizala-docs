@@ -5,11 +5,11 @@ topic: Reference
 author: nitinjms
 ---
 # Post response to an Action
-### POST /responses
+## POST /responses
 
     POST {endpoint-url}/groups/{groupId}/actions/{actionId}/responses
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -18,7 +18,7 @@ author: nitinjms
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | value: application/json |
 
-##### Request body
+### Request body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -27,14 +27,14 @@ author: nitinjms
 | responseId | String | For updating existing response |
 | actionBody | JSON Object | Object representing data needed for the respective Action. Parameters defined below for each of the supported Actions. |
 
-###### actionBody for a Job Action
+#### actionBody for a Job Action
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
 | isCompleted | Bool | No | Mark the job as completed |
 
 
-###### Sample JSON Request for a Job Action
+##### Sample JSON Request for a Job Action
 
 ```javascript
 {
@@ -45,7 +45,7 @@ author: nitinjms
 }
 ```
 
-###### actionBody for a Survey Action Or Action package instance(id) :
+#### actionBody for a Survey Action Or Action package instance(id) :
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -53,7 +53,7 @@ author: nitinjms
 | responseLocation | Location object | Yes | For identifying response's location |
 | answers | object[] | No | Answer of each question(based on index). object will be of type string for question type: SingleOption/Text/Image, object will be of type string[] for question type: MultiOption/AttachmentList, object will be of type double for question type: Numeric/Date |
 
-###### Structure for Location object
+##### Structure for Location object
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -61,7 +61,7 @@ author: nitinjms
 | longitude | Double | No | Longitude of the location |
 | name | String | No | Name of the location |
 
-###### Sample JSON Request for a Survey Action
+##### Sample JSON Request for a Survey Action
 
 ```javascript
 {
@@ -81,7 +81,7 @@ author: nitinjms
 ```
 You need to upload image (v1/media api) and then use mediaResource of the response as answer to Image type question.
 
-###### Response body
+#### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |

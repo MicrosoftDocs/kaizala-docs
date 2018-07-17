@@ -5,11 +5,11 @@ topic: Reference
 author: nitinjms
 ---
 # Post a Action in a group
-### POST /actions
+## POST /actions
 
     POST {endpoint-url}/groups/{groupId}/actions
 
-##### Request Parameters
+### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
@@ -17,7 +17,7 @@ author: nitinjms
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | HTTP Header | Content-Type | String | No | value: application/json |
 
-##### Request body
+### Request body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -26,7 +26,7 @@ author: nitinjms
 | actionBody | JSON Object | Object representing data needed for the respective Action. Parameters defined below for each of the supported Actions. |
 
 
-###### actionBody for an Announcement Action
+#### actionBody for an Announcement Action
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -34,7 +34,7 @@ author: nitinjms
 | MediaResources | String[] | Yes | Array of media resources |
 | Message | String | No | Message Body |
 
-###### Sample JSON Request for an Announcement Action
+#### Sample JSON Request for an Announcement Action
 
 ```javascript
 {
@@ -52,7 +52,7 @@ author: nitinjms
 
 ```
 
-###### actionBody for a Job Action
+#### actionBody for a Job Action
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -60,7 +60,7 @@ author: nitinjms
 | assignedTo | String[] | No | Title of the Job |
 | dueDate | long | Yes | Default: 24hrs. Number of hours before which job should be completed |
 
-###### Sample JSON Request for a Job Action
+##### Sample JSON Request for a Job Action
 
 ```javascript
 {
@@ -74,7 +74,7 @@ author: nitinjms
 
 ```
 
-###### actionBody for a Poll Action
+#### actionBody for a Poll Action
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -82,7 +82,7 @@ author: nitinjms
 | Choices | Json Array | No | Choices available for the poll. Each Choice have below component: <ol><li>title (Mandatory & in String format) </li><li>image (optional)</li></ol> |
 | expiryInHours | Integer | Yes | Default:720. Number of hours in which a gven poll would expire |
 
-###### Sample JSON Request for a Poll Action
+##### Sample JSON Request for a Poll Action
 
 ```javascript
 {actionType:"Poll", actionBody:{question:"Do you find Kaizala extensibility easy to use?", 
@@ -94,7 +94,7 @@ author: nitinjms
 		],
 	expiryInHours:10}}
 ```
-###### actionBody for a Let's Meet Action
+#### actionBody for a Let's Meet Action
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -105,14 +105,14 @@ author: nitinjms
 | agenda | String | Yes | Agenda for the Meeting / Description for the meeting |
 | isSenderOnly | Bool | Yes | For allowing only sender to view Let's Meet summary. Default: false |
 
-###### Sample JSON Request for a Let's Meet Action
+##### Sample JSON Request for a Let's Meet Action
 
 ```javascript
 {actionType:"LetsMeet", actionBody:{title:"lets catch up?", startingTime:"2018-01-01T00:00:00Z", duration:45, place:{"latitude":15.0,"longitude":96.0,"name":"MS Building 3"}, agenda:"no agenda", isSenderOnly:false}}
 
 ```
 
-###### actionBody for a Survey Action Or Action package instance(id) :
+#### actionBody for a Survey Action Or Action package instance(id) :
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -124,7 +124,7 @@ author: nitinjms
 | questions | object[] | No | Each element of object[] is described below as Question object |
 | properties | object[] | No | Each element of object[] is described below as Property Object. Only valid for creating Action Package Instance |
 
-###### Structure for Question object
+##### Structure for Question object
 
 | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -147,7 +147,7 @@ author: nitinjms
 | type | String | No | Type of the property. Enum: Text, Numeric, Location, DateTime, StringList, Attachment, StringSet, AttachmentList |
 | value | String | No | Value of the property |
 
-###### Sample JSON Request for a Survey Action
+##### Sample JSON Request for a Survey Action
 
 ```javascript
 {
@@ -194,7 +194,7 @@ author: nitinjms
 }
 ```
 
-###### Response body
+##### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |

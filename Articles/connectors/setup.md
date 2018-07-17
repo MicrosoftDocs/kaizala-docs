@@ -47,7 +47,7 @@ There are four major infrastructure components involved in working with the Kaiz
     *   Tap on “Add Connector”
     *   Register a connector for the 3rd party system that will use the API
         *   Enter the name of the Connector and other details. Tap on Continue
-        *   Select permissions that is intended for the Connector to have access to
+        *   Select [permissions](permission.md) that is intended for the Connector to have access to
         *   Tap on Create Connector
     *   Note the ID & Secret that get generated and displayed on the portal
 
