@@ -151,7 +151,7 @@ API end-point to query reactions data on any Action sent in a group.
 
 ## GET /reaction details for a Action
 
-    GET {endpoint-url}/v1/groups/{groupId}/reaction/summary?sourceGroupId={sourceGroupId}&cursor={timeStamp}
+    GET {endpoint-url}/v1/groups/{groupId}/reaction/{referenceId}?sourceGroupId={sourceGroupId}&reactionType={reactionType}&cursor={timeStamp}
 
 
 ### Request Parameters
@@ -186,20 +186,16 @@ API end-point to query reactions data on any Action sent in a group.
 ```javascript
 {
     "cursor": 636674054802000000,
-    "summary": [
+    "reactionDetails": [
         {
-            "referenceId": "4a44-51be-4b42-a980-c7a48e2d92a8",
-            "reactionsCountMap": {
-                "like": 1,
-                "comment": 4
-            }
+            "lastModifiedTime": 1529573303063,
+            "reactionId": "4b2fb78b-b529-4fa1-acda-f670b491ebca",
+            "userId": "72e29591-f391-4e7b-84eb-4e228406fb9b"
         },
         {
-            "referenceId": "4a44-51be-4b420-c7a48e2d92a8",
-            "reactionsCountMap": {
-                "like": 10,
-                "comment": 14
-            }
+            "lastModifiedTime": 1529573313063,
+            "reactionId": "4b2fb7529-4fa1-acda-f670b491ebca",
+            "userId": "72e29591-f391-4eb-4e228406fb9b"
         }
     ]
 }
