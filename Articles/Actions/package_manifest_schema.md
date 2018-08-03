@@ -43,7 +43,7 @@
             "maxLength": 64
         },
         "externalUrls": {
-            "type": "object",
+            "type": "array",
             "properties": {
                 "url": {
                     "type": "string",
@@ -226,13 +226,8 @@
                         "sourceLocation"
                     ]
                 }
-            },
-            "required": [
-                "CreationView",
-                "ResponseView",
-                "ResponseResultsView"
-            ]
-        }
+            }
+		}
     },
     "required": [
         "schemaVersion",
