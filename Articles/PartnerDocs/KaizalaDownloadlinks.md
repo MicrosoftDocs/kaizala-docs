@@ -7,6 +7,8 @@ Kaizala is commercially launched in following countries though its available on 
 <br>
 •	Kenya
 <br>
+•	Brazil
+<br>
 • Mexico 
 <br>
 • Columbia 
