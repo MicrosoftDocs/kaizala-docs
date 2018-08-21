@@ -1,5 +1,5 @@
-### Kaizala Availability 
-Kaizala is commercially launched in following countries though its available on all Android and iOS stores world wide as a free App. Kaizala Pro is available world wide under Preview.
+# Kaizala Availability 
+Kaizala is commercially launched in following countries, though it is available on all Android and iOS stores world wide as a free App. Kaizala Pro is available world wide under Preview.
 
 •	India
 <br>
