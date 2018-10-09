@@ -1,7 +1,5 @@
 # README
 
-[![HitCount](http://hits.dwyl.io/arghyadeep99/kaizala-docs.svg)](http://hits.dwyl.io/arghyadeep99/kaizala-docs)
-
 Thank you for your interest in [Microsoft Kaizala Developer documentation](Articles/index.md).
 
 > **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](Articles/install.md).**
