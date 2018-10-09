@@ -19,13 +19,13 @@ Using WebHooks, you can subscribe to various events that occur within a conversa
 
 To ensure your webhook service endpoint is authentic and working we will verify your callback URL before creating subscription. For verification we will send you a validation token which you need to send us back within 5 seconds. [Read More](WebHookValidaton.md)
 
-##### Request Parameters
+#### Request Parameters
 
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---:	| :--- |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point || HTTP Header | Content-Type | String | No | "application/json" |
 
-##### Request body
+#### Request body
 
 |  Parameter | Type | Optional? | Description |
 | :---: | :---: | :---:	| :--- |
@@ -38,12 +38,12 @@ To ensure your webhook service endpoint is authentic and working we will verify 
 | validity | String | Yes | Validity for the WebHook to be active in EPOCH format. Default is 2 years |
 
 
-##### Response body
+#### Response body
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | webhookId | String | Identifier representing the webHook created |
 
-##### Request Body - Subscribe to all events at group level
+#### Request Body - Subscribe to all events at group level
 
 ```javascript
 {  
@@ -78,7 +78,7 @@ You can find webhook response schema for registered events in Kaizala [**here**]
 
     GET {endpoint-url}/v1/webhook
 
-##### Request Parameters
+#### Request Parameters
 
 
 |  | Parameter | Type | Optional? | Description |
@@ -87,13 +87,13 @@ You can find webhook response schema for registered events in Kaizala [**here**]
 | Query parameter | objectId | String | No | Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id |
 | Query parameter | objectType | String | No | Enum: "Group"/"Action"/"ActionPackage" |
 
-##### Response body
+#### Response body
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | webhooks | JSON Object Array | Array of webhooks subscribed on the objectId |
 
-######  JSON structure for each individual webhook in the array webhooks[]:
+#####  JSON structure for each individual webhook in the array webhooks[]:
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
@@ -105,8 +105,9 @@ You can find webhook response schema for registered events in Kaizala [**here**]
 | callBackToken | String | Parameter which will be sent in the HTTP header 'kz-callback-token' with every callBack made by the WebHook |
 | callBackContext | String | Parameter sent in the JSON payload as 'context' with every callBack made by the WebHook |
 | validity | String | Validity for the WebHook to be active in EPOCH format. |
+| active | Boolean | True, if the state of webhook is active |
 
-###### Sample JSON Response
+##### Sample JSON Response
 
 ```javascript
 {
@@ -135,6 +136,7 @@ You can find webhook response schema for registered events in Kaizala [**here**]
             "callbackToken": "tokenToBeVerifiedByCallback",
             "ts": 1505491564677,
             "validity": 1568605416677
+            "active": true
         }
     ]
 }
@@ -144,8 +146,79 @@ You can find webhook response schema for registered events in Kaizala [**here**]
 
     DELETE {endpoint-url}/v1/webhook
 
-##### Request Parameters
+#### Request Parameters
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---: | :--- |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 | Path parameter | webhookId | String | No | Webhook Identifier |
+
+### PUT /webhook
+
+    PUT {endpoint-url}/v1/webhook/{webhookId}
+
+Any parameter for the webhook can be updated. Request Body may contain 1 or more parameters, as needed.
+
+#### Request Parameters
+
+|  | Parameter | Type | Optional? | Description |
+| :---: | :---: | :---: | :---: | :--- |
+| HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
+| Path parameter | webhookId | String | No | Webhook Identifier |
+
+#### Request body
+
+|  Parameter | Type | Optional? | Description |
+| :---: | :---: | :---:	| :--- |
+| objectId | String | Yes | Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id |
+| objectType | String | Yes | Enum: "Group"/"Action"/"ActionPackage" |
+| eventTypes | Array | Yes | Array of different types of events you need to subscribe the webhook to. Supported events are: "ActionCreated","ActionResponse","SurveyCreated","JobCreated","SurveyResponse","JobResponse","TextMessageCreated","AttachmentCreated","Announcement","MemberAdded","MemberRemoved","GroupAdded","GroupRemoved" |
+| callBackUrl | String | Yes | HTTPS URL to which the subscribed events need to be notified to |
+| callBackToken | String | Yes | Optional parameter you can set which will be sent in the HTTP header 'kz-callback-token' with every callBack made by the WebHook |
+| callBackContext | String | Yes | Optional parameter you can set which will be sent in the JSON payload as 'context' with every callBack made by the WebHook |
+| validity | String | Yes | Validity for the WebHook to be active in EPOCH format. Default is 2 years |
+| Active | Boolean | Yes | Change the state of webhook to Active, if the value is true |
+
+
+#### Sample Request Body
+
+````javascript
+    { 
+       "objectId":"74943849802190eaea3810",
+       "objectType":"Group",
+       "eventTypes":[
+          "ActionCreated",
+          "ActionResponse",
+          "SurveyCreated",
+          "JobCreated",
+          "SurveyResponse",
+          "JobResponse",
+          "TextMessageCreated",
+          "AttachmentCreated",
+          "Announcement",
+          "MemberAdded",
+          "MemberRemoved",
+          "GroupAdded",
+          "GroupRemoved"
+       ],
+       "callBackUrl":"https://requestb.in/123",
+       "callBackToken":"tokenToBeVerifiedByCallback",
+      "Active": "true" 
+    } 
+
+````
+
+## Auto-Disable of Webhooks
+
+To improve the Reliability of our Webhooks, we recently have added the Retry and Disabling Logic. The Callback Url/Endpoint registered with a webhook, if not reachable or does not respond with a status code other than 2xx (>=3xx), then our Service will try to reach/retry it for 6 times in an exponential way within a span of 2 Days. 
+
+If it is still failing for 2 days, then the corresponding Webhook will be disabled, and the owner needs to update it with the Put /webhook API before it starts working again. For e.g.
+
+    
+    PUT {endpoint-url}/v1/webhook/{subscriptionId}
+
+### Request Body:
+````javascript
+{ 
+  "Active": "true" 
+} 
+````
