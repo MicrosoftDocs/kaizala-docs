@@ -428,7 +428,7 @@ You can download sample Kaizala Action packages from [here](https://manage.kaiza
                         "sourceLocation": "ResponseView.html" 
                     }, 
                     "ResponseResultsView": { 
-                        "labelPageHeader": "Feedback summary"
+                        "labelPageHeader": "Feedback summary",
                         "sourceLocation": "SummaryView.html" 
                     } 
            }       
