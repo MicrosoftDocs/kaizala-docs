@@ -26,7 +26,7 @@ ms.date: 04/04/2018
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-Admins-400x140.svg" alt="" />
+                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-Admins-400x140.svg" alt="Admins" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -45,7 +45,7 @@ ms.date: 04/04/2018
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-Developers-400x140.svg" alt="" />
+                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-Developers-400x140.svg" alt="Developers" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -64,7 +64,7 @@ ms.date: 04/04/2018
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-EndUsers-400x140.svg" alt="" />
+                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-EndUsers-400x140.svg" alt="End users" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -83,7 +83,7 @@ ms.date: 04/04/2018
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-BusinessSolutions-400x140.svg" alt="" />
+                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-BusinessSolutions-400x140.svg" alt="Business solutions" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -102,7 +102,7 @@ ms.date: 04/04/2018
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-IntegrateOtherBusinessApps-400x140.svg" alt="" />
+                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-IntegrateOtherBusinessApps-400x140.svg" alt="Integrate with other business apps" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -121,7 +121,7 @@ ms.date: 04/04/2018
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-SecurityPrivacyCompliance-400x140.svg" alt="" />
+                                                <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-SecurityPrivacyCompliance-400x140.svg" alt="Security, privacy, compliance" />
                                             </div>
                                         </div>
                                         <div class="cardText">
