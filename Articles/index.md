@@ -25,7 +25,7 @@ ms.date: 04/04/2018
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-Admins-400x140.svg" alt="" />
                                             </div>
                                         </div>
@@ -44,7 +44,7 @@ ms.date: 04/04/2018
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-Developers-400x140.svg" alt="" />
                                             </div>
                                         </div>
@@ -63,7 +63,7 @@ ms.date: 04/04/2018
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-EndUsers-400x140.svg" alt="" />
                                             </div>
                                         </div>
@@ -82,7 +82,7 @@ ms.date: 04/04/2018
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-BusinessSolutions-400x140.svg" alt="" />
                                             </div>
                                         </div>
@@ -101,7 +101,7 @@ ms.date: 04/04/2018
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-IntegrateOtherBusinessApps-400x140.svg" alt="" />
                                             </div>
                                         </div>
@@ -120,7 +120,7 @@ ms.date: 04/04/2018
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Kaizala-SecurityPrivacyCompliance-400x140.svg" alt="" />
                                             </div>
                                         </div>
