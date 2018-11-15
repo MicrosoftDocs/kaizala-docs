@@ -21,7 +21,7 @@ All Kaizala Actions are currently Form based - i.e. the data model for requestin
 
    **Step 3 - Design and implement the user experience and user interface for the add-in.**
 
-Design a fast and fluid user experience that is consistent, easy to learn, with primary scenarios that require only a few steps to complete. Remeber that a Kaizala Action cannot refer to external sources - so be practical in terms of what you would like to implement within your Action.
+Design a fast and fluid user experience that is consistent, easy to learn, with primary scenarios that require only a few steps to complete. Remember that a Kaizala Action cannot refer to external sources - so be practical in terms of what you would like to implement within your Action.
 
 You can choose from a variety of web development tools and use HTML and JavaScript to implement the user interface.
 
