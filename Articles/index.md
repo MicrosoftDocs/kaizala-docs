@@ -50,7 +50,7 @@ ms.date: 04/04/2018
                                         </div>
                                         <div class="cardText">
                                             <h3>Developers</h3>
-                                            <p>er best practices and how to’s for developers.</p>
+                                            <p>Discover best practices and how to’s for developers.</p>
                                         </div>
                                     </div>
                                 </div>
