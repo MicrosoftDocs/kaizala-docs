@@ -28,7 +28,7 @@ For example, when you add Sales group to Head Office group (group A in images), 
 
 Similarly, when North Sales (group D in images) is added to Sales Group, refer the table below to understand the relationship.
 
-|Message Sending Group|Message Recieving Group|
+|Message Sending Group|Message Receiving Group|
 |--------|--------|
 |Messages sent in Head Office|Members of Sales Group and North Sales Group receives the message in group named Head Office in the chat list|
 |Messages sent in Sales Group|Members of North Sales Group receives the message in Sales group in the chat list|
