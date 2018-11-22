@@ -6,7 +6,7 @@ We are constantly working to improve the Developer Platform experience. If you w
 
 
 ## APIs
-Microsoft Kaizala APIs are governed by [Microsoft API License and Terms of use](https://msdn.microsoft.com/en-us/mt825045)
+Microsoft Kaizala APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/en-us/outlook/rest/terms-of-use)
 
 ## Actions
 
