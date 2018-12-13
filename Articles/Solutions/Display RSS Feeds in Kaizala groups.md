@@ -1,8 +1,8 @@
-# Display RSS Feeds in Kaizala groups
+# Display RSS feeds in Kaizala groups
 
 Organizations use RSS feeds to complement their e-mail systems and improve the way they provide information to employees. Organizations can now leverage these feeds with the first line and mobile workers by sending them as announcements on Kaizala groups.
 
-Five Use cases of RSS Feeds
+Five Use cases of RSS feeds
 
 1. Industry News from external sites
 2. Company news from internal sites
