@@ -23,7 +23,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 
 1. [Download the "RSS-feed-SolutionPackage"](./Solutions/Rss-Feed-solutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
 2. [Download the latest version of KAS client](https://manage.kaiza.la/MiniApps/DownloadSDK)
-3. Edit the "RSS-feed-ActionPackage" (See steps below)
+3. Edit the "RSS-feed-ActionPackage" (*See steps below*)
    - Unzip the action package from solution package folder.
    - Change the action "id" in Package.Json file or the version in incremental manner by +1 in Package.Json
    - Include the downloaded version of KAS client
@@ -60,7 +60,7 @@ RSS feeds will be sent to the selected Kaizala group, each time flow is triggere
 
 Only the URL's whitelisted will be accessible within Kaizala, if not, the content would be directed to a browser.
 
-To whitelist RSS feed URL add that URL in Package.json (as below)
+To whitelist RSS feed URL, add that URL in Package.json (as below)
 
 ``` json
 "externalUrls": [
