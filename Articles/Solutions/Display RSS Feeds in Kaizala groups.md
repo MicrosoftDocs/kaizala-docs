@@ -31,12 +31,12 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 		
 > Note - Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client and Package.Json with new action "id"
 	
-4. [Import the edited Action Package in kaizala management portal](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) (*This card is sent by calling API, so there is no need to add the card to a group*)
-5. [Import the "RSS-feed-flowpackage.zip" in Kaizala management portal](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
+4. [Import the edited Action Package to kaizala management portal](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) (*This card is sent by calling API, so there is no need to add the card to a group*)
+5. [Import the "RSS-feed-flowpackage.zip" to Kaizala management portal](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
 
 > Note- If you have never used RSS or Kaizala connections first[add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 	
-6. Edit details in Flow (*See steps below*) 
+6. Edit details in Imported Flow (*See steps below*) 
    - In the First block , enter the RSS feed URL
    - In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
 
