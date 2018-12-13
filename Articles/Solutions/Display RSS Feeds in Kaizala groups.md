@@ -13,11 +13,11 @@ Five Use cases of RSS Feeds
 
 This sample will help, an admin user to add RSS feeds to Kaizala groups.  This card has 3 fields in chat card view- Card title(Ex- Business News), Image, Feed title ( Title of the News Feed). Tapping on the card will take you to news page within Kaizala. 
 
-![Chat card view Logo](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+![Chat card view Logo](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/RSS%20Feed%20Images/1.png)
 
 This is an announcement in the form of a card and Microsoft Flow is used to send the custom action card to Kaizala group.
 
-![RSS+Flow--> Kaizala logo](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+![RSS+Flow--> Kaizala logo](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/RSS%20Feed%20Images/2.png)
 
 ## Implementation steps
 	1. [Download the RSS feed solution package] (*This package contain Action package and Flow package*)
@@ -38,19 +38,19 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 	6. Edit details in Flow (See steps below) 
 		○ In the First block , enter the RSS feed URL
 		○ In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
-![Flow 1 & 2 blocks--> Kaizala logo](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+![Flow 1 & 2 blocks--> Kaizala logo](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/RSS%20Feed%20Images/3.png)
 
 		○ In the third block, enter the Action "Id" in "value" field, that you have given in Package.json
 
-![Flow 3 blocks--> Kaizala logo](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+![Flow 3 blocks--> Kaizala logo](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/RSS%20Feed%20Images/4.png)
 
 		○ In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
 
-![last 3 blocks--> Kaizala logo](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+![last 3 blocks--> Kaizala logo](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/RSS%20Feed%20Images/5.png)
 
 To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
-![last 3 blocks--> Kaizala logo](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+![last 3 blocks--> Kaizala logo](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/RSS%20Feed%20Images/6.PNG)
 
 	7.  Save the Flow
 
