@@ -5,7 +5,7 @@ Using this sample, Organizations can share SharePoint announcements with the fir
 
 The chat card view (*as below*)
 
-![Chat card view logo](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+![Chat card view logo](/Images/Sharepoint%20announcement%20Images/1.png)
 
 Immersive view (*as below*)
 
