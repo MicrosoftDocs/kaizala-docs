@@ -5,11 +5,11 @@ Using this sample, Organizations can share SharePoint announcements with the fir
 
 The chat card view (*as below*)
 
-![Chat card view logo](/Images/Sharepoint%20announcement%20Images/1.png)
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/1.png" alt="Chat card view Logo" width="400" />
 
 Immersive view (*as below*)
 
-![Immersive view logo](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="200" />
 
 This scenario can be broadly divided into 2 steps:
 
@@ -19,7 +19,7 @@ This scenario can be broadly divided into 2 steps:
 	
 	2. Configure Flow such that, when a new item is created or existing item is modified in SharePoint list, Announcement is sent to a group
 
-![Sharepoint+ Flow--> Kaizala](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="600" />
 
 ## Implementation steps-
 
@@ -45,17 +45,17 @@ This scenario can be broadly divided into 2 steps:
 			§ Copy the URL of the list
 			§ Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
     
-![Flow block 1--> Kaizala](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/4.png" alt="Chat card view Logo" width="600" />
 
 		○ In the second block of the Flow
 			§ Map "value" field with column that has description of announcement (Column title in the SharePoint announcement list) from Dynamic content. In the below example, the column name is "Announcement Body"
         
-![Flow Column Map--> Kaizala](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/5.png" alt="Chat card view Logo" width="600" />
 
         ○ In the Last block of the Flow
 			§ Select the group name or Map the group ID where you want to send the card 
 
-![last block Map--> Kaizala](https://www.fnordware.com/superpng/pnggrad16rgb.png)
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/6.png" alt="Chat card view Logo" width="600" />
 
 	5. Save the flow
 
