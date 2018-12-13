@@ -1,7 +1,7 @@
 # Display announcements made on SharePoint announcement list in Kaizala groups 
 Organizations use SharePoint Announcement app to share news, statuses and other short bits of information to employees . Sharepoint Announcement app, that comes with a list, is a special type of list that lets you create an announcement with an expiry date.
 
-Using this sample, Organizations can share SharePoint announcements with the first line and mobile workers on Kaizala. This card has 3 fields in chat card view- Attachments( In this example, Images), Title, and Announcemnet body (description). This is sent to kaizala groups as out-of-the-box announcement card.
+Using this sample, Organizations can share SharePoint announcements with the first line and mobile workers on Kaizala. This card has 3 fields in chat card view- Attachments( In this example, Photo story of images), Title, and Announcemnet body (description). This is sent to kaizala group as an out-of-the-box announcement card.
 
 The chat card view (*as below*)
 
@@ -31,7 +31,6 @@ This scenario can be broadly divided into 2 steps:
 3. Use the [highlighted content web part](https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd) (*if necessary ,for visualization*)
 4. [Import downloaded Flow Package to your Microsoft Flow account](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
 5. Edit the Flow (*Steps as Below*)
-
       - In the First block of the Flow
 	  - Enter the site address
 	  - Enter the List name
