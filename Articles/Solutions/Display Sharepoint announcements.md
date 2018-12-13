@@ -25,9 +25,9 @@ This scenario can be broadly divided into 2 steps:
 
 1. Download the "Sharepoint-Announcemnet-SolutionPackage.zip" (*This contains Flow package *)
 2. [Add Announcement app to SharePoint site](https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site)(*steps as below*)
-		○ Click on the settings icon
-		○ Click on Add an App 
-		○ Select Announcement App from the list of available Apps
+         - Click on the settings icon
+	 - Click on Add an App 
+         - Select Announcement App from the list of available Apps
 3. Use the [highlighted content web part](https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd) (*if necessary ,for visualization*)
 4. [Import downloaded Flow Package to your Microsoft Flow account](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
 5. Edit the Flow (*Steps as Below*)
