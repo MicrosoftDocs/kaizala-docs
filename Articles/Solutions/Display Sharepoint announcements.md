@@ -9,7 +9,7 @@ The chat card view is as below
 
 On tapping the card, the immersive view is as below
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="200" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="180" />
 
 This scenario can be broadly divided into 2 steps:
 
