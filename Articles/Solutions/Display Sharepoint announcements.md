@@ -23,7 +23,7 @@ This scenario can be broadly divided into 2 steps:
 
 ## Implementation steps-
 
-1. Download the "Sharepoint-Announcemnet-SolutionPackage.zip" (*This contains Flow package*)
+1. Download the "SharepointAnnouncemnetOnkaizala-SolutionPackage.zip" (*This contains Flow package*)
 2. [Add Announcement app to SharePoint site](https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site)(*steps as below*)
      - Click on the settings icon
      - Click on Add an App 
