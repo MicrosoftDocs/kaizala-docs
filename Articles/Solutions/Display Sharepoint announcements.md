@@ -9,7 +9,7 @@ The chat card view is as below
 
 On tapping the card, the immersive view is as below
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="250" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="212" />
 
 This scenario can be broadly divided into 2 steps:
 
@@ -17,7 +17,7 @@ This scenario can be broadly divided into 2 steps:
 	
 > Note- Rich text is not supported by out of the box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
 	
-2. Configure Flow such that, when a new item is created or existing item is modified in Announcement list, an out-of-the box Announcement is sent to a Kaizala group
+2. Configure Flow such that, when a new item is created or existing item is modified in Announcement list, an out-of-the box Announcement card is sent to a Kaizala group
 
 <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="500" />
 
