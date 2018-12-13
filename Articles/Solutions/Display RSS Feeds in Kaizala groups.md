@@ -21,18 +21,18 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 
 ## Implementation steps
 
-1. [Download the "RSS-feed-SolutionPackage"](./Solutions/Rss-Feed-solutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
+1. [Download the "RSS-feed-SolutionPackage.zip"](./Solutions/Rss-Feed-solutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
 2. [Download the latest version of KAS client](https://manage.kaiza.la/MiniApps/DownloadSDK)
-3. Edit the "RSS-feed-ActionPackage" (*See steps below*)
-   - Unzip the action package from solution package folder.
+3. Edit the "RSS-feed-ActionPackage.zip" (*See steps below*)
+   - Unzip the action package from "RSS-feed-SolutionPackage.zip"
    - Change the action "id" in Package.Json file or the version in incremental manner by +1 in Package.Json
    - Include the downloaded version of KAS client
-   - Zip back the action package
+   - Zip back the "RSS-feed-ActionPackage.zip"
 		
 > Note - Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client and Package.Json with new action "id"
 	
-4. [Import the edited Action Package](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) (*This card is sent by calling API, so there is no need to add the card to a group*)
-5. [Import the "RSS-feed-flowpackage.zip" from "RSS-feed-SolutionPackage" folder](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
+4. [Import the edited Action Package in kaizala management portal](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) (*This card is sent by calling API, so there is no need to add the card to a group*)
+5. [Import the "RSS-feed-flowpackage.zip" in Kaizala management portal](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
 
 > Note- If you have never used RSS or Kaizala connections first[add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 	
