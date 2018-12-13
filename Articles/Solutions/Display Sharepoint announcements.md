@@ -3,7 +3,7 @@ Organizations use SharePoint Announcement app to share news, statuses and other 
 
 Using this sample, Organizations can share SharePoint announcements with the first line and mobile workers on Kaizala. This card has 3 fields in chat card view- Attachments( In this example, Photo story of images), Title, and Announcemnet body (description). This is sent to kaizala group as an out-of-the-box announcement card.
 
-The chat card view (*as below*)
+The chat card view is as below
 
 <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/1.png" alt="Chat card view Logo" width="400" />
 
