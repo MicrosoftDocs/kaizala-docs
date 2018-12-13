@@ -34,13 +34,15 @@ This scenario can be broadly divided into 2 steps:
       - In the First block of the Flow
 	  - Enter the site address
 	  - Enter the List name
-                - Steps to get List name
-                     - Click on site contents tab on the left hand corner of the screen
-		     - Select the announcement list from which you want to send announcements to Kaizala
-		     - Click on settings icon at the top right corner of the screen
-		     - Go to List settings
-		     - Copy the URL of the list from the browser.
-		     - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
+            
+	    Steps to get List name
+                 
+		 - Click on site contents tab on the left hand corner of the screen
+		 - Select the announcement list from which you want to send announcements to Kaizala
+		 - Click on settings icon at the top right corner of the screen
+		 -  Go to List settings
+		  -  Copy the URL of the list from the browser.
+		  -  Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
     
           <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/4.png" alt="Enter site address & list name" width="600" />
 
@@ -49,8 +51,8 @@ This scenario can be broadly divided into 2 steps:
         
        <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
 
-      - In the Last block of the Flow
-	  - Select the group name or Map the group ID where you want to send the card 
+     - In the Last block of the Flow
+	    -  Select the group name or Map the group ID where you want to send the card 
 
         <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/6.png" alt="Chat card view Logo" width="600" />
 
