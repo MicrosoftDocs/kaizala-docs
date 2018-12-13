@@ -45,7 +45,7 @@ This scenario can be broadly divided into 2 steps:
           <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/4.png" alt="Enter site address & list name" width="600" />
 
 	- In the second block of the Flow
-	   - Map "value" field with column that has description of announcement (Select column title in the SharePoint announcement list) from Dynamic content. In the below example, the column name is "Announcement Body"
+	   - Map "value" field with column that has description of announcement (Select column title in the SharePoint announcement list) from Dynamic content. In the below example, the column title is "Announcement Body"
         
        <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
 
