@@ -17,7 +17,7 @@ This sample will help, an admin user to add RSS feeds to Kaizala groups.  This c
 
 <img src="./Images/RSS%20Feed%20Images/1.png" alt="Chat card view Logo" width="400" />
 
-This is an announcement in the form of a card and Microsoft Flow is used to send the custom action card to Kaizala group.
+This is an announcement in the form of a card and Microsoft Flow is used to send this custom action card to Kaizala group.
 
 <img src="./Images/RSS%20Feed%20Images/2.png" alt="RSS+Flow--> Kaizala logo" width="450" />
 
