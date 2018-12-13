@@ -69,7 +69,8 @@ To whitelist RSS feed URL, add that URL in Package.json (as below)
 } 
 ```
 
-> Note: You can only set one RSS feed URL in the Flow. To direct multiple feeds to same group, different Flows have to be created for each feed.
+> Note: You can only set one RSS feed URL in the Flow. To direct multiple feeds to same group, different Flows have to be created for each feed
+> Known issue: On iOS, the ads take the user out of the webview since they are not whitelisted
 
 ### Useful links
 
