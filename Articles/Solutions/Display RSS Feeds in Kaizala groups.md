@@ -40,21 +40,21 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    - In the First block , enter the RSS feed URL
    - In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
 
-<img src="./Images/RSS%20Feed%20Images/3.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
+   <img src="./Images/RSS%20Feed%20Images/3.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
 
-		○ In the third block, enter the Action "Id" in "value" field, that you have given in Package.json
+   - In the third block, enter the Action "Id" in "value" field, that you have given in Package.json
+   
+   <img src="./Images/RSS%20Feed%20Images/4.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
+   
+   - In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
 
-<img src="./Images/RSS%20Feed%20Images/4.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
+   <img src="./Images/RSS%20Feed%20Images/5.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
 
-		○ In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
+   - To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
-<img src="./Images/RSS%20Feed%20Images/5.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
+   <img src="./Images/RSS%20Feed%20Images/6.PNG" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
 
-To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
-
-<img src="./Images/RSS%20Feed%20Images/6.PNG" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
-
-	7.  Save the Flow
+7.  Save the Flow
 
 RSS Feeds will be sent to the selected Kaizala group, each time flow is triggered by RSS Updates. 
 
