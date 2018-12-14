@@ -32,16 +32,20 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    - Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
 
 > Note: To whitelist RSS feed URL, add that URL in Package.json (as below). In this example digital trends URL is whitelisted.
- ``` json
+   
+   ``` 
+   json
     "externalUrls": [
     { "url": "https://www.digitaltrends.com" }
    ]	
  } 
-    ```
  
-> Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new "id", "provider name" and whitelisted URL
+ ``` 
+
+ > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new "id", "provider name" and whitelisted URL
 	
 4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to kaizala management portal (*This card is sent by calling API, so there is no need to add the card to a group*)
+
 5. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "RSS-feed-flowpackage.zip" to your Microsoft Flow account
 
 > Note- If you have never used RSS or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
