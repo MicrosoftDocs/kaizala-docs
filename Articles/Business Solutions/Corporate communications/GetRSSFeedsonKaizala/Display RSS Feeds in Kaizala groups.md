@@ -66,7 +66,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 
    5. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
-   <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/1.PNG" width="600" />
+   <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
 
 7.  Save the Flow
 
