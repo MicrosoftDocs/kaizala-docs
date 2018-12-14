@@ -15,15 +15,15 @@ This sample will help, an admin user to add RSS feeds to Kaizala groups.  This c
  
  >Note: Only whitelisted RSS feed URL's open within kaizala, if not, the content would be directed to a browser.
 
-<img src="./Images/RSS%20Feed%20Images/1.png" alt="Chat card view Logo" width="400" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/1.png" alt="Chat card view Logo" width="400" />
 
 This is an announcement in the form of a card and Microsoft Flow is used to send this custom action card to Kaizala group.
 
-<img src="./Images/RSS%20Feed%20Images/2.png" alt="RSS+Flow--> Kaizala logo" width="450" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/2.png" width="450" />
 
 ## Implementation steps
 
-1. [Download the "RSS-feed-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Sample%20Solutions/Rss-Feed-solutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
+1. [Download the "RSS-feed-SolutionPackage.zip"](/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRssFeedsonKaizala-SolutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
 2. [Download the latest version of Kaizala "ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK)(*This contains KAS client file*)
 3. Edit the "RSS-feed-ActionPackage.zip" (*See steps below*)
    - Unzip action package "RSS-feed-ActionPackage.zip" to a folder
@@ -51,19 +51,19 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    - In the First block , enter the RSS feed URL
    - In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
 
-   <img src="./Images/RSS%20Feed%20Images/3.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
+   <img src= "https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.png" width="600" />
 
    - In the third block, enter the Action "Id" in "value" field, that you have given in Package.json
    
-   <img src="./Images/RSS%20Feed%20Images/4.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
+   <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
    
    - In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
 
-   <img src="./Images/RSS%20Feed%20Images/5.png" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
+   <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 
    - To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
-   <img src="./Images/RSS%20Feed%20Images/6.PNG" alt="Flow 1 & 2 blocks--> Kaizala logo" width="600" />
+   <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.png" width="600" />
 
 7.  Save the Flow
 
