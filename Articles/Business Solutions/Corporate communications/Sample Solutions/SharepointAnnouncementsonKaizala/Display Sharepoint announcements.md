@@ -15,7 +15,7 @@ This scenario can be broadly divided into 2 steps:
 
 1. Create an announcement list with columns- Title, attachments and announcement body(description) 
 	
-> Note: Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
+> Note: Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column. Hyperlinks, URL's, Pictures and documents(Except .txt) are supported.
 
 <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.5.png" width="200" />
 	
