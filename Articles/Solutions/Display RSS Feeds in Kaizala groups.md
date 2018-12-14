@@ -26,7 +26,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 1. [Download the "RSS-feed-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Sample%20Solutions/Rss-Feed-solutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
 2. [Download the latest version of KAS client](https://manage.kaiza.la/MiniApps/DownloadSDK)
 3. Edit the "RSS-feed-ActionPackage.zip" (*See steps below*)
-   - Unzip action package "RSS-feed-SolutionPackage.zip"
+   - Unzip action package "RSS-feed-ActionPackage.zip"
    - Change the action "id" in Package.Json file or the version in incremental manner by +1 in Package.Json
    - Include the downloaded version of KAS client
    - Zip back the "RSS-feed-ActionPackage.zip"
