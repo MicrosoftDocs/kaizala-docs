@@ -28,7 +28,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 3. Edit the "RSS-feed-ActionPackage.zip" (*See steps below*)
    - Unzip action package "RSS-feed-ActionPackage.zip" to a folder
    - Change the action "id" and "provider name" in package.json (*this step is mandatory*)
-   - Add KAS client file to this folder 
+   - Unzip "ActionSDK.Zip" and Add KAS client file to this folder 
 
 > Note - To whitelist RSS feed URL, add that URL in Package.json (as below). In this example digital trends URL is being whitelisted.
 
