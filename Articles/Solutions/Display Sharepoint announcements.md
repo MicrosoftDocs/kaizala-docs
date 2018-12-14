@@ -5,7 +5,7 @@ Using this sample, Organizations can share SharePoint announcements with the fir
 
 The chat card view is as below
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/1.png" alt="Chat card view Logo" width="400" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/1.png" alt="Chat card view Logo" width="340" />
 
 On tapping the card, the immersive view is as below
 
