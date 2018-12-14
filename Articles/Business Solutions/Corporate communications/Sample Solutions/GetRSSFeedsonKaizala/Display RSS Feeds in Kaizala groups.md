@@ -38,7 +38,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
   ]	
 } 
 ```
- - Zip all the contents in this folder (*This folder is your new Action package*)
+ - Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
  
 > Note - Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new "id", "provider name" and whitelisted URL
 	
