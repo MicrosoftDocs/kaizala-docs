@@ -31,7 +31,7 @@ This scenario can be broadly divided into 2 steps:
 3. Use the [highlighted content web part](https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd) (*if necessary ,for visualization*)
 4. [Import downloaded Flow Package to your Microsoft Flow account](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
 
-> Note- If you have never used Sahrepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
+> Note- If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
 5. Edit the Flow (*Steps as Below*)
 
@@ -56,8 +56,13 @@ This scenario can be broadly divided into 2 steps:
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
 
      - In the Last block of the Flow
-	    -  Select the group name or Map the group ID where you want to send the card 
+	    -  Select the group name from dropdown or Map the group ID where you want to send the card
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/6.png" alt="" width="450" />
+       
+      - To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
+        <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" alt="" width="450" />     
+      
+ 
 
 6. Save the flow
 
