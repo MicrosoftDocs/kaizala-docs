@@ -24,7 +24,7 @@ This scenario can be broadly divided into 2 steps:
 ## Implementation steps
 
 
-1. [Add "Announcement app" to SharePoint site](https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site)(*steps as below*)
+1. [Add "Announcement app"]((https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site) to SharePoint site(*as below*)
      1. Click on the settings icon
      2.  Click on Add an App 
      3.  Select Announcement App from the list of available Apps
@@ -34,7 +34,7 @@ This scenario can be broadly divided into 2 steps:
 
 > Note: If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
-5. Edit the Flow (*as Below*)
+5. Edit the Flow (*as below*)
 
     1. In the First block of the Flow
 	     1. Enter the site address
