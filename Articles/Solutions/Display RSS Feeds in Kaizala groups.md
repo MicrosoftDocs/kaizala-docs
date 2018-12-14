@@ -30,7 +30,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    - Change the action "id" and "provider name" in package.json (*this step is mandatory*)
    - Add KAS client file to this folder 
 
-> Note - To whitelist RSS feed URL, add that URL in Package.json (as below). In this example, "www.digitaltrends.com." is the external URL. 
+> Note - To whitelist RSS feed URL, add that URL in Package.json (as below). In this example, "www.digitaltrends.com" is the external URL. 
 
 ``` json
 "externalUrls": [
