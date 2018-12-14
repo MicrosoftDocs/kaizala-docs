@@ -5,11 +5,11 @@ Using this sample, Organizations can share SharePoint announcements with the fir
 
 The chat card view is as below
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/1.png" alt="Chat card view Logo" width="340" />
+<img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/1.png" alt="Chat card view Logo" width="340" />
 
 On tapping the card, the immersive view is as below
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="180" />
+<img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="180" />
 
 This scenario can be broadly divided into 2 steps:
 
@@ -19,11 +19,11 @@ This scenario can be broadly divided into 2 steps:
 	
 2. Configure Flow such that, when a new item is created or existing item is modified in Announcement list, an out-of-box Announcement card is sent to a Kaizala group
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="500" />
+<img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="500" />
 
 ## Implementation steps-
 
-1. Download the ["SharepointAnnouncemnetOnkaizala-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Sample%20Solutions/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*This contains Flow package*)
+1. Download the ["SharepointAnnouncemnetOnkaizala-SolutionPackage.zip"](/Articles/Solutions/Sample%20Solutions/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*This contains Flow package*)
 2. [Add Announcement app to SharePoint site](https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site)(*steps as below*)
      - Click on the settings icon
      - Click on Add an App 
@@ -48,17 +48,16 @@ This scenario can be broadly divided into 2 steps:
 		  -  Copy the URL of the list from the browser.
 		  -  Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
     
-          <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/4.png" alt="Enter site address & list name" width="600" />
+          <img src=/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.png" alt="Enter site address & list name" width="600" />
 
 	- In the second block of the Flow
 	   - Map "value" field with column that has description of announcement (Select column title in the SharePoint announcement list) from Dynamic content. In the below example, the column title is "Announcement Body"
         
-       <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
+       <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
 
      - In the Last block of the Flow
 	    -  Select the group name or Map the group ID where you want to send the card 
-
-        <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Solutions/Images/Sharepoint%20announcement%20Images/6.png" alt="Chat card view Logo" width="600" />
+       <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/6.png" alt="" width="600" />
 
 6. Save the flow
 
