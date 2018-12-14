@@ -42,7 +42,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
  
 > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new "id", "provider name" and whitelisted URL
 	
-4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action)the edited action package to kaizala management portal (*This card is sent by calling API, so there is no need to add the card to a group*)
+4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to kaizala management portal (*This card is sent by calling API, so there is no need to add the card to a group*)
 5. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "RSS-feed-flowpackage.zip" to your Microsoft Flow account
 
 > Note- If you have never used RSS or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
