@@ -24,13 +24,13 @@ This scenario can be broadly divided into 2 steps:
 ## Implementation steps
 
 
-1. [Add "Announcement app"]((https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site) to SharePoint site(*as below*)
+1. [Add "Announcement app"](https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site) to SharePoint site(*as below*)
      1. Click on the settings icon
      2.  Click on Add an App 
      3.  Select Announcement App from the list of available Apps
 2. Use the [highlighted content web part](https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd) (*if necessary , for visualization*)
 3. Download the ["SharepointAnnouncementOnkaizala-SolutionPackage.zip"](/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*This is a Flow package*)
-4. [Import "SharepointAnnouncementOnkaizala-SolutionPackage.zip" to your Microsoft Flow account](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
+4. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)"SharepointAnnouncementOnkaizala-SolutionPackage.zip" to your Microsoft Flow account
 
 > Note: If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
