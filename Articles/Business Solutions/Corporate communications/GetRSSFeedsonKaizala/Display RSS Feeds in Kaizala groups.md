@@ -24,11 +24,11 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 ## Implementation steps
 
 1. Download the ["GetRSSFeedsOnKaizala-SolutionPackage.zip"](/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRssFeedsonKaizala-SolutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
-2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK)(*This contains KAS client file*)
+2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK)(*This contains KASClient.js file*)
 3. Edit the "RSS-feed-ActionPackage.zip" (*as below*)
    1. Unzip action package "RSS-feed-ActionPackage.zip" to a folder
    2. Change the action "id" and "provider name" in package.json (*this step is mandatory*)
-   3. Add KAS client file to this folder 
+   3. Add KASClient.js file to this folder 
    4. Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
 
 > Note: To whitelist RSS feed URL, add that URL in Package.json (as below). In this example digital trends URL is whitelisted.
@@ -42,7 +42,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
  
  ``` 
 
- > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new "id", "provider name" and whitelisted URL
+ > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KASClient.js, package.Json with new "id", "provider name" and whitelisted URL
 	
 4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to kaizala management portal (*This card is sent by calling API, so there is no need to add the card to a group*)
 
