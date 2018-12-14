@@ -21,7 +21,7 @@ This scenario can be broadly divided into 2 steps:
 
 <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="500" />
 
-## Implementation steps-
+## Implementation steps
 
 
 1. [Add "Announcement app" to SharePoint site](https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site)(*steps as below*)
