@@ -36,7 +36,7 @@ This scenario can be broadly divided into 2 steps:
 
 5. Edit the Flow (*Steps as Below*)
 
-    - In the First block of the Flow
+    * In the First block of the Flow
 	     - Enter the site address
 	     - Enter the List name
             
