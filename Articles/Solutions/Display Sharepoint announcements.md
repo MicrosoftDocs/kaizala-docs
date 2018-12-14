@@ -64,6 +64,6 @@ This scenario can be broadly divided into 2 steps:
 
 Announcement will be sent to the selected Kaizala group, each time flow is triggered by.
 
-**Note**- Text File is not supported as attachment
+> Note- Text File is not supported as attachment
 
 
