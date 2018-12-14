@@ -36,28 +36,28 @@ This scenario can be broadly divided into 2 steps:
 
 5. Edit the Flow (*Steps as Below*)
 
-     - In the First block of the Flow
+    - In the First block of the Flow
 	     - Enter the site address
 	     - Enter the List name
             
 	    Steps to get List name
                  
-		 - Click on site contents tab on the left hand corner of the screen
-		 - Select the announcement list from which you want to send announcements to Kaizala
+		 -  Click on site contents tab on the left hand corner of the screen
+		 -  Select the announcement list from which you want to send announcements to Kaizala
 		 - Click on settings icon at the top right corner of the screen
 		 -  Go to List settings
-		  -  Copy the URL of the list from the browser.
-		  -  Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
+		 -  Copy the URL of the list from the browser.
+		 - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
     
           <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.png" alt="" width="500" />
 
-	- In the second block of the Flow
+	* In the second block of the Flow
 	   - Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
         
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
 
      - In the Last block of the Flow
-	    -  Select the group name from dropdown or Map with group ID where you want to send the card
+	    - Select the group name from dropdown or Map with group ID where you want to send the card
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/6.png" alt="" width="450" />
        
       - To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
