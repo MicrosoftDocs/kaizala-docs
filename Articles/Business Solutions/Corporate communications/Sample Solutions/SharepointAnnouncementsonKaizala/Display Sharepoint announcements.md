@@ -52,7 +52,7 @@ This scenario can be broadly divided into 2 steps:
           <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.png" alt="" width="500" />
 
 	- In the second block of the Flow
-	   - Map "value" field with column that has description of announcement (Select column title in the SharePoint announcement list) from Dynamic content. In the below example, the column title is "Announcement Body"
+	   - Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
         
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
 
