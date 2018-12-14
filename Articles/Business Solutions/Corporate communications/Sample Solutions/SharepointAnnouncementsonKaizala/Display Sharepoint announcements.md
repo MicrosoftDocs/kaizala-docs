@@ -21,7 +21,7 @@ This scenario can be broadly divided into 2 steps:
 	
 2. Configure Flow such that, when a new item is created or existing item is modified in announcement list, an out-of-box announcement card is sent to a Kaizala group
 
-<img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="350" />
+<img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="400" />
 
 ## Implementation steps
 
