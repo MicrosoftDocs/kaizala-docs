@@ -60,7 +60,7 @@ This scenario can be broadly divided into 2 steps:
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/6.png" alt="" width="450" />
        
       - To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
-        <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" alt="" width="450" />     
+        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" alt="" width="450" />     
       
  
 
