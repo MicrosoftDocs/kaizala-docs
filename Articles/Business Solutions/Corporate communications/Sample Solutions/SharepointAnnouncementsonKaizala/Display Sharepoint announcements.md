@@ -32,7 +32,7 @@ This scenario can be broadly divided into 2 steps:
 3. Download the ["SharepointAnnouncemnetOnkaizala-SolutionPackage.zip"](/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*This is a Flow package*)
 4. [Import "SharepointAnnouncementsOnkaizala-SolutionPackage.zip" to your Microsoft Flow account](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
 
-> Note- If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
+> Note: If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
 5. Edit the Flow (*Steps as Below*)
 
@@ -69,4 +69,4 @@ This scenario can be broadly divided into 2 steps:
 
 Announcement will be sent to the selected Kaizala group, each time flow is triggered.
 
-> Note- Text File is not supported as attachment
+> Note: Text File is not supported as attachment
