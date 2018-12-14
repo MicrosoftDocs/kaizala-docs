@@ -1,7 +1,7 @@
 # Display SharePoint Announcements in Kaizala groups 
 Organizations use SharePoint Announcement app to share news, status and other short bits of information to employees . Sharepoint Announcement app, that comes with a list, is a special type of list that lets you create an announcements.
 
-Using this sample, organizations can share SharePoint announcements with the first line and mobile workers on Kaizala. This card has 3 fields in chat card view- Attachments( In this example, Photo story of images), Title and Announcement body (description). This is sent to kaizala group as an out-of-box announcement card.
+Using this sample, organizations can share SharePoint announcements with the first line and mobile workers on Kaizala. This card has 3 fields in chat card view- Attachments( In this example, Photo story of images), Title and Announcement body (description). This is sent to a Kaizala group as an out-of-box announcement card.
 
 The chat card view is as below
 
