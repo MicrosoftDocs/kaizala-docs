@@ -48,7 +48,7 @@ This scenario can be broadly divided into 2 steps:
 		  -  Copy the URL of the list from the browser.
 		  -  Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
     
-          <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.png" alt="" width="600" />
+          <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.png" alt="" width="500" />
 
 	- In the second block of the Flow
 	   - Map "value" field with column that has description of announcement (Select column title in the SharePoint announcement list) from Dynamic content. In the below example, the column title is "Announcement Body"
@@ -57,7 +57,7 @@ This scenario can be broadly divided into 2 steps:
 
      - In the Last block of the Flow
 	    -  Select the group name or Map the group ID where you want to send the card 
-       <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/6.png" alt="" width="600" />
+       <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/6.png" alt="" width="450" />
 
 6. Save the flow
 
