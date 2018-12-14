@@ -34,9 +34,10 @@ This scenario can be broadly divided into 2 steps:
 > Note- If you have never used Sahrepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
 5. Edit the Flow (*Steps as Below*)
-      - In the First block of the Flow
-	  - Enter the site address
-	  - Enter the List name
+
+     - In the First block of the Flow
+	     - Enter the site address
+	     - Enter the List name
             
 	    Steps to get List name
                  
