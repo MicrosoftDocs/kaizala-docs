@@ -1,5 +1,5 @@
 # Display SharePoint Announcements in Kaizala groups 
-Organizations use SharePoint Announcement app to share news, statuses and other short bits of information to employees . Sharepoint Announcement app, that comes with a list, is a special type of list that lets you create an announcement with an expiry date.
+Organizations use SharePoint Announcement app to share news, status and other short bits of information to employees . Sharepoint Announcement app, that comes with a list, is a special type of list that lets you create an announcement with an expiry date.
 
 Using this sample, Organizations can share SharePoint announcements with the first line and mobile workers on Kaizala. This card has 3 fields in chat card view- Attachments( In this example, Photo story of images), Title and Announcemnet body (description). This is sent to kaizala group as an out-of-box announcement card.
 
@@ -17,7 +17,7 @@ This scenario can be broadly divided into 2 steps:
 	
 > Note- Rich text is not supported by out-of- box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
 	
-2. Configure Flow such that, when a new item is created or existing item is modified in Announcement list, an out-of-box Announcement card is sent to a Kaizala group
+2. Configure Flow such that, when a new item is created or existing item is modified in announcement list, an out-of-box announcement card is sent to a Kaizala group
 
 <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="500" />
 
