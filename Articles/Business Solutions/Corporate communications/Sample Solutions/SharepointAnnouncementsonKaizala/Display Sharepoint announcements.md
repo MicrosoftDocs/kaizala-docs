@@ -15,7 +15,7 @@ This scenario can be broadly divided into 2 steps:
 
 1. Create an announcement list with Columns- Title, attachments and announcement body(description)
 	
-> Note- Rich text is not supported by out-of- box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
+> Note- Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
 	
 2. Configure Flow such that, when a new item is created or existing item is modified in announcement list, an out-of-box announcement card is sent to a Kaizala group
 
@@ -25,44 +25,41 @@ This scenario can be broadly divided into 2 steps:
 
 
 1. [Add "Announcement app" to SharePoint site](https://docs.microsoft.com/en-us/sharepoint/administration/add-apps-for-sharepoint-to-a-sharepoint-site)(*steps as below*)
-     - Click on the settings icon
-     - Click on Add an App 
-     - Select Announcement App from the list of available Apps
+     1. Click on the settings icon
+     2.  Click on Add an App 
+     3.  Select Announcement App from the list of available Apps
 2. Use the [highlighted content web part](https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd) (*if necessary , for visualization*)
 3. Download the ["SharepointAnnouncementOnkaizala-SolutionPackage.zip"](/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*This is a Flow package*)
 4. [Import "SharepointAnnouncementOnkaizala-SolutionPackage.zip" to your Microsoft Flow account](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/)
 
 > Note: If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
-5. Edit the Flow (*Steps as Below*)
+5. Edit the Flow (*as Below*)
 
-    - In the First block of the Flow
-	     - Enter the site address
-	     - Enter the List name
+    1. In the First block of the Flow
+	     1. Enter the site address
+	     2. Enter the List name
             
 	    Steps to get List name
-		 -  Click on site contents tab on the left hand corner of the screen
-		 -  Select the announcement list from which you want to send announcements to Kaizala
-		 - Click on settings icon at the top right corner of the screen
-		 -  Go to List settings
-		 -  Copy the URL of the list from the browser.
-		 - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
+		 1.  Click on site contents tab on the left hand corner of the screen
+		 2.  Select the announcement list from which you want to send announcements to Kaizala
+		 3. Click on settings icon at the top right corner of the screen
+		 4.  Go to List settings
+		 5.  Copy the URL of the list from the browser.
+		 6. Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
     
          <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.png" alt="" width="500" />
 
-	- In the second block of the Flow
-	   - Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
+   2. In the second block of the Flow
+	  
+	  Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
         
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
 
-     - In the Last block of the Flow
-	    - Select the group name from dropdown or Map with group ID where you want to send the card
+    3. In the Last block of the Flow
+	   
+	   Select the group name from dropdown 
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/6.png" alt="" width="450" />
-       
-      - To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
-        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" alt="" width="450" />     
-      
- 
 
 6. Save the flow
 
