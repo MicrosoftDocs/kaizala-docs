@@ -7,7 +7,7 @@ The chat card view is as below
 
 <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/1.png" alt="Chat card view Logo" width="340" />
 
-On tapping the card, the immersive view is as below
+On tapping the card, immersive view is as below
 
 <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="180" />
 
