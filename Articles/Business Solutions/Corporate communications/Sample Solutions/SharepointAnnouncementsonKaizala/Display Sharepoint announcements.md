@@ -66,7 +66,7 @@ This scenario can be broadly divided into 2 steps:
 
 6. Save the flow
 
-Announcement will be sent to the selected Kaizala group, each time flow is triggered by.
+Announcement will be sent to the selected Kaizala group, each time flow is triggered.
 
 > Note- Text File is not supported as attachment
 
