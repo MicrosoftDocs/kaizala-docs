@@ -41,7 +41,6 @@ This scenario can be broadly divided into 2 steps:
 	     - Enter the List name
             
 	    Steps to get List name
-                 
 		 -  Click on site contents tab on the left hand corner of the screen
 		 -  Select the announcement list from which you want to send announcements to Kaizala
 		 - Click on settings icon at the top right corner of the screen
