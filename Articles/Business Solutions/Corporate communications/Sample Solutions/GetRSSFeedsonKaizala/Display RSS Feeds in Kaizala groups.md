@@ -26,10 +26,10 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 1. Download the ["GetRSSFeedsOnKaizala-SolutionPackage.zip"](/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRssFeedsonKaizala-SolutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
 2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK)(*This contains KAS client file*)
 3. Edit the "RSS-feed-ActionPackage.zip" (*as below*)
-   - Unzip action package "RSS-feed-ActionPackage.zip" to a folder
-   - Change the action "id" and "provider name" in package.json (*this step is mandatory*)
-   - Add KAS client file to this folder 
-   - Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
+   1. Unzip action package "RSS-feed-ActionPackage.zip" to a folder
+   2. Change the action "id" and "provider name" in package.json (*this step is mandatory*)
+   3. Add KAS client file to this folder 
+   4. Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
 
 > Note: To whitelist RSS feed URL, add that URL in Package.json (as below). In this example digital trends URL is whitelisted.
    
@@ -51,20 +51,20 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 > Note- If you have never used RSS or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 	
 6. Edit details in Imported Flow (*See steps below*) 
-   - In the First block , enter the RSS feed URL
-   - In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
+   1. In the First block , enter the RSS feed URL
+   2. In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
 
    <img src= "/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.png" width="600" />
 
-   - In the third block, enter the Action "id" in "value" field, that you have given in Package.json
+   3. In the third block, enter the Action "id" in "value" field, that you have given in Package.json
    
    <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
    
-   - In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
+   4. In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
 
    <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 
-   - To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
+   5. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
    <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
 
