@@ -43,7 +43,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 
    4. Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
 
-> Note: To whitelist RSS feed URL, add that URL in Package.json (as below). In this example digital trends URL is whitelisted.
+> Note: To whitelist RSS feed URL, add that URL in package.json (as below). In this example digital trends URL is whitelisted.
    
    
  > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KASClient.js, package.json with new "id", "provider name" and whitelisted URL
@@ -60,7 +60,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 
    <img src= "/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.png" width="600" />
 
-   3. In the third block, enter the Action "id" in "value" field, that you have given in Package.json
+   3. In the third block, enter the Action "id" in "value" field, that you have given in package.json
    
    <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
    
