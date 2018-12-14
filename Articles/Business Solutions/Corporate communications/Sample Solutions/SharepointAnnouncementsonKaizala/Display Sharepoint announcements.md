@@ -13,7 +13,7 @@ On tapping the card, the immersive view is as below
 
 This scenario can be broadly divided into 2 steps:
 
-1.  Create an announcement list with Columns- Title, attachments and announcement body(description)
+1. Create an announcement list with Columns- Title, attachments and announcement body(description)
 	
 > Note- Rich text is not supported by out-of- box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
 	
@@ -36,7 +36,7 @@ This scenario can be broadly divided into 2 steps:
 
 5. Edit the Flow (*Steps as Below*)
 
-    * In the First block of the Flow
+    - In the First block of the Flow
 	     - Enter the site address
 	     - Enter the List name
             
@@ -51,7 +51,7 @@ This scenario can be broadly divided into 2 steps:
     
          <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.png" alt="" width="500" />
 
-	* In the second block of the Flow
+	- In the second block of the Flow
 	   - Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
         
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
