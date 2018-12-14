@@ -15,15 +15,15 @@ This sample will help, an admin user to add RSS feeds to Kaizala groups.  This c
  
  >Note: Only whitelisted RSS feed URL's open within kaizala, if not, the content would be directed to a browser.
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/1.png" alt="Chat card view Logo" width="400" />
+<img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/1.png" alt="Chat card view Logo" width="400" />
 
 This is an announcement in the form of a card and Microsoft Flow is used to send this custom action card to Kaizala group.
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/2.png" width="450" />
+<img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/2.png" width="450" />
 
 ## Implementation steps
 
-1. [Download the "GetRSSFeedsOnKaizala-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRssFeedsonKaizala-SolutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
+1. [Download the "GetRSSFeedsOnKaizala-SolutionPackage.zip"](/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRssFeedsonKaizala-SolutionPackage.zip) (*This package contain "RSS-feed-ActionPackage.zip" and "RSS-feed-FlowPackage.zip"*)
 2. [Download the latest version of Kaizala "ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK)(*This contains KAS client file*)
 3. Edit the "RSS-feed-ActionPackage.zip" (*See steps below*)
    - Unzip action package "RSS-feed-ActionPackage.zip" to a folder
@@ -51,19 +51,19 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    - In the First block , enter the RSS feed URL
    - In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
 
-   <img src= "https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.png" width="600" />
+   <img src= "/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.png" width="600" />
 
    - In the third block, enter the Action "Id" in "value" field, that you have given in Package.json
    
-   <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
+   <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
    
    - In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
 
-   <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
+   <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 
    - To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
-   <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
+   <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
 
 7.  Save the Flow
 
