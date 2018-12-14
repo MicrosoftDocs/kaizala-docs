@@ -1,7 +1,7 @@
 # Display SharePoint Announcements in Kaizala groups 
-Organizations use SharePoint Announcement app to share news, status and other short bits of information to employees . Sharepoint Announcement app, that comes with a list, is a special type of list that lets you create an announcement with an expiry date.
+Organizations use SharePoint Announcement app to share news, status and other short bits of information to employees . Sharepoint Announcement app, that comes with a list, is a special type of list that lets you create an announcements.
 
-Using this sample, Organizations can share SharePoint announcements with the first line and mobile workers on Kaizala. This card has 3 fields in chat card view- Attachments( In this example, Photo story of images), Title and Announcement body (description). This is sent to kaizala group as an out-of-box announcement card.
+Using this sample, organizations can share SharePoint announcements with the first line and mobile workers on Kaizala. This card has 3 fields in chat card view- Attachments( In this example, Photo story of images), Title and Announcement body (description). This is sent to kaizala group as an out-of-box announcement card.
 
 The chat card view is as below
 
@@ -13,9 +13,9 @@ On tapping the card, immersive view is as below
 
 This scenario can be broadly divided into 2 steps:
 
-1. Create an announcement list with Columns- Title, attachments and announcement body(description) 
+1. Create an announcement list with columns- Title, attachments and announcement body(description) 
 	
-> Note- Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
+> Note: Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
 
 <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.5.png" width="200" />
 	
@@ -31,18 +31,16 @@ This scenario can be broadly divided into 2 steps:
      2.  Click on Add an App 
      3.  Select Announcement App from the list of available Apps
 2. Use the [highlighted content web part](https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd) (*if necessary , for visualization*)
-3. Download the [SharepointAnnouncementOnkaizala-SolutionPackage.zip](/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*This is a Flow package*)
-4. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) SharepointAnnouncementOnkaizala-SolutionPackage.zip to your Microsoft Flow account
+3. Download the [SharepointAnnouncementOnKaizala-SolutionPackage.zip](/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*This is a Flow package*)
+4. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) SharepointAnnouncementOnKaizala-SolutionPackage.zip to your Microsoft Flow account
 
 > Note: If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
 5. Edit the Flow (*as below*)
 
-    1. In the First block of the Flow
+    1. In the first block of the Flow
 	     1. Enter the site address
-	     2. Enter the List name
-            
-	    Steps to get List name
+	     2. Enter the List name (*steps to get List name is as below*)
 		 1.  Click on site contents tab on the left hand corner of the screen
 		 2.  Select the announcement list from which you want to send announcements to Kaizala
 		 3. Click on settings icon at the top right corner of the screen
@@ -58,7 +56,7 @@ This scenario can be broadly divided into 2 steps:
         
        <img src="/Articles/Business%20Solutions/Corporate%20communications/Sample%20Solutions/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
 
-    3. In the Last block of the Flow
+    3. In the last block of the Flow
        
        Select the group name from dropdown. In this Example it is "Everyone@Fabrikam"
        
@@ -68,4 +66,4 @@ This scenario can be broadly divided into 2 steps:
 
 Announcement will be sent to the selected Kaizala group, each time flow is triggered.
 
-> Note: Text File is not supported as attachment
+> Note: Text file is not supported as attachment
