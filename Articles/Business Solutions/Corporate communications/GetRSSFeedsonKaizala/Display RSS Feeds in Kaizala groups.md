@@ -74,7 +74,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 
 7.  Save the Flow
 
-RSS feeds will be sent to the selected Kaizala group, each time flow is triggered by RSS Updates. 
+RSS feeds will be sent to the selected Kaizala group, each time flow is triggered. 
 
 
 
