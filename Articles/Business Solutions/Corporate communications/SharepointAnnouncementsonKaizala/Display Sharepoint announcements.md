@@ -47,7 +47,7 @@ This scenario can be broadly divided into 2 steps:
 		    - Go to List settings
 		    - Copy the URL of the list from the browser.
 		    - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
-     <img src="/Articles/Business%20Solutions/Corporate%20communications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.PNG" alt="" width="500" />
+          <img src="/Articles/Business%20Solutions/Corporate%20communications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.PNG" alt="" width="500" />
 
    2. In the second block of the Flow
 	  
