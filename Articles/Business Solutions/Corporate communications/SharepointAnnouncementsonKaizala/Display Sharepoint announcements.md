@@ -41,14 +41,13 @@ This scenario can be broadly divided into 2 steps:
     1. In the first block of the Flow
 	     1. Enter the site address
 	     2. Enter the List name (*steps to get List name is as below*)
-		 1.  Click on site contents tab on the left hand corner of the screen
-		 2.  Select the announcement list from which you want to send announcements to Kaizala
-		 3. Click on settings icon at the top right corner of the screen
-		 4.  Go to List settings
-		 5.  Copy the URL of the list from the browser.
-		 6. Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
-    
-         <img src="/Articles/Business%20Solutions/Corporate%20communications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.png" alt="" width="500" />
+		    - Click on site contents tab on the left hand corner of the screen
+		    - Select the announcement list from which you want to send announcements to Kaizala
+		    - Click on settings icon at the top right corner of the screen
+		    - Go to List settings
+		    - Copy the URL of the list from the browser.
+		    - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
+     <img src="/Articles/Business%20Solutions/Corporate%20communications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.PNG" alt="" width="500" />
 
    2. In the second block of the Flow
 	  
