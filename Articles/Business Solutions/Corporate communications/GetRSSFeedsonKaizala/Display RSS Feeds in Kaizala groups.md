@@ -37,7 +37,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    ]	
   
    ``` 
-   4. Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
+   5. Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
 
 > Note: To whitelist RSS feed URL, add that URL in package.json (as below). In this example digital trends URL is whitelisted.
    
