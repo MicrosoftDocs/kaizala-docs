@@ -61,7 +61,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    
    4. In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
 
-     <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
+      <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 
    5. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
