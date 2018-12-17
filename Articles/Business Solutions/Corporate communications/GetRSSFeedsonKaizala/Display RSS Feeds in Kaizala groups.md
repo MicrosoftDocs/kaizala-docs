@@ -53,19 +53,19 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    
    2. In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
 
-   <img src= "/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.2.PNG" width="600" />
+      <img src= "/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.2.PNG" width="600" />
 
    3. In the third block, enter the Action "id" in "value" field, that you have given in package.json
    
-   <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
+      <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
    
    4. In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
 
-   <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
+     <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 
    5. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
-   <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
+      <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
 
 7.  Save the Flow
 
