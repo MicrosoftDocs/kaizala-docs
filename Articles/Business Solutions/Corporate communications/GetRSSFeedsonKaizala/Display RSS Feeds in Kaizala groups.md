@@ -31,7 +31,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    3. Add KASClient.js file to this folder 
    4. Add RSS feed URL in package.json(as below) to whitelist that URL. In this example, digital trends URL is whitelisted. 
        
-    ```
+  ```
     "externalUrls": [
     { "url": "https://www.digitaltrends.com" }
    ]	
