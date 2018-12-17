@@ -27,7 +27,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK)(*This contains KASClient.js file*)
 3. Edit the "RSS-feed-ActionPackage.zip" (*as below*)
    1. Unzip action package "RSS-feed-ActionPackage.zip" to a folder
-   2. Change the action "id" and "provider name" in package.json (*this step is mandatory*)
+   2. Change the action "id" and "provider name" in package.json
    3. Add KASClient.js file to this folder 
    4. Add RSS feed URL in package.json(as below) to whitelist that URL. In this example, digital trends URL is whitelisted. 
        
