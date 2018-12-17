@@ -13,7 +13,7 @@ Five use cases of RSS feeds
 
 This sample will help, an admin user to add RSS feeds to Kaizala groups.  This card has 3 fields in chat card view- Card title(Ex- Business News), Image, Feed title ( Title of the News Feed). Tapping on the card will take you to web view within Kaizala. 
  
- >Note: Only whitelisted RSS feed URL's open within kaizala, if not, the content would be directed to a browser.
+ >Note: Only whitelisted RSS feed URL's open within Kaizala, if not, the content would be directed to a browser.
 
 <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/1.png" alt="Chat card view Logo" width="400" />
 
