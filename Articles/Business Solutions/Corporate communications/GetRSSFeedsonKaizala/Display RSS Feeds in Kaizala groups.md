@@ -50,7 +50,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 6. Edit details in Imported Flow (*See steps below*) 
    1. In the First block , enter the RSS feed URL
   
-  <img src= "/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.1.PNG" width="600" />
+       <img src= "/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/3.1.PNG" width="600" />
    
    2. In the second block, enter the card title in "value" field. The card title will be visible to users in chat card view. Ex- "Business News"
 
@@ -58,7 +58,7 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
 
    3. In the third block, enter the Action "id" in "value" field, that you have given in package.json
    
-   <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
+  <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
    
    4. In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
 
