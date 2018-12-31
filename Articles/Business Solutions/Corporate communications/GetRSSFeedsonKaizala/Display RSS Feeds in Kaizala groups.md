@@ -2,7 +2,7 @@
 
 Organizations use RSS feeds to complement their e-mail systems and improve the way they provide information to employees. Organizations can now leverage these feeds with the first line and mobile workers by sending them as announcements to Kaizala groups.
 
-Five use cases of RSS feeds
+Some use cases of RSS feeds
 
 1. Industry News from external sites
 2. Company news from internal sites
