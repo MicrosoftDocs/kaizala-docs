@@ -5,11 +5,11 @@ Using this sample, organizations can share SharePoint announcements with the fir
 
 The chat card view is as below
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/1.png" alt="Chat card view Logo" width="340" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementImages/1.png" alt="Chat card view Logo" width="340" />
 
 On tapping the card, immersive view is as below
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/2.png" alt="immersive view Logo" width="180" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementImages/2.png" alt="immersive view Logo" width="180" />
 
 This scenario can be broadly divided into 2 steps:
 
@@ -17,11 +17,11 @@ This scenario can be broadly divided into 2 steps:
 	
 > Note: Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.5.png" width="200" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementImages/3.5.png" width="200" />
 	
 2. Configure Flow such that, when a new item is created or existing item is modified in announcement list, an out-of-box announcement card is sent to a Kaizala group
 
-<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/3.png" alt="Sharepoint&Flow Logo" width="400" />
+<img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementImages/3.png" alt="Sharepoint&Flow Logo" width="400" />
 
 ## Implementation steps
 
@@ -47,19 +47,19 @@ This scenario can be broadly divided into 2 steps:
 		    - Go to List settings
 		    - Copy the URL of the list from the browser.
 		    - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
-          <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/4.PNG" alt="" width="500" />
+          <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementImages/4.PNG" alt="" width="500" />
 
    2. In the second block of the Flow
 	  
 	  Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
         
-       <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/5.png" alt="" width="600" />
+       <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementImages/5.png" alt="" width="600" />
 
     3. In the last block of the Flow
        
        Select the group name from dropdown. In this Example it is "Everyone@Fabrikam"
        
-       <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/Sharepoint%20announcement%20Images/6.png" alt="" width="450" />
+       <img src="https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementImages/6.png" alt="" width="450" />
 
 6. Save the flow
 
