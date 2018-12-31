@@ -36,7 +36,7 @@ Refer to the [package manifest JSON Schema](package_manifest_schema.md) to creat
 
 At this point, you should also include an icon file for your custom Action in the package.
 
-Refer to your creation view HTML file in the package manifest and map it to the relevant paramter object.
+Refer to your creation view HTML file in the package manifest and map it to the relevant parameter object.
 
 ## Configure the card that appears on the conversation canvas
 

@@ -41,7 +41,7 @@ API end-point to send messages to conversation groups inside Kaizala.
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
-| referenceId | String | GUID representing the succesful completion of the request |
+| referenceId | String | GUID representing the successful completion of the request |
 
 #### Sample JSON Response
 

@@ -57,4 +57,4 @@ Other enviroment variables will be auto-populated while trying the apis in seque
 
 ### Getting started with Kaizala REST APIs 
 
-[C# sample (shared)](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Samples/Getting%20started%20with%20Kaizala%20REST%20APIs%20-%20C%23%20sample%20(shared).docx)
+[C# sample (shared)](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Samples/Gettingstartedwith.docx)
