@@ -59,13 +59,17 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
    
       <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/4.png" width="600" />
    
-   4. In the Last block of the Flow, Select the group name or enter the group id where you want to send the card
+   4. In the Last block of the Flow
+         1. Select the group name or enter the group id where you want to send the card
 
       <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 
-   5. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
+        2. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
 
       <img src="/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
+   
+       3. Click on action, to select action type as "custom value" from the dropdown
+       4. Map action body to "ActionBodyJson"
 
 7.  Save the Flow
 
