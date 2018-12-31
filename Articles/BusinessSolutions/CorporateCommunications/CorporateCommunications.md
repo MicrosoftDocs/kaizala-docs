@@ -7,7 +7,7 @@ Kaizala enables organizations to build this network of connected employees by br
 To simplify the process of communication and leverage the current investments made in communication channels, organizations can use custom actions to display internet and intranet feeds in Kaizala groups.
 
 Below are the sample solutions that would help organizations to communicate with mobile workforce effectively
- 1. [Display RSS feeds in Kaizala groups](/Articles/Business%20Solutions/Corporate%20communications/GetRSSFeedsonKaizala/Display%20RSS%20Feeds%20in%20Kaizala%20groups.md)
- 2. [Display SharePoint announcements in Kaizala groups](/Articles/Business%20Solutions/Corporate%20communications/SharepointAnnouncementsonKaizala/Display%20Sharepoint%20announcements.md)
+ 1. [Display RSS feeds in Kaizala groups](/Articles/BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
+ 2. [Display SharePoint announcements in Kaizala groups](/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
 
 Useful links- [Kaizala actions](https://docs.microsoft.com/en-us/kaizala/actions/readme)
