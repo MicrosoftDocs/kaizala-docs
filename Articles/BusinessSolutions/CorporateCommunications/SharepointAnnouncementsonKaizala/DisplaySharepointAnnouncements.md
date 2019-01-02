@@ -14,12 +14,13 @@ On tapping the card, immersive view is as below
 This scenario can be broadly divided into 2 steps:
 1. Create an announcement list with columns- Title, attachments and announcement body(description) 
 
-> Note: Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
+    > Note: Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
 
-<img src="SharepointAnnouncementImages/3.5.png" width="200" />
+    <img src="SharepointAnnouncementImages/3.5.png" width="200" />
+
 2. Configure Flow such that, when a new item is created or existing item is modified in announcement list, an out-of-box announcement card is sent to a Kaizala group
 
-<img src="SharepointAnnouncementImages/3.png" alt="Sharepoint&Flow Logo" width="400" />
+    <img src="SharepointAnnouncementImages/3.png" alt="Sharepoint&Flow Logo" width="400" />
 
 ## Implementation steps
 
@@ -31,7 +32,7 @@ This scenario can be broadly divided into 2 steps:
 2. Use the [highlighted content web part](https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd) (*if necessary , for visualization*)
 3. Download the [SharepointAnnouncementOnKaizala-SolutionPackage.zip](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*This is a Flow package*)
 4. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) SharepointAnnouncementOnKaizala-SolutionPackage.zip to your Microsoft Flow account
-> Note: If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
+    > Note: If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 5. Edit the Flow (*as below*)
     1. In the first block of the Flow
     
@@ -43,12 +44,12 @@ This scenario can be broadly divided into 2 steps:
 		    - Go to List settings
 		    - Copy the URL of the list from the browser.
 		    - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
-          <img src="SharepointAnnouncementImages/4.PNG" alt="" width="500" />
+        <img src="SharepointAnnouncementImages/4.PNG" alt="" width="500" />
 	  
-   2. In the second block of the Flow
+    2. In the second block of the Flow
    
-	  Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
-       <img src="SharepointAnnouncementImages/5.png" alt="" width="600" />
+        Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
+        <img src="SharepointAnnouncementImages/5.png" alt="" width="600" />
        
     3. In the last block of the Flow
     
