@@ -52,10 +52,9 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
         1. Select the group name or enter the group id where you want to send the card
         2. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
         
-      <img src="GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
-      
-       3. Click on action, to select action type as "custom value" from the dropdown
-       4. Map action body to "ActionBodyJson"
+            <img src="GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
+        3. Click on action, to select action type as "custom value" from the dropdown
+        4. Map body to "ActionBodyJson"
        
        <img src="GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 7.  Save the Flow
