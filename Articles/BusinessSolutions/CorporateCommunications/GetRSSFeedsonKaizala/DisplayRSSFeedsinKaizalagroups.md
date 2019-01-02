@@ -11,7 +11,7 @@ Few use cases of RSS feeds:
 5. Group specific feeds, Ex- Finance, Design and Tech 
 6. Tips and Tricks, Ex- DIY, Sports and Photography
 
-This sample will help, an admin user to add RSS feeds to Kaizala groups.  This card has 3 fields in chat card view- Card title(Ex- Business News), Image, Feed title ( Title of the News Feed). Tapping on the card will take you to web view within Kaizala. 
+This sample will help, an admin user to add RSS feeds to Kaizala groups.  This card has 3 fields in chat card view- Card title(E.g., Business News), Image, Feed title. Tapping on the card will take you to web view within Kaizala. 
  
  >Note: Only whitelisted RSS feed URL's open within Kaizala, if not, the content would be directed to a browser.
 
