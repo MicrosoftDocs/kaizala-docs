@@ -60,7 +60,9 @@ This is an announcement in the form of a card and Microsoft Flow is used to send
        <img src="GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 7.  Save the Flow
 RSS feeds will be sent to the selected Kaizala group, each time flow is triggered. 
+
 > Note: You can only set one RSS feed URL in the Flow. To direct multiple feeds to same group, different Flows have to be created for each feed
+
 > Known issue: On iOS, the ads take the user out of the webview since they are not whitelisted
 
 ### Useful links
