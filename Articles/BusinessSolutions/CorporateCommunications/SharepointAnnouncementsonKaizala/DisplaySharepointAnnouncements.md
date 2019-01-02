@@ -12,9 +12,10 @@ On tapping the card, immersive view is as below
 <img src="SharepointAnnouncementImages/2.png" alt="immersive view Logo" width="180" />
 
 This scenario can be broadly divided into 2 steps:
-1. Create an announcement list with columns- Title, attachments and announcement body(description) 	
+1. Create an announcement list with columns- Title, attachments and announcement body(description) 
+
 > Note: Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
-<img src="SharepointAnnouncementImages/3.5.png" width="200" />	
+<img src="SharepointAnnouncementImages/3.5.png" width="200" />
 2. Configure Flow such that, when a new item is created or existing item is modified in announcement list, an out-of-box announcement card is sent to a Kaizala group
 <img src="SharepointAnnouncementImages/3.png" alt="Sharepoint&Flow Logo" width="400" />
 
