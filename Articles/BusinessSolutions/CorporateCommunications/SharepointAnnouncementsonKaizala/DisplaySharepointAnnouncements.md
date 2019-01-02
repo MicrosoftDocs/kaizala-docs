@@ -15,8 +15,10 @@ This scenario can be broadly divided into 2 steps:
 1. Create an announcement list with columns- Title, attachments and announcement body(description) 
 
 > Note: Rich text is not supported by out-of-box announcement card. Switch off rich text for sharepoint column that has Announcement body(description) while creating that column.
+
 <img src="SharepointAnnouncementImages/3.5.png" width="200" />
 2. Configure Flow such that, when a new item is created or existing item is modified in announcement list, an out-of-box announcement card is sent to a Kaizala group
+
 <img src="SharepointAnnouncementImages/3.png" alt="Sharepoint&Flow Logo" width="400" />
 
 ## Implementation steps
@@ -42,10 +44,12 @@ This scenario can be broadly divided into 2 steps:
 		    - Copy the URL of the list from the browser.
 		    - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
           <img src="SharepointAnnouncementImages/4.PNG" alt="" width="500" />
+	  
    2. In the second block of the Flow
    
 	  Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
        <img src="SharepointAnnouncementImages/5.png" alt="" width="600" />
+       
     3. In the last block of the Flow
     
        Select the group name from dropdown. In this Example it is "Everyone@Fabrikam"
