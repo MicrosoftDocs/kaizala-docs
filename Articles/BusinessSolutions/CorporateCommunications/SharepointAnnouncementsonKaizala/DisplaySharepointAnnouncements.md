@@ -32,6 +32,7 @@ This scenario can be broadly divided into 2 steps:
 > Note: If you have never used Sharepoint or Kaizala connection, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 5. Edit the Flow (*as below*)
     1. In the first block of the Flow
+    
 	     1. Enter the site address
 	     2. Enter the List name (*steps to get List name is as below*)
 		    - Click on site contents tab on the left hand corner of the screen
@@ -42,9 +43,11 @@ This scenario can be broadly divided into 2 steps:
 		    - Decode the URL (you can decode the URL [here](https://www.url-encode-decode.com/) )
           <img src="SharepointAnnouncementImages/4.PNG" alt="" width="500" />
    2. In the second block of the Flow
+   
 	  Map "value" field with column title of announcement list, that has announcement body(description) from Dynamic content. In the below example, the column title is "Announcement Body"
        <img src="SharepointAnnouncementImages/5.png" alt="" width="600" />
     3. In the last block of the Flow
+    
        Select the group name from dropdown. In this Example it is "Everyone@Fabrikam"
        <img src="SharepointAnnouncementImages/6.png" alt="" width="450" />
 6. Save the flow
