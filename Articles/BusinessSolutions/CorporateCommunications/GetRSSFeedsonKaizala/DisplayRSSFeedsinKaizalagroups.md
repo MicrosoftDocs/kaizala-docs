@@ -42,7 +42,7 @@ This is an announcement in the form of a card and Flow is used to send this cust
 4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to kaizala management portal (*This card is sent by calling API, so there is no need to add the card to a group*)
 5. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "RSS-feed-Flowpackage.zip" to your Microsoft Flow account
 
-> Note: If you have never used RSS or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)	
+    > Note: If you have never used RSS or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)	
 
 6. Edit details in Imported Flow (*See steps below*) 
    1. In the first block , enter the RSS feed URL
@@ -63,7 +63,8 @@ This is an announcement in the form of a card and Flow is used to send this cust
        
        <img src="GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 7.  Save the Flow
-RSS feeds will be sent to the selected Kaizala group, each time flow is triggered. 
+
+ RSS feeds will be sent to the selected Kaizala group, each time flow is triggered. 
 
 > Note: You can only set one RSS feed URL in the Flow. To direct multiple feeds to same group, different Flows have to be created for each feed
 
