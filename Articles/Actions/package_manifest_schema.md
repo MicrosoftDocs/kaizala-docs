@@ -1,5 +1,3 @@
-# Package manifest schema
-`````json-schema
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
@@ -43,7 +41,7 @@
             "maxLength": 64
         },
         "externalUrls": {
-            "type": "array",
+            "type": "object",
             "properties": {
                 "url": {
                     "type": "string",
@@ -54,6 +52,10 @@
                 "url"
             ]
         },
+		"ActionStoreSchema": {
+			"type": "string",
+            "description": "File name of the action store schema file. This key is added only while using custom operators in chatcardview json. By default, the contents of this new file is an empty json object: {}"
+		},
         "views": {
             "type": "object",
             "properties": {
@@ -226,8 +228,13 @@
                         "sourceLocation"
                     ]
                 }
-            }
-		}
+            },
+            "required": [
+                "CreationView",
+                "ResponseView",
+                "ResponseResultsView"
+            ]
+        }
     },
     "required": [
         "schemaVersion",
@@ -240,4 +247,3 @@
         "appModel"
     ]
 }
-`````
