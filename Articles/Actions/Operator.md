@@ -75,7 +75,7 @@ Let's say we want to show the card view differently to sender than its receivers
 ```
 
 Here you can observe that operator "conditional_value"  get Boolean value from  nested operator "is_it_me" which further nested with operator "property_value". Similarly, this can easily be extended to any of such scenarios, even a complex one. 
-Additionally, the following entry must be added to the package manifest: ActionStoreSchema: "<name of the action store schema definition file>". For more details, refer to [package Manifest JSON Schema](package_manifest_schema.json) .
+Additionally, the following entry must be added to the package manifest: ActionStoreSchema: "<name of the action store schema definition file>". For more details, refer to [package Manifest JSON Schema](package_manifest_schema.md) .
 
 
  
