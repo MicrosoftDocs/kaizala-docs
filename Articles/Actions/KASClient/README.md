@@ -21,6 +21,7 @@ You can download the current KASClient Javascript file from [here](https://manag
 *	[Form response flow APIs](form_response.md)
 *	[Form Summary flow APIs](form_summary.md)
 *	[App APIs](app.md)
+*       [Updated App APIs](kasclient.app.html)
 
 ## Object Reference
 
