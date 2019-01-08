@@ -446,9 +446,19 @@ ___
 
 ▸ **getUsersDetailsAsync**(userIds: *`string`[]*, callback: *`function`*): `void`
 
-`` ` ``
+```
+var userIds = ["<uid1>", "<uid2>",...];
+KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
+      if (error != null) {
+          return;
+      }
+      var userInfo1 = users[<uid1>];
+      var userInfo2 = users[<uid2>];
+      ...
+  });
+```
 
-var userIds = \["", "",...\]; KASClient.App.getUsersDetailsAsync(userIds, function (users, error) { if (error != null) { return; } var userInfo1 = users\[\]; var userInfo2 = users\[\]; ... }); `` ` `` Gets users' details (name, pic, phone number, etc.) against their ids
+Gets users' details (name, pic, phone number, etc.) against their ids
 
 **Parameters:**
 
@@ -765,9 +775,17 @@ ___
 
 ▸ **showContactPickerAsync**(title: *`string`*, selectedMutableUser: *`string`[]*, selectedImmutableUser: *`string`[]*, isSingleSelection: *`boolean`*, callback: *`function`*): `void`
 
-`` ` ``
+```
+var alreadySelectedUserIds = [];
+KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [], true, function (selectedUsers, error) {
+    if (error == null && selectedUsers != null && selectedUsers.length > 0) {
+        var selectedUser = selectedUsers[0]; //KASUser
+        console.log(selectedUser.id);
+    }
+});
+```
 
-var alreadySelectedUserIds = \[\]; KASClient.App.showContactPickerAsync("", alreadySelectedUserIds, \[\], true, function (selectedUsers, error) { if (error == null && selectedUsers != null && selectedUsers.length > 0) { var selectedUser = selectedUsers\[0\]; //KASUser console.log(selectedUser.id); } }); `` ` `` Shows a native contact picker, and returns an array of all the selected users' details
+Shows a native contact picker, and returns an array of all the selected users' details
 
 **Parameters:**
 
