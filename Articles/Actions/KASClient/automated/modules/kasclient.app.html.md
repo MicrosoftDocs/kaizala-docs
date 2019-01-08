@@ -159,7 +159,7 @@
 					<a name="cancelattachmentdownloadasync" class="tsd-anchor"></a>
 					<h3>cancel<wbr>Attachment<wbr>Download<wbr>Async</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">cancel<wbr>Attachment<wbr>Download<wbr>Async<span class="tsd-signature-symbol">(</span>attachment<span class="tsd-signature-symbol">: </span><a href="../classes/kasclient.kasattachment.html" class="tsd-signature-type">KASAttachment</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">cancel<wbr>Attachment<wbr>Download<wbr>Async<span class="tsd-signature-symbol">(</span>attachment<span class="tsd-signature-symbol">: </span><a href="../classes/kasclient.kasattachment.html.md" class="tsd-signature-type">KASAttachment</a>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
