@@ -6,8 +6,6 @@ Reporting type enum used in KASClient.Form.getFormReportingDataAsync API
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [NonRespondingUsers](kasclient.kasreportingdatatype.md#nonrespondingusers)

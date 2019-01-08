@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [actionId](kasclient.kasactionproperties.md#actionid)

@@ -4,8 +4,6 @@
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [BusinessCard](kasclient.camerafiltermode.md#businesscard)

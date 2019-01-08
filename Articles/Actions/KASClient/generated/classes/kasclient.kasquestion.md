@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [config](kasclient.kasquestion.md#config)

@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [groupId](kasclient.kasformresponse.md#groupid)

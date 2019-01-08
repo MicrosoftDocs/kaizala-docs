@@ -4,8 +4,6 @@
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [Admin](kasclient.kasformresultvisibility.md#admin)

@@ -12,8 +12,6 @@ This model contains data for every response to an Attachment List Type question.
 
 ## Index
 
----
-
 ### Properties
 
 * [attachmentListType](kasclient.kasattachmentlistquestionresult.md#attachmentlisttype)

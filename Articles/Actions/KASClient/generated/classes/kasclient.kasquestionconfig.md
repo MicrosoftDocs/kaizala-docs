@@ -12,8 +12,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [pageBreakEnabled](kasclient.kasquestionconfig.md#pagebreakenabled)

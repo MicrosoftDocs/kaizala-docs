@@ -6,8 +6,6 @@ The following enum values MUST be in sync with the ShareObjectType enum represen
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [Image](kasclient.kasshareobjecttype.md#image)

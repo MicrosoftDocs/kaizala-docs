@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Constructors
 
 * [constructor](kasclient.kasphonenumber.md#constructor)

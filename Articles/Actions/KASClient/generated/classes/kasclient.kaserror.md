@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [description](kasclient.kaserror.md#description)

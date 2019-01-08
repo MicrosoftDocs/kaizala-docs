@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [attributes](kasclient.kasvalidationrule.md#attributes)

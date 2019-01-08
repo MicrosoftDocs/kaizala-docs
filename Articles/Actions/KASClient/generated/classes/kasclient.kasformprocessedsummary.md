@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [json](kasclient.kasformprocessedsummary.md#json)

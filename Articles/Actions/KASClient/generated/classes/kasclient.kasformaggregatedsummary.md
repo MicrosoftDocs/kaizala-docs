@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [formId](kasclient.kasformaggregatedsummary.md#formid)

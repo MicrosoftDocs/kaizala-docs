@@ -10,8 +10,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [optionResults](kasclient.kasoptionquestionresult.md#optionresults)

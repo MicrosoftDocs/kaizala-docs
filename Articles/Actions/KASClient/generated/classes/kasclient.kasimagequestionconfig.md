@@ -10,8 +10,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [defaultCameraFilterMode](kasclient.kasimagequestionconfig.md#defaultcamerafiltermode)

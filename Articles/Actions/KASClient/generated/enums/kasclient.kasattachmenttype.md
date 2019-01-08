@@ -6,8 +6,6 @@ The following enum values MUST be in sync with the AttachmentType enum represent
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [Audio](kasclient.kasattachmenttype.md#audio)

@@ -6,8 +6,6 @@ Enum for conversation type
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [FLAT_GROUP](kasclient.kasformconversationtype.md#flat_group)

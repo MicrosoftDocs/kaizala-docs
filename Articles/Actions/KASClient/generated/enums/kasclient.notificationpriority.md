@@ -4,8 +4,6 @@
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [High](kasclient.notificationpriority.md#high)

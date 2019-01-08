@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [commentsCount](kasclient.kasformreaction.md#commentscount)

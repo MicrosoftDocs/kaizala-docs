@@ -41,41 +41,6 @@
 
 ---
 
-### Type aliases
-
-* [FormSummaryCallback](kasclient.form.md#formsummarycallback)
-
-### Functions
-
-* [addCommentOnForm](kasclient.form.md#addcommentonform)
-* [closeForm](kasclient.form.md#closeform)
-* [copyFormAndForward](kasclient.form.md#copyformandforward)
-* [getActionInstanceLocalDataCacheAsync](kasclient.form.md#getactioninstancelocaldatacacheasync)
-* [getActionPackageLocalDataCacheAsync](kasclient.form.md#getactionpackagelocaldatacacheasync)
-* [getFormAsync](kasclient.form.md#getformasync)
-* [getFormReactionAsync](kasclient.form.md#getformreactionasync)
-* [getFormStatusAsync](kasclient.form.md#getformstatusasync)
-* [getFormSummaryAsync](kasclient.form.md#getformsummaryasync)
-* [getFormURLAsync](kasclient.form.md#getformurlasync)
-* [getFormUserCapabilitiesAsync](kasclient.form.md#getformusercapabilitiesasync)
-* [getMyFormResponsesAsync](kasclient.form.md#getmyformresponsesasync)
-* [initFormAsync](kasclient.form.md#initformasync)
-* [isSubscribed](kasclient.form.md#issubscribed)
-* [likeForm](kasclient.form.md#likeform)
-* [sendRemindersToRespond](kasclient.form.md#sendreminderstorespond)
-* [shareFormURL](kasclient.form.md#shareformurl)
-* [showAllReactions](kasclient.form.md#showallreactions)
-* [submitFormRequestV2](kasclient.form.md#submitformrequestv2)
-* [submitFormRequestWithoutDismiss](kasclient.form.md#submitformrequestwithoutdismiss)
-* [sumbitFormResponse](kasclient.form.md#sumbitformresponse)
-* [sumbitFormResponseWithoutDismiss](kasclient.form.md#sumbitformresponsewithoutdismiss)
-* [updateActionInstanceLocalDataCacheAsync](kasclient.form.md#updateactioninstancelocaldatacacheasync)
-* [updateActionPackageLocalDataCacheAsync](kasclient.form.md#updateactionpackagelocaldatacacheasync)
-* [updateForm](kasclient.form.md#updateform)
-* [updateFormPropertiesAsync](kasclient.form.md#updateformpropertiesasync)
-
----
-
 ## Type aliases
 
 <a id="formsummarycallback"></a>

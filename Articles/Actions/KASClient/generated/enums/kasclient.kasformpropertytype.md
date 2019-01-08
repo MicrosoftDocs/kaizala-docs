@@ -4,8 +4,6 @@
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [Array](kasclient.kasformpropertytype.md#array)

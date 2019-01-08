@@ -4,8 +4,6 @@
 
 ## Index
 
----
-
 ### Variables
 
 * [hardwareBackPressCallback](kasclient.app.md#hardwarebackpresscallback)

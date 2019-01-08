@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [language](kasclient.kaslocationstaticmapimageparams.md#language)

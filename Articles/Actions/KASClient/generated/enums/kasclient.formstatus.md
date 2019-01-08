@@ -4,8 +4,6 @@
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [Active](kasclient.formstatus.md#active)

@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [latitude](kasclient.kaslocation.md#latitude)

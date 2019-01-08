@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [allowSendReminder](kasclient.kasform.md#allowsendreminder)

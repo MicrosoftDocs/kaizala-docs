@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [language](kasclient.kaslocationaddressparams.md#language)

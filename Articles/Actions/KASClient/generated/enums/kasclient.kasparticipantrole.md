@@ -6,8 +6,6 @@ Enum for participant role in a group
 
 ## Index
 
----
-
 ### Enumeration members
 
 * [ADMIN](kasclient.kasparticipantrole.md#admin)

@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [groupName](kasclient.kasformsubgroupsummary.md#groupname)

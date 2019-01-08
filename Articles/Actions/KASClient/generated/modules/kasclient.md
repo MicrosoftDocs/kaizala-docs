@@ -4,8 +4,6 @@
 
 ## Index
 
----
-
 ### Modules
 
 * [App](kasclient.app.md)

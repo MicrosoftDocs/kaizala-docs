@@ -8,8 +8,6 @@
 
 ## Index
 
----
-
 ### Properties
 
 * [name](kasclient.kasformpropertyupdateinfo.md#name)
