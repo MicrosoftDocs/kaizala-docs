@@ -4,6 +4,8 @@
 
 ## Index
 
+---
+
 ### Enumeration members
 
 * [All](kasclient.imagepickersource.md#all)

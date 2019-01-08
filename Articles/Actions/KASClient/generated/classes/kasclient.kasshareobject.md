@@ -8,6 +8,8 @@
 
 ## Index
 
+---
+
 ### Properties
 
 * [data](kasclient.kasshareobject.md#data)

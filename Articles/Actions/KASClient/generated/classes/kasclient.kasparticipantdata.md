@@ -10,6 +10,8 @@ Defines properties of a conversation participant
 
 ## Index
 
+---
+
 ### Properties
 
 * [participantId](kasclient.kasparticipantdata.md#participantid)

@@ -4,6 +4,43 @@
 
 ## Index
 
+### Creation
+
+* [initFormAsync](kasclient.form.md#initformasync)
+* [submitFormRequestV2](kasclient.form.md#submitformrequestv2)
+* [submitFormRequestWithoutDismiss](kasclient.form.md#submitformrequestwithoutdismiss)
+* [updateForm](kasclient.form.md#updateform)
+
+### Response
+
+* [getFormAsync](kasclient.form.md#getformasync)
+* [getFormStatusAsync](kasclient.form.md#getformstatusasync)
+* [getMyFormResponsesAsync](kasclient.form.md#getmyformresponsesasync)
+* [sumbitFormResponse](kasclient.form.md#sumbitformresponse)
+* [sumbitFormResponseWithoutDismiss](kasclient.form.md#sumbitformresponsewithoutdismiss)
+
+### Summary
+
+* [addCommentOnForm](kasclient.form.md#addcommentonform)
+* [closeForm](kasclient.form.md#closeform)
+* [copyFormAndForward](kasclient.form.md#copyformandforward)
+* [getActionInstanceLocalDataCacheAsync](kasclient.form.md#getactioninstancelocaldatacacheasync)
+* [getActionPackageLocalDataCacheAsync](kasclient.form.md#getactionpackagelocaldatacacheasync)
+* [getFormReactionAsync](kasclient.form.md#getformreactionasync)
+* [getFormSummaryAsync](kasclient.form.md#getformsummaryasync)
+* [getFormURLAsync](kasclient.form.md#getformurlasync)
+* [getFormUserCapabilitiesAsync](kasclient.form.md#getformusercapabilitiesasync)
+* [isSubscribed](kasclient.form.md#issubscribed)
+* [likeForm](kasclient.form.md#likeform)
+* [sendRemindersToRespond](kasclient.form.md#sendreminderstorespond)
+* [shareFormURL](kasclient.form.md#shareformurl)
+* [showAllReactions](kasclient.form.md#showallreactions)
+* [updateActionInstanceLocalDataCacheAsync](kasclient.form.md#updateactioninstancelocaldatacacheasync)
+* [updateActionPackageLocalDataCacheAsync](kasclient.form.md#updateactionpackagelocaldatacacheasync)
+* [updateFormPropertiesAsync](kasclient.form.md#updateformpropertiesasync)
+
+---
+
 ### Type aliases
 
 * [FormSummaryCallback](kasclient.form.md#formsummarycallback)

@@ -4,6 +4,8 @@
 
 ## Index
 
+---
+
 ### Enumeration members
 
 * [AUTHENTICATION_CANCELLED](kasclient.kaserrorcode.md#authentication_cancelled)

@@ -6,6 +6,8 @@ Enum for participant type in a group
 
 ## Index
 
+---
+
 ### Enumeration members
 
 * [GROUP](kasclient.kasparticipanttype.md#group)

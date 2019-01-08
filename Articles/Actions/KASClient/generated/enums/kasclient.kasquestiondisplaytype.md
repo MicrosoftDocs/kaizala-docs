@@ -4,6 +4,8 @@
 
 ## Index
 
+---
+
 ### Enumeration members
 
 * [DropDown](kasclient.kasquestiondisplaytype.md#dropdown)

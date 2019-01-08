@@ -8,6 +8,8 @@
 
 ## Index
 
+---
+
 ### Properties
 
 * [canRespond](kasclient.kasformusercapabilities.md#canrespond)

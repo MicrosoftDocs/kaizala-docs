@@ -6,6 +6,8 @@ Reporting type enum used in KASClient.Form.getFormReportingDataAsync API
 
 ## Index
 
+---
+
 ### Enumeration members
 
 * [Json](kasclient.kasreportingresponseformat.md#json)

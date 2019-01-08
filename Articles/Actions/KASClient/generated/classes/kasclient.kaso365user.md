@@ -8,6 +8,8 @@
 
 ## Index
 
+---
+
 ### Properties
 
 * [businessPhones](kasclient.kaso365user.md#businessphones)

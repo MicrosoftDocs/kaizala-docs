@@ -10,6 +10,8 @@ Defines details of host and source conversation
 
 ## Index
 
+---
+
 ### Properties
 
 * [currentUserId](kasclient.kasconversationdetails.md#currentuserid)

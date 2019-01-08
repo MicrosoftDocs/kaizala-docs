@@ -10,6 +10,8 @@
 
 ## Index
 
+---
+
 ### Properties
 
 * [average](kasclient.kasnumericquestionresult.md#average)

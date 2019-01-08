@@ -4,6 +4,8 @@
 
 ## Index
 
+---
+
 ### Variables
 
 * [hardwareBackPressCallback](kasclient.app.md#hardwarebackpresscallback)
@@ -881,13 +883,35 @@ ___
 
 Displays an attachment picker in the native layer
 
+*   ```
+    var attachmentsTypesToShow = [];
+    attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image);
+    attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document);
+    attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio);
+    KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) {
+        if (error != null) {
+                        return;
+        }
+        if (selectedAttachments && selectedAttachments.length > 0) {
+            for (var i = 0; i < selectedAttachments.length; i++) {
+                if (selectedAttachments[i].type == KASClient.KASAttachmentType.Image) {
+                      this.imageAttachmentList.push(selectedAttachments[i]);
+                }
+                ...
+             }...
+        }
+    });
+    ```
+    
+    @param supportedTypes array of supported attachment types for the picker. @param props additional props to configure the picker @param callback callback with list of selected attachments
+
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |  array of supported attachment types for the picker. |
-| props | `JSON` |  additional props to configure the picker |
-| callback | `function` |  callback with list of selected attachments ``` var attachmentsTypesToShow = \[\]; attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio); KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) { if (error != null) { return; } if (selectedAttachments && selectedAttachments.length > 0) { for (var i = 0; i < selectedAttachments.length; i++) { if (selectedAttachments\[i\].type == KASClient.KASAttachmentType.Image) { this.imageAttachmentList.push(selectedAttachments\[i\]); } ... }... } }); ``` |
+| Name | Type |
+| ------ | ------ |
+| supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |
+| props | `JSON` |
+| callback | `function` |
 
 **Returns:** `void`
 

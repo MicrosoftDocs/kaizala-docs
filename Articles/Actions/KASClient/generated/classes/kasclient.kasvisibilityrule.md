@@ -8,6 +8,8 @@
 
 ## Index
 
+---
+
 ### Properties
 
 * [dependencyQuestionId](kasclient.kasvisibilityrule.md#dependencyquestionid)

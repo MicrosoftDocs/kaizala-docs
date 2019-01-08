@@ -4,6 +4,8 @@
 
 ## Index
 
+---
+
 ### Enumeration members
 
 * [FaceRecognition](kasclient.kasauthenticationtype.md#facerecognition)

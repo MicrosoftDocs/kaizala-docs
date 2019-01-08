@@ -8,6 +8,8 @@
 
 ## Index
 
+---
+
 ### Properties
 
 * [cursor](kasclient.kasformsummaryforgroup.md#cursor)

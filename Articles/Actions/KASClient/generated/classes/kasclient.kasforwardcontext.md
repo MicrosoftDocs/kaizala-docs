@@ -8,6 +8,8 @@
 
 ## Index
 
+---
+
 ### Properties
 
 * [inForwardMode](kasclient.kasforwardcontext.md#inforwardmode)

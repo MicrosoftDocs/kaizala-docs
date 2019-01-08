@@ -4,6 +4,8 @@
 
 ## Index
 
+---
+
 ### Enumeration members
 
 * [Current](kasclient.urltype.md#current)
