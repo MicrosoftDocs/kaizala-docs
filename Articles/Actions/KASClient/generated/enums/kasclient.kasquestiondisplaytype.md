@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionDisplayType](../enums/kasclient.kasquestiondisplaytype.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionDisplayType](../enums/kasclient.kasquestiondisplaytype.md)
 
 # Enumeration: KASQuestionDisplayType
 
@@ -20,8 +20,6 @@
 
 **DropDown**:  = 0
 
-*Defined in model/KASQuestionDisplayType.ts:7*
-
 ___
 <a id="none"></a>
 
@@ -29,16 +27,12 @@ ___
 
 **None**:  =  -1
 
-*Defined in model/KASQuestionDisplayType.ts:4*
-
 ___
 <a id="radiobutton"></a>
 
 ###  RadioButton
 
 **RadioButton**:  = 1
-
-*Defined in model/KASQuestionDisplayType.ts:10*
 
 ___
 

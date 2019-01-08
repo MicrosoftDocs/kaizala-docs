@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASParticipantData](../classes/kasclient.kasparticipantdata.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASParticipantData](../classes/kasclient.kasparticipantdata.md)
 
 # Class: KASParticipantData
 
@@ -30,8 +30,6 @@ Defines properties of a conversation participant
 
 **● participantId**: *`string`* = ""
 
-*Defined in model/KASParticipantData.ts:8*
-
 ___
 <a id="participantrole"></a>
 
@@ -39,16 +37,12 @@ ___
 
 **● participantRole**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* =  KASParticipantRole.NONE
 
-*Defined in model/KASParticipantData.ts:14*
-
 ___
 <a id="participanttype"></a>
 
 ###  participantType
 
 **● participantType**: *[KASParticipantType](../enums/kasclient.kasparticipanttype.md)* =  KASParticipantType.NONE
-
-*Defined in model/KASParticipantData.ts:11*
 
 ___
 
@@ -59,8 +53,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASParticipantData](kasclient.kasparticipantdata.md)
-
-*Defined in model/KASParticipantData.ts:16*
 
 **Parameters:**
 

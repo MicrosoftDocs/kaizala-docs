@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionOption](../classes/kasclient.kasquestionoption.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionOption](../classes/kasclient.kasquestionoption.md)
 
 # Class: KASQuestionOption
 
@@ -31,8 +31,6 @@
 
 **● id**: *`number`* = 0
 
-*Defined in model/KASQuestionOption.ts:4*
-
 ___
 <a id="pictureurl"></a>
 
@@ -40,16 +38,12 @@ ___
 
 **● pictureUrl**: *`string`* =  null
 
-*Defined in model/KASQuestionOption.ts:10*
-
 ___
 <a id="text"></a>
 
 ###  text
 
 **● text**: *`string`* = ""
-
-*Defined in model/KASQuestionOption.ts:7*
 
 ___
 
@@ -61,8 +55,6 @@ ___
 
 ▸ **toAPICompatibleJSON**(): `JSON`
 
-*Defined in model/KASQuestionOption.ts:54*
-
 **Returns:** `JSON`
 
 ___
@@ -71,8 +63,6 @@ ___
 ###  toClientJSON
 
 ▸ **toClientJSON**(): `JSON`
-
-*Defined in model/KASQuestionOption.ts:43*
 
 **Returns:** `JSON`
 
@@ -83,8 +73,6 @@ ___
 
 ▸ **toJSON**(): `JSON`
 
-*Defined in model/KASQuestionOption.ts:34*
-
 **Returns:** `JSON`
 
 ___
@@ -93,8 +81,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASQuestionOption](kasclient.kasquestionoption.md)
-
-*Defined in model/KASQuestionOption.ts:12*
 
 **Parameters:**
 

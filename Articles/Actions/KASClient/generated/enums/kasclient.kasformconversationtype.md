@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormConversationType](../enums/kasclient.kasformconversationtype.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormConversationType](../enums/kasclient.kasformconversationtype.md)
 
 # Enumeration: KASFormConversationType
 
@@ -24,16 +24,12 @@ Enum for conversation type
 
 **FLAT_GROUP**:  = 1
 
-*Defined in model/KASFormConversationType.ts:13*
-
 ___
 <a id="forum"></a>
 
 ###  FORUM
 
 **FORUM**:  = 2
-
-*Defined in model/KASFormConversationType.ts:16*
 
 ___
 <a id="none"></a>
@@ -42,8 +38,6 @@ ___
 
 **NONE**:  =  -1
 
-*Defined in model/KASFormConversationType.ts:7*
-
 ___
 <a id="one_on_one"></a>
 
@@ -51,16 +45,12 @@ ___
 
 **ONE_ON_ONE**:  = 0
 
-*Defined in model/KASFormConversationType.ts:10*
-
 ___
 <a id="public_group"></a>
 
 ###  PUBLIC_GROUP
 
 **PUBLIC_GROUP**:  = 3
-
-*Defined in model/KASFormConversationType.ts:19*
 
 ___
 

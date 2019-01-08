@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormResponse](../classes/kasclient.kasformresponse.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormResponse](../classes/kasclient.kasformresponse.md)
 
 # Class: KASFormResponse
 
@@ -34,16 +34,12 @@
 
 **● groupId**: *`string`* = ""
 
-*Defined in model/KASFormResponse.ts:21*
-
 ___
 <a id="groupname"></a>
 
 ###  groupName
 
 **● groupName**: *`string`* = ""
-
-*Defined in model/KASFormResponse.ts:24*
 
 ___
 <a id="id"></a>
@@ -52,16 +48,12 @@ ___
 
 **● id**: *`string`* = ""
 
-*Defined in model/KASFormResponse.ts:4*
-
 ___
 <a id="questiontoanswermap"></a>
 
 ###  questionToAnswerMap
 
 **● questionToAnswerMap**: *`object`*
-
-*Defined in model/KASFormResponse.ts:18*
 
 #### Type declaration
 
@@ -72,16 +64,12 @@ ___
 
 **● responderId**: *`string`* = ""
 
-*Defined in model/KASFormResponse.ts:27*
-
 ___
 <a id="respondername"></a>
 
 ###  responderName
 
 **● responderName**: *`string`* = ""
-
-*Defined in model/KASFormResponse.ts:30*
 
 ___
 <a id="sendstatus"></a>
@@ -90,8 +78,6 @@ ___
 
 **● sendStatus**: *[KASFormMessageSendStatus](../enums/kasclient.kasformmessagesendstatus.md)* =  KASFormMessageSendStatus.Unknown
 
-*Defined in model/KASFormResponse.ts:7*
-
 ___
 <a id="sendtime"></a>
 
@@ -99,16 +85,12 @@ ___
 
 **● sendTime**: *`number`* = 0
 
-*Defined in model/KASFormResponse.ts:10*
-
 ___
 <a id="servertolocalasseturlmap"></a>
 
 ###  serverToLocalAssetUrlMap
 
 **● serverToLocalAssetUrlMap**: *`object`*
-
-*Defined in model/KASFormResponse.ts:14*
 
 #### Type declaration
 
@@ -121,8 +103,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASFormResponse](kasclient.kasformresponse.md)
-
-*Defined in model/KASFormResponse.ts:32*
 
 **Parameters:**
 

@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestion](../classes/kasclient.kasquestion.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestion](../classes/kasclient.kasquestion.md)
 
 # Class: KASQuestion
 
@@ -42,16 +42,12 @@
 
 **● config**: *[KASQuestionConfig](kasclient.kasquestionconfig.md)* =  null
 
-*Defined in model/KASQuestion.ts:13*
-
 ___
 <a id="displaytype"></a>
 
 ###  displayType
 
 **● displayType**: *[KASQuestionDisplayType](../enums/kasclient.kasquestiondisplaytype.md)* =  KASQuestionDisplayType.None
-
-*Defined in model/KASQuestion.ts:16*
 
 ___
 <a id="id"></a>
@@ -60,16 +56,12 @@ ___
 
 **● id**: *`number`* = 0
 
-*Defined in model/KASQuestion.ts:4*
-
 ___
 <a id="iseditable"></a>
 
 ###  isEditable
 
 **● isEditable**: *`boolean`* = true
-
-*Defined in model/KASQuestion.ts:22*
 
 ___
 <a id="isexcludedfromreporting"></a>
@@ -78,16 +70,12 @@ ___
 
 **● isExcludedFromReporting**: *`boolean`* = false
 
-*Defined in model/KASQuestion.ts:25*
-
 ___
 <a id="isinvisible"></a>
 
 ###  isInvisible
 
 **● isInvisible**: *`boolean`* = false
-
-*Defined in model/KASQuestion.ts:19*
 
 ___
 <a id="isresponseoptional"></a>
@@ -96,16 +84,12 @@ ___
 
 **● isResponseOptional**: *`boolean`* = false
 
-*Defined in model/KASQuestion.ts:28*
-
 ___
 <a id="options"></a>
 
 ###  options
 
 **● options**: *[KASQuestionOption](kasclient.kasquestionoption.md)[]* =  []
-
-*Defined in model/KASQuestion.ts:31*
 
 ___
 <a id="title"></a>
@@ -114,16 +98,12 @@ ___
 
 **● title**: *`string`* = ""
 
-*Defined in model/KASQuestion.ts:7*
-
 ___
 <a id="type"></a>
 
 ###  type
 
 **● type**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
-
-*Defined in model/KASQuestion.ts:10*
 
 ___
 <a id="valif"></a>
@@ -132,16 +112,12 @@ ___
 
 **● valif**: *[KASValidationRule](kasclient.kasvalidationrule.md)* =  null
 
-*Defined in model/KASQuestion.ts:34*
-
 ___
 <a id="visif"></a>
 
 ###  visif
 
 **● visif**: *[KASVisibilityRule](kasclient.kasvisibilityrule.md)* =  null
-
-*Defined in model/KASQuestion.ts:37*
 
 ___
 
@@ -152,8 +128,6 @@ ___
 ###  getAPICompatibleQuestionType
 
 ▸ **getAPICompatibleQuestionType**(type: *`string`*): `string`
-
-*Defined in model/KASQuestion.ts:39*
 
 **Parameters:**
 
@@ -170,8 +144,6 @@ ___
 
 ▸ **toAPICompatibleJSON**(): `JSON`
 
-*Defined in model/KASQuestion.ts:100*
-
 **Returns:** `JSON`
 
 ___
@@ -180,8 +152,6 @@ ___
 ###  toClientJSON
 
 ▸ **toClientJSON**(): `JSON`
-
-*Defined in model/KASQuestion.ts:66*
 
 **Returns:** `JSON`
 
@@ -192,8 +162,6 @@ ___
 
 ▸ **toJSON**(): `JSON`
 
-*Defined in model/KASQuestion.ts:57*
-
 **Returns:** `JSON`
 
 ___
@@ -202,8 +170,6 @@ ___
 ###  validateResponse
 
 ▸ **validateResponse**(response: *`string`*): [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
-
-*Defined in model/KASQuestion.ts:202*
 
 **Parameters:**
 
@@ -219,8 +185,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASQuestion](kasclient.kasquestion.md)
-
-*Defined in model/KASQuestion.ts:117*
 
 **Parameters:**
 

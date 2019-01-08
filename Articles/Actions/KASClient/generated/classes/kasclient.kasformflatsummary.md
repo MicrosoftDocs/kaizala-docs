@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md)
 
 # Class: KASFormFlatSummary
 
@@ -33,8 +33,6 @@
 
 **● conversationId**: *`string`* = ""
 
-*Defined in model/KASFormFlatSummary.ts:7*
-
 ___
 <a id="formid"></a>
 
@@ -42,16 +40,12 @@ ___
 
 **● formId**: *`string`* = ""
 
-*Defined in model/KASFormFlatSummary.ts:4*
-
 ___
 <a id="json"></a>
 
 ###  json
 
 **● json**: *`JSON`*
-
-*Defined in model/KASFormFlatSummary.ts:9*
 
 ___
 
@@ -63,8 +57,6 @@ ___
 
 ▸ **getAllResponses**(): `__type`
 
-*Defined in model/KASFormFlatSummary.ts:60*
-
 Gets all the responses of all the users
 
 **Returns:** `__type`
@@ -75,8 +67,6 @@ ___
 ###  getQuestionResponsesForUserId
 
 ▸ **getQuestionResponsesForUserId**(userId: *`string`*, questionId: *`number`*): `string`[]
-
-*Defined in model/KASFormFlatSummary.ts:30*
 
 Gets all the responses of a user against a specific question
 
@@ -97,8 +87,6 @@ ___
 
 ▸ **getRespondedUserIds**(): `string`[]
 
-*Defined in model/KASFormFlatSummary.ts:20*
-
 Gets all the user ids who responded to the form
 
 **Returns:** `string`[]
@@ -110,8 +98,6 @@ ___
 ###  getResponsesForUserId
 
 ▸ **getResponsesForUserId**(userId: *`string`*): `__type`
-
-*Defined in model/KASFormFlatSummary.ts:47*
 
 Gets all the responses of a user to a form
 
@@ -131,8 +117,6 @@ ___
 
 ▸ **getTotalResponseCount**(): `number`
 
-*Defined in model/KASFormFlatSummary.ts:93*
-
 Gets number of all responses by all users
 
 **Returns:** `number`
@@ -144,8 +128,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*, isResponseAppended: *`boolean`*): [KASFormFlatSummary](kasclient.kasformflatsummary.md)
-
-*Defined in model/KASFormFlatSummary.ts:102*
 
 **Parameters:**
 

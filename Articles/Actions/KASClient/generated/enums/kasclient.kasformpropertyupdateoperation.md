@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormPropertyUpdateOperation](../enums/kasclient.kasformpropertyupdateoperation.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormPropertyUpdateOperation](../enums/kasclient.kasformpropertyupdateoperation.md)
 
 # Enumeration: KASFormPropertyUpdateOperation
 
@@ -23,16 +23,12 @@
 
 **AddEntriesInValue**:  = 4
 
-*Defined in model/KASFormPropertyUpdateOperation.ts:19*
-
 ___
 <a id="addproperty"></a>
 
 ###  AddProperty
 
 **AddProperty**:  = 1
-
-*Defined in model/KASFormPropertyUpdateOperation.ts:10*
 
 ___
 <a id="deleteentriesfromvalue"></a>
@@ -41,16 +37,12 @@ ___
 
 **DeleteEntriesFromValue**:  = 5
 
-*Defined in model/KASFormPropertyUpdateOperation.ts:22*
-
 ___
 <a id="deleteproperty"></a>
 
 ###  DeleteProperty
 
 **DeleteProperty**:  = 2
-
-*Defined in model/KASFormPropertyUpdateOperation.ts:13*
 
 ___
 <a id="replaceentryinvalue"></a>
@@ -59,16 +51,12 @@ ___
 
 **ReplaceEntryInValue**:  = 3
 
-*Defined in model/KASFormPropertyUpdateOperation.ts:16*
-
 ___
 <a id="updatevalue"></a>
 
 ###  UpdateValue
 
 **UpdateValue**:  = 0
-
-*Defined in model/KASFormPropertyUpdateOperation.ts:7*
 
 ___
 

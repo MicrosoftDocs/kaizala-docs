@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASO365User](../classes/kasclient.kaso365user.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASO365User](../classes/kasclient.kaso365user.md)
 
 # Class: KASO365User
 
@@ -32,16 +32,12 @@
 
 **● businessPhones**: *`string`[]* =  []
 
-*Defined in model/KASO365User.ts:9*
-
 ___
 <a id="displayname"></a>
 
 ###  displayName
 
 **● displayName**: *`string`* = ""
-
-*Defined in model/KASO365User.ts:3*
 
 ___
 <a id="email"></a>
@@ -50,16 +46,12 @@ ___
 
 **● email**: *`string`* = ""
 
-*Defined in model/KASO365User.ts:7*
-
 ___
 <a id="givenname"></a>
 
 ###  givenName
 
 **● givenName**: *`string`* = ""
-
-*Defined in model/KASO365User.ts:4*
 
 ___
 <a id="jobtitle"></a>
@@ -68,8 +60,6 @@ ___
 
 **● jobTitle**: *`string`* = ""
 
-*Defined in model/KASO365User.ts:6*
-
 ___
 <a id="mobilephone"></a>
 
@@ -77,16 +67,12 @@ ___
 
 **● mobilePhone**: *`string`* = ""
 
-*Defined in model/KASO365User.ts:8*
-
 ___
 <a id="surname"></a>
 
 ###  surname
 
 **● surname**: *`string`* = ""
-
-*Defined in model/KASO365User.ts:5*
 
 ___
 
@@ -97,8 +83,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`JSON`*): [KASO365User](kasclient.kaso365user.md)
-
-*Defined in model/KASO365User.ts:11*
 
 **Parameters:**
 

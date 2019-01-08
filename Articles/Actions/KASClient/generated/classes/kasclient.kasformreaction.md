@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormReaction](../classes/kasclient.kasformreaction.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormReaction](../classes/kasclient.kasformreaction.md)
 
 # Class: KASFormReaction
 
@@ -32,16 +32,12 @@
 
 **● commentsCount**: *`number`* = 0
 
-*Defined in model/KASFormReaction.ts:8*
-
 ___
 <a id="didicomment"></a>
 
 ###  didIComment
 
 **● didIComment**: *`boolean`* = false
-
-*Defined in model/KASFormReaction.ts:14*
 
 ___
 <a id="didilike"></a>
@@ -50,16 +46,12 @@ ___
 
 **● didILike**: *`boolean`* = false
 
-*Defined in model/KASFormReaction.ts:11*
-
 ___
 <a id="hidecomments"></a>
 
 ###  hideComments
 
 **● hideComments**: *`boolean`* = false
-
-*Defined in model/KASFormReaction.ts:17*
 
 ___
 <a id="hidelikes"></a>
@@ -68,8 +60,6 @@ ___
 
 **● hideLikes**: *`boolean`* = false
 
-*Defined in model/KASFormReaction.ts:20*
-
 ___
 <a id="hidelikesdetails"></a>
 
@@ -77,16 +67,12 @@ ___
 
 **● hideLikesDetails**: *`boolean`* = false
 
-*Defined in model/KASFormReaction.ts:23*
-
 ___
 <a id="likescount"></a>
 
 ###  likesCount
 
 **● likesCount**: *`number`* = 0
-
-*Defined in model/KASFormReaction.ts:5*
 
 ___
 
@@ -97,8 +83,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`JSON`*): [KASFormReaction](kasclient.kasformreaction.md)
-
-*Defined in model/KASFormReaction.ts:25*
 
 **Parameters:**
 

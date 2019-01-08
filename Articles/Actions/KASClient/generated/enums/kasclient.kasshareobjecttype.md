@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASShareObjectType](../enums/kasclient.kasshareobjecttype.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASShareObjectType](../enums/kasclient.kasshareobjecttype.md)
 
 # Enumeration: KASShareObjectType
 
@@ -19,8 +19,6 @@ The following enum values MUST be in sync with the ShareObjectType enum represen
 ###  Image
 
 **Image**:  = 1
-
-*Defined in model/KASShareObjectType.ts:7*
 
 ___
 

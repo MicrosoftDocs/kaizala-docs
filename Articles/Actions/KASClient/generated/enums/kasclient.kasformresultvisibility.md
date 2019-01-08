@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)
 
 # Enumeration: KASFormResultVisibility
 
@@ -21,16 +21,12 @@
 
 **Admin**:  = 2
 
-*Defined in model/KASFormResultVisibility.ts:10*
-
 ___
 <a id="all"></a>
 
 ###  All
 
 **All**:  = 0
-
-*Defined in model/KASFormResultVisibility.ts:4*
 
 ___
 <a id="membersandsubscribers"></a>
@@ -39,16 +35,12 @@ ___
 
 **MembersAndSubscribers**:  = 3
 
-*Defined in model/KASFormResultVisibility.ts:13*
-
 ___
 <a id="sender"></a>
 
 ###  Sender
 
 **Sender**:  = 1
-
-*Defined in model/KASFormResultVisibility.ts:7*
 
 ___
 

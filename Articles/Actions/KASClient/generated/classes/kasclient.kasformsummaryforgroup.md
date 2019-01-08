@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormSummaryForGroup](../classes/kasclient.kasformsummaryforgroup.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormSummaryForGroup](../classes/kasclient.kasformsummaryforgroup.md)
 
 # Class: KASFormSummaryForGroup
 
@@ -30,16 +30,12 @@
 
 **● cursor**: *`string`* = ""
 
-*Defined in model/KASFormSummaryForGroup.ts:60*
-
 ___
 <a id="directmemberresponses"></a>
 
 ###  directMemberResponses
 
 **● directMemberResponses**: *`KASActionInstanceResponse`[]* =  []
-
-*Defined in model/KASFormSummaryForGroup.ts:47*
 
 Sample summary for group
 
@@ -52,16 +48,12 @@ ___
 
 **● responderCount**: *`number`* = 0
 
-*Defined in model/KASFormSummaryForGroup.ts:57*
-
 ___
 <a id="subgroupsummary"></a>
 
 ###  subgroupSummary
 
 **● subgroupSummary**: *`object`*
-
-*Defined in model/KASFormSummaryForGroup.ts:50*
 
 #### Type declaration
 
@@ -72,8 +64,6 @@ ___
 
 **● targetCount**: *`number`* = 0
 
-*Defined in model/KASFormSummaryForGroup.ts:54*
-
 ___
 
 ## Methods
@@ -83,8 +73,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASFormSummaryForGroup](kasclient.kasformsummaryforgroup.md)
-
-*Defined in model/KASFormSummaryForGroup.ts:62*
 
 **Parameters:**
 

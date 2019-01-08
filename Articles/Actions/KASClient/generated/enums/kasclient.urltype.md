@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [UrlType](../enums/kasclient.urltype.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [UrlType](../enums/kasclient.urltype.md)
 
 # Enumeration: UrlType
 
@@ -19,16 +19,12 @@
 
 **Current**:  = 0
 
-*Defined in model/KASNativeToolbarProperties.ts:3*
-
 ___
 <a id="fixed"></a>
 
 ###  Fixed
 
 **Fixed**:  = 1
-
-*Defined in model/KASNativeToolbarProperties.ts:4*
 
 ___
 

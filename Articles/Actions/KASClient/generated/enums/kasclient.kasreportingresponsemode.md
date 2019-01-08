@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASReportingResponseMode](../enums/kasclient.kasreportingresponsemode.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASReportingResponseMode](../enums/kasclient.kasreportingresponsemode.md)
 
 # Enumeration: KASReportingResponseMode
 
@@ -19,8 +19,6 @@ Reporting response mode enum used in KASClient.Form.getFormReportingDataAsync AP
 ###  ExternalUrl
 
 **ExternalUrl**:  = 1
-
-*Defined in model/KASReportingResponseMode.ts:10*
 
 ___
 

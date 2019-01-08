@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [FormStatus](../enums/kasclient.formstatus.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [FormStatus](../enums/kasclient.formstatus.md)
 
 # Enumeration: FormStatus
 
@@ -20,8 +20,6 @@
 
 **Active**:  = 0
 
-*Defined in model/KASFormAggregatedSummary.ts:4*
-
 ___
 <a id="closed"></a>
 
@@ -29,16 +27,12 @@ ___
 
 **Closed**:  = 1
 
-*Defined in model/KASFormAggregatedSummary.ts:5*
-
 ___
 <a id="expired"></a>
 
 ###  Expired
 
 **Expired**:  = 2
-
-*Defined in model/KASFormAggregatedSummary.ts:6*
 
 ___
 

@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)
 
 # Enumeration: AttachmentListResponseType
 
@@ -19,16 +19,12 @@
 
 **GENERIC**:  = 0
 
-*Defined in model/KASAttachmentListQuestionConfig.ts:5*
-
 ___
 <a id="list_of_images"></a>
 
 ###  LIST_OF_IMAGES
 
 **LIST_OF_IMAGES**:  = 1
-
-*Defined in model/KASAttachmentListQuestionConfig.ts:6*
 
 ___
 

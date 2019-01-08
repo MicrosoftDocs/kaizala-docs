@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormAggregatedSummary](../classes/kasclient.kasformaggregatedsummary.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormAggregatedSummary](../classes/kasclient.kasformaggregatedsummary.md)
 
 # Class: KASFormAggregatedSummary
 
@@ -32,16 +32,12 @@
 
 **● formId**: *`string`* = ""
 
-*Defined in model/KASFormAggregatedSummary.ts:11*
-
 ___
 <a id="formstatus"></a>
 
 ###  formStatus
 
 **● formStatus**: *[FormStatus](../enums/kasclient.formstatus.md)* =  FormStatus.Active
-
-*Defined in model/KASFormAggregatedSummary.ts:13*
 
 ___
 <a id="json"></a>
@@ -50,16 +46,12 @@ ___
 
 **● json**: *`JSON`*
 
-*Defined in model/KASFormAggregatedSummary.ts:26*
-
 ___
 <a id="result"></a>
 
 ###  result
 
 **● result**: *`any`[]* =  []
-
-*Defined in model/KASFormAggregatedSummary.ts:24*
 
 ___
 <a id="targetrespondercount"></a>
@@ -68,8 +60,6 @@ ___
 
 **● targetResponderCount**: *`number`* = 0
 
-*Defined in model/KASFormAggregatedSummary.ts:22*
-
 ___
 <a id="totalparticipantscount"></a>
 
@@ -77,16 +67,12 @@ ___
 
 **● totalParticipantsCount**: *`number`* = 0
 
-*Defined in model/KASFormAggregatedSummary.ts:19*
-
 ___
 <a id="totalresponsecount"></a>
 
 ###  totalResponseCount
 
 **● totalResponseCount**: *`number`* = 0
-
-*Defined in model/KASFormAggregatedSummary.ts:16*
 
 ___
 
@@ -97,8 +83,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`JSON`*, questions: *[KASQuestion](kasclient.kasquestion.md)[]*): [KASFormAggregatedSummary](kasclient.kasformaggregatedsummary.md)
-
-*Defined in model/KASFormAggregatedSummary.ts:45*
 
 **Parameters:**
 

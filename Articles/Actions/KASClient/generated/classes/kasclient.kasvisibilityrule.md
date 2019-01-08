@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASVisibilityRule](../classes/kasclient.kasvisibilityrule.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASVisibilityRule](../classes/kasclient.kasvisibilityrule.md)
 
 # Class: KASVisibilityRule
 
@@ -29,8 +29,6 @@
 
 **● dependencyQuestionId**: *`string`* = ""
 
-*Defined in model/KASVisibilityRule.ts:13*
-
 ___
 <a id="optionid"></a>
 
@@ -38,16 +36,12 @@ ___
 
 **● optionId**: *`string`* = ""
 
-*Defined in model/KASVisibilityRule.ts:16*
-
 ___
 <a id="rule"></a>
 
 ###  rule
 
 **● rule**: *`any`*
-
-*Defined in model/KASVisibilityRule.ts:9*
 
 ___
 
@@ -59,8 +53,6 @@ ___
 
 ▸ **toJSON**(): `JSON`
 
-*Defined in model/KASVisibilityRule.ts:40*
-
 **Returns:** `JSON`
 
 ___
@@ -69,8 +61,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASVisibilityRule](kasclient.kasvisibilityrule.md)
-
-*Defined in model/KASVisibilityRule.ts:18*
 
 **Parameters:**
 

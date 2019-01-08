@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [UrlAction](../enums/kasclient.urlaction.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [UrlAction](../enums/kasclient.urlaction.md)
 
 # Enumeration: UrlAction
 
@@ -20,8 +20,6 @@
 
 **None**:  = 0
 
-*Defined in model/KASNativeToolbarProperties.ts:8*
-
 ___
 <a id="openinbrowser"></a>
 
@@ -29,16 +27,12 @@ ___
 
 **OpenInBrowser**:  = 2
 
-*Defined in model/KASNativeToolbarProperties.ts:10*
-
 ___
 <a id="share"></a>
 
 ###  Share
 
 **Share**:  = 1
-
-*Defined in model/KASNativeToolbarProperties.ts:9*
 
 ___
 

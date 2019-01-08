@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASForm](../classes/kasclient.kasform.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASForm](../classes/kasclient.kasform.md)
 
 # Class: KASForm
 
@@ -48,16 +48,12 @@
 
 **● allowSendReminder**: *[KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)* =  KASFormResultVisibility.Sender
 
-*Defined in model/KASForm.ts:31*
-
 ___
 <a id="conversationid"></a>
 
 ###  conversationId
 
 **● conversationId**: *`string`* = ""
-
-*Defined in model/KASForm.ts:7*
 
 ___
 <a id="creatorid"></a>
@@ -66,16 +62,12 @@ ___
 
 **● creatorId**: *`string`* = ""
 
-*Defined in model/KASForm.ts:13*
-
 ___
 <a id="expiry"></a>
 
 ###  expiry
 
 **● expiry**: *`number`* = 0
-
-*Defined in model/KASForm.ts:22*
 
 ___
 <a id="id"></a>
@@ -84,16 +76,12 @@ ___
 
 **● id**: *`string`* = ""
 
-*Defined in model/KASForm.ts:4*
-
 ___
 <a id="isanonymous"></a>
 
 ###  isAnonymous
 
 **● isAnonymous**: *`boolean`* = false
-
-*Defined in model/KASForm.ts:19*
 
 ___
 <a id="isgrouplevelaggregationrequired"></a>
@@ -102,16 +90,12 @@ ___
 
 **● isGroupLevelAggregationRequired**: *`boolean`* = false
 
-*Defined in model/KASForm.ts:37*
-
 ___
 <a id="islocationrequested"></a>
 
 ###  isLocationRequested
 
 **● isLocationRequested**: *`boolean`* = false
-
-*Defined in model/KASForm.ts:40*
 
 ___
 <a id="isresponseappended"></a>
@@ -120,16 +104,12 @@ ___
 
 **● isResponseAppended**: *`boolean`* = false
 
-*Defined in model/KASForm.ts:34*
-
 ___
 <a id="json"></a>
 
 ###  json
 
 **● json**: *`JSON`*
-
-*Defined in model/KASForm.ts:57*
 
 ___
 <a id="packageid"></a>
@@ -138,16 +118,12 @@ ___
 
 **● packageId**: *`string`* = ""
 
-*Defined in model/KASForm.ts:10*
-
 ___
 <a id="properties"></a>
 
 ###  properties
 
 **● properties**: *[KASFormProperty](kasclient.kasformproperty.md)[]* =  []
-
-*Defined in model/KASForm.ts:52*
 
 ___
 <a id="questions"></a>
@@ -156,16 +132,12 @@ ___
 
 **● questions**: *[KASQuestion](kasclient.kasquestion.md)[]* =  []
 
-*Defined in model/KASForm.ts:49*
-
 ___
 <a id="reporttype"></a>
 
 ###  reportType
 
 **● reportType**: *`number`* = 0
-
-*Defined in model/KASForm.ts:46*
 
 ___
 <a id="title"></a>
@@ -174,16 +146,12 @@ ___
 
 **● title**: *`string`* = ""
 
-*Defined in model/KASForm.ts:16*
-
 ___
 <a id="type"></a>
 
 ###  type
 
 **● type**: *`number`* = 20
-
-*Defined in model/KASForm.ts:43*
 
 ___
 <a id="version"></a>
@@ -192,16 +160,12 @@ ___
 
 **● version**: *`number`* = 2
 
-*Defined in model/KASForm.ts:25*
-
 ___
 <a id="visibility"></a>
 
 ###  visibility
 
 **● visibility**: *[KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)* =  KASFormResultVisibility.All
-
-*Defined in model/KASForm.ts:28*
 
 ___
 
@@ -212,8 +176,6 @@ ___
 ###  getAPICompatibleVisibilityType
 
 ▸ **getAPICompatibleVisibilityType**(visibilityType: *[KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)*): `string`
-
-*Defined in model/KASForm.ts:137*
 
 **Parameters:**
 
@@ -230,8 +192,6 @@ ___
 
 ▸ **toAPICompatibleJSON**(): `JSON`
 
-*Defined in model/KASForm.ts:108*
-
 **Returns:** `JSON`
 
 ___
@@ -240,8 +200,6 @@ ___
 ###  toClientJSON
 
 ▸ **toClientJSON**(): `JSON`
-
-*Defined in model/KASForm.ts:68*
 
 **Returns:** `JSON`
 
@@ -252,8 +210,6 @@ ___
 
 ▸ **toJSON**(): `JSON`
 
-*Defined in model/KASForm.ts:59*
-
 **Returns:** `JSON`
 
 ___
@@ -262,8 +218,6 @@ ___
 ### `<Static>` addResponseNotificationForAddRow
 
 ▸ **addResponseNotificationForAddRow**(form: *[KASForm](kasclient.kasform.md)*, notificationSpec: *[KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)*): `void`
-
-*Defined in model/KASForm.ts:244*
 
 **Parameters:**
 
@@ -280,8 +234,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`JSON`*): [KASForm](kasclient.kasform.md)
-
-*Defined in model/KASForm.ts:153*
 
 **Parameters:**
 

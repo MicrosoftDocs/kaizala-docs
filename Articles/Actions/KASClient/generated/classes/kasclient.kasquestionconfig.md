@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionConfig](../classes/kasclient.kasquestionconfig.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionConfig](../classes/kasclient.kasquestionconfig.md)
 
 # Class: KASQuestionConfig
 
@@ -31,8 +31,6 @@
 
 **● pageBreakEnabled**: *`boolean`* = true
 
-*Defined in model/KASQuestionConfig.ts:5*
-
 ___
 
 ## Methods
@@ -43,8 +41,6 @@ ___
 
 ▸ **toJSON**(): `JSON`
 
-*Defined in model/KASQuestionConfig.ts:7*
-
 **Returns:** `JSON`
 
 ___
@@ -53,8 +49,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASQuestionConfig](kasclient.kasquestionconfig.md)
-
-*Defined in model/KASQuestionConfig.ts:14*
 
 **Parameters:**
 

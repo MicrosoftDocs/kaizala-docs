@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
 
 # Enumeration: KASParticipantRole
 
@@ -23,16 +23,12 @@ Enum for participant role in a group
 
 **ADMIN**:  = 0
 
-*Defined in model/KASParticipantRole.ts:11*
-
 ___
 <a id="member"></a>
 
 ###  MEMBER
 
 **MEMBER**:  = 1
-
-*Defined in model/KASParticipantRole.ts:14*
 
 ___
 <a id="none"></a>
@@ -41,16 +37,12 @@ ___
 
 **NONE**:  =  -1
 
-*Defined in model/KASParticipantRole.ts:8*
-
 ___
 <a id="subscriber"></a>
 
 ###  SUBSCRIBER
 
 **SUBSCRIBER**:  = 2
-
-*Defined in model/KASParticipantRole.ts:17*
 
 ___
 

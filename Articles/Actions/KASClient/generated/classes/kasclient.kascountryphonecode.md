@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASCountryPhoneCode](../classes/kasclient.kascountryphonecode.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASCountryPhoneCode](../classes/kasclient.kascountryphonecode.md)
 
 # Class: KASCountryPhoneCode
 
@@ -1290,8 +1290,6 @@
             }
           ]
 
-*Defined in model/KASCountryPhoneCode.ts:46*
-
 ___
 
 ## Methods
@@ -1302,8 +1300,6 @@ ___
 
 ▸ **getAllCountryPhoneCodes**(): `number`[]
 
-*Defined in model/KASCountryPhoneCode.ts:4*
-
 **Returns:** `number`[]
 
 ___
@@ -1312,8 +1308,6 @@ ___
 ### `<Static>` getAllFormattedCountryPhoneCodes
 
 ▸ **getAllFormattedCountryPhoneCodes**(includeCountryName?: *`boolean`*): `string`[]
-
-*Defined in model/KASCountryPhoneCode.ts:14*
 
 **Parameters:**
 
@@ -1330,8 +1324,6 @@ ___
 
 ▸ **getFormattedCountryPhoneCodeForCountry**(countryPhoneCode: *`any`*, includeCountryName?: *`boolean`*): `string`
 
-*Defined in model/KASCountryPhoneCode.ts:24*
-
 **Parameters:**
 
 | Name | Type | Default value |
@@ -1347,8 +1339,6 @@ ___
 ### `<Static>` getFormattedString
 
 ▸ **getFormattedString**(countryPhoneCode: *`any`*, countryName: *`any`*): `any`
-
-*Defined in model/KASCountryPhoneCode.ts:35*
 
 **Parameters:**
 

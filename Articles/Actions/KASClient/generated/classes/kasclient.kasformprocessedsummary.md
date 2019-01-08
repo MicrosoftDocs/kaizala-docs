@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md)
 
 # Class: KASFormProcessedSummary
 
@@ -30,8 +30,6 @@
 
 **● json**: *`JSON`*
 
-*Defined in model/KASFormProcessedSummary.ts:16*
-
 ___
 <a id="nonrespondersinconversation"></a>
 
@@ -39,16 +37,12 @@ ___
 
 **● nonRespondersInConversation**: *`string`[]* =  []
 
-*Defined in model/KASFormProcessedSummary.ts:4*
-
 ___
 <a id="results"></a>
 
 ###  results
 
 **● results**: *`object`*
-
-*Defined in model/KASFormProcessedSummary.ts:14*
 
 #### Type declaration
 
@@ -59,16 +53,12 @@ ___
 
 **● targetResponderCount**: *`number`* = 0
 
-*Defined in model/KASFormProcessedSummary.ts:7*
-
 ___
 <a id="totalresponsecount"></a>
 
 ###  totalResponseCount
 
 **● totalResponseCount**: *`number`* = 0
-
-*Defined in model/KASFormProcessedSummary.ts:10*
 
 ___
 
@@ -79,8 +69,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`JSON`*): [KASFormProcessedSummary](kasclient.kasformprocessedsummary.md)
-
-*Defined in model/KASFormProcessedSummary.ts:18*
 
 **Parameters:**
 

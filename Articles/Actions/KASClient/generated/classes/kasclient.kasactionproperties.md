@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASActionProperties](../classes/kasclient.kasactionproperties.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASActionProperties](../classes/kasclient.kasactionproperties.md)
 
 # Class: KASActionProperties
 
@@ -30,16 +30,12 @@
 
 **● actionId**: *`string`* = ""
 
-*Defined in model/KASActionProperties.ts:7*
-
 ___
 <a id="actionpackageid"></a>
 
 ###  actionPackageId
 
 **● actionPackageId**: *`string`* = ""
-
-*Defined in model/KASActionProperties.ts:4*
 
 ___
 <a id="actionpropertytype"></a>
@@ -48,8 +44,6 @@ ___
 
 **● actionPropertyType**: *[KASActionPropertyType](../enums/kasclient.kasactionpropertytype.md)* =  KASActionPropertyType.Local
 
-*Defined in model/KASActionProperties.ts:10*
-
 ___
 <a id="json"></a>
 
@@ -57,16 +51,12 @@ ___
 
 **● json**: *`JSON`*
 
-*Defined in model/KASActionProperties.ts:15*
-
 ___
 <a id="properties"></a>
 
 ###  properties
 
 **● properties**: *`JSON`*
-
-*Defined in model/KASActionProperties.ts:13*
 
 ___
 
@@ -77,8 +67,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`JSON`*): [KASActionProperties](kasclient.kasactionproperties.md)
-
-*Defined in model/KASActionProperties.ts:17*
 
 **Parameters:**
 

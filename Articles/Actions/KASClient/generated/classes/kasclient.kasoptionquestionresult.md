@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASOptionQuestionResult](../classes/kasclient.kasoptionquestionresult.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASOptionQuestionResult](../classes/kasclient.kasoptionquestionresult.md)
 
 # Class: KASOptionQuestionResult
 
@@ -32,8 +32,6 @@
 
 **● optionResults**: *`object`*
 
-*Defined in model/KASOptionQuestionResult.ts:7*
-
 #### Type declaration
 
 ___
@@ -43,10 +41,6 @@ ___
 
 **● questionId**: *`number`* = 0
 
-*Inherited from [KASQuestionResult](kasclient.kasquestionresult.md).[questionId](kasclient.kasquestionresult.md#questionid)*
-
-*Defined in model/KASQuestionResult.ts:10*
-
 ___
 <a id="questiontitle"></a>
 
@@ -54,20 +48,12 @@ ___
 
 **● questionTitle**: *`string`* = ""
 
-*Inherited from [KASQuestionResult](kasclient.kasquestionresult.md).[questionTitle](kasclient.kasquestionresult.md#questiontitle)*
-
-*Defined in model/KASQuestionResult.ts:4*
-
 ___
 <a id="questiontype"></a>
 
 ###  questionType
 
 **● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
-
-*Inherited from [KASQuestionResult](kasclient.kasquestionresult.md).[questionType](kasclient.kasquestionresult.md#questiontype)*
-
-*Defined in model/KASQuestionResult.ts:7*
 
 ___
 
@@ -78,8 +64,6 @@ ___
 ###  getResultsOrder
 
 ▸ **getResultsOrder**(): `number`[]
-
-*Defined in model/KASOptionQuestionResult.ts:13*
 
 Gets all the option ids sorted in their total responses count (descending)
 
@@ -92,10 +76,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASOptionQuestionResult](kasclient.kasoptionquestionresult.md)
-
-*Overrides [KASQuestionResult](kasclient.kasquestionresult.md).[fromJSON](kasclient.kasquestionresult.md#fromjson)*
-
-*Defined in model/KASOptionQuestionResult.ts:27*
 
 **Parameters:**
 

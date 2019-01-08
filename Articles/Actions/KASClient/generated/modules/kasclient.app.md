@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [App](../modules/kasclient.app.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [App](../modules/kasclient.app.md)
 
 # Module: App
 
@@ -70,8 +70,6 @@
 
 **● hardwareBackPressCallback**: *`function`* =  null
 
-*Defined in AppAPIs.ts:993*
-
 Registers a callback to be executed on hardware back button press (for Android)
 *__param__*: to be executed
 
@@ -90,8 +88,6 @@ ___
 
 ▸ **OnHardwareBackPress**(): `void`
 
-*Defined in AppAPIs.ts:999*
-
 **Returns:** `void`
 
 ___
@@ -101,9 +97,7 @@ ___
 
 ▸ **cancelAttachmentDownloadAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:377*
-
-*__example__*: ```typescript
+*__example__*: ```
 
  var attachmentsList = JSON.parse(form.properties[0].value);
  for (var i = 0; i < attachmentsList.length; i++)
@@ -132,8 +126,6 @@ ___
 
 ▸ **dismissCurrentScreen**(): `void`
 
-*Defined in AppAPIs.ts:670*
-
 Dismiss the current screen (Creation, Response, or Summary)
 
 **Returns:** `void`
@@ -145,9 +137,7 @@ ___
 
 ▸ **downloadAttachmentAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:321*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 var attachmentJson = {
   ty: 3,
@@ -183,9 +173,7 @@ ___
 
 ▸ **generateBase64ThumbnailAsync**(localPath: *`string`*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:838*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) {
     if (error == null && thumbnail != null) {
@@ -212,9 +200,7 @@ ___
 
 ▸ **generateUUIDAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:478*
-
-*__example__*: ```typescript
+*__example__*: ```
 
  KASClient.App.generateUUIDAsync(function (uuid, error) {
     console.log("generatedUUIDAsync", uuid);
@@ -239,8 +225,6 @@ ___
 
 ▸ **getAppLocaleAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:541*
-
 Gets the current app locale, the language in which the app is rendered, useful for localizing MiniApp's strings
 
 **Parameters:**
@@ -257,8 +241,6 @@ ___
 ###  getCalendarNameAsync
 
 ▸ **getCalendarNameAsync**(callback: *`function`*): `void`
-
-*Defined in AppAPIs.ts:579*
 
 Gets the current system calendar setting. This is mainly for iOS to identify the calendar name set in phone setting like Gregorian or Japanese or Buddhists.
 
@@ -277,8 +259,6 @@ ___
 
 ▸ **getConversationDetailsAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:1226*
-
 Gets conversation related properties
 
 **Parameters:**
@@ -296,9 +276,7 @@ ___
 
 ▸ **getCurrentDeviceLocationAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:505*
-
-*__example__*: ```typescript
+*__example__*: ```
 
  KASClient.App.getCurrentDeviceLocationAsync(function (location, error){
      if(error != null) {
@@ -325,8 +303,6 @@ ___
 
 ▸ **getCurrentLocale**(): `string`
 
-*Defined in AppAPIs.ts:1097*
-
 **Returns:** `string`
 
 ___
@@ -335,8 +311,6 @@ ___
 ###  getDeviceIdAsync
 
 ▸ **getDeviceIdAsync**(callback: *`function`*): `void`
-
-*Defined in AppAPIs.ts:115*
 
 Gets deviceId
 
@@ -355,8 +329,6 @@ ___
 
 ▸ **getDeviceLocationAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:448*
-
 Gets the previously stored device location
 
 **Parameters:**
@@ -373,8 +345,6 @@ ___
 ###  getFontSizeMultiplierAsync
 
 ▸ **getFontSizeMultiplierAsync**(callback: *`function`*): `void`
-
-*Defined in AppAPIs.ts:850*
 
 Gets the font size multiplier for large text. Current only required by iOS.
 
@@ -393,8 +363,6 @@ ___
 
 ▸ **getForwardContextAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:968*
-
 Gets Forward Context details such as : Card Creation is in forwarded mode
 
 **Parameters:**
@@ -411,8 +379,6 @@ ___
 ###  getIsAppTimeFormat24HoursAsync
 
 ▸ **getIsAppTimeFormat24HoursAsync**(callback: *`function`*): `void`
-
-*Defined in AppAPIs.ts:560*
 
 Gets the current app time format is 24hours or not, the time format selected by user, useful for formatting date time strings properly
 
@@ -431,9 +397,7 @@ ___
 
 ▸ **getLocalizedStringsAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:871*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 KASClient.App.getLocalizedStringsAsync(function (strings, error) {
     if (error != null) {
@@ -460,9 +424,7 @@ ___
 
 ▸ **getLocationAddressAsync**(params: *[KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md)*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:290*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 var params = new KASClient.KASLocationAddressParams();
 params.latitude =  <latitude value>;
@@ -494,9 +456,7 @@ ___
 
 ▸ **getMapImageAsBase64Async**(params: *[KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:263*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) {
         if (!error) {
@@ -524,8 +484,6 @@ ___
 
 ▸ **getO365UserDetailsAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:952*
-
 Gets details of current logged-in O365 user
 
 **Parameters:**
@@ -543,9 +501,7 @@ ___
 
 ▸ **getPackageCustomSettingsAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:891*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
       if (error != null) {
@@ -572,9 +528,7 @@ ___
 
 ▸ **getUsersDetailsAsync**(userIds: *`string`[]*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:34*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 var userIds = ["<uid1>", "<uid2>",...];
 KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
@@ -605,8 +559,6 @@ ___
 
 ▸ **hideProgressBar**(): `void`
 
-*Defined in AppAPIs.ts:692*
-
 Hides the current progress bar, if any
 
 **Returns:** `void`
@@ -618,9 +570,7 @@ ___
 
 ▸ **isAttachmentDownloadingAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:353*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 var attachmentJson = {
   ty: 3,
@@ -656,8 +606,6 @@ ___
 
 ▸ **isAuthenticationTyepSupportedAsync**(authenticationType?: *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:1136*
-
 Checks if authentication of type is possible or not.
 
 **Parameters:**
@@ -676,8 +624,6 @@ ___
 
 ▸ **isTalkBackEnabledAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:173*
-
 Gets whether talkback is enabled or not
 
 **Parameters:**
@@ -695,8 +641,6 @@ ___
 
 ▸ **launchShare**(objects: *[KASShareObject](../classes/kasclient.kasshareobject.md)[]*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:1235*
-
 **Parameters:**
 
 | Name | Type |
@@ -712,8 +656,6 @@ ___
 ###  logToReport
 
 ▸ **logToReport**(data: *`string`*): `void`
-
-*Defined in AppAPIs.ts:908*
 
 Logs data for "Send report"
 
@@ -732,9 +674,7 @@ ___
 
 ▸ **openAttachmentImmersiveView**(attachmentObj: *[KASAttachment](../classes/kasclient.kasattachment.md)*): `void`
 
-*Defined in AppAPIs.ts:781*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 Attachment should be available locally - so download it before opening - if already downloaded simply call the API
 var attachmentJson = {
@@ -770,9 +710,7 @@ ___
 
 ▸ **openImmersiveViewForAttachmentList**(attachmentList: *[KASAttachment](../classes/kasclient.kasattachment.md)[]*, atIndex?: *`number`*): `void`
 
-*Defined in AppAPIs.ts:808*
-
-*   @example `` ` ``typescript
+*   @example `` ` ``
 
 Attachment should be available locally - so download it before opening - if already downloaded simply call the API var attachmentJson = { ty: 3, afn: "131490\_Desert (1) (4).pdf", lpu: "", spu: '', asb: 846941, id:'' }; var attachment = KASClient.KASAttachment.fromJSON(attachmentJson); KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){ if (!error) { KASClient.App.openImmersiveViewForAttachmentList(\[downloadedAttachment\], 0); } }); `` ` `` Open attachment in Immersive view.
 
@@ -792,9 +730,7 @@ ___
 
 ▸ **performAuthenticationAsync**(authenticationType?: *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:1119*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) {
       if (!isSuccessful) {
@@ -821,9 +757,7 @@ ___
 
 ▸ **performHTTPRequest**(url: *`string`*, parametersJSON: *`string`*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:1209*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 var url = "<url>";
 var parametersJson = JSON.stringify({ "method" : "GET" });
@@ -853,8 +787,6 @@ ___
 
 ▸ **printf**(main: *`string`*, ...args: *`any`[]*): `string`
 
-*Defined in AppAPIs.ts:1087*
-
 Returns a string.
 
 **Parameters:**
@@ -873,8 +805,6 @@ ___
 
 ▸ **readTalkBackMessage**(talkBackMessage: *`string`*): `void`
 
-*Defined in AppAPIs.ts:185*
-
 Reads the text if TalkBack/VoiceOver enabled
 
 **Parameters:**
@@ -892,8 +822,6 @@ ___
 
 ▸ **registerHardwareBackPressCallback**(callback?: *`function`*): `void`
 
-*Defined in AppAPIs.ts:994*
-
 **Parameters:**
 
 | Name | Type | Default value |
@@ -909,9 +837,7 @@ ___
 
 ▸ **setNativeToolbarProperties**(properties: *[KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md)*): `void`
 
-*Defined in AppAPIs.ts:729*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties();
 nativeToolbarProps.icon = "<image>"
@@ -937,8 +863,6 @@ ___
 
 ▸ **setUserStrings**(strings?: *`JSON`*): `void`
 
-*Defined in AppAPIs.ts:1042*
-
 **Parameters:**
 
 | Name | Type | Default value |
@@ -954,10 +878,8 @@ ___
 
 ▸ **showAttachmentPickerAsync**(supportedTypes: *[KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[]*, props: *`JSON`*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:236*
-
 Displays an attachment picker in the native layer
-*__example__*: ```typescript
+*__example__*: ```
 
 var attachmentsTypesToShow = [];
 attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image);
@@ -995,8 +917,6 @@ ___
 
 ▸ **showBarcodeScannerAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:405*
-
 Launches the barcode scanner and returns the scanned object
 
 **Parameters:**
@@ -1014,9 +934,7 @@ ___
 
 ▸ **showContactPickerAsync**(title: *`string`*, selectedMutableUser: *`string`[]*, selectedImmutableUser: *`string`[]*, isSingleSelection: *`boolean`*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:144*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 var alreadySelectedUserIds = [];
 KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [], true, function (selectedUsers, error) {
@@ -1048,8 +966,6 @@ ___
 
 ▸ **showDurationPickerAsync**(defaultDurationInMinutes: *`number`*, callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:434*
-
 Shows a native duration picker with day/hour/minute
 
 **Parameters:**
@@ -1068,9 +984,7 @@ ___
 
 ▸ **showImageImmersiveView**(urls?: *`string`[]*, currentImageIndex?: *`number`*): `void`
 
-*Defined in AppAPIs.ts:754*
-
-*__example__*: ```typescript
+*__example__*: ```
 
 var urlArray = ["path1", "path2"];
 KASClient.App.showImageImmersiveView(urlArray);
@@ -1094,8 +1008,6 @@ ___
 
 ▸ **showLocationOnMap**(location: *[KASLocation](../classes/kasclient.kaslocation.md)*): `void`
 
-*Defined in AppAPIs.ts:1078*
-
 shows a particular location as mentioned in KASLocation
 
 **Parameters:**
@@ -1112,8 +1024,6 @@ ___
 ###  showNativeErrorMessage
 
 ▸ **showNativeErrorMessage**(message: *`string`*): `void`
-
-*Defined in AppAPIs.ts:524*
 
 Shows a native alert (for iOS) or a toast (for Android) with the message
 
@@ -1132,8 +1042,6 @@ ___
 
 ▸ **showPlacePickerAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:391*
-
 Shows a native place picker, and returns the selected place (lt, lg, n)
 
 **Parameters:**
@@ -1150,8 +1058,6 @@ ___
 ###  showProgressBar
 
 ▸ **showProgressBar**(text: *`string`*): `void`
-
-*Defined in AppAPIs.ts:685*
 
 Shows a native full sreen progress bar with the given text
 
@@ -1170,8 +1076,6 @@ ___
 
 ▸ **showQRcodeScannerAsync**(callback: *`function`*): `void`
 
-*Defined in AppAPIs.ts:419*
-
 Launches the QR code scanner and returns the scanned object
 
 **Parameters:**
@@ -1188,8 +1092,6 @@ ___
 ###  showUserProfileAsync
 
 ▸ **showUserProfileAsync**(userId: *`string`*, isMiniProfile: *`boolean`*, callback: *`function`*): `void`
-
-*Defined in AppAPIs.ts:74*
 
 Shows profile page/details of a user
 
@@ -1209,8 +1111,6 @@ ___
 ###  startChatAsync
 
 ▸ **startChatAsync**(userId: *`string`*, callback: *`function`*): `void`
-
-*Defined in AppAPIs.ts:86*
 
 Starts chat with a user
 

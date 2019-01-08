@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASPhoneNumber](../classes/kasclient.kasphonenumber.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASPhoneNumber](../classes/kasclient.kasphonenumber.md)
 
 # Class: KASPhoneNumber
 
@@ -33,8 +33,6 @@
 
 ⊕ **new KASPhoneNumber**(countryPhoneCode?: *`number`*, phoneNumber?: *`string`*): [KASPhoneNumber](kasclient.kasphonenumber.md)
 
-*Defined in model/KASPhoneNumber.ts:4*
-
 **Parameters:**
 
 | Name | Type | Default value |
@@ -54,16 +52,12 @@ ___
 
 **● countryPhoneCode**: *`number`* = 0
 
-*Defined in model/KASPhoneNumber.ts:3*
-
 ___
 <a id="phonenumber"></a>
 
 ###  phoneNumber
 
 **● phoneNumber**: *`string`* = ""
-
-*Defined in model/KASPhoneNumber.ts:4*
 
 ___
 
@@ -75,8 +69,6 @@ ___
 
 ▸ **toJSON**(): `JSON`
 
-*Defined in model/KASPhoneNumber.ts:25*
-
 **Returns:** `JSON`
 
 ___
@@ -86,8 +78,6 @@ ___
 
 ▸ **toString**(): `string`
 
-*Defined in model/KASPhoneNumber.ts:32*
-
 **Returns:** `string`
 
 ___
@@ -96,8 +86,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(phoneNumberReponseJSON: *`any`*): [KASPhoneNumber](kasclient.kasphonenumber.md)
-
-*Defined in model/KASPhoneNumber.ts:11*
 
 **Parameters:**
 

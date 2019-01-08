@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASConversationDetails](../classes/kasclient.kasconversationdetails.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASConversationDetails](../classes/kasclient.kasconversationdetails.md)
 
 # Class: KASConversationDetails
 
@@ -36,16 +36,12 @@ Defines details of host and source conversation
 
 **● currentUserId**: *`string`* = ""
 
-*Defined in model/KASConversationDetails.ts:30*
-
 ___
 <a id="currentuserroleinhostconversation"></a>
 
 ###  currentUserRoleInHostConversation
 
 **● currentUserRoleInHostConversation**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* =  KASParticipantRole.NONE
-
-*Defined in model/KASConversationDetails.ts:33*
 
 ___
 <a id="hostconversationid"></a>
@@ -54,16 +50,12 @@ ___
 
 **● hostConversationId**: *`string`* = ""
 
-*Defined in model/KASConversationDetails.ts:8*
-
 ___
 <a id="hostconversationparticipantsmap"></a>
 
 ###  hostConversationParticipantsMap
 
 **● hostConversationParticipantsMap**: *`object`*
-
-*Defined in model/KASConversationDetails.ts:18*
 
 #### Type declaration
 
@@ -74,16 +66,12 @@ ___
 
 **● hostConversationTitle**: *`string`* = ""
 
-*Defined in model/KASConversationDetails.ts:11*
-
 ___
 <a id="hostconversationtype"></a>
 
 ###  hostConversationType
 
 **● hostConversationType**: *[KASFormConversationType](../enums/kasclient.kasformconversationtype.md)* =  KASFormConversationType.NONE
-
-*Defined in model/KASConversationDetails.ts:14*
 
 ___
 <a id="sourceconversationid"></a>
@@ -92,8 +80,6 @@ ___
 
 **● sourceConversationId**: *`string`* = ""
 
-*Defined in model/KASConversationDetails.ts:21*
-
 ___
 <a id="sourceconversationtitle"></a>
 
@@ -101,16 +87,12 @@ ___
 
 **● sourceConversationTitle**: *`string`* = ""
 
-*Defined in model/KASConversationDetails.ts:24*
-
 ___
 <a id="sourceconversationtype"></a>
 
 ###  sourceConversationType
 
 **● sourceConversationType**: *[KASFormConversationType](../enums/kasclient.kasformconversationtype.md)* =  KASFormConversationType.NONE
-
-*Defined in model/KASConversationDetails.ts:27*
 
 ___
 
@@ -121,8 +103,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASConversationDetails](kasclient.kasconversationdetails.md)
-
-*Defined in model/KASConversationDetails.ts:35*
 
 **Parameters:**
 

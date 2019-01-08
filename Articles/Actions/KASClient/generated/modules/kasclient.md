@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md)
+[](../README.md) > [KASClient](../modules/kasclient.md)
 
 # Module: KASClient
 
@@ -101,8 +101,6 @@
 
 ▸ **getFilteredParticipantRole**(role: *`any`*): [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
 
-*Defined in model/KASParticipantRole.ts:20*
-
 **Parameters:**
 
 | Name | Type |
@@ -117,8 +115,6 @@ ___
 ###  getFilteredParticipantType
 
 ▸ **getFilteredParticipantType**(type: *`any`*): [KASParticipantType](../enums/kasclient.kasparticipanttype.md)
-
-*Defined in model/KASParticipantType.ts:16*
 
 **Parameters:**
 

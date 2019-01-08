@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionType](../enums/kasclient.kasquestiontype.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionType](../enums/kasclient.kasquestiontype.md)
 
 # Enumeration: KASQuestionType
 
@@ -29,16 +29,12 @@
 
 **AttachmentList**:  = 8
 
-*Defined in model/KASQuestionType.ts:31*
-
 ___
 <a id="dateonly"></a>
 
 ###  DateOnly
 
 **DateOnly**:  = 10
-
-*Defined in model/KASQuestionType.ts:37*
 
 ___
 <a id="datetime"></a>
@@ -47,16 +43,12 @@ ___
 
 **DateTime**:  = 5
 
-*Defined in model/KASQuestionType.ts:22*
-
 ___
 <a id="image"></a>
 
 ###  Image
 
 **Image**:  = 6
-
-*Defined in model/KASQuestionType.ts:25*
 
 ___
 <a id="location"></a>
@@ -65,16 +57,12 @@ ___
 
 **Location**:  = 4
 
-*Defined in model/KASQuestionType.ts:19*
-
 ___
 <a id="multiselect"></a>
 
 ###  MultiSelect
 
 **MultiSelect**:  = 1
-
-*Defined in model/KASQuestionType.ts:10*
 
 ___
 <a id="none"></a>
@@ -83,16 +71,12 @@ ___
 
 **None**:  =  -1
 
-*Defined in model/KASQuestionType.ts:4*
-
 ___
 <a id="numeric"></a>
 
 ###  Numeric
 
 **Numeric**:  = 3
-
-*Defined in model/KASQuestionType.ts:16*
 
 ___
 <a id="phonenumber"></a>
@@ -101,16 +85,12 @@ ___
 
 **PhoneNumber**:  = 9
 
-*Defined in model/KASQuestionType.ts:34*
-
 ___
 <a id="singleselect"></a>
 
 ###  SingleSelect
 
 **SingleSelect**:  = 0
-
-*Defined in model/KASQuestionType.ts:7*
 
 ___
 <a id="singleselectexternal"></a>
@@ -119,16 +99,12 @@ ___
 
 **SingleSelectExternal**:  = 7
 
-*Defined in model/KASQuestionType.ts:28*
-
 ___
 <a id="text"></a>
 
 ###  Text
 
 **Text**:  = 2
-
-*Defined in model/KASQuestionType.ts:13*
 
 ___
 

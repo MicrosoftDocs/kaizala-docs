@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionResult](../classes/kasclient.kasquestionresult.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionResult](../classes/kasclient.kasquestionresult.md)
 
 # Class: KASQuestionResult
 
@@ -34,8 +34,6 @@
 
 **● questionId**: *`number`* = 0
 
-*Defined in model/KASQuestionResult.ts:10*
-
 ___
 <a id="questiontitle"></a>
 
@@ -43,16 +41,12 @@ ___
 
 **● questionTitle**: *`string`* = ""
 
-*Defined in model/KASQuestionResult.ts:4*
-
 ___
 <a id="questiontype"></a>
 
 ###  questionType
 
 **● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
-
-*Defined in model/KASQuestionResult.ts:7*
 
 ___
 
@@ -63,8 +57,6 @@ ___
 ### `<Static>` fromJSON
 
 ▸ **fromJSON**(object: *`any`*): [KASQuestionResult](kasclient.kasquestionresult.md)
-
-*Defined in model/KASQuestionResult.ts:12*
 
 **Parameters:**
 

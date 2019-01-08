@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md)
 
 # Class: KASLocationAddressParams
 
@@ -28,8 +28,6 @@
 
 **● language**: *`string`*
 
-*Defined in model/KASLocationAddressParams.ts:13*
-
 ___
 <a id="latitude"></a>
 
@@ -37,16 +35,12 @@ ___
 
 **● latitude**: *`number`*
 
-*Defined in model/KASLocationAddressParams.ts:9*
-
 ___
 <a id="longitude"></a>
 
 ###  longitude
 
 **● longitude**: *`number`*
-
-*Defined in model/KASLocationAddressParams.ts:11*
 
 ___
 
@@ -57,8 +51,6 @@ ___
 ###  toJSON
 
 ▸ **toJSON**(): `JSON`
-
-*Defined in model/KASLocationAddressParams.ts:15*
 
 **Returns:** `JSON`
 

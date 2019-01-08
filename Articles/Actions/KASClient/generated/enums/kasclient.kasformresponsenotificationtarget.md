@@ -1,4 +1,4 @@
-[type-doc](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)
+[](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)
 
 # Enumeration: KASFormResponseNotificationTarget
 
@@ -20,8 +20,6 @@
 
 **CREATOR**:  = 1
 
-*Defined in model/KASFormResponseNotificationModel.ts:3*
-
 ___
 <a id="group"></a>
 
@@ -29,16 +27,12 @@ ___
 
 **GROUP**:  = 3
 
-*Defined in model/KASFormResponseNotificationModel.ts:5*
-
 ___
 <a id="owners"></a>
 
 ###  OWNERS
 
 **OWNERS**:  = 2
-
-*Defined in model/KASFormResponseNotificationModel.ts:4*
 
 ___
 
