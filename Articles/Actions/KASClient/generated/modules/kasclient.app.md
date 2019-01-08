@@ -97,9 +97,17 @@ ___
 
 ▸ **cancelAttachmentDownloadAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-`` ` ``
+```
+ var attachmentsList = JSON.parse(form.properties[0].value);
+ for (var i = 0; i < attachmentsList.length; i++)
+ {
+      var attachmentItem = attachmentsList[i];
+      var attachment = KASClient.KASAttachment.fromJSON(attachmentItem);
+      KASClient.App.cancelAttachmentDownloadAsync(attachment);
+ }
+```
 
-var attachmentsList = JSON.parse(form.properties\[0\].value); for (var i = 0; i < attachmentsList.length; i++) { var attachmentItem = attachmentsList\[i\]; var attachment = KASClient.KASAttachment.fromJSON(attachmentItem); KASClient.App.cancelAttachmentDownloadAsync(attachment); } `` ` `` Cancel a download operation queued for an attachment
+Cancel a download operation queued for an attachment
 
 **Parameters:**
 
@@ -128,9 +136,24 @@ ___
 
 ▸ **downloadAttachmentAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-`` ` ``
+```
+var attachmentJson = {
+  ty: 3,
+  afn: "131490_Desert (1) (4).pdf",
+  lpu: "",
+  spu: '<server path>',
+  asb: 846941,
+  id:''
+};
+var attachment = KASClient.KASAttachment.fromJSON(attachmentJson);
+KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){
+     if (!error) {
+        console.log(downloadedAttachment); //KASAttachment
+     }
+});
+```
 
-var attachmentJson = { ty: 3, afn: "131490\_Desert (1) (4).pdf", lpu: "", spu: '', asb: 846941, id:'' }; var attachment = KASClient.KASAttachment.fromJSON(attachmentJson); KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){ if (!error) { console.log(downloadedAttachment); //KASAttachment } }); `` ` `` Download the attachment specified
+Download the attachment specified
 
 **Parameters:**
 
@@ -148,9 +171,15 @@ ___
 
 ▸ **generateBase64ThumbnailAsync**(localPath: *`string`*, callback: *`function`*): `void`
 
-`` ` ``
+```
+KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) {
+    if (error == null && thumbnail != null) {
+       //use the thumbnail data and update required dom
+     }
+});
+```
 
-KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) { if (error == null && thumbnail != null) { //use the thumbnail data and update required dom } }); `` ` `` Generates Base64 thumbnail for an image whose localPath is given
+Generates Base64 thumbnail for an image whose localPath is given
 
 **Parameters:**
 
@@ -168,9 +197,14 @@ ___
 
 ▸ **generateUUIDAsync**(callback: *`function`*): `void`
 
-`` ` ``
+```
+ KASClient.App.generateUUIDAsync(function (uuid, error) {
+    console.log("generatedUUIDAsync", uuid);
+    ...
+ });
+```
 
-KASClient.App.generateUUIDAsync(function (uuid, error) { console.log("generatedUUIDAsync", uuid); ... }); `` ` `` Gets the new UUID
+Gets the new UUID
 
 **Parameters:**
 
@@ -238,9 +272,16 @@ ___
 
 ▸ **getCurrentDeviceLocationAsync**(callback: *`function`*): `void`
 
-`` ` ``
+```
+ KASClient.App.getCurrentDeviceLocationAsync(function (location, error){
+     if(error != null) {
+          return;
+     }
+     //use location(KASLocation) as the device location
+ });
+```
 
-KASClient.App.getCurrentDeviceLocationAsync(function (location, error){ if(error != null) { return; } //use location(KASLocation) as the device location }); `` ` `` Gets the current device location
+Gets the current device location
 
 **Parameters:**
 
@@ -351,9 +392,16 @@ ___
 
 ▸ **getLocalizedStringsAsync**(callback: *`function`*): `void`
 
-`` ` ``
+```
+KASClient.App.getLocalizedStringsAsync(function (strings, error) {
+    if (error != null) {
+        return;
+    }
+    //use the localized strings array
+});
+```
 
-KASClient.App.getLocalizedStringsAsync(function (strings, error) { if (error != null) { return; } //use the localized strings array }); `` ` `` Gets the localized strings' dictionary based on current app locale. Strings must be provided inside the package with names like: strings\_en.json, strings\_hi.json, etc.
+Gets the localized strings' dictionary based on current app locale. Strings must be provided inside the package with names like: strings\_en.json, strings\_hi.json, etc.
 
 **Parameters:**
 
@@ -370,9 +418,20 @@ ___
 
 ▸ **getLocationAddressAsync**(params: *[KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md)*, callback: *`function`*): `void`
 
-`` ` ``
+```
+var params = new KASClient.KASLocationAddressParams();
+params.latitude =  <latitude value>;
+params.longitude =  <longitude value>;
+KASClient.App.getLocationAddressAsync(params,
+    function (address, error) {
+        if (!error) {
+           // do something with address - a JSON returned by google structure can be found at https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses
+        }
+    }
+});
+```
 
-var params = new KASClient.KASLocationAddressParams(); params.latitude = ; params.longitude = ; KASClient.App.getLocationAddressAsync(params, function (address, error) { if (!error) { // do something with address - a JSON returned by google structure can be found at [https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses](https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses) } } }); `` ` `` Get address string for specified coordinates
+Get address string for specified coordinates
 
 **Parameters:**
 
@@ -390,9 +449,16 @@ ___
 
 ▸ **getMapImageAsBase64Async**(params: *[KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)*, callback: *`function`*): `void`
 
-`` ` ``
+```
+KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) {
+        if (!error) {
+            blobString = "data:image/jpeg;base64," + attachmentString;
+            //use blobString as base64 data
+        }
+ });
+```
 
-KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) { if (!error) { blobString = "data:image/jpeg;base64," + attachmentString; //use blobString as base64 data } }); `` ` `` Download the base 64 image of map for the coordinates specified
+Download the base 64 image of map for the coordinates specified
 
 **Parameters:**
 
@@ -427,9 +493,16 @@ ___
 
 ▸ **getPackageCustomSettingsAsync**(callback: *`function`*): `void`
 
-`` ` ``
+```
+KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
+      if (error != null) {
+          return;
+      }
+     //settings contains the settings json defined at the package level
+});
+```
 
-KASClient.App.getPackageCustomSettingsAsync(function (settings, error) { if (error != null) { return; } //settings contains the settings json defined at the package level }); `` ` `` Gets all the customization settings for a package (Used in case of Type-4 packages and their base).
+Gets all the customization settings for a package (Used in case of Type-4 packages and their base).
 
 **Parameters:**
 
@@ -487,9 +560,24 @@ ___
 
 ▸ **isAttachmentDownloadingAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-`` ` ``
+```
+var attachmentJson = {
+  ty: 3,
+  afn: "131490_Desert (1) (4).pdf",
+  lpu: "",
+  spu: '<server path>',
+  asb: 846941,
+  id:''
+};
+var attachment = KASClient.KASAttachment.fromJSON(attachmentJson);
+KASClient.App.isAttachmentDownloadingAsync(attachment, function(isAttachmentDownloadingOrDownLoaded, error){
+     if (!error) {
+        console.log(isAttachmentDownloadingOrDownLoaded); //boolean
+     }
+});
+```
 
-var attachmentJson = { ty: 3, afn: "131490\_Desert (1) (4).pdf", lpu: "", spu: '', asb: 846941, id:'' }; var attachment = KASClient.KASAttachment.fromJSON(attachmentJson); KASClient.App.isAttachmentDownloadingAsync(attachment, function(isAttachmentDownloadingOrDownLoaded, error){ if (!error) { console.log(isAttachmentDownloadingOrDownLoaded); //boolean } }); `` ` `` Download the attachment specified
+Download the attachment specified
 
 **Parameters:**
 
@@ -575,9 +663,25 @@ ___
 
 ▸ **openAttachmentImmersiveView**(attachmentObj: *[KASAttachment](../classes/kasclient.kasattachment.md)*): `void`
 
-`` ` ``
+```
+Attachment should be available locally - so download it before opening - if already downloaded simply call the API
+var attachmentJson = {
+  ty: 3,
+  afn: "131490_Desert (1) (4).pdf",
+  lpu: "",
+  spu: '<server path>',
+  asb: 846941,
+  id:''
+};
+var attachment = KASClient.KASAttachment.fromJSON(attachmentJson);
+KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){
+     if (!error) {
+        KASClient.App.openAttachmentImmersiveView(downloadedAttachment);
+     }
+});
+```
 
-Attachment should be available locally - so download it before opening - if already downloaded simply call the API var attachmentJson = { ty: 3, afn: "131490\_Desert (1) (4).pdf", lpu: "", spu: '', asb: 846941, id:'' }; var attachment = KASClient.KASAttachment.fromJSON(attachmentJson); KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){ if (!error) { KASClient.App.openAttachmentImmersiveView(downloadedAttachment); } }); `` ` `` Open attachment in Immersive view.
+Open attachment in Immersive view.
 
 **Parameters:**
 
@@ -594,9 +698,25 @@ ___
 
 ▸ **openImmersiveViewForAttachmentList**(attachmentList: *[KASAttachment](../classes/kasclient.kasattachment.md)[]*, atIndex?: *`number`*): `void`
 
-`` ` ``
+```
+Attachment should be available locally - so download it before opening - if already downloaded simply call the API
+var attachmentJson = {
+  ty: 3,
+  afn: "131490_Desert (1) (4).pdf",
+  lpu: "",
+  spu: '<server path>',
+  asb: 846941,
+  id:''
+};
+var attachment = KASClient.KASAttachment.fromJSON(attachmentJson);
+KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){
+     if (!error) {
+        KASClient.App.openImmersiveViewForAttachmentList([downloadedAttachment], 0);
+     }
+});
+```
 
-Attachment should be available locally - so download it before opening - if already downloaded simply call the API var attachmentJson = { ty: 3, afn: "131490\_Desert (1) (4).pdf", lpu: "", spu: '', asb: 846941, id:'' }; var attachment = KASClient.KASAttachment.fromJSON(attachmentJson); KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){ if (!error) { KASClient.App.openImmersiveViewForAttachmentList(\[downloadedAttachment\], 0); } }); `` ` `` Open attachment in Immersive view.
+Open attachment in Immersive view.
 
 **Parameters:**
 
@@ -614,9 +734,15 @@ ___
 
 ▸ **performAuthenticationAsync**(authenticationType?: *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, callback: *`function`*): `void`
 
-`` ` ``
+```
+KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) {
+      if (!isSuccessful) {
+          console.log(resonCode);
+      }
+});
+```
 
-KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) { if (!isSuccessful) { console.log(resonCode); } }); `` ` `` If authentication type is allowed, this API performs the authentication and returns success/false status else it returns an error string with reason why authentication is not possible.
+If authentication type is allowed, this API performs the authentication and returns success/false status else it returns an error string with reason why authentication is not possible.
 
 **Parameters:**
 
@@ -634,9 +760,17 @@ ___
 
 ▸ **performHTTPRequest**(url: *`string`*, parametersJSON: *`string`*, callback: *`function`*): `void`
 
-`` ` ``
+```
+var url = "<url>";
+var parametersJson = JSON.stringify({ "method" : "GET" });
+KASClient.App.performHTTPRequest(url, parametersJson, function (response, error) {
+      if (!error) {
+          //use the response
+      }
+});
+```
 
-var url = ""; var parametersJson = JSON.stringify({ "method" : "GET" }); KASClient.App.performHTTPRequest(url, parametersJson, function (response, error) { if (!error) { //use the response } }); `` ` `` performs an http request and returns the response as specified below:
+performs an http request and returns the response as specified below:
 
 **Parameters:**
 
@@ -705,9 +839,15 @@ ___
 
 ▸ **setNativeToolbarProperties**(properties: *[KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md)*): `void`
 
-`` ` ``
+```
+var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties();
+nativeToolbarProps.icon = "<image>"
+nativeToolbarProps.title = "<title>";
+nativeToolbarProps.subtitle = "<subtitle>";
+KASClient.App.setNativeToolbarProperties(nativeToolbarProps);
+```
 
-var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties(); nativeToolbarProps.icon = "" nativeToolbarProps.title = ""; nativeToolbarProps.subtitle = "<subtitle>"; KASClient.App.setNativeToolbarProperties(nativeToolbarProps); <code>\`</code> Sets few properties when using native toolbar</p> </x-turndown>
+Sets few properties when using native toolbar
 
 **Parameters:**
 
@@ -747,7 +887,7 @@ Displays an attachment picker in the native layer
 | ------ | ------ | ------ |
 | supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |  array of supported attachment types for the picker. |
 | props | `JSON` |  additional props to configure the picker |
-| callback | `function` |  callback with list of selected attachments ```<br><br>var attachmentsTypesToShow = \[\]; attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio); KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) { if (error != null) { return; } if (selectedAttachments && selectedAttachments.length > 0) { for (var i = 0; i < selectedAttachments.length; i++) { if (selectedAttachments\[i\].type == KASClient.KASAttachmentType.Image) { this.imageAttachmentList.push(selectedAttachments\[i\]); } ... }... } }); ``` |
+| callback | `function` |  callback with list of selected attachments ``` var attachmentsTypesToShow = \[\]; attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio); KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) { if (error != null) { return; } if (selectedAttachments && selectedAttachments.length > 0) { for (var i = 0; i < selectedAttachments.length; i++) { if (selectedAttachments\[i\].type == KASClient.KASAttachmentType.Image) { this.imageAttachmentList.push(selectedAttachments\[i\]); } ... }... } }); ``` |
 
 **Returns:** `void`
 
@@ -824,9 +964,12 @@ ___
 
 ▸ **showImageImmersiveView**(urls?: *`string`[]*, currentImageIndex?: *`number`*): `void`
 
-`` ` ``
+```
+var urlArray = ["path1", "path2"];
+KASClient.App.showImageImmersiveView(urlArray);
+```
 
-var urlArray = \["path1", "path2"\]; KASClient.App.showImageImmersiveView(urlArray); `` ` `` Shows Image in Immersive view.
+Shows Image in Immersive view.
 
 **Parameters:**
 
