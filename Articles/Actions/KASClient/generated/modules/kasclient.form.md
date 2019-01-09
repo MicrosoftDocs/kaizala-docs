@@ -41,30 +41,188 @@
 
 ---
 
-## Type aliases
+## Creation
 
-<a id="formsummarycallback"></a>
+<a id="initformasync"></a>
 
-###  FormSummaryCallback
+###  initFormAsync
 
-**Ƭ FormSummaryCallback**: *`function`*
+▸ **initFormAsync**(callback: *`function`*): `void`
 
-#### Type declaration
-▸(flatSummary: *[KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md)*, processedSummary: *[KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md)*, error: *`string`*): `void`
+Initializes and returns an empty form object based on the default form file present in the package
+*__category__*: creation
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below parameters:*   @param {KASForm} form can be null in case of error*   @param {string} error message in case of error, null otherwise |
+
+**Returns:** `void`
+
+___
+<a id="submitformrequestv2"></a>
+
+###  submitFormRequestV2
+
+▸ **submitFormRequestV2**(form: *[KASForm](../classes/kasclient.kasform.md)*, shouldDismiss?: *`boolean`*, shouldSendToSubscribers?: *`boolean`*): `void`
+
+Submits the newly created form as a request. This results a new conversation card
+*__category__*: creation
+
+**Parameters:**
+
+| Name | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| form | [KASForm](../classes/kasclient.kasform.md) | - |  \- |
+| `Default value` shouldDismiss | `boolean` | false |
+| `Default value` shouldSendToSubscribers | `boolean` | true |
+
+**Returns:** `void`
+
+___
+<a id="submitformrequestwithoutdismiss"></a>
+
+###  submitFormRequestWithoutDismiss
+
+▸ **submitFormRequestWithoutDismiss**(form: *[KASForm](../classes/kasclient.kasform.md)*, shouldInflate: *`boolean`*): `void`
+
+Submits the newly created form as a request. This results a new conversation card
+*__category__*: creation
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| form | [KASForm](../classes/kasclient.kasform.md) |  \- |
+| shouldInflate | `boolean` |
+
+**Returns:** `void`
+
+___
+<a id="updateform"></a>
+
+###  updateForm
+
+▸ **updateForm**(fields: *`string`*, shouldInflate: *`boolean`*, callback: *`function`*): `void`
+
+use for making changes in form fields like title, description and settings.
+*__category__*: creation
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| flatSummary | [KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md) |
-| processedSummary | [KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md) |
-| error | `string` |
+| fields | `string` |
+| shouldInflate | `boolean` |
+| callback | `function` |
 
 **Returns:** `void`
 
 ___
 
-## Functions
+## Response
+
+<a id="getformasync"></a>
+
+###  getFormAsync
+
+▸ **getFormAsync**(callback: *`function`*): `void`
+
+Gets the form object associated with the conversation card
+*__category__*: response
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below parameters:*   @param {KASForm} form can be null in case of error*   @param {string} error message in case of error, null otherwise |
+
+**Returns:** `void`
+
+___
+<a id="getformstatusasync"></a>
+
+###  getFormStatusAsync
+
+▸ **getFormStatusAsync**(callback: *`function`*): `void`
+
+Gets the status of the form associated with the conversation card
+*__category__*: response
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below parameters:*   @param {boolean} isActive true if the form is not yet expired*   @param {string} error message in case of error, null otherwise |
+
+**Returns:** `void`
+
+___
+<a id="getmyformresponsesasync"></a>
+
+###  getMyFormResponsesAsync
+
+▸ **getMyFormResponsesAsync**(callback: *`function`*): `void`
+
+Gets all the responses of the current user against the form
+*__category__*: response
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below parameters:*   @param {KASFormResponse\[\]} responses can be null in case of error*   @param {string} error message in case of error, null otherwise |
+
+**Returns:** `void`
+
+___
+<a id="sumbitformresponse"></a>
+
+###  sumbitFormResponse
+
+▸ **sumbitFormResponse**(questionToAnswerMap: *`JSON`*, responseId: *`string`*, isEdit: *`boolean`*, showInChatCanvas: *`boolean`*, isAnonymous: *`boolean`*): `void`
+
+Submits a new response against the form associated with the conversation card This will dismiss the current screen
+*__category__*: response
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| questionToAnswerMap | `JSON` |  question id to answer mapping |
+| responseId | `string` |  to be filled if the current response is an edit/update to a previous one |
+| isEdit | `boolean` |  denotes if the current response is an edit/update to a previous one |
+| showInChatCanvas | `boolean` |  denotes if a separate chat card needs to be created for this response or not |
+| isAnonymous | `boolean` |  denotes if the response should be registered as anonymous or not |
+
+**Returns:** `void`
+
+___
+<a id="sumbitformresponsewithoutdismiss"></a>
+
+###  sumbitFormResponseWithoutDismiss
+
+▸ **sumbitFormResponseWithoutDismiss**(questionToAnswerMap: *`JSON`*, responseId: *`string`*, isEdit: *`boolean`*, showInChatCanvas: *`boolean`*, isAnonymous: *`boolean`*): `void`
+
+Submits a new response against the form associated with the conversation card This won't dismiss the current screen
+*__category__*: response
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| questionToAnswerMap | `JSON` |  question id to answer mapping |
+| responseId | `string` |  to be filled if the current response is an edit/update to a previous one |
+| isEdit | `boolean` |  denotes if the current response is an edit/update to a previous one |
+| showInChatCanvas | `boolean` |  denotes if a separate chat card needs to be created for this response or not |
+| isAnonymous | `boolean` |  denotes if the response should be registered as anonymous or not |
+
+**Returns:** `void`
+
+___
+
+## Summary
 
 <a id="addcommentonform"></a>
 
@@ -144,24 +302,6 @@ Retrieves the Action Package Properties from the local data cache if any exists 
 **Returns:** `void`
 
 ___
-<a id="getformasync"></a>
-
-###  getFormAsync
-
-▸ **getFormAsync**(callback: *`function`*): `void`
-
-Gets the form object associated with the conversation card
-*__category__*: response
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {KASForm} form can be null in case of error*   @param {string} error message in case of error, null otherwise |
-
-**Returns:** `void`
-
-___
 <a id="getformreactionasync"></a>
 
 ###  getFormReactionAsync
@@ -176,24 +316,6 @@ Gets the consolidated reaction (likes and comments) of the conversation card ass
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | callback | `function` |  with below parameters:*   @param {KASFormReaction} reaction can be null in case of error*   @param {string} error message in case of error, null otherwise |
-
-**Returns:** `void`
-
-___
-<a id="getformstatusasync"></a>
-
-###  getFormStatusAsync
-
-▸ **getFormStatusAsync**(callback: *`function`*): `void`
-
-Gets the status of the form associated with the conversation card
-*__category__*: response
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {boolean} isActive true if the form is not yet expired*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -249,42 +371,6 @@ Gets form permissions
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | callback | `function` |  with below parameters:*   @param {KASFormUserCapabilities} permissions |
-
-**Returns:** `void`
-
-___
-<a id="getmyformresponsesasync"></a>
-
-###  getMyFormResponsesAsync
-
-▸ **getMyFormResponsesAsync**(callback: *`function`*): `void`
-
-Gets all the responses of the current user against the form
-*__category__*: response
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {KASFormResponse\[\]} responses can be null in case of error*   @param {string} error message in case of error, null otherwise |
-
-**Returns:** `void`
-
-___
-<a id="initformasync"></a>
-
-###  initFormAsync
-
-▸ **initFormAsync**(callback: *`function`*): `void`
-
-Initializes and returns an empty form object based on the default form file present in the package
-*__category__*: creation
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {KASForm} form can be null in case of error*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -367,89 +453,6 @@ Shows all the reaction screen (likes and comments) against the form
 **Returns:** `void`
 
 ___
-<a id="submitformrequestv2"></a>
-
-###  submitFormRequestV2
-
-▸ **submitFormRequestV2**(form: *[KASForm](../classes/kasclient.kasform.md)*, shouldDismiss?: *`boolean`*, shouldSendToSubscribers?: *`boolean`*): `void`
-
-Submits the newly created form as a request. This results a new conversation card
-*__category__*: creation
-
-**Parameters:**
-
-| Name | Type | Default value | Description |
-| ------ | ------ | ------ | ------ |
-| form | [KASForm](../classes/kasclient.kasform.md) | - |  \- |
-| `Default value` shouldDismiss | `boolean` | false |
-| `Default value` shouldSendToSubscribers | `boolean` | true |
-
-**Returns:** `void`
-
-___
-<a id="submitformrequestwithoutdismiss"></a>
-
-###  submitFormRequestWithoutDismiss
-
-▸ **submitFormRequestWithoutDismiss**(form: *[KASForm](../classes/kasclient.kasform.md)*, shouldInflate: *`boolean`*): `void`
-
-Submits the newly created form as a request. This results a new conversation card
-*__category__*: creation
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| form | [KASForm](../classes/kasclient.kasform.md) |  \- |
-| shouldInflate | `boolean` |
-
-**Returns:** `void`
-
-___
-<a id="sumbitformresponse"></a>
-
-###  sumbitFormResponse
-
-▸ **sumbitFormResponse**(questionToAnswerMap: *`JSON`*, responseId: *`string`*, isEdit: *`boolean`*, showInChatCanvas: *`boolean`*, isAnonymous: *`boolean`*): `void`
-
-Submits a new response against the form associated with the conversation card This will dismiss the current screen
-*__category__*: response
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| questionToAnswerMap | `JSON` |  question id to answer mapping |
-| responseId | `string` |  to be filled if the current response is an edit/update to a previous one |
-| isEdit | `boolean` |  denotes if the current response is an edit/update to a previous one |
-| showInChatCanvas | `boolean` |  denotes if a separate chat card needs to be created for this response or not |
-| isAnonymous | `boolean` |  denotes if the response should be registered as anonymous or not |
-
-**Returns:** `void`
-
-___
-<a id="sumbitformresponsewithoutdismiss"></a>
-
-###  sumbitFormResponseWithoutDismiss
-
-▸ **sumbitFormResponseWithoutDismiss**(questionToAnswerMap: *`JSON`*, responseId: *`string`*, isEdit: *`boolean`*, showInChatCanvas: *`boolean`*, isAnonymous: *`boolean`*): `void`
-
-Submits a new response against the form associated with the conversation card This won't dismiss the current screen
-*__category__*: response
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| questionToAnswerMap | `JSON` |  question id to answer mapping |
-| responseId | `string` |  to be filled if the current response is an edit/update to a previous one |
-| isEdit | `boolean` |  denotes if the current response is an edit/update to a previous one |
-| showInChatCanvas | `boolean` |  denotes if a separate chat card needs to be created for this response or not |
-| isAnonymous | `boolean` |  denotes if the response should be registered as anonymous or not |
-
-**Returns:** `void`
-
-___
 <a id="updateactioninstancelocaldatacacheasync"></a>
 
 ###  updateActionInstanceLocalDataCacheAsync
@@ -486,26 +489,6 @@ Updates/saves the given Action Package Properties to the local data cache These 
 | ------ | ------ | ------ |
 | actionPackageProperties | [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md) |  Action Package Properties to be updated/saved |
 | callback | `function` |  with below parameters:*   *   *   @param {boolean} success indicates if the update is successful or not*   *   *   @param {string} error json string for the KASError object containing error code and/or description. |
-
-**Returns:** `void`
-
-___
-<a id="updateform"></a>
-
-###  updateForm
-
-▸ **updateForm**(fields: *`string`*, shouldInflate: *`boolean`*, callback: *`function`*): `void`
-
-use for making changes in form fields like title, description and settings.
-*__category__*: creation
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| fields | `string` |
-| shouldInflate | `boolean` |
-| callback | `function` |
 
 **Returns:** `void`
 
