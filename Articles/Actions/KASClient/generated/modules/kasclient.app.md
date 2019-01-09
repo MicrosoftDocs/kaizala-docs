@@ -47,6 +47,7 @@
 * [showContactPickerAsync](kasclient.app.md#showcontactpickerasync)
 * [showDurationPickerAsync](kasclient.app.md#showdurationpickerasync)
 * [showImageImmersiveView](kasclient.app.md#showimageimmersiveview)
+* [showImagePickerAsync](kasclient.app.md#showimagepickerasync)
 * [showLocationOnMap](kasclient.app.md#showlocationonmap)
 * [showNativeErrorMessage](kasclient.app.md#shownativeerrormessage)
 * [showPlacePickerAsync](kasclient.app.md#showplacepickerasync)
@@ -96,7 +97,7 @@ ___
 
 ▸ **dismissCurrentScreen**(): `void`
 
-Dismiss the current screen (Creation, Response, or Summary)
+Dismiss the current opened Action's screen (Creation, Response, or Summary)
 
 **Returns:** `void`
 
@@ -108,25 +109,6 @@ ___
 
 ▸ **downloadAttachmentAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
-var attachmentJson = {
-  ty: 3,
-  afn: "131490_Desert (1) (4).pdf",
-  lpu: "",
-  spu: '<server path>',
-  asb: 846941,
-  id:''
-};
-var attachment = KASClient.KASAttachment.fromJSON(attachmentJson);
-KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){
-     if (!error) {
-        console.log(downloadedAttachment); //KASAttachment
-     }
-});
-```
-
 Download the attachment specified
 
 **Parameters:**
@@ -134,7 +116,7 @@ Download the attachment specified
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |  attachment with a valid server path to download |
-| callback | `function` |  callback on download completion |
+| callback | `function` |  callback on download completion#### Sample Usage``` var imageAttachment = new KASClient.KASAttachment(); imageAttachment.type = KASClient.KASAttachmentType.Image; imageAttachment.serverPath = "<server path>"; imageAttachment.fileName = "<file name>"; KASClient.App.downloadAttachmentAsync(imageAttachment, function(downloadedAttachment, error){ if (!error) { console.log(downloadedAttachment); //KASAttachment } }); ``` |
 
 **Returns:** `void`
 
@@ -146,24 +128,14 @@ ___
 
 ▸ **generateBase64ThumbnailAsync**(localPath: *`string`*, callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
-KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) {
-    if (error == null && thumbnail != null) {
-       //use the thumbnail data and update required dom
-     }
-});
-```
-
 Generates Base64 thumbnail for an image whose localPath is given
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| localPath | `string` |  localPath for the imageAttachment whose thumbnail needs to be generated: |
-| callback | `function` |
+| localPath | `string` |  localPath for the imageAttachment whose thumbnail needs to be generated |
+| callback | `function` |  with below parameters:*   @param {string} thumbnail the base64 value*   @param {string} error message in case of error, null otherwise#### Sample Usage``` KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) { if (error == null && thumbnail != null) {```//use the thumbnail data and update required dom```} }); ``` |
 
 **Returns:** `void`
 
@@ -256,24 +228,13 @@ ___
 
 ▸ **getCurrentDeviceLocationAsync**(callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
- KASClient.App.getCurrentDeviceLocationAsync(function (location, error){
-     if(error != null) {
-          return;
-     }
-     //use location(KASLocation) as the device location
- });
-```
-
 Gets the current device location
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} location can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:*   @param {string} location can be null in case of error*   @param {string} error message in case of error, null otherwise#### Sample Usage``` KASClient.App.getCurrentDeviceLocationAsync(function (location, error){ if(error != null) {```return;```} //use location(KASLocation) as the device location }); ``` |
 
 **Returns:** `void`
 
@@ -385,24 +346,13 @@ ___
 
 ▸ **getLocalizedStringsAsync**(callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
-KASClient.App.getLocalizedStringsAsync(function (strings, error) {
-    if (error != null) {
-        return;
-    }
-    //use the localized strings array
-});
-```
-
 Gets the localized strings' dictionary based on current app locale. Strings must be provided inside the package with names like: strings\_en.json, strings\_hi.json, etc.
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {JSON} strings can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:*   @param {JSON} strings can be null in case of error*   @param {string} error message in case of error, null otherwise#### Sample Usage``` KASClient.App.getLocalizedStringsAsync(function (strings, error) { if (error != null) {```return;```} //use the localized strings array }); ``` |
 
 **Returns:** `void`
 
@@ -414,21 +364,6 @@ ___
 
 ▸ **getLocationAddressAsync**(params: *[KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md)*, callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
-var params = new KASClient.KASLocationAddressParams();
-params.latitude =  <latitude value>;
-params.longitude =  <longitude value>;
-KASClient.App.getLocationAddressAsync(params,
-    function (address, error) {
-        if (!error) {
-           // do something with address - a JSON returned by google structure can be found at https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses
-        }
-    }
-});
-```
-
 Get address string for specified coordinates
 
 **Parameters:**
@@ -436,7 +371,7 @@ Get address string for specified coordinates
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | params | [KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md) |  KASLocationAddressParams |
-| callback | `function` |  callback on address fetch |
+| callback | `function` |  callback on address fetch#### Sample Usage``` var params = new KASClient.KASLocationAddressParams(); params.latitude = <latitude value>; params.longitude = <longitude value>; KASClient.App.getLocationAddressAsync(params, function (address, error) { if (!error) { // do something with address - a JSON returned by google structure can be found at [https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses](https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses) } } }); ``` |
 
 **Returns:** `void`
 
@@ -448,17 +383,6 @@ ___
 
 ▸ **getMapImageAsBase64Async**(params: *[KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)*, callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
-KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) {
-        if (!error) {
-            blobString = "data:image/jpeg;base64," + attachmentString;
-            //use blobString as base64 data
-        }
- });
-```
-
 Download the base 64 image of map for the coordinates specified
 
 **Parameters:**
@@ -466,7 +390,7 @@ Download the base 64 image of map for the coordinates specified
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | params | [KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md) |  KASLocationStaticMapImageParams |
-| callback | `function` |  callback on download completion |
+| callback | `function` |  callback on download completion*   #### Sample Usage``` KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) {```if (!error) {blobString &#x3D; &quot;data:image/jpeg;base64,&quot; + attachmentString;//use blobString as base64 data}```}); ``` |
 
 **Returns:** `void`
 
@@ -496,24 +420,13 @@ ___
 
 ▸ **getPackageCustomSettingsAsync**(callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
-KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
-      if (error != null) {
-          return;
-      }
-     //settings contains the settings json defined at the package level
-});
-```
-
 Gets all the customization settings for a package (Used in case of Type-4 packages and their base).
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {JSON} settings can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:*   @param {JSON} settings can be null in case of error*   @param {string} error message in case of error, null otherwise#### Sample Usage``` KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {```if (error !&#x3D; null) {return;}```//settings contains the settings json defined at the package level }); ``` |
 
 **Returns:** `void`
 
@@ -524,20 +437,6 @@ ___
 ###  getUsersDetailsAsync
 
 ▸ **getUsersDetailsAsync**(userIds: *`string`[]*, callback: *`function`*): `void`
-
-#### Sample Usage
-
-```
-var userIds = ["<uid1>", "<uid2>",...];
-KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
-      if (error != null) {
-          return;
-      }
-      var userInfo1 = users[<uid1>];
-      var userInfo2 = users[<uid2>];
-      ...
-  });
-```
 
 Gets users' details (name, pic, phone number, etc.) against their ids
 
@@ -550,6 +449,18 @@ Gets users' details (name, pic, phone number, etc.) against their ids
 
 **Returns:** `void`
 JSON of user info
+#### Sample Usage
+```
+var userIds = ["<uid1>", "<uid2>",...];
+KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
+      if (error != null) {
+          return;
+      }
+      var userInfo1 = users[<uid1>];
+      var userInfo2 = users[<uid2>];
+      ...
+  });
+```
 
 ___
 
@@ -681,26 +592,6 @@ ___
 
 ▸ **openAttachmentImmersiveView**(attachmentObj: *[KASAttachment](../classes/kasclient.kasattachment.md)*): `void`
 
-#### Sample Usage
-
-```
-Attachment should be available locally - so download it before opening - if already downloaded simply call the API
-var attachmentJson = {
-  ty: 3,
-  afn: "131490_Desert (1) (4).pdf",
-  lpu: "",
-  spu: '<server path>',
-  asb: 846941,
-  id:''
-};
-var attachment = KASClient.KASAttachment.fromJSON(attachmentJson);
-KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){
-     if (!error) {
-        KASClient.App.openAttachmentImmersiveView(downloadedAttachment);
-     }
-});
-```
-
 Open attachment in Immersive view.
 
 **Parameters:**
@@ -718,26 +609,6 @@ ___
 ###  openImmersiveViewForAttachmentList
 
 ▸ **openImmersiveViewForAttachmentList**(attachmentList: *[KASAttachment](../classes/kasclient.kasattachment.md)[]*, atIndex?: *`number`*): `void`
-
-#### Sample Usage
-
-```
-Attachment should be available locally - so download it before opening - if already downloaded simply call the API
-var attachmentJson = {
-  ty: 3,
-  afn: "131490_Desert (1) (4).pdf",
-  lpu: "",
-  spu: '<server path>',
-  asb: 846941,
-  id:''
-};
-var attachment = KASClient.KASAttachment.fromJSON(attachmentJson);
-KASClient.App.downloadAttachmentAsync(attachment, function(downloadedAttachment, error){
-     if (!error) {
-        KASClient.App.openImmersiveViewForAttachmentList([downloadedAttachment], 0);
-     }
-});
-```
 
 Open attachment in Immersive view.
 
@@ -758,16 +629,6 @@ ___
 
 ▸ **performAuthenticationAsync**(authenticationType?: *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
-KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) {
-      if (!isSuccessful) {
-          console.log(resonCode);
-      }
-});
-```
-
 If authentication type is allowed, this API performs the authentication and returns success/false status else it returns an error string with reason why authentication is not possible.
 
 **Parameters:**
@@ -775,7 +636,7 @@ If authentication type is allowed, this API performs the authentication and retu
 | Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | `Default value` authenticationType | [KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md) |  KASAuthenticationType.None |  type of authentication. |
-| callback | `function` | - |  with below parameters:*   @param {boolean} isSuccessful true if the form is not yet expired*   @param {string} reasonCode reason code in case of error, null otherwise |
+| callback | `function` | - |  with below parameters:*   @param {boolean} isSuccessful true if the form is not yet expired*   @param {string} reasonCode reason code in case of error, null otherwise#### Sample Usage``` KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) {```if (!isSuccessful) {console.log(resonCode);}```}); ``` |
 
 **Returns:** `void`
 
@@ -787,18 +648,6 @@ ___
 
 ▸ **performHTTPRequest**(url: *`string`*, parametersJSON: *`string`*, callback: *`function`*): `void`
 
-#### Sample Usage
-
-```
-var url = "<url>";
-var parametersJson = JSON.stringify({ "method" : "GET" });
-KASClient.App.performHTTPRequest(url, parametersJson, function (response, error) {
-      if (!error) {
-          //use the response
-      }
-});
-```
-
 performs an http request and returns the response as specified below:
 
 **Parameters:**
@@ -806,8 +655,8 @@ performs an http request and returns the response as specified below:
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | url | `string` |  base url to open |
-| parametersJSON | `string` |  jsonstring containing parameters can be given as null. If given as null a request to the url provided above will be made. Parameters include request header,query parameters(default blank), request method(default GET) and request body(The body to be posted if request method is POST. default blank.) The keys for parameters are: a.) "method" : request method. example: "POST". defaults to "GET". b.) "requestBody": body of request in case of "POST". defaults to blank. c.) "requestHeaders": headers to be sent with request. should be a json with key as request header and value as the desired value. defaults to blank. d.) "queryParameters": query parameters. will be encoded in url. should be a json with key as parameter name and value as its value. defaults to blank. e.) "requestResourcePath": will be appended to base url. default is blank. |
-| callback | `function` |  callback with below parameters:*   @param {string} response response body returned```This could have two possible config:If request was a success it returns jsonstring with following keys:a.) &quot;HttpResponseCode&quot; : The response code of request.b.) &quot;HttpResponseHeader&quot;: The response HTTP headersc.) &quot;HttpResponseBody&quot;: The response body returned for request.If there was a Network error then it returns:a.) &quot;HttpErrorCode&quot;: The error codeb.) &quot;HttpErrorMessage&quot;: The error message eg. Malformed URL, Cannot connect to host etc.```*   @param {string} error error if any : This includes the standard error code defined in KASClient documentation. |
+| parametersJSON | `string` |  jsonstring containing parameters can be given as null. ``` If given as null a request to the url provided above will be made. Parameters include request header,query parameters(default blank), request method(default GET) and request body(The body to be posted if request method is POST. default blank.) The keys for parameters are: a.) "method" : request method. example: "POST". defaults to "GET". b.) "requestBody": body of request in case of "POST". defaults to blank. c.) "requestHeaders": headers to be sent with request. should be a json with key as request header and value as the desired value. defaults to blank. d.) "queryParameters": query parameters. will be encoded in url. should be a json with key as parameter name and value as its value. defaults to blank. e.) "requestResourcePath": will be appended to base url. default is blank. ``` |
+| callback | `function` |  callback with below parameters:*   @param {string} response response body returned ``````This could have two possible config:If request was a success it returns jsonstring with following keys:a.) &quot;HttpResponseCode&quot; : The response code of request.b.) &quot;HttpResponseHeader&quot;: The response HTTP headersc.) &quot;HttpResponseBody&quot;: The response body returned for request.If there was a Network error then it returns:a.) &quot;HttpErrorCode&quot;: The error codeb.) &quot;HttpErrorMessage&quot;: The error message eg. Malformed URL, Cannot connect to host etc.``````*   @param {string} error error if any : This includes the standard error code defined in KASClient documentation.#### Sample Usage``` var url = "<url>"; var parametersJson = JSON.stringify({ "method" : "GET" }); KASClient.App.performHTTPRequest(url, parametersJson, function (response, error) {```if (!error) {//use the response}```}); ``` |
 
 **Returns:** `void`
 
@@ -874,23 +723,13 @@ ___
 
 ▸ **setNativeToolbarProperties**(properties: *[KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md)*): `void`
 
-#### Sample Usage
-
-```
-var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties();
-nativeToolbarProps.icon = "<image>"
-nativeToolbarProps.title = "<title>";
-nativeToolbarProps.subtitle = "<subtitle>";
-KASClient.App.setNativeToolbarProperties(nativeToolbarProps);
-```
-
 Sets few properties when using native toolbar
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| properties | [KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md) |   |
+| properties | [KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md) |  #### Sample Usage``` var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties(); nativeToolbarProps.icon = "<image>" nativeToolbarProps.title = "<title>"; nativeToolbarProps.subtitle = "<subtitle>"; KASClient.App.setNativeToolbarProperties(nativeToolbarProps); ``` |
 
 **Returns:** `void`
 
@@ -920,35 +759,13 @@ ___
 
 Displays an attachment picker in the native layer
 
-#### Sample Usage
-
-```
-var attachmentsTypesToShow = [];
-attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image);
-attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document);
-attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio);
-KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) {
-      if (error != null) {
-                      return;
-      }
-      if (selectedAttachments && selectedAttachments.length > 0) {
-          for (var i = 0; i < selectedAttachments.length; i++) {
-              if (selectedAttachments[i].type == KASClient.KASAttachmentType.Image) {
-                    this.imageAttachmentList.push(selectedAttachments[i]);
-              }
-              ...
-           }...
-      }
-});
-```
-
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |  array of supported attachment types for the picker. |
 | props | `JSON` |  additional props to configure the picker |
-| callback | `function` |  callback with list of selected attachments |
+| callback | `function` |  callback with list of selected attachments#### Sample Usage``` var attachmentsTypesToShow = \[\]; attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio); KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) { if (error != null) { return; } if (selectedAttachments && selectedAttachments.length > 0) { for (var i = 0; i < selectedAttachments.length; i++) { if (selectedAttachments\[i\].type == KASClient.KASAttachmentType.Image) { this.imageAttachmentList.push(selectedAttachments\[i\]); } ... }... } }); ``` |
 
 **Returns:** `void`
 
@@ -980,21 +797,19 @@ ___
 
 Shows a native contact picker, and returns an array of all the selected users' details
 
-#### Signature
+**Parameters:**
 
-```
-@param {string} title of Contact Picker
-@param {string[]} selectedMutableUser array of selected userIds
-@param {string[]} selectedImmutableUser array of fixed selected userIds
-@param {boolean} isSingleSelection single selection in Contact Picker
-@param {Callback} callback with below parameters:
-* @param {KASUser[]} selectedUsers (array of user details) can be null in case of error
-* @param {string} error message in case of error, null otherwise
-@return Array of all the selected users' details (Array of JSON)
-```
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| title | `string` |  of Contact Picker |
+| selectedMutableUser | `string`[] |  array of selected userIds |
+| selectedImmutableUser | `string`[] |  array of fixed selected userIds |
+| isSingleSelection | `boolean` |  single selection in Contact Picker |
+| callback | `function` |  with below parameters:*   @param {KASUser\[\]} selectedUsers (array of user details) can be null in case of error*   @param {string} error message in case of error, null otherwise |
 
+**Returns:** `void`
+Array of all the selected users' details (Array of JSON)
 #### Sample Usage
-
 ```
 var alreadySelectedUserIds = [];
 KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [], true, function (selectedUsers, error) {
@@ -1004,18 +819,6 @@ KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [
     }
 });
 ```
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| title | `string` |
-| selectedMutableUser | `string`[] |
-| selectedImmutableUser | `string`[] |
-| isSingleSelection | `boolean` |
-| callback | `function` |
-
-**Returns:** `void`
 
 ___
 
@@ -1061,6 +864,25 @@ Shows Image in Immersive view.
 | `Default value` currentImageIndex | `number` | 0 |
 
 **Returns:** `void`
+
+___
+
+<a id="showimagepickerasync"></a>
+
+###  showImagePickerAsync
+
+▸ **showImagePickerAsync**(callback: *`function`*): `void`
+
+Shows a native image picker, and returns the selected image path
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below parameters:*   @param {string} selectedImagePath can be null in case of error*   @param {string} error message in case of error, null otherwise |
+
+**Returns:** `void`
+Selected image location
 
 ___
 
@@ -1170,7 +992,7 @@ Shows profile page/details of a user
 | ------ | ------ | ------ |
 | userId | `string` |  of the user whose profile is to be shown |
 | isMiniProfile | `boolean` |  whether to show mini-profile first |
-| callback | `function` |
+| callback | `function` |  with below parameters:*   *   *   @param {boolean} success*   *   *   @param {string} error |
 
 **Returns:** `void`
 
@@ -1189,7 +1011,7 @@ Starts chat with a user
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | userId | `string` |  of the user |
-| callback | `function` |
+| callback | `function` |  with below parameters:*   *   *   @param {boolean} success*   *   *   @param {string} error |
 
 **Returns:** `void`
 
