@@ -526,7 +526,7 @@ Gets users' details (name, pic, phone number, etc.) against their ids
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | userIds | `string`[] |  array of user ids |
-| callback | `function` |  with below parameters:*   @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters: ```*   @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error*   @param {string} error message in case of error, null otherwise ``` |
 
 **Returns:** `void`
 
@@ -887,35 +887,33 @@ ___
 
 Displays an attachment picker in the native layer
 
-*   ```
-    var attachmentsTypesToShow = [];
-    attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image);
-    attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document);
-    attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio);
-    KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) {
-        if (error != null) {
-                        return;
-        }
-        if (selectedAttachments && selectedAttachments.length > 0) {
-            for (var i = 0; i < selectedAttachments.length; i++) {
-                if (selectedAttachments[i].type == KASClient.KASAttachmentType.Image) {
-                      this.imageAttachmentList.push(selectedAttachments[i]);
-                }
-                ...
-             }...
-        }
-    });
-    ```
-    
-    @param supportedTypes array of supported attachment types for the picker. @param props additional props to configure the picker @param callback callback with list of selected attachments
+```
+var attachmentsTypesToShow = [];
+attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image);
+attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document);
+attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio);
+KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) {
+      if (error != null) {
+                      return;
+      }
+      if (selectedAttachments && selectedAttachments.length > 0) {
+          for (var i = 0; i < selectedAttachments.length; i++) {
+              if (selectedAttachments[i].type == KASClient.KASAttachmentType.Image) {
+                    this.imageAttachmentList.push(selectedAttachments[i]);
+              }
+              ...
+           }...
+      }
+});
+```
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |
-| props | `JSON` |
-| callback | `function` |
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |  array of supported attachment types for the picker. |
+| props | `JSON` |  additional props to configure the picker |
+| callback | `function` |  callback with list of selected attachments |
 
 **Returns:** `void`
 
