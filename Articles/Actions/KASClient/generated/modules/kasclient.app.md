@@ -526,7 +526,7 @@ Gets users' details (name, pic, phone number, etc.) against their ids
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | userIds | `string`[] |  array of user ids |
-| callback | `function` |  with below parameters: ```*   @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error*   @param {string} error message in case of error, null otherwise ``` |
+| callback | `function` |  with below parameters:*   @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -886,6 +886,8 @@ ___
 ▸ **showAttachmentPickerAsync**(supportedTypes: *[KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[]*, props: *`JSON`*, callback: *`function`*): `void`
 
 Displays an attachment picker in the native layer
+
+####Example
 
 ```
 var attachmentsTypesToShow = [];
