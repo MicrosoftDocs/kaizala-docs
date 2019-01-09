@@ -980,19 +980,21 @@ ___
 
 Shows a native contact picker, and returns an array of all the selected users' details
 
-**Parameters:**
+#### Signature
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| title | `string` |  of Contact Picker |
-| selectedMutableUser | `string`[] |  array of selected userIds |
-| selectedImmutableUser | `string`[] |  array of fixed selected userIds |
-| isSingleSelection | `boolean` |  single selection in Contact Picker |
-| callback | `function` |  with below parameters:*   @param {KASUser\[\]} selectedUsers (array of user details) can be null in case of error*   @param {string} error message in case of error, null otherwise |
+```
+@param {string} title of Contact Picker
+@param {string[]} selectedMutableUser array of selected userIds
+@param {string[]} selectedImmutableUser array of fixed selected userIds
+@param {boolean} isSingleSelection single selection in Contact Picker
+@param {Callback} callback with below parameters:
+* @param {KASUser[]} selectedUsers (array of user details) can be null in case of error
+* @param {string} error message in case of error, null otherwise
+@return Array of all the selected users' details (Array of JSON)
+```
 
-**Returns:** `void`
-Array of all the selected users' details (Array of JSON)
 #### Sample Usage
+
 ```
 var alreadySelectedUserIds = [];
 KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [], true, function (selectedUsers, error) {
@@ -1002,6 +1004,18 @@ KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [
     }
 });
 ```
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| title | `string` |
+| selectedMutableUser | `string`[] |
+| selectedImmutableUser | `string`[] |
+| isSingleSelection | `boolean` |
+| callback | `function` |
+
+**Returns:** `void`
 
 ___
 
