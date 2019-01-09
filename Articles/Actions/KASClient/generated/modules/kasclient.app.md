@@ -66,6 +66,8 @@
 
 ▸ **cancelAttachmentDownloadAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
+Cancel a download operation queued for an attachment
+
 #### Sample Usage
 
 ```
@@ -77,8 +79,6 @@
       KASClient.App.cancelAttachmentDownloadAsync(attachment);
  }
 ```
-
-Cancel a download operation queued for an attachment
 
 **Parameters:**
 
@@ -109,14 +109,28 @@ ___
 
 ▸ **downloadAttachmentAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-Download the attachment specified
+Download the attachment specified \*
+
+#### Sample Usage
+
+```
+var imageAttachment =  new KASClient.KASAttachment();
+imageAttachment.type = KASClient.KASAttachmentType.Image;
+imageAttachment.serverPath = "<server path>";
+imageAttachment.fileName = "<file name>";
+KASClient.App.downloadAttachmentAsync(imageAttachment, function(downloadedAttachment, error){
+     if (!error) {
+        console.log(downloadedAttachment); //KASAttachment
+     }
+});
+```
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |  attachment with a valid server path to download |
-| callback | `function` |  callback on download completion#### Sample Usage``` var imageAttachment = new KASClient.KASAttachment(); imageAttachment.type = KASClient.KASAttachmentType.Image; imageAttachment.serverPath = "<server path>"; imageAttachment.fileName = "<file name>"; KASClient.App.downloadAttachmentAsync(imageAttachment, function(downloadedAttachment, error){ if (!error) { console.log(downloadedAttachment); //KASAttachment } }); ``` |
+| callback | `function` |  callback on download completion |
 
 **Returns:** `void`
 
@@ -130,12 +144,22 @@ ___
 
 Generates Base64 thumbnail for an image whose localPath is given
 
+#### Sample Usage
+
+```
+KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) {
+    if (error == null && thumbnail != null) {
+       //use the thumbnail data and update required dom
+     }
+});
+```
+
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | localPath | `string` |  localPath for the imageAttachment whose thumbnail needs to be generated |
-| callback | `function` |  with below parameters:*   @param {string} thumbnail the base64 value*   @param {string} error message in case of error, null otherwise#### Sample Usage``` KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) { if (error == null && thumbnail != null) {```//use the thumbnail data and update required dom```} }); ``` |
+| callback | `function` |  with below parameters:*   @param {string} thumbnail the base64 value*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -147,6 +171,8 @@ ___
 
 ▸ **generateUUIDAsync**(callback: *`function`*): `void`
 
+Gets the new UUID
+
 #### Sample Usage
 
 ```
@@ -155,8 +181,6 @@ ___
     ...
  });
 ```
-
-Gets the new UUID
 
 **Parameters:**
 
@@ -230,11 +254,22 @@ ___
 
 Gets the current device location
 
+#### Sample Usage
+
+```
+ KASClient.App.getCurrentDeviceLocationAsync(function (location, error){
+     if(error != null) {
+          return;
+     }
+     //use location(KASLocation) as the device location
+ });
+```
+
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} location can be null in case of error*   @param {string} error message in case of error, null otherwise#### Sample Usage``` KASClient.App.getCurrentDeviceLocationAsync(function (location, error){ if(error != null) {```return;```} //use location(KASLocation) as the device location }); ``` |
+| callback | `function` |  with below parameters:*   @param {string} location can be null in case of error*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -348,11 +383,20 @@ ___
 
 Gets the localized strings' dictionary based on current app locale. Strings must be provided inside the package with names like: strings\_en.json, strings\_hi.json, etc.
 
+```
+KASClient.App.getLocalizedStringsAsync(function (strings, error) {
+    if (error != null) {
+        return;
+    }
+    //use the localized strings array
+});
+```
+
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {JSON} strings can be null in case of error*   @param {string} error message in case of error, null otherwise#### Sample Usage``` KASClient.App.getLocalizedStringsAsync(function (strings, error) { if (error != null) {```return;```} //use the localized strings array }); ``` |
+| callback | `function` |  with below parameters:*   @param {JSON} strings can be null in case of error*   @param {string} error message in case of error, null otherwise#### Sample Usage |
 
 **Returns:** `void`
 
@@ -366,12 +410,27 @@ ___
 
 Get address string for specified coordinates
 
+#### Sample Usage
+
+```
+var params = new KASClient.KASLocationAddressParams();
+params.latitude =  <latitude value>;
+params.longitude =  <longitude value>;
+KASClient.App.getLocationAddressAsync(params,
+    function (address, error) {
+        if (!error) {
+           // do something with address - a JSON returned by google structure can be found at https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses
+        }
+    }
+});
+```
+
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | params | [KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md) |  KASLocationAddressParams |
-| callback | `function` |  callback on address fetch#### Sample Usage``` var params = new KASClient.KASLocationAddressParams(); params.latitude = <latitude value>; params.longitude = <longitude value>; KASClient.App.getLocationAddressAsync(params, function (address, error) { if (!error) { // do something with address - a JSON returned by google structure can be found at [https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses](https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses) } } }); ``` |
+| callback | `function` |  callback on address fetch |
 
 **Returns:** `void`
 
@@ -383,14 +442,25 @@ ___
 
 ▸ **getMapImageAsBase64Async**(params: *[KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)*, callback: *`function`*): `void`
 
-Download the base 64 image of map for the coordinates specified
+Download the base 64 image of map for the coordinates specified \*
+
+#### Sample Usage
+
+```
+KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) {
+        if (!error) {
+            blobString = "data:image/jpeg;base64," + attachmentString;
+            //use blobString as base64 data
+        }
+ });
+```
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | params | [KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md) |  KASLocationStaticMapImageParams |
-| callback | `function` |  callback on download completion<br><br>#### Sample Usage ``` KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) { if (!error) { blobString = "data:image/jpeg;base64," + attachmentString; //use blobString as base64 data } }); ``` |
+| callback | `function` |  callback on download completion |
 
 **Returns:** `void`
 
@@ -422,11 +492,22 @@ ___
 
 Gets all the customization settings for a package (Used in case of Type-4 packages and their base).
 
+#### Sample Usage
+
+```
+KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
+      if (error != null) {
+          return;
+      }
+     //settings contains the settings json defined at the package level
+});
+```
+
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {JSON} settings can be null in case of error*   @param {string} error message in case of error, null otherwise#### Sample Usage``` KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {```if (error !&#x3D; null) {return;}```//settings contains the settings json defined at the package level }); ``` |
+| callback | `function` |  with below parameters:*   @param {JSON} settings can be null in case of error*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -482,6 +563,8 @@ ___
 
 ▸ **isAttachmentDownloadingAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
+Download the attachment specified
+
 #### Sample Usage
 
 ```
@@ -500,8 +583,6 @@ KASClient.App.isAttachmentDownloadingAsync(attachment, function(isAttachmentDown
      }
 });
 ```
-
-Download the attachment specified
 
 **Parameters:**
 
@@ -631,12 +712,22 @@ ___
 
 If authentication type is allowed, this API performs the authentication and returns success/false status else it returns an error string with reason why authentication is not possible.
 
+#### Sample Usage
+
+```
+KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) {
+      if (!isSuccessful) {
+          console.log(resonCode);
+      }
+});
+```
+
 **Parameters:**
 
 | Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | `Default value` authenticationType | [KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md) |  KASAuthenticationType.None |  type of authentication. |
-| callback | `function` | - |  with below parameters:*   @param {boolean} isSuccessful true if the form is not yet expired*   @param {string} reasonCode reason code in case of error, null otherwise<br><br>#### Sample Usage ``` KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) {```if (!isSuccessful) {console.log(resonCode);}```}); ``` |
+| callback | `function` | - |  with below parameters:*   @param {boolean} isSuccessful true if the form is not yet expired*   @param {string} reasonCode reason code in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -650,13 +741,25 @@ ___
 
 performs an http request and returns the response as specified below:
 
+#### Sample Usage
+
+```
+var url = "<url>";
+var parametersJson = JSON.stringify({ "method" : "GET" });
+KASClient.App.performHTTPRequest(url, parametersJson, function (response, error) {
+      if (!error) {
+          //use the response
+      }
+});
+```
+
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | url | `string` |  base url to open |
 | parametersJSON | `string` |  jsonstring containing parameters can be given as null. ``` If given as null a request to the url provided above will be made. Parameters include request header,query parameters(default blank), request method(default GET) and request body(The body to be posted if request method is POST. default blank.) The keys for parameters are: a.) "method" : request method. example: "POST". defaults to "GET". b.) "requestBody": body of request in case of "POST". defaults to blank. c.) "requestHeaders": headers to be sent with request. should be a json with key as request header and value as the desired value. defaults to blank. d.) "queryParameters": query parameters. will be encoded in url. should be a json with key as parameter name and value as its value. defaults to blank. e.) "requestResourcePath": will be appended to base url. default is blank. ``` |
-| callback | `function` |  callback with below parameters:*   @param {string} response response body returned ``````This could have two possible config:If request was a success it returns jsonstring with following keys:a.) \&quot;HttpResponseCode&quot; : The response code of request.b.) &quot;HttpResponseHeader&quot;: The response HTTP headersc.) &quot;HttpResponseBody&quot;: The response body returned for request.If there was a Network error then it returns:a.) &quot;HttpErrorCode&quot;: The error codeb.) &quot;HttpErrorMessage&quot;: The error message eg. Malformed URL, Cannot connect to host etc.``````*   @param {string} error error if any : This includes the standard error code defined in KASClient documentation.#### Sample Usage``` var url = "<url>"; var parametersJson = JSON.stringify({ "method" : "GET" }); KASClient.App.performHTTPRequest(url, parametersJson, function (response, error) {```if (!error) {//use the response}```}); ``` |
+| callback | `function` |  callback with below parameters:*   @param {string} response response body returned ``````This could have two possible config:If request was a success it returns jsonstring with following keys:a.) \&quot;HttpResponseCode&quot; : The response code of request.b.) &quot;HttpResponseHeader&quot;: The response HTTP headersc.) &quot;HttpResponseBody&quot;: The response body returned for request.If there was a Network error then it returns:a.) &quot;HttpErrorCode&quot;: The error codeb.) &quot;HttpErrorMessage&quot;: The error message eg. Malformed URL, Cannot connect to host etc.``````*   @param {string} error error if any : This includes the standard error code defined in KASClient documentation. |
 
 **Returns:** `void`
 
@@ -759,13 +862,35 @@ ___
 
 Displays an attachment picker in the native layer
 
+#### Sample Usage
+
+```
+var attachmentsTypesToShow = [];
+attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image);
+attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document);
+attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio);
+KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) {
+      if (error != null) {
+                      return;
+      }
+      if (selectedAttachments && selectedAttachments.length > 0) {
+          for (var i = 0; i < selectedAttachments.length; i++) {
+              if (selectedAttachments[i].type == KASClient.KASAttachmentType.Image) {
+                    this.imageAttachmentList.push(selectedAttachments[i]);
+              }
+              ...
+           }...
+      }
+});
+```
+
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |  array of supported attachment types for the picker. |
 | props | `JSON` |  additional props to configure the picker |
-| callback | `function` |  with below parameters*   *   *   @param {KASAttachment\[\]} selectedAttachments string of selected attachments*   *   *   @params {string} error<br><br>#### Sample Usage ``` var attachmentsTypesToShow = \[\]; attachmentsTypesToShow.push(KASClient.KASAttachmentType.Image); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Document); attachmentsTypesToShow.push(KASClient.KASAttachmentType.Audio); KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (selectedAttachments, error) { if (error != null) {```return;```} if (selectedAttachments && selectedAttachments.length > 0) {```for (var i &#x3D; 0; i &lt; selectedAttachments.length; i++) {if (selectedAttachments[i].type &#x3D;&#x3D; KASClient.KASAttachmentType.Image) {this.imageAttachmentList.push(selectedAttachments[i]);}...}...```} }); ``` |
+| callback | `function` |  with below parameters*   *   *   @param {KASAttachment\[\]} selectedAttachments string of selected attachments*   *   *   @params {string} error |
 
 **Returns:** `void`
 
@@ -847,14 +972,14 @@ ___
 
 ▸ **showImageImmersiveView**(urls?: *`string`[]*, currentImageIndex?: *`number`*): `void`
 
+Shows Image in Immersive view.
+
 #### Sample Usage
 
 ```
 var urlArray = ["path1", "path2"];
 KASClient.App.showImageImmersiveView(urlArray);
 ```
-
-Shows Image in Immersive view.
 
 **Parameters:**
 
@@ -927,8 +1052,6 @@ ___
 ###  showPlacePickerAsync
 
 ▸ **showPlacePickerAsync**(callback: *`function`*): `void`
-
-#### Sample Usage
 
 Shows a native place picker, and returns the selected place (lt, lg, n)
 
