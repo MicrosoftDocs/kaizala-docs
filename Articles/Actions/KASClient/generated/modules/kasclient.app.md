@@ -65,6 +65,8 @@
 
 ▸ **cancelAttachmentDownloadAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
+#### Sample Usage
+
 ```
  var attachmentsList = JSON.parse(form.properties[0].value);
  for (var i = 0; i < attachmentsList.length; i++)
@@ -106,6 +108,8 @@ ___
 
 ▸ **downloadAttachmentAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
+#### Sample Usage
+
 ```
 var attachmentJson = {
   ty: 3,
@@ -142,6 +146,8 @@ ___
 
 ▸ **generateBase64ThumbnailAsync**(localPath: *`string`*, callback: *`function`*): `void`
 
+#### Sample Usage
+
 ```
 KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) {
     if (error == null && thumbnail != null) {
@@ -168,6 +174,8 @@ ___
 ###  generateUUIDAsync
 
 ▸ **generateUUIDAsync**(callback: *`function`*): `void`
+
+#### Sample Usage
 
 ```
  KASClient.App.generateUUIDAsync(function (uuid, error) {
@@ -247,6 +255,8 @@ ___
 ###  getCurrentDeviceLocationAsync
 
 ▸ **getCurrentDeviceLocationAsync**(callback: *`function`*): `void`
+
+#### Sample Usage
 
 ```
  KASClient.App.getCurrentDeviceLocationAsync(function (location, error){
@@ -375,6 +385,8 @@ ___
 
 ▸ **getLocalizedStringsAsync**(callback: *`function`*): `void`
 
+#### Sample Usage
+
 ```
 KASClient.App.getLocalizedStringsAsync(function (strings, error) {
     if (error != null) {
@@ -401,6 +413,8 @@ ___
 ###  getLocationAddressAsync
 
 ▸ **getLocationAddressAsync**(params: *[KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md)*, callback: *`function`*): `void`
+
+#### Sample Usage
 
 ```
 var params = new KASClient.KASLocationAddressParams();
@@ -433,6 +447,8 @@ ___
 ###  getMapImageAsBase64Async
 
 ▸ **getMapImageAsBase64Async**(params: *[KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)*, callback: *`function`*): `void`
+
+#### Sample Usage
 
 ```
 KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) {
@@ -480,6 +496,8 @@ ___
 
 ▸ **getPackageCustomSettingsAsync**(callback: *`function`*): `void`
 
+#### Sample Usage
+
 ```
 KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
       if (error != null) {
@@ -507,6 +525,8 @@ ___
 
 ▸ **getUsersDetailsAsync**(userIds: *`string`[]*, callback: *`function`*): `void`
 
+#### Sample Usage
+
 ```
 var userIds = ["<uid1>", "<uid2>",...];
 KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
@@ -529,6 +549,7 @@ Gets users' details (name, pic, phone number, etc.) against their ids
 | callback | `function` |  with below parameters:*   @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
+JSON of user info
 
 ___
 
@@ -549,6 +570,8 @@ ___
 ###  isAttachmentDownloadingAsync
 
 ▸ **isAttachmentDownloadingAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
+
+#### Sample Usage
 
 ```
 var attachmentJson = {
@@ -658,6 +681,8 @@ ___
 
 ▸ **openAttachmentImmersiveView**(attachmentObj: *[KASAttachment](../classes/kasclient.kasattachment.md)*): `void`
 
+#### Sample Usage
+
 ```
 Attachment should be available locally - so download it before opening - if already downloaded simply call the API
 var attachmentJson = {
@@ -693,6 +718,8 @@ ___
 ###  openImmersiveViewForAttachmentList
 
 ▸ **openImmersiveViewForAttachmentList**(attachmentList: *[KASAttachment](../classes/kasclient.kasattachment.md)[]*, atIndex?: *`number`*): `void`
+
+#### Sample Usage
 
 ```
 Attachment should be available locally - so download it before opening - if already downloaded simply call the API
@@ -731,6 +758,8 @@ ___
 
 ▸ **performAuthenticationAsync**(authenticationType?: *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, callback: *`function`*): `void`
 
+#### Sample Usage
+
 ```
 KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) {
       if (!isSuccessful) {
@@ -757,6 +786,8 @@ ___
 ###  performHTTPRequest
 
 ▸ **performHTTPRequest**(url: *`string`*, parametersJSON: *`string`*, callback: *`function`*): `void`
+
+#### Sample Usage
 
 ```
 var url = "<url>";
@@ -843,6 +874,8 @@ ___
 
 ▸ **setNativeToolbarProperties**(properties: *[KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md)*): `void`
 
+#### Sample Usage
+
 ```
 var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties();
 nativeToolbarProps.icon = "<image>"
@@ -887,7 +920,7 @@ ___
 
 Displays an attachment picker in the native layer
 
-#### Example
+#### Sample Usage
 
 ```
 var attachmentsTypesToShow = [];
@@ -945,16 +978,6 @@ ___
 
 ▸ **showContactPickerAsync**(title: *`string`*, selectedMutableUser: *`string`[]*, selectedImmutableUser: *`string`[]*, isSingleSelection: *`boolean`*, callback: *`function`*): `void`
 
-```
-var alreadySelectedUserIds = [];
-KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [], true, function (selectedUsers, error) {
-    if (error == null && selectedUsers != null && selectedUsers.length > 0) {
-        var selectedUser = selectedUsers[0]; //KASUser
-        console.log(selectedUser.id);
-    }
-});
-```
-
 Shows a native contact picker, and returns an array of all the selected users' details
 
 **Parameters:**
@@ -968,6 +991,17 @@ Shows a native contact picker, and returns an array of all the selected users' d
 | callback | `function` |  with below parameters:*   @param {KASUser\[\]} selectedUsers (array of user details) can be null in case of error*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
+Array of all the selected users' details (Array of JSON)
+#### Sample Usage
+```
+var alreadySelectedUserIds = [];
+KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [], true, function (selectedUsers, error) {
+    if (error == null && selectedUsers != null && selectedUsers.length > 0) {
+        var selectedUser = selectedUsers[0]; //KASUser
+        console.log(selectedUser.id);
+    }
+});
+```
 
 ___
 
@@ -995,6 +1029,8 @@ ___
 ###  showImageImmersiveView
 
 ▸ **showImageImmersiveView**(urls?: *`string`[]*, currentImageIndex?: *`number`*): `void`
+
+#### Sample Usage
 
 ```
 var urlArray = ["path1", "path2"];
@@ -1055,6 +1091,8 @@ ___
 ###  showPlacePickerAsync
 
 ▸ **showPlacePickerAsync**(callback: *`function`*): `void`
+
+#### Sample Usage
 
 Shows a native place picker, and returns the selected place (lt, lg, n)
 
