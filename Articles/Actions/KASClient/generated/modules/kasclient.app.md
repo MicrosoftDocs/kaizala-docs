@@ -4,13 +4,8 @@
 
 ## Index
 
-### Variables
-
-* [hardwareBackPressCallback](kasclient.app.md#hardwarebackpresscallback)
-
 ### Functions
 
-* [OnHardwareBackPress](kasclient.app.md#onhardwarebackpress)
 * [cancelAttachmentDownloadAsync](kasclient.app.md#cancelattachmentdownloadasync)
 * [dismissCurrentScreen](kasclient.app.md#dismisscurrentscreen)
 * [downloadAttachmentAsync](kasclient.app.md#downloadattachmentasync)
@@ -62,35 +57,7 @@
 
 ---
 
-## Variables
-
-<a id="hardwarebackpresscallback"></a>
-
-###  hardwareBackPressCallback
-
-**● hardwareBackPressCallback**: *`function`* =  null
-
-Registers a callback to be executed on hardware back button press (for Android)
-*__param__*: to be executed
-
-#### Type declaration
-▸(): `void`
-
-**Returns:** `void`
-
-___
-
 ## Functions
-
-<a id="onhardwarebackpress"></a>
-
-###  OnHardwareBackPress
-
-▸ **OnHardwareBackPress**(): `void`
-
-**Returns:** `void`
-
-___
 
 <a id="cancelattachmentdownloadasync"></a>
 
@@ -858,11 +825,13 @@ ___
 
 ▸ **registerHardwareBackPressCallback**(callback?: *`function`*): `void`
 
+Registers a callback to be executed on hardware back button press (for Android)
+
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| `Default value` callback | `function` |  null |
+| Name | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `Default value` callback | `function` |  null |  to be executed |
 
 **Returns:** `void`
 
