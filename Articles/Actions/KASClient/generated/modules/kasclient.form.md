@@ -50,7 +50,6 @@
 ▸ **initFormAsync**(callback: *`function`*): `void`
 
 Initializes and returns an empty form object based on the default form file present in the package
-*__category__*: creation
 
 **Parameters:**
 
@@ -68,7 +67,6 @@ ___
 ▸ **submitFormRequestV2**(form: *[KASForm](../classes/kasclient.kasform.md)*, shouldDismiss?: *`boolean`*, shouldSendToSubscribers?: *`boolean`*): `void`
 
 Submits the newly created form as a request. This results a new conversation card
-*__category__*: creation
 
 **Parameters:**
 
@@ -88,7 +86,6 @@ ___
 ▸ **submitFormRequestWithoutDismiss**(form: *[KASForm](../classes/kasclient.kasform.md)*, shouldInflate: *`boolean`*): `void`
 
 Submits the newly created form as a request. This results a new conversation card
-*__category__*: creation
 
 **Parameters:**
 
@@ -107,7 +104,6 @@ ___
 ▸ **updateForm**(fields: *`string`*, shouldInflate: *`boolean`*, callback: *`function`*): `void`
 
 use for making changes in form fields like title, description and settings.
-*__category__*: creation
 
 **Parameters:**
 
@@ -130,7 +126,6 @@ ___
 ▸ **getFormAsync**(callback: *`function`*): `void`
 
 Gets the form object associated with the conversation card
-*__category__*: response
 
 **Parameters:**
 
@@ -148,7 +143,6 @@ ___
 ▸ **getFormStatusAsync**(callback: *`function`*): `void`
 
 Gets the status of the form associated with the conversation card
-*__category__*: response
 
 **Parameters:**
 
@@ -166,7 +160,6 @@ ___
 ▸ **getMyFormResponsesAsync**(callback: *`function`*): `void`
 
 Gets all the responses of the current user against the form
-*__category__*: response
 
 **Parameters:**
 
@@ -184,7 +177,6 @@ ___
 ▸ **sumbitFormResponse**(questionToAnswerMap: *`JSON`*, responseId: *`string`*, isEdit: *`boolean`*, showInChatCanvas: *`boolean`*, isAnonymous: *`boolean`*): `void`
 
 Submits a new response against the form associated with the conversation card This will dismiss the current screen
-*__category__*: response
 
 **Parameters:**
 
@@ -206,7 +198,6 @@ ___
 ▸ **sumbitFormResponseWithoutDismiss**(questionToAnswerMap: *`JSON`*, responseId: *`string`*, isEdit: *`boolean`*, showInChatCanvas: *`boolean`*, isAnonymous: *`boolean`*): `void`
 
 Submits a new response against the form associated with the conversation card This won't dismiss the current screen
-*__category__*: response
 
 **Parameters:**
 
@@ -231,7 +222,6 @@ ___
 ▸ **addCommentOnForm**(comment: *`string`*): `void`
 
 Requests to add a comment to a form
-*__category__*: summary
 
 **Parameters:**
 
@@ -249,7 +239,6 @@ ___
 ▸ **closeForm**(): `void`
 
 Closes the form associated with the card, no responses will be allowed further
-*__category__*: summary
 
 **Returns:** `void`
 
@@ -261,7 +250,6 @@ ___
 ▸ **copyFormAndForward**(): `void`
 
 Launches the conversation picker to forward a copy of the existing form as a new conversation card
-*__category__*: summary
 
 **Returns:** `void`
 
@@ -273,7 +261,6 @@ ___
 ▸ **getActionInstanceLocalDataCacheAsync**(callback: *`function`*): `void`
 
 Retrieves the ActionInstance Properties from the local data cache if any exists These properties are stored at an action instance level. So the local data saved for the particular action instance will be returned by this API.
-*__category__*: summary
 
 **Parameters:**
 
@@ -291,7 +278,6 @@ ___
 ▸ **getActionPackageLocalDataCacheAsync**(callback: *`function`*): `void`
 
 Retrieves the Action Package Properties from the local data cache if any exists These properties are saved at the action package level. So all action instances created from this action package will receive the same data.
-*__category__*: summary
 
 **Parameters:**
 
@@ -309,7 +295,6 @@ ___
 ▸ **getFormReactionAsync**(callback: *`function`*): `void`
 
 Gets the consolidated reaction (likes and comments) of the conversation card associated with the form
-*__category__*: summary
 
 **Parameters:**
 
@@ -327,7 +312,6 @@ ___
 ▸ **getFormSummaryAsync**(mostUpdatedCallback: *[FormSummaryCallback](kasclient.form.md#formsummarycallback)*, notifyCallback: *[FormSummaryCallback](kasclient.form.md#formsummarycallback)*): `void`
 
 Gets flat responses by all the users, and processed summary from all the responses associated with the form. It requires two callbacks:
-*__category__*: summary
 
 **Parameters:**
 
@@ -346,7 +330,6 @@ ___
 ▸ **getFormURLAsync**(callback: *`function`*): `void`
 
 Gets the file url from server containing flat responses associated with the form
-*__category__*: summary
 
 **Parameters:**
 
@@ -364,7 +347,6 @@ ___
 ▸ **getFormUserCapabilitiesAsync**(callback: *`function`*): `void`
 
 Gets form permissions
-*__category__*: summary
 
 **Parameters:**
 
@@ -382,7 +364,6 @@ ___
 ▸ **isSubscribed**(callback: *`function`*): `void`
 
 Gets whether the current user is subscriber or not
-*__category__*: summary
 
 **Parameters:**
 
@@ -400,7 +381,6 @@ ___
 ▸ **likeForm**(): `void`
 
 Requests to add a like count to a form, the count may decrease if the current user has already liked the form
-*__category__*: summary
 
 **Returns:** `void`
 
@@ -412,7 +392,6 @@ ___
 ▸ **sendRemindersToRespond**(): `void`
 
 Sends a reminder (a new conversation card) against the existing card
-*__category__*: summary
 
 **Returns:** `void`
 
@@ -424,7 +403,6 @@ ___
 ▸ **shareFormURL**(url: *`string`*): `void`
 
 Launches native share screen for the form url
-*__category__*: summary
 
 **Parameters:**
 
@@ -442,7 +420,6 @@ ___
 ▸ **showAllReactions**(showComments?: *`boolean`*): `void`
 
 Shows all the reaction screen (likes and comments) against the form
-*__category__*: summary
 
 **Parameters:**
 
@@ -460,8 +437,6 @@ ___
 ▸ **updateActionInstanceLocalDataCacheAsync**(actionProperties: *[KASActionProperties](../classes/kasclient.kasactionproperties.md)*, callback: *`function`*): `void`
 
 Updates/saves the given ActionInstance Properties to the local data cache These properties are stored at an action instance level. So each action instance can save some local data in the cache and it will only be accessible by that particular instance
-*__category__*: summary
-
 *__warning__*: This API doesn't work as expected in case of historical messages.
 
 **Parameters:**
@@ -481,7 +456,6 @@ ___
 ▸ **updateActionPackageLocalDataCacheAsync**(actionPackageProperties: *[KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)*, callback: *`function`*): `void`
 
 Updates/saves the given Action Package Properties to the local data cache These properties are saved at the action package level. So the data is shared among all action instances created from this action package.
-*__category__*: summary
 
 **Parameters:**
 
@@ -500,7 +474,6 @@ ___
 ▸ **updateFormPropertiesAsync**(propertyUpdates: *[KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[]*, notifyUsers: *`string`[]*, notificationMessage: *`string`*, callback: *`function`*): `void`
 
 Post a request to update the properties associated with the form
-*__category__*: summary
 
 **Parameters:**
 
