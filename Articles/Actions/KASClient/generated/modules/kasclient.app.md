@@ -887,7 +887,7 @@ ___
 
 Displays an attachment picker in the native layer
 
-####Example
+#### Example
 
 ```
 var attachmentsTypesToShow = [];
