@@ -521,16 +521,8 @@ ___
 
 Gets users' details (name, pic, phone number, etc.) against their ids
 
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| userIds | `string`[] |  array of user ids |
-| callback | `function` |  with below parameters:*   @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error*   @param {string} error message in case of error, null otherwise |
-
-**Returns:** `void`
-JSON of user info
 #### Sample Usage
+
 ```
 var userIds = ["<uid1>", "<uid2>",...];
 KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
@@ -542,6 +534,15 @@ KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
       ...
   });
 ```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| userIds | `string`[] |  array of user ids |
+| callback | `function` |  with below parameters:*   @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error*   @param {string} error message in case of error, null otherwise |
+
+**Returns:** `void`
 
 ___
 
@@ -759,7 +760,7 @@ KASClient.App.performHTTPRequest(url, parametersJson, function (response, error)
 | ------ | ------ | ------ |
 | url | `string` |  base url to open |
 | parametersJSON | `string` |  jsonstring containing parameters can be given as null. ``` If given as null a request to the url provided above will be made. Parameters include request header,query parameters(default blank), request method(default GET) and request body(The body to be posted if request method is POST. default blank.) The keys for parameters are: a.) "method" : request method. example: "POST". defaults to "GET". b.) "requestBody": body of request in case of "POST". defaults to blank. c.) "requestHeaders": headers to be sent with request. should be a json with key as request header and value as the desired value. defaults to blank. d.) "queryParameters": query parameters. will be encoded in url. should be a json with key as parameter name and value as its value. defaults to blank. e.) "requestResourcePath": will be appended to base url. default is blank. ``` |
-| callback | `function` |  callback with below parameters:*   @param {string} response response body returned ``````This could have two possible config:If request was a success it returns jsonstring with following keys:a.) \&quot;HttpResponseCode&quot; : The response code of request.b.) &quot;HttpResponseHeader&quot;: The response HTTP headersc.) &quot;HttpResponseBody&quot;: The response body returned for request.If there was a Network error then it returns:a.) &quot;HttpErrorCode&quot;: The error codeb.) &quot;HttpErrorMessage&quot;: The error message eg. Malformed URL, Cannot connect to host etc.``````*   @param {string} error error if any : This includes the standard error code defined in KASClient documentation. |
+| callback | `function` |  callback with below parameters:*   @param {string} response response body returned```This could have two possible config:If request was a success it returns jsonstring with following keys:a.) &quot;HttpResponseCode&quot; : The response code of request.b.) &quot;HttpResponseHeader&quot;: The response HTTP headersc.) &quot;HttpResponseBody&quot;: The response body returned for request.If there was a Network error then it returns:a.) &quot;HttpErrorCode&quot;: The error codeb.) &quot;HttpErrorMessage&quot;: The error message eg. Malformed URL, Cannot connect to host etc.```*   @param {string} error error if any : This includes the standard error code defined in KASClient documentation. |
 
 **Returns:** `void`
 
