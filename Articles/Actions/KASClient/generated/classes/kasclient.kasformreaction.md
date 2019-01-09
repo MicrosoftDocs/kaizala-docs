@@ -33,6 +33,7 @@
 **● commentsCount**: *`number`* = 0
 
 ___
+
 <a id="didicomment"></a>
 
 ###  didIComment
@@ -40,6 +41,7 @@ ___
 **● didIComment**: *`boolean`* = false
 
 ___
+
 <a id="didilike"></a>
 
 ###  didILike
@@ -47,6 +49,7 @@ ___
 **● didILike**: *`boolean`* = false
 
 ___
+
 <a id="hidecomments"></a>
 
 ###  hideComments
@@ -54,6 +57,7 @@ ___
 **● hideComments**: *`boolean`* = false
 
 ___
+
 <a id="hidelikes"></a>
 
 ###  hideLikes
@@ -61,6 +65,7 @@ ___
 **● hideLikes**: *`boolean`* = false
 
 ___
+
 <a id="hidelikesdetails"></a>
 
 ###  hideLikesDetails
@@ -68,6 +73,7 @@ ___
 **● hideLikesDetails**: *`boolean`* = false
 
 ___
+
 <a id="likescount"></a>
 
 ###  likesCount

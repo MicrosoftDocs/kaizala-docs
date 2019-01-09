@@ -33,6 +33,7 @@
 **● name**: *`string`* = ""
 
 ___
+
 <a id="type"></a>
 
 ###  type
@@ -40,6 +41,7 @@ ___
 **● type**: *[KASFormPropertyType](../enums/kasclient.kasformpropertytype.md)* =  KASFormPropertyType.Text
 
 ___
+
 <a id="value"></a>
 
 ###  value
@@ -65,6 +67,7 @@ ___
 **Returns:** `string`
 
 ___
+
 <a id="toapicompatiblejson"></a>
 
 ###  toAPICompatibleJSON
@@ -74,6 +77,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -83,6 +87,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="tojson"></a>
 
 ###  toJSON
@@ -92,6 +97,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

@@ -22,6 +22,7 @@
 **Admin**:  = 2
 
 ___
+
 <a id="all"></a>
 
 ###  All
@@ -29,6 +30,7 @@ ___
 **All**:  = 0
 
 ___
+
 <a id="membersandsubscribers"></a>
 
 ###  MembersAndSubscribers
@@ -36,6 +38,7 @@ ___
 **MembersAndSubscribers**:  = 3
 
 ___
+
 <a id="sender"></a>
 
 ###  Sender

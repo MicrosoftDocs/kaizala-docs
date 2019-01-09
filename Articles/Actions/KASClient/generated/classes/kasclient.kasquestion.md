@@ -43,6 +43,7 @@
 **● config**: *[KASQuestionConfig](kasclient.kasquestionconfig.md)* =  null
 
 ___
+
 <a id="displaytype"></a>
 
 ###  displayType
@@ -50,6 +51,7 @@ ___
 **● displayType**: *[KASQuestionDisplayType](../enums/kasclient.kasquestiondisplaytype.md)* =  KASQuestionDisplayType.None
 
 ___
+
 <a id="id"></a>
 
 ###  id
@@ -57,6 +59,7 @@ ___
 **● id**: *`number`* = 0
 
 ___
+
 <a id="iseditable"></a>
 
 ###  isEditable
@@ -64,6 +67,7 @@ ___
 **● isEditable**: *`boolean`* = true
 
 ___
+
 <a id="isexcludedfromreporting"></a>
 
 ###  isExcludedFromReporting
@@ -71,6 +75,7 @@ ___
 **● isExcludedFromReporting**: *`boolean`* = false
 
 ___
+
 <a id="isinvisible"></a>
 
 ###  isInvisible
@@ -78,6 +83,7 @@ ___
 **● isInvisible**: *`boolean`* = false
 
 ___
+
 <a id="isresponseoptional"></a>
 
 ###  isResponseOptional
@@ -85,6 +91,7 @@ ___
 **● isResponseOptional**: *`boolean`* = false
 
 ___
+
 <a id="options"></a>
 
 ###  options
@@ -92,6 +99,7 @@ ___
 **● options**: *[KASQuestionOption](kasclient.kasquestionoption.md)[]* =  []
 
 ___
+
 <a id="title"></a>
 
 ###  title
@@ -99,6 +107,7 @@ ___
 **● title**: *`string`* = ""
 
 ___
+
 <a id="type"></a>
 
 ###  type
@@ -106,6 +115,7 @@ ___
 **● type**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
 
 ___
+
 <a id="valif"></a>
 
 ###  valif
@@ -113,6 +123,7 @@ ___
 **● valif**: *[KASValidationRule](kasclient.kasvalidationrule.md)* =  null
 
 ___
+
 <a id="visif"></a>
 
 ###  visif
@@ -138,6 +149,7 @@ ___
 **Returns:** `string`
 
 ___
+
 <a id="toapicompatiblejson"></a>
 
 ###  toAPICompatibleJSON
@@ -147,6 +159,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -156,6 +169,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="tojson"></a>
 
 ###  toJSON
@@ -165,6 +179,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="validateresponse"></a>
 
 ###  validateResponse
@@ -180,6 +195,7 @@ ___
 **Returns:** [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

@@ -33,6 +33,7 @@
 **● id**: *`string`* = ""
 
 ___
+
 <a id="name"></a>
 
 ###  name
@@ -40,6 +41,7 @@ ___
 **● name**: *`string`* = ""
 
 ___
+
 <a id="originalname"></a>
 
 ###  originalName
@@ -47,6 +49,7 @@ ___
 **● originalName**: *`string`* = ""
 
 ___
+
 <a id="phonenumber"></a>
 
 ###  phoneNumber
@@ -54,6 +57,7 @@ ___
 **● phoneNumber**: *`string`* = ""
 
 ___
+
 <a id="picturebgcolor"></a>
 
 ###  pictureBGColor
@@ -61,6 +65,7 @@ ___
 **● pictureBGColor**: *`string`* = ""
 
 ___
+
 <a id="pictureinitials"></a>
 
 ###  pictureInitials
@@ -68,6 +73,7 @@ ___
 **● pictureInitials**: *`string`* = ""
 
 ___
+
 <a id="pictureurl"></a>
 
 ###  pictureUrl

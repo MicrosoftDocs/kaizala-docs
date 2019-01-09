@@ -30,6 +30,7 @@
 **● optionId**: *`number`* = 0
 
 ___
+
 <a id="optiontitle"></a>
 
 ###  optionTitle
@@ -37,6 +38,7 @@ ___
 **● optionTitle**: *`string`* = ""
 
 ___
+
 <a id="respondertoresponsecount"></a>
 
 ###  responderToResponseCount
@@ -46,6 +48,7 @@ ___
 #### Type declaration
 
 ___
+
 <a id="totalresponsescount"></a>
 
 ###  totalResponsesCount

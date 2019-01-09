@@ -35,6 +35,7 @@
 #### Type declaration
 
 ___
+
 <a id="questionid"></a>
 
 ###  questionId
@@ -42,6 +43,7 @@ ___
 **● questionId**: *`number`* = 0
 
 ___
+
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -49,6 +51,7 @@ ___
 **● questionTitle**: *`string`* = ""
 
 ___
+
 <a id="questiontype"></a>
 
 ###  questionType
@@ -71,6 +74,7 @@ Gets all the option ids sorted in their total responses count (descending)
 list of all the option ids
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

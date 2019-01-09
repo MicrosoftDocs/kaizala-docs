@@ -35,6 +35,7 @@
 **● questionId**: *`number`* = 0
 
 ___
+
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -42,6 +43,7 @@ ___
 **● questionTitle**: *`string`* = ""
 
 ___
+
 <a id="questiontype"></a>
 
 ###  questionType

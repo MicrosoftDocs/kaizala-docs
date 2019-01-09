@@ -32,6 +32,7 @@
 **● fixedUrl**: *`string`* =  null
 
 ___
+
 <a id="icon"></a>
 
 ###  icon
@@ -39,6 +40,7 @@ ___
 **● icon**: *`string`* =  null
 
 ___
+
 <a id="subtitle"></a>
 
 ###  subtitle
@@ -46,6 +48,7 @@ ___
 **● subtitle**: *`string`* =  null
 
 ___
+
 <a id="title"></a>
 
 ###  title
@@ -53,6 +56,7 @@ ___
 **● title**: *`string`* =  null
 
 ___
+
 <a id="urlaction"></a>
 
 ###  urlAction
@@ -60,6 +64,7 @@ ___
 **● urlAction**: *[UrlAction](../enums/kasclient.urlaction.md)* =  UrlAction.None
 
 ___
+
 <a id="urltype"></a>
 
 ###  urlType

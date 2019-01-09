@@ -24,6 +24,7 @@
 **● errorMsg**: *`string`* =  null
 
 ___
+
 <a id="success"></a>
 
 ###  success

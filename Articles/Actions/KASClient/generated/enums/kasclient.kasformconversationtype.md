@@ -25,6 +25,7 @@ Enum for conversation type
 **FLAT_GROUP**:  = 1
 
 ___
+
 <a id="forum"></a>
 
 ###  FORUM
@@ -32,6 +33,7 @@ ___
 **FORUM**:  = 2
 
 ___
+
 <a id="none"></a>
 
 ###  NONE
@@ -39,6 +41,7 @@ ___
 **NONE**:  =  -1
 
 ___
+
 <a id="one_on_one"></a>
 
 ###  ONE_ON_ONE
@@ -46,6 +49,7 @@ ___
 **ONE_ON_ONE**:  = 0
 
 ___
+
 <a id="public_group"></a>
 
 ###  PUBLIC_GROUP

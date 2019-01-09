@@ -28,6 +28,7 @@
 **● data**: *`string`* = ""
 
 ___
+
 <a id="type"></a>
 
 ###  type

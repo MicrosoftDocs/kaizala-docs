@@ -49,6 +49,7 @@
 **● allowSendReminder**: *[KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)* =  KASFormResultVisibility.Sender
 
 ___
+
 <a id="conversationid"></a>
 
 ###  conversationId
@@ -56,6 +57,7 @@ ___
 **● conversationId**: *`string`* = ""
 
 ___
+
 <a id="creatorid"></a>
 
 ###  creatorId
@@ -63,6 +65,7 @@ ___
 **● creatorId**: *`string`* = ""
 
 ___
+
 <a id="expiry"></a>
 
 ###  expiry
@@ -70,6 +73,7 @@ ___
 **● expiry**: *`number`* = 0
 
 ___
+
 <a id="id"></a>
 
 ###  id
@@ -77,6 +81,7 @@ ___
 **● id**: *`string`* = ""
 
 ___
+
 <a id="isanonymous"></a>
 
 ###  isAnonymous
@@ -84,6 +89,7 @@ ___
 **● isAnonymous**: *`boolean`* = false
 
 ___
+
 <a id="isgrouplevelaggregationrequired"></a>
 
 ###  isGroupLevelAggregationRequired
@@ -91,6 +97,7 @@ ___
 **● isGroupLevelAggregationRequired**: *`boolean`* = false
 
 ___
+
 <a id="islocationrequested"></a>
 
 ###  isLocationRequested
@@ -98,6 +105,7 @@ ___
 **● isLocationRequested**: *`boolean`* = false
 
 ___
+
 <a id="isresponseappended"></a>
 
 ###  isResponseAppended
@@ -105,6 +113,7 @@ ___
 **● isResponseAppended**: *`boolean`* = false
 
 ___
+
 <a id="json"></a>
 
 ###  json
@@ -112,6 +121,7 @@ ___
 **● json**: *`JSON`*
 
 ___
+
 <a id="packageid"></a>
 
 ###  packageId
@@ -119,6 +129,7 @@ ___
 **● packageId**: *`string`* = ""
 
 ___
+
 <a id="properties"></a>
 
 ###  properties
@@ -126,6 +137,7 @@ ___
 **● properties**: *[KASFormProperty](kasclient.kasformproperty.md)[]* =  []
 
 ___
+
 <a id="questions"></a>
 
 ###  questions
@@ -133,6 +145,7 @@ ___
 **● questions**: *[KASQuestion](kasclient.kasquestion.md)[]* =  []
 
 ___
+
 <a id="reporttype"></a>
 
 ###  reportType
@@ -140,6 +153,7 @@ ___
 **● reportType**: *`number`* = 0
 
 ___
+
 <a id="title"></a>
 
 ###  title
@@ -147,6 +161,7 @@ ___
 **● title**: *`string`* = ""
 
 ___
+
 <a id="type"></a>
 
 ###  type
@@ -154,6 +169,7 @@ ___
 **● type**: *`number`* = 20
 
 ___
+
 <a id="version"></a>
 
 ###  version
@@ -161,6 +177,7 @@ ___
 **● version**: *`number`* = 2
 
 ___
+
 <a id="visibility"></a>
 
 ###  visibility
@@ -186,6 +203,7 @@ ___
 **Returns:** `string`
 
 ___
+
 <a id="toapicompatiblejson"></a>
 
 ###  toAPICompatibleJSON
@@ -195,6 +213,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -204,6 +223,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="tojson"></a>
 
 ###  toJSON
@@ -213,6 +233,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="addresponsenotificationforaddrow"></a>
 
 ### `<Static>` addResponseNotificationForAddRow
@@ -229,6 +250,7 @@ ___
 **Returns:** `void`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

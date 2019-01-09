@@ -60,6 +60,7 @@ Initializes and returns an empty form object based on the default form file pres
 **Returns:** `void`
 
 ___
+
 <a id="submitformrequestv2"></a>
 
 ###  submitFormRequestV2
@@ -79,6 +80,7 @@ Submits the newly created form as a request. This results a new conversation car
 **Returns:** `void`
 
 ___
+
 <a id="submitformrequestwithoutdismiss"></a>
 
 ###  submitFormRequestWithoutDismiss
@@ -97,6 +99,7 @@ Submits the newly created form as a request. This results a new conversation car
 **Returns:** `void`
 
 ___
+
 <a id="updateform"></a>
 
 ###  updateForm
@@ -136,6 +139,7 @@ Gets the form object associated with the conversation card
 **Returns:** `void`
 
 ___
+
 <a id="getformstatusasync"></a>
 
 ###  getFormStatusAsync
@@ -153,6 +157,7 @@ Gets the status of the form associated with the conversation card
 **Returns:** `void`
 
 ___
+
 <a id="getmyformresponsesasync"></a>
 
 ###  getMyFormResponsesAsync
@@ -170,6 +175,7 @@ Gets all the responses of the current user against the form
 **Returns:** `void`
 
 ___
+
 <a id="sumbitformresponse"></a>
 
 ###  sumbitFormResponse
@@ -191,6 +197,7 @@ Submits a new response against the form associated with the conversation card Th
 **Returns:** `void`
 
 ___
+
 <a id="sumbitformresponsewithoutdismiss"></a>
 
 ###  sumbitFormResponseWithoutDismiss
@@ -232,6 +239,7 @@ Requests to add a comment to a form
 **Returns:** `void`
 
 ___
+
 <a id="closeform"></a>
 
 ###  closeForm
@@ -243,6 +251,7 @@ Closes the form associated with the card, no responses will be allowed further
 **Returns:** `void`
 
 ___
+
 <a id="copyformandforward"></a>
 
 ###  copyFormAndForward
@@ -254,6 +263,7 @@ Launches the conversation picker to forward a copy of the existing form as a new
 **Returns:** `void`
 
 ___
+
 <a id="getactioninstancelocaldatacacheasync"></a>
 
 ###  getActionInstanceLocalDataCacheAsync
@@ -271,6 +281,7 @@ Retrieves the ActionInstance Properties from the local data cache if any exists 
 **Returns:** `void`
 
 ___
+
 <a id="getactionpackagelocaldatacacheasync"></a>
 
 ###  getActionPackageLocalDataCacheAsync
@@ -288,6 +299,7 @@ Retrieves the Action Package Properties from the local data cache if any exists 
 **Returns:** `void`
 
 ___
+
 <a id="getformreactionasync"></a>
 
 ###  getFormReactionAsync
@@ -305,6 +317,7 @@ Gets the consolidated reaction (likes and comments) of the conversation card ass
 **Returns:** `void`
 
 ___
+
 <a id="getformsummaryasync"></a>
 
 ###  getFormSummaryAsync
@@ -323,6 +336,7 @@ Gets flat responses by all the users, and processed summary from all the respons
 **Returns:** `void`
 
 ___
+
 <a id="getformurlasync"></a>
 
 ###  getFormURLAsync
@@ -340,6 +354,7 @@ Gets the file url from server containing flat responses associated with the form
 **Returns:** `void`
 
 ___
+
 <a id="getformusercapabilitiesasync"></a>
 
 ###  getFormUserCapabilitiesAsync
@@ -357,6 +372,7 @@ Gets form permissions
 **Returns:** `void`
 
 ___
+
 <a id="issubscribed"></a>
 
 ###  isSubscribed
@@ -374,6 +390,7 @@ Gets whether the current user is subscriber or not
 **Returns:** `void`
 
 ___
+
 <a id="likeform"></a>
 
 ###  likeForm
@@ -385,6 +402,7 @@ Requests to add a like count to a form, the count may decrease if the current us
 **Returns:** `void`
 
 ___
+
 <a id="sendreminderstorespond"></a>
 
 ###  sendRemindersToRespond
@@ -396,6 +414,7 @@ Sends a reminder (a new conversation card) against the existing card
 **Returns:** `void`
 
 ___
+
 <a id="shareformurl"></a>
 
 ###  shareFormURL
@@ -413,6 +432,7 @@ Launches native share screen for the form url
 **Returns:** `void`
 
 ___
+
 <a id="showallreactions"></a>
 
 ###  showAllReactions
@@ -430,6 +450,7 @@ Shows all the reaction screen (likes and comments) against the form
 **Returns:** `void`
 
 ___
+
 <a id="updateactioninstancelocaldatacacheasync"></a>
 
 ###  updateActionInstanceLocalDataCacheAsync
@@ -449,6 +470,7 @@ Updates/saves the given ActionInstance Properties to the local data cache These 
 **Returns:** `void`
 
 ___
+
 <a id="updateactionpackagelocaldatacacheasync"></a>
 
 ###  updateActionPackageLocalDataCacheAsync
@@ -467,6 +489,7 @@ Updates/saves the given Action Package Properties to the local data cache These 
 **Returns:** `void`
 
 ___
+
 <a id="updateformpropertiesasync"></a>
 
 ###  updateFormPropertiesAsync

@@ -28,6 +28,7 @@
 **● description**: *`String`* = ""
 
 ___
+
 <a id="errorcode"></a>
 
 ###  errorCode

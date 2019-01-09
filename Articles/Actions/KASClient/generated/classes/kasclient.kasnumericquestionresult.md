@@ -33,6 +33,7 @@
 **● average**: *`number`* = 0
 
 ___
+
 <a id="questionid"></a>
 
 ###  questionId
@@ -40,6 +41,7 @@ ___
 **● questionId**: *`number`* = 0
 
 ___
+
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -47,6 +49,7 @@ ___
 **● questionTitle**: *`string`* = ""
 
 ___
+
 <a id="questiontype"></a>
 
 ###  questionType
@@ -54,6 +57,7 @@ ___
 **● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
 
 ___
+
 <a id="sum"></a>
 
 ###  sum

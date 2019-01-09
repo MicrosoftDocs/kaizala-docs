@@ -31,6 +31,7 @@
 **● json**: *`JSON`*
 
 ___
+
 <a id="nonrespondersinconversation"></a>
 
 ###  nonRespondersInConversation
@@ -38,6 +39,7 @@ ___
 **● nonRespondersInConversation**: *`string`[]* =  []
 
 ___
+
 <a id="results"></a>
 
 ###  results
@@ -47,6 +49,7 @@ ___
 #### Type declaration
 
 ___
+
 <a id="targetrespondercount"></a>
 
 ###  targetResponderCount
@@ -54,6 +57,7 @@ ___
 **● targetResponderCount**: *`number`* = 0
 
 ___
+
 <a id="totalresponsecount"></a>
 
 ###  totalResponseCount

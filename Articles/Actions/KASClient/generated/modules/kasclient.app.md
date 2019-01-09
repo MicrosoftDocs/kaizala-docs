@@ -91,6 +91,7 @@ ___
 **Returns:** `void`
 
 ___
+
 <a id="cancelattachmentdownloadasync"></a>
 
 ###  cancelAttachmentDownloadAsync
@@ -119,6 +120,7 @@ Cancel a download operation queued for an attachment
 **Returns:** `void`
 
 ___
+
 <a id="dismisscurrentscreen"></a>
 
 ###  dismissCurrentScreen
@@ -130,6 +132,7 @@ Dismiss the current screen (Creation, Response, or Summary)
 **Returns:** `void`
 
 ___
+
 <a id="downloadattachmentasync"></a>
 
 ###  downloadAttachmentAsync
@@ -165,6 +168,7 @@ Download the attachment specified
 **Returns:** `void`
 
 ___
+
 <a id="generatebase64thumbnailasync"></a>
 
 ###  generateBase64ThumbnailAsync
@@ -191,6 +195,7 @@ Generates Base64 thumbnail for an image whose localPath is given
 **Returns:** `void`
 
 ___
+
 <a id="generateuuidasync"></a>
 
 ###  generateUUIDAsync
@@ -215,6 +220,7 @@ Gets the new UUID
 **Returns:** `void`
 
 ___
+
 <a id="getapplocaleasync"></a>
 
 ###  getAppLocaleAsync
@@ -232,6 +238,7 @@ Gets the current app locale, the language in which the app is rendered, useful f
 **Returns:** `void`
 
 ___
+
 <a id="getcalendarnameasync"></a>
 
 ###  getCalendarNameAsync
@@ -249,6 +256,7 @@ Gets the current system calendar setting. This is mainly for iOS to identify the
 **Returns:** `void`
 
 ___
+
 <a id="getconversationdetailsasync"></a>
 
 ###  getConversationDetailsAsync
@@ -266,6 +274,7 @@ Gets conversation related properties
 **Returns:** `void`
 
 ___
+
 <a id="getcurrentdevicelocationasync"></a>
 
 ###  getCurrentDeviceLocationAsync
@@ -292,6 +301,7 @@ Gets the current device location
 **Returns:** `void`
 
 ___
+
 <a id="getcurrentlocale"></a>
 
 ###  getCurrentLocale
@@ -301,6 +311,7 @@ ___
 **Returns:** `string`
 
 ___
+
 <a id="getdeviceidasync"></a>
 
 ###  getDeviceIdAsync
@@ -318,6 +329,7 @@ Gets deviceId
 **Returns:** `void`
 
 ___
+
 <a id="getdevicelocationasync"></a>
 
 ###  getDeviceLocationAsync
@@ -335,6 +347,7 @@ Gets the previously stored device location
 **Returns:** `void`
 
 ___
+
 <a id="getfontsizemultiplierasync"></a>
 
 ###  getFontSizeMultiplierAsync
@@ -352,6 +365,7 @@ Gets the font size multiplier for large text. Current only required by iOS.
 **Returns:** `void`
 
 ___
+
 <a id="getforwardcontextasync"></a>
 
 ###  getForwardContextAsync
@@ -369,6 +383,7 @@ Gets Forward Context details such as : Card Creation is in forwarded mode
 **Returns:** `void`
 
 ___
+
 <a id="getisapptimeformat24hoursasync"></a>
 
 ###  getIsAppTimeFormat24HoursAsync
@@ -386,6 +401,7 @@ Gets the current app time format is 24hours or not, the time format selected by 
 **Returns:** `void`
 
 ___
+
 <a id="getlocalizedstringsasync"></a>
 
 ###  getLocalizedStringsAsync
@@ -412,6 +428,7 @@ Gets the localized strings' dictionary based on current app locale. Strings must
 **Returns:** `void`
 
 ___
+
 <a id="getlocationaddressasync"></a>
 
 ###  getLocationAddressAsync
@@ -443,6 +460,7 @@ Get address string for specified coordinates
 **Returns:** `void`
 
 ___
+
 <a id="getmapimageasbase64async"></a>
 
 ###  getMapImageAsBase64Async
@@ -470,6 +488,7 @@ Download the base 64 image of map for the coordinates specified
 **Returns:** `void`
 
 ___
+
 <a id="geto365userdetailsasync"></a>
 
 ###  getO365UserDetailsAsync
@@ -487,6 +506,7 @@ Gets details of current logged-in O365 user
 **Returns:** `void`
 
 ___
+
 <a id="getpackagecustomsettingsasync"></a>
 
 ###  getPackageCustomSettingsAsync
@@ -513,6 +533,7 @@ Gets all the customization settings for a package (Used in case of Type-4 packag
 **Returns:** `void`
 
 ___
+
 <a id="getusersdetailsasync"></a>
 
 ###  getUsersDetailsAsync
@@ -543,6 +564,7 @@ Gets users' details (name, pic, phone number, etc.) against their ids
 **Returns:** `void`
 
 ___
+
 <a id="hideprogressbar"></a>
 
 ###  hideProgressBar
@@ -554,6 +576,7 @@ Hides the current progress bar, if any
 **Returns:** `void`
 
 ___
+
 <a id="isattachmentdownloadingasync"></a>
 
 ###  isAttachmentDownloadingAsync
@@ -589,6 +612,7 @@ Download the attachment specified
 **Returns:** `void`
 
 ___
+
 <a id="isauthenticationtyepsupportedasync"></a>
 
 ###  isAuthenticationTyepSupportedAsync
@@ -607,6 +631,7 @@ Checks if authentication of type is possible or not.
 **Returns:** `void`
 
 ___
+
 <a id="istalkbackenabledasync"></a>
 
 ###  isTalkBackEnabledAsync
@@ -624,6 +649,7 @@ Gets whether talkback is enabled or not
 **Returns:** `void`
 
 ___
+
 <a id="launchshare"></a>
 
 ###  launchShare
@@ -640,6 +666,7 @@ ___
 **Returns:** `void`
 
 ___
+
 <a id="logtoreport"></a>
 
 ###  logToReport
@@ -657,6 +684,7 @@ Logs data for "Send report"
 **Returns:** `void`
 
 ___
+
 <a id="openattachmentimmersiveview"></a>
 
 ###  openAttachmentImmersiveView
@@ -692,6 +720,7 @@ Open attachment in Immersive view.
 **Returns:** `void`
 
 ___
+
 <a id="openimmersiveviewforattachmentlist"></a>
 
 ###  openImmersiveViewForAttachmentList
@@ -728,6 +757,7 @@ Open attachment in Immersive view.
 **Returns:** `void`
 
 ___
+
 <a id="performauthenticationasync"></a>
 
 ###  performAuthenticationAsync
@@ -754,6 +784,7 @@ If authentication type is allowed, this API performs the authentication and retu
 **Returns:** `void`
 
 ___
+
 <a id="performhttprequest"></a>
 
 ###  performHTTPRequest
@@ -783,6 +814,7 @@ performs an http request and returns the response as specified below:
 **Returns:** `void`
 
 ___
+
 <a id="printf"></a>
 
 ###  printf
@@ -801,6 +833,7 @@ Returns a string.
 **Returns:** `string`
 
 ___
+
 <a id="readtalkbackmessage"></a>
 
 ###  readTalkBackMessage
@@ -818,6 +851,7 @@ Reads the text if TalkBack/VoiceOver enabled
 **Returns:** `void`
 
 ___
+
 <a id="registerhardwarebackpresscallback"></a>
 
 ###  registerHardwareBackPressCallback
@@ -833,6 +867,7 @@ ___
 **Returns:** `void`
 
 ___
+
 <a id="setnativetoolbarproperties"></a>
 
 ###  setNativeToolbarProperties
@@ -858,6 +893,7 @@ Sets few properties when using native toolbar
 **Returns:** `void`
 
 ___
+
 <a id="setuserstrings"></a>
 
 ###  setUserStrings
@@ -873,6 +909,7 @@ ___
 **Returns:** `void`
 
 ___
+
 <a id="showattachmentpickerasync"></a>
 
 ###  showAttachmentPickerAsync
@@ -914,6 +951,7 @@ Displays an attachment picker in the native layer
 **Returns:** `void`
 
 ___
+
 <a id="showbarcodescannerasync"></a>
 
 ###  showBarcodeScannerAsync
@@ -931,6 +969,7 @@ Launches the barcode scanner and returns the scanned object
 **Returns:** `void`
 
 ___
+
 <a id="showcontactpickerasync"></a>
 
 ###  showContactPickerAsync
@@ -962,6 +1001,7 @@ Shows a native contact picker, and returns an array of all the selected users' d
 **Returns:** `void`
 
 ___
+
 <a id="showdurationpickerasync"></a>
 
 ###  showDurationPickerAsync
@@ -980,6 +1020,7 @@ Shows a native duration picker with day/hour/minute
 **Returns:** `void`
 
 ___
+
 <a id="showimageimmersiveview"></a>
 
 ###  showImageImmersiveView
@@ -1003,6 +1044,7 @@ Shows Image in Immersive view.
 **Returns:** `void`
 
 ___
+
 <a id="showlocationonmap"></a>
 
 ###  showLocationOnMap
@@ -1020,6 +1062,7 @@ shows a particular location as mentioned in KASLocation
 **Returns:** `void`
 
 ___
+
 <a id="shownativeerrormessage"></a>
 
 ###  showNativeErrorMessage
@@ -1037,6 +1080,7 @@ Shows a native alert (for iOS) or a toast (for Android) with the message
 **Returns:** `void`
 
 ___
+
 <a id="showplacepickerasync"></a>
 
 ###  showPlacePickerAsync
@@ -1054,6 +1098,7 @@ Shows a native place picker, and returns the selected place (lt, lg, n)
 **Returns:** `void`
 
 ___
+
 <a id="showprogressbar"></a>
 
 ###  showProgressBar
@@ -1071,6 +1116,7 @@ Shows a native full sreen progress bar with the given text
 **Returns:** `void`
 
 ___
+
 <a id="showqrcodescannerasync"></a>
 
 ###  showQRcodeScannerAsync
@@ -1088,6 +1134,7 @@ Launches the QR code scanner and returns the scanned object
 **Returns:** `void`
 
 ___
+
 <a id="showuserprofileasync"></a>
 
 ###  showUserProfileAsync
@@ -1107,6 +1154,7 @@ Shows profile page/details of a user
 **Returns:** `void`
 
 ___
+
 <a id="startchatasync"></a>
 
 ###  startChatAsync

@@ -21,6 +21,7 @@
 **None**:  = 0
 
 ___
+
 <a id="openinbrowser"></a>
 
 ###  OpenInBrowser
@@ -28,6 +29,7 @@ ___
 **OpenInBrowser**:  = 2
 
 ___
+
 <a id="share"></a>
 
 ###  Share

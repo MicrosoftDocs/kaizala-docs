@@ -21,6 +21,7 @@
 **High**:  = 0
 
 ___
+
 <a id="low"></a>
 
 ###  Low
@@ -28,6 +29,7 @@ ___
 **Low**:  = 2
 
 ___
+
 <a id="medium"></a>
 
 ###  Medium

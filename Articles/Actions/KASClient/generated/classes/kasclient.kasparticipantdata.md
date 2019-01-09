@@ -31,6 +31,7 @@ Defines properties of a conversation participant
 **● participantId**: *`string`* = ""
 
 ___
+
 <a id="participantrole"></a>
 
 ###  participantRole
@@ -38,6 +39,7 @@ ___
 **● participantRole**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* =  KASParticipantRole.NONE
 
 ___
+
 <a id="participanttype"></a>
 
 ###  participantType

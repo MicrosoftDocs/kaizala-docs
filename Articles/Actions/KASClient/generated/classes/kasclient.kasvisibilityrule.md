@@ -30,6 +30,7 @@
 **● dependencyQuestionId**: *`string`* = ""
 
 ___
+
 <a id="optionid"></a>
 
 ###  optionId
@@ -37,6 +38,7 @@ ___
 **● optionId**: *`string`* = ""
 
 ___
+
 <a id="rule"></a>
 
 ###  rule
@@ -56,6 +58,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

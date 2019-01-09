@@ -35,6 +35,7 @@
 **● groupId**: *`string`* = ""
 
 ___
+
 <a id="groupname"></a>
 
 ###  groupName
@@ -42,6 +43,7 @@ ___
 **● groupName**: *`string`* = ""
 
 ___
+
 <a id="id"></a>
 
 ###  id
@@ -49,6 +51,7 @@ ___
 **● id**: *`string`* = ""
 
 ___
+
 <a id="questiontoanswermap"></a>
 
 ###  questionToAnswerMap
@@ -58,6 +61,7 @@ ___
 #### Type declaration
 
 ___
+
 <a id="responderid"></a>
 
 ###  responderId
@@ -65,6 +69,7 @@ ___
 **● responderId**: *`string`* = ""
 
 ___
+
 <a id="respondername"></a>
 
 ###  responderName
@@ -72,6 +77,7 @@ ___
 **● responderName**: *`string`* = ""
 
 ___
+
 <a id="sendstatus"></a>
 
 ###  sendStatus
@@ -79,6 +85,7 @@ ___
 **● sendStatus**: *[KASFormMessageSendStatus](../enums/kasclient.kasformmessagesendstatus.md)* =  KASFormMessageSendStatus.Unknown
 
 ___
+
 <a id="sendtime"></a>
 
 ###  sendTime
@@ -86,6 +93,7 @@ ___
 **● sendTime**: *`number`* = 0
 
 ___
+
 <a id="servertolocalasseturlmap"></a>
 
 ###  serverToLocalAssetUrlMap

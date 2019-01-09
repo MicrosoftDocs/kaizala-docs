@@ -25,6 +25,7 @@ The following enum values MUST be in sync with the AttachmentType enum represent
 **Audio**:  = 2
 
 ___
+
 <a id="document"></a>
 
 ###  Document
@@ -32,6 +33,7 @@ ___
 **Document**:  = 3
 
 ___
+
 <a id="generic"></a>
 
 ###  Generic
@@ -39,6 +41,7 @@ ___
 **Generic**:  = 99
 
 ___
+
 <a id="image"></a>
 
 ###  Image
@@ -46,6 +49,7 @@ ___
 **Image**:  = 1
 
 ___
+
 <a id="video"></a>
 
 ###  Video

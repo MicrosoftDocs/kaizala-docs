@@ -31,6 +31,7 @@
 **● latitude**: *`number`* = 0
 
 ___
+
 <a id="longitude"></a>
 
 ###  longitude
@@ -38,6 +39,7 @@ ___
 **● longitude**: *`number`* = 0
 
 ___
+
 <a id="placeaddress"></a>
 
 ###  placeAddress
@@ -45,6 +47,7 @@ ___
 **● placeAddress**: *`string`* = ""
 
 ___
+
 <a id="placename"></a>
 
 ###  placeName
@@ -64,6 +67,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
