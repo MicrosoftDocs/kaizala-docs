@@ -30,6 +30,8 @@
 
 **● latitude**: *`number`* = 0
 
+Latitude of the location
+
 ___
 
 <a id="longitude"></a>
@@ -37,6 +39,8 @@ ___
 ###  longitude
 
 **● longitude**: *`number`* = 0
+
+Longitude of the location
 
 ___
 
@@ -46,6 +50,8 @@ ___
 
 **● placeAddress**: *`string`* = ""
 
+Address of the location
+
 ___
 
 <a id="placename"></a>
@@ -53,6 +59,8 @@ ___
 ###  placeName
 
 **● placeName**: *`string`* = ""
+
+Name of the location
 
 ___
 

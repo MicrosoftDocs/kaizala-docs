@@ -25,6 +25,8 @@
 
 **Array**:  = 4
 
+Array of strings as the metadata value
+
 ___
 
 <a id="attachment"></a>
@@ -32,6 +34,8 @@ ___
 ###  Attachment
 
 **Attachment**:  = 5
+
+Attachment path as the metadata value
 
 ___
 
@@ -41,6 +45,8 @@ ___
 
 **AttachmentList**:  = 7
 
+List of KASAttachment as metadata value
+
 ___
 
 <a id="datetime"></a>
@@ -48,6 +54,8 @@ ___
 ###  DateTime
 
 **DateTime**:  = 3
+
+Date time as the metadata value
 
 ___
 
@@ -57,6 +65,8 @@ ___
 
 **Location**:  = 2
 
+Location type as the metadata value
+
 ___
 
 <a id="numeric"></a>
@@ -64,6 +74,8 @@ ___
 ###  Numeric
 
 **Numeric**:  = 1
+
+Only numbers are allowed as the metadata value
 
 ___
 
@@ -73,6 +85,8 @@ ___
 
 **Set**:  = 6
 
+Set (unique list) of strings as the metadata value
+
 ___
 
 <a id="text"></a>
@@ -80,6 +94,8 @@ ___
 ###  Text
 
 **Text**:  = 0
+
+Any text is allowed as the metadata value
 
 ___
 

@@ -40,6 +40,8 @@ ___
 
 **● questionId**: *`number`* = 0
 
+Index of the question
+
 ___
 
 <a id="questiontitle"></a>
@@ -47,6 +49,8 @@ ___
 ###  questionTitle
 
 **● questionTitle**: *`string`* = ""
+
+Title of the question
 
 ___
 
@@ -56,6 +60,8 @@ ___
 
 **● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
 
+Type of the question
+
 ___
 
 <a id="sum"></a>
@@ -63,6 +69,8 @@ ___
 ###  sum
 
 **● sum**: *`number`* = 0
+
+For Numeric questions the aggregated result will be sum, and average of all the responses
 
 ___
 

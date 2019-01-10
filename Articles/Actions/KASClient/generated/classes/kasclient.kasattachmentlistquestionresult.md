@@ -56,6 +56,8 @@ ___
 
 **● questionId**: *`number`* = 0
 
+Index of the question
+
 ___
 
 <a id="questiontitle"></a>
@@ -64,6 +66,8 @@ ___
 
 **● questionTitle**: *`string`* = ""
 
+Title of the question
+
 ___
 
 <a id="questiontype"></a>
@@ -71,6 +75,8 @@ ___
 ###  questionType
 
 **● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
+
+Type of the question
 
 ___
 

@@ -32,6 +32,8 @@
 
 **● commentsCount**: *`number`* = 0
 
+Number of comments received for the form
+
 ___
 
 <a id="didicomment"></a>
@@ -39,6 +41,8 @@ ___
 ###  didIComment
 
 **● didIComment**: *`boolean`* = false
+
+Denotes whether the current user has already liked or not
 
 ___
 
@@ -48,6 +52,8 @@ ___
 
 **● didILike**: *`boolean`* = false
 
+Denotes whether the current user has already liked or not
+
 ___
 
 <a id="hidecomments"></a>
@@ -55,6 +61,8 @@ ___
 ###  hideComments
 
 **● hideComments**: *`boolean`* = false
+
+Denotes whether to show comments or not
 
 ___
 
@@ -64,6 +72,8 @@ ___
 
 **● hideLikes**: *`boolean`* = false
 
+Denotes whether to show likes or not
+
 ___
 
 <a id="hidelikesdetails"></a>
@@ -72,6 +82,8 @@ ___
 
 **● hideLikesDetails**: *`boolean`* = false
 
+Denotes whether to show likes imeersive view or not
+
 ___
 
 <a id="likescount"></a>
@@ -79,6 +91,8 @@ ___
 ###  likesCount
 
 **● likesCount**: *`number`* = 0
+
+Number of likes received for the form
 
 ___
 

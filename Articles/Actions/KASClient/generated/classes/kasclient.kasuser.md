@@ -32,6 +32,8 @@
 
 **● id**: *`string`* = ""
 
+Unique user id
+
 ___
 
 <a id="name"></a>
@@ -39,6 +41,8 @@ ___
 ###  name
 
 **● name**: *`string`* = ""
+
+Name of the user ("You" for the current user)
 
 ___
 
@@ -48,6 +52,8 @@ ___
 
 **● originalName**: *`string`* = ""
 
+Not considering "You"
+
 ___
 
 <a id="phonenumber"></a>
@@ -56,6 +62,8 @@ ___
 
 **● phoneNumber**: *`string`* = ""
 
+Phone number of the user
+
 ___
 
 <a id="picturebgcolor"></a>
@@ -63,6 +71,8 @@ ___
 ###  pictureBGColor
 
 **● pictureBGColor**: *`string`* = ""
+
+In case the PictureUrl is not there, we should use the users initials as the profile pic, below two members are for that
 
 ___
 
@@ -79,6 +89,8 @@ ___
 ###  pictureUrl
 
 **● pictureUrl**: *`string`* = ""
+
+Profile picture url of the user
 
 ___
 

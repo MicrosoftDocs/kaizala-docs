@@ -29,6 +29,8 @@
 
 **● optionId**: *`number`* = 0
 
+Index of the option
+
 ___
 
 <a id="optiontitle"></a>
@@ -37,6 +39,8 @@ ___
 
 **● optionTitle**: *`string`* = ""
 
+Title of the option
+
 ___
 
 <a id="respondertoresponsecount"></a>
@@ -44,6 +48,8 @@ ___
 ###  responderToResponseCount
 
 **● responderToResponseCount**: *`object`*
+
+A map of user ids against their response count Dictionary<UserId: string, ResponseCount: number>
 
 #### Type declaration
 
@@ -54,6 +60,8 @@ ___
 ###  totalResponsesCount
 
 **● totalResponsesCount**: *`number`* = 0
+
+How many have chosen this option
 
 ___
 

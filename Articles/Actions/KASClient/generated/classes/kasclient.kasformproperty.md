@@ -32,6 +32,8 @@
 
 **● name**: *`string`* = ""
 
+Name of the metadata
+
 ___
 
 <a id="type"></a>
@@ -40,6 +42,8 @@ ___
 
 **● type**: *[KASFormPropertyType](../enums/kasclient.kasformpropertytype.md)* =  KASFormPropertyType.Text
 
+Type of the metadata
+
 ___
 
 <a id="value"></a>
@@ -47,6 +51,8 @@ ___
 ###  value
 
 **● value**: *`string`* = ""
+
+Value of the metadata
 
 ___
 
