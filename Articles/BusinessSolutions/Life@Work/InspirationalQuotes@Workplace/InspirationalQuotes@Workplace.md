@@ -1,6 +1,6 @@
 # Share Inspirational Quotes
 
-Every leader likes to inspire workforce and sometimes the inspiration that is needed to guide a team comes from simple words of wisdom.A few words of wisdom with teams can have a dynamic impact on employee morale and performance. 
+Every leader likes to inspire workforce and sometimes the inspiration that is needed to guide a team comes from simple words of wisdom. A few words of wisdom with teams can have a dynamic impact on employee morale and performance. 
 
 Organizations can use this card to share inspirational quotes on a regular basis and not just limit to roadshows, meeting rooms and email.Users can Pick from five colorful backgrounds or share image quotes in a group. Users may also choose to write a message along with the quote. 
 
@@ -21,7 +21,7 @@ Immersive View:
 <img src="InspirationalQuotes@WorkplaceImages/3.png" alt="Chat card view Logo" width="200" />
 
 ## Implementation Steps:
-1. Download the ["ShareQuotesOnKaizala-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/tree/master/Articles/BusinessSolutions/Life%40Work/InspirationalQuotes%40Workplace) (*This contains action package*)
+1. Download the ["ShareQuotesOnKaizala-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/InspirationalQuotes%40Workplace/ShareQuotesOnKaizala-SolutionPackage.zip) (*This contains action package*)
 2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK) (*This contains KASClient.js*)
 3. Edit the "ShareQuotesOnKaizala-SolutionPackage.Zip" (*as below*)
    1. Unzip "ShareQuotesOnKaizala-SolutionPackage.Zip" to a folder
