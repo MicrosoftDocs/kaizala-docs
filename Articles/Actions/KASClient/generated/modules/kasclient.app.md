@@ -239,7 +239,7 @@ Gets conversation related properties
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:<br><br>\* @param KASConversationDetails result conversation properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASConversationDetails} callback.result result conversation properties<br><br>\* @param {string} callback.error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
 
