@@ -1,4 +1,4 @@
-# Share Inspirational Quotes @ Workplace
+# Share Inspirational Quotes
 
 Every leader likes to inspire workforce and sometimes the inspiration that is needed to guide a team comes from simple words of wisdom.A few words of wisdom with teams can have a dynamic impact on employee morale and performance. 
 
