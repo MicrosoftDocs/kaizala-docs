@@ -240,7 +240,7 @@ Gets conversation related properties
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   *   *   @param {KASConversationDetails} result conversation properties*   *   *   @param {string} error json string for the KASError object containing error code and/or description. |
+| callback | `function` |  with below parameters:*   @param {KASConversationDetails} result conversation properties*   @param {string} error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
 
@@ -383,6 +383,8 @@ ___
 
 Gets the localized strings' dictionary based on current app locale. Strings must be provided inside the package with names like: strings\_en.json, strings\_hi.json, etc.
 
+#### Sample Usage
+
 ```
 KASClient.App.getLocalizedStringsAsync(function (strings, error) {
     if (error != null) {
@@ -396,7 +398,7 @@ KASClient.App.getLocalizedStringsAsync(function (strings, error) {
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {JSON} strings can be null in case of error*   @param {string} error message in case of error, null otherwise#### Sample Usage |
+| callback | `function` |  with below parameters:*   @param {JSON} strings can be null in case of error*   @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -891,7 +893,7 @@ KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (
 | ------ | ------ | ------ |
 | supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |  array of supported attachment types for the picker. |
 | props | `JSON` |  additional props to configure the picker |
-| callback | `function` |  with below parameters*   *   *   @param {KASAttachment\[\]} selectedAttachments string of selected attachments*   *   *   @params {string} error |
+| callback | `function` |  with below parameters*   @param {KASAttachment\[\]} selectedAttachments string of selected attachments*   @params {string} error |
 
 **Returns:** `void`
 
@@ -1116,7 +1118,7 @@ Shows profile page/details of a user
 | ------ | ------ | ------ |
 | userId | `string` |  of the user whose profile is to be shown |
 | isMiniProfile | `boolean` |  whether to show mini-profile first |
-| callback | `function` |  with below parameters:*   *   *   @param {boolean} success*   *   *   @param {string} error |
+| callback | `function` |  with below parameters:*   @param {boolean} success*   @param {string} error |
 
 **Returns:** `void`
 
@@ -1135,7 +1137,7 @@ Starts chat with a user
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | userId | `string` |  of the user |
-| callback | `function` |  with below parameters:*   *   *   @param {boolean} success*   *   *   @param {string} error |
+| callback | `function` |  with below parameters:*   @param {boolean} success*   @param {string} error |
 
 **Returns:** `void`
 
