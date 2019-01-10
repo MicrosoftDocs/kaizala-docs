@@ -1,6 +1,6 @@
 # Share Inspirational Quotes
 
-Every leader likes to inspire workforce and sometimes the inspiration that is needed to guide a team comes from simple words of wisdom.A few words of wisdom with teams can have a dynamic impact on employee morale and performance. 
+Every leader likes to inspire workforce and sometimes the inspiration that is needed to guide a team comes from simple words of wisdom. A few words of wisdom with teams can have a dynamic impact on employee morale and performance. 
 
 Organizations can use this card to share inspirational quotes on a regular basis and not just limit to roadshows, meeting rooms and email.Users can Pick from five colorful backgrounds or share image quotes in a group. Users may also choose to write a message along with the quote. 
 
