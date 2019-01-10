@@ -34,9 +34,9 @@ Immersive View
    4. Add html2canvas.min.js from https://html2canvas.hertzen.com/ to this folder.
    5. Zip all the contents in this folder (*This folder is your modified action package which should be imported to kaizala management portal*)
    		
-           > Note:Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new action "id" and "provider name"
+       > Note:Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new action "id" and "provider name"
         
-           > Note:Please refer to license guide of html2canvas.min.js and comply with their terms and conditions before adding html2canvas.min.js to your  action package and uploading it to your tenant
+       > Note:Please refer to license guide of html2canvas.min.js and comply with their terms and conditions before adding html2canvas.min.js to your  action package and uploading it to your tenant
 
 4.  [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to [kaizala management portal](https://manage.kaiza.la/)
 5. [Publish](https://docs.microsoft.com/en-us/kaizala/actions/publish) the action and add the action to a group where you want to add the card
@@ -44,7 +44,7 @@ Immersive View
 
 > Note: In a flat group, all the group members and admins can create and send this card. In managed Public group, only admin and member role users can send this card, while subscribers would recieve the card.
 
-Here are few Quotes from famous personalities that will help you to start- 
+Here are few Quotes from famous personalities that will help you to start:
 
  1. We are what we repeatedly do. Excellence then, is not an act, but a habit. – Aristotle
  2. There are no secrets to success. It is the result of preparation, hard work, and learning from failure. – Colin Powell
