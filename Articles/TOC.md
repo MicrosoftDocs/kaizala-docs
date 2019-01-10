@@ -62,8 +62,6 @@
 ### [Display RSS feeds in Kaizala groups](BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
 ### [Display SharePoint announcements in Kaizala groups](BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
 ### [Auto-Post Twitter updates in Kaizala](BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
-## [Life@Work](BusinessSolutions/Life@Work/Life@Work.md)
-### [Share Inspirational Quotes @ Workplace](BusinessSolutions/Life@Work/InspirationalQuotes@Workplace/InspirationalQuotes@Workplace.md)
 ## [Ticketing System](PartnerDocs/Customerticketingsolution.md)
 ## [Integrating Kaizala data to your custom dashboards](PartnerDocs/IntegratingKaizalaData.md)
 
