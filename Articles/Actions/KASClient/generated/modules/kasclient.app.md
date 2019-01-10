@@ -31,7 +31,6 @@
 * [isAttachmentDownloadingAsync](kasclient.app.md#isattachmentdownloadingasync)
 * [isAuthenticationTyepSupportedAsync](kasclient.app.md#isauthenticationtyepsupportedasync)
 * [isTalkBackEnabledAsync](kasclient.app.md#istalkbackenabledasync)
-* [launchShare](kasclient.app.md#launchshare)
 * [logToReport](kasclient.app.md#logtoreport)
 * [openAttachmentImmersiveView](kasclient.app.md#openattachmentimmersiveview)
 * [openImmersiveViewForAttachmentList](kasclient.app.md#openimmersiveviewforattachmentlist)
@@ -84,8 +83,8 @@ Cancel a download operation queued for an attachment
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |   |
-| callback | `function` |
+| attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |  \- |
+| callback | `function` |  with error - error string in case of error; null otherwise |
 
 **Returns:** `void`
 
@@ -331,9 +330,9 @@ Gets the font size multiplier for large text. Current only required by iOS.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| callback | `function` |
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below params<br><br>\* @param {string} multiplier<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -635,23 +634,6 @@ Gets whether talkback is enabled or not
 
 ___
 
-<a id="launchshare"></a>
-
-###  launchShare
-
-▸ **launchShare**(objects: *[KASShareObject](../classes/kasclient.kasshareobject.md)[]*, callback: *`function`*): `void`
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| objects | [KASShareObject](../classes/kasclient.kasshareobject.md)[] |
-| callback | `function` |
-
-**Returns:** `void`
-
-___
-
 <a id="logtoreport"></a>
 
 ###  logToReport
@@ -817,7 +799,7 @@ Registers a callback to be executed on hardware back button press (for Android)
 
 | Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
-| `Default value` callback | `function` |  null |  to be executed |
+| `Default value` callback | `function` |  null |  method to be executed |
 
 **Returns:** `void`
 
@@ -834,7 +816,7 @@ Sets few properties when using native toolbar
 #### Sample Usage
 
 ```
-var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties();
+var nativeToolbarProps = new KASClient.KASNativeToolbarProperties();
 nativeToolbarProps.icon = "<image>"
 nativeToolbarProps.title = "<title>";
 nativeToolbarProps.subtitle = "<subtitle>";
