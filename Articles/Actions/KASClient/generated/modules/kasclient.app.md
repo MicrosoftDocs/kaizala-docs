@@ -130,7 +130,7 @@ KASClient.App.downloadAttachmentAsync(imageAttachment, function(downloadedAttach
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |  attachment with a valid server path to download |
-| callback | `function` |  callback on download completion |
+| callback | `function` |  callback on download completion with below params<br><br>\* @param {KASAttachment} downloadedAttachment the attachment that got downloaded<br><br>\* @param {string} error in case of any error |
 
 **Returns:** `void`
 
@@ -159,7 +159,7 @@ KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | localPath | `string` |  localPath for the imageAttachment whose thumbnail needs to be generated |
-| callback | `function` |  with below parameters:*   @param {string} thumbnail the base64 value*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} thumbnail the base64 value<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -186,7 +186,7 @@ Gets the new UUID
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} uuid newly generated uuid*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} uuid newly generated uuid<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -204,7 +204,7 @@ Gets the current app locale, the language in which the app is rendered, useful f
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} locale can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} locale can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -222,7 +222,7 @@ Gets the current system calendar setting. This is mainly for iOS to identify the
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} calendarName can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} calendarName can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -240,7 +240,7 @@ Gets conversation related properties
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {KASConversationDetails} result conversation properties*   @param {string} error json string for the KASError object containing error code and/or description. |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASConversationDetails} result conversation properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
 
@@ -269,7 +269,7 @@ Gets the current device location
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} location can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} location can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -297,7 +297,7 @@ Gets deviceId
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} deviceId got from integeration service*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} deviceId got from integeration service<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -315,7 +315,7 @@ Gets the previously stored device location
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} location can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} location can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -351,7 +351,7 @@ Gets Forward Context details such as : Card Creation is in forwarded mode
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {Json} returns the Context Details in Json structure |
+| callback | `function` |  with below parameters:<br><br>\* @param {Json} returns the Context Details in Json structure |
 
 **Returns:** `void`
 
@@ -369,7 +369,7 @@ Gets the current app time format is 24hours or not, the time format selected by 
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} isAppTimeFormat24Hours can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} isAppTimeFormat24Hours can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -398,7 +398,7 @@ KASClient.App.getLocalizedStringsAsync(function (strings, error) {
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {JSON} strings can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {JSON} strings can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -432,7 +432,7 @@ KASClient.App.getLocationAddressAsync(params,
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | params | [KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md) |  KASLocationAddressParams |
-| callback | `function` |  callback on address fetch |
+| callback | `function` |  callback on address fetch with below params<br><br>\* @param {JSON} location a json containing latitute longitude and other informaion<br><br>\* @param {string} error in case of any error |
 
 **Returns:** `void`
 
@@ -462,7 +462,7 @@ KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | params | [KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md) |  KASLocationStaticMapImageParams |
-| callback | `function` |  callback on download completion |
+| callback | `function` |  on download completion with below params<br><br>\* @param {string} attachmentString base64 value of the attachment<br><br>\* @param {string} error in case of any error |
 
 **Returns:** `void`
 
@@ -480,7 +480,7 @@ Gets details of current logged-in O365 user
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {Json} returns the UserDetails in Json structure |
+| callback | `function` |  with below parameters:<br><br>\* @param {Json} returns the UserDetails in Json structure |
 
 **Returns:** `void`
 
@@ -509,7 +509,7 @@ KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {JSON} settings can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {JSON} settings can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -542,7 +542,7 @@ KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | userIds | `string`[] |  array of user ids |
-| callback | `function` |  with below parameters:*   @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {Dictionary<UserId: string, UserInfo: KASUser>} userIdToInfoMap (users' details against their ids) can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -592,7 +592,7 @@ KASClient.App.isAttachmentDownloadingAsync(attachment, function(isAttachmentDown
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |  attachment with a valid server path to download |
-| callback | `function` |  callback on download completion |
+| callback | `function` |  callback on download completion with below params<br><br>\* @param {boolean} isAttachmentDownloadingOrDownLoaded flag representing if attachment is downloading/downloaded<br><br>\* @param {string} error in case of any error |
 
 **Returns:** `void`
 
@@ -611,7 +611,7 @@ Checks if authentication of type is possible or not.
 | Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | `Default value` authenticationType | [KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md) |  KASAuthenticationType.None |  type of authentication. |
-| callback | `function` | - |  with below parameters:*   @param {boolean} isSuccessful true if finger printing is possible*   @param {string} reasonCode reason code why finger print is not possible |
+| callback | `function` | - |  with below parameters:<br><br>\* @param {boolean} isSuccessful true if finger printing is possible<br><br>\* @param {string} reasonCode reason code why finger print is not possible |
 
 **Returns:** `void`
 
@@ -629,7 +629,7 @@ Gets whether talkback is enabled or not
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {boolean} talkBackEnabled true if talkback is enabled |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} talkBackEnabled true if talkback is enabled |
 
 **Returns:** `void`
 
@@ -730,7 +730,7 @@ KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, functio
 | Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | `Default value` authenticationType | [KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md) |  KASAuthenticationType.None |  type of authentication. |
-| callback | `function` | - |  with below parameters:*   @param {boolean} isSuccessful true if the form is not yet expired*   @param {string} reasonCode reason code in case of error, null otherwise |
+| callback | `function` | - |  with below parameters:<br><br>\* @param {boolean} isSuccessful true if the form is not yet expired<br><br>\* @param {string} reasonCode reason code in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -893,7 +893,7 @@ KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (
 | ------ | ------ | ------ |
 | supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |  array of supported attachment types for the picker. |
 | props | `JSON` |  additional props to configure the picker |
-| callback | `function` |  with below parameters*   @param {KASAttachment\[\]} selectedAttachments string of selected attachments*   @params {string} error |
+| callback | `function` |  with below parameters<br><br>\* @param {KASAttachment\[\]} selectedAttachments string of selected attachments<br><br>\* @param {string} error |
 
 **Returns:** `void`
 
@@ -911,7 +911,7 @@ Launches the barcode scanner and returns the scanned object
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} barcodeInfo can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} barcodeInfo can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -933,7 +933,7 @@ Shows a native contact picker, and returns an array of all the selected users' d
 | selectedMutableUser | `string`[] |  array of selected userIds |
 | selectedImmutableUser | `string`[] |  array of fixed selected userIds |
 | isSingleSelection | `boolean` |  single selection in Contact Picker |
-| callback | `function` |  with below parameters:*   @param {KASUser\[\]} selectedUsers (array of user details) can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASUser\[\]} selectedUsers (array of user details) can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 Array of all the selected users' details (Array of JSON)
@@ -963,7 +963,7 @@ Shows a native duration picker with day/hour/minute
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | defaultDurationInMinutes | `number` |  the default duration to be shown on picker |
-| callback | `function` |  with below parameters:*   @param {number} durationInMinutes selected duration in minutes*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {number} durationInMinutes selected duration in minutes<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -1007,7 +1007,7 @@ Shows a native image picker, and returns the selected image path
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} selectedImagePath can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} selectedImagePath can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 Selected image location
@@ -1062,7 +1062,7 @@ Shows a native place picker, and returns the selected place (lt, lg, n)
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {KASLocation} selectedLocation can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASLocation} selectedLocation can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -1098,7 +1098,7 @@ Launches the QR code scanner and returns the scanned object
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:*   @param {string} qrCodeInfo can be null in case of error*   @param {string} error message in case of error, null otherwise |
+| callback | `function` |  with below parameters:<br><br>\* @param {string} qrCodeInfo can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -1118,7 +1118,7 @@ Shows profile page/details of a user
 | ------ | ------ | ------ |
 | userId | `string` |  of the user whose profile is to be shown |
 | isMiniProfile | `boolean` |  whether to show mini-profile first |
-| callback | `function` |  with below parameters:*   @param {boolean} success*   @param {string} error |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success<br><br>\* @param {string} error |
 
 **Returns:** `void`
 
@@ -1137,7 +1137,7 @@ Starts chat with a user
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | userId | `string` |  of the user |
-| callback | `function` |  with below parameters:*   @param {boolean} success*   @param {string} error |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success<br><br>\* @param {string} error |
 
 **Returns:** `void`
 
