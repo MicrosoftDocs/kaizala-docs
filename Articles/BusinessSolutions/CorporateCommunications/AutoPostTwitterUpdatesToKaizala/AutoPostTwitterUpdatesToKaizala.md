@@ -26,11 +26,11 @@ Immersive View:
 
 In this scenario, Flow is used to send the card to a selected group in Kaizala.
 
-<img src="AutoPostTwitterUpdatesToKaizalaImages/3.png" alt="Flow+Twitter>Kaizala" width="400" />
+<img src="AutoPostTwitterUpdatesToKaizalaImages/3.png" alt="Flow+Twitter>Kaizala" width="500" />
 
 # Implementation steps:
 
-1. Download the [AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip](AutoPostTwitterUpdatesToKaizala-SolutionPackage.Zip) (*This contains Flow Package*)
+1. Download the [AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip](AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip) (*This contains Flow Package*)
 
 2. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip" to your Microsoft Flow account
 
