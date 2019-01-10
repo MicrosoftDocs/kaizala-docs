@@ -28,13 +28,13 @@ In this scenario, Flow is used to send the card to a selected group in Kaizala.
 
 <img src="AutoPostTwitterUpdatesToKaizalaImages/3.png" alt="Flow+Twitter>Kaizala" width="500" />
 
-# Implementation steps:
+## Implementation steps:
 
-1. Download the [AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip](AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip) (*This contains Flow Package*)
+1. Download the [AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip) (*This contains Flow Package*)
 
 2. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip" to your Microsoft Flow account
 
-> Note- If you have never used Twitter or Kaizala connections, first[add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
+> Note- If you have never used Twitter or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
 3. Edit the Flow (*as Below*)
 
