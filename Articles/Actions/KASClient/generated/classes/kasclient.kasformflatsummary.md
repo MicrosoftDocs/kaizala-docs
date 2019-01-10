@@ -33,6 +33,8 @@
 
 **● conversationId**: *`string`* = ""
 
+The id of the associated conversation, shouldn't be changed
+
 ___
 
 <a id="formid"></a>
@@ -40,6 +42,8 @@ ___
 ###  formId
 
 **● formId**: *`string`* = ""
+
+The id of the associated form, shouldn't be changed
 
 ___
 

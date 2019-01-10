@@ -48,6 +48,8 @@
 
 **● allowSendReminder**: *[KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)* =  KASFormResultVisibility.Sender
 
+Who can send reminder, default value is sender
+
 ___
 
 <a id="conversationid"></a>
@@ -55,6 +57,8 @@ ___
 ###  conversationId
 
 **● conversationId**: *`string`* = ""
+
+Associated conversation id, shouldn't be changed
 
 ___
 
@@ -64,6 +68,8 @@ ___
 
 **● creatorId**: *`string`* = ""
 
+User id who created the form, shouldn't be changed
+
 ___
 
 <a id="expiry"></a>
@@ -71,6 +77,8 @@ ___
 ###  expiry
 
 **● expiry**: *`number`* = 0
+
+Expiry time of the form
 
 ___
 
@@ -80,6 +88,8 @@ ___
 
 **● id**: *`string`* = ""
 
+Form id, shouldn't be changed
+
 ___
 
 <a id="isanonymous"></a>
@@ -87,6 +97,8 @@ ___
 ###  isAnonymous
 
 **● isAnonymous**: *`boolean`* = false
+
+If the form is anonymous, default is false
 
 ___
 
@@ -96,6 +108,8 @@ ___
 
 **● isGroupLevelAggregationRequired**: *`boolean`* = false
 
+whether server should do subgroup level aggregation on results for this action instance
+
 ___
 
 <a id="islocationrequested"></a>
@@ -104,6 +118,8 @@ ___
 
 **● isLocationRequested**: *`boolean`* = false
 
+Denotes if participants' location is attached with the response or not, default is false
+
 ___
 
 <a id="isresponseappended"></a>
@@ -111,6 +127,8 @@ ___
 ###  isResponseAppended
 
 **● isResponseAppended**: *`boolean`* = false
+
+Denotes if multiple responses from a user are allowed or not, default is false
 
 ___
 
@@ -128,6 +146,8 @@ ___
 
 **● packageId**: *`string`* = ""
 
+Package id of the MiniApp, shouldn't be changed
+
 ___
 
 <a id="properties"></a>
@@ -135,6 +155,8 @@ ___
 ###  properties
 
 **● properties**: *[KASFormProperty](kasclient.kasformproperty.md)[]* =  []
+
+A list of metadata associated with the form
 
 ___
 
@@ -144,6 +166,8 @@ ___
 
 **● questions**: *[KASQuestion](kasclient.kasquestion.md)[]* =  []
 
+All the questions associated with the form
+
 ___
 
 <a id="reporttype"></a>
@@ -151,6 +175,8 @@ ___
 ###  reportType
 
 **● reportType**: *`number`* = 0
+
+Report Type of survey, default is 0, for job it should be 1
 
 ___
 
@@ -160,6 +186,8 @@ ___
 
 **● title**: *`string`* = ""
 
+Form title
+
 ___
 
 <a id="type"></a>
@@ -167,6 +195,8 @@ ___
 ###  type
 
 **● type**: *`number`* = 20
+
+Type of the form, default is 20, shouldn't be changed
 
 ___
 
@@ -176,6 +206,8 @@ ___
 
 **● version**: *`number`* = 2
 
+Version of the form, default value is 2, shouldn't be changed
+
 ___
 
 <a id="visibility"></a>
@@ -183,6 +215,8 @@ ___
 ###  visibility
 
 **● visibility**: *[KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)* =  KASFormResultVisibility.All
+
+Who can see the summary of the form, default value is All
 
 ___
 

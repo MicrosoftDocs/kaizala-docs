@@ -42,6 +42,8 @@
 
 **● config**: *[KASQuestionConfig](kasclient.kasquestionconfig.md)* =  null
 
+Configuration/behaviour of a question
+
 ___
 
 <a id="displaytype"></a>
@@ -49,6 +51,8 @@ ___
 ###  displayType
 
 **● displayType**: *[KASQuestionDisplayType](../enums/kasclient.kasquestiondisplaytype.md)* =  KASQuestionDisplayType.None
+
+Display type of the question's options
 
 ___
 
@@ -58,6 +62,8 @@ ___
 
 **● id**: *`number`* = 0
 
+Index of the question, starts with 0
+
 ___
 
 <a id="iseditable"></a>
@@ -65,6 +71,8 @@ ___
 ###  isEditable
 
 **● isEditable**: *`boolean`* = true
+
+Denotes if the question can be edited by the responder, default is true
 
 ___
 
@@ -74,6 +82,8 @@ ___
 
 **● isExcludedFromReporting**: *`boolean`* = false
 
+Denotes if the question will be skipped from all sorts of reporting
+
 ___
 
 <a id="isinvisible"></a>
@@ -81,6 +91,8 @@ ___
 ###  isInvisible
 
 **● isInvisible**: *`boolean`* = false
+
+Denotes if the question should be invisible to the responder, default is false
 
 ___
 
@@ -90,6 +102,8 @@ ___
 
 **● isResponseOptional**: *`boolean`* = false
 
+Denotes if it's mandatory to respond to this question
+
 ___
 
 <a id="options"></a>
@@ -97,6 +111,8 @@ ___
 ###  options
 
 **● options**: *[KASQuestionOption](kasclient.kasquestionoption.md)[]* =  []
+
+List of options for the question
 
 ___
 
@@ -106,6 +122,8 @@ ___
 
 **● title**: *`string`* = ""
 
+Title of the question
+
 ___
 
 <a id="type"></a>
@@ -113,6 +131,8 @@ ___
 ###  type
 
 **● type**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
+
+Type of the question
 
 ___
 
@@ -122,6 +142,8 @@ ___
 
 **● valif**: *[KASValidationRule](kasclient.kasvalidationrule.md)* =  null
 
+Validation rules of a question - JSON of rule(s), error string and help string
+
 ___
 
 <a id="visif"></a>
@@ -129,6 +151,8 @@ ___
 ###  visif
 
 **● visif**: *[KASVisibilityRule](kasclient.kasvisibilityrule.md)* =  null
+
+Visibility rules of a question - rule string
 
 ___
 

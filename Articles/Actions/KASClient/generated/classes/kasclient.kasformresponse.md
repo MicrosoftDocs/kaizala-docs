@@ -34,6 +34,8 @@
 
 **● groupId**: *`string`* = ""
 
+Group id
+
 ___
 
 <a id="groupname"></a>
@@ -41,6 +43,8 @@ ___
 ###  groupName
 
 **● groupName**: *`string`* = ""
+
+Group Name
 
 ___
 
@@ -50,6 +54,8 @@ ___
 
 **● id**: *`string`* = ""
 
+A unique response id, required in case of updating an existing response
+
 ___
 
 <a id="questiontoanswermap"></a>
@@ -57,6 +63,8 @@ ___
 ###  questionToAnswerMap
 
 **● questionToAnswerMap**: *`object`*
+
+A map of question id to answer Dictionary<QuestionId: number, Answer: string>
 
 #### Type declaration
 
@@ -68,6 +76,8 @@ ___
 
 **● responderId**: *`string`* = ""
 
+Responder id
+
 ___
 
 <a id="respondername"></a>
@@ -75,6 +85,8 @@ ___
 ###  responderName
 
 **● responderName**: *`string`* = ""
+
+Responder name
 
 ___
 
@@ -84,6 +96,8 @@ ___
 
 **● sendStatus**: *[KASFormMessageSendStatus](../enums/kasclient.kasformmessagesendstatus.md)* =  KASFormMessageSendStatus.Unknown
 
+Response message send status
+
 ___
 
 <a id="sendtime"></a>
@@ -92,6 +106,8 @@ ___
 
 **● sendTime**: *`number`* = 0
 
+Response send time
+
 ___
 
 <a id="servertolocalasseturlmap"></a>
@@ -99,6 +115,8 @@ ___
 ###  serverToLocalAssetUrlMap
 
 **● serverToLocalAssetUrlMap**: *`object`*
+
+A map for serverUrl against localUrl of all the image attachments to a response Dictionary<ServerUrl: string, LocalUrl: string>
 
 #### Type declaration
 
