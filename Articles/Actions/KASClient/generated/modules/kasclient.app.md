@@ -130,7 +130,7 @@ KASClient.App.downloadAttachmentAsync(imageAttachment, function(downloadedAttach
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |  attachment with a valid server path to download |
-| callback | `function` |  callback on download completion with below params<br><br>\* @param {KASAttachment} downloadedAttachment the attachment that got downloaded<br><br>\* @param {string} error in case of any error |
+| callback | `function` |  callback on download completion with below params<br><br>\* @param {KASAttachment} downloadedAttachment the attachment that got downloaded<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -432,7 +432,7 @@ KASClient.App.getLocationAddressAsync(params,
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | params | [KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md) |  KASLocationAddressParams |
-| callback | `function` |  callback on address fetch with below params<br><br>\* @param {JSON} location a json containing latitute longitude and other informaion<br><br>\* @param {string} error in case of any error |
+| callback | `function` |  callback on address fetch with below params<br><br>\* @param {JSON} location a json containing latitute longitude and other informaion<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -462,7 +462,7 @@ KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | params | [KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md) |  KASLocationStaticMapImageParams |
-| callback | `function` |  on download completion with below params<br><br>\* @param {string} attachmentString base64 value of the attachment<br><br>\* @param {string} error in case of any error |
+| callback | `function` |  on download completion with below params<br><br>\* @param {string} attachmentString base64 value of the attachment<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -592,7 +592,7 @@ KASClient.App.isAttachmentDownloadingAsync(attachment, function(isAttachmentDown
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |  attachment with a valid server path to download |
-| callback | `function` |  callback on download completion with below params<br><br>\* @param {boolean} isAttachmentDownloadingOrDownLoaded flag representing if attachment is downloading/downloaded<br><br>\* @param {string} error in case of any error |
+| callback | `function` |  callback on download completion with below params<br><br>\* @param {boolean} isAttachmentDownloadingOrDownLoaded flag representing if attachment is downloading/downloaded<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -831,11 +831,21 @@ ___
 
 Sets few properties when using native toolbar
 
+#### Sample Usage
+
+```
+var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties();
+nativeToolbarProps.icon = "<image>"
+nativeToolbarProps.title = "<title>";
+nativeToolbarProps.subtitle = "<subtitle>";
+KASClient.App.setNativeToolbarProperties(nativeToolbarProps);
+```
+
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| properties | [KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md) |  #### Sample Usage``` var nativeToolbarProps = new KASClient.UI.KASNativeToolbarProperties(); nativeToolbarProps.icon = "<image>" nativeToolbarProps.title = "<title>"; nativeToolbarProps.subtitle = "<subtitle>"; KASClient.App.setNativeToolbarProperties(nativeToolbarProps); ``` |
+| properties | [KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md) |   |
 
 **Returns:** `void`
 
@@ -893,7 +903,7 @@ KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (
 | ------ | ------ | ------ |
 | supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[] |  array of supported attachment types for the picker. |
 | props | `JSON` |  additional props to configure the picker |
-| callback | `function` |  with below parameters<br><br>\* @param {KASAttachment\[\]} selectedAttachments string of selected attachments<br><br>\* @param {string} error |
+| callback | `function` |  with below parameters<br><br>\* @param {KASAttachment\[\]} selectedAttachments string of selected attachments<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -1118,7 +1128,7 @@ Shows profile page/details of a user
 | ------ | ------ | ------ |
 | userId | `string` |  of the user whose profile is to be shown |
 | isMiniProfile | `boolean` |  whether to show mini-profile first |
-| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success<br><br>\* @param {string} error |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success true if successful, false otherwise<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
