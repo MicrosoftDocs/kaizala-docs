@@ -84,7 +84,7 @@ Cancel a download operation queued for an attachment
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | attachment | [KASAttachment](../classes/kasclient.kasattachment.md) |  \- |
-| callback | `function` |  with error - error string in case of error; null otherwise |
+| callback | `function` |  with error param - error string in case of error; null otherwise |
 
 **Returns:** `void`
 
@@ -239,7 +239,7 @@ Gets conversation related properties
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:<br><br>\* @param {KASConversationDetails} result conversation properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
+| callback | `function` |  with below parameters:<br><br>\* @param KASConversationDetails result conversation properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
 
