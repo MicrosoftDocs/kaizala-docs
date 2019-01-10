@@ -109,7 +109,7 @@ ___
 
 ▸ **downloadAttachmentAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback: *`function`*): `void`
 
-Download the attachment specified \*
+Download the attachment specified
 
 #### Sample Usage
 
@@ -444,7 +444,7 @@ ___
 
 ▸ **getMapImageAsBase64Async**(params: *[KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)*, callback: *`function`*): `void`
 
-Download the base 64 image of map for the coordinates specified \*
+Download the base 64 image of map for the coordinates specified
 
 #### Sample Usage
 
