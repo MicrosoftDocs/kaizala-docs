@@ -1,4 +1,4 @@
-# Share Inspirational Quotes @ Workplace
+# Share Inspirational Quotes
 
 Every leader likes to inspire workforce and sometimes the inspiration that is needed to guide a team comes from simple words of wisdom.A few words of wisdom with teams can have a dynamic impact on employee morale and performance. 
 
@@ -30,7 +30,7 @@ Immersive View:
    4. Add html2canvas.min.js from https://html2canvas.hertzen.com/ to this folder.
    5. Zip all the contents in this folder (*This folder is your modified action package which should be imported to kaizala management portal*)	
        
-  > Note:Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new action "id" and "provider name". Also, Please refer to license guide of html2canvas.min.js and comply with their terms and conditions before adding html2canvas.min.js to your  action package and uploading it to your tenant
+> Note:Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KAS client, package.Json with new action "id" and "provider name". Also, Please refer to license guide of html2canvas.min.js and comply with their terms and conditions before adding html2canvas.min.js to your  action package and uploading it to your tenant
        
 4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to [kaizala management portal](https://manage.kaiza.la/)
 5. [Publish](https://docs.microsoft.com/en-us/kaizala/actions/publish) the action and add the action to a group where you want to add the card
