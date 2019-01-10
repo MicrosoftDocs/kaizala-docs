@@ -21,7 +21,7 @@ Immersive View:
 <img src="InspirationalQuotes@WorkplaceImages/3.png" alt="Chat card view Logo" width="200" />
 
 ## Implementation Steps:
-1. Download the ["ShareQuotesOnKaizala-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/tree/master/Articles/BusinessSolutions/Life%40Work/InspirationalQuotes%40Workplace) (*This contains action package*)
+1. Download the ["ShareQuotesOnKaizala-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/InspirationalQuotes%40Workplace/ShareQuotesOnKaizala-SolutionPackage.zip) (*This contains action package*)
 2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK) (*This contains KASClient.js*)
 3. Edit the "ShareQuotesOnKaizala-SolutionPackage.Zip" (*as below*)
    1. Unzip "ShareQuotesOnKaizala-SolutionPackage.Zip" to a folder
