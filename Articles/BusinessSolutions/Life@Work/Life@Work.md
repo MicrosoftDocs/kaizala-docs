@@ -5,5 +5,5 @@ Organizations can leverage Kaizala to transform Life@Work and get one step close
 
 Below solutions would help you build an inclusive community:
 
-1. [Share Inspirational Quotes @ Workplace](Life@Work/InspirationalQuotes@Workplace.md)
+1. [Share Inspirational Quotes](Life@Work/InspirationalQuotes@Workplace.md)
 2. Give Kudos and digitally recognise employees
