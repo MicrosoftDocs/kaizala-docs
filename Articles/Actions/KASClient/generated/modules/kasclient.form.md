@@ -29,6 +29,8 @@
 * [addCommentOnForm](kasclient.form.md#addcommentonform)
 * [closeForm](kasclient.form.md#closeform)
 * [copyFormAndForward](kasclient.form.md#copyformandforward)
+* [getActionInstanceLocalDataCacheAsync](kasclient.form.md#getactioninstancelocaldatacacheasync)
+* [getActionPackageLocalDataCacheAsync](kasclient.form.md#getactionpackagelocaldatacacheasync)
 * [getFormReactionAsync](kasclient.form.md#getformreactionasync)
 * [getFormSummaryAsync](kasclient.form.md#getformsummaryasync)
 * [getFormURLAsync](kasclient.form.md#getformurlasync)
@@ -38,18 +40,9 @@
 * [sendRemindersToRespond](kasclient.form.md#sendreminderstorespond)
 * [shareFormURL](kasclient.form.md#shareformurl)
 * [showAllReactions](kasclient.form.md#showallreactions)
-* [updateFormPropertiesAsync](kasclient.form.md#updateformpropertiesasync)
-
-
-### Summary
-
-#### note
-this api doesn&#x27;t work as expected in case of historical messages.
-
-* [getActionInstanceLocalDataCacheAsync](kasclient.form.md#getactioninstancelocaldatacacheasync)
-* [getActionPackageLocalDataCacheAsync](kasclient.form.md#getactionpackagelocaldatacacheasync)
 * [updateActionInstanceLocalDataCacheAsync](kasclient.form.md#updateactioninstancelocaldatacacheasync)
 * [updateActionPackageLocalDataCacheAsync](kasclient.form.md#updateactionpackagelocaldatacacheasync)
+* [updateFormPropertiesAsync](kasclient.form.md#updateformpropertiesasync)
 
 
 
@@ -448,6 +441,64 @@ ___
 
 
 
+<a id="getactioninstancelocaldatacacheasync"></a>
+
+###  getActionInstanceLocalDataCacheAsync
+
+▸ **getActionInstanceLocalDataCacheAsync**(callback: *`function`*): `void`
+
+
+Retrieves the ActionInstance Properties from the local data cache if any exists These properties are stored at an action instance level. So the local data saved for the particular action instance will be returned by this API.
+
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASActionProperties} actionProperties ActionInstance/Form Properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description.<br><br>#### Note This API doesn't work as expected in case of historical messages. |
+
+**Returns:** `void`
+
+___
+
+
+
+
+<a id="getactionpackagelocaldatacacheasync"></a>
+
+###  getActionPackageLocalDataCacheAsync
+
+▸ **getActionPackageLocalDataCacheAsync**(callback: *`function`*): `void`
+
+
+Retrieves the Action Package Properties from the local data cache if any exists These properties are saved at the action package level. So all action instances created from this action package will receive the same data.
+
+#### Sample Usage
+
+```
+KASClient.Form.getActionPackageLocalDataCacheAsync(function (actionPackageProperties, error) {
+     if (error == null && actionPackageProperties != null && actionPackageProperties.properties) {
+          if (actionPackageProperties.properties.hasOwnProperty("prop1") {
+             console.log(actionPackageProperties.properties["prop1"]);
+          }
+     }
+ });
+```
+
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASActionPackageProperties} actionPackageProperties Action Package Properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description.<br><br>#### Note This API doesn't work as expected in case of historical messages. |
+
+**Returns:** `void`
+
+___
+
+
+
+
 <a id="getformreactionasync"></a>
 
 ###  getFormReactionAsync
@@ -656,96 +707,6 @@ ___
 
 
 
-<a id="updateformpropertiesasync"></a>
-
-###  updateFormPropertiesAsync
-
-▸ **updateFormPropertiesAsync**(propertyUpdates: *[KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[]*, notifyUsers: *`string`[]*, notificationMessage: *`string`*, callback: *`function`*): `void`
-
-
-Post a request to update the properties associated with the form
-
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| propertyUpdates | [KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[] |  an array of all update infos that are needed to be performed, update infos can be created using KASFormPropertyUpdateFactory |
-| notifyUsers | `string`[] |  send push notifications to these user ids regarding this update |
-| notificationMessage | `string` |  push notification message |
-| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not |
-
-**Returns:** `void`
-
-___
-
-
-
-
-
-## Summary
-
-#### note
-this api doesn&#x27;t work as expected in case of historical messages.
-
-<a id="getactioninstancelocaldatacacheasync"></a>
-
-###  getActionInstanceLocalDataCacheAsync
-
-▸ **getActionInstanceLocalDataCacheAsync**(callback: *`function`*): `void`
-
-
-Retrieves the ActionInstance Properties from the local data cache if any exists These properties are stored at an action instance level. So the local data saved for the particular action instance will be returned by this API.
-
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| callback | `function` |  with below parameters:<br><br>\* \* \* @param {KASActionProperties} actionProperties ActionInstance/Form Properties<br><br>\* \* \* @param {string} error json string for the KASError object containing error code and/or description. |
-
-**Returns:** `void`
-
-___
-
-
-
-
-<a id="getactionpackagelocaldatacacheasync"></a>
-
-###  getActionPackageLocalDataCacheAsync
-
-▸ **getActionPackageLocalDataCacheAsync**(callback: *`function`*): `void`
-
-
-Retrieves the Action Package Properties from the local data cache if any exists These properties are saved at the action package level. So all action instances created from this action package will receive the same data.
-
-#### Sample Usage
-
-```
-KASClient.Form.getActionPackageLocalDataCacheAsync(function (actionPackageProperties, error) {
-     if (error == null && actionPackageProperties != null && actionPackageProperties.properties) {
-          if (actionPackageProperties.properties.hasOwnProperty("prop1") {
-             console.log(actionPackageProperties.properties["prop1"]);
-          }
-     }
- });
-```
-
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| callback | `function` |  with below parameters:<br><br>\* \* \* @param {KASActionPackageProperties} actionPackageProperties Action Package Properties<br><br>\* \* \* @param {string} error json string for the KASError object containing error code and/or description. |
-
-**Returns:** `void`
-
-___
-
-
-
-
 <a id="updateactioninstancelocaldatacacheasync"></a>
 
 ###  updateActionInstanceLocalDataCacheAsync
@@ -761,7 +722,7 @@ Updates/saves the given ActionInstance Properties to the local data cache These 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | actionProperties | [KASActionProperties](../classes/kasclient.kasactionproperties.md) |  ActionInstance/Form Properties to be updated/saved |
-| callback | `function` |  with below parameters:<br><br>\* \* \* @param {boolean} success indicates if the update is successful or not<br><br>\* \* \* @param {string} error json string for the KASError object containing error code and/or description. |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not<br><br>\* @param {string} error json string for the KASError object containing error code and/or description.<br><br>#### Note This API doesn't work as expected in case of historical messages. |
 
 **Returns:** `void`
 
@@ -785,7 +746,33 @@ Updates/saves the given Action Package Properties to the local data cache These 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | actionPackageProperties | [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md) |  Action Package Properties to be updated/saved |
-| callback | `function` |  with below parameters:<br><br>\* \* \* @param {boolean} success indicates if the update is successful or not<br><br>\* \* \* @param {string} error json string for the KASError object containing error code and/or description. |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not<br><br>\* @param {string} error json string for the KASError object containing error code and/or description.#### NoteThis API doesn't work as expected in case of historical messages. |
+
+**Returns:** `void`
+
+___
+
+
+
+
+<a id="updateformpropertiesasync"></a>
+
+###  updateFormPropertiesAsync
+
+▸ **updateFormPropertiesAsync**(propertyUpdates: *[KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[]*, notifyUsers: *`string`[]*, notificationMessage: *`string`*, callback: *`function`*): `void`
+
+
+Post a request to update the properties associated with the form
+
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| propertyUpdates | [KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[] |  an array of all update infos that are needed to be performed, update infos can be created using KASFormPropertyUpdateFactory |
+| notifyUsers | `string`[] |  send push notifications to these user ids regarding this update |
+| notificationMessage | `string` |  push notification message |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not |
 
 **Returns:** `void`
 
