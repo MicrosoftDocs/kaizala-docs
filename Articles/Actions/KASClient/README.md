@@ -13,14 +13,14 @@ sub-categorized into:
     
 2.  **App APIs**: These are APIs that can be used to interact with the Kaizala client's native interface and retrieve necessary information. This includes generic APIs, like show contact-picker, image-picker, get current device location, app locale, etc. These APIs can be used in any of the flows mentioned above.
 
-You can download the current KASClient Javascript file from [here](https://manage.kaiza.la/MiniApps/DownloadSDK)
+You can download the current KASClient Javascript file from [here](../../../js/KASClient.js)
 
 ## API Reference
 
 *	[Form creation flow APIs](form_creation.md)
 *	[Form response flow APIs](form_response.md)
 *	[Form Summary flow APIs](form_summary.md)
-*	[App APIs](app.md)
+*	[App APIs](generated/modules/kasclient.app.md)
 
 ## Object Reference
 
