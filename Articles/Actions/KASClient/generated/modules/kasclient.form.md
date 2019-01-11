@@ -275,9 +275,15 @@ Submits a new response against the form associated with the conversation card Th
 
 #### Sample Usage
 
-`` ` `` var questionToAnswerMap = JSON.parse("{}"); questionToAnswerMap\[0\] = answer; KASClient.Form.sumbitFormResponse(questionToAnswerMap, //JSON representing question id to answer mapping null, //responseId - contains value in case of update false, //isEdit - is current response edit false, //showInChatCanvas - separate chat card to be created or not false //isAnonymous - submit response anonymously);
-
-`` ` ``
+```
+var questionToAnswerMap = JSON.parse("{}");
+questionToAnswerMap[0] = answer;
+KASClient.Form.sumbitFormResponse(questionToAnswerMap,
+   null,
+   false,
+   false,
+   false);
+```
 
 
 **Parameters:**
