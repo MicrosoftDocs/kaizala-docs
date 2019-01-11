@@ -540,6 +540,18 @@ ___
 
 Gets form permissions
 
+#### Sample Usage
+
+```
+KASClient.Form.getFormUserCapabilitiesAsync(function (permissions, error) {
+    if(!error) {
+        canRespond = permissions.canRespond;
+        canSendReminder = permissions.canSendReminder;
+        shouldSeeSummary = _permissions.shouldSeeSummary;
+    }
+});
+```
+
 
 **Parameters:**
 
@@ -548,7 +560,6 @@ Gets form permissions
 | callback | `function` |  with below parameters:<br><br>\* @param {KASFormUserCapabilities} permissions<br><br>\* @param {string} error error string in case of error; null otherwise |
 
 **Returns:** `void`
-The callback contains permissions object {KASFormUserCapabilities}
 
 ___
 
