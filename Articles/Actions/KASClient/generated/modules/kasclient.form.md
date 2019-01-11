@@ -325,6 +325,18 @@ ___
 
 Submits a new response against the form associated with the conversation card This won't dismiss the current screen
 
+#### Sample Usage
+
+```
+var questionToAnswerMap = JSON.parse("{}");
+questionToAnswerMap[0] = answer;
+KASClient.Form.sumbitFormResponseWithoutDismiss(questionToAnswerMap,
+   null,
+   false,
+   false,
+   false);
+```
+
 
 **Parameters:**
 
@@ -536,6 +548,7 @@ Gets form permissions
 | callback | `function` |  with below parameters:<br><br>\* @param {KASFormUserCapabilities} permissions<br><br>\* @param {string} error error string in case of error; null otherwise |
 
 **Returns:** `void`
+The callback contains permissions object {KASFormUserCapabilities}
 
 ___
 
