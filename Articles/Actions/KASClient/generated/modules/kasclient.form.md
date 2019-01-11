@@ -450,12 +450,16 @@ ___
 
 Retrieves the ActionInstance Properties from the local data cache if any exists These properties are stored at an action instance level. So the local data saved for the particular action instance will be returned by this API.
 
+#### Note
+
+This API doesn't work as expected in case of historical messages.
+
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:<br><br>\* @param {KASActionProperties} actionProperties ActionInstance/Form Properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description.<br><br>#### Note This API doesn't work as expected in case of historical messages. |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASActionProperties} actionProperties ActionInstance/Form Properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
 
@@ -472,6 +476,10 @@ ___
 
 
 Retrieves the Action Package Properties from the local data cache if any exists These properties are saved at the action package level. So all action instances created from this action package will receive the same data.
+
+#### Note
+
+This API doesn't work as expected in case of historical messages.
 
 #### Sample Usage
 
@@ -490,7 +498,7 @@ KASClient.Form.getActionPackageLocalDataCacheAsync(function (actionPackageProper
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  with below parameters:<br><br>\* @param {KASActionPackageProperties} actionPackageProperties Action Package Properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description.<br><br>#### Note This API doesn't work as expected in case of historical messages. |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASActionPackageProperties} actionPackageProperties Action Package Properties<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
 
@@ -531,13 +539,17 @@ ___
 
 Gets flat responses by all the users, and processed summary from all the responses associated with the form. It requires two callbacks:
 
+#### Note
+
+This is useful when the network is flaky/disconnected, so that summary can immediately be shown with the present data we have, but with an option to refresh it later on arrival of latest data from server! None of the callbacks are mandatory, so if 1st is nil, this method can be used to always fetch summary from server, and if 2nd is nil, this can be used to always fetch summary from local database!
+
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | mostUpdatedCallback | [FormSummaryCallback](kasclient.form.md#formsummarycallback) |  to immediately get the most updated summary from local database. It has below parameters:<br><br>\* @param {KASFormFlatSummary} flatSummary can be null in case of error<br><br>\* @param {KASFormProcessedSummary} processedSummary can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
-| notifyCallback | [FormSummaryCallback](kasclient.form.md#formsummarycallback) |  to get notified with the latest summary fetched from server. It has below parameters:<br><br>\* @param {KASFormFlatSummary} flatSummary can be null in case of error<br><br>\* @param {KASFormProcessedSummary} processedSummary can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise<br><br>#### Note This is useful when the network is flaky/disconnected, so that summary can immediately be shown with the present data we have, but with an option to refresh it later on arrival of latest data from server! None of the callbacks are mandatory, so if 1st is nil, this method can be used to always fetch summary from server, and if 2nd is nil, this can be used to always fetch summary from local database! |
+| notifyCallback | [FormSummaryCallback](kasclient.form.md#formsummarycallback) |  to get notified with the latest summary fetched from server. It has below parameters:<br><br>\* @param {KASFormFlatSummary} flatSummary can be null in case of error<br><br>\* @param {KASFormProcessedSummary} processedSummary can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 
@@ -716,13 +728,17 @@ ___
 
 Updates/saves the given ActionInstance Properties to the local data cache These properties are stored at an action instance level. So each action instance can save some local data in the cache and it will only be accessible by that particular instance
 
+#### Note
+
+This API doesn't work as expected in case of historical messages.
+
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | actionProperties | [KASActionProperties](../classes/kasclient.kasactionproperties.md) |  ActionInstance/Form Properties to be updated/saved |
-| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not<br><br>\* @param {string} error json string for the KASError object containing error code and/or description.<br><br>#### Note This API doesn't work as expected in case of historical messages. |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
 
@@ -740,13 +756,17 @@ ___
 
 Updates/saves the given Action Package Properties to the local data cache These properties are saved at the action package level. So the data is shared among all action instances created from this action package.
 
+#### Note
+
+This API doesn't work as expected in case of historical messages.
+
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | actionPackageProperties | [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md) |  Action Package Properties to be updated/saved |
-| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not<br><br>\* @param {string} error json string for the KASError object containing error code and/or description.#### NoteThis API doesn't work as expected in case of historical messages. |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
 
