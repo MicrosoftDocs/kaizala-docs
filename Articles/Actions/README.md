@@ -1,52 +1,27 @@
-# Kaizala Actions
+## KAS Client
 
-## Overview
-Kaizala Actions are basic 'units of work' that help users to get their work done within a conversational context inside Kaizala. Some of these Actions like Job, Survey, Poll, etc. are shipped out-of-the-box. These Actions can be discovered within the Kaizala app and can be invoked in a chat from the Action Palette. [Read More](https://support.office.com/en-us/article/Kaizala-Actions-1EACC59A-DD14-43E9-B6B0-3C78773D5496).
+KAS Client SDK provides a bridge between the Kaizala app's native interface (Objective-C for iOS, Java for Android) and your Kaizala Action's javascript.
 
-We understand that the needs of every organization vary and they would require functionalities that would be very different from the needs of any other organization. Hence Kaizala enables development of custom Kaizala Actions that can be done by 3rd Party developers. These custom Actions can be deployed to a group, mapped within an organization context.</br>
+Broadly KASClient APIs are divided into two categories:
+1.  **Form APIs**: Each Action's conversation card is associated with a form object. A form defines the behaviour of the Action. To create an Action instance you need to initialize 
+a form object, put necessary information in it, and then submit it as a request to the respective conversation. Participants in the conversation can respond to the form, 
+or see the aggregated summary of all the responses. These APIs were created to deal with everything related to forms. Based on different flows, these can further be 
+sub-categorized into:
+    *   **Creation flow APIs**:  Tapping on the Action's icon in palette launches its creation flow. Using these APIs you can initialize a form object, manipulate it, and submit it as a request.
+	*   **Response flow APIs**: Tapping on the respond button of a Action card launches its response flow. Using these APIs you can get the associated form object, all the previous responses, and submit a new response.
+	*   **Summary flow APIs**: Tapping on the summary button of a Action card launches its summary flow. Using these APIs you can get the associated form object, all the aggregated responses by the participants, and choose to close the form so that further responses are not allowed.
+    
+2.  **App APIs**: These are APIs that can be used to interact with the Kaizala client's native interface and retrieve necessary information. This includes generic APIs, like show contact-picker, image-picker, get current device location, app locale, etc. These APIs can be used in any of the flows mentioned above.
 
-All Actions that are published to a set of users can be invoked by them on any groups that Action had been added to. 
+You can download the current KASClient Javascript file from [here](../../../js/KASClient.js)
 
-> **Note:** Custom Actions can only be added to organization groups.
+## API Reference
 
-> **Note :** [Kaizala Management Portal](https://manage.kaiza.la) is the gateway for all development, testing and publishing of new Kaizala Actions.
+*	[Form creation flow APIs](form_creation.md)
+*	[Form response flow APIs](form_response.md)
+*	[Form Summary flow APIs](form_summary.md)
+*	[App APIs](generated/modules/kasclient.app.md)
 
-## Understanding Kaizala Action
+## Object Reference
 
-A Kaizala Action currently contains four different views that can be defined as below:
-
-* A **creation view** when an Action is invoked from the palette
-* A **card view** that appears on the chat canvas when an instance of the Action is sent
-* A **responder view** for users to respond to the Kaizala Action
-* A **summary view** to view aggregated responses
-
-For instance, in Out-of-Box(OOB) Kaizala Survey Action:
-
-| View | Sample view in OOB Survey Action |
-|------|----------------------------------|
-| Creation view| ![](../images/CreationView.png)|
-| Card view |![](../images/Chatcard.png) |
-| Responder view |![](../images/ResponseView.png) |
-| Summary view |![](../images/SummaryView.png) |
-
-In custom Actions, you can create custom views that correspond to above views.
-
-## Create a new Kaizala Action
-You can create new Kaizala Actions that leverage Kaizala’s people network and mobile capabilities to create compelling experiences in the following ways:
-
-* **Design** a new Kaizala Action through the Kaizala Management Portal - You can design a custom Kaizala Action through the Action Designer interface by building on the existing Action templates. [Read More](https://support.office.com/en-us/article/Kaizala-Actions-1eacc59a-dd14-43e9-b6b0-3c78773d5496?ui=en-US&rs=en-US&ad=US)
-* **Develop** a new Kaizala Action - You can create complex new Kaizala Actions that provide custom functionality using web technologies like HTML, CSS and JavaScript. Follow the links below to learn about various stages of developement of a Kaizala Action.
-    *   [Anatomy of a Kaizala Action package](anatomy.md)
-    *   [Get Started](get_started.md)
-    *   [Develop](develop.md)
-    *   [Publish](publish.md)
-
-All Kaizala Actions need to adhere to the [guidelines](validation.md) to be eligible to be published to Kaizala clients.
-
-## Build your first Kaizala Action
-
-You can try out building your first Kaizala Action by following our simple [tutorial](tutorial.md)
-
-## Download Sample Action Packages
-
-*  [Sample Actions](https://manage.kaiza.la/MiniApps/DownloadSDK)
+References of all the objects in the SDK are avaialable [here](objects.md).
