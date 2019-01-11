@@ -17,9 +17,9 @@ You can download the current KASClient Javascript file from [here](../../../js/K
 
 ## API Reference
 
-*	[Form creation flow APIs](form_creation.md)
-*	[Form response flow APIs](form_response.md)
-*	[Form Summary flow APIs](form_summary.md)
+*	[Form creation flow APIs](generated/modules/kasclient.form.md#creation)
+*	[Form response flow APIs](generated/modules/kasclient.form.md#response)
+*	[Form Summary flow APIs](generated/modules/kasclient.form.md#summary)
 *	[App APIs](generated/modules/kasclient.app.md)
 
 ## Object Reference
