@@ -277,10 +277,6 @@ Submits a new response against the form associated with the conversation card Th
 
 `` ` `` var questionToAnswerMap = JSON.parse("{}"); questionToAnswerMap\[0\] = answer; KASClient.Form.sumbitFormResponse(questionToAnswerMap, //JSON representing question id to answer mapping null, //responseId - contains value in case of update false, //isEdit - is current response edit false, //showInChatCanvas - separate chat card to be created or not false //isAnonymous - submit response anonymously);
 
-// questionToAnswerMap is a map which has key as question's Id and value as the response to the question.
-
-// Let's say question is of type "text" which means it takes text as response. You should define it like // var question = new KASClient.KASQuestion(); // question.id = 1; // question.type = KASClient.KASQuestionType.Text; // question.title = "Enter your name"; // This KASQuestion is to be added to form.questions\[\] array. // Now questionToAnswerMap for this should look like this {1: ""}
-
 `` ` ``
 
 
