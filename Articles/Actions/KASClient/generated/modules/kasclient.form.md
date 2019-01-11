@@ -454,6 +454,18 @@ Retrieves the ActionInstance Properties from the local data cache if any exists 
 
 This API doesn't work as expected in case of historical messages.
 
+#### Sample Usage
+
+```
+KASClient.Form.getActionInstanceLocalDataCacheAsync(function (actionPackageProperties, error) {
+     if (error == null && actionPackageProperties != null && actionPackageProperties.properties) {
+          if (actionPackageProperties.properties.hasOwnProperty("prop1") {
+             console.log(actionPackageProperties.properties["prop1"]);
+          }
+     }
+ });
+```
+
 
 **Parameters:**
 
@@ -542,6 +554,22 @@ Gets flat responses by all the users, and processed summary from all the respons
 #### Note
 
 This is useful when the network is flaky/disconnected, so that summary can immediately be shown with the present data we have, but with an option to refresh it later on arrival of latest data from server! None of the callbacks are mandatory, so if 1st is nil, this method can be used to always fetch summary from server, and if 2nd is nil, this can be used to always fetch summary from local database!
+
+#### Sample Usage
+
+```
+KASClient.Form.getFormSummaryAsync(
+   // Data fetched from database
+   function (flatSummary, processedSummary, error) {
+      if (error != null) {
+      }
+   },
+   // Data fetched from server
+   function (flatSummary, processedSummary, error) {
+      if (error != null) {
+      }
+   })
+```
 
 
 **Parameters:**
@@ -728,6 +756,18 @@ ___
 
 Updates/saves the given ActionInstance Properties to the local data cache These properties are stored at an action instance level. So each action instance can save some local data in the cache and it will only be accessible by that particular instance
 
+#### Sample Usage
+
+```
+var actionPackageProperties = KASClient.KASActionPackageProperties.fromJSON(JSON.parse("{}"));
+actionPackageProperties.properties = JSON.parse("{}");
+actionPackageProperties.properties[prop1] = value1;
+KASClient.Form.updateActionInstanceLocalDataCacheAsync(actionPackageProperties, function(success, error) {
+     if(!error) {
+     }
+});
+```
+
 #### Note
 
 This API doesn't work as expected in case of historical messages.
@@ -756,6 +796,18 @@ ___
 
 Updates/saves the given Action Package Properties to the local data cache These properties are saved at the action package level. So the data is shared among all action instances created from this action package.
 
+#### Sample Usage
+
+```
+var actionPackageProperties = KASClient.KASActionPackageProperties.fromJSON(JSON.parse("{}"));
+actionPackageProperties.properties = JSON.parse("{}");
+actionPackageProperties.properties[prop1] = value1;
+KASClient.Form.updateActionPackageLocalDataCacheAsync(actionPackageProperties, function(success, error) {
+     if(!error) {
+     }
+});
+```
+
 #### Note
 
 This API doesn't work as expected in case of historical messages.
@@ -783,6 +835,24 @@ ___
 
 
 Post a request to update the properties associated with the form
+
+#### Sample Usage
+
+```
+var updateProperties = [];
+var currentFormProperty = new KASClient.KASFormProperty(); // type: KASFormProperty
+currentFormProperty.name = "<name>";
+currentFormProperty.value = "<value>";
+var property1ToAdd = KASClient.KASFormPropertyUpdateFactory.addProperty(currentFormProperty); //use updateValueInProperty in case of existing form property
+updateProperties.push(property1ToAdd);
+var notifyUsersList = [];
+// notifyUsersList.push(<"uid1">);
+// notifyUsersList.push("<uid2>");
+KASClient.Form.updateFormPropertiesAsync(updateProperties, notifyUsersList, notificationMessage, function (success) {
+  if (success) {
+  }
+});
+```
 
 
 **Parameters:**
