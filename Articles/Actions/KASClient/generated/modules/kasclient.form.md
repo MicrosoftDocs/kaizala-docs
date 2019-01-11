@@ -25,6 +25,7 @@
 
 ### Summary
 
+* [FormSummaryCallback](kasclient.form.md#formsummarycallback)
 * [addCommentOnForm](kasclient.form.md#addcommentonform)
 * [closeForm](kasclient.form.md#closeform)
 * [copyFormAndForward](kasclient.form.md#copyformandforward)
@@ -42,21 +43,13 @@
 
 ### Summary
 
-#### warning
-
-this api doesn&#x27;t work as expected in case of historical messages.
-
-* [updateActionPackageLocalDataCacheAsync](kasclient.form.md#updateactionpackagelocaldatacacheasync)
-
-
-### Summary
-
-#### warning
+#### note
 this api doesn&#x27;t work as expected in case of historical messages.
 
 * [getActionInstanceLocalDataCacheAsync](kasclient.form.md#getactioninstancelocaldatacacheasync)
 * [getActionPackageLocalDataCacheAsync](kasclient.form.md#getactionpackagelocaldatacacheasync)
 * [updateActionInstanceLocalDataCacheAsync](kasclient.form.md#updateactioninstancelocaldatacacheasync)
+* [updateActionPackageLocalDataCacheAsync](kasclient.form.md#updateactionpackagelocaldatacacheasync)
 
 
 
@@ -373,6 +366,31 @@ ___
 
 ## Summary
 
+<a id="formsummarycallback"></a>
+
+###  FormSummaryCallback
+
+**Ƭ FormSummaryCallback**: *`function`*
+
+
+#### Type declaration
+▸(flatSummary: *[KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md)*, processedSummary: *[KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md)*, error: *`string`*): `void`
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| flatSummary | [KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md) |
+| processedSummary | [KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md) |
+| error | `string` |
+
+**Returns:** `void`
+
+___
+
+
+
+
 <a id="addcommentonform"></a>
 
 ###  addCommentOnForm
@@ -667,38 +685,7 @@ ___
 
 ## Summary
 
-#### warning
-
-this api doesn&#x27;t work as expected in case of historical messages.
-
-<a id="updateactionpackagelocaldatacacheasync"></a>
-
-###  updateActionPackageLocalDataCacheAsync
-
-▸ **updateActionPackageLocalDataCacheAsync**(actionPackageProperties: *[KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)*, callback: *`function`*): `void`
-
-
-Updates/saves the given Action Package Properties to the local data cache These properties are saved at the action package level. So the data is shared among all action instances created from this action package.
-
-
-**Parameters:**
-
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| actionPackageProperties | [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md) |  Action Package Properties to be updated/saved |
-| callback | `function` |  with below parameters:<br><br>\* \* \* @param {boolean} success indicates if the update is successful or not<br><br>\* \* \* @param {string} error json string for the KASError object containing error code and/or description. |
-
-**Returns:** `void`
-
-___
-
-
-
-
-
-## Summary
-
-#### warning
+#### note
 this api doesn&#x27;t work as expected in case of historical messages.
 
 <a id="getactioninstancelocaldatacacheasync"></a>
@@ -774,6 +761,30 @@ Updates/saves the given ActionInstance Properties to the local data cache These 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | actionProperties | [KASActionProperties](../classes/kasclient.kasactionproperties.md) |  ActionInstance/Form Properties to be updated/saved |
+| callback | `function` |  with below parameters:<br><br>\* \* \* @param {boolean} success indicates if the update is successful or not<br><br>\* \* \* @param {string} error json string for the KASError object containing error code and/or description. |
+
+**Returns:** `void`
+
+___
+
+
+
+
+<a id="updateactionpackagelocaldatacacheasync"></a>
+
+###  updateActionPackageLocalDataCacheAsync
+
+▸ **updateActionPackageLocalDataCacheAsync**(actionPackageProperties: *[KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)*, callback: *`function`*): `void`
+
+
+Updates/saves the given Action Package Properties to the local data cache These properties are saved at the action package level. So the data is shared among all action instances created from this action package.
+
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| actionPackageProperties | [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md) |  Action Package Properties to be updated/saved |
 | callback | `function` |  with below parameters:<br><br>\* \* \* @param {boolean} success indicates if the update is successful or not<br><br>\* \* \* @param {string} error json string for the KASError object containing error code and/or description. |
 
 **Returns:** `void`
