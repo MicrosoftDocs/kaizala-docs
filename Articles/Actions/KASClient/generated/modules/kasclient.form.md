@@ -285,6 +285,19 @@ KASClient.Form.sumbitFormResponse(questionToAnswerMap,
    false);
 ```
 
+#### Note
+
+```
+questionToAnswerMap is a map which has key as question Id and value as the response to the question.<br>
+Say question is of type "text" which means it takes text as response. You should define it like<br>
+var question = new KASClient.KASQuestion();<br>
+question.id = 1;<br>
+question.type = KASClient.KASQuestionType.Text;<br>
+question.title = "Enter your name";<br>
+This KASQuestion is to be added to form.questions[] array.<br>
+Now questionToAnswerMap for this should look like this {1: "<answer>"}
+```
+
 
 **Parameters:**
 
