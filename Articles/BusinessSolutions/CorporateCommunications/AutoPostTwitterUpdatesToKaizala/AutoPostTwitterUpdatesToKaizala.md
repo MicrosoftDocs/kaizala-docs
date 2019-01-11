@@ -2,17 +2,17 @@
 
 Posting to Twitter employee pages is part of daily business, but having to post the same information multiple times is quite difficult. Encouraging employees to share social media updates, when done properly can dramatically expand company's following. 
 
-This sample solution saves your time by auto-posting the status updates from your official twitter account to Kaizala groups. An announcement card is sent to the group when one or all the below triggers occur
+This sample solution saves your time by auto-posting Tweets from your official Twitter account to Kaizala groups. An announcement card is sent to the group when one or all the below triggers occur
 
-1. A new tweet is posted on a specific twitter handle E.g.,"@InsideFabrikam"
+1. A new tweet is posted on a specific Twitter handle E.g.,"@InsideFabrikam"
 
-2. A post is re-tweeted in that twitter handle 
+2. A post is re-tweeted in that Twitter handle 
 	
 3. A post has a specific hashtag E.g.,"#EmployeeEngagement"
 
 <img src="AutoPostTwitterUpdatesToKaizalaImages/6.png" alt="Tweet" width="400" />
 
-This card has three fields- card title, attachments(images, videos or GIF) and body (description). The announcement body has the twitter URL and on tapping this URL, users would be directed to status page on twitter.
+This card has three fields- card title, attachments(images, videos or GIF) and body (description). The announcement body has the Twitter URL and on tapping this URL, users would be directed to status page on Twitter.
 
 > Note: In case of Video or GIF, thumbnail is shown in chat card view
 
@@ -40,7 +40,7 @@ In this scenario, Flow is used to send the card to a selected group in Kaizala.
 
     1.  In the first block of the Flow
     
-	    Enter the twitter handle or enter the hashtag, or both
+	    Enter the Twitter handle or enter the hashtag, or both
 		
 	    <img src="AutoPostTwitterUpdatesToKaizalaImages/4.PNG" alt="Firstblock>Kaizala" width="400" />
 	
