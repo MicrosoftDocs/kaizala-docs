@@ -24,7 +24,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -36,10 +35,6 @@
 **● id**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="pictureurl"></a>
 
 ###  pictureUrl
@@ -47,10 +42,6 @@ ___
 **● pictureUrl**: *`string`* =  null
 
 ___
-
-
-
-
 <a id="text"></a>
 
 ###  text
@@ -58,10 +49,6 @@ ___
 **● text**: *`string`* = ""
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -74,10 +61,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -87,10 +70,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="tojson"></a>
 
 ###  toJSON
@@ -100,10 +79,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -119,8 +94,4 @@ ___
 **Returns:** [KASQuestionOption](kasclient.kasquestionoption.md)
 
 ___
-
-
-
-
 

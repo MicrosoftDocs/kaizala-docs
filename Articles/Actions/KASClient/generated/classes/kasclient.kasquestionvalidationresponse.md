@@ -15,7 +15,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -27,10 +26,6 @@
 **● errorMsg**: *`string`* =  null
 
 ___
-
-
-
-
 <a id="success"></a>
 
 ###  success
@@ -38,8 +33,4 @@ ___
 **● success**: *`boolean`* = false
 
 ___
-
-
-
-
 

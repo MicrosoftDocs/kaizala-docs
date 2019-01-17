@@ -15,7 +15,6 @@
 
 
 
-
 ---
 
 ## Enumeration members
@@ -27,10 +26,6 @@
 **FaceRecognition**:  = 5
 
 ___
-
-
-
-
 <a id="fingerprint"></a>
 
 ###  FingerPrint
@@ -38,10 +33,6 @@ ___
 **FingerPrint**:  = 4
 
 ___
-
-
-
-
 <a id="none"></a>
 
 ###  None
@@ -49,10 +40,6 @@ ___
 **None**:  =  -1
 
 ___
-
-
-
-
 <a id="password"></a>
 
 ###  Password
@@ -60,10 +47,6 @@ ___
 **Password**:  = 3
 
 ___
-
-
-
-
 <a id="pattern"></a>
 
 ###  Pattern
@@ -71,10 +54,6 @@ ___
 **Pattern**:  = 1
 
 ___
-
-
-
-
 <a id="pin"></a>
 
 ###  Pin
@@ -82,8 +61,4 @@ ___
 **Pin**:  = 2
 
 ___
-
-
-
-
 

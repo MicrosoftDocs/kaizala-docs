@@ -20,7 +20,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -32,10 +31,6 @@
 **● description**: *`String`* = ""
 
 ___
-
-
-
-
 <a id="errorcode"></a>
 
 ###  errorCode
@@ -43,10 +38,6 @@ ___
 **● errorCode**: *[KASErrorCode](../enums/kasclient.kaserrorcode.md)* =  KASErrorCode.NONE
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -65,8 +56,4 @@ ___
 **Returns:** [KASError](kasclient.kaserror.md)
 
 ___
-
-
-
-
 

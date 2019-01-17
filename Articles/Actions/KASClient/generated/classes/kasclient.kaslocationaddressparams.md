@@ -21,7 +21,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -33,10 +32,6 @@
 **● language**: *`string`*
 
 ___
-
-
-
-
 <a id="latitude"></a>
 
 ###  latitude
@@ -44,10 +39,6 @@ ___
 **● latitude**: *`number`*
 
 ___
-
-
-
-
 <a id="longitude"></a>
 
 ###  longitude
@@ -55,10 +46,6 @@ ___
 **● longitude**: *`number`*
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -71,8 +58,4 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 

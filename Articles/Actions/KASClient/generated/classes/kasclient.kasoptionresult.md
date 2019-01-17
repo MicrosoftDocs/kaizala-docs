@@ -22,7 +22,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -38,10 +37,6 @@ Index of the option
 
 
 ___
-
-
-
-
 <a id="optiontitle"></a>
 
 ###  optionTitle
@@ -53,10 +48,6 @@ Title of the option
 
 
 ___
-
-
-
-
 <a id="respondertoresponsecount"></a>
 
 ###  responderToResponseCount
@@ -69,10 +60,6 @@ A map of user ids against their response count Dictionary<UserId: string, Respon
 #### Type declaration
 
 ___
-
-
-
-
 <a id="totalresponsescount"></a>
 
 ###  totalResponsesCount
@@ -84,10 +71,6 @@ How many have chosen this option
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -106,8 +89,4 @@ ___
 **Returns:** [KASOptionResult](kasclient.kasoptionresult.md)
 
 ___
-
-
-
-
 

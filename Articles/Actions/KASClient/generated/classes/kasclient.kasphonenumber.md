@@ -27,7 +27,6 @@
 
 
 
-
 ---
 
 ## Constructors
@@ -49,10 +48,6 @@
 
 ___
 
-
-
-
-
 ## Properties
 
 <a id="countryphonecode"></a>
@@ -62,10 +57,6 @@ ___
 **● countryPhoneCode**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="phonenumber"></a>
 
 ###  phoneNumber
@@ -73,10 +64,6 @@ ___
 **● phoneNumber**: *`string`* = ""
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -89,10 +76,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="tostring"></a>
 
 ###  toString
@@ -102,10 +85,6 @@ ___
 **Returns:** `string`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -121,8 +100,4 @@ ___
 **Returns:** [KASPhoneNumber](kasclient.kasphonenumber.md)
 
 ___
-
-
-
-
 

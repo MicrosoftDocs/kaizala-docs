@@ -25,7 +25,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -37,10 +36,6 @@
 **● formId**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="formstatus"></a>
 
 ###  formStatus
@@ -48,10 +43,6 @@ ___
 **● formStatus**: *[FormStatus](../enums/kasclient.formstatus.md)* =  FormStatus.Active
 
 ___
-
-
-
-
 <a id="json"></a>
 
 ###  json
@@ -59,10 +50,6 @@ ___
 **● json**: *`JSON`*
 
 ___
-
-
-
-
 <a id="result"></a>
 
 ###  result
@@ -70,10 +57,6 @@ ___
 **● result**: *`any`[]* =  []
 
 ___
-
-
-
-
 <a id="targetrespondercount"></a>
 
 ###  targetResponderCount
@@ -81,10 +64,6 @@ ___
 **● targetResponderCount**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="totalparticipantscount"></a>
 
 ###  totalParticipantsCount
@@ -92,10 +71,6 @@ ___
 **● totalParticipantsCount**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="totalresponsecount"></a>
 
 ###  totalResponseCount
@@ -103,10 +78,6 @@ ___
 **● totalResponseCount**: *`number`* = 0
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -126,8 +97,4 @@ ___
 **Returns:** [KASFormAggregatedSummary](kasclient.kasformaggregatedsummary.md)
 
 ___
-
-
-
-
 

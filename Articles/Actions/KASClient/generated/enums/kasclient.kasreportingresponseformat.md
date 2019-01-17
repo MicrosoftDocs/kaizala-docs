@@ -13,7 +13,6 @@ Reporting type enum used in KASClient.Form.getFormReportingDataAsync API
 
 
 
-
 ---
 
 ## Enumeration members
@@ -25,8 +24,4 @@ Reporting type enum used in KASClient.Form.getFormReportingDataAsync API
 **Json**:  = 1
 
 ___
-
-
-
-
 

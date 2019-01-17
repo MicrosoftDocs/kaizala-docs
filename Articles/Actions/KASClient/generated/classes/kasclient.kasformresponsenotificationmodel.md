@@ -27,7 +27,6 @@
 
 
 
-
 ---
 
 ## Constructors
@@ -50,10 +49,6 @@
 
 ___
 
-
-
-
-
 ## Properties
 
 <a id="messagepreview"></a>
@@ -63,10 +58,6 @@ ___
 **● messagePreview**: *`String`* = ""
 
 ___
-
-
-
-
 <a id="messagetarget"></a>
 
 ###  messageTarget
@@ -74,10 +65,6 @@ ___
 **● messageTarget**: *[KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*
 
 ___
-
-
-
-
 <a id="pushtarget"></a>
 
 ###  pushTarget
@@ -85,10 +72,6 @@ ___
 **● pushTarget**: *[KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -101,10 +84,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJson
@@ -120,8 +99,4 @@ ___
 **Returns:** [KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
 
 ___
-
-
-
-
 

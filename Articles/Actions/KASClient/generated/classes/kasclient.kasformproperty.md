@@ -25,7 +25,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -41,10 +40,6 @@ Name of the metadata
 
 
 ___
-
-
-
-
 <a id="type"></a>
 
 ###  type
@@ -56,10 +51,6 @@ Type of the metadata
 
 
 ___
-
-
-
-
 <a id="value"></a>
 
 ###  value
@@ -71,10 +62,6 @@ Value of the metadata
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -93,10 +80,6 @@ ___
 **Returns:** `string`
 
 ___
-
-
-
-
 <a id="toapicompatiblejson"></a>
 
 ###  toAPICompatibleJSON
@@ -106,10 +89,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -119,10 +98,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="tojson"></a>
 
 ###  toJSON
@@ -132,10 +107,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -151,8 +122,4 @@ ___
 **Returns:** [KASFormProperty](kasclient.kasformproperty.md)
 
 ___
-
-
-
-
 

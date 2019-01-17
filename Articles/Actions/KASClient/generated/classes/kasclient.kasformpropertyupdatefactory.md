@@ -19,7 +19,6 @@
 
 
 
-
 ---
 
 ## Methods
@@ -40,10 +39,6 @@
 **Returns:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
-
-
-
 <a id="addproperty"></a>
 
 ### `<Static>` addProperty
@@ -59,10 +54,6 @@ ___
 **Returns:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
-
-
-
 <a id="deleteentriesfrompropertyvalue"></a>
 
 ### `<Static>` deleteEntriesFromPropertyValue
@@ -79,10 +70,6 @@ ___
 **Returns:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
-
-
-
 <a id="deleteproperty"></a>
 
 ### `<Static>` deleteProperty
@@ -98,10 +85,6 @@ ___
 **Returns:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
-
-
-
 <a id="replaceentryinpropertyvalue"></a>
 
 ### `<Static>` replaceEntryInPropertyValue
@@ -119,10 +102,6 @@ ___
 **Returns:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
-
-
-
 <a id="updatevalueinproperty"></a>
 
 ### `<Static>` updateValueInProperty
@@ -139,8 +118,4 @@ ___
 **Returns:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
-
-
-
 

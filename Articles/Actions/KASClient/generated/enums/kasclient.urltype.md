@@ -11,7 +11,6 @@
 
 
 
-
 ---
 
 ## Enumeration members
@@ -23,10 +22,6 @@
 **Current**:  = 0
 
 ___
-
-
-
-
 <a id="fixed"></a>
 
 ###  Fixed
@@ -34,8 +29,4 @@ ___
 **Fixed**:  = 1
 
 ___
-
-
-
-
 

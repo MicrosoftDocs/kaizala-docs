@@ -17,7 +17,6 @@
 
 
 
-
 ---
 
 ## Enumeration members
@@ -33,10 +32,6 @@ Array of strings as the metadata value
 
 
 ___
-
-
-
-
 <a id="attachment"></a>
 
 ###  Attachment
@@ -48,10 +43,6 @@ Attachment path as the metadata value
 
 
 ___
-
-
-
-
 <a id="attachmentlist"></a>
 
 ###  AttachmentList
@@ -63,10 +54,6 @@ List of KASAttachment as metadata value
 
 
 ___
-
-
-
-
 <a id="datetime"></a>
 
 ###  DateTime
@@ -78,10 +65,6 @@ Date time as the metadata value
 
 
 ___
-
-
-
-
 <a id="location"></a>
 
 ###  Location
@@ -93,10 +76,6 @@ Location type as the metadata value
 
 
 ___
-
-
-
-
 <a id="numeric"></a>
 
 ###  Numeric
@@ -108,10 +87,6 @@ Only numbers are allowed as the metadata value
 
 
 ___
-
-
-
-
 <a id="set"></a>
 
 ###  Set
@@ -123,10 +98,6 @@ Set (unique list) of strings as the metadata value
 
 
 ___
-
-
-
-
 <a id="text"></a>
 
 ###  Text
@@ -138,8 +109,4 @@ Any text is allowed as the metadata value
 
 
 ___
-
-
-
-
 

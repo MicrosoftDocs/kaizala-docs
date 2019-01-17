@@ -13,7 +13,6 @@ Reporting response mode enum used in KASClient.Form.getFormReportingDataAsync AP
 
 
 
-
 ---
 
 ## Enumeration members
@@ -25,8 +24,4 @@ Reporting response mode enum used in KASClient.Form.getFormReportingDataAsync AP
 **ExternalUrl**:  = 1
 
 ___
-
-
-
-
 

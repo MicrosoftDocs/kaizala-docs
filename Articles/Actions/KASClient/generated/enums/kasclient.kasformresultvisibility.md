@@ -13,7 +13,6 @@
 
 
 
-
 ---
 
 ## Enumeration members
@@ -29,10 +28,6 @@ Summary is visible to all the admins of the conversation
 
 
 ___
-
-
-
-
 <a id="all"></a>
 
 ###  All
@@ -44,10 +39,6 @@ Form summary is visible to everyone in the conversation
 
 
 ___
-
-
-
-
 <a id="membersandsubscribers"></a>
 
 ###  MembersAndSubscribers
@@ -59,10 +50,6 @@ Summary is visible to all the member and subscribers of the conversation
 
 
 ___
-
-
-
-
 <a id="sender"></a>
 
 ###  Sender
@@ -74,8 +61,4 @@ Summary is visible to only the creator of the form
 
 
 ___
-
-
-
-
 

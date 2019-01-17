@@ -13,7 +13,6 @@ The following enum values MUST be in sync with the ShareObjectType enum represen
 
 
 
-
 ---
 
 ## Enumeration members
@@ -25,8 +24,4 @@ The following enum values MUST be in sync with the ShareObjectType enum represen
 **Image**:  = 1
 
 ___
-
-
-
-
 

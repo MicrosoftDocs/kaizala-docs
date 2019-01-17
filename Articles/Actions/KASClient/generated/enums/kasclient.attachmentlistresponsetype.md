@@ -11,7 +11,6 @@
 
 
 
-
 ---
 
 ## Enumeration members
@@ -23,10 +22,6 @@
 **GENERIC**:  = 0
 
 ___
-
-
-
-
 <a id="list_of_images"></a>
 
 ###  LIST_OF_IMAGES
@@ -34,8 +29,4 @@ ___
 **LIST_OF_IMAGES**:  = 1
 
 ___
-
-
-
-
 

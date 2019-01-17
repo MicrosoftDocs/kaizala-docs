@@ -57,7 +57,6 @@
 
 
 
-
 ---
 
 ## Functions
@@ -94,10 +93,6 @@ Cancel a download operation queued for an attachment
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="dismisscurrentscreen"></a>
 
 ###  dismissCurrentScreen
@@ -111,10 +106,6 @@ Dismiss the current opened Action's screen (Creation, Response, or Summary)
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="downloadattachmentasync"></a>
 
 ###  downloadAttachmentAsync
@@ -149,10 +140,6 @@ KASClient.App.downloadAttachmentAsync(imageAttachment, function(downloadedAttach
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="generatebase64thumbnailasync"></a>
 
 ###  generateBase64ThumbnailAsync
@@ -183,10 +170,6 @@ KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="generateuuidasync"></a>
 
 ###  generateUUIDAsync
@@ -215,10 +198,6 @@ Gets the new UUID
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getapplocaleasync"></a>
 
 ###  getAppLocaleAsync
@@ -238,10 +217,6 @@ Gets the current app locale, the language in which the app is rendered, useful f
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getcalendarnameasync"></a>
 
 ###  getCalendarNameAsync
@@ -261,10 +236,6 @@ Gets the current system calendar setting. This is mainly for iOS to identify the
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getconversationdetailsasync"></a>
 
 ###  getConversationDetailsAsync
@@ -284,10 +255,6 @@ Gets conversation related properties
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getcurrentdevicelocationasync"></a>
 
 ###  getCurrentDeviceLocationAsync
@@ -318,10 +285,6 @@ Gets the current device location
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getcurrentlocale"></a>
 
 ###  getCurrentLocale
@@ -331,10 +294,6 @@ ___
 **Returns:** `string`
 
 ___
-
-
-
-
 <a id="getdeviceidasync"></a>
 
 ###  getDeviceIdAsync
@@ -354,10 +313,6 @@ Gets deviceId
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getdevicelocationasync"></a>
 
 ###  getDeviceLocationAsync
@@ -377,10 +332,6 @@ Gets the previously stored device location
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getfontsizemultiplierasync"></a>
 
 ###  getFontSizeMultiplierAsync
@@ -400,10 +351,6 @@ Gets the font size multiplier for large text. Current only required by iOS.
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getforwardcontextasync"></a>
 
 ###  getForwardContextAsync
@@ -423,10 +370,6 @@ Gets Forward Context details such as : Card Creation is in forwarded mode
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getisapptimeformat24hoursasync"></a>
 
 ###  getIsAppTimeFormat24HoursAsync
@@ -446,10 +389,6 @@ Gets the current app time format is 24hours or not, the time format selected by 
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getlocalizedstringsasync"></a>
 
 ###  getLocalizedStringsAsync
@@ -480,10 +419,6 @@ KASClient.App.getLocalizedStringsAsync(function (strings, error) {
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getlocationaddressasync"></a>
 
 ###  getLocationAddressAsync
@@ -519,10 +454,6 @@ KASClient.App.getLocationAddressAsync(params,
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getmapimageasbase64async"></a>
 
 ###  getMapImageAsBase64Async
@@ -554,10 +485,6 @@ KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="geto365userdetailsasync"></a>
 
 ###  getO365UserDetailsAsync
@@ -577,10 +504,6 @@ Gets details of current logged-in O365 user
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getpackagecustomsettingsasync"></a>
 
 ###  getPackageCustomSettingsAsync
@@ -611,10 +534,6 @@ KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getusersdetailsasync"></a>
 
 ###  getUsersDetailsAsync
@@ -649,10 +568,6 @@ KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="hideprogressbar"></a>
 
 ###  hideProgressBar
@@ -666,10 +581,6 @@ Hides the current progress bar, if any
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="isattachmentdownloadingasync"></a>
 
 ###  isAttachmentDownloadingAsync
@@ -709,10 +620,6 @@ KASClient.App.isAttachmentDownloadingAsync(attachment, function(isAttachmentDown
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="isauthenticationtyepsupportedasync"></a>
 
 ###  isAuthenticationTyepSupportedAsync
@@ -733,10 +640,6 @@ Checks if authentication of type is possible or not.
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="istalkbackenabledasync"></a>
 
 ###  isTalkBackEnabledAsync
@@ -756,10 +659,6 @@ Gets whether talkback is enabled or not
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="logtoreport"></a>
 
 ###  logToReport
@@ -779,10 +678,6 @@ Logs data for "Send report"
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="openattachmentimmersiveview"></a>
 
 ###  openAttachmentImmersiveView
@@ -802,10 +697,6 @@ Open attachment in Immersive view.
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="openimmersiveviewforattachmentlist"></a>
 
 ###  openImmersiveViewForAttachmentList
@@ -826,10 +717,6 @@ Open attachment in Immersive view.
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="performauthenticationasync"></a>
 
 ###  performAuthenticationAsync
@@ -860,10 +747,6 @@ KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, functio
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="performhttprequest"></a>
 
 ###  performHTTPRequest
@@ -897,10 +780,6 @@ KASClient.App.performHTTPRequest(url, parametersJson, function (response, error)
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="printf"></a>
 
 ###  printf
@@ -921,10 +800,6 @@ Returns a string.
 **Returns:** `string`
 
 ___
-
-
-
-
 <a id="readtalkbackmessage"></a>
 
 ###  readTalkBackMessage
@@ -944,10 +819,6 @@ Reads the text if TalkBack/VoiceOver enabled
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="registerhardwarebackpresscallback"></a>
 
 ###  registerHardwareBackPressCallback
@@ -967,10 +838,6 @@ Registers a callback to be executed on hardware back button press (for Android)
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="setnativetoolbarproperties"></a>
 
 ###  setNativeToolbarProperties
@@ -1000,10 +867,6 @@ KASClient.App.setNativeToolbarProperties(nativeToolbarProps);
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="setuserstrings"></a>
 
 ###  setUserStrings
@@ -1019,10 +882,6 @@ ___
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showattachmentpickerasync"></a>
 
 ###  showAttachmentPickerAsync
@@ -1066,10 +925,6 @@ KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showbarcodescannerasync"></a>
 
 ###  showBarcodeScannerAsync
@@ -1089,10 +944,6 @@ Launches the barcode scanner and returns the scanned object
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showcontactpickerasync"></a>
 
 ###  showContactPickerAsync
@@ -1127,10 +978,6 @@ KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [
 ```
 
 ___
-
-
-
-
 <a id="showdurationpickerasync"></a>
 
 ###  showDurationPickerAsync
@@ -1151,10 +998,6 @@ Shows a native duration picker with day/hour/minute
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showimageimmersiveview"></a>
 
 ###  showImageImmersiveView
@@ -1182,10 +1025,6 @@ KASClient.App.showImageImmersiveView(urlArray);
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showimagepickerasync"></a>
 
 ###  showImagePickerAsync
@@ -1206,10 +1045,6 @@ Shows a native image picker, and returns the selected image path
 Selected image location
 
 ___
-
-
-
-
 <a id="showlocationonmap"></a>
 
 ###  showLocationOnMap
@@ -1229,10 +1064,6 @@ shows a particular location as mentioned in KASLocation
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="shownativeerrormessage"></a>
 
 ###  showNativeErrorMessage
@@ -1252,10 +1083,6 @@ Shows a native alert (for iOS) or a toast (for Android) with the message
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showplacepickerasync"></a>
 
 ###  showPlacePickerAsync
@@ -1275,10 +1102,6 @@ Shows a native place picker, and returns the selected place (lt, lg, n)
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showprogressbar"></a>
 
 ###  showProgressBar
@@ -1298,10 +1121,6 @@ Shows a native full sreen progress bar with the given text
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showqrcodescannerasync"></a>
 
 ###  showQRcodeScannerAsync
@@ -1321,10 +1140,6 @@ Launches the QR code scanner and returns the scanned object
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showuserprofileasync"></a>
 
 ###  showUserProfileAsync
@@ -1346,10 +1161,6 @@ Shows profile page/details of a user
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="startchatasync"></a>
 
 ###  startChatAsync
@@ -1370,8 +1181,4 @@ Starts chat with a user
 **Returns:** `void`
 
 ___
-
-
-
-
 

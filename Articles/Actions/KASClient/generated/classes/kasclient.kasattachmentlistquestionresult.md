@@ -30,7 +30,6 @@ This model contains data for every response to an Attachment List Type question.
 
 
 
-
 ---
 
 ## Properties
@@ -46,10 +45,6 @@ attachmentListType: contains the type of the attachment list response
 
 
 ___
-
-
-
-
 <a id="attachmentsresponsejsonstrings"></a>
 
 ###  attachmentsResponseJSONStrings
@@ -61,10 +56,6 @@ attachmentsResponseJSONStrings: contains the list of attachments corresponding t
 
 
 ___
-
-
-
-
 <a id="questionid"></a>
 
 ###  questionId
@@ -76,10 +67,6 @@ Index of the question
 
 
 ___
-
-
-
-
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -91,10 +78,6 @@ Title of the question
 
 
 ___
-
-
-
-
 <a id="questiontype"></a>
 
 ###  questionType
@@ -106,10 +89,6 @@ Type of the question
 
 
 ___
-
-
-
-
 <a id="timestamps"></a>
 
 ###  timeStamps
@@ -121,10 +100,6 @@ timeStamps: contains the response timestamps for every response.
 
 
 ___
-
-
-
-
 <a id="userinfo"></a>
 
 ###  userInfo
@@ -136,10 +111,6 @@ userInfo: contains instances of KASUser with details for the respondent for the 
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -158,8 +129,4 @@ ___
 **Returns:** [KASQuestionResult](kasclient.kasquestionresult.md)
 
 ___
-
-
-
-
 

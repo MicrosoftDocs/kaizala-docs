@@ -19,7 +19,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -31,10 +30,6 @@
 **● inForwardMode**: *`boolean`* = false
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -53,8 +48,4 @@ ___
 **Returns:** [KASForwardContext](kasclient.kasforwardcontext.md)
 
 ___
-
-
-
-
 

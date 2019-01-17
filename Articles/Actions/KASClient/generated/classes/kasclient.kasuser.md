@@ -25,7 +25,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -41,10 +40,6 @@ Unique user id
 
 
 ___
-
-
-
-
 <a id="name"></a>
 
 ###  name
@@ -56,10 +51,6 @@ Name of the user ("You" for the current user)
 
 
 ___
-
-
-
-
 <a id="originalname"></a>
 
 ###  originalName
@@ -71,10 +62,6 @@ Not considering "You"
 
 
 ___
-
-
-
-
 <a id="phonenumber"></a>
 
 ###  phoneNumber
@@ -86,10 +73,6 @@ Phone number of the user
 
 
 ___
-
-
-
-
 <a id="picturebgcolor"></a>
 
 ###  pictureBGColor
@@ -101,10 +84,6 @@ In case the PictureUrl is not there, we should use the users initials as the pro
 
 
 ___
-
-
-
-
 <a id="pictureinitials"></a>
 
 ###  pictureInitials
@@ -112,10 +91,6 @@ ___
 **● pictureInitials**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="pictureurl"></a>
 
 ###  pictureUrl
@@ -127,10 +102,6 @@ Profile picture url of the user
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -149,8 +120,4 @@ ___
 **Returns:** [KASUser](kasclient.kasuser.md)
 
 ___
-
-
-
-
 

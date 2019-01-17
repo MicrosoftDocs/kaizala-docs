@@ -25,7 +25,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -37,10 +36,6 @@
 **● average**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="questionid"></a>
 
 ###  questionId
@@ -52,10 +47,6 @@ Index of the question
 
 
 ___
-
-
-
-
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -67,10 +58,6 @@ Title of the question
 
 
 ___
-
-
-
-
 <a id="questiontype"></a>
 
 ###  questionType
@@ -82,10 +69,6 @@ Type of the question
 
 
 ___
-
-
-
-
 <a id="sum"></a>
 
 ###  sum
@@ -97,10 +80,6 @@ For Numeric questions the aggregated result will be sum, and average of all the 
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -119,8 +98,4 @@ ___
 **Returns:** [KASNumericQuestionResult](kasclient.kasnumericquestionresult.md)
 
 ___
-
-
-
-
 

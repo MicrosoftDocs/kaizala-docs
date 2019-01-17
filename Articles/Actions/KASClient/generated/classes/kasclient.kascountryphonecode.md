@@ -22,7 +22,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -1296,10 +1295,6 @@
 
 ___
 
-
-
-
-
 ## Methods
 
 <a id="getallcountryphonecodes"></a>
@@ -1311,10 +1306,6 @@ ___
 **Returns:** `number`[]
 
 ___
-
-
-
-
 <a id="getallformattedcountryphonecodes"></a>
 
 ### `<Static>` getAllFormattedCountryPhoneCodes
@@ -1330,10 +1321,6 @@ ___
 **Returns:** `string`[]
 
 ___
-
-
-
-
 <a id="getformattedcountryphonecodeforcountry"></a>
 
 ### `<Static>` getFormattedCountryPhoneCodeForCountry
@@ -1350,10 +1337,6 @@ ___
 **Returns:** `string`
 
 ___
-
-
-
-
 <a id="getformattedstring"></a>
 
 ### `<Static>` getFormattedString
@@ -1370,8 +1353,4 @@ ___
 **Returns:** `any`
 
 ___
-
-
-
-
 

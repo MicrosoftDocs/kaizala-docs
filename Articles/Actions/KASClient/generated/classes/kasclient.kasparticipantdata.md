@@ -24,7 +24,6 @@ Defines properties of a conversation participant
 
 
 
-
 ---
 
 ## Properties
@@ -36,10 +35,6 @@ Defines properties of a conversation participant
 **● participantId**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="participantrole"></a>
 
 ###  participantRole
@@ -47,10 +42,6 @@ ___
 **● participantRole**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* =  KASParticipantRole.NONE
 
 ___
-
-
-
-
 <a id="participanttype"></a>
 
 ###  participantType
@@ -58,10 +49,6 @@ ___
 **● participantType**: *[KASParticipantType](../enums/kasclient.kasparticipanttype.md)* =  KASParticipantType.NONE
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -80,8 +67,4 @@ ___
 **Returns:** [KASParticipantData](kasclient.kasparticipantdata.md)
 
 ___
-
-
-
-
 

@@ -96,7 +96,6 @@
 
 
 
-
 ---
 
 ## Functions
@@ -116,10 +115,6 @@
 **Returns:** [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
 
 ___
-
-
-
-
 <a id="getfilteredparticipanttype"></a>
 
 ###  getFilteredParticipantType
@@ -135,8 +130,4 @@ ___
 **Returns:** [KASParticipantType](../enums/kasclient.kasparticipanttype.md)
 
 ___
-
-
-
-
 

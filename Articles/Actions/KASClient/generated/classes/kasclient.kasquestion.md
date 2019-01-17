@@ -35,7 +35,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -51,10 +50,6 @@ Configuration/behaviour of a question
 
 
 ___
-
-
-
-
 <a id="displaytype"></a>
 
 ###  displayType
@@ -66,10 +61,6 @@ Display type of the question's options
 
 
 ___
-
-
-
-
 <a id="id"></a>
 
 ###  id
@@ -81,10 +72,6 @@ Index of the question, starts with 0
 
 
 ___
-
-
-
-
 <a id="iseditable"></a>
 
 ###  isEditable
@@ -96,10 +83,6 @@ Denotes if the question can be edited by the responder, default is true
 
 
 ___
-
-
-
-
 <a id="isexcludedfromreporting"></a>
 
 ###  isExcludedFromReporting
@@ -111,10 +94,6 @@ Denotes if the question will be skipped from all sorts of reporting
 
 
 ___
-
-
-
-
 <a id="isinvisible"></a>
 
 ###  isInvisible
@@ -126,10 +105,6 @@ Denotes if the question should be invisible to the responder, default is false
 
 
 ___
-
-
-
-
 <a id="isresponseoptional"></a>
 
 ###  isResponseOptional
@@ -141,10 +116,6 @@ Denotes if it's mandatory to respond to this question
 
 
 ___
-
-
-
-
 <a id="options"></a>
 
 ###  options
@@ -156,10 +127,6 @@ List of options for the question
 
 
 ___
-
-
-
-
 <a id="title"></a>
 
 ###  title
@@ -171,10 +138,6 @@ Title of the question
 
 
 ___
-
-
-
-
 <a id="type"></a>
 
 ###  type
@@ -186,10 +149,6 @@ Type of the question
 
 
 ___
-
-
-
-
 <a id="valif"></a>
 
 ###  valif
@@ -201,10 +160,6 @@ Validation rules of a question - JSON of rule(s), error string and help string
 
 
 ___
-
-
-
-
 <a id="visif"></a>
 
 ###  visif
@@ -216,10 +171,6 @@ Visibility rules of a question - rule string
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -238,10 +189,6 @@ ___
 **Returns:** `string`
 
 ___
-
-
-
-
 <a id="toapicompatiblejson"></a>
 
 ###  toAPICompatibleJSON
@@ -251,10 +198,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -264,10 +207,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="tojson"></a>
 
 ###  toJSON
@@ -277,10 +216,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="validateresponse"></a>
 
 ###  validateResponse
@@ -296,10 +231,6 @@ ___
 **Returns:** [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -315,8 +246,4 @@ ___
 **Returns:** [KASQuestion](kasclient.kasquestion.md)
 
 ___
-
-
-
-
 

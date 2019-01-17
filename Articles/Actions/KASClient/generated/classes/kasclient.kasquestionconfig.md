@@ -24,7 +24,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -37,10 +36,6 @@
 
 ___
 
-
-
-
-
 ## Methods
 
 <a id="tojson"></a>
@@ -52,10 +47,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -71,8 +62,4 @@ ___
 **Returns:** [KASQuestionConfig](kasclient.kasquestionconfig.md)
 
 ___
-
-
-
-
 

@@ -21,7 +21,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -39,10 +38,6 @@ Sample subgroup summary
 
 
 ___
-
-
-
-
 <a id="respondercount"></a>
 
 ###  responderCount
@@ -50,10 +45,6 @@ ___
 **● responderCount**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="targetcount"></a>
 
 ###  targetCount
@@ -61,10 +52,6 @@ ___
 **● targetCount**: *`number`* = 0
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -83,8 +70,4 @@ ___
 **Returns:** [KASFormSubgroupSummary](kasclient.kasformsubgroupsummary.md)
 
 ___
-
-
-
-
 

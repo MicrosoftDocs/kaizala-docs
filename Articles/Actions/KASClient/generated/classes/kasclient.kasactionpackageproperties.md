@@ -21,7 +21,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -33,10 +32,6 @@
 **● actionPackageId**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="json"></a>
 
 ###  json
@@ -44,10 +39,6 @@ ___
 **● json**: *`JSON`*
 
 ___
-
-
-
-
 <a id="properties"></a>
 
 ###  properties
@@ -55,10 +46,6 @@ ___
 **● properties**: *`JSON`*
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -77,8 +64,4 @@ ___
 **Returns:** [KASActionPackageProperties](kasclient.kasactionpackageproperties.md)
 
 ___
-
-
-
-
 

@@ -4,7 +4,6 @@
 
 ## Index
 
-
 ### Creation
 
 * [initFormAsync](kasclient.form.md#initformasync)
@@ -46,7 +45,6 @@
 
 
 
-
 ---
 
 ## Creation
@@ -71,6 +69,7 @@ KASClient.Form.initFormAsync(function (form, error) {
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -80,10 +79,6 @@ KASClient.Form.initFormAsync(function (form, error) {
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="submitformrequestv2"></a>
 
 ###  submitFormRequestV2
@@ -92,6 +87,7 @@ ___
 
 
 Submits the newly created form as a request. This results a new conversation card
+
 
 
 **Parameters:**
@@ -105,10 +101,6 @@ Submits the newly created form as a request. This results a new conversation car
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="submitformrequestwithoutdismiss"></a>
 
 ###  submitFormRequestWithoutDismiss
@@ -117,6 +109,7 @@ ___
 
 
 Submits the newly created form as a request. This results a new conversation card
+
 
 
 **Parameters:**
@@ -129,10 +122,6 @@ Submits the newly created form as a request. This results a new conversation car
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="updateform"></a>
 
 ###  updateForm
@@ -155,6 +144,7 @@ use for making changes in form fields like title, description and settings.
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -166,10 +156,6 @@ use for making changes in form fields like title, description and settings.
 **Returns:** `void`
 
 ___
-
-
-
-
 
 ## Response
 
@@ -183,6 +169,7 @@ ___
 Gets whether the current user can respond to the form
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -192,10 +179,6 @@ Gets whether the current user can respond to the form
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getformasync"></a>
 
 ###  getFormAsync
@@ -204,6 +187,7 @@ ___
 
 
 Gets the form object associated with the conversation card
+
 
 
 **Parameters:**
@@ -215,10 +199,6 @@ Gets the form object associated with the conversation card
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getformstatusasync"></a>
 
 ###  getFormStatusAsync
@@ -227,6 +207,7 @@ ___
 
 
 Gets the status of the form associated with the conversation card
+
 
 
 **Parameters:**
@@ -238,33 +219,27 @@ Gets the status of the form associated with the conversation card
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getmyformresponsesasync"></a>
 
 ###  getMyFormResponsesAsync
 
-▸ **getMyFormResponsesAsync**(callback: *`function`*): `void`
+▸ **getMyFormResponsesAsync**(callback: *`function`*, onlyCurrentResponse?: *`boolean`*): `void`
 
 
 Gets all the responses of the current user against the form
 
 
+
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| callback | `function` |  with below parameters:<br><br>\* @param {KASFormResponse\[\]} responses can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
+| Name | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| callback | `function` | - |  with below parameters:<br><br>\* @param {KASFormResponse\[\]} responses can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
+| `Default value` onlyCurrentResponse | `boolean` | true |  Applicable for Response Actions where this method returns only the current response in context, set this flag to false to fetch all the responses instead. Default is true |
 
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="sumbitformresponse"></a>
 
 ###  sumbitFormResponse
@@ -300,6 +275,7 @@ Now questionToAnswerMap for this should look like this {1: "<answer>"}
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -313,10 +289,6 @@ Now questionToAnswerMap for this should look like this {1: "<answer>"}
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="sumbitformresponsewithoutdismiss"></a>
 
 ###  sumbitFormResponseWithoutDismiss
@@ -339,6 +311,7 @@ KASClient.Form.sumbitFormResponseWithoutDismiss(questionToAnswerMap,
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -353,10 +326,6 @@ KASClient.Form.sumbitFormResponseWithoutDismiss(questionToAnswerMap,
 
 ___
 
-
-
-
-
 ## Summary
 
 <a id="formsummarycallback"></a>
@@ -364,6 +333,8 @@ ___
 ###  FormSummaryCallback
 
 **Ƭ FormSummaryCallback**: *`function`*
+
+
 
 
 #### Type declaration
@@ -380,10 +351,6 @@ ___
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="addcommentonform"></a>
 
 ###  addCommentOnForm
@@ -392,6 +359,7 @@ ___
 
 
 Requests to add a comment to a form
+
 
 
 **Parameters:**
@@ -403,10 +371,6 @@ Requests to add a comment to a form
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="closeform"></a>
 
 ###  closeForm
@@ -417,13 +381,10 @@ ___
 Closes the form associated with the card, no responses will be allowed further
 
 
+
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="copyformandforward"></a>
 
 ###  copyFormAndForward
@@ -434,13 +395,10 @@ ___
 Launches the conversation picker to forward a copy of the existing form as a new conversation card
 
 
+
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getactioninstancelocaldatacacheasync"></a>
 
 ###  getActionInstanceLocalDataCacheAsync
@@ -467,6 +425,7 @@ KASClient.Form.getActionInstanceLocalDataCacheAsync(function (actionPackagePrope
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -476,10 +435,6 @@ KASClient.Form.getActionInstanceLocalDataCacheAsync(function (actionPackagePrope
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getactionpackagelocaldatacacheasync"></a>
 
 ###  getActionPackageLocalDataCacheAsync
@@ -506,6 +461,7 @@ KASClient.Form.getActionPackageLocalDataCacheAsync(function (actionPackageProper
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -515,10 +471,6 @@ KASClient.Form.getActionPackageLocalDataCacheAsync(function (actionPackageProper
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getformreactionasync"></a>
 
 ###  getFormReactionAsync
@@ -527,6 +479,7 @@ ___
 
 
 Gets the consolidated reaction (likes and comments) of the conversation card associated with the form
+
 
 
 **Parameters:**
@@ -538,10 +491,6 @@ Gets the consolidated reaction (likes and comments) of the conversation card ass
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getformsummaryasync"></a>
 
 ###  getFormSummaryAsync
@@ -572,6 +521,7 @@ KASClient.Form.getFormSummaryAsync(
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -582,10 +532,6 @@ KASClient.Form.getFormSummaryAsync(
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getformurlasync"></a>
 
 ###  getFormURLAsync
@@ -594,6 +540,7 @@ ___
 
 
 Gets the file url from server containing flat responses associated with the form
+
 
 
 **Parameters:**
@@ -605,10 +552,6 @@ Gets the file url from server containing flat responses associated with the form
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="getformusercapabilitiesasync"></a>
 
 ###  getFormUserCapabilitiesAsync
@@ -631,6 +574,7 @@ KASClient.Form.getFormUserCapabilitiesAsync(function (permissions, error) {
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -640,10 +584,6 @@ KASClient.Form.getFormUserCapabilitiesAsync(function (permissions, error) {
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="issubscribed"></a>
 
 ###  isSubscribed
@@ -652,6 +592,7 @@ ___
 
 
 Gets whether the current user is subscriber or not
+
 
 
 **Parameters:**
@@ -663,10 +604,6 @@ Gets whether the current user is subscriber or not
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="likeform"></a>
 
 ###  likeForm
@@ -677,13 +614,10 @@ ___
 Requests to add a like count to a form, the count may decrease if the current user has already liked the form
 
 
+
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="sendreminderstorespond"></a>
 
 ###  sendRemindersToRespond
@@ -694,13 +628,10 @@ ___
 Sends a reminder (a new conversation card) against the existing card
 
 
+
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="shareformurl"></a>
 
 ###  shareFormURL
@@ -709,6 +640,7 @@ ___
 
 
 Share the result url fetched from server - Launches native share screen for the form url
+
 
 
 **Parameters:**
@@ -720,10 +652,6 @@ Share the result url fetched from server - Launches native share screen for the 
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="showallreactions"></a>
 
 ###  showAllReactions
@@ -732,6 +660,7 @@ ___
 
 
 Shows all the reaction screen (likes and comments) against the form
+
 
 
 **Parameters:**
@@ -743,10 +672,6 @@ Shows all the reaction screen (likes and comments) against the form
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="updateactioninstancelocaldatacacheasync"></a>
 
 ###  updateActionInstanceLocalDataCacheAsync
@@ -773,6 +698,7 @@ KASClient.Form.updateActionInstanceLocalDataCacheAsync(actionPackageProperties, 
 This API doesn't work as expected in case of historical messages.
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -783,10 +709,6 @@ This API doesn't work as expected in case of historical messages.
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="updateactionpackagelocaldatacacheasync"></a>
 
 ###  updateActionPackageLocalDataCacheAsync
@@ -813,6 +735,7 @@ KASClient.Form.updateActionPackageLocalDataCacheAsync(actionPackageProperties, f
 This API doesn't work as expected in case of historical messages.
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -823,10 +746,6 @@ This API doesn't work as expected in case of historical messages.
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="updateformpropertiesasync"></a>
 
 ###  updateFormPropertiesAsync
@@ -855,6 +774,7 @@ KASClient.Form.updateFormPropertiesAsync(updateProperties, notifyUsersList, noti
 ```
 
 
+
 **Parameters:**
 
 | Name | Type | Description |
@@ -867,8 +787,4 @@ KASClient.Form.updateFormPropertiesAsync(updateProperties, notifyUsersList, noti
 **Returns:** `void`
 
 ___
-
-
-
-
 

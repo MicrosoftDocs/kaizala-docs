@@ -22,7 +22,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -34,10 +33,6 @@
 **● dependencyQuestionId**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="optionid"></a>
 
 ###  optionId
@@ -45,10 +40,6 @@ ___
 **● optionId**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="rule"></a>
 
 ###  rule
@@ -56,10 +47,6 @@ ___
 **● rule**: *`any`*
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -72,10 +59,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -91,8 +74,4 @@ ___
 **Returns:** [KASVisibilityRule](kasclient.kasvisibilityrule.md)
 
 ___
-
-
-
-
 

@@ -27,7 +27,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -43,10 +42,6 @@ Group id
 
 
 ___
-
-
-
-
 <a id="groupname"></a>
 
 ###  groupName
@@ -58,10 +53,6 @@ Group Name
 
 
 ___
-
-
-
-
 <a id="id"></a>
 
 ###  id
@@ -73,10 +64,6 @@ A unique response id, required in case of updating an existing response
 
 
 ___
-
-
-
-
 <a id="questiontoanswermap"></a>
 
 ###  questionToAnswerMap
@@ -89,10 +76,6 @@ A map of question id to answer Dictionary<QuestionId: number, Answer: string>
 #### Type declaration
 
 ___
-
-
-
-
 <a id="responderid"></a>
 
 ###  responderId
@@ -104,10 +87,6 @@ Responder id
 
 
 ___
-
-
-
-
 <a id="respondername"></a>
 
 ###  responderName
@@ -119,10 +98,6 @@ Responder name
 
 
 ___
-
-
-
-
 <a id="sendstatus"></a>
 
 ###  sendStatus
@@ -134,10 +109,6 @@ Response message send status
 
 
 ___
-
-
-
-
 <a id="sendtime"></a>
 
 ###  sendTime
@@ -149,10 +120,6 @@ Response send time
 
 
 ___
-
-
-
-
 <a id="servertolocalasseturlmap"></a>
 
 ###  serverToLocalAssetUrlMap
@@ -165,10 +132,6 @@ A map for serverUrl against localUrl of all the image attachments to a response 
 #### Type declaration
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -187,8 +150,4 @@ ___
 **Returns:** [KASFormResponse](kasclient.kasformresponse.md)
 
 ___
-
-
-
-
 

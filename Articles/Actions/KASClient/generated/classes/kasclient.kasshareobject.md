@@ -20,7 +20,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -32,10 +31,6 @@
 **● data**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="type"></a>
 
 ###  type
@@ -43,10 +38,6 @@ ___
 **● type**: *[KASShareObjectType](../enums/kasclient.kasshareobjecttype.md)* =  KASShareObjectType.Image
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -59,8 +50,4 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 

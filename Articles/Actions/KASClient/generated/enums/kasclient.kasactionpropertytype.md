@@ -11,7 +11,6 @@
 
 
 
-
 ---
 
 ## Enumeration members
@@ -23,10 +22,6 @@
 **Local**:  = 1
 
 ___
-
-
-
-
 <a id="server"></a>
 
 ###  Server
@@ -34,8 +29,4 @@ ___
 **Server**:  = 0
 
 ___
-
-
-
-
 

@@ -25,7 +25,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -42,10 +41,6 @@ For SingleSelect/MultiSelect question, the result will be option id versus their
 #### Type declaration
 
 ___
-
-
-
-
 <a id="questionid"></a>
 
 ###  questionId
@@ -57,10 +52,6 @@ Index of the question
 
 
 ___
-
-
-
-
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -72,10 +63,6 @@ Title of the question
 
 
 ___
-
-
-
-
 <a id="questiontype"></a>
 
 ###  questionType
@@ -87,10 +74,6 @@ Type of the question
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -108,10 +91,6 @@ Gets all the option ids sorted in their total responses count (descending)
 list of all the option ids
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -127,8 +106,4 @@ ___
 **Returns:** [KASOptionQuestionResult](kasclient.kasoptionquestionresult.md)
 
 ___
-
-
-
-
 

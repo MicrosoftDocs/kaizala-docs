@@ -23,7 +23,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -35,10 +34,6 @@
 **● cursor**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="directmemberresponses"></a>
 
 ###  directMemberResponses
@@ -52,10 +47,6 @@ Sample summary for group
 
 
 ___
-
-
-
-
 <a id="respondercount"></a>
 
 ###  responderCount
@@ -63,10 +54,6 @@ ___
 **● responderCount**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="subgroupsummary"></a>
 
 ###  subgroupSummary
@@ -76,10 +63,6 @@ ___
 #### Type declaration
 
 ___
-
-
-
-
 <a id="targetcount"></a>
 
 ###  targetCount
@@ -87,10 +70,6 @@ ___
 **● targetCount**: *`number`* = 0
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -109,8 +88,4 @@ ___
 **Returns:** [KASFormSummaryForGroup](kasclient.kasformsummaryforgroup.md)
 
 ___
-
-
-
-
 

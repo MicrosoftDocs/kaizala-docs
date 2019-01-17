@@ -35,7 +35,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -47,10 +46,6 @@
 **● attachmentId**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="duration"></a>
 
 ###  duration
@@ -58,10 +53,6 @@ ___
 **● duration**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="filename"></a>
 
 ###  fileName
@@ -69,10 +60,6 @@ ___
 **● fileName**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="hassetthumbnail"></a>
 
 ###  hasSetThumbnail
@@ -80,10 +67,6 @@ ___
 **● hasSetThumbnail**: *`boolean`* = false
 
 ___
-
-
-
-
 <a id="localpath"></a>
 
 ###  localPath
@@ -91,10 +74,6 @@ ___
 **● localPath**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="requirehighresthumbnail"></a>
 
 ###  requireHighResThumbnail
@@ -102,10 +81,6 @@ ___
 **● requireHighResThumbnail**: *`boolean`* = false
 
 ___
-
-
-
-
 <a id="serverpath"></a>
 
 ###  serverPath
@@ -113,10 +88,6 @@ ___
 **● serverPath**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="size"></a>
 
 ###  size
@@ -124,10 +95,6 @@ ___
 **● size**: *`number`* = 0
 
 ___
-
-
-
-
 <a id="streamingpath"></a>
 
 ###  streamingPath
@@ -135,10 +102,6 @@ ___
 **● streamingPath**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="thumbnail"></a>
 
 ###  thumbnail
@@ -146,10 +109,6 @@ ___
 **● thumbnail**: *`string`* = ""
 
 ___
-
-
-
-
 <a id="type"></a>
 
 ###  type
@@ -157,10 +116,6 @@ ___
 **● type**: *[KASAttachmentType](../enums/kasclient.kasattachmenttype.md)* =  KASAttachmentType.Image
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -173,10 +128,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -192,10 +143,6 @@ ___
 **Returns:** [KASAttachment](kasclient.kasattachment.md)
 
 ___
-
-
-
-
 <a id="haslocalpath"></a>
 
 ### `<Static>` hasLocalPath
@@ -211,10 +158,6 @@ ___
 **Returns:** `boolean`
 
 ___
-
-
-
-
 <a id="hasserverpath"></a>
 
 ### `<Static>` hasServerPath
@@ -230,10 +173,6 @@ ___
 **Returns:** `boolean`
 
 ___
-
-
-
-
 <a id="populatemodelfromjson"></a>
 
 ### `<Static>` populateModelFromJSON
@@ -250,8 +189,4 @@ ___
 **Returns:** `void`
 
 ___
-
-
-
-
 

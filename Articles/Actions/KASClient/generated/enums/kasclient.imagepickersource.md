@@ -12,7 +12,6 @@
 
 
 
-
 ---
 
 ## Enumeration members
@@ -24,10 +23,6 @@
 **All**:  = 0
 
 ___
-
-
-
-
 <a id="cameraback"></a>
 
 ###  CameraBack
@@ -35,10 +30,6 @@ ___
 **CameraBack**:  = 2
 
 ___
-
-
-
-
 <a id="camerafront"></a>
 
 ###  CameraFront
@@ -46,8 +37,4 @@ ___
 **CameraFront**:  = 1
 
 ___
-
-
-
-
 

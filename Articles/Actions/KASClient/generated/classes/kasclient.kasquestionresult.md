@@ -27,7 +27,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -43,10 +42,6 @@ Index of the question
 
 
 ___
-
-
-
-
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -58,10 +53,6 @@ Title of the question
 
 
 ___
-
-
-
-
 <a id="questiontype"></a>
 
 ###  questionType
@@ -73,10 +64,6 @@ Type of the question
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -95,8 +82,4 @@ ___
 **Returns:** [KASQuestionResult](kasclient.kasquestionresult.md)
 
 ___
-
-
-
-
 

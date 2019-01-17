@@ -41,7 +41,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -57,10 +56,6 @@ Who can send reminder, default value is sender
 
 
 ___
-
-
-
-
 <a id="conversationid"></a>
 
 ###  conversationId
@@ -72,10 +67,6 @@ Associated conversation id, shouldn't be changed
 
 
 ___
-
-
-
-
 <a id="creatorid"></a>
 
 ###  creatorId
@@ -87,10 +78,6 @@ User id who created the form, shouldn't be changed
 
 
 ___
-
-
-
-
 <a id="expiry"></a>
 
 ###  expiry
@@ -102,10 +89,6 @@ Expiry time of the form
 
 
 ___
-
-
-
-
 <a id="id"></a>
 
 ###  id
@@ -117,10 +100,6 @@ Form id, shouldn't be changed
 
 
 ___
-
-
-
-
 <a id="isanonymous"></a>
 
 ###  isAnonymous
@@ -132,10 +111,6 @@ If the form is anonymous, default is false
 
 
 ___
-
-
-
-
 <a id="isgrouplevelaggregationrequired"></a>
 
 ###  isGroupLevelAggregationRequired
@@ -147,10 +122,6 @@ whether server should do subgroup level aggregation on results for this action i
 
 
 ___
-
-
-
-
 <a id="islocationrequested"></a>
 
 ###  isLocationRequested
@@ -162,10 +133,6 @@ Denotes if participants' location is attached with the response or not, default 
 
 
 ___
-
-
-
-
 <a id="isresponseappended"></a>
 
 ###  isResponseAppended
@@ -177,10 +144,6 @@ Denotes if multiple responses from a user are allowed or not, default is false
 
 
 ___
-
-
-
-
 <a id="json"></a>
 
 ###  json
@@ -188,10 +151,6 @@ ___
 **● json**: *`JSON`*
 
 ___
-
-
-
-
 <a id="packageid"></a>
 
 ###  packageId
@@ -203,10 +162,6 @@ Package id of the MiniApp, shouldn't be changed
 
 
 ___
-
-
-
-
 <a id="properties"></a>
 
 ###  properties
@@ -218,10 +173,6 @@ A list of metadata associated with the form
 
 
 ___
-
-
-
-
 <a id="questions"></a>
 
 ###  questions
@@ -233,10 +184,6 @@ All the questions associated with the form
 
 
 ___
-
-
-
-
 <a id="reporttype"></a>
 
 ###  reportType
@@ -248,10 +195,6 @@ Report Type of survey, default is 0, for job it should be 1
 
 
 ___
-
-
-
-
 <a id="title"></a>
 
 ###  title
@@ -263,10 +206,6 @@ Form title
 
 
 ___
-
-
-
-
 <a id="type"></a>
 
 ###  type
@@ -278,10 +217,6 @@ Type of the form, default is 20, shouldn't be changed
 
 
 ___
-
-
-
-
 <a id="version"></a>
 
 ###  version
@@ -293,10 +228,6 @@ Version of the form, default value is 2, shouldn't be changed
 
 
 ___
-
-
-
-
 <a id="visibility"></a>
 
 ###  visibility
@@ -308,10 +239,6 @@ Who can see the summary of the form, default value is All
 
 
 ___
-
-
-
-
 
 ## Methods
 
@@ -330,10 +257,6 @@ ___
 **Returns:** `string`
 
 ___
-
-
-
-
 <a id="toapicompatiblejson"></a>
 
 ###  toAPICompatibleJSON
@@ -343,10 +266,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -356,10 +275,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="tojson"></a>
 
 ###  toJSON
@@ -369,10 +284,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="addresponsenotificationforaddrow"></a>
 
 ### `<Static>` addResponseNotificationForAddRow
@@ -389,10 +300,6 @@ ___
 **Returns:** `void`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -408,8 +315,4 @@ ___
 **Returns:** [KASForm](kasclient.kasform.md)
 
 ___
-
-
-
-
 

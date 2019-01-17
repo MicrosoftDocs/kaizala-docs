@@ -23,7 +23,6 @@
 
 
 
-
 ---
 
 ## Properties
@@ -39,10 +38,6 @@ Latitude of the location
 
 
 ___
-
-
-
-
 <a id="longitude"></a>
 
 ###  longitude
@@ -54,10 +49,6 @@ Longitude of the location
 
 
 ___
-
-
-
-
 <a id="placeaddress"></a>
 
 ###  placeAddress
@@ -69,10 +60,6 @@ Address of the location
 
 
 ___
-
-
-
-
 <a id="placename"></a>
 
 ###  placeName
@@ -85,10 +72,6 @@ Name of the location
 
 ___
 
-
-
-
-
 ## Methods
 
 <a id="tojson"></a>
@@ -100,10 +83,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
-
-
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -119,8 +98,4 @@ ___
 **Returns:** [KASLocation](kasclient.kaslocation.md)
 
 ___
-
-
-
-
 

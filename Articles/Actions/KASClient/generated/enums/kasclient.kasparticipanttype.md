@@ -15,7 +15,6 @@ Enum for participant type in a group
 
 
 
-
 ---
 
 ## Enumeration members
@@ -27,10 +26,6 @@ Enum for participant type in a group
 **GROUP**:  = 1
 
 ___
-
-
-
-
 <a id="none"></a>
 
 ###  NONE
@@ -38,10 +33,6 @@ ___
 **NONE**:  =  -1
 
 ___
-
-
-
-
 <a id="user"></a>
 
 ###  USER
@@ -49,8 +40,4 @@ ___
 **USER**:  = 0
 
 ___
-
-
-
-
 
