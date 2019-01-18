@@ -14,14 +14,10 @@
 * [longitude](kasclient.kaslocation.md#longitude)
 * [placeAddress](kasclient.kaslocation.md#placeaddress)
 * [placeName](kasclient.kaslocation.md#placename)
-
-
 ### Methods
 
 * [toJSON](kasclient.kaslocation.md#tojson)
 * [fromJSON](kasclient.kaslocation.md#fromjson)
-
-
 
 ---
 
@@ -33,42 +29,37 @@
 
 **● latitude**: *`number`* = 0
 
-
 Latitude of the location
 
-
 ___
+
 <a id="longitude"></a>
 
 ###  longitude
 
 **● longitude**: *`number`* = 0
 
-
 Longitude of the location
 
-
 ___
+
 <a id="placeaddress"></a>
 
 ###  placeAddress
 
 **● placeAddress**: *`string`* = ""
 
-
 Address of the location
 
-
 ___
+
 <a id="placename"></a>
 
 ###  placeName
 
 **● placeName**: *`string`* = ""
 
-
 Name of the location
-
 
 ___
 
@@ -83,6 +74,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

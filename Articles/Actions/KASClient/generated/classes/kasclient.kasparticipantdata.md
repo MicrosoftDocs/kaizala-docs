@@ -2,9 +2,7 @@
 
 # Class: KASParticipantData
 
-
 Defines properties of a conversation participant
-
 ## Hierarchy
 
 **KASParticipantData**
@@ -16,13 +14,9 @@ Defines properties of a conversation participant
 * [participantId](kasclient.kasparticipantdata.md#participantid)
 * [participantRole](kasclient.kasparticipantdata.md#participantrole)
 * [participantType](kasclient.kasparticipantdata.md#participanttype)
-
-
 ### Methods
 
 * [fromJSON](kasclient.kasparticipantdata.md#fromjson)
-
-
 
 ---
 
@@ -35,6 +29,7 @@ Defines properties of a conversation participant
 **● participantId**: *`string`* = ""
 
 ___
+
 <a id="participantrole"></a>
 
 ###  participantRole
@@ -42,6 +37,7 @@ ___
 **● participantRole**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* =  KASParticipantRole.NONE
 
 ___
+
 <a id="participanttype"></a>
 
 ###  participantType

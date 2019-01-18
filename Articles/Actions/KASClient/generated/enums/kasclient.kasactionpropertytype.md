@@ -9,8 +9,6 @@
 * [Local](kasclient.kasactionpropertytype.md#local)
 * [Server](kasclient.kasactionpropertytype.md#server)
 
-
-
 ---
 
 ## Enumeration members
@@ -22,6 +20,7 @@
 **Local**:  = 1
 
 ___
+
 <a id="server"></a>
 
 ###  Server

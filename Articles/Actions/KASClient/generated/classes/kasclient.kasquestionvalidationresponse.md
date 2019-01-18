@@ -13,8 +13,6 @@
 * [errorMsg](kasclient.kasquestionvalidationresponse.md#errormsg)
 * [success](kasclient.kasquestionvalidationresponse.md#success)
 
-
-
 ---
 
 ## Properties
@@ -26,6 +24,7 @@
 **● errorMsg**: *`string`* =  null
 
 ___
+
 <a id="success"></a>
 
 ###  success

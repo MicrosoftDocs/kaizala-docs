@@ -2,16 +2,12 @@
 
 # Enumeration: KASReportingResponseMode
 
-
 Reporting response mode enum used in KASClient.Form.getFormReportingDataAsync API
-
 ## Index
 
 ### Enumeration members
 
 * [ExternalUrl](kasclient.kasreportingresponsemode.md#externalurl)
-
-
 
 ---
 

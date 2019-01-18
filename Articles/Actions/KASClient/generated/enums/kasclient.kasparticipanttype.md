@@ -2,9 +2,7 @@
 
 # Enumeration: KASParticipantType
 
-
 Enum for participant type in a group
-
 ## Index
 
 ### Enumeration members
@@ -12,8 +10,6 @@ Enum for participant type in a group
 * [GROUP](kasclient.kasparticipanttype.md#group)
 * [NONE](kasclient.kasparticipanttype.md#none)
 * [USER](kasclient.kasparticipanttype.md#user)
-
-
 
 ---
 
@@ -26,6 +22,7 @@ Enum for participant type in a group
 **GROUP**:  = 1
 
 ___
+
 <a id="none"></a>
 
 ###  NONE
@@ -33,6 +30,7 @@ ___
 **NONE**:  =  -1
 
 ___
+
 <a id="user"></a>
 
 ###  USER

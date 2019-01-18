@@ -17,13 +17,9 @@
 * [questionTitle](kasclient.kasnumericquestionresult.md#questiontitle)
 * [questionType](kasclient.kasnumericquestionresult.md#questiontype)
 * [sum](kasclient.kasnumericquestionresult.md#sum)
-
-
 ### Methods
 
 * [fromJSON](kasclient.kasnumericquestionresult.md#fromjson)
-
-
 
 ---
 
@@ -36,48 +32,44 @@
 **● average**: *`number`* = 0
 
 ___
+
 <a id="questionid"></a>
 
 ###  questionId
 
 **● questionId**: *`number`* = 0
 
-
 Index of the question
 
-
 ___
+
 <a id="questiontitle"></a>
 
 ###  questionTitle
 
 **● questionTitle**: *`string`* = ""
 
-
 Title of the question
 
-
 ___
+
 <a id="questiontype"></a>
 
 ###  questionType
 
 **● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
 
-
 Type of the question
 
-
 ___
+
 <a id="sum"></a>
 
 ###  sum
 
 **● sum**: *`number`* = 0
 
-
 For Numeric questions the aggregated result will be sum, and average of all the responses
-
 
 ___
 

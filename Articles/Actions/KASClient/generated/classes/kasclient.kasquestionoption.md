@@ -13,16 +13,12 @@
 * [id](kasclient.kasquestionoption.md#id)
 * [pictureUrl](kasclient.kasquestionoption.md#pictureurl)
 * [text](kasclient.kasquestionoption.md#text)
-
-
 ### Methods
 
 * [toAPICompatibleJSON](kasclient.kasquestionoption.md#toapicompatiblejson)
 * [toClientJSON](kasclient.kasquestionoption.md#toclientjson)
 * [toJSON](kasclient.kasquestionoption.md#tojson)
 * [fromJSON](kasclient.kasquestionoption.md#fromjson)
-
-
 
 ---
 
@@ -35,6 +31,7 @@
 **● id**: *`number`* = 0
 
 ___
+
 <a id="pictureurl"></a>
 
 ###  pictureUrl
@@ -42,6 +39,7 @@ ___
 **● pictureUrl**: *`string`* =  null
 
 ___
+
 <a id="text"></a>
 
 ###  text
@@ -61,6 +59,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -70,6 +69,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="tojson"></a>
 
 ###  toJSON
@@ -79,6 +79,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

@@ -13,14 +13,10 @@
 * [dependencyQuestionId](kasclient.kasvisibilityrule.md#dependencyquestionid)
 * [optionId](kasclient.kasvisibilityrule.md#optionid)
 * [rule](kasclient.kasvisibilityrule.md#rule)
-
-
 ### Methods
 
 * [toJSON](kasclient.kasvisibilityrule.md#tojson)
 * [fromJSON](kasclient.kasvisibilityrule.md#fromjson)
-
-
 
 ---
 
@@ -33,6 +29,7 @@
 **● dependencyQuestionId**: *`string`* = ""
 
 ___
+
 <a id="optionid"></a>
 
 ###  optionId
@@ -40,6 +37,7 @@ ___
 **● optionId**: *`string`* = ""
 
 ___
+
 <a id="rule"></a>
 
 ###  rule
@@ -59,6 +57,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

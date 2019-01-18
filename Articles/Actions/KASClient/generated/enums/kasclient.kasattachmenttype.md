@@ -2,9 +2,7 @@
 
 # Enumeration: KASAttachmentType
 
-
 The following enum values MUST be in sync with the AttachmentType enum representation in iOS and Android code. This is vital for proper serialization and deserialization over the KAS bridge.
-
 ## Index
 
 ### Enumeration members
@@ -14,8 +12,6 @@ The following enum values MUST be in sync with the AttachmentType enum represent
 * [Generic](kasclient.kasattachmenttype.md#generic)
 * [Image](kasclient.kasattachmenttype.md#image)
 * [Video](kasclient.kasattachmenttype.md#video)
-
-
 
 ---
 
@@ -28,6 +24,7 @@ The following enum values MUST be in sync with the AttachmentType enum represent
 **Audio**:  = 2
 
 ___
+
 <a id="document"></a>
 
 ###  Document
@@ -35,6 +32,7 @@ ___
 **Document**:  = 3
 
 ___
+
 <a id="generic"></a>
 
 ###  Generic
@@ -42,6 +40,7 @@ ___
 **Generic**:  = 99
 
 ___
+
 <a id="image"></a>
 
 ###  Image
@@ -49,6 +48,7 @@ ___
 **Image**:  = 1
 
 ___
+
 <a id="video"></a>
 
 ###  Video

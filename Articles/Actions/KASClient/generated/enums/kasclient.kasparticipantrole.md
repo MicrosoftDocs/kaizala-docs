@@ -2,9 +2,7 @@
 
 # Enumeration: KASParticipantRole
 
-
 Enum for participant role in a group
-
 ## Index
 
 ### Enumeration members
@@ -13,8 +11,6 @@ Enum for participant role in a group
 * [MEMBER](kasclient.kasparticipantrole.md#member)
 * [NONE](kasclient.kasparticipantrole.md#none)
 * [SUBSCRIBER](kasclient.kasparticipantrole.md#subscriber)
-
-
 
 ---
 
@@ -27,6 +23,7 @@ Enum for participant role in a group
 **ADMIN**:  = 0
 
 ___
+
 <a id="member"></a>
 
 ###  MEMBER
@@ -34,6 +31,7 @@ ___
 **MEMBER**:  = 1
 
 ___
+
 <a id="none"></a>
 
 ###  NONE
@@ -41,6 +39,7 @@ ___
 **NONE**:  =  -1
 
 ___
+
 <a id="subscriber"></a>
 
 ###  SUBSCRIBER

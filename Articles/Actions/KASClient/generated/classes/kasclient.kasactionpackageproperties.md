@@ -13,13 +13,9 @@
 * [actionPackageId](kasclient.kasactionpackageproperties.md#actionpackageid)
 * [json](kasclient.kasactionpackageproperties.md#json)
 * [properties](kasclient.kasactionpackageproperties.md#properties)
-
-
 ### Methods
 
 * [fromJSON](kasclient.kasactionpackageproperties.md#fromjson)
-
-
 
 ---
 
@@ -32,6 +28,7 @@
 **● actionPackageId**: *`string`* = ""
 
 ___
+
 <a id="json"></a>
 
 ###  json
@@ -39,6 +36,7 @@ ___
 **● json**: *`JSON`*
 
 ___
+
 <a id="properties"></a>
 
 ###  properties

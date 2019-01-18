@@ -17,13 +17,9 @@
 * [pictureBGColor](kasclient.kasuser.md#picturebgcolor)
 * [pictureInitials](kasclient.kasuser.md#pictureinitials)
 * [pictureUrl](kasclient.kasuser.md#pictureurl)
-
-
 ### Methods
 
 * [fromJSON](kasclient.kasuser.md#fromjson)
-
-
 
 ---
 
@@ -35,55 +31,50 @@
 
 **● id**: *`string`* = ""
 
-
 Unique user id
 
-
 ___
+
 <a id="name"></a>
 
 ###  name
 
 **● name**: *`string`* = ""
 
-
 Name of the user ("You" for the current user)
 
-
 ___
+
 <a id="originalname"></a>
 
 ###  originalName
 
 **● originalName**: *`string`* = ""
 
-
 Not considering "You"
 
-
 ___
+
 <a id="phonenumber"></a>
 
 ###  phoneNumber
 
 **● phoneNumber**: *`string`* = ""
 
-
 Phone number of the user
 
-
 ___
+
 <a id="picturebgcolor"></a>
 
 ###  pictureBGColor
 
 **● pictureBGColor**: *`string`* = ""
 
-
 In case the PictureUrl is not there, we should use the users initials as the profile pic, below two members are for that
 
-
 ___
+
 <a id="pictureinitials"></a>
 
 ###  pictureInitials
@@ -91,15 +82,14 @@ ___
 **● pictureInitials**: *`string`* = ""
 
 ___
+
 <a id="pictureurl"></a>
 
 ###  pictureUrl
 
 **● pictureUrl**: *`string`* = ""
 
-
 Profile picture url of the user
-
 
 ___
 

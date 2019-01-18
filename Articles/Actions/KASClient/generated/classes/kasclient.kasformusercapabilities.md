@@ -14,16 +14,12 @@
 * [canSendReminder](kasclient.kasformusercapabilities.md#cansendreminder)
 * [json](kasclient.kasformusercapabilities.md#json)
 * [shouldSeeSummary](kasclient.kasformusercapabilities.md#shouldseesummary)
-
-
 ### Methods
 
 * [toAPICompatibleJSON](kasclient.kasformusercapabilities.md#toapicompatiblejson)
 * [toClientJSON](kasclient.kasformusercapabilities.md#toclientjson)
 * [toJSON](kasclient.kasformusercapabilities.md#tojson)
 * [fromJSON](kasclient.kasformusercapabilities.md#fromjson)
-
-
 
 ---
 
@@ -36,6 +32,7 @@
 **● canRespond**: *`boolean`* = false
 
 ___
+
 <a id="cansendreminder"></a>
 
 ###  canSendReminder
@@ -43,6 +40,7 @@ ___
 **● canSendReminder**: *`boolean`* = false
 
 ___
+
 <a id="json"></a>
 
 ###  json
@@ -50,6 +48,7 @@ ___
 **● json**: *`JSON`*
 
 ___
+
 <a id="shouldseesummary"></a>
 
 ###  shouldSeeSummary
@@ -69,6 +68,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -78,6 +78,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="tojson"></a>
 
 ###  toJSON
@@ -87,6 +88,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

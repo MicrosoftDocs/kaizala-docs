@@ -2,9 +2,7 @@
 
 # Class: KASConversationDetails
 
-
 Defines details of host and source conversation
-
 ## Hierarchy
 
 **KASConversationDetails**
@@ -22,13 +20,9 @@ Defines details of host and source conversation
 * [sourceConversationId](kasclient.kasconversationdetails.md#sourceconversationid)
 * [sourceConversationTitle](kasclient.kasconversationdetails.md#sourceconversationtitle)
 * [sourceConversationType](kasclient.kasconversationdetails.md#sourceconversationtype)
-
-
 ### Methods
 
 * [fromJSON](kasclient.kasconversationdetails.md#fromjson)
-
-
 
 ---
 
@@ -41,6 +35,7 @@ Defines details of host and source conversation
 **● currentUserId**: *`string`* = ""
 
 ___
+
 <a id="currentuserroleinhostconversation"></a>
 
 ###  currentUserRoleInHostConversation
@@ -48,6 +43,7 @@ ___
 **● currentUserRoleInHostConversation**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* =  KASParticipantRole.NONE
 
 ___
+
 <a id="hostconversationid"></a>
 
 ###  hostConversationId
@@ -55,6 +51,7 @@ ___
 **● hostConversationId**: *`string`* = ""
 
 ___
+
 <a id="hostconversationparticipantsmap"></a>
 
 ###  hostConversationParticipantsMap
@@ -64,6 +61,7 @@ ___
 #### Type declaration
 
 ___
+
 <a id="hostconversationtitle"></a>
 
 ###  hostConversationTitle
@@ -71,6 +69,7 @@ ___
 **● hostConversationTitle**: *`string`* = ""
 
 ___
+
 <a id="hostconversationtype"></a>
 
 ###  hostConversationType
@@ -78,6 +77,7 @@ ___
 **● hostConversationType**: *[KASFormConversationType](../enums/kasclient.kasformconversationtype.md)* =  KASFormConversationType.NONE
 
 ___
+
 <a id="sourceconversationid"></a>
 
 ###  sourceConversationId
@@ -85,6 +85,7 @@ ___
 **● sourceConversationId**: *`string`* = ""
 
 ___
+
 <a id="sourceconversationtitle"></a>
 
 ###  sourceConversationTitle
@@ -92,6 +93,7 @@ ___
 **● sourceConversationTitle**: *`string`* = ""
 
 ___
+
 <a id="sourceconversationtype"></a>
 
 ###  sourceConversationType

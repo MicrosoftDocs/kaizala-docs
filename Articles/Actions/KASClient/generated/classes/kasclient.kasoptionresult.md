@@ -14,13 +14,9 @@
 * [optionTitle](kasclient.kasoptionresult.md#optiontitle)
 * [responderToResponseCount](kasclient.kasoptionresult.md#respondertoresponsecount)
 * [totalResponsesCount](kasclient.kasoptionresult.md#totalresponsescount)
-
-
 ### Methods
 
 * [fromJSON](kasclient.kasoptionresult.md#fromjson)
-
-
 
 ---
 
@@ -32,43 +28,38 @@
 
 **● optionId**: *`number`* = 0
 
-
 Index of the option
 
-
 ___
+
 <a id="optiontitle"></a>
 
 ###  optionTitle
 
 **● optionTitle**: *`string`* = ""
 
-
 Title of the option
 
-
 ___
+
 <a id="respondertoresponsecount"></a>
 
 ###  responderToResponseCount
 
 **● responderToResponseCount**: *`object`*
 
-
 A map of user ids against their response count Dictionary<UserId: string, ResponseCount: number>
-
 #### Type declaration
 
 ___
+
 <a id="totalresponsescount"></a>
 
 ###  totalResponsesCount
 
 **● totalResponsesCount**: *`number`* = 0
 
-
 How many have chosen this option
-
 
 ___
 

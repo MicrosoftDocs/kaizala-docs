@@ -16,14 +16,10 @@
 * [questionId](kasclient.kasoptionquestionresult.md#questionid)
 * [questionTitle](kasclient.kasoptionquestionresult.md#questiontitle)
 * [questionType](kasclient.kasoptionquestionresult.md#questiontype)
-
-
 ### Methods
 
 * [getResultsOrder](kasclient.kasoptionquestionresult.md#getresultsorder)
 * [fromJSON](kasclient.kasoptionquestionresult.md#fromjson)
-
-
 
 ---
 
@@ -35,43 +31,38 @@
 
 **● optionResults**: *`object`*
 
-
 For SingleSelect/MultiSelect question, the result will be option id versus their counts Dictionary<OptionId: number, OptionResult: KASOptionResult>
-
 #### Type declaration
 
 ___
+
 <a id="questionid"></a>
 
 ###  questionId
 
 **● questionId**: *`number`* = 0
 
-
 Index of the question
 
-
 ___
+
 <a id="questiontitle"></a>
 
 ###  questionTitle
 
 **● questionTitle**: *`string`* = ""
 
-
 Title of the question
 
-
 ___
+
 <a id="questiontype"></a>
 
 ###  questionType
 
 **● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
 
-
 Type of the question
-
 
 ___
 
@@ -83,14 +74,13 @@ ___
 
 ▸ **getResultsOrder**(): `number`[]
 
-
 Gets all the option ids sorted in their total responses count (descending)
-
 
 **Returns:** `number`[]
 list of all the option ids
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

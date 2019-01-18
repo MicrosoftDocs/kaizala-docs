@@ -9,8 +9,6 @@
 * [GENERIC](kasclient.attachmentlistresponsetype.md#generic)
 * [LIST_OF_IMAGES](kasclient.attachmentlistresponsetype.md#list_of_images)
 
-
-
 ---
 
 ## Enumeration members
@@ -22,6 +20,7 @@
 **GENERIC**:  = 0
 
 ___
+
 <a id="list_of_images"></a>
 
 ###  LIST_OF_IMAGES

@@ -24,8 +24,6 @@
 * [UNKNOWN_ERROR](kasclient.kaserrorcode.md#unknown_error)
 * [WRONG_OPERATION](kasclient.kaserrorcode.md#wrong_operation)
 
-
-
 ---
 
 ## Enumeration members
@@ -37,6 +35,7 @@
 **AUTHENTICATION_CANCELLED**:  = 501
 
 ___
+
 <a id="authentication_failed"></a>
 
 ###  AUTHENTICATION_FAILED
@@ -44,6 +43,7 @@ ___
 **AUTHENTICATION_FAILED**:  = 500
 
 ___
+
 <a id="authentication_fallback_selected"></a>
 
 ###  AUTHENTICATION_FALLBACK_SELECTED
@@ -51,6 +51,7 @@ ___
 **AUTHENTICATION_FALLBACK_SELECTED**:  = 521
 
 ___
+
 <a id="authentication_internal_error"></a>
 
 ###  AUTHENTICATION_INTERNAL_ERROR
@@ -58,6 +59,7 @@ ___
 **AUTHENTICATION_INTERNAL_ERROR**:  = 505
 
 ___
+
 <a id="authentication_lockout"></a>
 
 ###  AUTHENTICATION_LOCKOUT
@@ -65,6 +67,7 @@ ___
 **AUTHENTICATION_LOCKOUT**:  = 520
 
 ___
+
 <a id="authentication_not_available"></a>
 
 ###  AUTHENTICATION_NOT_AVAILABLE
@@ -72,6 +75,7 @@ ___
 **AUTHENTICATION_NOT_AVAILABLE**:  = 502
 
 ___
+
 <a id="authentication_not_enrolled"></a>
 
 ###  AUTHENTICATION_NOT_ENROLLED
@@ -79,6 +83,7 @@ ___
 **AUTHENTICATION_NOT_ENROLLED**:  = 504
 
 ___
+
 <a id="authentication_os_incompatible"></a>
 
 ###  AUTHENTICATION_OS_INCOMPATIBLE
@@ -86,6 +91,7 @@ ___
 **AUTHENTICATION_OS_INCOMPATIBLE**:  = 503
 
 ___
+
 <a id="internal_error"></a>
 
 ###  INTERNAL_ERROR
@@ -93,6 +99,7 @@ ___
 **INTERNAL_ERROR**:  = 900
 
 ___
+
 <a id="invalid_request_data"></a>
 
 ###  INVALID_REQUEST_DATA
@@ -100,6 +107,7 @@ ___
 **INVALID_REQUEST_DATA**:  = 702
 
 ___
+
 <a id="location_error"></a>
 
 ###  LOCATION_ERROR
@@ -107,6 +115,7 @@ ___
 **LOCATION_ERROR**:  = 600
 
 ___
+
 <a id="network_error"></a>
 
 ###  NETWORK_ERROR
@@ -114,6 +123,7 @@ ___
 **NETWORK_ERROR**:  = 800
 
 ___
+
 <a id="none"></a>
 
 ###  NONE
@@ -121,6 +131,7 @@ ___
 **NONE**:  =  -1
 
 ___
+
 <a id="server_generic_error"></a>
 
 ###  SERVER_GENERIC_ERROR
@@ -128,6 +139,7 @@ ___
 **SERVER_GENERIC_ERROR**:  = 700
 
 ___
+
 <a id="unauthorized_user_operation"></a>
 
 ###  UNAUTHORIZED_USER_OPERATION
@@ -135,6 +147,7 @@ ___
 **UNAUTHORIZED_USER_OPERATION**:  = 701
 
 ___
+
 <a id="unknown_error"></a>
 
 ###  UNKNOWN_ERROR
@@ -142,6 +155,7 @@ ___
 **UNKNOWN_ERROR**:  = 10001
 
 ___
+
 <a id="wrong_operation"></a>
 
 ###  WRONG_OPERATION

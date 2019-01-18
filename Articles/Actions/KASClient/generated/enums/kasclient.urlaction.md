@@ -10,8 +10,6 @@
 * [OpenInBrowser](kasclient.urlaction.md#openinbrowser)
 * [Share](kasclient.urlaction.md#share)
 
-
-
 ---
 
 ## Enumeration members
@@ -23,6 +21,7 @@
 **None**:  = 0
 
 ___
+
 <a id="openinbrowser"></a>
 
 ###  OpenInBrowser
@@ -30,6 +29,7 @@ ___
 **OpenInBrowser**:  = 2
 
 ___
+
 <a id="share"></a>
 
 ###  Share

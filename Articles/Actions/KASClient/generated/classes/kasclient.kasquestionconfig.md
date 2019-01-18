@@ -15,14 +15,10 @@
 ### Properties
 
 * [pageBreakEnabled](kasclient.kasquestionconfig.md#pagebreakenabled)
-
-
 ### Methods
 
 * [toJSON](kasclient.kasquestionconfig.md#tojson)
 * [fromJSON](kasclient.kasquestionconfig.md#fromjson)
-
-
 
 ---
 
@@ -47,6 +43,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

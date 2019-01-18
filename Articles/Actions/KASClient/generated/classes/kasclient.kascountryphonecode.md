@@ -11,16 +11,12 @@
 ### Properties
 
 * [countryPhoneCodeList](kasclient.kascountryphonecode.md#countryphonecodelist)
-
-
 ### Methods
 
 * [getAllCountryPhoneCodes](kasclient.kascountryphonecode.md#getallcountryphonecodes)
 * [getAllFormattedCountryPhoneCodes](kasclient.kascountryphonecode.md#getallformattedcountryphonecodes)
 * [getFormattedCountryPhoneCodeForCountry](kasclient.kascountryphonecode.md#getformattedcountryphonecodeforcountry)
 * [getFormattedString](kasclient.kascountryphonecode.md#getformattedstring)
-
-
 
 ---
 
@@ -1306,6 +1302,7 @@ ___
 **Returns:** `number`[]
 
 ___
+
 <a id="getallformattedcountryphonecodes"></a>
 
 ### `<Static>` getAllFormattedCountryPhoneCodes
@@ -1321,6 +1318,7 @@ ___
 **Returns:** `string`[]
 
 ___
+
 <a id="getformattedcountryphonecodeforcountry"></a>
 
 ### `<Static>` getFormattedCountryPhoneCodeForCountry
@@ -1337,6 +1335,7 @@ ___
 **Returns:** `string`
 
 ___
+
 <a id="getformattedstring"></a>
 
 ### `<Static>` getFormattedString

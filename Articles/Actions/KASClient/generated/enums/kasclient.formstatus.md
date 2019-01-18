@@ -10,8 +10,6 @@
 * [Closed](kasclient.formstatus.md#closed)
 * [Expired](kasclient.formstatus.md#expired)
 
-
-
 ---
 
 ## Enumeration members
@@ -23,6 +21,7 @@
 **Active**:  = 0
 
 ___
+
 <a id="closed"></a>
 
 ###  Closed
@@ -30,6 +29,7 @@ ___
 **Closed**:  = 1
 
 ___
+
 <a id="expired"></a>
 
 ###  Expired

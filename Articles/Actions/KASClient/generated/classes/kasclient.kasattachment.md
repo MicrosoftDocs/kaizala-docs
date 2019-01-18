@@ -25,8 +25,6 @@
 * [size](kasclient.kasattachment.md#size)
 * [thumbnail](kasclient.kasattachment.md#thumbnail)
 * [type](kasclient.kasattachment.md#type)
-
-
 ### Methods
 
 * [toJSON](kasclient.kasattachment.md#tojson)
@@ -34,8 +32,6 @@
 * [hasLocalPath](kasclient.kasattachment.md#haslocalpath)
 * [hasServerPath](kasclient.kasattachment.md#hasserverpath)
 * [populateModelFromJSON](kasclient.kasattachment.md#populatemodelfromjson)
-
-
 
 ---
 
@@ -48,6 +44,7 @@
 **● attachmentId**: *`string`* = ""
 
 ___
+
 <a id="filename"></a>
 
 ###  fileName
@@ -55,6 +52,7 @@ ___
 **● fileName**: *`string`* = ""
 
 ___
+
 <a id="hassetthumbnail"></a>
 
 ###  hasSetThumbnail
@@ -62,6 +60,7 @@ ___
 **● hasSetThumbnail**: *`boolean`* = false
 
 ___
+
 <a id="localpath"></a>
 
 ###  localPath
@@ -69,6 +68,7 @@ ___
 **● localPath**: *`string`* = ""
 
 ___
+
 <a id="requirehighresthumbnail"></a>
 
 ###  requireHighResThumbnail
@@ -76,6 +76,7 @@ ___
 **● requireHighResThumbnail**: *`boolean`* = false
 
 ___
+
 <a id="serverpath"></a>
 
 ###  serverPath
@@ -83,6 +84,7 @@ ___
 **● serverPath**: *`string`* = ""
 
 ___
+
 <a id="size"></a>
 
 ###  size
@@ -90,6 +92,7 @@ ___
 **● size**: *`number`* = 0
 
 ___
+
 <a id="thumbnail"></a>
 
 ###  thumbnail
@@ -97,6 +100,7 @@ ___
 **● thumbnail**: *`string`* = ""
 
 ___
+
 <a id="type"></a>
 
 ###  type
@@ -113,13 +117,12 @@ ___
 
 ▸ **toJSON**(): `JSON`
 
-
 The following string keys("ty", "afn", "asb", etc.) MUST be in sync with the Attachment object model representation in iOS and Android code. This is vital for proper serialization and deserialization over the KAS bridge.
-
 
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON
@@ -135,6 +138,7 @@ ___
 **Returns:** [KASAttachment](kasclient.kasattachment.md)
 
 ___
+
 <a id="haslocalpath"></a>
 
 ### `<Static>` hasLocalPath
@@ -150,6 +154,7 @@ ___
 **Returns:** `boolean`
 
 ___
+
 <a id="hasserverpath"></a>
 
 ### `<Static>` hasServerPath
@@ -165,6 +170,7 @@ ___
 **Returns:** `boolean`
 
 ___
+
 <a id="populatemodelfromjson"></a>
 
 ### `<Static>` populateModelFromJSON

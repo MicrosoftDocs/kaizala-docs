@@ -13,13 +13,9 @@
 * [language](kasclient.kaslocationaddressparams.md#language)
 * [latitude](kasclient.kaslocationaddressparams.md#latitude)
 * [longitude](kasclient.kaslocationaddressparams.md#longitude)
-
-
 ### Methods
 
 * [toJSON](kasclient.kaslocationaddressparams.md#tojson)
-
-
 
 ---
 
@@ -32,6 +28,7 @@
 **● language**: *`string`*
 
 ___
+
 <a id="latitude"></a>
 
 ###  latitude
@@ -39,6 +36,7 @@ ___
 **● latitude**: *`number`*
 
 ___
+
 <a id="longitude"></a>
 
 ###  longitude

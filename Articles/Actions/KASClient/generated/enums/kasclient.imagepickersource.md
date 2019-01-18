@@ -10,8 +10,6 @@
 * [CameraBack](kasclient.imagepickersource.md#cameraback)
 * [CameraFront](kasclient.imagepickersource.md#camerafront)
 
-
-
 ---
 
 ## Enumeration members
@@ -23,6 +21,7 @@
 **All**:  = 0
 
 ___
+
 <a id="cameraback"></a>
 
 ###  CameraBack
@@ -30,6 +29,7 @@ ___
 **CameraBack**:  = 2
 
 ___
+
 <a id="camerafront"></a>
 
 ###  CameraFront

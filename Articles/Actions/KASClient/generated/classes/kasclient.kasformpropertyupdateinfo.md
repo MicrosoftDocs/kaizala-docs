@@ -14,13 +14,9 @@
 * [operation](kasclient.kasformpropertyupdateinfo.md#operation)
 * [type](kasclient.kasformpropertyupdateinfo.md#type)
 * [value](kasclient.kasformpropertyupdateinfo.md#value)
-
-
 ### Methods
 
 * [toJSON](kasclient.kasformpropertyupdateinfo.md#tojson)
-
-
 
 ---
 
@@ -33,6 +29,7 @@
 **● name**: *`string`* = ""
 
 ___
+
 <a id="operation"></a>
 
 ###  operation
@@ -40,6 +37,7 @@ ___
 **● operation**: *[KASFormPropertyUpdateOperation](../enums/kasclient.kasformpropertyupdateoperation.md)* =  KASFormPropertyUpdateOperation.UpdateValue
 
 ___
+
 <a id="type"></a>
 
 ###  type
@@ -47,6 +45,7 @@ ___
 **● type**: *[KASFormPropertyType](../enums/kasclient.kasformpropertytype.md)* =  KASFormPropertyType.Text
 
 ___
+
 <a id="value"></a>
 
 ###  value

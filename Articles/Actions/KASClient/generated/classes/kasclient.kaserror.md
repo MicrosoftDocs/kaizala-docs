@@ -12,13 +12,9 @@
 
 * [description](kasclient.kaserror.md#description)
 * [errorCode](kasclient.kaserror.md#errorcode)
-
-
 ### Methods
 
 * [fromString](kasclient.kaserror.md#fromstring)
-
-
 
 ---
 
@@ -31,6 +27,7 @@
 **● description**: *`String`* = ""
 
 ___
+
 <a id="errorcode"></a>
 
 ###  errorCode

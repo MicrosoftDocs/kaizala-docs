@@ -24,4 +24,4 @@ You can download the current KASClient Javascript file from [here](../../../js/K
 
 ## Object Reference
 
-References of all the objects in the SDK are avaialable [here](objects.md).
+References of all the objects in the SDK are available [here](objects.md).

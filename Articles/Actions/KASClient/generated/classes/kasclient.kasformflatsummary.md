@@ -13,8 +13,6 @@
 * [conversationId](kasclient.kasformflatsummary.md#conversationid)
 * [formId](kasclient.kasformflatsummary.md#formid)
 * [json](kasclient.kasformflatsummary.md#json)
-
-
 ### Methods
 
 * [getAllResponses](kasclient.kasformflatsummary.md#getallresponses)
@@ -23,8 +21,6 @@
 * [getResponsesForUserId](kasclient.kasformflatsummary.md#getresponsesforuserid)
 * [getTotalResponseCount](kasclient.kasformflatsummary.md#gettotalresponsecount)
 * [fromJSON](kasclient.kasformflatsummary.md#fromjson)
-
-
 
 ---
 
@@ -36,22 +32,20 @@
 
 **● conversationId**: *`string`* = ""
 
-
 The id of the associated conversation, shouldn't be changed
 
-
 ___
+
 <a id="formid"></a>
 
 ###  formId
 
 **● formId**: *`string`* = ""
 
-
 The id of the associated form, shouldn't be changed
 
-
 ___
+
 <a id="json"></a>
 
 ###  json
@@ -68,22 +62,19 @@ ___
 
 ▸ **getAllResponses**(): `__type`
 
-
 Gets all the responses of all the users
-
 
 **Returns:** `__type`
 
 ___
+
 <a id="getquestionresponsesforuserid"></a>
 
 ###  getQuestionResponsesForUserId
 
 ▸ **getQuestionResponsesForUserId**(userId: *`string`*, questionId: *`number`*): `string`[]
 
-
 Gets all the responses of a user against a specific question
-
 
 **Parameters:**
 
@@ -96,29 +87,27 @@ Gets all the responses of a user against a specific question
 list of all answers given by the user for that question
 
 ___
+
 <a id="getrespondeduserids"></a>
 
 ###  getRespondedUserIds
 
 ▸ **getRespondedUserIds**(): `string`[]
 
-
 Gets all the user ids who responded to the form
-
 
 **Returns:** `string`[]
 list of all the responded user ids
 
 ___
+
 <a id="getresponsesforuserid"></a>
 
 ###  getResponsesForUserId
 
 ▸ **getResponsesForUserId**(userId: *`string`*): `__type`
 
-
 Gets all the responses of a user to a form
-
 
 **Parameters:**
 
@@ -130,20 +119,20 @@ Gets all the responses of a user to a form
 question id to list of answers
 
 ___
+
 <a id="gettotalresponsecount"></a>
 
 ###  getTotalResponseCount
 
 ▸ **getTotalResponseCount**(): `number`
 
-
 Gets number of all responses by all users
-
 
 **Returns:** `number`
 number of all responses
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

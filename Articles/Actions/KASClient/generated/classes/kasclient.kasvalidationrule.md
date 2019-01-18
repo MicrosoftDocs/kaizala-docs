@@ -14,14 +14,10 @@
 * [errorString](kasclient.kasvalidationrule.md#errorstring)
 * [helpText](kasclient.kasvalidationrule.md#helptext)
 * [rule](kasclient.kasvalidationrule.md#rule)
-
-
 ### Methods
 
 * [toJSON](kasclient.kasvalidationrule.md#tojson)
 * [fromJSON](kasclient.kasvalidationrule.md#fromjson)
-
-
 
 ---
 
@@ -34,6 +30,7 @@
 **● attributes**: *`any`*
 
 ___
+
 <a id="errorstring"></a>
 
 ###  errorString
@@ -41,6 +38,7 @@ ___
 **● errorString**: *`string`* =  null
 
 ___
+
 <a id="helptext"></a>
 
 ###  helpText
@@ -48,6 +46,7 @@ ___
 **● helpText**: *`string`* =  null
 
 ___
+
 <a id="rule"></a>
 
 ###  rule
@@ -67,6 +66,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

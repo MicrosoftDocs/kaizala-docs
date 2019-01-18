@@ -12,13 +12,9 @@
 
 * [data](kasclient.kasshareobject.md#data)
 * [type](kasclient.kasshareobject.md#type)
-
-
 ### Methods
 
 * [toJSON](kasclient.kasshareobject.md#tojson)
-
-
 
 ---
 
@@ -31,6 +27,7 @@
 **● data**: *`string`* = ""
 
 ___
+
 <a id="type"></a>
 
 ###  type

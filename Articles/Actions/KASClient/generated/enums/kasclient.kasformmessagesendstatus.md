@@ -11,8 +11,6 @@
 * [Success](kasclient.kasformmessagesendstatus.md#success)
 * [Unknown](kasclient.kasformmessagesendstatus.md#unknown)
 
-
-
 ---
 
 ## Enumeration members
@@ -24,6 +22,7 @@
 **Error**:  = 2
 
 ___
+
 <a id="inprogress"></a>
 
 ###  InProgress
@@ -31,6 +30,7 @@ ___
 **InProgress**:  = 1
 
 ___
+
 <a id="success"></a>
 
 ###  Success
@@ -38,6 +38,7 @@ ___
 **Success**:  = 3
 
 ___
+
 <a id="unknown"></a>
 
 ###  Unknown

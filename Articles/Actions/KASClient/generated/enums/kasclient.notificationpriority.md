@@ -10,8 +10,6 @@
 * [Low](kasclient.notificationpriority.md#low)
 * [Medium](kasclient.notificationpriority.md#medium)
 
-
-
 ---
 
 ## Enumeration members
@@ -23,6 +21,7 @@
 **High**:  = 0
 
 ___
+
 <a id="low"></a>
 
 ###  Low
@@ -30,6 +29,7 @@ ___
 **Low**:  = 2
 
 ___
+
 <a id="medium"></a>
 
 ###  Medium

@@ -8,8 +8,6 @@
 
 * [App](kasclient.app.md)
 * [Form](kasclient.form.md)
-
-
 ### Enumerations
 
 * [AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)
@@ -37,8 +35,6 @@
 * [NotificationPriority](../enums/kasclient.notificationpriority.md)
 * [UrlAction](../enums/kasclient.urlaction.md)
 * [UrlType](../enums/kasclient.urltype.md)
-
-
 ### Classes
 
 * [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)
@@ -87,14 +83,10 @@
 * [KASValidationRule](../classes/kasclient.kasvalidationrule.md)
 * [KASVideoAttachment](../classes/kasclient.kasvideoattachment.md)
 * [KASVisibilityRule](../classes/kasclient.kasvisibilityrule.md)
-
-
 ### Functions
 
 * [getFilteredParticipantRole](kasclient.md#getfilteredparticipantrole)
 * [getFilteredParticipantType](kasclient.md#getfilteredparticipanttype)
-
-
 
 ---
 
@@ -115,6 +107,7 @@
 **Returns:** [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
 
 ___
+
 <a id="getfilteredparticipanttype"></a>
 
 ###  getFilteredParticipantType

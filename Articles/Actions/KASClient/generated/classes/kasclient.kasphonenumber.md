@@ -11,21 +11,15 @@
 ### Constructors
 
 * [constructor](kasclient.kasphonenumber.md#constructor)
-
-
 ### Properties
 
 * [countryPhoneCode](kasclient.kasphonenumber.md#countryphonecode)
 * [phoneNumber](kasclient.kasphonenumber.md#phonenumber)
-
-
 ### Methods
 
 * [toJSON](kasclient.kasphonenumber.md#tojson)
 * [toString](kasclient.kasphonenumber.md#tostring)
 * [fromJSON](kasclient.kasphonenumber.md#fromjson)
-
-
 
 ---
 
@@ -57,6 +51,7 @@ ___
 **● countryPhoneCode**: *`number`* = 0
 
 ___
+
 <a id="phonenumber"></a>
 
 ###  phoneNumber
@@ -76,6 +71,7 @@ ___
 **Returns:** `JSON`
 
 ___
+
 <a id="tostring"></a>
 
 ###  toString
@@ -85,6 +81,7 @@ ___
 **Returns:** `string`
 
 ___
+
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

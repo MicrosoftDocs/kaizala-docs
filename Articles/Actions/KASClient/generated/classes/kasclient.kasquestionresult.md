@@ -19,13 +19,9 @@
 * [questionId](kasclient.kasquestionresult.md#questionid)
 * [questionTitle](kasclient.kasquestionresult.md#questiontitle)
 * [questionType](kasclient.kasquestionresult.md#questiontype)
-
-
 ### Methods
 
 * [fromJSON](kasclient.kasquestionresult.md#fromjson)
-
-
 
 ---
 
@@ -37,31 +33,27 @@
 
 **● questionId**: *`number`* = 0
 
-
 Index of the question
 
-
 ___
+
 <a id="questiontitle"></a>
 
 ###  questionTitle
 
 **● questionTitle**: *`string`* = ""
 
-
 Title of the question
 
-
 ___
+
 <a id="questiontype"></a>
 
 ###  questionType
 
 **● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* =  KASQuestionType.None
 
-
 Type of the question
-
 
 ___
 

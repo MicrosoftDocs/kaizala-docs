@@ -15,13 +15,9 @@
 * [actionPropertyType](kasclient.kasactionproperties.md#actionpropertytype)
 * [json](kasclient.kasactionproperties.md#json)
 * [properties](kasclient.kasactionproperties.md#properties)
-
-
 ### Methods
 
 * [fromJSON](kasclient.kasactionproperties.md#fromjson)
-
-
 
 ---
 
@@ -34,6 +30,7 @@
 **● actionId**: *`string`* = ""
 
 ___
+
 <a id="actionpackageid"></a>
 
 ###  actionPackageId
@@ -41,6 +38,7 @@ ___
 **● actionPackageId**: *`string`* = ""
 
 ___
+
 <a id="actionpropertytype"></a>
 
 ###  actionPropertyType
@@ -48,6 +46,7 @@ ___
 **● actionPropertyType**: *[KASActionPropertyType](../enums/kasclient.kasactionpropertytype.md)* =  KASActionPropertyType.Local
 
 ___
+
 <a id="json"></a>
 
 ###  json
@@ -55,6 +54,7 @@ ___
 **● json**: *`JSON`*
 
 ___
+
 <a id="properties"></a>
 
 ###  properties
