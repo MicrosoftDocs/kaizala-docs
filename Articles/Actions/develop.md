@@ -2,7 +2,7 @@
 
 A Kaizala Action package is a zip file which contains all the requried manifest and resource files at the root.
 
-To begin with, create a new folder on your PC to make it your working dorectory.
+To begin with, create a new folder on your PC to make it your working directory.
 
 You will need a code editor to work with different kinds of web resources & manifest files.
 
