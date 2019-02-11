@@ -36,5 +36,4 @@ You can try out building your first Kaizala Action by following our simple [tuto
 
 ## Download Sample Action Packages
 
-*  [Sample Action in Request-Response format](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/Sample%20Request-Response%20Action.zip)
-*  [Sample Action in Response only format](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/Sample%20Response%20Action.zip)
+You can download sample Action Packages from [here](https://manage.kaiza.la/MiniApps/DownloadSDK)
