@@ -9,6 +9,6 @@ The Kaizala product team responds to the developer community across several chan
 
 - **Sample application bugs:** If you find a bug in one of our samples, open an issue on GitHub. Be sure to describe the steps to reproduce the bug.
 
-- **Feature requests:** If our platform doesn't empower you to what you need, please make your features suggestions on the [Kaizala on UserVoice](https://kaizala.uservoice.com/).
+- **Feature requests:** If our platform doesn't empower you to what you need, please send us a mail about your features suggestions on [Kaizala Feedback](mailto:kaizalafeedback@microsoft.com)
 
 - **Follow us:** Subscribe to [Kaizala Developer Connect](https://join.kaiza.la/g/jwoUnTyHR_Kgrd_GuDDc1w) from your Kaizala mobile app and keep yourself abreast with the latest support, updates & changes in Kaizala Developer Platform
