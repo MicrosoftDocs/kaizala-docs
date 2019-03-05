@@ -74,6 +74,8 @@ To ensure your webhook service endpoint is authentic and working we will verify 
 
 You can find webhook response schema for registered events in Kaizala [**here**](EventSchema.md).
 
+> **Note:** Kaizala guarantees at-least once delivery of webhook response. It may happen, in certain cases, that Kaizala may send duplicate webhook response for the same event.
+
 ### Get /webhook
 
     GET {endpoint-url}/v1/webhook
