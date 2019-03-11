@@ -58,7 +58,7 @@ ms.date: 04/04/2018
                             </a>
                         </li>
                         <li>
-                            <a href="https://support.office.com/article/kaizala-help-center-22700f1d-274f-4533-8956-247c733f6ae6">
+                            <a href="https://support.office.com/kaizala">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
