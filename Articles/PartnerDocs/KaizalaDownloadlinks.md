@@ -1,61 +1,24 @@
 # Kaizala Availability 
-Kaizala is commercially launched in following countries, though it is available on all Android and iOS stores world wide as a free App. 
+Kaizala is commercially available internationally, except in below countries
 
-•	India
+•	Cuba
 <br>
-•	Philippines
+•	Iran
 <br>
-•	Kenya
+•	North Korea
 <br>
-•	Brazil
+• People's Republic of China
 <br>
-• Mexico 
+• Sudan 
 <br>
-• Columbia 
+• Syria 
 <br>
-• Argentina 
+•	Region of Crimea 
 <br>
-• Chile
+• Russia
 <br>
-• South Africa 
-<br>
-• Nigeria 
-<br>
-• Egypt 
-<br>
-• Tanzania 
-<br>
-• Uganda 
-<br>
-• Ethiopia 
-<br>
-• Rwanda 
-<br>
-• Turkey 
-<br>
-• Jordan 
-<br>
-• Lebanon 
-<br>
-• Saudi Arabia 
-<br>
-• Israel
-<br>
-• Bangladesh
-<br>
-• Morocco 
-<br>
-• Indonesia 
-<br>
-• Singapore 
-<br>
-• Malaysia 
-<br>
-• Vietnam 
-<br>
-• Thailand 
-<br>
-• Cambodia
 
-### Download links
+Kaizala is available on all Android and iOS stores world wide as a free App.
+
+## Download links
 If any other information needed go to [https://products.office.com/en-in/business/microsoft-kaizala](https://products.office.com/en-in/business/microsoft-kaizala)
