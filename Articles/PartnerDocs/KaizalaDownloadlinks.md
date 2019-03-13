@@ -62,15 +62,22 @@ Kaizala Pro is commercially available in following 28 countries, though it is av
 
 Kaizala Pro will be commercially available internationally beginning in mid-April 2019, **except** in below countries:
 
-• Cuba 
+• Cuba
+<br>
 • Iran 
+<br>
 • North Korea 
+<br>
 • People's Republic of China 
+<br>
 • Sudan 
+<br>
 • Syria 
+<br>
 • Region of Crimea 
+<br>
 • Russia 
-
+<br>
 
 ## Download links
 
