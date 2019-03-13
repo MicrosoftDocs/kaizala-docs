@@ -1,7 +1,15 @@
 
-# Submit your questions, bugs and feature requests
+# Submit support requests, questions, bugs and feature requests
 
-The Kaizala product team responds to the developer community across several channels. Please tell us about your:
+Microsoft Support is available to Kaizala customers globally for any technical issues. Authorized administrators can use the Office 365 portal to submit service requests online, access support telephone numbers, and view all open and recently closed service requests. 
+
+Service requests submitted in the Office 365 portal can be reopened for up to 14 days after the request has been closed. For instructions, see [Contact Office 365 for business support](https://go.microsoft.com/fwlink/p/?LinkID=279815). 
+Additionally, service requests can also be opened via the [Kaizala Management Portal](http://manage.kaiza.la).
+
+Please note that support is only available in English currently and there is no local language support for Kaizala
+
+
+In addition to above, Kaizala product team also responds to the developer community across several channels. Please tell us about your:
 
 - **General questions:** Please ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/Kaizala) with tag **Kaizala**. You can also send mail to [Kaizala developer support](mailto:kaizalaDev@microsoft.com). We shall respond accordingly within 2 working days.
 
