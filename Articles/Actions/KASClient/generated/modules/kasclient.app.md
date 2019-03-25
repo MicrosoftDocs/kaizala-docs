@@ -422,8 +422,7 @@ KASClient.App.getLocationAddressAsync(params,
         if (!error) {
            // do something with address - a JSON returned by google structure can be found at https://developers.google.com/maps/documentation/geocoding/intro#GeocodingResponses
         }
-    }
-});
+    });
 ```
 
 **Parameters:**
