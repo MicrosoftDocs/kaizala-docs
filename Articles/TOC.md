@@ -80,5 +80,5 @@
 ## [Developer FAQs](FAQ.md)
 ## [Breaking Changes](BreakingChanges.md)
 ## [Developer Changelist](DevChangelist.md)
-## [Feedback](feedback.md)
+## [Feedback & Support](feedback.md)
 ## [Terms of use](Licenses.md)
