@@ -72,6 +72,7 @@
 ## [Security](PartnerDocs/Security.md)
 ## [Privacy](PartnerDocs/Privacy.md)
 ## [Compliance](PartnerDocs/Compliance.md)
+## [Data residency](PartnerDocs/DataResidency.md)
 
 
 # Training and Support
