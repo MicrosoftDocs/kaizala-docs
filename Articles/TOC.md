@@ -72,6 +72,7 @@
 ## [Security](PartnerDocs/Security.md)
 ## [Privacy](PartnerDocs/Privacy.md)
 ## [Compliance](PartnerDocs/Compliance.md)
+## [Data residency](PartnerDocs/DataResidency.md)
 
 
 # Training and Support
@@ -80,5 +81,5 @@
 ## [Developer FAQs](FAQ.md)
 ## [Breaking Changes](BreakingChanges.md)
 ## [Developer Changelist](DevChangelist.md)
-## [Feedback](feedback.md)
+## [Feedback & Support](feedback.md)
 ## [Terms of use](Licenses.md)
