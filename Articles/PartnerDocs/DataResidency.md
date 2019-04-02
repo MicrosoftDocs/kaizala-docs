@@ -15,7 +15,7 @@ Currently, Kaizala has eight datacenters (primary and backup) in three regions a
 
 In addition to providing compute and storage, Kaizala also provides data residency support, robust failover, and disaster recovery support to enterprise customers. Also, these scale units help ensure improved connectivity and messaging performance to both enterprise and general customers. 
 
-![Graphic showing data residency and Go-Local geo boundaries in Kaizala](Images\data-residency-geo-boundaries.png)
+![Graphic showing data residency and Go-Local geo boundaries in Kaizala](Images/data-residency-geo-boundaries.png)
 
 ## How is data stored in Kaizala
 
