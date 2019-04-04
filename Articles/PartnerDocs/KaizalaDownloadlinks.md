@@ -59,7 +59,7 @@ Kaizala Pro is commercially available in following 28 countries, though it is av
 
 ## Upcoming Worldwide release
 
-Kaizala Pro will be commercially available internationally beginning in mid-April 2019, **except** in below countries:
+Beginning in May 2019, Kaizala Pro will be commercially available internationally with the exception of following countries or regions:
 
 • Cuba
 <br>
@@ -77,6 +77,7 @@ Kaizala Pro will be commercially available internationally beginning in mid-Apri
 <br>
 • Russia 
 <br>
+
 ## Download links
 
 Kaizala is available on all Android and iOS stores world wide as a free App.
