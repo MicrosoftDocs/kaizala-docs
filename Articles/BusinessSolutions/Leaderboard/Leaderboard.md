@@ -37,9 +37,9 @@ This can be broadly divided into 3 steps:
 
 ### Format Excel Sheet
 
-1.Download the [Excel template](Leaderboard.csv)
+1. Download the [Excel template](Leaderboard.csv)
 
-2.Fill mandatory fields -Name, PhoneNo, and Score. Apart from these three mandatory fields, the rest are KPIs (optional) and are displayed in "My Performance" tab.
+2. Fill mandatory fields -Name, PhoneNo, and Score. Apart from these three mandatory fields, the rest are KPIs (optional) and are displayed in "My Performance" tab.
 
    > Note: Score & KPIs can be numeric or % values. If the column has percentages, apply [percent number](https://support.office.com/en-ie/article/format-numbers-as-percentages-de49167b-d603-4450-bcaa-31fba6c7b6b4) format to that column
 
@@ -56,7 +56,7 @@ This can be broadly divided into 3 steps:
 
 1. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "Leaderboard_FlowPackage.zip"[LinktoGithub] to your Microsoft Flow account
 
-    > Note- If you have never used Sharepoint or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)    
+     > Note- If you have never used Sharepoint or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)    
 
 2. Edit details in Imported Flow (*See steps below*)
 
@@ -92,7 +92,6 @@ This can be broadly divided into 3 steps:
         2. Edit KPI labels that you have given in the excel table in Compose
         
         <img src="../Leaderboard/Leaderboard_Images/9.png" width="600">
-
         
     5. In the last block
 
