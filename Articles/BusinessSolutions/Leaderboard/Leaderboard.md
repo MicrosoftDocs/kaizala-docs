@@ -7,17 +7,17 @@ Excel from your Onedrive for Business is consumed by Microsoft Flow and Leaderbo
 
 Chat card view 
 
-<img src="Leaderboard/2.JPG" width="200">
+<img src="../Leaderboard/Leaderboard_Images/2.jpg" width="200">
 
 
 Immersive view
 
 This view has two tabs, first being a wall of fame for Top 10 performers, second is "My performance" which is different for each user.
-<img src="Leaderboard/1.PNG" width="200">
+<img src="../Leaderboard/Leaderboard_Images/1.PNG" width="200">
 
 My Performance has 2 sections that display my statistics and nearby ranks. 
 
-<img src="Leaderboard/11.PNG" width="200">
+<img src="../Leaderboard/Leaderboard_Images/11.png" width="200">
 
 
 ## Implementation steps
@@ -42,7 +42,7 @@ This can be broadly divided into 3 steps:
 
 2. Fill all mandatory fields -Name, PhoneNo, and Score. Apart from these three mandatory fields, the rest are KPIs (optional) and are displayed in "My Performance" tab.
 
-    <img src="Leaderboard/3.JPG" width="600">
+    <img src="../Leaderboard/Leaderboard_Images/3.jpg" width="600">
 
      > Note: Score & KPIs can be numeric or % values. If the column has percentages, apply [percent number](https://support.office.com/en-ie/article/format-numbers-as-percentages-de49167b-d603-4450-bcaa-31fba6c7b6b4) format to that column
 
@@ -65,10 +65,10 @@ This can be broadly divided into 3 steps:
 
     1. In the second block, enter the card title in the value field, that you want to show in the leaderboard. For E.g, "Sales Leaderboard" 
 
-         <img src="Leaderboard/4.JPG" width="600">
+         <img src="../Leaderboard/Leaderboard_Images/4.jpg" width="600">
     
     2. In the third block, set value as  true if the "score" is a percentage, if not set it to false
-         <img src="Leaderboard/6.JPG" width="600">
+         <img src="../Leaderboard/Leaderboard_Images/6.jpg" width="600">
 
     3. In the seventh block
 
@@ -80,20 +80,20 @@ This can be broadly divided into 3 steps:
      
              > Note: Table name that you have given in excel file will be automatically picked up by the flow. 
        
-             <img src="Leaderboard/7.JPG" width="600">
+             <img src="../Leaderboard/Leaderboard_Images/7.jpg" width="600">
 
 
     4. In the ninth block, "Apply to each", 
 
         1. Edit KPI labels in Parse JSON block for E.g, KPI 1 as Deals closed & KPI 2 as Calls converted.
 
-             <img src="Leaderboard/8.JPG" width="600">
+             <img src="../Leaderboard/Leaderboard_Images/8.jpg" width="600">
 
              >Note: Card can display a maximum of 6 KPI's 
 
         2. Edit KPI labels in Compose (*as shown below*)
         
-             <img src="Leaderboard/9.PNG" width="600">
+             <img src="../Leaderboard/Leaderboard_Images/9.png" width="600">
 
         
     5. In the last block
@@ -106,7 +106,7 @@ This can be broadly divided into 3 steps:
 
         4. Save the Flow
 
-           <img src="Leaderboard/10.JPG" width="600">
+           <img src="../Leaderboard/Leaderboard_Images/10.jpg" width="600">
 
 Leaderboard card will be sent to the specified group as per the interval and frequency set in the Flow. 
 
