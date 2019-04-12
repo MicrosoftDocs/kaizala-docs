@@ -1,9 +1,17 @@
 # Drive performance using Leaderboard
+<<<<<<< HEAD
 A leaderboard is a simple visual representation of participants to provide an understanding of where they rank in comparison to peers. Leveraging the power of gamification, leaderboards are the best way to inject competitive spirit among teams and also track individual/team performance against business targets. They provide instant feedback to course-correct and identify patterns in KPIs that could help employees improvise.
 
 This generic solution is a great way to incentivize team and create an open culture. It can be used by any sales or service organization to track performance- Individual or Team and compare performance across multiple KPIs. 
 
 Excel from your Onedrive for business is consumed by Microsoft Flow and Leaderboard card is sent to Kaizala group in a recurrence pattern. This card has two views- Chat card view & Immersive view. 
+=======
+A leaderboard is a rich visual representation of participants to provide an understanding of where they rank in comparison to peers. Leaderboards leverage the power of gamification and instil competitive spirit among teams and also track individual/team performance against business targets. They provide instant feedback to course-correct and identify patterns in KPIs that could help employees improvise.
+
+This generic solution is a great way to incentivize team and create an open culture. It can be used by any sales or service organization to track performance- Individual or Team and compare performance across multiple KPIs. 
+
+Excel from your Onedrive for Business is consumed by Microsoft Flow and Leaderboard card is sent to Kaizala group in a recurrence pattern. This card has two views- Chat card view & Immersive view. 
+>>>>>>> 36613c83aa75415b11545f815392b55430c84fa7
 
 Chat card view 
 
