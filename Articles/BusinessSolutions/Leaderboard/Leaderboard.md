@@ -5,12 +5,12 @@ This generic solution is a great way to incentivize team and create an open cult
 
 Excel from your Onedrive for Business is consumed by Microsoft Flow and Leaderboard card is sent to Kaizala group in a recurrence pattern. This card has two views- Chat card view & Immersive view. 
 
-Chat card view 
+**Chat card view**
 
 <img src="../Leaderboard/Leaderboard_Images/2.jpg" width="200">
 
 
-Immersive view
+**Immersive view**
 
 This view has two tabs, first being a wall of fame for Top 10 performers, second is "My performance" which is different for each user.
 
@@ -39,7 +39,7 @@ This can be broadly divided into 3 steps:
 
 ### Format Excel Sheet
 
-1.Download the [Excel template](Leaderboard.csv)
+1. Download the [Excel template](Leaderboard.csv)
 
 2. Fill all mandatory fields -Name, PhoneNo, and Score. Apart from these three mandatory fields, the rest are KPIs (optional) and are displayed in "My Performance" tab.
 
