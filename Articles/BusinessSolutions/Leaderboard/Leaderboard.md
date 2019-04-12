@@ -69,7 +69,8 @@ This can be broadly divided into 3 steps:
          <img src="../Leaderboard/Leaderboard_Images/4.jpg" width="600">
     
     2. In the third block, set value as  true if the "score" is a percentage, if not set it to false
-         <img src="../Leaderboard/Leaderboard_Images/6.jpg" width="600">
+    
+         <img src="../Leaderboard/Leaderboard_Images/6.JPG" width="600">
 
     3. In the seventh block
 
@@ -89,6 +90,7 @@ This can be broadly divided into 3 steps:
         1. Edit KPI labels in Parse JSON block for E.g, KPI 1 as Deals closed & KPI 2 as Calls converted.
 
              <img src="../Leaderboard/Leaderboard_Images/8.JPG" width="600">
+
 
              >Note: Card can display a maximum of 6 KPI's 
 
