@@ -28,7 +28,7 @@ This can be broadly divided into 3 steps:
 3. Configure Microsoft Flow
 
 ### Upload Action package
-1. Download the [“Leaderboard-SolutionPackage.zip”](Leaderboard/Leaderboard-SolutionPackage.zip)(*This* *contains* *"Leaderboard_ActionPackage.zip"* *and* *"Leaderboard_FlowPackage.zip"* *Package*)
+1. Download the [“Leaderboard-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Leaderboard/Leaderboard-SolutionPackage.zip))(*This* *contains* *"Leaderboard_ActionPackage.zip"* *and* *"Leaderboard_FlowPackage.zip"* *Package*)
 2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK) (*This contains KASClient.js*)
 3. Edit "Leaderboard_ActionPackage.zip"
    1. Unzip "Leaderboard_ActionPackage.zip" to a folder
@@ -39,7 +39,7 @@ This can be broadly divided into 3 steps:
 
 ### Format Excel Sheet
 
-1. Download the [Excel template](Leaderboard/Leaderboard.csv)
+1. Download the [Excel template](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Leaderboard/Leaderboard.csv)
 
 2. Fill all mandatory fields -Name, PhoneNo, and Score. Apart from these three mandatory fields, the rest are KPIs (optional) and are displayed in "My Performance" tab.
 
@@ -69,7 +69,7 @@ This can be broadly divided into 3 steps:
          <img src="../Leaderboard/Leaderboard_Images/4.jpg" width="600">
     
     2. In the third block, set value as  true if the "score" is a percentage, if not set it to false
-    
+
          <img src="../Leaderboard/Leaderboard_Images/6.JPG" width="600">
 
     3. In the seventh block
