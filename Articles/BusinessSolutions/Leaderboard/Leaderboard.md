@@ -81,14 +81,14 @@ This can be broadly divided into 3 steps:
      
              > Note: Table name that you have given in excel file will be automatically picked up by the flow. 
        
-             <img src="../Leaderboard/Leaderboard_Images/7.jpg" width="600">
+             <img src="../Leaderboard/Leaderboard_Images/7.JPG" width="600">
 
 
     4. In the ninth block, "Apply to each", 
 
         1. Edit KPI labels in Parse JSON block for E.g, KPI 1 as Deals closed & KPI 2 as Calls converted.
 
-             <img src="../Leaderboard/Leaderboard_Images/8.jpg" width="600">
+             <img src="../Leaderboard/Leaderboard_Images/8.JPG" width="600">
 
              >Note: Card can display a maximum of 6 KPI's 
 
@@ -111,7 +111,7 @@ This can be broadly divided into 3 steps:
 
 Leaderboard card will be sent to the specified group as per the interval and frequency set in the Flow. 
 
->Note: If you wish to change the labels- "Name", "PhoneNo" and "Score" in excel sheet, change it to desired labels in Immersive.js
+>Note: If you wish to change the labels- "Name", "PhoneNo" and "Score" in excel sheet, change it to desired labels in ImmersiveView.js
 
 ```
       
