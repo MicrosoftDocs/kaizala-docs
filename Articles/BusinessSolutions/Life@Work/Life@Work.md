@@ -5,5 +5,5 @@ Organizations can leverage Kaizala to transform Life@Work and get one step close
 
 Below solutions would help you build an inclusive community:
 
-1. [Employee Help desk](EmployeeHelpdesk/EmployeHelpdesk.md)
-2. [Drive performance using leaderboard](Leaderboard/Leaderboard.md)
+1. [Employee Help desk](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpDesk.md)
+2. [Drive performance using leaderboard](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/Leaderboard/Leaderboard.md)
