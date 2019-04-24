@@ -64,7 +64,7 @@
 ### [Auto-Post Twitter updates to Kaizala](BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
 ## [Life at Work](BusinessSolutions/Life%40Work/Life%40Work.md)
 ### [Employee Help Desk](BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpDesk.md)
-### [Drive Performance using Leaderboard](BusinessSolutions/Leaderboard/Leaderboard.md)
+### [Drive Performance using Leaderboard](BusinessSolutions/Life%40Work/Leaderboard/Leaderboard.md)
 ## [Ticketing System](PartnerDocs/Customerticketingsolution.md)
 ## [Integrating Kaizala data to your custom dashboards](PartnerDocs/IntegratingKaizalaData.md)
 
