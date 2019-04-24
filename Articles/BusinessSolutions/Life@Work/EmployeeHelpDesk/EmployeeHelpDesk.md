@@ -6,7 +6,7 @@ This solution uses Kaizala as the front-end, SharePoint as the backend and Flow 
 
    1. Help desk agent updates the status of the ticket in SharePoint (New, Assigned or Resolved) or
 
-   2. Help desk agents adds comments on the ticket in SharePoint or 
+   2. Help desk agents adds comments on the ticket in SharePoint or
 
    3. Both, help desk agent updates status and adds comments in SharePoint
 
@@ -16,7 +16,7 @@ If the user is satisfied with the proposed resolution, user has the ability to c
 
   User view of ticket creation and submission:
 
-  <img src="EmployeeHelpdesk-Images/1.jpg" width="300">
+  <img src="EmployeeHelpdesk-Images/1.jpg" width="350">
 
    View on updating the status to "Assigned" in sharepoint and the corresponding card that is sent to user
 
@@ -28,7 +28,7 @@ If the user is satisfied with the proposed resolution, user has the ability to c
 
    User Feedback view
 
-   <img src="EmployeeHelpdesk-Images/4.jpg" width="300">
+   <img src="EmployeeHelpdesk-Images/4.jpg" width="350">
 
 
 ## Implementation Steps:
