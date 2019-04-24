@@ -16,19 +16,19 @@ If the user is satisfied with the proposed resolution, user has the ability to c
 
   User view of ticket creation and submission:
 
-  <img src="EmployeeHelpDesk-Images/1.JPG" width="300">
+  <img src="EmployeeHelpdesk-Images/1.jpg" width="300">
 
    View on updating the status to "Assigned" in sharepoint and the corresponding card that is sent to user
 
-   <img src="EmployeeHelpDesk-Images/2.JPG" width="600">
+   <img src="EmployeeHelpdesk-Images/2.jpg" width="600">
 
    View of status being updated to "Resolved" in sharepoint and the corresponding card that is sent to user
    
-   <img src="EmployeeHelpDesk-Images/3.JPG" width="600">
+   <img src="EmployeeHelpdesk-Images/3.jpg" width="600">
 
    User Feedback view
 
-   <img src="EmployeeHelpDesk-Images/4.JPG" width="300">
+   <img src="EmployeeHelpdesk-Images/4.jpg" width="300">
 
 
 ## Implementation Steps:
@@ -55,7 +55,7 @@ This is broadly divided into 3 steps:
     3. To update the SharePoint list when the user chooses to close, reopen or adds feedback comments from the card(*TicketReopenFlow.Zip*)
 
 ### Upload Action Packages
-1. Download the ["EmployeeHelpDesk-SolutionPackage.zip"] (*This contains 2 Action Packages and 3 Flows*)
+1. Download the ["EmployeeHelpDesk-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpdesk-SolutionPackage.zip) (*This contains 2 Action Packages and 3 Flows*)
 
 2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK) (*This contains KASClient.js*)
 
@@ -69,7 +69,7 @@ This is broadly divided into 3 steps:
 
    4. Zip all the contents in this folder (*This folder is your modified action package which should be imported to Kaizala Management Portal*)
 
-   5. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to [kaizala Management Portal](https://manage.kaiza.la/)
+   5. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to [Kaizala Management Portal](https://manage.kaiza.la/)
 
    6. [Publish](https://docs.microsoft.com/en-us/kaizala/actions/publish) the action and add the action to a group where you want to add the card
 
@@ -122,7 +122,7 @@ This is broadly divided into 3 steps:
 
 4. [Edit list view](https://support.office.com/en-gb/article/edit-a-list-view-in-sharepoint-online-15916903-e79a-423f-b4e2-02d37e1ff372) to position ID in first place.This is the unique ticket ID that will be displayed in the card, once the ticket is assigned.
 
-     >Note: [Download](GithubLink) excel template for reference
+     >Note: [Download](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/EmployeeHelpDesk/HelpdeskTemplate.xlsx) excel template for column headers
 
 ### Import and Set up Flows
 
@@ -144,7 +144,7 @@ This solution has 3 Flows,
 
                3. Map action to "All"
 
-                  <img src="EmployeeHelpDesk-Images/5.JPG" width="600">
+                  <img src="EmployeeHelpdesk-Images/5.JPG" width="600">
 
           2. In the Last block
 
@@ -152,7 +152,7 @@ This solution has 3 Flows,
 
                2. Enter List Name
                   
-                  <img src="EmployeeHelpDesk-Images/6.JPG" width="600">
+                  <img src="EmployeeHelpdesk-Images/6.JPG" width="600">
 
                    > Note: All the columns in the SharePoint list will be displayed in Flow on entering Sharepoint Site address & List Name. Verify the mapping of SharePoint list fields in Flow. 
 
@@ -171,7 +171,7 @@ This solution has 3 Flows,
 
                2. Enter List Name
 
-                  <img src="EmployeeHelpDesk-Images/6.5.JPG" width="600">
+                  <img src="EmployeeHelpdesk-Images/6.5.jpg" width="600">
 
           2. In the last block
 
@@ -183,7 +183,7 @@ This solution has 3 Flows,
 
                4. Map body to "ActionBody"
 
-                  <img src="EmployeeHelpDesk-Images/7.JPG" width="600">
+                  <img src="EmployeeHelpdesk-Images/7.JPG" width="600">
 
         3.  Save the Flow
     
@@ -201,7 +201,7 @@ This solution has 3 Flows,
 
              3. Map action to "All"
 
-                <img src="EmployeeHelpDesk-Images/8.JPG" width="600">
+                <img src="EmployeeHelpdesk-Images/8.JPG" width="600">
 
         2. In the second block
 
@@ -209,7 +209,7 @@ This solution has 3 Flows,
 
              2. Enter the list name 
 
-                <img src="EmployeeHelpDesk-Images/9.JPG" width="600">
+                <img src="EmployeeHelpdesk-Images/9.JPG" width="600">
 
         3. In the Last block
 
@@ -217,6 +217,6 @@ This solution has 3 Flows,
 
              2. Enter the list name
 
-                <img src="EmployeeHelpDesk-Images/10.JPG" width="600">
+                <img src="EmployeeHelpdesk-Images/10.JPG" width="600">
 
         4.  Save the Flow
