@@ -55,7 +55,7 @@ This is broadly divided into 3 steps:
     3. To update the SharePoint list when the user chooses to close, reopen or adds feedback comments from the card(*TicketReopenFlow.Zip*)
 
 ### Upload Action Packages
-1. Download the ["EmployeeHelpDesk-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpdesk-SolutionPackage.zip) (*This contains 2 Action Packages and 3 Flows*)
+1. Download the ["EmployeeHelpDesk-SolutionPackage.zip"](https://aka.ms/EmployeeHelpdesk-SolutionPackage.zip)(*This contains 2 Action Packages and 3 Flows*)
 
 2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK) (*This contains KASClient.js*)
 
