@@ -100,26 +100,25 @@ This is broadly divided into 3 steps:
 2. [Add](https://support.office.com/en-us/article/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2) columns and [Edit](https://support.office.com/en-us/article/Edit-list-settings-in-SharePoint-Online-4d35793b-246e-42a3-990c-563a83795b7f) (*as below in the same order and format*) column settings for this list
 
 
-    Column
-    Recommended settings
+    |Column|Recommended settings|
     |-------- |---|
-     Department|Single line of text
-     Location|Single line of text
-     Category|Single line of text
-     Description |Multiple lines of text
-     Photos|Multiple lines of text
-     CreatorName|Single line of text
-     CreatorContact|Single line of text
-     ReportedAt|Single line of text
-     AssignedTo|Single line of text
-     AssignedBy|Single line of text
-     Status|Choice with options as New, Assigned, Resolved, Closed and Reopened (*These ticket stages are mandatory*)
-     HelpdeskComments|Multiple lines of text
-     UserFeedback|Multiple lines of text
-     ReasonsToReopen|Multiple lines of text
-     CreatorKaizalaName|Single line of text
-     CreatorKaizalaContact|Single line of text
-     UserRating|Single line of text
+    |Department|Single line of text|
+    |Location|Single line of text|
+    |Category|Single line of text|
+    |Description |Multiple lines of text|
+    |Photos|Multiple lines of text|
+    |CreatorName|Single line of text|
+    |CreatorContact|Single line of text|
+    |ReportedAt|Single line of text|
+    |AssignedTo|Single line of text|
+    |AssignedBy|Single line of text|
+    |Status|Choice with options as New, Assigned, Resolved, Closed and Reopened (*These ticket stages are mandatory*)|
+    |HelpdeskComments|Multiple lines of text|
+    |UserFeedback|Multiple lines of text|
+    |ReasonsToReopen|Multiple lines of text|
+    |CreatorKaizalaName|Single line of text|
+    |CreatorKaizalaContact|Single line of text|
+    |UserRating|Single line of text|
  
 
 4. [Edit list view](https://support.office.com/en-gb/article/edit-a-list-view-in-sharepoint-online-15916903-e79a-423f-b4e2-02d37e1ff372) to position ID in first place.This is the unique ticket ID that will be displayed in the card, once the ticket is assigned.
