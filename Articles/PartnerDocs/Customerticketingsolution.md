@@ -121,7 +121,7 @@ To send the ticket via API, we would be using the actions endpoint as shown belo
 ## Updating the ticket status using API
 As the ticket status changes, we would need to update the status on the card that was sent. For that we would be using the actions/<<action-id>>/properties endpoint. In the below example, we would be updating the ticket status to RESOLVED. Notice that the actionId is the ID of the action sent in the earlier step.
 
-| Method  |      PPUT    |
+| Method  |      PUT    |
 |----------|-------------|
 |**URL**|{{endpoint-url}}/v1/groups/{{test-group-id}}/actions/{{actionId}}|
 |**Request Body**|{<br>{<br>“version”:-1,<br>“updateProperties”:<br>[<br>{<br>“name” : “ticketstatus”,<br>“type” : “Text”,<br>“value” : “STATUS: RESOLVED”<br>}<br>]<br>}|
