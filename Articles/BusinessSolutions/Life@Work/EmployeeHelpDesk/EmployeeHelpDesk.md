@@ -18,7 +18,7 @@ If the user is satisfied with the proposed resolution, user has the ability to c
 
   <img src="EmployeeHelpdesk-Images/1.jpg" width="350">
 
-   View on updating the status to "Assigned" in sharepoint and the corresponding card that is sent to user
+   View of status being updated to "Assigned" in sharepoint and the corresponding card that is sent to user
 
    <img src="EmployeeHelpdesk-Images/2.jpg" width="600">
 
