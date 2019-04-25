@@ -102,7 +102,7 @@ This is broadly divided into 3 steps:
 
     Column
     Recommended settings
-    -------- |---
+    |-------- |---|
      Department|Single line of text
      Location|Single line of text
      Category|Single line of text
