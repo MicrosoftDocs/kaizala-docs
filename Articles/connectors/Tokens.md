@@ -50,7 +50,7 @@ Kaizala provides two method to generate Access tokens
 
 ### Generate Access Token using API
 
-The root domain for invoking the Kazaila APIs is:
+The root domain for invoking the Kaizala APIs is:
 
     https://api.kaiza.la/v1/
 
