@@ -1,5 +1,3 @@
-
-
 	
 # Get Started
 ## [Overview of Kaizala App](PartnerDocs/Kaizala_overview.md)
@@ -78,7 +76,7 @@
 
 
 # Training and Support
-## [End User Trainings](PartnerDocs/EndUserTrainings.md)
+## [End User Trainings](https://support.office.com/en-us/article/Kaizala-training-987b5e60-e32a-44e8-8c71-c891a2a3d8f0)
 ## [IT Admin & Developer Trainings](PartnerDocs/PartnerTrainings.md)
 ## [Developer FAQs](FAQ.md)
 ## [Breaking Changes](BreakingChanges.md)
