@@ -32,7 +32,6 @@
 **● canRespond**: *`boolean`* = false
 
 ___
-
 <a id="cansendreminder"></a>
 
 ###  canSendReminder
@@ -40,7 +39,6 @@ ___
 **● canSendReminder**: *`boolean`* = false
 
 ___
-
 <a id="json"></a>
 
 ###  json
@@ -48,7 +46,6 @@ ___
 **● json**: *`JSON`*
 
 ___
-
 <a id="shouldseesummary"></a>
 
 ###  shouldSeeSummary
@@ -68,7 +65,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -78,7 +74,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="tojson"></a>
 
 ###  toJSON
@@ -88,7 +83,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

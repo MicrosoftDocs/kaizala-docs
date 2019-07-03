@@ -37,7 +37,6 @@ This model contains data for every response to an Attachment List Type question.
 attachmentListType: contains the type of the attachment list response
 
 ___
-
 <a id="attachmentsresponsejsonstrings"></a>
 
 ###  attachmentsResponseJSONStrings
@@ -47,7 +46,6 @@ ___
 attachmentsResponseJSONStrings: contains the list of attachments corresponding to every response as a JSON string which is directly available in the questionIdToAnswerMap.
 
 ___
-
 <a id="questionid"></a>
 
 ###  questionId
@@ -57,7 +55,6 @@ ___
 Index of the question
 
 ___
-
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -67,7 +64,6 @@ ___
 Title of the question
 
 ___
-
 <a id="questiontype"></a>
 
 ###  questionType
@@ -77,7 +73,6 @@ ___
 Type of the question
 
 ___
-
 <a id="timestamps"></a>
 
 ###  timeStamps
@@ -87,7 +82,6 @@ ___
 timeStamps: contains the response timestamps for every response.
 
 ___
-
 <a id="userinfo"></a>
 
 ###  userInfo

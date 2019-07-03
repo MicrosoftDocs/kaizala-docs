@@ -36,7 +36,6 @@
 Index of the question
 
 ___
-
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -46,7 +45,6 @@ ___
 Title of the question
 
 ___
-
 <a id="questiontype"></a>
 
 ###  questionType

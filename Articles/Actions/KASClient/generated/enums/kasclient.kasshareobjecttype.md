@@ -7,17 +7,33 @@ The following enum values MUST be in sync with the ShareObjectType enum represen
 
 ### Enumeration members
 
+* [Base64_Image](kasclient.kasshareobjecttype.md#base64_image)
 * [Image](kasclient.kasshareobjecttype.md#image)
+* [Text](kasclient.kasshareobjecttype.md#text)
 
 ---
 
 ## Enumeration members
 
+<a id="base64_image"></a>
+
+###  Base64_Image
+
+**Base64_Image**:  = 2
+
+___
 <a id="image"></a>
 
 ###  Image
 
 **Image**:  = 1
+
+___
+<a id="text"></a>
+
+###  Text
+
+**Text**:  = 3
 
 ___
 

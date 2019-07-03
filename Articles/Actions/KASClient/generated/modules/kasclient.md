@@ -8,12 +8,14 @@
 
 * [App](kasclient.app.md)
 * [Form](kasclient.form.md)
-
 ### Enumerations
 
 * [AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)
+* [CacheScope](../enums/kasclient.cachescope.md)
+* [CacheVisibility](../enums/kasclient.cachevisibility.md)
 * [CameraFilterMode](../enums/kasclient.camerafiltermode.md)
 * [FormStatus](../enums/kasclient.formstatus.md)
+* [ImageMetadataFetchState](../enums/kasclient.imagemetadatafetchstate.md)
 * [ImagePickerSource](../enums/kasclient.imagepickersource.md)
 * [KASActionPropertyType](../enums/kasclient.kasactionpropertytype.md)
 * [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)
@@ -34,11 +36,12 @@
 * [KASReportingResponseMode](../enums/kasclient.kasreportingresponsemode.md)
 * [KASShareObjectType](../enums/kasclient.kasshareobjecttype.md)
 * [NotificationPriority](../enums/kasclient.notificationpriority.md)
+* [TenantAttributeDataType](../enums/kasclient.tenantattributedatatype.md)
 * [UrlAction](../enums/kasclient.urlaction.md)
 * [UrlType](../enums/kasclient.urltype.md)
-
 ### Classes
 
+* [KASActionLocalCacheProp](../classes/kasclient.kasactionlocalcacheprop.md)
 * [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)
 * [KASActionProperties](../classes/kasclient.kasactionproperties.md)
 * [KASAttachment](../classes/kasclient.kasattachment.md)
@@ -51,6 +54,9 @@
 * [KASForm](../classes/kasclient.kasform.md)
 * [KASFormAggregatedSummary](../classes/kasclient.kasformaggregatedsummary.md)
 * [KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md)
+* [KASFormInfo](../classes/kasclient.kasforminfo.md)
+* [KASFormInfoRequest](../classes/kasclient.kasforminforequest.md)
+* [KASFormInfoResponse](../classes/kasclient.kasforminforesponse.md)
 * [KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md)
 * [KASFormProperty](../classes/kasclient.kasformproperty.md)
 * [KASFormPropertyFactory](../classes/kasclient.kasformpropertyfactory.md)
@@ -71,6 +77,7 @@
 * [KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md)
 * [KASNumericQuestionResult](../classes/kasclient.kasnumericquestionresult.md)
 * [KASO365User](../classes/kasclient.kaso365user.md)
+* [KASOCRSemanticMediaPackage](../classes/kasclient.kasocrsemanticmediapackage.md)
 * [KASOptionQuestionResult](../classes/kasclient.kasoptionquestionresult.md)
 * [KASOptionResult](../classes/kasclient.kasoptionresult.md)
 * [KASParticipantData](../classes/kasclient.kasparticipantdata.md)
@@ -80,12 +87,15 @@
 * [KASQuestionOption](../classes/kasclient.kasquestionoption.md)
 * [KASQuestionResult](../classes/kasclient.kasquestionresult.md)
 * [KASQuestionValidationResponse](../classes/kasclient.kasquestionvalidationresponse.md)
+* [KASRichImageAttachment](../classes/kasclient.kasrichimageattachment.md)
 * [KASShareObject](../classes/kasclient.kasshareobject.md)
 * [KASUser](../classes/kasclient.kasuser.md)
 * [KASValidationRule](../classes/kasclient.kasvalidationrule.md)
 * [KASVideoAttachment](../classes/kasclient.kasvideoattachment.md)
 * [KASVisibilityRule](../classes/kasclient.kasvisibilityrule.md)
-
+* [TenantAttribute](../classes/kasclient.tenantattribute.md)
+* [TenantAttributeData](../classes/kasclient.tenantattributedata.md)
+* [TenantUserProfile](../classes/kasclient.tenantuserprofile.md)
 ### Functions
 
 * [getFilteredParticipantRole](kasclient.md#getfilteredparticipantrole)
@@ -110,7 +120,6 @@
 **Returns:** [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
 
 ___
-
 <a id="getfilteredparticipanttype"></a>
 
 ###  getFilteredParticipantType

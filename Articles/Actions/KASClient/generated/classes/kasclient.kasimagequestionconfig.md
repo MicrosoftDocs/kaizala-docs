@@ -33,7 +33,6 @@
 **● defaultCameraFilterMode**: *[CameraFilterMode](../enums/kasclient.camerafiltermode.md)* =  CameraFilterMode.Photo
 
 ___
-
 <a id="imagesource"></a>
 
 ###  imageSource
@@ -41,7 +40,6 @@ ___
 **● imageSource**: *[ImagePickerSource](../enums/kasclient.imagepickersource.md)* =  ImagePickerSource.All
 
 ___
-
 <a id="pagebreakenabled"></a>
 
 ###  pageBreakEnabled
@@ -49,7 +47,6 @@ ___
 **● pageBreakEnabled**: *`boolean`* = true
 
 ___
-
 <a id="default_camera_filter_mode"></a>
 
 ### `<Static>` DEFAULT_CAMERA_FILTER_MODE
@@ -57,7 +54,6 @@ ___
 **● DEFAULT_CAMERA_FILTER_MODE**: *`string`* = "dcfm"
 
 ___
-
 <a id="image_source_key"></a>
 
 ### `<Static>` IMAGE_SOURCE_KEY
@@ -77,7 +73,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

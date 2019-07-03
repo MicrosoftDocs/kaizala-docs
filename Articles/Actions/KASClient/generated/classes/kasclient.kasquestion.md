@@ -10,6 +10,7 @@
 
 ### Properties
 
+* [attachmentsList](kasclient.kasquestion.md#attachmentslist)
 * [config](kasclient.kasquestion.md#config)
 * [displayType](kasclient.kasquestion.md#displaytype)
 * [id](kasclient.kasquestion.md#id)
@@ -18,6 +19,7 @@
 * [isInvisible](kasclient.kasquestion.md#isinvisible)
 * [isResponseOptional](kasclient.kasquestion.md#isresponseoptional)
 * [options](kasclient.kasquestion.md#options)
+* [questionMetadata](kasclient.kasquestion.md#questionmetadata)
 * [title](kasclient.kasquestion.md#title)
 * [type](kasclient.kasquestion.md#type)
 * [valif](kasclient.kasquestion.md#valif)
@@ -35,6 +37,15 @@
 
 ## Properties
 
+<a id="attachmentslist"></a>
+
+###  attachmentsList
+
+**● attachmentsList**: *[KASAttachment](kasclient.kasattachment.md)[]* =  []
+
+Attchments of a question - Array of KASAttachment
+
+___
 <a id="config"></a>
 
 ###  config
@@ -44,7 +55,6 @@
 Configuration/behaviour of a question
 
 ___
-
 <a id="displaytype"></a>
 
 ###  displayType
@@ -54,7 +64,6 @@ ___
 Display type of the question's options
 
 ___
-
 <a id="id"></a>
 
 ###  id
@@ -64,7 +73,6 @@ ___
 Index of the question, starts with 0
 
 ___
-
 <a id="iseditable"></a>
 
 ###  isEditable
@@ -74,7 +82,6 @@ ___
 Denotes if the question can be edited by the responder, default is true
 
 ___
-
 <a id="isexcludedfromreporting"></a>
 
 ###  isExcludedFromReporting
@@ -84,7 +91,6 @@ ___
 Denotes if the question will be skipped from all sorts of reporting
 
 ___
-
 <a id="isinvisible"></a>
 
 ###  isInvisible
@@ -94,7 +100,6 @@ ___
 Denotes if the question should be invisible to the responder, default is false
 
 ___
-
 <a id="isresponseoptional"></a>
 
 ###  isResponseOptional
@@ -104,7 +109,6 @@ ___
 Denotes if it's mandatory to respond to this question
 
 ___
-
 <a id="options"></a>
 
 ###  options
@@ -114,7 +118,13 @@ ___
 List of options for the question
 
 ___
+<a id="questionmetadata"></a>
 
+###  questionMetadata
+
+**● questionMetadata**: *`string`*
+
+___
 <a id="title"></a>
 
 ###  title
@@ -124,7 +134,6 @@ ___
 Title of the question
 
 ___
-
 <a id="type"></a>
 
 ###  type
@@ -134,7 +143,6 @@ ___
 Type of the question
 
 ___
-
 <a id="valif"></a>
 
 ###  valif
@@ -144,7 +152,6 @@ ___
 Validation rules of a question - JSON of rule(s), error string and help string
 
 ___
-
 <a id="visif"></a>
 
 ###  visif
@@ -172,7 +179,6 @@ ___
 **Returns:** `string`
 
 ___
-
 <a id="toapicompatiblejson"></a>
 
 ###  toAPICompatibleJSON
@@ -182,7 +188,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -192,7 +197,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="tojson"></a>
 
 ###  toJSON
@@ -202,7 +206,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="validateresponse"></a>
 
 ###  validateResponse
@@ -218,7 +221,6 @@ ___
 **Returns:** [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

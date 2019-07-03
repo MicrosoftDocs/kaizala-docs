@@ -51,7 +51,6 @@ ___
 **● countryPhoneCode**: *`number`* = 0
 
 ___
-
 <a id="phonenumber"></a>
 
 ###  phoneNumber
@@ -71,7 +70,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="tostring"></a>
 
 ###  toString
@@ -81,7 +79,6 @@ ___
 **Returns:** `string`
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

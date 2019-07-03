@@ -24,7 +24,6 @@
 **AddEntriesInValue**:  = 4
 
 ___
-
 <a id="addproperty"></a>
 
 ###  AddProperty
@@ -32,7 +31,6 @@ ___
 **AddProperty**:  = 1
 
 ___
-
 <a id="deleteentriesfromvalue"></a>
 
 ###  DeleteEntriesFromValue
@@ -40,7 +38,6 @@ ___
 **DeleteEntriesFromValue**:  = 5
 
 ___
-
 <a id="deleteproperty"></a>
 
 ###  DeleteProperty
@@ -48,7 +45,6 @@ ___
 **DeleteProperty**:  = 2
 
 ___
-
 <a id="replaceentryinvalue"></a>
 
 ###  ReplaceEntryInValue
@@ -56,7 +52,6 @@ ___
 **ReplaceEntryInValue**:  = 3
 
 ___
-
 <a id="updatevalue"></a>
 
 ###  UpdateValue

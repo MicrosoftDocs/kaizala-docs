@@ -7,10 +7,15 @@
 ### Functions
 
 * [cancelAttachmentDownloadAsync](kasclient.app.md#cancelattachmentdownloadasync)
+* [deleteActionLocalCacheAsync](kasclient.app.md#deleteactionlocalcacheasync)
+* [deleteDataFromTmpDirAsync](kasclient.app.md#deletedatafromtmpdirasync)
 * [dismissCurrentScreen](kasclient.app.md#dismisscurrentscreen)
 * [downloadAttachmentAsync](kasclient.app.md#downloadattachmentasync)
+* [fetchTenantUserAttributeDetailsAsync](kasclient.app.md#fetchtenantuserattributedetailsasync)
+* [fetchTenantUserProfilesAsync](kasclient.app.md#fetchtenantuserprofilesasync)
 * [generateBase64ThumbnailAsync](kasclient.app.md#generatebase64thumbnailasync)
 * [generateUUIDAsync](kasclient.app.md#generateuuidasync)
+* [getActionLocalCacheAsync](kasclient.app.md#getactionlocalcacheasync)
 * [getAppLocaleAsync](kasclient.app.md#getapplocaleasync)
 * [getCalendarNameAsync](kasclient.app.md#getcalendarnameasync)
 * [getConversationDetailsAsync](kasclient.app.md#getconversationdetailsasync)
@@ -37,8 +42,10 @@
 * [performAuthenticationAsync](kasclient.app.md#performauthenticationasync)
 * [performHTTPRequest](kasclient.app.md#performhttprequest)
 * [printf](kasclient.app.md#printf)
+* [readDataFromTmpDirAsync](kasclient.app.md#readdatafromtmpdirasync)
 * [readTalkBackMessage](kasclient.app.md#readtalkbackmessage)
 * [registerHardwareBackPressCallback](kasclient.app.md#registerhardwarebackpresscallback)
+* [saveDataInTmpDirAsync](kasclient.app.md#savedataintmpdirasync)
 * [setNativeToolbarProperties](kasclient.app.md#setnativetoolbarproperties)
 * [setUserStrings](kasclient.app.md#setuserstrings)
 * [showAttachmentPickerAsync](kasclient.app.md#showattachmentpickerasync)
@@ -54,6 +61,8 @@
 * [showQRcodeScannerAsync](kasclient.app.md#showqrcodescannerasync)
 * [showUserProfileAsync](kasclient.app.md#showuserprofileasync)
 * [startChatAsync](kasclient.app.md#startchatasync)
+* [updateActionLocalCacheAsync](kasclient.app.md#updateactionlocalcacheasync)
+* [updateTenantUserProfileAsync](kasclient.app.md#updatetenantuserprofileasync)
 
 ---
 
@@ -89,7 +98,52 @@ Cancel a download operation queued for an attachment
 **Returns:** `void`
 
 ___
+<a id="deleteactionlocalcacheasync"></a>
 
+###  deleteActionLocalCacheAsync
+
+▸ **deleteActionLocalCacheAsync**(actionLocalCacheProps: *[KASActionLocalCacheProp](../classes/kasclient.kasactionlocalcacheprop.md)*, callback: *`function`*): `void`
+
+Delete the given key form the local data cache
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| actionLocalCacheProps | [KASActionLocalCacheProp](../classes/kasclient.kasactionlocalcacheprop.md) |  property of data to be deleted from cache |
+| callback | `function` |  callback with below parameters: \*\* @param {boolean} success indicates if the update is successful or not \*\* @param {string} error json string for the KASError object containing error code and/or description. |
+
+**Returns:** `void`
+
+___
+<a id="deletedatafromtmpdirasync"></a>
+
+###  deleteDataFromTmpDirAsync
+
+▸ **deleteDataFromTmpDirAsync**(filePath: *`string`*, callback: *`function`*): `void`
+
+Deletes file from temporary cache storage. Used in conjunction with API saveDataInTmpDirAsync for the files stored using this API.
+
+#### Sample Usage
+
+```
+KASClient.App.deleteDataFromTmpDirAsync(filePath, function (success, error) {
+    if (error == null && success) {
+       // Action's code in success case
+     }
+});
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| filePath | `string` |  filepath which should be read |
+| callback | `function` |  with below parameters: |
+
+**Returns:** `void`
+
+___
 <a id="dismisscurrentscreen"></a>
 
 ###  dismissCurrentScreen
@@ -101,7 +155,6 @@ Dismiss the current opened Action's screen (Creation, Response, or Summary)
 **Returns:** `void`
 
 ___
-
 <a id="downloadattachmentasync"></a>
 
 ###  downloadAttachmentAsync
@@ -134,7 +187,71 @@ KASClient.App.downloadAttachmentAsync(imageAttachment, function(downloadedAttach
 **Returns:** `void`
 
 ___
+<a id="fetchtenantuserattributedetailsasync"></a>
 
+###  fetchTenantUserAttributeDetailsAsync
+
+▸ **fetchTenantUserAttributeDetailsAsync**(callback: *`function`*): `void`
+
+Fetches the tenant attribute details. Tenant of the conversation in context will be used for this.
+#### Note
+
+The Action should belong to the same tenant of the conversation and the user needs to be logged into that tenant for this api to work
+
+#### Sample Usage
+
+```
+KASClient.App.fetchTenantUserAttributeDetailsAsync(function(tenantAttributes, error) {
+    if (error == null && tenantAttributes.length > 0) {
+        var tenantAttribute = tenantAttributes[0]; // TenantAttribute
+        console.log(tenantAttribute.id + " : " + tenantAttribute.name);
+    }
+});
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| callback | `function` |  with below parameters:<br><br>\* @param {TenantAttribute\[\]} tenantAttributes array of tenant attributes<br><br>\* @param {string} error message in case of error, null otherwise |
+
+**Returns:** `void`
+
+___
+<a id="fetchtenantuserprofilesasync"></a>
+
+###  fetchTenantUserProfilesAsync
+
+▸ **fetchTenantUserProfilesAsync**(userIds: *`string`[]*, callback: *`function`*): `void`
+
+Fetches the tenant attributes of the given users. Tenant of the conversation in context will be used for this.
+#### Note
+
+The Action should belong to the same tenant of the conversation and the user needs to be logged into that tenant for this api to work
+
+#### Sample Usage
+
+```
+// Fetch current user's tenant profile
+KASClient.App.fetchTenantUserProfilesAsync(null, function(tenantUserProfiles, error) {
+    if (error == null && tenantUserProfiles.length > 0) {
+        var userProfile = tenantUserProfiles[0]; // TenantUserProfile
+        var tenantAttributeData = userProfile.tenantAttributeDataList[0]; // TenantAttributeData
+        console.log(tenantAttributeData.attributeId + " : " + tenantAttributeData.attributeValue);
+    }
+});
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| userIds | `string`[] |  array of user ids; if it's null or empty, current user's tenant profile will be fetched |
+| callback | `function` |  with below parameters:<br><br>\* @param {TenantUserProfile\[\]} tenantUserProfiles array of users' tenant profiles (attribute id-value pairs)<br><br>\* @param {string} error message in case of error, null otherwise |
+
+**Returns:** `void`
+
+___
 <a id="generatebase64thumbnailasync"></a>
 
 ###  generateBase64ThumbnailAsync
@@ -163,7 +280,6 @@ KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error
 **Returns:** `void`
 
 ___
-
 <a id="generateuuidasync"></a>
 
 ###  generateUUIDAsync
@@ -190,7 +306,24 @@ Gets the new UUID
 **Returns:** `void`
 
 ___
+<a id="getactionlocalcacheasync"></a>
 
+###  getActionLocalCacheAsync
+
+▸ **getActionLocalCacheAsync**(actionLocalCacheProps: *[KASActionLocalCacheProp](../classes/kasclient.kasactionlocalcacheprop.md)*, callback: *`function`*): `void`
+
+Retrieves the given key to the local data cache Value is saved at the level mentioned in KASActionLocalCacheProp accordingly
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| actionLocalCacheProps | [KASActionLocalCacheProp](../classes/kasclient.kasactionlocalcacheprop.md) |  property of data to be retrieved from cache |
+| callback | `function` |  callback with below parameters: \*\* @param {KASActionLocalCacheProp} actionLocalCacheProps indicates if the update is successful or not \*\* @param {string} error json string for the KASError object containing error code and/or description. |
+
+**Returns:** `void`
+
+___
 <a id="getapplocaleasync"></a>
 
 ###  getAppLocaleAsync
@@ -208,7 +341,6 @@ Gets the current app locale, the language in which the app is rendered, useful f
 **Returns:** `void`
 
 ___
-
 <a id="getcalendarnameasync"></a>
 
 ###  getCalendarNameAsync
@@ -226,7 +358,6 @@ Gets the current system calendar setting. This is mainly for iOS to identify the
 **Returns:** `void`
 
 ___
-
 <a id="getconversationdetailsasync"></a>
 
 ###  getConversationDetailsAsync
@@ -244,12 +375,11 @@ Gets conversation related properties
 **Returns:** `void`
 
 ___
-
 <a id="getcurrentdevicelocationasync"></a>
 
 ###  getCurrentDeviceLocationAsync
 
-▸ **getCurrentDeviceLocationAsync**(callback: *`function`*): `void`
+▸ **getCurrentDeviceLocationAsync**(callback: *`function`*, canUseCachedLocation?: *`boolean`*): `void`
 
 Gets the current device location
 
@@ -261,19 +391,19 @@ Gets the current device location
           return;
      }
      //use location(KASLocation) as the device location
- });
+ }, false);
 ```
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| callback | `function` |  with below parameters:<br><br>\* @param {string} location can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
+| Name | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| callback | `function` | - |  with below parameters:<br><br>\* @param {string} location can be null in case of error<br><br>\* @param {string} error message in case of error, null otherwise |
+| `Default value` canUseCachedLocation | `boolean` | false |  (optional, default if false) if this flag is true, platform may choose to return a cached location of upto 30min old in case there's an error while fetching current location |
 
 **Returns:** `void`
 
 ___
-
 <a id="getcurrentlocale"></a>
 
 ###  getCurrentLocale
@@ -283,7 +413,6 @@ ___
 **Returns:** `string`
 
 ___
-
 <a id="getdeviceidasync"></a>
 
 ###  getDeviceIdAsync
@@ -301,7 +430,6 @@ Gets deviceId
 **Returns:** `void`
 
 ___
-
 <a id="getdevicelocationasync"></a>
 
 ###  getDeviceLocationAsync
@@ -319,7 +447,6 @@ Gets the previously stored device location
 **Returns:** `void`
 
 ___
-
 <a id="getfontsizemultiplierasync"></a>
 
 ###  getFontSizeMultiplierAsync
@@ -337,7 +464,6 @@ Gets the font size multiplier for large text. Current only required by iOS.
 **Returns:** `void`
 
 ___
-
 <a id="getforwardcontextasync"></a>
 
 ###  getForwardContextAsync
@@ -355,7 +481,6 @@ Gets Forward Context details such as : Card Creation is in forwarded mode
 **Returns:** `void`
 
 ___
-
 <a id="getisapptimeformat24hoursasync"></a>
 
 ###  getIsAppTimeFormat24HoursAsync
@@ -373,7 +498,6 @@ Gets the current app time format is 24hours or not, the time format selected by 
 **Returns:** `void`
 
 ___
-
 <a id="getlocalizedstringsasync"></a>
 
 ###  getLocalizedStringsAsync
@@ -402,7 +526,6 @@ KASClient.App.getLocalizedStringsAsync(function (strings, error) {
 **Returns:** `void`
 
 ___
-
 <a id="getlocationaddressasync"></a>
 
 ###  getLocationAddressAsync
@@ -436,7 +559,6 @@ KASClient.App.getLocationAddressAsync(params,
 **Returns:** `void`
 
 ___
-
 <a id="getmapimageasbase64async"></a>
 
 ###  getMapImageAsBase64Async
@@ -466,7 +588,6 @@ KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error
 **Returns:** `void`
 
 ___
-
 <a id="geto365userdetailsasync"></a>
 
 ###  getO365UserDetailsAsync
@@ -484,7 +605,6 @@ Gets details of current logged-in O365 user
 **Returns:** `void`
 
 ___
-
 <a id="getpackagecustomsettingsasync"></a>
 
 ###  getPackageCustomSettingsAsync
@@ -513,7 +633,6 @@ KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
 **Returns:** `void`
 
 ___
-
 <a id="getusersdetailsasync"></a>
 
 ###  getUsersDetailsAsync
@@ -546,7 +665,6 @@ KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
 **Returns:** `void`
 
 ___
-
 <a id="hideprogressbar"></a>
 
 ###  hideProgressBar
@@ -558,7 +676,6 @@ Hides the current progress bar, if any
 **Returns:** `void`
 
 ___
-
 <a id="isattachmentdownloadingasync"></a>
 
 ###  isAttachmentDownloadingAsync
@@ -596,7 +713,6 @@ KASClient.App.isAttachmentDownloadingAsync(attachment, function(isAttachmentDown
 **Returns:** `void`
 
 ___
-
 <a id="isauthenticationtyepsupportedasync"></a>
 
 ###  isAuthenticationTyepSupportedAsync
@@ -615,7 +731,6 @@ Checks if authentication of type is possible or not.
 **Returns:** `void`
 
 ___
-
 <a id="istalkbackenabledasync"></a>
 
 ###  isTalkBackEnabledAsync
@@ -633,7 +748,6 @@ Gets whether talkback is enabled or not
 **Returns:** `void`
 
 ___
-
 <a id="logtoreport"></a>
 
 ###  logToReport
@@ -651,7 +765,6 @@ Logs data for "Send report"
 **Returns:** `void`
 
 ___
-
 <a id="openattachmentimmersiveview"></a>
 
 ###  openAttachmentImmersiveView
@@ -669,7 +782,6 @@ Open attachment in Immersive view.
 **Returns:** `void`
 
 ___
-
 <a id="openimmersiveviewforattachmentlist"></a>
 
 ###  openImmersiveViewForAttachmentList
@@ -688,7 +800,6 @@ Open attachment in Immersive view.
 **Returns:** `void`
 
 ___
-
 <a id="performauthenticationasync"></a>
 
 ###  performAuthenticationAsync
@@ -717,7 +828,6 @@ KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, functio
 **Returns:** `void`
 
 ___
-
 <a id="performhttprequest"></a>
 
 ###  performHTTPRequest
@@ -749,7 +859,6 @@ KASClient.App.performHTTPRequest(url, parametersJson, function (response, error)
 **Returns:** `void`
 
 ___
-
 <a id="printf"></a>
 
 ###  printf
@@ -768,7 +877,34 @@ Returns a string.
 **Returns:** `string`
 
 ___
+<a id="readdatafromtmpdirasync"></a>
 
+###  readDataFromTmpDirAsync
+
+▸ **readDataFromTmpDirAsync**(filePath: *`string`*, callback: *`function`*): `void`
+
+Reads file content as base64 from temporary cache storage. Used in conjunction with API saveDataInAppCacheAsync for the files stored using this API.
+
+#### Sample Usage
+
+```
+KASClient.App.readDataFromTmpDirAsync(filePath, function (base64Data, error) {
+    if (error == null) {
+       // Action's code in success case
+     }
+});
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| filePath | `string` |  filepath which should be read |
+| callback | `function` |  with below parameters: |
+
+**Returns:** `void`
+
+___
 <a id="readtalkbackmessage"></a>
 
 ###  readTalkBackMessage
@@ -786,7 +922,6 @@ Reads the text if TalkBack/VoiceOver enabled
 **Returns:** `void`
 
 ___
-
 <a id="registerhardwarebackpresscallback"></a>
 
 ###  registerHardwareBackPressCallback
@@ -804,7 +939,35 @@ Registers a callback to be executed on hardware back button press (for Android)
 **Returns:** `void`
 
 ___
+<a id="savedataintmpdirasync"></a>
 
+###  saveDataInTmpDirAsync
+
+▸ **saveDataInTmpDirAsync**(base64Data: *`string`*, fileName: *`string`*, callback: *`function`*): `void`
+
+Saves base64 data on device with given filename. Actions can use this API to store data temporarily on device storage which can be referred in form/response/properties update payloads in that session. Note that this data is stored on local temp cache directory and can be deleted by device OS without warning in low storage scenarios. The maximum lifetime for this storage is within one session of the action. Once the screen dismisses, this data is cleared off. Typically, action can use this storage to save base64 image/ audio data on storage and refer that path in survey json/ response and client will make sure that it gets uploaded to service in message sending flow.
+
+#### Sample Usage
+
+```
+KASClient.App.saveDataInTmpDirAsync(base64Data, fileName, function (filePath, error) {
+    if (error == null) {
+       // Action's code in success case
+     }
+});
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| base64Data | `string` |  base64 data to be stored. |
+| fileName | `string` |  fileName including relevant extension which should be used to store the data. File name maximum length allowed is 15 and it can only contain alphanumeric characters, underscores, hifen and dots i.e. "a-zA-Z0-9\_.-". For example, file1.mp3 |
+| callback | `function` |  with below parameters: |
+
+**Returns:** `void`
+
+___
 <a id="setnativetoolbarproperties"></a>
 
 ###  setNativeToolbarProperties
@@ -832,7 +995,6 @@ KASClient.App.setNativeToolbarProperties(nativeToolbarProps);
 **Returns:** `void`
 
 ___
-
 <a id="setuserstrings"></a>
 
 ###  setUserStrings
@@ -848,7 +1010,6 @@ ___
 **Returns:** `void`
 
 ___
-
 <a id="showattachmentpickerasync"></a>
 
 ###  showAttachmentPickerAsync
@@ -890,7 +1051,6 @@ KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (
 **Returns:** `void`
 
 ___
-
 <a id="showbarcodescannerasync"></a>
 
 ###  showBarcodeScannerAsync
@@ -908,7 +1068,6 @@ Launches the barcode scanner and returns the scanned object
 **Returns:** `void`
 
 ___
-
 <a id="showcontactpickerasync"></a>
 
 ###  showContactPickerAsync
@@ -941,7 +1100,6 @@ KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [
 ```
 
 ___
-
 <a id="showdurationpickerasync"></a>
 
 ###  showDurationPickerAsync
@@ -960,7 +1118,6 @@ Shows a native duration picker with day/hour/minute
 **Returns:** `void`
 
 ___
-
 <a id="showimageimmersiveview"></a>
 
 ###  showImageImmersiveView
@@ -986,7 +1143,6 @@ KASClient.App.showImageImmersiveView(urlArray);
 **Returns:** `void`
 
 ___
-
 <a id="showimagepickerasync"></a>
 
 ###  showImagePickerAsync
@@ -1005,7 +1161,6 @@ Shows a native image picker, and returns the selected image path
 Selected image location
 
 ___
-
 <a id="showlocationonmap"></a>
 
 ###  showLocationOnMap
@@ -1023,7 +1178,6 @@ shows a particular location as mentioned in KASLocation
 **Returns:** `void`
 
 ___
-
 <a id="shownativeerrormessage"></a>
 
 ###  showNativeErrorMessage
@@ -1041,7 +1195,6 @@ Shows a native alert (for iOS) or a toast (for Android) with the message
 **Returns:** `void`
 
 ___
-
 <a id="showplacepickerasync"></a>
 
 ###  showPlacePickerAsync
@@ -1059,7 +1212,6 @@ Shows a native place picker, and returns the selected place (lt, lg, n)
 **Returns:** `void`
 
 ___
-
 <a id="showprogressbar"></a>
 
 ###  showProgressBar
@@ -1077,7 +1229,6 @@ Shows a native full sreen progress bar with the given text
 **Returns:** `void`
 
 ___
-
 <a id="showqrcodescannerasync"></a>
 
 ###  showQRcodeScannerAsync
@@ -1095,7 +1246,6 @@ Launches the QR code scanner and returns the scanned object
 **Returns:** `void`
 
 ___
-
 <a id="showuserprofileasync"></a>
 
 ###  showUserProfileAsync
@@ -1115,7 +1265,6 @@ Shows profile page/details of a user
 **Returns:** `void`
 
 ___
-
 <a id="startchatasync"></a>
 
 ###  startChatAsync
@@ -1130,6 +1279,59 @@ Starts chat with a user
 | ------ | ------ | ------ |
 | userId | `string` |  of the user |
 | callback | `function` |  with below parameters:<br><br>\* @param {boolean} success<br><br>\* @param {string} error |
+
+**Returns:** `void`
+
+___
+<a id="updateactionlocalcacheasync"></a>
+
+###  updateActionLocalCacheAsync
+
+▸ **updateActionLocalCacheAsync**(actionLocalCacheProps: *[KASActionLocalCacheProp](../classes/kasclient.kasactionlocalcacheprop.md)*, callback: *`function`*): `void`
+
+Updates/saves the given value against key to the local data cache
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| actionLocalCacheProps | [KASActionLocalCacheProp](../classes/kasclient.kasactionlocalcacheprop.md) |  property of data to be saved in cache |
+| callback | `function` |  callback with below parameters: \*\* @param {boolean} success indicates if the update is successful or not \*\* @param {string} error json string for the KASError object containing error code and/or description. |
+
+**Returns:** `void`
+
+___
+<a id="updatetenantuserprofileasync"></a>
+
+###  updateTenantUserProfileAsync
+
+▸ **updateTenantUserProfileAsync**(attributeDataList: *[TenantAttributeData](../classes/kasclient.tenantattributedata.md)[]*, callback: *`function`*): `void`
+
+Updates the tenant attributes of the current user. Tenant of the conversation in context will be used for this.
+#### Note
+
+The Action should belong to the same tenant of the conversation and the user needs to be logged into that tenant for this api to work
+
+#### Sample Usage
+
+```
+var tenantAttributeDataList = [
+    new KASClient.TenantAttributeData("attribute_id_1", "AttributeValue1"),
+    new KASClient.TenantAttributeData("attribute_id_2", "AttributeValue2")
+];
+KASClient.App.updateTenantUserProfileAsync(tenantAttributeDataList, function(success, error) {
+    if (error == null && success) {
+        console.log("SUCCESS");
+    }
+});
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| attributeDataList | [TenantAttributeData](../classes/kasclient.tenantattributedata.md)[] |  tenant attribute id-value pairs |
+| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success true if successful, false otherwise<br><br>\* @param {string} error message in case of error, null otherwise |
 
 **Returns:** `void`
 

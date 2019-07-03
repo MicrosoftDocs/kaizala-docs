@@ -16,6 +16,8 @@
 * [placeName](kasclient.kaslocation.md#placename)
 ### Methods
 
+* [isEmpty](kasclient.kaslocation.md#isempty)
+* [isEqual](kasclient.kaslocation.md#isequal)
 * [toJSON](kasclient.kaslocation.md#tojson)
 * [fromJSON](kasclient.kaslocation.md#fromjson)
 
@@ -32,7 +34,6 @@
 Latitude of the location
 
 ___
-
 <a id="longitude"></a>
 
 ###  longitude
@@ -42,7 +43,6 @@ ___
 Longitude of the location
 
 ___
-
 <a id="placeaddress"></a>
 
 ###  placeAddress
@@ -52,7 +52,6 @@ ___
 Address of the location
 
 ___
-
 <a id="placename"></a>
 
 ###  placeName
@@ -65,6 +64,30 @@ ___
 
 ## Methods
 
+<a id="isempty"></a>
+
+###  isEmpty
+
+▸ **isEmpty**(): `boolean`
+
+**Returns:** `boolean`
+
+___
+<a id="isequal"></a>
+
+###  isEqual
+
+▸ **isEqual**(location: *[KASLocation](kasclient.kaslocation.md)*): `boolean`
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| location | [KASLocation](kasclient.kaslocation.md) |
+
+**Returns:** `boolean`
+
+___
 <a id="tojson"></a>
 
 ###  toJSON
@@ -74,7 +97,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

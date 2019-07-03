@@ -30,7 +30,6 @@
 **● json**: *`JSON`*
 
 ___
-
 <a id="nonrespondersinconversation"></a>
 
 ###  nonRespondersInConversation
@@ -40,7 +39,6 @@ ___
 How many in the conversation did not respond
 
 ___
-
 <a id="results"></a>
 
 ###  results
@@ -51,7 +49,6 @@ Aggregated result for aggregative questions Dictionary<QuestionId: number, Resul
 #### Type declaration
 
 ___
-
 <a id="targetrespondercount"></a>
 
 ###  targetResponderCount
@@ -61,7 +58,6 @@ ___
 How many in the conversation were assigned to respond to this form
 
 ___
-
 <a id="totalresponsecount"></a>
 
 ###  totalResponseCount

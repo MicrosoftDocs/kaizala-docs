@@ -24,17 +24,15 @@
 Summary is visible to all the admins of the conversation
 
 ___
-
 <a id="all"></a>
 
 ###  All
 
 **All**:  = 0
 
-Form summary is visible to everyone in the conversation
+Form summary is visible to everyone in the conversation. For broadcast group, this doesn't include subscribers
 
 ___
-
 <a id="membersandsubscribers"></a>
 
 ###  MembersAndSubscribers
@@ -44,7 +42,6 @@ ___
 Summary is visible to all the member and subscribers of the conversation
 
 ___
-
 <a id="sender"></a>
 
 ###  Sender

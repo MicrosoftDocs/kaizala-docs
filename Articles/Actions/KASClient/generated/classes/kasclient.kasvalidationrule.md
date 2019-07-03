@@ -30,7 +30,6 @@
 **● attributes**: *`any`*
 
 ___
-
 <a id="errorstring"></a>
 
 ###  errorString
@@ -38,7 +37,6 @@ ___
 **● errorString**: *`string`* =  null
 
 ___
-
 <a id="helptext"></a>
 
 ###  helpText
@@ -46,7 +44,6 @@ ___
 **● helpText**: *`string`* =  null
 
 ___
-
 <a id="rule"></a>
 
 ###  rule
@@ -66,7 +63,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

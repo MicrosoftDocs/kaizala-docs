@@ -52,7 +52,6 @@ ___
 **● messagePreview**: *`String`* = ""
 
 ___
-
 <a id="messagetarget"></a>
 
 ###  messageTarget
@@ -60,7 +59,6 @@ ___
 **● messageTarget**: *[KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*
 
 ___
-
 <a id="pushtarget"></a>
 
 ###  pushTarget
@@ -80,7 +78,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJson

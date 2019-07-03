@@ -10,7 +10,6 @@
 * [submitFormRequestV2](kasclient.form.md#submitformrequestv2)
 * [submitFormRequestWithoutDismiss](kasclient.form.md#submitformrequestwithoutdismiss)
 * [updateForm](kasclient.form.md#updateform)
-
 ### Response
 
 * [canRespondToFormAsync](kasclient.form.md#canrespondtoformasync)
@@ -19,13 +18,15 @@
 * [getMyFormResponsesAsync](kasclient.form.md#getmyformresponsesasync)
 * [sumbitFormResponse](kasclient.form.md#sumbitformresponse)
 * [sumbitFormResponseWithoutDismiss](kasclient.form.md#sumbitformresponsewithoutdismiss)
-
 ### Summary
 
 * [FormSummaryCallback](kasclient.form.md#formsummarycallback)
 * [addCommentOnForm](kasclient.form.md#addcommentonform)
 * [closeForm](kasclient.form.md#closeform)
 * [copyFormAndForward](kasclient.form.md#copyformandforward)
+* [executeActionFetchQueryAsync](kasclient.form.md#executeactionfetchqueryasync)
+* [fetchFormAsync](kasclient.form.md#fetchformasync)
+* [fetchFormInfosAsync](kasclient.form.md#fetchforminfosasync)
 * [getActionInstanceLocalDataCacheAsync](kasclient.form.md#getactioninstancelocaldatacacheasync)
 * [getActionPackageLocalDataCacheAsync](kasclient.form.md#getactionpackagelocaldatacacheasync)
 * [getFormReactionAsync](kasclient.form.md#getformreactionasync)
@@ -72,7 +73,6 @@ KASClient.Form.initFormAsync(function (form, error) {
 **Returns:** `void`
 
 ___
-
 <a id="submitformrequestv2"></a>
 
 ###  submitFormRequestV2
@@ -87,12 +87,11 @@ Submits the newly created form as a request. This results a new conversation car
 | ------ | ------ | ------ | ------ |
 | form | [KASForm](../classes/kasclient.kasform.md) | - |  \- |
 | `Default value` shouldDismiss | `boolean` | false |  true if form needs to be dismissed upon submission; false otherwise |
-| `Default value` shouldSendToSubscribers | `boolean` | true |
+| `Default value` shouldSendToSubscribers | `boolean` | true |  applicable in public groups, set to false if the request is not intended for subscribers |
 
 **Returns:** `void`
 
 ___
-
 <a id="submitformrequestwithoutdismiss"></a>
 
 ###  submitFormRequestWithoutDismiss
@@ -111,7 +110,6 @@ Submits the newly created form as a request. This results a new conversation car
 **Returns:** `void`
 
 ___
-
 <a id="updateform"></a>
 
 ###  updateForm
@@ -163,7 +161,6 @@ Gets whether the current user can respond to the form
 **Returns:** `void`
 
 ___
-
 <a id="getformasync"></a>
 
 ###  getFormAsync
@@ -181,7 +178,6 @@ Gets the form object associated with the conversation card
 **Returns:** `void`
 
 ___
-
 <a id="getformstatusasync"></a>
 
 ###  getFormStatusAsync
@@ -199,7 +195,6 @@ Gets the status of the form associated with the conversation card
 **Returns:** `void`
 
 ___
-
 <a id="getmyformresponsesasync"></a>
 
 ###  getMyFormResponsesAsync
@@ -218,7 +213,6 @@ Gets all the responses of the current user against the form
 **Returns:** `void`
 
 ___
-
 <a id="sumbitformresponse"></a>
 
 ###  sumbitFormResponse
@@ -230,27 +224,28 @@ Submits a new response against the form associated with the conversation card Th
 #### Sample Usage
 
 ```
-var questionToAnswerMap = JSON.parse("{}");
-questionToAnswerMap[0] = answer;
-KASClient.Form.sumbitFormResponse(questionToAnswerMap,
-   null,
-   false,
-   false,
-   false);
+var questionToAnswerMap = { "0": "answer" };
+KASClient.Form.sumbitFormResponse(questionToAnswerMap, null, false, false, false);
 ```
 
 #### Note
 
 ```
 questionToAnswerMap is a map which has key as question Id and value as the response to the question
-Say question is of type "text" which means it takes text as response. You should define it like
-var question = new KASClient.KASQuestion();
-question.id = 1;
-question.type = KASClient.KASQuestionType.Text;
-question.title = "Enter your name";
-This KASQuestion is to be added to form.questions[] array.
-Now questionToAnswerMap for this should look like this {1: "<answer>"}
+Say question of id 1 is of type "Text" which means it takes string as response. You should define it like {1: "<answer>"}
 ```
+
+Response value for _[KASQuestionType](../enums/kasclient.kasquestiontype.md)_ should be:
+*   **Single Select** : Option id (String). e.g. "1"
+*   **MultiSelect** : Stringified array of option ids. e.g. JSON.stringify(\[1,3\])
+*   **Text** : String. e.g. "dummy"
+*   **Numeric** : Number. e.g. 543
+*   **Location** : Stringified _[KASLocation](../classes/kasclient.kaslocation.md)_ object. e.g. JSON.stringify(location.toJSON()) or JSON.stringify({"lg": 70.4, "lt": 18.6, "n": "address"})
+*   **DateTime** : Epoch timestamp in millieseconds. e.g. 1550651524074
+*   **Image** : Image path. e.g. "file://imagePath.png"
+*   **AttachmentList** : Stringified array of _[KASAttachment](../classes/kasclient.kasattachment.md)_ objects. e.g. JSON.stringify(attachments), attachments is array of KASAttachment
+*   **PhoneNumber** : Stringified _[KASPhoneNumber](../classes/kasclient.kasphonenumber.md)_ object. e.g. SON.stringify(phoneNumber.toJSON()) or JSON.stringify({"cc": "+91", "pn": "98XXXXXXX6"})
+*   **DateOnly** : Date string (YYYY-MM-DD). e.g. "2019-04-17"
 
 **Parameters:**
 
@@ -265,7 +260,6 @@ Now questionToAnswerMap for this should look like this {1: "<answer>"}
 **Returns:** `void`
 
 ___
-
 <a id="sumbitformresponsewithoutdismiss"></a>
 
 ###  sumbitFormResponseWithoutDismiss
@@ -277,20 +271,15 @@ Submits a new response against the form associated with the conversation card Th
 #### Sample Usage
 
 ```
-var questionToAnswerMap = JSON.parse("{}");
-questionToAnswerMap[0] = answer;
-KASClient.Form.sumbitFormResponseWithoutDismiss(questionToAnswerMap,
-   null,
-   false,
-   false,
-   false);
+var questionToAnswerMap = { "0": "answer" };
+KASClient.Form.sumbitFormResponseWithoutDismiss(questionToAnswerMap, null, false, false, false);
 ```
 
 **Parameters:**
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| questionToAnswerMap | `JSON` |  question id to answer mapping |
+| questionToAnswerMap | `JSON` |  question id to answer mapping (See _[sumbitFormResponse](kasclient.form.md#sumbitformresponse)_ for details) |
 | responseId | `string` |  to be filled if the current response is an edit/update to a previous one |
 | isEdit | `boolean` |  denotes if the current response is an edit/update to a previous one |
 | showInChatCanvas | `boolean` |  denotes if a separate chat card needs to be created for this response or not |
@@ -322,7 +311,6 @@ ___
 **Returns:** `void`
 
 ___
-
 <a id="addcommentonform"></a>
 
 ###  addCommentOnForm
@@ -340,7 +328,6 @@ Requests to add a comment to a form
 **Returns:** `void`
 
 ___
-
 <a id="closeform"></a>
 
 ###  closeForm
@@ -352,7 +339,6 @@ Closes the form associated with the card, no responses will be allowed further
 **Returns:** `void`
 
 ___
-
 <a id="copyformandforward"></a>
 
 ###  copyFormAndForward
@@ -364,7 +350,107 @@ Launches the conversation picker to forward a copy of the existing form as a new
 **Returns:** `void`
 
 ___
+<a id="executeactionfetchqueryasync"></a>
 
+###  executeActionFetchQueryAsync
+
+▸ **executeActionFetchQueryAsync**(formId: *`string`*, fetchJsonQueryId: *`string`*, fetchJsonQueryParams: *`JSON`*, callback: *`function`*): `void`
+
+Retrieves Action instance (or form) rows/responses using FetchJson query (SQL in JSON format). Using this api, one can execute rich queries on all the rows and get detailed or summary as result. These queries need to be mentioned in Action's appModel to allow Action developers to have query level permissions. One can execute such a query with just the query id, and the required placeholder values, if any.
+#### Note
+
+1.  Action instance column/question ids will be used as attribute ids of the FetchJson query
+2.  Output will be list of rows, each row containing column id-value pairs
+
+#### Sample Usage
+
+```
+// AppModel questions: ResponderName (0) | City (1) | FavoriteMovie (2)
+// Query (q123): SELECT question0 WHERE question1="@param1" AND question2="@param2"
+// To fetch responders from "Mumbai" whose favorite movie is "Harry Potter"
+var params = { "@param1": "Mumbai", "@param2": "Harry Potter"};
+KASClient.Form.executeActionFetchQueryAsync("XXXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", "q123", params, function (result, error) {
+   if (!error) {
+       for (var i = 0; i < result.rows.length; i++) {
+           var row = result.rows[i];
+           console.log("Responder name: " + row["0"]);
+       }
+   }
+});
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| formId | `string` |  Action instance (or form) id whose rows need to be fetched |
+| fetchJsonQueryId | `string` |  FetchJson query id (mentioned in the Action package) |
+| fetchJsonQueryParams | `JSON` |  Map of query parameter placeholders to values |
+| callback | `function` |  with below parameters:<br><br>\* @param {JSON} fetchJsonResult - The FetchJson query result<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
+
+**Returns:** `void`
+
+___
+<a id="fetchformasync"></a>
+
+###  fetchFormAsync
+
+▸ **fetchFormAsync**(formId: *`string`*, callback: *`function`*): `void`
+
+Retrieves an Action instance (or form) for the given id. It first tries to get the instance locally, then fetches it from server as fallback.
+#### Note
+
+An Action can fetch instances of itself or another Action which belong to its own appGroup
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| formId | `string` |  Id of the instance to be fetched |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASForm} form - Action instance (or form)<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
+
+**Returns:** `void`
+
+___
+<a id="fetchforminfosasync"></a>
+
+###  fetchFormInfosAsync
+
+▸ **fetchFormInfosAsync**(request: *[KASFormInfoRequest](../classes/kasclient.kasforminforequest.md)*, callback: *`function`*): `void`
+
+Retrieves Action instance (or form) informations of an Action package. This is useful in cross Action data access, where one Action can fetch the rows/responses of instance of another Action - this api is used to fetch the instance id required to fetch rows.
+#### Note
+
+An Action can fetch instances of itself or another Action which belong to its own appGroup
+
+#### Sample Usage
+
+```
+var request = new KASClient.KASFormInfoRequest();
+request.packageId = "some-package-id";
+request.scopeId = "XXXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"; // Group id
+
+KASClient.Form.fetchFormInfosAsync(request, function (response, error) {
+   if (!error) {
+       for (var i = 0; i < response.formInfos.length; i++) {
+           var formInfo = response.formInfos[i]; // KASFormInfo
+           console.log("Instance id: " + formInfo.id);
+           console.log("Instance title: " + formInfo.title);
+       }
+   }
+})
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| request | [KASFormInfoRequest](../classes/kasclient.kasforminforequest.md) |  Request containing api parameters |
+| callback | `function` |  with below parameters:<br><br>\* @param {KASFormInfoResponse} response - Response containing Action instance (or form) infos<br><br>\* @param {string} error json string for the KASError object containing error code and/or description. |
+
+**Returns:** `void`
+
+___
 <a id="getactioninstancelocaldatacacheasync"></a>
 
 ###  getActionInstanceLocalDataCacheAsync
@@ -397,7 +483,6 @@ KASClient.Form.getActionInstanceLocalDataCacheAsync(function (actionPackagePrope
 **Returns:** `void`
 
 ___
-
 <a id="getactionpackagelocaldatacacheasync"></a>
 
 ###  getActionPackageLocalDataCacheAsync
@@ -430,7 +515,6 @@ KASClient.Form.getActionPackageLocalDataCacheAsync(function (actionPackageProper
 **Returns:** `void`
 
 ___
-
 <a id="getformreactionasync"></a>
 
 ###  getFormReactionAsync
@@ -448,7 +532,6 @@ Gets the consolidated reaction (likes and comments) of the conversation card ass
 **Returns:** `void`
 
 ___
-
 <a id="getformsummaryasync"></a>
 
 ###  getFormSummaryAsync
@@ -486,7 +569,6 @@ KASClient.Form.getFormSummaryAsync(
 **Returns:** `void`
 
 ___
-
 <a id="getformurlasync"></a>
 
 ###  getFormURLAsync
@@ -504,7 +586,6 @@ Gets the file url from server containing flat responses associated with the form
 **Returns:** `void`
 
 ___
-
 <a id="getformusercapabilitiesasync"></a>
 
 ###  getFormUserCapabilitiesAsync
@@ -534,7 +615,6 @@ KASClient.Form.getFormUserCapabilitiesAsync(function (permissions, error) {
 **Returns:** `void`
 
 ___
-
 <a id="issubscribed"></a>
 
 ###  isSubscribed
@@ -552,7 +632,6 @@ Gets whether the current user is subscriber or not
 **Returns:** `void`
 
 ___
-
 <a id="likeform"></a>
 
 ###  likeForm
@@ -564,7 +643,6 @@ Requests to add a like count to a form, the count may decrease if the current us
 **Returns:** `void`
 
 ___
-
 <a id="sendreminderstorespond"></a>
 
 ###  sendRemindersToRespond
@@ -576,7 +654,6 @@ Sends a reminder (a new conversation card) against the existing card
 **Returns:** `void`
 
 ___
-
 <a id="shareformurl"></a>
 
 ###  shareFormURL
@@ -594,7 +671,6 @@ Share the result url fetched from server - Launches native share screen for the 
 **Returns:** `void`
 
 ___
-
 <a id="showallreactions"></a>
 
 ###  showAllReactions
@@ -612,7 +688,6 @@ Shows all the reaction screen (likes and comments) against the form
 **Returns:** `void`
 
 ___
-
 <a id="updateactioninstancelocaldatacacheasync"></a>
 
 ###  updateActionInstanceLocalDataCacheAsync
@@ -646,7 +721,6 @@ This API doesn't work as expected in case of historical messages.
 **Returns:** `void`
 
 ___
-
 <a id="updateactionpackagelocaldatacacheasync"></a>
 
 ###  updateActionPackageLocalDataCacheAsync
@@ -680,12 +754,11 @@ This API doesn't work as expected in case of historical messages.
 **Returns:** `void`
 
 ___
-
 <a id="updateformpropertiesasync"></a>
 
 ###  updateFormPropertiesAsync
 
-▸ **updateFormPropertiesAsync**(propertyUpdates: *[KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[]*, notifyUsers: *`string`[]*, notificationMessage: *`string`*, callback: *`function`*): `void`
+▸ **updateFormPropertiesAsync**(propertyUpdates: *[KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[]*, notifyUsers: *`string`[]*, notificationMessage: *`string`*, callback: *`function`*, shouldSendToSubscribers?: *`boolean`*): `void`
 
 Post a request to update the properties associated with the form
 
@@ -709,12 +782,13 @@ KASClient.Form.updateFormPropertiesAsync(updateProperties, notifyUsersList, noti
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| propertyUpdates | [KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[] |  an array of all update infos that are needed to be performed, update infos can be created using KASFormPropertyUpdateFactory |
-| notifyUsers | `string`[] |  send push notifications to these user ids regarding this update |
-| notificationMessage | `string` |  push notification message |
-| callback | `function` |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not |
+| Name | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| propertyUpdates | [KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[] | - |  an array of all update infos that are needed to be performed, update infos can be created using KASFormPropertyUpdateFactory |
+| notifyUsers | `string`[] | - |  send push notifications to these user ids regarding this update |
+| notificationMessage | `string` | - |  push notification message |
+| callback | `function` | - |  with below parameters:<br><br>\* @param {boolean} success indicates if the update is successful or not |
+| `Default value` shouldSendToSubscribers | `boolean` | false |  Optional field (default is false) only applicable in public groups. If set to true, then the property updates will reach subscribers too in a public group. |
 
 **Returns:** `void`
 

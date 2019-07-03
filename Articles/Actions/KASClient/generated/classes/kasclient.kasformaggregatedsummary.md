@@ -15,6 +15,7 @@
 * [json](kasclient.kasformaggregatedsummary.md#json)
 * [result](kasclient.kasformaggregatedsummary.md#result)
 * [targetResponderCount](kasclient.kasformaggregatedsummary.md#targetrespondercount)
+* [totalDeliveryCount](kasclient.kasformaggregatedsummary.md#totaldeliverycount)
 * [totalParticipantsCount](kasclient.kasformaggregatedsummary.md#totalparticipantscount)
 * [totalResponseCount](kasclient.kasformaggregatedsummary.md#totalresponsecount)
 ### Methods
@@ -32,7 +33,6 @@
 **● formId**: *`string`* = ""
 
 ___
-
 <a id="formstatus"></a>
 
 ###  formStatus
@@ -40,7 +40,6 @@ ___
 **● formStatus**: *[FormStatus](../enums/kasclient.formstatus.md)* =  FormStatus.Active
 
 ___
-
 <a id="json"></a>
 
 ###  json
@@ -48,7 +47,6 @@ ___
 **● json**: *`JSON`*
 
 ___
-
 <a id="result"></a>
 
 ###  result
@@ -56,7 +54,6 @@ ___
 **● result**: *`any`[]* =  []
 
 ___
-
 <a id="targetrespondercount"></a>
 
 ###  targetResponderCount
@@ -64,7 +61,13 @@ ___
 **● targetResponderCount**: *`number`* = 0
 
 ___
+<a id="totaldeliverycount"></a>
 
+###  totalDeliveryCount
+
+**● totalDeliveryCount**: *`number`* =  -1
+
+___
 <a id="totalparticipantscount"></a>
 
 ###  totalParticipantsCount
@@ -72,7 +75,6 @@ ___
 **● totalParticipantsCount**: *`number`* = 0
 
 ___
-
 <a id="totalresponsecount"></a>
 
 ###  totalResponseCount
