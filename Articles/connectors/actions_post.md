@@ -80,7 +80,7 @@ author: nitinjms
 | :---: | :---: | :---:	| :--- |
 | question | String | No | Poll Question |
 | Choices | Json Array | No | Choices available for the poll. Each Choice have below component: <ol><li>title (Mandatory & in String format) </li><li>image (optional)</li></ol> |
-| expiryInHours | Integer | Yes | Default:720. Number of hours in which a gven poll would expire |
+| expiryInHours | Integer | Yes | Default:720. Number of hours in which a given poll would expire |
 
 ##### Sample JSON Request for a Poll Action
 
