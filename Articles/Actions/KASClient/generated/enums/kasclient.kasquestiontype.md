@@ -10,6 +10,7 @@
 * [DateOnly](kasclient.kasquestiontype.md#dateonly)
 * [DateTime](kasclient.kasquestiontype.md#datetime)
 * [Image](kasclient.kasquestiontype.md#image)
+* [LargeText](kasclient.kasquestiontype.md#largetext)
 * [Location](kasclient.kasquestiontype.md#location)
 * [MultiSelect](kasclient.kasquestiontype.md#multiselect)
 * [None](kasclient.kasquestiontype.md#none)
@@ -32,7 +33,6 @@
 Attachment List type answer
 
 ___
-
 <a id="dateonly"></a>
 
 ###  DateOnly
@@ -42,7 +42,6 @@ ___
 Date Type
 
 ___
-
 <a id="datetime"></a>
 
 ###  DateTime
@@ -52,7 +51,6 @@ ___
 Date time type answer
 
 ___
-
 <a id="image"></a>
 
 ###  Image
@@ -62,7 +60,15 @@ ___
 Answer will be an image attachment
 
 ___
+<a id="largetext"></a>
 
+###  LargeText
+
+**LargeText**:  = 11
+
+Any text can be the answer to the question above 4000 chars
+
+___
 <a id="location"></a>
 
 ###  Location
@@ -72,7 +78,6 @@ ___
 User's current location will be attached as the answer
 
 ___
-
 <a id="multiselect"></a>
 
 ###  MultiSelect
@@ -82,7 +87,6 @@ ___
 Multiple options can be selected from the list of options
 
 ___
-
 <a id="none"></a>
 
 ###  None
@@ -92,7 +96,6 @@ ___
 Default type
 
 ___
-
 <a id="numeric"></a>
 
 ###  Numeric
@@ -102,7 +105,6 @@ ___
 Only numbers can be a valid answer to the question
 
 ___
-
 <a id="phonenumber"></a>
 
 ###  PhoneNumber
@@ -112,7 +114,6 @@ ___
 Phone Number Type
 
 ___
-
 <a id="singleselect"></a>
 
 ###  SingleSelect
@@ -122,7 +123,6 @@ ___
 Only one option can be selected from the list of options
 
 ___
-
 <a id="singleselectexternal"></a>
 
 ###  SingleSelectExternal
@@ -132,14 +132,13 @@ ___
 Single select type, but each question's options are dependent upon the choice of the previous one
 
 ___
-
 <a id="text"></a>
 
 ###  Text
 
 **Text**:  = 2
 
-Any text can be the answer to the question
+Any text can be the answer to the question below 4000 chars
 
 ___
 

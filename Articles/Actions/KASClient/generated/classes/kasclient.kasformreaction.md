@@ -34,7 +34,6 @@
 Number of comments received for the form
 
 ___
-
 <a id="didicomment"></a>
 
 ###  didIComment
@@ -44,7 +43,6 @@ ___
 Denotes whether the current user has already liked or not
 
 ___
-
 <a id="didilike"></a>
 
 ###  didILike
@@ -54,7 +52,6 @@ ___
 Denotes whether the current user has already liked or not
 
 ___
-
 <a id="hidecomments"></a>
 
 ###  hideComments
@@ -64,7 +61,6 @@ ___
 Denotes whether to show comments or not
 
 ___
-
 <a id="hidelikes"></a>
 
 ###  hideLikes
@@ -74,7 +70,6 @@ ___
 Denotes whether to show likes or not
 
 ___
-
 <a id="hidelikesdetails"></a>
 
 ###  hideLikesDetails
@@ -84,7 +79,6 @@ ___
 Denotes whether to show likes imeersive view or not
 
 ___
-
 <a id="likescount"></a>
 
 ###  likesCount

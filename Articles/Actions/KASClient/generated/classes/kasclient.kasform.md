@@ -11,6 +11,7 @@
 ### Properties
 
 * [allowSendReminder](kasclient.kasform.md#allowsendreminder)
+* [canFetchAnonymousShareLink](kasclient.kasform.md#canfetchanonymoussharelink)
 * [conversationId](kasclient.kasform.md#conversationid)
 * [creatorId](kasclient.kasform.md#creatorid)
 * [expiry](kasclient.kasform.md#expiry)
@@ -21,6 +22,7 @@
 * [isResponseAppended](kasclient.kasform.md#isresponseappended)
 * [json](kasclient.kasform.md#json)
 * [packageId](kasclient.kasform.md#packageid)
+* [packageMinorVersion](kasclient.kasform.md#packageminorversion)
 * [properties](kasclient.kasform.md#properties)
 * [questions](kasclient.kasform.md#questions)
 * [reportType](kasclient.kasform.md#reporttype)
@@ -50,7 +52,15 @@
 Who can send reminder, default value is sender
 
 ___
+<a id="canfetchanonymoussharelink"></a>
 
+###  canFetchAnonymousShareLink
+
+**● canFetchAnonymousShareLink**: *[KASFormResultVisibility](../enums/kasclient.kasformresultvisibility.md)* =  KASFormResultVisibility.MembersAndSubscribers
+
+Who can fetch anonymous response share link, default value is Everyone
+
+___
 <a id="conversationid"></a>
 
 ###  conversationId
@@ -60,7 +70,6 @@ ___
 Associated conversation id, shouldn't be changed
 
 ___
-
 <a id="creatorid"></a>
 
 ###  creatorId
@@ -70,7 +79,6 @@ ___
 User id who created the form, shouldn't be changed
 
 ___
-
 <a id="expiry"></a>
 
 ###  expiry
@@ -80,7 +88,6 @@ ___
 Expiry time of the form
 
 ___
-
 <a id="id"></a>
 
 ###  id
@@ -90,7 +97,6 @@ ___
 Form id, shouldn't be changed
 
 ___
-
 <a id="isanonymous"></a>
 
 ###  isAnonymous
@@ -100,7 +106,6 @@ ___
 If the form is anonymous, default is false
 
 ___
-
 <a id="isgrouplevelaggregationrequired"></a>
 
 ###  isGroupLevelAggregationRequired
@@ -110,7 +115,6 @@ ___
 whether server should do subgroup level aggregation on results for this action instance
 
 ___
-
 <a id="islocationrequested"></a>
 
 ###  isLocationRequested
@@ -120,7 +124,6 @@ ___
 Denotes if participants' location is attached with the response or not, default is false
 
 ___
-
 <a id="isresponseappended"></a>
 
 ###  isResponseAppended
@@ -130,7 +133,6 @@ ___
 Denotes if multiple responses from a user are allowed or not, default is false
 
 ___
-
 <a id="json"></a>
 
 ###  json
@@ -138,7 +140,6 @@ ___
 **● json**: *`JSON`*
 
 ___
-
 <a id="packageid"></a>
 
 ###  packageId
@@ -148,7 +149,15 @@ ___
 Package id of the MiniApp, shouldn't be changed
 
 ___
+<a id="packageminorversion"></a>
 
+###  packageMinorVersion
+
+**● packageMinorVersion**: *`number`* =  -1
+
+Package Minor Version
+
+___
 <a id="properties"></a>
 
 ###  properties
@@ -158,7 +167,6 @@ ___
 A list of metadata associated with the form
 
 ___
-
 <a id="questions"></a>
 
 ###  questions
@@ -168,7 +176,6 @@ ___
 All the questions associated with the form
 
 ___
-
 <a id="reporttype"></a>
 
 ###  reportType
@@ -178,7 +185,6 @@ ___
 Report Type of survey, default is 0, for job it should be 1
 
 ___
-
 <a id="title"></a>
 
 ###  title
@@ -188,7 +194,6 @@ ___
 Form title
 
 ___
-
 <a id="type"></a>
 
 ###  type
@@ -198,7 +203,6 @@ ___
 Type of the form, default is 20, shouldn't be changed
 
 ___
-
 <a id="version"></a>
 
 ###  version
@@ -208,7 +212,6 @@ ___
 Version of the form, default value is 2, shouldn't be changed
 
 ___
-
 <a id="visibility"></a>
 
 ###  visibility
@@ -236,7 +239,6 @@ ___
 **Returns:** `string`
 
 ___
-
 <a id="toapicompatiblejson"></a>
 
 ###  toAPICompatibleJSON
@@ -246,7 +248,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="toclientjson"></a>
 
 ###  toClientJSON
@@ -256,7 +257,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="tojson"></a>
 
 ###  toJSON
@@ -266,7 +266,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="addresponsenotificationforaddrow"></a>
 
 ### `<Static>` addResponseNotificationForAddRow
@@ -283,7 +282,6 @@ ___
 **Returns:** `void`
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

@@ -31,7 +31,6 @@
 Index of the option
 
 ___
-
 <a id="optiontitle"></a>
 
 ###  optionTitle
@@ -41,7 +40,6 @@ ___
 Title of the option
 
 ___
-
 <a id="respondertoresponsecount"></a>
 
 ###  responderToResponseCount
@@ -52,7 +50,6 @@ A map of user ids against their response count Dictionary<UserId: string, Respon
 #### Type declaration
 
 ___
-
 <a id="totalresponsescount"></a>
 
 ###  totalResponsesCount

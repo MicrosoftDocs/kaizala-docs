@@ -35,7 +35,6 @@
 The id of the associated conversation, shouldn't be changed
 
 ___
-
 <a id="formid"></a>
 
 ###  formId
@@ -45,7 +44,6 @@ ___
 The id of the associated form, shouldn't be changed
 
 ___
-
 <a id="json"></a>
 
 ###  json
@@ -67,7 +65,6 @@ Gets all the responses of all the users
 **Returns:** `__type`
 
 ___
-
 <a id="getquestionresponsesforuserid"></a>
 
 ###  getQuestionResponsesForUserId
@@ -87,7 +84,6 @@ Gets all the responses of a user against a specific question
 list of all answers given by the user for that question
 
 ___
-
 <a id="getrespondeduserids"></a>
 
 ###  getRespondedUserIds
@@ -100,7 +96,6 @@ Gets all the user ids who responded to the form
 list of all the responded user ids
 
 ___
-
 <a id="getresponsesforuserid"></a>
 
 ###  getResponsesForUserId
@@ -119,7 +114,6 @@ Gets all the responses of a user to a form
 question id to list of answers
 
 ___
-
 <a id="gettotalresponsecount"></a>
 
 ###  getTotalResponseCount
@@ -132,7 +126,6 @@ Gets number of all responses by all users
 number of all responses
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

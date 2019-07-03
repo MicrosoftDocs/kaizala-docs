@@ -43,7 +43,6 @@ ___
 **Returns:** `JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

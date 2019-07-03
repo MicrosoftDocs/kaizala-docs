@@ -20,7 +20,6 @@
 **GENERIC**:  = 0
 
 ___
-
 <a id="list_of_images"></a>
 
 ###  LIST_OF_IMAGES

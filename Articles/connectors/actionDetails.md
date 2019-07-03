@@ -25,7 +25,7 @@ Check-out the API for retrieving the list of action instances sent to a group us
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | actionType | String | Type of action being returned |
-| actionDetails | JSON object | JSON onbject specific to the actiontype |
+| actionDetails | JSON object | JSON object specific to the actiontype |
 | sender | String | Phone number of the user who sent the action to the group |
 | sentAt | DateTime | Time when the action was posted to the group |
 

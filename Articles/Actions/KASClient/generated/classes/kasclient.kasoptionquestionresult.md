@@ -35,7 +35,6 @@ For SingleSelect/MultiSelect question, the result will be option id versus their
 #### Type declaration
 
 ___
-
 <a id="questionid"></a>
 
 ###  questionId
@@ -45,7 +44,6 @@ ___
 Index of the question
 
 ___
-
 <a id="questiontitle"></a>
 
 ###  questionTitle
@@ -55,7 +53,6 @@ ___
 Title of the question
 
 ___
-
 <a id="questiontype"></a>
 
 ###  questionType
@@ -80,7 +77,6 @@ Gets all the option ids sorted in their total responses count (descending)
 list of all the option ids
 
 ___
-
 <a id="fromjson"></a>
 
 ### `<Static>` fromJSON

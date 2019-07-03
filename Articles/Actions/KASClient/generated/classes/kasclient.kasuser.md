@@ -34,7 +34,6 @@
 Unique user id
 
 ___
-
 <a id="name"></a>
 
 ###  name
@@ -44,7 +43,6 @@ ___
 Name of the user ("You" for the current user)
 
 ___
-
 <a id="originalname"></a>
 
 ###  originalName
@@ -54,7 +52,6 @@ ___
 Not considering "You"
 
 ___
-
 <a id="phonenumber"></a>
 
 ###  phoneNumber
@@ -64,7 +61,6 @@ ___
 Phone number of the user
 
 ___
-
 <a id="picturebgcolor"></a>
 
 ###  pictureBGColor
@@ -74,7 +70,6 @@ ___
 In case the PictureUrl is not there, we should use the users initials as the profile pic, below two members are for that
 
 ___
-
 <a id="pictureinitials"></a>
 
 ###  pictureInitials
@@ -82,7 +77,6 @@ ___
 **● pictureInitials**: *`string`* = ""
 
 ___
-
 <a id="pictureurl"></a>
 
 ###  pictureUrl

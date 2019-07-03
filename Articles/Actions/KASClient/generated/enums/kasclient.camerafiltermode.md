@@ -22,7 +22,6 @@
 **BusinessCard**:  = "BusinessCard"
 
 ___
-
 <a id="document"></a>
 
 ###  Document
@@ -30,7 +29,6 @@ ___
 **Document**:  = "Document"
 
 ___
-
 <a id="photo"></a>
 
 ###  Photo
@@ -38,7 +36,6 @@ ___
 **Photo**:  = "Photo"
 
 ___
-
 <a id="whiteboard"></a>
 
 ###  WhiteBoard

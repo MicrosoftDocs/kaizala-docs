@@ -78,7 +78,7 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
-| result | Boolean | True when all phone numbers have succesfully been added to the group |
+| result | Boolean | True when all phone numbers have successfully been added to the group |
 
 #### Sample JSON Response
 
@@ -104,7 +104,7 @@ API end-point to add or delete members from conversation groups inside Kaizala.
 
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
-| result | Boolean | True when the specified member has succesfully been removed from the group |
+| result | Boolean | True when the specified member has successfully been removed from the group |
 
 #### Sample JSON Response
 

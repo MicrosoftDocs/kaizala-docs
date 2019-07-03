@@ -31,7 +31,6 @@ Sample subgroup summary
 { "0c6207fc-39ce-4b74-b420-db2d52f2c388@1": { "n": "G22", "rdc": 1, "tc": 6 } }
 
 ___
-
 <a id="respondercount"></a>
 
 ###  responderCount
@@ -39,7 +38,6 @@ ___
 **● responderCount**: *`number`* = 0
 
 ___
-
 <a id="targetcount"></a>
 
 ###  targetCount
