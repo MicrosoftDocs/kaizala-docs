@@ -1,6 +1,6 @@
 # Data residency and go-local support in Microsoft Kaizala
 
-Beginning April 2019, Microsoft Kaizala will provide regional data residency support through the datacenters in Europe (EU), Asia Pacific (APAC), United States (US), and India (IN). This means Kaizala customers will have data related to [organization chats and groups](https://support.office.com/article/organization-chats-and-groups-in-kaizala-c8a7855c-d232-4914-811c-f6708734dcc3) such as messages, attachments, and Kaizala actions stored in the datacenter of their billing region.
+Currently, Microsoft Kaizala provides regional data residency support through the datacenters in Europe (EU), Asia Pacific (APAC), United States (US), and India (IN). This means Kaizala customers will have data related to [organization chats and groups](https://support.office.com/article/organization-chats-and-groups-in-kaizala-c8a7855c-d232-4914-811c-f6708734dcc3) such as messages, attachments, and Kaizala Actions stored in the datacenter of their billing region.
 
 In addition to supporting the goals of within-region data residency, Kaizala service datacenters will also facilitate failover and disaster recovery through the datacenters.
 
