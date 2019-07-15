@@ -4,7 +4,7 @@ Group chats can be confusing at times, especially if it is a large community tha
 
 With QnA card, users can ask questions to rest of the community and view all the replies in a structured format.
 
-This is a simple card with a creation view, that allows the user can submit the question, a chart card view that allows the users to see the latest comments and summary view where the users can view and participate in the discussion.
+This is a simple card with a creation view, that allows the user to submit the question, a chart card view with latest comments and a summary view to view and participate in the discussion.
 
 Creation view:
 
