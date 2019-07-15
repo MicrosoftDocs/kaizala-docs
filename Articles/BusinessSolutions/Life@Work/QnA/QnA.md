@@ -4,7 +4,7 @@ Group chats can be confusing at times, especially if it is a large community tha
 
 With QnA card, users can ask questions to rest of the community and view all the replies in a structured format.
 
-This is a simple card with a creation view, that allows the user can submit the question, a chart card view that allows the users to see the latest comments and summary view where the users can view and participate in the discussion.
+This is a simple card with a creation view, that allows the user to submit a question, a chart card view for users to see the latest comment and a summary view that allows users to view and participate in the discussion.
 
 Creation view:
 
@@ -19,7 +19,7 @@ Summary View:
 <img src="QnAImages/3.png" alt="Chat card view Logo" width="200" />
 
 ## Implementation Steps:
-1. Download the ["QnA-SolutionPackage.zip"](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/InspirationalQuotes%40Workplace/ShareQuotesOnKaizala-SolutionPackage.zip) (*This contains action package*)
+1. Download the ["QnA-SolutionPackage.zip"](https://aka.ms/QnA-SolutionPackage) (*This contains action package*)
 2. Download the latest version of Kaizala ["ActionSDK.Zip"](https://manage.kaiza.la/MiniApps/DownloadSDK) (*This contains KASClient.js*)
 3. Edit the "QnA-SolutionPackage.Zip" (*as below*)
    1. Unzip "QnA-SolutionPackage.Zip" to a folder
