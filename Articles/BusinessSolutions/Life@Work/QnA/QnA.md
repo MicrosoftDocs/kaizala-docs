@@ -2,7 +2,7 @@
 
 Elevating employee engagement is essential for the success of any organization-whether it’s a small startup or large corporation that operates across multiple locations. It can be challenging for leaders and managers to know how employees are feeling about company policies, projects, jobs, and assigned tasks.
 
-With the increase in mobile workforce conducting such QnA sessions with managers, on the go, can be even more difficult. On resorting to QnA session on mobile chat, the replies to questions can interrupt the flow and end-user can miss out on information
+With the increase in mobile workforce conducting such QnA sessions with managers, on the go, can be even more difficult. On resorting to QnA session on mobile chat, the replies to questions can interrupt the flow and end-user may miss out on information
 
 With QnA card, users can ask questions to managers and rest of the community view all the replies in a structured format.
 
