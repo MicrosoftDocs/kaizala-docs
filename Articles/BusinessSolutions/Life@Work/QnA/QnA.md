@@ -1,8 +1,10 @@
 # Get structured answers to your questions from co-workers
 
-Group chats can be confusing at times, especially if it is a large community that talks at the same time. The replies to questions can interrupt the flow and end-user would miss out on information, especially if the questions are related to company policies, goals, projects to name a few.
+Elevating employee engagement is essential for the success of any organization-whether it’s a small startup or large corporation that operates across multiple locations. It can be challenging for leaders and managers to know how employees are feeling about company policies, projects, jobs, and assigned tasks.
 
-With QnA card, users can ask questions to rest of the community and view all the replies in a structured format.
+With the increase in mobile workforce conducting such QnA sessions with managers, on the go, can be even more difficult. On resorting to QnA session on mobile chat, the replies to questions can interrupt the flow and end-user may miss out on information
+
+With QnA card, users can ask questions to managers and rest of the community view all the replies in a structured format.
 
 This is a simple card with a creation view, that allows the user to submit a question, a chart card view for users to see the latest comment and a summary view that allows users to view and participate in the discussion.
 
