@@ -19,7 +19,9 @@ The root domain for invoking the Kaizala APIs is:
 | :---: | :---: | :---: | :---:	| :--- |
 | Endpoint url 	| `endpoint-url`     	| String 	| No        	| On successful auth while generating access tokens, an endpoint url is returned that should be used as api-base-url for making subsequent API calls	|
 
-Please note that while hitting any Kaizala api, you can get Http status code:308 indicating that the user's endpoint-url has changed. In that case, Response header location will contain the new endpoint-url.
+> While hitting any Kaizala api, you can get Http status code:308 indicating that the user's endpoint-url has changed. In that case, Response header location will contain the new endpoint-url.
+
+> **Suggestion:** Clients can configure timeout to receive response from Kaizala APIs at 1 min
 
 ### API End-points
 
