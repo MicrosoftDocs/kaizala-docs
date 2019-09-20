@@ -7,7 +7,7 @@ Learn about value prop of at [www.microsoft.com/Kaizala](https://www.microsoft.c
 ### Kaizala’s Unique Approach
 
 
-| <a href="GroupsinKaizala.md"> ![](Images/Groups.png)</a> Groups for all kinds of networks | <br><br><a href="KaizalaActionCards.md">![](Images/Actioncards.png)</a> Action Cards |<a href="https://support.office.com/en-us/article/kaizala-reports-93e22838-5c18-4181-8d12-eca6c0b4019c?ui=en-US&rs=en-US&ad=US "> ![](Images/ReportingAnalytics.png)</a> Reporting & Analytics |
+| <a href="https://docs.microsoft.com/en-us/Office365/Kaizala/groups-in-kaizala"> ![](Images/Groups.png)</a> Groups for all kinds of networks | <br><br><a href="KaizalaActionCards.md">![](Images/Actioncards.png)</a> Action Cards |<a href="https://support.office.com/en-us/article/kaizala-reports-93e22838-5c18-4181-8d12-eca6c0b4019c?ui=en-US&rs=en-US&ad=US "> ![](Images/ReportingAnalytics.png)</a> Reporting & Analytics |
 | ------------- | ------------- |------------- |
 | <ul><li>Millions of users</li><li>Hierarchical,Hub-and-Spoke</li><li>Publicly discoverable groups</li></ul>|<ul><li>10+ out-of-the-box actions</li><li>Build your own custom actions!</li></ul>|<ul><li>In-built reports</li><li>Advanced analytics with PowerBI</li></ul>|
 | <a href="https://docs.microsoft.com/en-us/kaizala/connectors/setup">![](Images/ExtensiblePlatform.png)</a><p align="center"><b>Extensible Platform </b></p> | <br><br><a href="KaizalaManagementPortal.md">![](Images/ManagementPortal.png)</a> <p align="center"><b>Management Portal </b></p> | <a href="https://www.microsoft.com/kaizala">![](Images/Optimized.png)</a><p align="center"><b>Optimized for Emerging Markets </b></p> |
