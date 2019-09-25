@@ -1,6 +1,6 @@
 # Kaizala Action Cards
 
-Kaizala offers you wide range of action cards or mini apps that make your daily work management easy and efficient. You can use the Out-of-box(OOB) Action cards or create your own customized Kaizala Actions.
+Kaizala offers you a wide range of action cards or mini apps that make your daily work management easy and efficient. You can use the Out-of-box(OOB) Action cards or create your own customized Kaizala Actions.
 
 Some of the OOB Action cards available are as follows:
 - Announcements
@@ -8,7 +8,7 @@ Some of the OOB Action cards available are as follows:
 - Job/Tasks
 - Meeting Invite
 - Attendance Card
-- Traning Card
+- Training Card
 - Location Card
 - Discover More Actions 
 
