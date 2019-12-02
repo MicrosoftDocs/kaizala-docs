@@ -30,7 +30,7 @@
 * [type](kasclient.kasform.md#type)
 * [version](kasclient.kasform.md#version)
 * [visibility](kasclient.kasform.md#visibility)
-### Methods
+  ### Methods
 
 * [getAPICompatibleVisibilityType](kasclient.kasform.md#getapicompatiblevisibilitytype)
 * [toAPICompatibleJSON](kasclient.kasform.md#toapicompatiblejson)

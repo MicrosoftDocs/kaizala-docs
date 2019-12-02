@@ -10,11 +10,11 @@
 
 ![](Images/Create%20Group.png)
  
-2.  To invite the people not on Kaizala to this group, just share the "Link to the Group".
+2. To invite the people not on Kaizala to this group, just share the "Link to the Group".
 
 ![](Images/Invitelink.png)
 
-3.  Say "Hello" in the group.
+3. Say "Hello" in the group.
 
 ![](Images/Chatcanvashello.png)
 

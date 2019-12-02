@@ -20,7 +20,7 @@ This model contains data for every response to an Attachment List Type question.
 * [questionType](kasclient.kasattachmentlistquestionresult.md#questiontype)
 * [timeStamps](kasclient.kasattachmentlistquestionresult.md#timestamps)
 * [userInfo](kasclient.kasattachmentlistquestionresult.md#userinfo)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasattachmentlistquestionresult.md#fromjson)
 

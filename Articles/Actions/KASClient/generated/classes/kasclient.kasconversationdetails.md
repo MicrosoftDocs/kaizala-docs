@@ -22,7 +22,7 @@ Defines details of host and source conversation
 * [sourceConversationId](kasclient.kasconversationdetails.md#sourceconversationid)
 * [sourceConversationTitle](kasclient.kasconversationdetails.md#sourceconversationtitle)
 * [sourceConversationType](kasclient.kasconversationdetails.md#sourceconversationtype)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasconversationdetails.md#fromjson)
 

@@ -17,7 +17,7 @@
 * [questionTitle](kasclient.kasnumericquestionresult.md#questiontitle)
 * [questionType](kasclient.kasnumericquestionresult.md#questiontype)
 * [sum](kasclient.kasnumericquestionresult.md#sum)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasnumericquestionresult.md#fromjson)
 

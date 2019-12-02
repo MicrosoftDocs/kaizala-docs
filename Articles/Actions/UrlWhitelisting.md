@@ -8,12 +8,12 @@ In order to enable loading of webpage within an Action, Action developer needs t
 In your ‘Package.json’ file for your Action
 * Add a new tag **‘externalUrls’**.
 * Add list of URLs which you want to whitelist in this tag. Please find the part of the sample code below. 
-```
+  ```
   "externalUrls": [
     { "url" : "https://www.example-url.com" },
     { "url" : "https://another-example-url.com" },
   ],
-```
+  ```
 * Each url should be a valid complete url.
 * Each url should be an https url.
 

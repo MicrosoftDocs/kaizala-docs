@@ -13,7 +13,7 @@
 * [id](kasclient.kasquestionoption.md#id)
 * [pictureUrl](kasclient.kasquestionoption.md#pictureurl)
 * [text](kasclient.kasquestionoption.md#text)
-### Methods
+  ### Methods
 
 * [toAPICompatibleJSON](kasclient.kasquestionoption.md#toapicompatiblejson)
 * [toClientJSON](kasclient.kasquestionoption.md#toclientjson)

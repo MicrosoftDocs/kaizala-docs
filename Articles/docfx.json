@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md", "**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -43,6 +44,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "Kaizala-Docs"
+    "dest": "Kaizala-Docs",
+    "markdownEngineName": "markdig"
   }
 }

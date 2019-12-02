@@ -8,7 +8,7 @@
 
 * [App](kasclient.app.md)
 * [Form](kasclient.form.md)
-### Enumerations
+  ### Enumerations
 
 * [AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)
 * [CacheScope](../enums/kasclient.cachescope.md)
@@ -39,7 +39,7 @@
 * [TenantAttributeDataType](../enums/kasclient.tenantattributedatatype.md)
 * [UrlAction](../enums/kasclient.urlaction.md)
 * [UrlType](../enums/kasclient.urltype.md)
-### Classes
+  ### Classes
 
 * [KASActionLocalCacheProp](../classes/kasclient.kasactionlocalcacheprop.md)
 * [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)
@@ -96,7 +96,7 @@
 * [TenantAttribute](../classes/kasclient.tenantattribute.md)
 * [TenantAttributeData](../classes/kasclient.tenantattributedata.md)
 * [TenantUserProfile](../classes/kasclient.tenantuserprofile.md)
-### Functions
+  ### Functions
 
 * [getFilteredParticipantRole](kasclient.md#getfilteredparticipantrole)
 * [getFilteredParticipantType](kasclient.md#getfilteredparticipanttype)

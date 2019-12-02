@@ -37,7 +37,7 @@ This is an announcement in the form of a card and Flow is used to send this cust
       ```
    5. Zip all the contents in this folder (*This folder is your modified Action package which should be imported to kaizala management portal*)
    
- > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KASClient.js, package.json with new "id", "provider name" and whitelisted URL
+   > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KASClient.js, package.json with new "id", "provider name" and whitelisted URL
  
 4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to kaizala management portal (*This card is sent by calling API, so there is no need to add the card to a group*)
 5. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "RSS-feed-Flowpackage.zip" to your Microsoft Flow account
@@ -53,21 +53,21 @@ This is an announcement in the form of a card and Flow is used to send this cust
    3. In the third block, enter the Action "id" in "value" field, that you have given in package.json
       <img src="GetRSSFeedsOnKaizalaImages/4.png" width="600" />
    4. In the last block of the Flow
-        1. Select the group name or enter the group id where you want to send the card
-        2. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
+      1. Select the group name or enter the group id where you want to send the card
+      2. To get the group id, go to your group on https://manage.kaiza.la and select the identifier at the end of the URL.
         
-            <img src="GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
+          <img src="GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
             
-        3. Click on action, to select action type as "custom value" from the dropdown
-        4. Map body to "ActionBodyJson"
+      3. Click on action, to select action type as "custom value" from the dropdown
+      4. Map body to "ActionBodyJson"
        
-       <img src="GetRSSFeedsOnKaizalaImages/5.png" width="600" />
-7.  Save the Flow
+         <img src="GetRSSFeedsOnKaizalaImages/5.png" width="600" />
+7. Save the Flow
 
- RSS feeds will be sent to the selected Kaizala group, each time flow is triggered. 
+   RSS feeds will be sent to the selected Kaizala group, each time flow is triggered. 
 
 > Note: You can only set one RSS feed URL in the Flow. To direct multiple feeds to same group, different Flows have to be created for each feed
-
+> 
 > Known issue: On iOS, the ads take the user out of the webview since they are not whitelisted
 
 ### Useful links

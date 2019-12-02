@@ -15,7 +15,7 @@
 * [results](kasclient.kasformprocessedsummary.md#results)
 * [targetResponderCount](kasclient.kasformprocessedsummary.md#targetrespondercount)
 * [totalResponseCount](kasclient.kasformprocessedsummary.md#totalresponsecount)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasformprocessedsummary.md#fromjson)
 

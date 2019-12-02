@@ -45,9 +45,9 @@ This can be broadly divided into 3 steps:
 
     <img src="../Leaderboard/Leaderboard_Images/3.jpg" width="600">
 
-     > Note: Score & KPIs can be numeric or % values. If the column has percentages, apply [percent number](https://support.office.com/en-ie/article/format-numbers-as-percentages-de49167b-d603-4450-bcaa-31fba6c7b6b4) format to that column
-
-     > Note: My Performance tab can have a maximum of 6 KPIs
+   > Note: Score & KPIs can be numeric or % values. If the column has percentages, apply [percent number](https://support.office.com/en-ie/article/format-numbers-as-percentages-de49167b-d603-4450-bcaa-31fba6c7b6b4) format to that column
+   > 
+   > Note: My Performance tab can have a maximum of 6 KPIs
 
 
 3. [Rename](https://support.office.com/en-us/article/rename-an-excel-table-fbf49a4f-82a3-43eb-8ba2-44d21233b114) excel table as "Leaderboardyyyymmdd" E.g, Leaderboard20190431 for the day 2019/04/31(yy/mm/dd)
@@ -67,7 +67,7 @@ This can be broadly divided into 3 steps:
     1. In the second block, enter the card title in the value field, that you want to show in the leaderboard. For E.g, "Sales Leaderboard" 
 
          <img src="../Leaderboard/Leaderboard_Images/4.jpg" width="600">
-    
+
     2. In the third block, set value as  true if the "score" is a percentage, if not set it to false
 
          <img src="../Leaderboard/Leaderboard_Images/6.JPG" width="600">
@@ -79,9 +79,9 @@ This can be broadly divided into 3 steps:
        2. Select Document library as "OneDrive" from the dropdown
 
        3. Select Excel file on clicking folder picker
-     
+
              > Note: Table name that you have given in excel file will be automatically picked up by the flow. 
-       
+
              <img src="../Leaderboard/Leaderboard_Images/7.JPG" width="600">
 
 
@@ -92,31 +92,33 @@ This can be broadly divided into 3 steps:
              <img src="../Leaderboard/Leaderboard_Images/8.JPG" width="600">
 
 
-             >Note: Card can display a maximum of 6 KPI's 
+~~~
+         >Note: Card can display a maximum of 6 KPI's 
 
-        2. Edit KPI labels in Compose (*as shown below*)
-        
-             <img src="../Leaderboard/Leaderboard_Images/9.png" width="600">
+    2. Edit KPI labels in Compose (*as shown below*)
 
-        
-    5. In the last block
+         <img src="../Leaderboard/Leaderboard_Images/9.png" width="600">
 
-        1. Enter the group ID or select group name where you want to send the card
 
-        2. Click on Action to select "Action package" from drop down
-        
-        3. Click on Action package to select "enter a custom value" and enter your "action package id" that you have given package.json
+5. In the last block
 
-        4. Save the Flow
+    1. Enter the group ID or select group name where you want to send the card
 
-           <img src="../Leaderboard/Leaderboard_Images/10.JPG" width="600">
+    2. Click on Action to select "Action package" from drop down
+
+    3. Click on Action package to select "enter a custom value" and enter your "action package id" that you have given package.json
+
+    4. Save the Flow
+
+       <img src="../Leaderboard/Leaderboard_Images/10.JPG" width="600">
+~~~
 
 Leaderboard card will be sent to the specified group as per the interval and frequency set in the Flow. 
 
 >Note: If you wish to change the labels- "Name", "PhoneNo" and "Score" in excel sheet, change it to desired labels in ImmersiveView.js
 
 ```
-      
+
  "/*Fields from excel */
 
 const NAME = "Name";

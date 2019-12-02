@@ -11,7 +11,7 @@
 ### Properties
 
 * [inForwardMode](kasclient.kasforwardcontext.md#inforwardmode)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasforwardcontext.md#fromjson)
 

@@ -13,7 +13,7 @@
 * [language](kasclient.kaslocationaddressparams.md#language)
 * [latitude](kasclient.kaslocationaddressparams.md#latitude)
 * [longitude](kasclient.kaslocationaddressparams.md#longitude)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kaslocationaddressparams.md#tojson)
 

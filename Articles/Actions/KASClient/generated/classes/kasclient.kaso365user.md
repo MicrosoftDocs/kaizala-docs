@@ -17,7 +17,7 @@
 * [jobTitle](kasclient.kaso365user.md#jobtitle)
 * [mobilePhone](kasclient.kaso365user.md#mobilephone)
 * [surname](kasclient.kaso365user.md#surname)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kaso365user.md#fromjson)
 

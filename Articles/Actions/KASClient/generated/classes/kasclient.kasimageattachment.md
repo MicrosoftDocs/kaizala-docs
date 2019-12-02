@@ -27,7 +27,7 @@
 * [thumbnailServerUrl](kasclient.kasimageattachment.md#thumbnailserverurl)
 * [type](kasclient.kasimageattachment.md#type)
 * [width](kasclient.kasimageattachment.md#width)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasimageattachment.md#tojson)
 * [fromJSON](kasclient.kasimageattachment.md#fromjson)

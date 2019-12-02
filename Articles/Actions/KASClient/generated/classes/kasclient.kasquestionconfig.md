@@ -15,7 +15,7 @@
 ### Properties
 
 * [pageBreakEnabled](kasclient.kasquestionconfig.md#pagebreakenabled)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasquestionconfig.md#tojson)
 * [fromJSON](kasclient.kasquestionconfig.md#fromjson)

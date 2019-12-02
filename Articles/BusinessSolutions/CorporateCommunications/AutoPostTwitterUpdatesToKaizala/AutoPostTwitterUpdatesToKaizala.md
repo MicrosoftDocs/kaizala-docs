@@ -57,5 +57,5 @@ In this scenario, Flow is used to send the card to a selected group in Kaizala.
 Announcement will be sent to the selected Kaizala group, each time Flow is triggered.
 
 > Note:In case of tweets with polls/location only the poll question/tweet text will show up in the card, not the poll options or the tweet location
-
+> 
 > Note: Please check with your IT admin in case of any [DLP policy](https://docs.microsoft.com/en-us/flow/prevent-data-loss) set by your organization for Twitter

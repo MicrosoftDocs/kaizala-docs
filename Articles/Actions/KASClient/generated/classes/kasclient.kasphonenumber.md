@@ -11,11 +11,11 @@
 ### Constructors
 
 * [constructor](kasclient.kasphonenumber.md#constructor)
-### Properties
+  ### Properties
 
 * [countryPhoneCode](kasclient.kasphonenumber.md#countryphonecode)
 * [phoneNumber](kasclient.kasphonenumber.md#phonenumber)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasphonenumber.md#tojson)
 * [toString](kasclient.kasphonenumber.md#tostring)

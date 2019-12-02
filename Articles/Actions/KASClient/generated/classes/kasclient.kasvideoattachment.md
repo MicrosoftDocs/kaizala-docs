@@ -23,7 +23,7 @@
 * [streamingPath](kasclient.kasvideoattachment.md#streamingpath)
 * [thumbnail](kasclient.kasvideoattachment.md#thumbnail)
 * [type](kasclient.kasvideoattachment.md#type)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasvideoattachment.md#tojson)
 * [fromJSON](kasclient.kasvideoattachment.md#fromjson)

@@ -14,7 +14,7 @@ Defines properties of a conversation participant
 * [participantId](kasclient.kasparticipantdata.md#participantid)
 * [participantRole](kasclient.kasparticipantdata.md#participantrole)
 * [participantType](kasclient.kasparticipantdata.md#participanttype)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasparticipantdata.md#fromjson)
 

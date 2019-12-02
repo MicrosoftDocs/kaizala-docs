@@ -24,7 +24,7 @@
 * [type](kasclient.kasquestion.md#type)
 * [valif](kasclient.kasquestion.md#valif)
 * [visif](kasclient.kasquestion.md#visif)
-### Methods
+  ### Methods
 
 * [getAPICompatibleQuestionType](kasclient.kasquestion.md#getapicompatiblequestiontype)
 * [toAPICompatibleJSON](kasclient.kasquestion.md#toapicompatiblejson)

@@ -25,7 +25,7 @@
 * [size](kasclient.kasattachment.md#size)
 * [thumbnail](kasclient.kasattachment.md#thumbnail)
 * [type](kasclient.kasattachment.md#type)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasattachment.md#tojson)
 * [fromJSON](kasclient.kasattachment.md#fromjson)

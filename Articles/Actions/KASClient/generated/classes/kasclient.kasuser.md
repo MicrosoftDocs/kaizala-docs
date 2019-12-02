@@ -17,7 +17,7 @@
 * [pictureBGColor](kasclient.kasuser.md#picturebgcolor)
 * [pictureInitials](kasclient.kasuser.md#pictureinitials)
 * [pictureUrl](kasclient.kasuser.md#pictureurl)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasuser.md#fromjson)
 

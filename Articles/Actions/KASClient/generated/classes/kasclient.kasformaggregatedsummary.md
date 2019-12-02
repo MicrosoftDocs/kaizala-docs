@@ -18,7 +18,7 @@
 * [totalDeliveryCount](kasclient.kasformaggregatedsummary.md#totaldeliverycount)
 * [totalParticipantsCount](kasclient.kasformaggregatedsummary.md#totalparticipantscount)
 * [totalResponseCount](kasclient.kasformaggregatedsummary.md#totalresponsecount)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasformaggregatedsummary.md#fromjson)
 

@@ -14,7 +14,7 @@
 * [longitude](kasclient.kaslocation.md#longitude)
 * [placeAddress](kasclient.kaslocation.md#placeaddress)
 * [placeName](kasclient.kaslocation.md#placename)
-### Methods
+  ### Methods
 
 * [isEmpty](kasclient.kaslocation.md#isempty)
 * [isEqual](kasclient.kaslocation.md#isequal)

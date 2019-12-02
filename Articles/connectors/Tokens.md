@@ -21,8 +21,8 @@ We have implemented a custom token based authorization mechanism. This mechanism
 | Refresh Token  | Carry the information necessary to get a new access token     | Different ways to generate refresh token are documented in next section below | 365 days           |
 | Access Token   | Carry the necessary information to access a Kaizala resource  | Developer uses refresh Token & other connector details to query Kaizala API endpoint to generate Access Token    | 24 hours            |
 
-*   Refresh tokens can be invalidated by the server in two ways - by generating new Refresh Tokens for the same Kaizala Connector or deleting the corresponding Kaizala Connector altogether.
-## Different types of Refresh Tokens
+* Refresh tokens can be invalidated by the server in two ways - by generating new Refresh Tokens for the same Kaizala Connector or deleting the corresponding Kaizala Connector altogether.
+  ## Different types of Refresh Tokens
 
 Kaizala Connectors allow options to generate two different types of Refresh Token. Users token can be generated either through Kaizala Management Portal or oAuth.
 
@@ -90,48 +90,48 @@ You will need to use the following end-point to get an access token (both the fi
 ### Generate Access Token using oAuth 2.0
 
 #### Steps to generate Access Token using oAuth 2.0
-*    **Step 1:** Create/Update a connector on Kaizala Management Portal to include redirect url
-     *    In the connector that you are using, please ensure that you have entered a redirect url while creating the connector. If not, please update redirect url
-     *    For testing purposes, you can use the below postman callback URL, which just gives you a page with the code. 
+* **Step 1:** Create/Update a connector on Kaizala Management Portal to include redirect url
+  *    In the connector that you are using, please ensure that you have entered a redirect url while creating the connector. If not, please update redirect url
+  *    For testing purposes, you can use the below postman callback URL, which just gives you a page with the code. 
         
-          `https://www.getpostman.com/oauth2/callback`
+       `https://www.getpostman.com/oauth2/callback`
  
-*    **Step 2:** Type below url in the Browser and press Enter
+* **Step 2:** Type below url in the Browser and press Enter
 
-          `https://ds.kaiza.la/api/Oauth/Authorize?client_id={{ConnectorID}}&redirect_uri={{re-directURL}}`
+       `https://ds.kaiza.la/api/Oauth/Authorize?client_id={{ConnectorID}}&redirect_uri={{re-directURL}}`
       
-      *   Please ensure that you have entered 'client_id' & 'redirect_uri' correctly
-       ##### Request Parameters
+  * Please ensure that you have entered 'client_id' & 'redirect_uri' correctly
+    ##### Request Parameters
 
-       |            	| Parameter         	| Type   	| Optional? 	| Description |
-       | :---: | :---: | :---: | :---:	| :--- |
-       | Url parameter 	| `client_id`     	| String 	| No        	| ID associated with the Connector 	|
-       | Url parameter 	| `redirect_uri` 	| String 	| No        	| Secret associated with the Connector |
+    |                | Parameter             | Type      | Optional?     | Description |
+    | :---: | :---: | :---: | :---:  | :--- |
+    | Url parameter  | `client_id`       | String    | No            | ID associated with the Connector  |
+    | Url parameter  | `redirect_uri`    | String    | No            | Secret associated with the Connector |
 
-     *    For example, sample url would be
+  *    For example, sample url would be
      
-            `https://ds.kaiza.la/api/Oauth/Authorize?client_id=2AB9B82044683484EE9D958E7&redirect_uri=https://www.getpostman.com/oauth2/callback`
+         `https://ds.kaiza.la/api/Oauth/Authorize?client_id=2AB9B82044683484EE9D958E7&redirect_uri=https://www.getpostman.com/oauth2/callback`
 
 
-*    **Step 3:** Sign-in to Kaizala and generate 'code'
-     *   As soon as you press enter in Step 2, you shall be taken to Kaizala sign-in page
-     *   Authenticate yourself using your registered Kaizala number
-     *   After you successfully sign-in, you will be re-directed to the re-direct url with 'code' as query parameter in callback url
-     *   Note down the returned 'code' 
+* **Step 3:** Sign-in to Kaizala and generate 'code'
+  *   As soon as you press enter in Step 2, you shall be taken to Kaizala sign-in page
+  *   Authenticate yourself using your registered Kaizala number
+  *   After you successfully sign-in, you will be re-directed to the re-direct url with 'code' as query parameter in callback url
+  *   Note down the returned 'code' 
      
-*    **Step 4:** Use code to generate Access Token
-     *   Make below API call to generate Access Token
+* **Step 4:** Use code to generate Access Token
+  *   Make below API call to generate Access Token
      
-         `POST https://ds.kaiza.la/api/oauth/token `
+      `POST https://ds.kaiza.la/api/oauth/token `
      
-     ##### Request Parameters
+  ##### Request Parameters
 
-       |            	| Parameter         	| Type   	| Optional? 	| Description |
-       | :---: | :---: | :---: | :---:	| :--- |
-       | HTTP Header 	| `Content-Type`     	| String 	| No        	| Allowed Value: application/x-www-form-urlencoded 	|
-       | Body Parameter 	| `client_id`     	| String 	| No        	| ID associated with the Connector 	|
-       | Body Parameter 	| `client_secret` 	| String 	| No        	| Secret associated with the Connector |
-       | Body Parameter 	| `code` 	| String 	| No        	| Code that has been returned in the re-direct url's query parameter |
+    |                | Parameter             | Type      | Optional?     | Description |
+    | :---: | :---: | :---: | :---:  | :--- |
+    | HTTP Header    | `Content-Type`        | String    | No            | Allowed Value: application/x-www-form-urlencoded  |
+    | Body Parameter     | `client_id`       | String    | No            | ID associated with the Connector  |
+    | Body Parameter     | `client_secret`   | String    | No            | Secret associated with the Connector |
+    | Body Parameter     | `code`    | String    | No            | Code that has been returned in the re-direct url's query parameter |
      
 You will receive   accessToken, endpointUrl, accessToken Expiry as part of the response.
 

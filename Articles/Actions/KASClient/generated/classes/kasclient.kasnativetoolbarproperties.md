@@ -16,7 +16,7 @@
 * [title](kasclient.kasnativetoolbarproperties.md#title)
 * [urlAction](kasclient.kasnativetoolbarproperties.md#urlaction)
 * [urlType](kasclient.kasnativetoolbarproperties.md#urltype)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasnativetoolbarproperties.md#tojson)
 

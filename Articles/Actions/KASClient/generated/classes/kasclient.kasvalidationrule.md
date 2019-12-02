@@ -14,7 +14,7 @@
 * [errorString](kasclient.kasvalidationrule.md#errorstring)
 * [helpText](kasclient.kasvalidationrule.md#helptext)
 * [rule](kasclient.kasvalidationrule.md#rule)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasvalidationrule.md#tojson)
 * [fromJSON](kasclient.kasvalidationrule.md#fromjson)

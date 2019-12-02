@@ -9,13 +9,13 @@ This document describes the criteria that must be adhered to while developing Ka
 |1.1|Your Kaizala Action must offer unique value or utility that extends Kaizala client functionality for users.|
 |1.2|Your Kaizala Action must work according to your description, and must not be in an unfinished state.|
 
-2.  Kaizala Actions cannot display any Ads
+2. Kaizala Actions cannot display any Ads
 
 | Policy number | Description |
 | :---: | :--- |
 |2.1|Your Kaizala Action cannot contain any form of ads.|
 
-3.  Kaizala Actions behave predictably
+3. Kaizala Actions behave predictably
 
 | Policy number | Description |
 | :---: | :--- |

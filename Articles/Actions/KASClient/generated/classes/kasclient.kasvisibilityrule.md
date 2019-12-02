@@ -13,7 +13,7 @@
 * [dependencyQuestionId](kasclient.kasvisibilityrule.md#dependencyquestionid)
 * [optionId](kasclient.kasvisibilityrule.md#optionid)
 * [rule](kasclient.kasvisibilityrule.md#rule)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasvisibilityrule.md#tojson)
 * [fromJSON](kasclient.kasvisibilityrule.md#fromjson)

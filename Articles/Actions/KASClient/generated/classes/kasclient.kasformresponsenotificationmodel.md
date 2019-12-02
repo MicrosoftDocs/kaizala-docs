@@ -11,12 +11,12 @@
 ### Constructors
 
 * [constructor](kasclient.kasformresponsenotificationmodel.md#constructor)
-### Properties
+  ### Properties
 
 * [messagePreview](kasclient.kasformresponsenotificationmodel.md#messagepreview)
 * [messageTarget](kasclient.kasformresponsenotificationmodel.md#messagetarget)
 * [pushTarget](kasclient.kasformresponsenotificationmodel.md#pushtarget)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasformresponsenotificationmodel.md#tojson)
 * [fromJson](kasclient.kasformresponsenotificationmodel.md#fromjson)

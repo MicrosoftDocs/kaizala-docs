@@ -10,20 +10,20 @@ Below are different types of sub-views/widgets along with their customizable pro
 <ol>
 <li>id (optional, but must be unique)</li>
 <li>visible<sup>iOS</sup></li>
-<li>type _(any of the sub-view types we are mentioning here)_</li>
+<li>type <em>(any of the sub-view types we are mentioning here)</em></li>
 <li>margin / marginTop / marginRight / marginBottom / marginLeft</li>
 <li>padding / paddingTop / paddingRight / paddingBottom / paddingLeft</li>
 <li>width</li>
 <li>height</li>
-<li>weight _(%ratio of parent view's width/height in case of horizontal/vertical layouts respectively)_</li>
-<li>backgroundColor  _(only hex code allowed here)_</li>
+<li>weight <em>(%ratio of parent view&#39;s width/height in case of horizontal/vertical layouts respectively)</em></li>
+<li>backgroundColor  <em>(only hex code allowed here)</em></li>
 <li>cornerRadius</li>
 <li>borderWidthiOS / borderColoriOS</li>
-<li>children _(array of sub-views)_</li>
-<li>layout _(vertical / horizontal � when unspecified, defaults to vertical)_</li>
-<li>verticalAlignment _(top / bottom / center / stretchiOS - how children will be aligned vertically)_</li>
-<li>horizontalAlignment _(left / right / center / spaceBetween<sup>iOS</sup> / spaceAround<sup>iOS</sup>) - how children will be aligned horizontally._</li>
-<li>initialHeight<sup>iOS</sup> � _an iOS only property used in the topmost container that is used to render the card before the accurate dimension is ascertained. It is strongly advised to use this property for a smoother experience!_</li>
+<li>children <em>(array of sub-views)</em></li>
+<li>layout <em>(vertical / horizontal � when unspecified, defaults to vertical)</em></li>
+<li>verticalAlignment <em>(top / bottom / center / stretchiOS - how children will be aligned vertically)</em></li>
+<li>horizontalAlignment <em>(left / right / center / spaceBetween<sup>iOS</sup> / spaceAround<sup>iOS</sup>) - how children will be aligned horizontally.</em></li>
+<li>initialHeight<sup>iOS</sup> � <em>an iOS only property used in the topmost container that is used to render the card before the accurate dimension is ascertained. It is strongly advised to use this property for a smoother experience!</em></li>
 </ol>
 
 ### Text
@@ -31,20 +31,20 @@ Below are different types of sub-views/widgets along with their customizable pro
 <ol>
 <li>id (optional, but must be unique)</li>
 <li>visible<sup>iOS</sup></li>
-<li>type _(any of the sub-view types we are mentioning here)_</li>
+<li>type <em>(any of the sub-view types we are mentioning here)</em></li>
 <li>margin / marginTop / marginRight / marginBottom / marginLeft</li>
 <li>padding / paddingTop / paddingRight / paddingBottom / paddingLeft</li>
 <li>width</li>
 <li>height</li>
-<li>weight _(%ratio of parent view's width/height in case of horizontal/vertical layouts respectively)_</li>
-<li>backgroundColor  _(only hex code allowed here)_</li>
+<li>weight <em>(%ratio of parent view&#39;s width/height in case of horizontal/vertical layouts respectively)</em></li>
+<li>backgroundColor  <em>(only hex code allowed here)</em></li>
 <li>cornerRadius</li>
 <li>borderWidthiOS / borderColoriOS</li>
 <li>string</li>
-<li>fontSize _(font family is always System's default, to avoid rendering issues)_</li>
-<li>textColor _(only hex code allowed here)_</li>
-<li>ellipsizeMode _(head / middle / tail)_</li>
-<li>maxNumberOfLines _(0 for no limit, else text will be truncated as per ellipsizeMode)_</li>
+<li>fontSize <em>(font family is always System&#39;s default, to avoid rendering issues)</em></li>
+<li>textColor <em>(only hex code allowed here)</em></li>
+<li>ellipsizeMode <em>(head / middle / tail)</em></li>
+<li>maxNumberOfLines <em>(0 for no limit, else text will be truncated as per ellipsizeMode)</em></li>
 </ol>
 
 
@@ -53,17 +53,17 @@ Below are different types of sub-views/widgets along with their customizable pro
 <ol>
 <li>id (optional, but must be unique)</li>
 <li>visible<sup>iOS</sup></li>
-<li>type _(any of the sub-view types we are mentioning here)_</li>
+<li>type <em>(any of the sub-view types we are mentioning here)</em></li>
 <li>margin / marginTop / marginRight / marginBottom / marginLeft</li>
 <li>padding / paddingTop / paddingRight / paddingBottom / paddingLeft</li>
 <li>width</li>
 <li>height</li>
-<li>weight _(%ratio of parent view's width/height in case of horizontal/vertical layouts respectively)_</li>
-<li>backgroundColor  _(only hex code allowed here)_</li>
+<li>weight <em>(%ratio of parent view&#39;s width/height in case of horizontal/vertical layouts respectively)</em></li>
+<li>backgroundColor  <em>(only hex code allowed here)</em></li>
 <li>cornerRadius</li>
 <li>borderWidthiOS / borderColoriOS</li>
 <li>source</li>
-<li>contentMode _(aspectFit / aspectFill / stretch / repeat<sup>iOS</sup>)_</li>
+<li>contentMode <em>(aspectFit / aspectFill / stretch / repeat<sup>iOS</sup>)</em></li>
 </ol>
 
 

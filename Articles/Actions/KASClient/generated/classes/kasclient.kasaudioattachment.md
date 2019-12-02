@@ -22,7 +22,7 @@
 * [size](kasclient.kasaudioattachment.md#size)
 * [thumbnail](kasclient.kasaudioattachment.md#thumbnail)
 * [type](kasclient.kasaudioattachment.md#type)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasaudioattachment.md#tojson)
 * [fromJSON](kasclient.kasaudioattachment.md#fromjson)

@@ -19,7 +19,7 @@
 * [questionId](kasclient.kasquestionresult.md#questionid)
 * [questionTitle](kasclient.kasquestionresult.md#questiontitle)
 * [questionType](kasclient.kasquestionresult.md#questiontype)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasquestionresult.md#fromjson)
 

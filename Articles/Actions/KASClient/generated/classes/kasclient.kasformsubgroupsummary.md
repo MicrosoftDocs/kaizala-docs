@@ -13,7 +13,7 @@
 * [groupName](kasclient.kasformsubgroupsummary.md#groupname)
 * [responderCount](kasclient.kasformsubgroupsummary.md#respondercount)
 * [targetCount](kasclient.kasformsubgroupsummary.md#targetcount)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasformsubgroupsummary.md#fromjson)
 

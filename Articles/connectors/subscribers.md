@@ -10,15 +10,17 @@ API end-point to add, get or delete subscribers from Managed Public group.
 
 ## ADD /subscribers
 
-    PUT {endpoint-url}/v1/groups/{groupId}/subscribers/add
+    PUT {endpoint-url}/v1/groups/{groupId}/subscribers/add
 
 ### Request Parameters
+
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---: | :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 
 ### Request body
+
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | subscribers | String[] | Each string represents mobile number with country code(Eg. +911111111111) |
@@ -26,11 +28,12 @@ API end-point to add, get or delete subscribers from Managed Public group.
 #### Sample JSON Request
 ```javascript
 {
-    subscribers : ["+911111111111", "+911111111112"]
+    subscribers : ["+911111111111", "+911111111112"]
 }
 ```
 
 ### Response body
+
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | result | JSON object | each key of this Json Object represents the mobile number and value represents the Json object containing success or failure with reason |
@@ -52,9 +55,10 @@ API end-point to add, get or delete subscribers from Managed Public group.
 
 ## GET /subscribers
 
-    POST {endpoint-url}/v1/groups/{groupId}/subscribers
+    POST {endpoint-url}/v1/groups/{groupId}/subscribers
 
 ### Request Parameters
+
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---: | :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
@@ -92,15 +96,17 @@ API end-point to add, get or delete subscribers from Managed Public group.
 
 ## REMOVE /subscribers
 
-    PUT {endpoint-url}/v1/groups/{groupId}/subscribers/remove
+    PUT {endpoint-url}/v1/groups/{groupId}/subscribers/remove
 
 ### Request Parameters
+
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---: | :--- |
 | URL Path Parameter | groupId | String | No | GUID representing the groupId of the specific group resource |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
 
 ### Request body
+
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | subscribers | String[] | Each string represents mobile number with country code(Eg. +911111111111) |
@@ -108,11 +114,12 @@ API end-point to add, get or delete subscribers from Managed Public group.
 #### Sample JSON Request
 ```javascript
 {
-    subscribers : ["+911111111111", "+911111111112"]
+    subscribers : ["+911111111111", "+911111111112"]
 }
 ```
 
 ### Response body
+
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | result | JSON object | each key of this Json Object represents the mobile number and value represents the Json object containing success or failure with reason |

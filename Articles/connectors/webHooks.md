@@ -21,9 +21,9 @@ To ensure your webhook service endpoint is authentic and working we will verify 
 
 #### Request Parameters
 
-|  | Parameter | Type | Optional? | Description |
-| :---: | :---: | :---: | :---:	| :--- |
-| HTTP Header | accessToken | String | No | Access Token received from the auth end-point || HTTP Header | Content-Type | String | No | "application/json" |
+|             |  Parameter  |  Type  | Optional? | Description                                   |
+|:-----------:|:-----------:|:------:|:---------:|:----------------------------------------------|
+| HTTP Header | accessToken | String |    No     | Access Token received from the auth end-point |
 
 #### Request body
 
@@ -39,6 +39,7 @@ To ensure your webhook service endpoint is authentic and working we will verify 
 
 
 #### Response body
+
 | Parameter | Type | Description |
 | :---: | :---: | :--- |
 | webhookId | String | Identifier representing the webHook created |
@@ -68,7 +69,6 @@ To ensure your webhook service endpoint is authentic and working we will verify 
    "callBackToken":"tokenToBeVerifiedByCallback",
    "callBackContext":"Any data which is required to be returned in callback"
 }
-
 ```
 
 
@@ -78,7 +78,7 @@ You can find webhook response schema for registered events in Kaizala [**here**]
 
 ### Get /webhook
 
-    GET {endpoint-url}/v1/webhook
+    GET {endpoint-url}/v1/webhook
 
 #### Request Parameters
 
@@ -146,9 +146,10 @@ You can find webhook response schema for registered events in Kaizala [**here**]
 
 ### Delete /webhook
 
-    DELETE {endpoint-url}/v1/webhook
+    DELETE {endpoint-url}/v1/webhook
 
 #### Request Parameters
+
 |  | Parameter | Type | Optional? | Description |
 | :---: | :---: | :---: | :---: | :--- |
 | HTTP Header | accessToken | String | No | Access Token received from the auth end-point |
@@ -170,7 +171,7 @@ Any parameter for the webhook can be updated. Request Body may contain 1 or more
 #### Request body
 
 |  Parameter | Type | Optional? | Description |
-| :---: | :---: | :---:	| :--- |
+| :---: | :---: | :---: | :--- |
 | objectId | String | Yes | Identifier representing the object in which context the webhooks need to be created.For ObjectType=Group, its group's Identifier, For ObjectType=Action, its actionId, For ObjectType=ActionPackage, its action-package-id |
 | objectType | String | Yes | Enum: "Group"/"Action"/"ActionPackage" |
 | eventTypes | Array | Yes | Array of different types of events you need to subscribe the webhook to. Supported events are: "ActionCreated","ActionResponse","SurveyCreated","JobCreated","SurveyResponse","JobResponse","TextMessageCreated","AttachmentCreated","Announcement","MemberAdded","MemberRemoved","GroupAdded","GroupRemoved" |
@@ -206,7 +207,6 @@ Any parameter for the webhook can be updated. Request Body may contain 1 or more
        "callBackToken":"tokenToBeVerifiedByCallback",
       "Active": "true" 
     } 
-
 ````
 
 ## Auto-Disable of Webhooks

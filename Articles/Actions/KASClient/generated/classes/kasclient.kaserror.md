@@ -11,11 +11,11 @@
 ### Constructors
 
 * [constructor](kasclient.kaserror.md#constructor)
-### Properties
+  ### Properties
 
 * [description](kasclient.kaserror.md#description)
 * [errorCode](kasclient.kaserror.md#errorcode)
-### Methods
+  ### Methods
 
 * [toString](kasclient.kaserror.md#tostring)
 * [fromErrorString](kasclient.kaserror.md#fromerrorstring)

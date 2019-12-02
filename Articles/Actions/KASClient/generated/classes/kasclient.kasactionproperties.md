@@ -15,7 +15,7 @@
 * [actionPropertyType](kasclient.kasactionproperties.md#actionpropertytype)
 * [json](kasclient.kasactionproperties.md#json)
 * [properties](kasclient.kasactionproperties.md#properties)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasactionproperties.md#fromjson)
 

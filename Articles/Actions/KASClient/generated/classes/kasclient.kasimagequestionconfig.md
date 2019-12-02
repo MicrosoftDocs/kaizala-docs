@@ -17,7 +17,7 @@
 * [pageBreakEnabled](kasclient.kasimagequestionconfig.md#pagebreakenabled)
 * [DEFAULT_CAMERA_FILTER_MODE](kasclient.kasimagequestionconfig.md#default_camera_filter_mode)
 * [IMAGE_SOURCE_KEY](kasclient.kasimagequestionconfig.md#image_source_key)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasimagequestionconfig.md#tojson)
 * [fromJSON](kasclient.kasimagequestionconfig.md#fromjson)

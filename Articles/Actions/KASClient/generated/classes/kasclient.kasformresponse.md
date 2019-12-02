@@ -19,7 +19,7 @@
 * [sendStatus](kasclient.kasformresponse.md#sendstatus)
 * [sendTime](kasclient.kasformresponse.md#sendtime)
 * [serverToLocalAssetUrlMap](kasclient.kasformresponse.md#servertolocalasseturlmap)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasformresponse.md#fromjson)
 

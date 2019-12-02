@@ -15,7 +15,7 @@
 * [responderCount](kasclient.kasformsummaryforgroup.md#respondercount)
 * [subgroupSummary](kasclient.kasformsummaryforgroup.md#subgroupsummary)
 * [targetCount](kasclient.kasformsummaryforgroup.md#targetcount)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasformsummaryforgroup.md#fromjson)
 

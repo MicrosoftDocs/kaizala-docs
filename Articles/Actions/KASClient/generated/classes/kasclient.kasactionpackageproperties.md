@@ -13,7 +13,7 @@
 * [actionPackageId](kasclient.kasactionpackageproperties.md#actionpackageid)
 * [json](kasclient.kasactionpackageproperties.md#json)
 * [properties](kasclient.kasactionpackageproperties.md#properties)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasactionpackageproperties.md#fromjson)
 

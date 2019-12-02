@@ -14,7 +14,7 @@
 * [canSendReminder](kasclient.kasformusercapabilities.md#cansendreminder)
 * [json](kasclient.kasformusercapabilities.md#json)
 * [shouldSeeSummary](kasclient.kasformusercapabilities.md#shouldseesummary)
-### Methods
+  ### Methods
 
 * [toAPICompatibleJSON](kasclient.kasformusercapabilities.md#toapicompatiblejson)
 * [toClientJSON](kasclient.kasformusercapabilities.md#toclientjson)

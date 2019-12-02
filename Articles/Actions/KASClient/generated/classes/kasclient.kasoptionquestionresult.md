@@ -16,7 +16,7 @@
 * [questionId](kasclient.kasoptionquestionresult.md#questionid)
 * [questionTitle](kasclient.kasoptionquestionresult.md#questiontitle)
 * [questionType](kasclient.kasoptionquestionresult.md#questiontype)
-### Methods
+  ### Methods
 
 * [getResultsOrder](kasclient.kasoptionquestionresult.md#getresultsorder)
 * [fromJSON](kasclient.kasoptionquestionresult.md#fromjson)

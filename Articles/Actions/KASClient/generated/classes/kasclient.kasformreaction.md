@@ -17,7 +17,7 @@
 * [hideLikes](kasclient.kasformreaction.md#hidelikes)
 * [hideLikesDetails](kasclient.kasformreaction.md#hidelikesdetails)
 * [likesCount](kasclient.kasformreaction.md#likescount)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasformreaction.md#fromjson)
 

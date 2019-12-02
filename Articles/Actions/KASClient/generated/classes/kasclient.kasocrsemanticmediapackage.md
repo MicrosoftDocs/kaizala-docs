@@ -14,7 +14,7 @@
 * [imageLocalPath](kasclient.kasocrsemanticmediapackage.md#imagelocalpath)
 * [ocrData](kasclient.kasocrsemanticmediapackage.md#ocrdata)
 * [processedOCRData](kasclient.kasocrsemanticmediapackage.md#processedocrdata)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasocrsemanticmediapackage.md#tojson)
 * [fromJSON](kasclient.kasocrsemanticmediapackage.md#fromjson)

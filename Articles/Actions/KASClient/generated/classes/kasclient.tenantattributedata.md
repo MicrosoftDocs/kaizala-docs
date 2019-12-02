@@ -12,7 +12,7 @@ This represents one tenant attribute id-value pair
 ### Constructors
 
 * [constructor](kasclient.tenantattributedata.md#constructor)
-### Properties
+  ### Properties
 
 * [attributeId](kasclient.tenantattributedata.md#attributeid)
 * [attributeValue](kasclient.tenantattributedata.md#attributevalue)

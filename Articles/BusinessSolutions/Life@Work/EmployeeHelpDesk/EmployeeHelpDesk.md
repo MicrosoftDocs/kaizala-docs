@@ -23,7 +23,7 @@ If the user is satisfied with the proposed resolution, user has the ability to c
    <img src="EmployeeHelpdesk-Images/2.jpg" width="600">
 
    View of status being updated to "Resolved" in sharepoint and the corresponding card that is sent to user
-   
+
    <img src="EmployeeHelpdesk-Images/3.jpg" width="600">
 
    User Feedback view
@@ -49,7 +49,7 @@ This is broadly divided into 3 steps:
 3. Configure Microsoft Flow to interact with SharePoint and Kaizala (*3 Flows*)
 
     1. To collect ticket details from the card and store it in SharePoint(*TicketCreationFlow.Zip*)
-    
+
     2. To send the user an updated card when help desk agent updates the status, comments or both in the SharePoint(*TicketStatusUpdatesFlow.Zip*)
 
     3. To update the SharePoint list when the user chooses to close, reopen or adds feedback comments from the card(*TicketReopenFlow.Zip*)
@@ -100,26 +100,28 @@ This is broadly divided into 3 steps:
 2. [Add](https://support.office.com/en-us/article/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2) columns and [Edit](https://support.office.com/en-us/article/Edit-list-settings-in-SharePoint-Online-4d35793b-246e-42a3-990c-563a83795b7f) (*as below in the same order and format*) column settings for this list
 
 
-    |Column|Recommended settings|
-    |-------- |---|
-    |Department|Single line of text|
-    |Location|Single line of text|
-    |Category|Single line of text|
-    |Description |Multiple lines of text|
-    |Photos|Multiple lines of text|
-    |CreatorName|Single line of text|
-    |CreatorContact|Single line of text|
-    |ReportedAt|Single line of text|
-    |AssignedTo|Single line of text|
-    |AssignedBy|Single line of text|
-    |Status|Choice with options as New, Assigned, Resolved, Closed and Reopened (*These ticket stages are mandatory*)|
-    |HelpdeskComments|Multiple lines of text|
-    |UserFeedback|Multiple lines of text|
-    |ReasonsToReopen|Multiple lines of text|
-    |CreatorKaizalaName|Single line of text|
-    |CreatorKaizalaContact|Single line of text|
-    |UserRating|Single line of text|
- 
+~~~
+|Column|Recommended settings|
+|-------- |---|
+|Department|Single line of text|
+|Location|Single line of text|
+|Category|Single line of text|
+|Description |Multiple lines of text|
+|Photos|Multiple lines of text|
+|CreatorName|Single line of text|
+|CreatorContact|Single line of text|
+|ReportedAt|Single line of text|
+|AssignedTo|Single line of text|
+|AssignedBy|Single line of text|
+|Status|Choice with options as New, Assigned, Resolved, Closed and Reopened (*These ticket stages are mandatory*)|
+|HelpdeskComments|Multiple lines of text|
+|UserFeedback|Multiple lines of text|
+|ReasonsToReopen|Multiple lines of text|
+|CreatorKaizalaName|Single line of text|
+|CreatorKaizalaContact|Single line of text|
+|UserRating|Single line of text|
+~~~
+
 
 4. [Edit list view](https://support.office.com/en-gb/article/edit-a-list-view-in-sharepoint-online-15916903-e79a-423f-b4e2-02d37e1ff372) to position ID in first place.This is the unique ticket ID that will be displayed in the card, once the ticket is assigned.
 
@@ -152,44 +154,44 @@ This solution has 3 Flows,
                1. Enter the SharePoint Site address
 
                2. Enter List Name
-                  
+
                   <img src="EmployeeHelpdesk-Images/6.JPG" width="600">
 
                    > Note: All the columns in the SharePoint list will be displayed in Flow on entering Sharepoint Site address & List Name. Verify the mapping of SharePoint list fields in Flow. 
 
           3.  Save the Flow
-           
+
 
 2. To send the user an updated card when help desk agent updates the status, comments or both in the SharePoint
 
-    1. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "TicketStatusUpdatesFlow.Zip" to your Microsoft Flow account
+   1. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "TicketStatusUpdatesFlow.Zip" to your Microsoft Flow account
 
-    2. Edit details in Imported Flow (*See steps below*) 
+   2. Edit details in Imported Flow (*See steps below*) 
 
-          1. In the first block
+      1. In the first block
 
-               1.  Enter the SharePoint Site address
+           1.  Enter the SharePoint Site address
 
-               2. Enter List Name
+           2. Enter List Name
 
-                  <img src="EmployeeHelpdesk-Images/6.5.jpg" width="600">
+              <img src="EmployeeHelpdesk-Images/6.5.jpg" width="600">
 
-          2. In the last block
+      2. In the last block
 
-               1. Enter the group ID or select group name to where you want to send the status updates
+           1. Enter the group ID or select group name to where you want to send the status updates
 
-               2. Click on Action to select "Action Package" 
+           2. Click on Action to select "Action Package" 
 
-               3. Click on Action package to enter action id that you have given for "StatusUpdateFromHelpDesk-ActionPackage.Zip"
+           3. Click on Action package to enter action id that you have given for "StatusUpdateFromHelpDesk-ActionPackage.Zip"
 
-               4. Map body to "ActionBody"
+           4. Map body to "ActionBody"
 
-                  <img src="EmployeeHelpdesk-Images/7.JPG" width="600">
+              <img src="EmployeeHelpdesk-Images/7.JPG" width="600">
 
-        3.  Save the Flow
-    
+         3. Save the Flow
+
 3. To update the SharePoint list when the user chooses to close, reopen or adds feedback comments from the card
- 
+
     1. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "TicketReopenFlow.Zip" to your Microsoft Flow account
 
     2. Edit details in Imported Flow (*See steps below*) 

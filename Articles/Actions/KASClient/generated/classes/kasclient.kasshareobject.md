@@ -12,7 +12,7 @@
 
 * [data](kasclient.kasshareobject.md#data)
 * [type](kasclient.kasshareobject.md#type)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasshareobject.md#tojson)
 

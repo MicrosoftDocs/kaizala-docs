@@ -29,7 +29,7 @@
 * [thumbnailServerUrl](kasclient.kasrichimageattachment.md#thumbnailserverurl)
 * [type](kasclient.kasrichimageattachment.md#type)
 * [width](kasclient.kasrichimageattachment.md#width)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kasrichimageattachment.md#tojson)
 * [fromJSON](kasclient.kasrichimageattachment.md#fromjson)

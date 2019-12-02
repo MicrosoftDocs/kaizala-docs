@@ -14,7 +14,7 @@
 * [optionTitle](kasclient.kasoptionresult.md#optiontitle)
 * [responderToResponseCount](kasclient.kasoptionresult.md#respondertoresponsecount)
 * [totalResponsesCount](kasclient.kasoptionresult.md#totalresponsescount)
-### Methods
+  ### Methods
 
 * [fromJSON](kasclient.kasoptionresult.md#fromjson)
 

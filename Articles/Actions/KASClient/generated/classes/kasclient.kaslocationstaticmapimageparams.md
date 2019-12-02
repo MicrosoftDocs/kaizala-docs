@@ -18,7 +18,7 @@
 * [sizeX](kasclient.kaslocationstaticmapimageparams.md#sizex)
 * [sizeY](kasclient.kaslocationstaticmapimageparams.md#sizey)
 * [zoom](kasclient.kaslocationstaticmapimageparams.md#zoom)
-### Methods
+  ### Methods
 
 * [toJSON](kasclient.kaslocationstaticmapimageparams.md#tojson)
 

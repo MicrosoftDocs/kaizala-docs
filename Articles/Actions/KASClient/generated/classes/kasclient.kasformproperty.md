@@ -13,7 +13,7 @@
 * [name](kasclient.kasformproperty.md#name)
 * [type](kasclient.kasformproperty.md#type)
 * [value](kasclient.kasformproperty.md#value)
-### Methods
+  ### Methods
 
 * [getAPICompatiblePropertyType](kasclient.kasformproperty.md#getapicompatiblepropertytype)
 * [toAPICompatibleJSON](kasclient.kasformproperty.md#toapicompatiblejson)
