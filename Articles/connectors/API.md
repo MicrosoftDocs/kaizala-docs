@@ -37,6 +37,8 @@ The API works with the following Kaizala resources:
 *   [/subscribers](subscribers.md)
 *	 [/reaction](reactions.md)
 
+> Kaizala APIs has the throttling limit of **100 calls per min per connector**. When throttling limit exceeds, the API will return "Retry-After" value along with Http status code:429. The "Retry-After" value specifies how many seconds to wait before making another request.
+
 ### WebHooks
 
 The Microsoft Kaizala API also provides a way for developers to register for specific events within the Kaizala platform via WebHooks.
