@@ -28,6 +28,10 @@ shipped out-of-the-box and provide scoped functionality. These Actions can be di
 
 [Get started with Kaizala Actions](Actions/README.md)
 
+## Kaizala API Throttling Limit
+
+[The API gateway](https://docs.microsoft.com/en-in/azure/api-management/api-management-key-concepts) for Kaizala APIs has the throttling limit of 100 calls per min. The limit key is a combination of UserId and ConnectorId. When throttling limit exceeds, response header "Retry-After" is returned along with http status code 429. This specifies how many seconds to wait before making a follow-up request. The API consumers need to make a note of this and handle it appropriately.
+
 ## Submit your questions, bugs, feature requests, and contributions
 
 We listen to the developer community across [several channels](feedback.md).
