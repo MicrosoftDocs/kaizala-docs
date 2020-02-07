@@ -1,0 +1,52 @@
+### YamlMime:Hub
+
+title: Microsoft Kaizala # < 60 chars
+summary: Overview of Microsoft Kaizala # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft Kaizala # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Overview of Microsoft Kaizala # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: kaizala #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  audience: ITPro
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/03/2019 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: For IT Professionals # < 60 chars (optional)
+      items:
+        # Card
+        - title: Admins
+          summary: Get the practical guidance you need to get the most out of Kaizala in your organization.
+          url: https://docs.microsoft.com/Office365/Kaizala/kaizala-overview
+        # Card
+        - title: Business solutions
+          summary: Learn how to create ticketing system, salesforce, or other solutions using Kaizala.
+          url: https://docs.microsoft.com/kaizala/partnerdocs/customerticketingsolution
+        # Card
+        - title: Integrate with other business apps
+          summary: Explore ways to integrate Kaizala with popular business applications.
+          url: https://docs.microsoft.com/kaizala/partnerdocs/integratekaizalaandmailflow
+        # Card
+        - title: Security, privacy and compliance
+          summary: Kaizala is built on Office 365. See how it provides you enterprise-grade security and compliance.
+          url: https://docs.microsoft.com/kaizala/partnerdocs/securityoverview
+    - title: For other audiences # < 60 chars (optional)
+      items:
+        # Card
+        - title: Developers
+          summary: Discover best practices and how-to's for developers.
+          url: https://docs.microsoft.com/kaizala/developer-platform
+        # Card
+        - title: End users
+          summary: Find help, training, and technical support for Kaizala users on support.office.com.
+          url: https://support.office.com/kaizala
