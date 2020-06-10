@@ -47,6 +47,7 @@
 ### [Develop a custom Action](Actions/tutorial.md)
 ### [Create a Flow using Kaizala](https://support.office.com/en-us/article/Integrate-your-workflow-in-Kaizala-using-Microsoft-Flow-883343d0-6b16-4725-a23d-bc69fb264356?ui=en-US&rs=en-US&ad=US)
 ### [Use Kaizala Office Add-IN](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91)
+### [Create an Action using Component Card Controls](Actions/componentcardtutorial.md)
 
 # Connectors & Add-Ins to integrate with other Business Apps
 ## [Create business workflows using Flow Connector and Kaizala](PartnerDocs/IntegrateKaizalaandMailflow.md)
