@@ -22,7 +22,7 @@ The following contains the code snippet that should go inside a page (eg: \<div
 
 * **Text Box / Numeric Text Box:**
 Each control has a LABEL ID (to prompt the user as to what data the control is for) and an INPUT ID (to point to the value that needs to be inserted). 
-For the numeric text box, the code snippet remains the same. Only change required is that the input type should be "number".
+For the numeric text box, the code snippet remains the same. Only change required is that the input type should be "number" instead of "text".
 
   `````
     <div class='section-div'>
@@ -83,7 +83,7 @@ Also, this control cannot be made optional as by default, the first option will 
 	  <div class='single-select-rounded'>
 	  <label id='CHECKBOX1_1' class='selected-label'>
 	  </label>
-  	</div>
+	  </div>
 	  <div class='single-select-rounded'>
 	  <label id='CHECKBOX1_2' class='unselected-label'>
 	  </label>
@@ -137,20 +137,20 @@ Each control has a LABEL ID (to prompt the user as to what data the control is f
 	  </div>
 	  <div style='width: 0px; height: 0px; overflow: hidden;'>
 	  <input type='time' onChange='change_time_format(this)' class='textbox-1'>
-    </div>
-    </div>
+	  </div>
+	  </div>
   `````
 	
 * **Text Area:**
 Each control has a LABEL ID (to prompt the user as to what data the control is for) and an INPUT ID (to point to the value that needs to be inserted).
 
   `````
-    <div class='section-div'>
-	  <div id='LABEL9' class='field-label'>
-	  </div>
-	  <textarea id='INPUT9' contenteditable='true' class='text-area'>
-	  </textarea>
-	  </div>
+	<div class='section-div'>
+	<div id='LABEL9' class='field-label'>
+	</div>
+	<textarea id='INPUT9' contenteditable='true' class='text-area'>
+	</textarea>
+	</div>
   `````
  
 * **Dropdown:**
@@ -197,8 +197,8 @@ Please note that for Attachment the type should be "AttachmentList" and for Loca
 
 ## Configuration File
 	
-This is the code snippet that should go inside "Config.js" File. In SUBMIT_IDS you need to put the INPUT ID of the control in the same sequence as the questions are present in the AppModel. 
-In case you want to make it optional, please add it in the OPTIONAL_IDS dictionary with corresponding page number - in case nothing in a page is optional, assign an empty array to the corresponding page. 
+This is the code snippet that should go inside "Config.js" file. In SUBMIT_IDS you need to put the INPUT ID of the control in the same sequence as the questions are present in the AppModel. 
+In case you want to make it optional, please add it in the OPTIONAL_IDS dictionary with corresponding page number - in case nothing in a page is optional, assign an empty array to the corresponding page (as seen in the example for page_2). 
 Optional question labels will automatically be appended with the string '(optional)' when the form is rendered. Below is a an example for TextBox control. All controls will have a similar format. 
 Please note that for Images and Location, we don't need an entry in SUBMIT_IDS.
 
@@ -212,7 +212,7 @@ Please note that for Images and Location, we don't need an entry in SUBMIT_IDS.
 
 ## Localized Strings File - strings_en.json
 This is the code snippet that should go inside the strings file where the strings are defined. 
-For a textbox there is a label associated which prompts the user as to what the question is; then there is an optional placeholder which appears as a ghost-text inside the textbox. 
+For a textbox with ID as INPUT1 there is a label associated which prompts the user as to what the question is; then there is an optional placeholder which appears as a ghost-text inside the textbox. 
 This is an example of Textbox control. All controls will have similar format.
 
   `````
