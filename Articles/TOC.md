@@ -1,8 +1,8 @@
 	
 # Get Started
 ## [Overview of Kaizala App](https://support.office.com/en-us/article/get-to-know-kaizala-22700f1d-274f-4533-8956-247c733f6ae6)
-## [Overview of Kaizala Management Portal](https://docs.microsoft.com/en-us/Office365/Kaizala/kaizala-management-portal)
-## [Kaizala availability and Download links](https://docs.microsoft.com/en-us/Office365/Kaizala/regional-availability)
+## [Overview of Kaizala Management Portal](https://docs.microsoft.com/Office365/Kaizala/kaizala-management-portal)
+## [Kaizala availability and Download links](https://docs.microsoft.com/Office365/Kaizala/regional-availability)
 
 # Developer Platform
 ## [About Microsoft Kaizala Developer Platform](developer-platform.md)
@@ -25,11 +25,11 @@
 ## API References
 
 ### Kaizala REST APIs
-#### [Authentication APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/authentication%20apis)
-#### [Content Creation APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/content%20creation%20apis)
-#### [Content Query APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/content%20query%20apis)
-#### [Group Management APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/group%20management%20apis)
-#### [Subscription WebHooks](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/subscription%20webhooks)
+#### [Authentication APIs](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/authentication%20apis)
+#### [Content Creation APIs](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/content%20creation%20apis)
+#### [Content Query APIs](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/content%20query%20apis)
+#### [Group Management APIs](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/group%20management%20apis)
+#### [Subscription WebHooks](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/subscription%20webhooks)
 
 ### Custom Action APIs
 #### [Form Creation APIs](Actions/KASClient/generated/modules/kasclient.form.md#creation)
@@ -62,7 +62,7 @@
 ## [Life at Work](BusinessSolutions/Life%40Work/Life%40Work.md)
 ### [Employee Help Desk](BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpDesk.md)
 ### [Drive Performance using Leaderboard](BusinessSolutions/Life%40Work/Leaderboard/Leaderboard.md)
-### [Get structured answers to your questions from co-workers](https://docs.microsoft.com/en-us/kaizala/businesssolutions/life@work/qna/qna)
+### [Get structured answers to your questions from co-workers](https://docs.microsoft.com/kaizala/businesssolutions/life@work/qna/qna)
 ## [Integrating Kaizala data to your custom dashboards](PartnerDocs/IntegratingKaizalaData.md)
 
 
