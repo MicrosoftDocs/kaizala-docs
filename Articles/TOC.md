@@ -25,11 +25,11 @@
 ## API References
 
 ### Kaizala REST APIs
-#### [Authentication APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/authentication%20apis)
-#### [Content Creation APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/content%20creation%20apis)
-#### [Content Query APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/content%20query%20apis)
-#### [Group Management APIs](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/group%20management%20apis)
-#### [Subscription WebHooks](https://docs.microsoft.com/en-us/rest/api/kaizala.microsoft.com/subscription%20webhooks)
+#### [Authentication APIs](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/authentication%20apis)
+#### [Content Creation APIs](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/content%20creation%20apis)
+#### [Content Query APIs](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/content%20query%20apis)
+#### [Group Management APIs](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/group%20management%20apis)
+#### [Subscription WebHooks](https://docs.microsoft.com/rest/api/kaizala.microsoft.com/subscription%20webhooks)
 
 ### Custom Action APIs
 #### [Form Creation APIs](Actions/KASClient/generated/modules/kasclient.form.md#creation)
