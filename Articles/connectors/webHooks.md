@@ -17,7 +17,7 @@ Using WebHooks, you can subscribe to various events that occur within a conversa
 
     POST {endpoint-url}/v1/webhook
 
-To ensure your webhook service endpoint is authentic and working we will verify your callback URL before creating subscription. For verification we will send you a validation token which you need to send us back within 5 seconds. [Read More](WebHookValidation.md)
+To ensure your webhook service endpoint is authentic and working we will verify your callback URL before creating subscription. For verification we will send you a validation token which you need to send us back within 5 seconds. [Read More](WebHookValidaton.md)
 
 #### Request Parameters
 
