@@ -8,9 +8,9 @@ Some of the OOB Action cards available are as follows:
 - Job/Tasks
 - Meeting Invite
 - Attendance Card
-- Traning Card
+- Training Card
 - Location Card
-- Discover More Actions 
+- Discover More Actions
 
 ## Announcements
 
@@ -26,7 +26,7 @@ Kaizala provides predefined Action for Polls and Surveys to quickly collect data
 
 ![Quick Polls & Surveys](Images/Actions2.png "Quick Polls & Surveys")
 
-## Job/Tasks 
+## Job/Tasks
 Kaizala enables you to assign jobs or tasks to one or more individuals. When your users complete the tasks, you get a notification. Also, you can track status of all your assigned tasks under **Pending Actions** in Profile.
 
 ![Job or Tasks](Images/Actions3.png "Job or Tasks")
