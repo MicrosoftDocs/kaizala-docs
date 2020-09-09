@@ -1,3 +1,25 @@
+---
+title: Kaizala Action Card
+f1.keywords:
+- NOCSH
+ms.author: sukumart
+author: SukumarRayan
+manager: RoJog
+ms.date: 09/09/2020
+audience: Users
+ms.topic: article
+ms.service: Kaizala
+ms.custom: Kaizala
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+- MED150
+- MBS150
+ms.assetid: 84dad98b-83b2-4462-a0ad-c84d5bf80f2c
+description: Learn how to use the Kaizala Action cards.
+---
+
 # Kaizala Action Cards
 
 Kaizala offers you wide range of action cards or mini apps that make your daily work management easy and efficient. You can use the Out-of-box(OOB) Action cards or create your own customized Kaizala Actions.
