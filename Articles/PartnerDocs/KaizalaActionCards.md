@@ -9,7 +9,6 @@ ms.date: 09/09/2020
 audience: Users
 ms.topic: article
 ms.service: Kaizala
-ms.custom: Kaizala
 localization_priority: Normal
 search.appverid:
 - MET150
