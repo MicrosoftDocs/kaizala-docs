@@ -78,7 +78,7 @@
 # Training and Support
 ## [End User Trainings](https://support.office.com/en-us/article/Kaizala-training-987b5e60-e32a-44e8-8c71-c891a2a3d8f0)
 ## [IT Admin & Developer Trainings](PartnerDocs/PartnerTrainings.md)
-## [Developer FAQs](FAQ.md)
+## [Developer FAQs](FAQ.yml)
 ## [Breaking Changes](BreakingChanges.md)
 ## [Developer Changelist](DevChangelist.md)
 ## [Feedback & Support](feedback.md)
