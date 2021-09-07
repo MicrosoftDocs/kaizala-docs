@@ -26,7 +26,7 @@ Please refer to  the documentation below to understand how to convert custom Kai
 4.  In the next screen select the latest active version of the app in case there are multiple versions available.
 5.  You’ll find a new column added in the actions details page titled ‘Teams App’
  
-![Move to Teams Info](/assets/MoveToTeams.png)
+![Move to Teams Info](./Articles/images/K2T_Page_App_overview_Icon.png)
 	
  6. Click on the ‘+’ button to get started with the conversion process.
 
@@ -41,11 +41,11 @@ Please refer to  the documentation below to understand how to convert custom Kai
 9.  Once conversion is complete, you’ll get an option to download the converted Teams app next to the convert button. Click on the button to download the converted Teams app.
 10. Upload the app to Teams by going to ‘App Store -> Upload a custom app’ and then add it to a channel, group chat or a meeting chat. Alternatively, you may choose to upload it to Teams Admin Center and then enable it for selected teams. Find more details [here](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
 	
-	![Add a tab](/assets/TabAdd.png)
+	![Add a tab](/Articles/images/K2T_Add_button.png)
 	
 11. Once added to a team or group chat you might need to create a Tab for apps based on Form, Feedback and Attendance templates to work. Request to add a tab is prompted automatically when the app is added, or you may choose to do it manually by clicking on ‘+’ button next to tabs and picking the installed app from the list (image shared below). Find more details [here](https://support.microsoft.com/en-us/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
-	![App in ME](/assets/MEApp.png)
+	![App in ME](/Articles/images/K2T_Acion_Logo.png)
 
 12. Now, with the tab set up, the users can start responding by going to Messaging Extensions flyout by clicking on ‘…’ button below compose box (image shared below). 
 13. The aggregated responses will either be available by clicking ‘View Details/Results’ on the card itself, or by opening the tab added in step #10. 
