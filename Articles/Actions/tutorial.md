@@ -143,7 +143,7 @@ You can download sample Kaizala Action packages from [here](https://manage.kaiza
         * Custom Id for the Action 
         * Mapping of the creation view to our CreationView.html page 
 
-    * Before that we will need an icon for the Action package. Download the [icon file](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/icon.png) & save it as icon.png in the same folder as the other files.
+    * Before that we will need an icon for the Action package. Download the [icon file](https://github.com/MicrosoftDocs/kaizala-docs/blob/2ee861d9bc069449e8e29220047e8967c28b8193/Articles/Actions/icon.png) & save it as icon.png in the same folder as the other files.
 
     * Create a new file called “package.json” and add following snippet to the file. Ensure that you edit the id to make your Action unique/distinct 
         `````
@@ -440,7 +440,7 @@ You can download sample Kaizala Action packages from [here](https://manage.kaiza
     * Make sure that the zip does not include another directory inside it – but the files are present at the root directory of the zip
 
 *   **Step 10:** Log in to the Kaizala Management Portal  
-    * Open a browser window and navigate to https://manage.kaiza.la/ 
+    * Open a browser window and navigate to https://manage.kaiza.la/
     * On the top left corner, click on “Sign In” 
     * Enter your Office365 credentials to log in to the portal. If requested, grant permissions to the management portal to access your profile information (needed only for the first time) 
     * Tap on “Add Phone number” on the top right hand corner & verify your phone number 
