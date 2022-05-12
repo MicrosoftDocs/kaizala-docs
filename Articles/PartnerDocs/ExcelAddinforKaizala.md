@@ -1,8 +1,7 @@
 ## Kaizala Office add-in: Fetch data into Excel
 <br>The Kaizala Excel add-in allows you to quickly get data from Kaizala endpoints without leaving Excel in just a click. All you need is an Excel table within a spreadsheet and a Kaizala account. You could now share the Excel table on Kaizala – which would send out a survey with each column as a question. People on the group could respond to the survey that they received on their phone. When you refresh the table from within Excel, you would get the responses as rows within your table.
 ### Installing the add-in
-[1]:https://store.office.com/addinstemplateinstallpage.aspx?rs=en-IN&assetid=WA104381121
-Detailed instructions on installing the plugin is present at [http://aka.ms/KaizalaExcelAddin][1]. In case that doesn’t work, you could temporarily use this direct link.
+Detailed instructions on installing the plugin is present at [Kaizala Office add-in](/office365/kaizala/office-add-in). In case that doesn’t work, you could temporarily use this direct link.
 <br>Once you have installed the add-in, you should see the ribbon under the Add-ins tab.
 <br>![](Images/Excel%20Add-in1.PNG)
 ### Scenario walkthrough
