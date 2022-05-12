@@ -21,7 +21,7 @@ Following are top compliance related features currently available in the product
 
 **1. View and manage all Kaizala users with data access**
 
-Kaizala maintains an organization specific [Open Directory](https://docs.microsoft.com/office365/kaizala/set-up-directory) (OD), which is like a phone-based directory for all of its Kaizala users, for its administrators for central management. Any user who becomes a member of an organization group in Kaizala automatically becomes member of OD. This means that it is a list of all Kaizala users who have potential access to organizations data (that is, all members of its organization groups). Admins can associate additional custom attributes specific to their organization, such as Aadhar No, Location, and Designation, for easier identification. It is also possible to delete a user from OD, which automatically revokes the group memberships for the user.
+Kaizala maintains an organization specific [Open Directory](/office365/kaizala/set-up-directory) (OD), which is like a phone-based directory for all of its Kaizala users, for its administrators for central management. Any user who becomes a member of an organization group in Kaizala automatically becomes member of OD. This means that it is a list of all Kaizala users who have potential access to organizations data (that is, all members of its organization groups). Admins can associate additional custom attributes specific to their organization, such as Aadhar No, Location, and Designation, for easier identification. It is also possible to delete a user from OD, which automatically revokes the group memberships for the user.
 
 **2. Remove a user from all organization groups** 
 
