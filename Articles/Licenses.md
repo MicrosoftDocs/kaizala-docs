@@ -1,6 +1,6 @@
 # License & Terms of use
 
-Thank you for your interest in [Microsoft Kaizala Developer documentation](index).
+Thank you for your interest in [Microsoft Kaizala Developer documentation](/index).
 
 We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaDev@microsoft.com and we will keep you informed.
 
