@@ -1,12 +1,12 @@
 # License & Terms of use
 
-Thank you for your interest in [Microsoft Kaizala Developer documentation](index.md).
+Thank you for your interest in [Microsoft Kaizala Developer documentation](index).
 
 We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaDev@microsoft.com and we will keep you informed.
 
 
 ## APIs
-Microsoft Kaizala APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/en-us/outlook/rest/terms-of-use)
+Microsoft Kaizala APIs are governed by [Microsoft API License and Terms of use](/outlook/rest/terms-of-use)
 
 ## Actions
 
