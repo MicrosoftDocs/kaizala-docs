@@ -10,7 +10,7 @@ Microsoft Kaizala is a web-based management portal that provides management, rep
 
 Here are the unique capabilities of Kaizala management Portal 
 
-| <a href="https://support.office.com/en-us/article/kaizala-groups-858bead0-f99b-4215-83c6-b8812bbe3edd?ui=en-US&rs=en-US&ad=US ">![](Images/Manageability.png)</a>  Manageability | <a href="https://support.office.com/en-us/article/kaizala-reports-93e22838-5c18-4181-8d12-eca6c0b4019c?ui=en-US&rs=en-US&ad=US">![](Images/Analytics.png)</a> Analytics |<a href="https://docs.microsoft.com/en-us/kaizala/connectors/setup"> ![](Images/Extensibilty.png)</a> Extensibility |
+| <a href="https://support.office.com/en-us/article/kaizala-groups-858bead0-f99b-4215-83c6-b8812bbe3edd?ui=en-US&rs=en-US&ad=US">![](Images/Manageability.png)</a>  Manageability | <a href="/office365/kaizala/action-reports">![](Images/Analytics.png)</a> Analytics |<a href="https://docs.microsoft.com/en-us/kaizala/connectors/setup"> ![](Images/Extensibilty.png)</a> Extensibility |
 | ------------- | ------------- |------------- |
 | Quickly onboard thousands or millions of users to Kaizala groups including employees, partners, vendors,or customers,with just the phone number of the user.|Get real-time reports of all the action happening on Kaizala including reports for Surveys, Jobs, Trainings etc. |Use Kaizala APIs or extend Kaizala by creating your own custom Action cards to suit your organization’s needs|
 
