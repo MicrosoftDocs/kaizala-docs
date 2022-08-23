@@ -1,10 +1,10 @@
-## Microsoft Kaizala: An Overview
+# Microsoft Kaizala: An Overview
 ![](Images/Microsoft%20kaizala%20overview.png)
 
 Microsoft Kaizala is a mobile chat-based communication platform that connects your first line workers with your Information workers in Modern workplace. Microsoft Kaizala makes it easy to connect and coordinate with not just your field workers but also with your extended value chain like citizens, customers or distributors. It enables you to efficiently manage work or collect data from individuals or large groups, even if they’re not in your organization.
 Learn about value prop of at [www.microsoft.com/Kaizala](https://www.microsoft.com/Kaizala)
 
-### Kaizala’s Unique Approach
+# Kaizala’s Unique Approach
 
 
 | <a href="/Office365/Kaizala/groups-in-kaizala"> ![](Images/Groups.png)</a> Groups for all kinds of networks | <br><br><a href="KaizalaActionCards.md">![](Images/Actioncards.png)</a> Action Cards |<a href="/office365/kaizala/analytics"> ![](Images/ReportingAnalytics.png)</a> Reporting & Analytics |
