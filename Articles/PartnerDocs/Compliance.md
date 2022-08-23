@@ -1,6 +1,6 @@
 # Office 365 Compliance Framework and Microsoft Kaizala
 
-Presently, Microsoft Kaizala is certified for compliance tier C by the internal Microsoft Office 365 compliance team, which is responsible for managing [this framework](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf). This means that Microsoft Kaizala has industry leading privacy and security commitments and is verified with international and regional standards and terms, including:
+Presently, Microsoft Kaizala is certified for compliance tier C by the internal Microsoft Office 365 compliance team, which is responsible for managing [this framework](https://download.microsoft.com/download/0/4/9/049F6894-3B22-4EC6-8DBD-E4FA27019820/Microsoft_Compliance_Framework_for_Online_Services.pdf). This means that Microsoft Kaizala has industry leading privacy and security commitments and is verified with international and regional standards and terms, including:
 
 - ISO 27001
 - ISO 27018
@@ -21,7 +21,7 @@ Following are top compliance related features currently available in the product
 
 **1. View and manage all Kaizala users with data access**
 
-Kaizala maintains an organization specific [Open Directory](https://docs.microsoft.com/office365/kaizala/set-up-directory) (OD), which is like a phone-based directory for all of its Kaizala users, for its administrators for central management. Any user who becomes a member of an organization group in Kaizala automatically becomes member of OD. This means that it is a list of all Kaizala users who have potential access to organizations data (that is, all members of its organization groups). Admins can associate additional custom attributes specific to their organization, such as Aadhar No, Location, and Designation, for easier identification. It is also possible to delete a user from OD, which automatically revokes the group memberships for the user.
+Kaizala maintains an organization specific [Open Directory](/office365/kaizala/set-up-directory) (OD), which is like a phone-based directory for all of its Kaizala users, for its administrators for central management. Any user who becomes a member of an organization group in Kaizala automatically becomes member of OD. This means that it is a list of all Kaizala users who have potential access to organizations data (that is, all members of its organization groups). Admins can associate additional custom attributes specific to their organization, such as Aadhar No, Location, and Designation, for easier identification. It is also possible to delete a user from OD, which automatically revokes the group memberships for the user.
 
 **2. Remove a user from all organization groups** 
 

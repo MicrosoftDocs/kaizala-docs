@@ -5,9 +5,9 @@
 **1. How do I get started using Kaizala APIs?**</br></br>
 In order to start using Kaizala's REST-based API, you need to
  
--   First [Set up Kaizala Connector and generate Refresh Token](https://docs.microsoft.com/en-in/kaizala/connectors/setup).
--   Next you need to [generate Access Token](https://docs.microsoft.com/en-in/kaizala/connectors/tokens)
--   and then [start using APIs](https://docs.microsoft.com/en-in/kaizala/connectors/api)
+-   First [Set up Kaizala Connector and generate Refresh Token](/kaizala/connectors/setup).
+-   Next you need to [generate Access Token](/kaizala/connectors/tokens)
+-   and then [start using APIs](/kaizala/connectors/api)
 
 <br/>
 
@@ -19,33 +19,33 @@ In order to start using Kaizala's REST-based API, you need to
   **User Token** can be generated using (a) Connectors detail page in Kaizala Management portal, (b) Using API ( GeneratePin and LoginWithPinAndApplicationId api(details in postman collection shared [here](https://app.getpostman.com/run-collection/f68a8abec784cc00b0b9#?env%5BKaizala-APIs-environment%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoibW9iaWxlLW51bWJlciIsInZhbHVlIjoiKzkxOTkxMDg3MDAwNSIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJhY2Nlc3MtdG9rZW4iLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZXN0LWdyb3VwLWlkIiwidmFsdWUiOiIiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoibW9iaWxlLW51bWJlci0yIiwidmFsdWUiOiIrOTExMTk5OTk5OTk5IiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImFwaS1yb290IiwidmFsdWUiOiJodHRwczovL2FwaS5rYWl6YS5sYSIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJhcHBsaWNhdGlvbi1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImFwcGxpY2F0aW9uLXNlY3JldCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImVuZHBvaW50LXVybCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InJlZnJlc2gtdG9rZW4iLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZXN0LXB1YmxpYy1ncm91cC1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InRlc3Qtc3ViLWdyb3VwLWlkIiwidmFsdWUiOiIiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoibW9iaWxlLW51bWJlci0zIiwidmFsdWUiOiIrOTExMDk5OTk5OTkiLCJ0eXBlIjoidGV4dCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoidGVzdC1hY3Rpb24taWQiLCJ2YWx1ZSI6IiIsInR5cGUiOiJ0ZXh0In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZXN0LXN1cnZleS1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InRlc3Qtd2ViaG9vay1pZCIsInZhbHVlIjoiIiwidHlwZSI6InRleHQifV0=) ) (c) Kaizala oAuth. <br/>
   **Group Token** can be generated using Connectors detail page in Kaizala Management portal.
 
-Read more about [Tokens](https://docs.microsoft.com/en-in/kaizala/connectors/tokens)
+Read more about [Tokens](/kaizala/connectors/tokens)
 <br/><br/>
 
 **3. How do I ensure that expiry of refreshToken doesn't stop the connection between Kaizala and my system/app**</br></br>
- Generally Refresh Token expires after 365 days. In order to allow 3rd party systems to maintain the connection even when refreshToken is about to expire, Kaizala sends new Refresh Token with every Access Token calls since 90% of the validity of the refresh Token is reached. Hence system should be able to read this refreshToken and use this refreshToken for subsequent accessTokens. [Read more](https://docs.microsoft.com/en-in/kaizala/connectors/tokens)
+ Generally Refresh Token expires after 365 days. In order to allow 3rd party systems to maintain the connection even when refreshToken is about to expire, Kaizala sends new Refresh Token with every Access Token calls since 90% of the validity of the refresh Token is reached. Hence system should be able to read this refreshToken and use this refreshToken for subsequent accessTokens. [Read more](/kaizala/connectors/tokens)
 
 **4. How do I create a group using API?**</br></br>
-  Kaizala allows creation of groups & sub-groups using APIs. Read more to [create a group](https://docs.microsoft.com/en-in/kaizala/connectors/groups). 
+  Kaizala allows creation of groups & sub-groups using APIs. Read more to [create a group](/kaizala/connectors/groups). 
   >Note: If you are using User Level Refresh Token, new group will be created. But if group level token is used to create a group, a sub-group for the concerned group is created.
 <br/><br/>
 
 **5. How can I send a message through APIs in Kaizala?**</br></br>
-  Kaizala exposes an API using which you can send a message to any group. Get more details [here](https://docs.microsoft.com/en-gb/kaizala/connectors/messages).
+  Kaizala exposes an API using which you can send a message to any group. Get more details [here](/kaizala/connectors/messages).
 <br/><br/>
 
 
 **6. Are there sample available online for various Kaizala features like APIs, Webhooks?**</br></br>
-  You can find the sample code in C# [here](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/Samples/Getting%20started%20with%20Kaizala%20REST%20APIs%20-%20C%23%20sample%20(shared).docx)
+  You can find the sample code in C# [here](https://github.com/MicrosoftDocs/kaizala-docs/blob/main/Articles/Samples/Gettingstartedwith.docx)
 
 **7. How can I get the phone numbers of all the members/subscribers in a group?**</br></br>
-  Kaizala exposes API to get the details of all the members in a group. Get more details [here](https://docs.microsoft.com/en-gb/kaizala/connectors/members)
+  Kaizala exposes API to get the details of all the members in a group. Get more details [here](/kaizala/connectors/members)
   In order to get group member details, you would need to setup the Kaizala Connectors. [Read More](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/connectors/README.md) 
 <br/><br/>
 
 
 **8. How can we add a member to a group through Kaizala APIs?**</br></br>
-  Kaizala exposes API to add members in a group. Get more details [here](https://docs.microsoft.com/en-gb/kaizala/connectors/members).     To make a group member an admin, refer below sample: 
+  Kaizala exposes API to add members in a group. Get more details [here](/kaizala/connectors/members).     To make a group member an admin, refer below sample: 
 ````  
 PUT {endpoint-url}/v1/groups/{groupId}/members/{memberId} 
 
@@ -82,7 +82,7 @@ accessToken : {{access-token}}
 <br/>
     
 **13. Is it possible to send a message only to particular member in a group?**</br></br>
-  Only in the case of a public group it is possible to send a message to particular subscriber. In a normal group this is not possible. Please refer to the following link for more details on the associated API: https://docs.microsoft.com/en-gb/kaizala/connectors/messages. <br/>
+  Only in the case of a public group it is possible to send a message to particular subscriber. In a normal group this is not possible. Please refer to the following link for more details on the associated API: /kaizala/connectors/messages. <br/>
 <br/><br/>
 
 **14. Is it possible to send a message only to particular member in a group?**</br></br>
@@ -130,6 +130,5 @@ You can load external content in your action by whitelisting the URL which conta
   The Excel Add-in for Kaizala allows any table in Excel to be exposed as a Survey on Kaizala. All responses to the Survey will be automatically populated in the Excel table. Read more [here](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91?ui=en-US&rs=en-US&ad=US) 
 
 <br/><br/> 
-
 
 
