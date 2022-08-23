@@ -143,7 +143,7 @@ You can download sample Kaizala Action packages from [here](https://manage.kaiza
         * Custom Id for the Action 
         * Mapping of the creation view to our CreationView.html page 
 
-    * Before that we will need an icon for the Action package. Download the [icon file](https://github.com/MicrosoftDocs/kaizala-docs/blob/2ee861d9bc069449e8e29220047e8967c28b8193/Articles/Actions/icon.png) & save it as icon.png in the same folder as the other files.
+    * Before that we will need an icon for the Action package. Download the [icon file](https://github.com/MicrosoftDocs/kaizala-docs/blob/main/Articles/Actions/icon.png) & save it as icon.png in the same folder as the other files.
 
     * Create a new file called “package.json” and add following snippet to the file. Ensure that you edit the id to make your Action unique/distinct 
         `````
