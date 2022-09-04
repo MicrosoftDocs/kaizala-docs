@@ -1,6 +1,6 @@
 # Automating business process using Kaizala Flow connector
 ## Introduction to Microsoft Flow
-Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. [courtesy: [Flow](https://docs.microsoft.com/en-us/flow/getting-started)]. In some sense, you could just build a flow chart that would run the logic behind the scenes – that simple!
+Microsoft Flow is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. [courtesy: [Flow](/flow/getting-started)]. In some sense, you could just build a flow chart that would run the logic behind the scenes – that simple!
 <br> Flow abstracts out services as connectors which serve as a proxy / wrapper around the underlying service. Flow communicates with the connector(s) and enables you to pass output from one connector to another.  This allows you to build a Flow integrating with multiple services. A connector could have triggers and actions. Triggers are the event that trigger a flow. Every flow starts with a trigger. Example of a trigger: When an email is received. Actions are the functionalities that the services exposes. Example of an action: Send an email. When you add a connector on Flow, if the connector requires an underlying account for accessing the service / functionality – you will need to authenticate / configure the account before you can use the connector. This information gets saved as a connection.
 <br> If your service is not available on Flow yet, you could create a Custom Flow connector for your service!
 ## Kaizala Flow connector
@@ -38,12 +38,3 @@ To demonstrate Kaizala Flow connector, let us think of a scenario : “Email the
 ![](Images/MailFlow_6.PNG)
 ### Sample screenshot of the email received:
 ![](Images/MailFlow_MailReceived.PNG)
-
-
-
-
-
-
-
-
-
