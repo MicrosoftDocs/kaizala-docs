@@ -39,10 +39,10 @@ This is an announcement in the form of a card and Flow is used to send this cust
    
  > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include KASClient.js, package.json with new "id", "provider name" and whitelisted URL
  
-4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to kaizala management portal (*This card is sent by calling API, so there is no need to add the card to a group*)
+4. [Import](/kaizala/actions/publish#import-kaizala-action) the edited action package to kaizala management portal (*This card is sent by calling API, so there is no need to add the card to a group*)
 5. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "RSS-feed-Flowpackage.zip" to your Microsoft Flow account
 
-    > Note: If you have never used RSS or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)	
+    > Note: If you have never used RSS or Kaizala connections, first [add connections](/flow/add-manage-connections)	
 
 6. Edit details in Imported Flow (*See steps below*) 
    1. In the first block , enter the RSS feed URL
@@ -71,5 +71,5 @@ This is an announcement in the form of a card and Flow is used to send this cust
 > Known issue: On iOS, the ads take the user out of the webview since they are not whitelisted
 
 ### Useful links
-1. [How to create Kaizala Groups](https://docs.microsoft.com/en-us/office365/kaizala/groups)
-2. [Configure RSS Feed to SharePoint site](https://support.office.com/en-us/article/create-or-subscribe-to-an-rss-feed-fb35047d-8dbd-412a-a5f3-f1712af14dcb)
+1. [How to create Kaizala Groups](/office365/kaizala/groups)
+2. [Configure RSS Feed to SharePoint site](https://support.office.com/article/create-or-subscribe-to-an-rss-feed-fb35047d-8dbd-412a-a5f3-f1712af14dcb)

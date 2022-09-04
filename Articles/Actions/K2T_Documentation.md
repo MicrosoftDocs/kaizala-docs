@@ -1,4 +1,4 @@
-﻿# Kaizala to Teams Conversion Service
+# Kaizala to Teams Conversion Service
 
 In April’19, it was [announced](https://techcommunity.microsoft.com/t5/microsoft-kaizala-blog/microsoft-kaizala-rolls-out-to-office-365-customers-globally-and/ba-p/394298) that Microsoft Kaizala capabilities will be integrated into Teams and the customers would need to eventually transition to Microsoft Teams. As a part of this customer promise, Kaizala to Teams Conversion Service was built as a part of the customer promise to help them convert their custom Kaizala actions to Teams with minimal costs.
 
@@ -39,7 +39,7 @@ Please refer to  the documentation below to understand how to convert custom Kai
 
 8.  Read and accept the terms  of usage and hit next to initiate the conversion process. You could close the conversion dialog as the conversion happens in the background.
 9.  Once conversion is complete, you’ll get an option to download the converted Teams app next to the convert button. Click on the button to download the converted Teams app.
-10. Upload the app to Teams by going to ‘App Store -> Upload a custom app’ and then add it to a channel, group chat or a meeting chat. Alternatively, you may choose to upload it to Teams Admin Center and then enable it for selected teams. Find more details [here](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
+10. Upload the app to Teams by going to ‘App Store -> Upload a custom app’ and then add it to a channel, group chat or a meeting chat. Alternatively, you may choose to upload it to Teams Admin Center and then enable it for selected teams. Find more details [here](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
 	
 	![Add a tab](./K2T_Add_button.png)
 	
@@ -150,4 +150,3 @@ Capabilities not supported in converted Teams app:
 ### Privacy Statement  
 
 This service is covered within the governance of Enterprise data usage policies. Find detailed Privacy statement of Microsoft here - [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/en-us/privacystatement). 
-
