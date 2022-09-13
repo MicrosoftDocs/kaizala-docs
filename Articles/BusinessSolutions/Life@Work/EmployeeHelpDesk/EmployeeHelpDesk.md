@@ -69,9 +69,9 @@ This is broadly divided into 3 steps:
 
    4. Zip all the contents in this folder (*This folder is your modified action package which should be imported to Kaizala Management Portal*)
 
-   5. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to [Kaizala Management Portal](https://manage.kaiza.la/)
+   5. [Import](/kaizala/actions/publish#import-kaizala-action) the edited action package to [Kaizala Management Portal](https://manage.kaiza.la/)
 
-   6. [Publish](https://docs.microsoft.com/en-us/kaizala/actions/publish) the action and add the action to a group where you want to add the card
+   6. [Publish](/kaizala/actions/publish) the action and add the action to a group where you want to add the card
 
    7. Select user roles as admin and member
 
@@ -85,9 +85,9 @@ This is broadly divided into 3 steps:
 
    4. Zip all the contents in this folder (*This folder is your modified action package which should be imported to Kaizala Management Portal*)
 
-   5. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to [Kaizala Management Portal](https://manage.kaiza.la/)
+   5. [Import](/kaizala/actions/publish#import-kaizala-action) the edited action package to [Kaizala Management Portal](https://manage.kaiza.la/)
 
-   6. [Publish](https://docs.microsoft.com/en-us/kaizala/actions/publish) the action and add the action to a group where you want to add the card
+   6. [Publish](/kaizala/actions/publish) the action and add the action to a group where you want to add the card
 
    7. Select user role as admin
 
@@ -133,7 +133,7 @@ This solution has 3 Flows,
 
     1. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "TicketCreationFlow.Zip" to your Microsoft Flow account
 
-          > Note- If you have never used Sharepoint or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)    
+          > Note- If you have never used Sharepoint or Kaizala connections, first [add connections](/flow/add-manage-connections)    
 
     2. Edit details in Imported Flow (*See steps below*) 
 

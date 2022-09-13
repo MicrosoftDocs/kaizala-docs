@@ -11,4 +11,4 @@ Below are the sample solutions that would help organizations to communicate with
  2. [Display SharePoint announcements in Kaizala groups](SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
  3. [Auto-Post Twitter updates to Kaizala](AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
 
-Useful links- [Kaizala actions](https://docs.microsoft.com/en-us/kaizala/actions/readme)
+Useful links- [Kaizala actions](/kaizala/actions/readme)
