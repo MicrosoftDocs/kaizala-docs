@@ -34,7 +34,7 @@ In this scenario, Flow is used to send the card to a selected group in Kaizala.
 
 2. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip" to your Microsoft Flow account
 
-     > Note- If you have never used Twitter or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)
+     > Note- If you have never used Twitter or Kaizala connections, first [add connections](/flow/add-manage-connections)
 
 3. Edit the Flow (*as Below*)
 
@@ -58,4 +58,4 @@ Announcement will be sent to the selected Kaizala group, each time Flow is trigg
 
 > Note:In case of tweets with polls/location only the poll question/tweet text will show up in the card, not the poll options or the tweet location
 
-> Note: Please check with your IT admin in case of any [DLP policy](https://docs.microsoft.com/en-us/flow/prevent-data-loss) set by your organization for Twitter
+> Note: Please check with your IT admin in case of any [DLP policy](/flow/prevent-data-loss) set by your organization for Twitter

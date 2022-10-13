@@ -35,7 +35,7 @@ This can be broadly divided into 3 steps:
    2. Change the action "id" and "provider name" in package.json
    3. Add KASClient.js to this folder 
    4. Zip all the contents in this folder (*This folder is your modified action package which should be imported to Kaizala Management Portal*)
-   5. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to [Kaizala Management Portal](https://manage.kaiza.la/)(*This card is sent by calling an API, so no need to add the card to a group*)
+   5. [Import](/kaizala/actions/publish#import-kaizala-action) the edited action package to [Kaizala Management Portal](https://manage.kaiza.la/)(*This card is sent by calling an API, so no need to add the card to a group*)
 
 ### Format Excel Sheet
 
@@ -60,7 +60,7 @@ This can be broadly divided into 3 steps:
 
 1. [Import](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) the "Leaderboard_FlowPackage.zip" to your Microsoft Flow account
 
-      > Note- If you have never used Sharepoint or Kaizala connections, first [add connections](https://docs.microsoft.com/en-us/flow/add-manage-connections)    
+      > Note- If you have never used Sharepoint or Kaizala connections, first [add connections](/flow/add-manage-connections)
 
 2. Edit details in Imported Flow (*See steps below*)
 
@@ -122,4 +122,3 @@ Leaderboard card will be sent to the specified group as per the interval and fre
 const NAME = "Name";
 const PHONENO = "PhoneNo";
 const SCORE = "Score";"      
-

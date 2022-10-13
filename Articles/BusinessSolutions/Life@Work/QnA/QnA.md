@@ -31,8 +31,8 @@ Summary View:
        
       > Note: Select all the files in your working directory and create a new zip file for your package. Ensure that all files are present in the root directory of the package. This should include  KASClient.js, package.json with new action "id" and "providerName".
        
-4. [Import](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) the edited action package to [kaizala management portal](https://manage.kaiza.la/)
-5. [Publish](https://docs.microsoft.com/en-us/kaizala/actions/publish) the action and add the action to a group where you want to add the card
+4. [Import](/kaizala/actions/publish#import-kaizala-action) the edited action package to [kaizala management portal](https://manage.kaiza.la/)
+5. [Publish](/kaizala/actions/publish) the action and add the action to a group where you want to add the card
 6. Select user roles as admin and member to publish the card in the flat group
 
 > Note: This card works only in Flat group. All the group members and admins can create and send this card in a flat group.
