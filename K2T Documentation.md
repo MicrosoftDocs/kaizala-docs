@@ -4,7 +4,7 @@ In April’19, it was [announced](https://techcommunity.microsoft.com/t5/microso
 
 Using Kaizala to Teams Conversion Service, customers can  convert their existing custom apps from Kaizala to Teams in minimal steps and at no additional investment from their end. This service can be used by tenant admins, developers, and business admins alike. Depending on the kind of access you have you can follow one of the following two processes:
 
-1.  **Using Kaizala Management Portal:** If you have access to Kaizala Management Portal, then use ‘Move to Teams’ feature added to app detail info page to convert your Kaizala Action to a Teams app.
+1.  **Using Kaizala Management Portal:** If you have access to Kaizala Management Portal, then use ‘Move to Teams’ feature added to app detail info page to convert your Kaizala Action to a Teams app. 
     
 2.  **Using Windows Command Line tool:** If you have a Kaizala Action Package file and need it converted to Teams app, then you can use the command line tool available on Windows for conversion process.
     
