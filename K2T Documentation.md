@@ -12,7 +12,7 @@ This documentation helps you to understand how to convert custom Kaizala action 
 **Prerequisites**
 
 - Install [Node.js](https://nodejs.org/en/download/) locally on your machine. 
-- Download Kaizala Package locally that you want to transform into teams app. If you don't have any Kaizala package, you can download zip from [Kaizala Management Portal](https://manage.kaiza.la/MiniApps/MiniApps).
+- Download Kaizala Package locally that you want to transform into teams app. If you don't have any Kaizala package, you can download zip file from [Kaizala Management Portal](https://manage.kaiza.la/MiniApps/MiniApps).
 
 **Conversion Steps**
 
