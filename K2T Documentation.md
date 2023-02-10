@@ -11,8 +11,8 @@ This documentation helps you to understand how to convert custom Kaizala action 
 
 **Prerequisites**
 
-- Install *Node.js* by using https://nodejs.org/en/download/ locally on your machine. 
-- Download Kaizala Package locally that you want to transform into teams app. If you don't have any Kaizala package, you can download zip from the Kaizala Management Portal https://manage.kaiza.la/MiniApps/MiniApps.
+- Install [Node.js](https://nodejs.org/en/download/) locally on your machine. 
+- Download Kaizala Package locally that you want to transform into teams app. If you don't have any Kaizala package, you can download zip from [Kaizala Management Portal](https://manage.kaiza.la/MiniApps/MiniApps).
 
 **Conversion Steps**
 
@@ -55,10 +55,10 @@ This documentation helps you to understand how to convert custom Kaizala action 
 
 		transform-kaizala-package -k C:\Users\Contoso\Attendence\attendence.zip -a C:\Users\Contoso\Attendence -t C:\Users\Contoso\Attendence --dn Contoso --dw https://www.contoso.com –dp https://www.contoso.com/privacy --dt https://www.contoso.com/terms 
 
-5. Once executed, the user will be asked to validate AAD credentials for conversion of Kaizala action package to Teams app zip file.  
+5. Once executed, the user will be asked to validate Azure AD credentials for conversion of Kaizala action package to Teams app zip file.  
 5. An Azure AD custom app and Bot are programmatically created in your tenant to power the converted app in Teams. 
-6. Converted Teams App file is available at the path provided in parameter [-t <TeamsAppDownloadPath>] in the above command. The user can sideload the app on Teams by using steps mentioned here. 
-7. To modify the existing package, update the downloaded action package available at path -a <ActionPackageDownloadPath> and update the version field in the manifest. Ensure the latest version number is higher than the previous version number. Run the below command to download new Teams app file with the incorporated changes. 
+6. Converted Teams App file is available at the path provided in parameter `-t <TeamsAppDownloadPath>` in the above command. The user can sideload the app on Teams by using steps mentioned here. 
+7. To modify the existing package, update the downloaded action package available at path `-a <ActionPackageDownloadPath>` and update the version field in the manifest. Ensure the latest version number is higher than the previous version number. Run the below command to download new Teams app file with the incorporated changes. 
 	
 		upload-action-package -z <ActionPackageZipPath> 
 
@@ -70,7 +70,7 @@ This documentation helps you to understand how to convert custom Kaizala action 
 	
 10. Once the app is added to a team or group chat, you might need to create a Tab for the apps based on Form, Feedback and Attendance templates. Request to add a tab is prompted automatically when the app is added, or you may choose to do it manually by clicking on **+** button next to the tabs and picking the installed app from the list. For more information, see [Add an app to Microsoft Teams](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
-	:::image type="content" source="Articles/Actions/K2T_Acion_Logo.png" alt-text="This is K2T action logo image.":::
+	:::image type="content" source="Articles/Actions/K2T_Action_Logo.png" alt-text="This is K2T action logo image.":::
 
 11. Once the tab is set up, the users can start responding by going to Messaging Extensions flyout and clicking on **…** button below compose box. 
 12. The aggregated responses will either be available by clicking **View Details > Results** on the card, or by opening the tab as mentioned in step #9.
