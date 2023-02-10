@@ -64,7 +64,7 @@ This documentation helps you understand how to convert a custom Kaizala action p
 	
 		upload-action-package -z <ActionPackageZipPath> 
 
-8. Once the Teams app is downloaded, follow the steps shared previously to install the app in Teams. 
+8. Once the Teams app is downloaded, it can be installed in Microsoft Teams. 
 
 9. Upload the app to Teams by going to **App Store > Upload a custom app** and then adding it to a channel, group chat, or meeting chat. Alternatively, you may choose to upload it to the Teams Admin Center and then enable it for selected teams. For more information, see [Upload your app in Teams](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
 	
