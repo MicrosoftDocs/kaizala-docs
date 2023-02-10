@@ -72,7 +72,7 @@ This documentation helps you to understand how to convert custom Kaizala action 
 	
 10. Once the app is added to a team or group chat, you might need to create a Tab for the apps based on Form, Feedback and Attendance templates. Request to add a tab is prompted automatically when the app is added, or you may choose to do it manually by clicking on **+** button next to the tabs and picking the installed app from the list. For more information, see [Add an app to Microsoft Teams](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
-	:::image type="content" source="Articles/Actions/K2T_Action_Logo.png" alt-text="This is K2T action logo image.":::
+	:::image type="content" source="Articles/Actions/K2T_Acion_Logo.png" alt-text="This is K2T action image.":::
 
 11. Once the tab is set up, the users can start responding by going to Messaging Extensions flyout and clicking on **…** button below compose box. 
 12. The aggregated responses will either be available by clicking **View Details > Results** on the card, or by opening the tab as mentioned in step #9.
