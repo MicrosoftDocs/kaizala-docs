@@ -21,7 +21,7 @@ This documentation helps you understand how to convert a custom Kaizala action p
 	
 		npm install -g action-package-deploy 
 
-3. To convert the Kaizala package to Teams app run the below command: 
+3. To convert the Kaizala package to the Teams app, run the below command: 
 
 		transform-kaizala-package -k <KaizalaPackageZipPath> -a <ActionPackageDownloadPath> [-t <TeamsAppDownloadPath>] [-p <ParameterJsonPath>] [--dn <DeveloperName> --dw <DeveloperWebsiteUrl> --dp <DeveloperPrivacyUrl> --dt <DeveloperTermsUrl>] 
 
@@ -32,7 +32,7 @@ This documentation helps you understand how to convert a custom Kaizala action p
 		-t : Path to download Teams app for sideloading on teams. 
 		-p : Path of the json file that contains additional parameters. 
 
-	Currently, JSON file supports additional parameters for developer details, which are absent in kaizala package and needed for creating a Teams app. It can be fed to the command by using a JSON file: 
+	Currently, the JSON file supports additional parameters for developer details, which are absent in kaizala package and needed for creating a Teams app. It can be fed to the command by using a JSON file: 
 
 		{​  ​  
 		"developer":  
