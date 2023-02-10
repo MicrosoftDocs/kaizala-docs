@@ -1,6 +1,6 @@
 # Kaizala to Teams Conversion Service
 
-In April’19, it was [announced](https://techcommunity.microsoft.com/t5/microsoft-kaizala-blog/microsoft-kaizala-rolls-out-to-office-365-customers-globally-and/ba-p/394298) that Microsoft Kaizala capabilities will be integrated into Teams and the customers would need to eventually transition to Microsoft Teams. As a part of this customer promise, Kaizala to Teams Conversion Service was built to help them convert their custom Kaizala actions to Teams with minimal costs and no additional investment from their end. This service can be used by tenant admins, developers, and business admins.
+In April’19, it was [announced](https://techcommunity.microsoft.com/t5/microsoft-kaizala-blog/microsoft-kaizala-rolls-out-to-office-365-customers-globally-and/ba-p/394298) that Microsoft Kaizala capabilities will be integrated into Teams and the customers would need to eventually migrate to Microsoft Teams. As a part of this customer promise, Kaizala to Teams Conversion Service was built to help them convert their custom Kaizala actions to Teams with minimal costs and no additional investment from their end. This service can be used by tenant admins, developers, and business admins.
 
 The conversion process can be completed by using the **Windows Command Line** tool. If you have a Kaizala Action Package file and need it to be converted to the Teams app, then you can use the Command Line tool available on Windows for the conversion process.
 
