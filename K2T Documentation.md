@@ -1,12 +1,12 @@
 # Kaizala to Teams Conversion Service
 
-In April’19, it was [announced](https://techcommunity.microsoft.com/t5/microsoft-kaizala-blog/microsoft-kaizala-rolls-out-to-office-365-customers-globally-and/ba-p/394298) that Microsoft Kaizala capabilities will be integrated into Teams and the customers would need to eventually transition to Microsoft Teams. As a part of this customer promise, Kaizala to Teams Conversion Service was built to help them convert their custom Kaizala actions to Teams with minimal costs and at no additional investment from their end. This service can be used by tenant admins, developers, and business admins.
+In April’19, it was [announced](https://techcommunity.microsoft.com/t5/microsoft-kaizala-blog/microsoft-kaizala-rolls-out-to-office-365-customers-globally-and/ba-p/394298) that Microsoft Kaizala capabilities will be integrated into Teams and the customers would need to eventually transition to Microsoft Teams. As a part of this customer promise, Kaizala to Teams Conversion Service was built to help them convert their custom Kaizala actions to Teams with minimal costs and no additional investment from their end. This service can be used by tenant admins, developers, and business admins.
 
-The conversion process can be completed by using the **Windows Command Line** tool. If you have a Kaizala Action Package file and need it to be converted to Teams app, then you can use the Command Line tool available on Windows for conversion process.  
+The conversion process can be completed by using the **Windows Command Line** tool. If you have a Kaizala Action Package file and need it to be converted to the Teams app, then you can use the Command Line tool available on Windows for the conversion process.
 
-Once the Teams app file is downloaded, the next step is to add it to Teams either through the Teams Admin portal, or by sideloading it from Teams desktop or web client. Ensure you have access to Azure Active Directory (AAD) account of the tenant you want to migrate the app to, and have permission to access Teams Admin Portal or can sideload the app from Teams client. 
+Once the Teams app file is downloaded, the next step is to add it to Teams, either through the Teams admin portal or by sideloading it from the Teams desktop or web client. Ensure you have access to the Azure Active Directory (AAD) account of the tenant you want to migrate the app to and have permission to access the Teams Admin Portal, or you can sideload the app from the Teams client. 
 
-This documentation helps you to understand how to convert custom Kaizala action package to Teams app:
+This documentation helps you understand how to convert a custom Kaizala action package to the Teams app:
 
 
 **Prerequisites**
@@ -55,10 +55,10 @@ This documentation helps you to understand how to convert custom Kaizala action 
 
 		transform-kaizala-package -k C:\Users\Contoso\Attendence\attendence.zip -a C:\Users\Contoso\Attendence -t C:\Users\Contoso\Attendence --dn Contoso --dw https://www.contoso.com –dp https://www.contoso.com/privacy --dt https://www.contoso.com/terms 
 
-5. Once executed, the user will be asked to validate Azure AD credentials for conversion of Kaizala action package to Teams app zip file.  
-5. An Azure AD custom app and Bot are programmatically created in your tenant to power the converted app in Teams. 
-6. Converted Teams App file is available at the path provided in parameter `-t <TeamsAppDownloadPath>` in the above command. The user can sideload the app on Teams by using steps mentioned here. 
-7. To modify the existing package, update the downloaded action package available at path `-a <ActionPackageDownloadPath>` and update the version field in the manifest. Ensure the latest version number is higher than the previous version number. 
+5. Once executed, the user will be asked to validate their Azure AD credentials for the conversion of Kaizala action package to the Teams app zip file.  
+5. An Azure AD custom app and bot are programmatically created in your tenant to power the converted app in Teams. 
+6. The converted Teams App file is available at the path provided in the parameter `-t <TeamsAppDownloadPath>` in the above command. The user can sideload the app on Teams by following the steps mentioned here. 
+7. To modify the existing package, update the downloaded action package available at path `-a <ActionPackageDownloadPath>` and update the version field in the manifest. Ensure that the most recent version number is greater than the previous version number.
 
     Run the below command to download new Teams app file with the incorporated changes. 
 	
@@ -66,23 +66,23 @@ This documentation helps you to understand how to convert custom Kaizala action 
 
 8. Once the Teams app is downloaded, follow the steps shared previously to install the app in Teams. 
 
-9. Upload the app to Teams by going to **App Store > Upload a custom app** and then add it to a channel, group chat or a meeting chat. Alternatively, you may choose to upload it to Teams Admin Center and then enable it for selected teams. For more information, see [Upload your app in Teams](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
+9. Upload the app to Teams by going to **App Store > Upload a custom app** and then adding it to a channel, group chat, or meeting chat. Alternatively, you may choose to upload it to the Teams Admin Center and then enable it for selected teams. For more information, see [Upload your app in Teams](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
 	
 	:::image type="content" source="Articles/Actions/K2T_Add_button.png" alt-text="This is K2T add button image.":::
 	
-10. Once the app is added to a team or group chat, you might need to create a Tab for the apps based on Form, Feedback and Attendance templates. Request to add a tab is prompted automatically when the app is added, or you may choose to do it manually by clicking **+** icon next to the tabs and picking the installed app from the list. For more information, see [Add an app to Microsoft Teams](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
+10. Once the app is added to a team or group chat, you might need to create a Tab for the apps based on form, feedback, and attendance templates. Request to add a tab is prompted automatically when the app is added, or you may choose to do it manually by clicking **+** icon next to the tabs and picking the installed app from the list. For more information, see [Add an app to Microsoft Teams](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
 
 	:::image type="content" source="Articles/Actions/K2T_Acion_Logo.png" alt-text="This is K2T action image.":::
 
-11. Once the tab is set up, the users can start responding by going to Messaging Extensions flyout and clicking **…** icon below compose box. 
-12. The aggregated responses will either be available by clicking **View Details > Results** on the card, or by opening the tab as mentioned in step #9.
+11. After creating the tab, users can begin responding by going to the Messaging Extensions flyout and clicking the **...** icon beneath the compose box.
+12. The aggregated responses will either be available by clicking **View Details > Results** on the card or by opening the tab as mentioned in step #9.
 
 ## FAQs
 
 **What data is captured in Kaizala to Teams Conversion Service and how it is used?**
 
-Kaizala to Teams Conversion Service requires user to upload custom Kaizala action package and requires the user to login with Azure AD account details. Once uploaded, Teams Conversion Service converts action package to Teams app by using Azure AD account for authentication. 
-Additionally, the user also needs to provide necessary developer information, such as website, privacy URL, and terms of use URL, to be used for creating Teams app file.  
+Kaizala to Teams Conversion Service requires the user to upload a custom Kaizala action package and requires the user to login with Azure AD account details. Once uploaded, Teams Conversion Service converts action packages to the Teams app by authenticating with an Azure AD account. 
+Additionally, the user also needs to provide necessary developer information, such as a website, privacy URL, and terms of use URL, to be used for creating the Teams app file.  
 
 Once the converted Teams app is downloaded, the uploaded Kaizala Action package is deleted from the Teams Conversion Service.  
 
@@ -104,7 +104,7 @@ There can be multiple reasons why app conversion could fail. Some of the known r
 
 **Which features might not work in the converted Teams app?** 
 
-Conversion of action-designer based cards will be supported on KMP. Meaning, custom action cards cannot be convertible. Even within the supported **Action-designer based cards** some features might not work due to reasons, such as corresponding API not available on Teams platform, or capability not supported in Kaizala actions. 
+The conversion of action-designer-based cards will be supported on KMP. Meaning that custom action cards cannot be convertible. Even within the supported **action designer** cards, some features might not work due to reasons such as the corresponding API not being available on the Teams platform or a capability not being supported in Kaizala actions. 
 
 The following capabilities are not supported in converted Teams app: 
 
