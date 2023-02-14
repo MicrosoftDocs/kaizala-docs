@@ -77,7 +77,7 @@ This documentation helps you understand how to convert a custom Kaizala action p
 11. After creating the tab, users can begin responding by going to the Messaging Extensions flyout and clicking the **...** icon beneath the compose box.
 12. The aggregated responses will either be available by clicking **View Details > Results** on the card or by opening the tab as mentioned in step #9.
 
-## FAQs
+## Frequently Asked Questions
 
 **What data is captured in Kaizala to Teams Conversion Service and how it is used?**
 
