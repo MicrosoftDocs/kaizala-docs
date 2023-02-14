@@ -2,9 +2,9 @@
 
 In April’19, it was [announced](https://techcommunity.microsoft.com/t5/microsoft-kaizala-blog/microsoft-kaizala-rolls-out-to-office-365-customers-globally-and/ba-p/394298) that Microsoft Kaizala capabilities will be integrated into Teams and the customers would need to eventually migrate to Microsoft Teams. As a part of this customer promise, Kaizala to Teams Conversion Service was built to help them convert their custom Kaizala actions to Teams with minimal costs and no additional investment from their end. This service can be used by tenant admins, developers, and business admins.
 
-The conversion process can be completed by using the **Windows Command Line** tool. If you have a Kaizala Action Package file and need it to be converted to the Teams app, then you can use the Command Line tool available on Windows for the conversion process.
+The conversion process can be completed by using the **Windows Command-Line** tool. If you have a Kaizala Action Package file and need it to be converted to the Teams app, then you can use the Command-Line tool available on Windows for the conversion process.
 
-Once the Teams app file is downloaded, the next step is to add it to Teams, either through the Teams admin portal or by sideloading it from the Teams desktop or web client. Ensure you have access to the Azure Active Directory (AAD) account of the tenant you want to migrate the app to and have permission to access the Teams Admin Portal, or you can sideload the app from the Teams client. 
+Once the Teams app file is downloaded, the next step is to add it to Teams, either through the Teams admin portal or by sideloading it from the Teams desktop or web client. Ensure that you have access to the Azure Active Directory (AAD) account of the tenant you want to migrate the app to and have permission to access the Teams Admin Portal, or you can sideload the app from the Teams client. 
 
 This documentation helps you understand how to convert a custom Kaizala action package to the Teams app:
 
@@ -16,16 +16,18 @@ This documentation helps you understand how to convert a custom Kaizala action p
 
 **Conversion Steps**
 
-1. Open Command Line on your machine.
-2. Install *action-package-deploy* tool by running the below command: 
+1. Open Command-Line tool on your machine.
+2. Run the following command to install *action-package-deploy* tool: 
 	
 		npm install -g action-package-deploy 
 
-3. To convert the Kaizala package to the Teams app, run the below command: 
+3. Run the following command to convert the Kaizala package to the Teams app: 
 
 		transform-kaizala-package -k <KaizalaPackageZipPath> -a <ActionPackageDownloadPath> [-t <TeamsAppDownloadPath>] [-p <ParameterJsonPath>] [--dn <DeveloperName> --dw <DeveloperWebsiteUrl> --dp <DeveloperPrivacyUrl> --dt <DeveloperTermsUrl>] 
 
-	Parameters: 
+	Parameters:
+	where:
+
 
 		-k : Path of the kaizala package zip to transform. 
 		-a : Path to download transformed action package. 
@@ -44,7 +46,7 @@ This documentation helps you understand how to convert a custom Kaizala action p
 		} 
 		}​ 
 
-	The user can also provide developer details by using the below parameters: 
+	The user can also provide developer details by using the following parameters: 
 
 		--dn : Developer name. 
 		--dw : Developer website url. 
@@ -55,12 +57,12 @@ This documentation helps you understand how to convert a custom Kaizala action p
 
 		transform-kaizala-package -k C:\Users\Contoso\Attendence\attendence.zip -a C:\Users\Contoso\Attendence -t C:\Users\Contoso\Attendence --dn Contoso --dw https://www.contoso.com –dp https://www.contoso.com/privacy --dt https://www.contoso.com/terms 
 
-5. Once executed, the user will be asked to validate their Azure AD credentials for the conversion of Kaizala action package to the Teams app zip file.  
+5. After the commands are run successfully, the user will be asked to validate their Azure AD credentials for the conversion of Kaizala action package to the Teams app zip file.  
 5. An Azure AD custom app and bot are programmatically created in your tenant to power the converted app in Teams. 
 6. The converted Teams App file is available at the path provided in the parameter `-t <TeamsAppDownloadPath>` in the above command. The user can sideload the app on Teams by following the steps mentioned here. 
 7. To modify the existing package, update the downloaded action package available at path `-a <ActionPackageDownloadPath>` and update the version field in the manifest. Ensure that the most recent version number is greater than the previous version number.
 
-    Run the below command to download new Teams app file with the incorporated changes. 
+    Run the following w command to download new Teams app file with the incorporated changes. 
 	
 		upload-action-package -z <ActionPackageZipPath> 
 
