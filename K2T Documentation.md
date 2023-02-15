@@ -63,7 +63,7 @@ This documentation helps you understand how to convert a custom Kaizala action p
 6. The converted Teams App file is available at the path provided in the parameter `-t <TeamsAppDownloadPath>` in the above command. The user can sideload the app on Teams by following the steps mentioned here. 
 7. To modify the existing package, update the downloaded action package available at path `-a <ActionPackageDownloadPath>` and update the version field in the manifest. Ensure that the most recent version number is greater than the previous version number.
 
-    Run the following w command to download new Teams app file with the incorporated changes. 
+    Run the following command to download new Teams app file with the incorporated changes. 
 	
 		upload-action-package -z <ActionPackageZipPath> 
 
