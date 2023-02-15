@@ -26,6 +26,7 @@ This documentation helps you understand how to convert a custom Kaizala action p
 		transform-kaizala-package -k <KaizalaPackageZipPath> -a <ActionPackageDownloadPath> [-t <TeamsAppDownloadPath>] [-p <ParameterJsonPath>] [--dn <DeveloperName> --dw <DeveloperWebsiteUrl> --dp <DeveloperPrivacyUrl> --dt <DeveloperTermsUrl>] 
 
 	Parameters:
+	
 	where:
 
 
