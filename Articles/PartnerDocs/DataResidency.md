@@ -8,7 +8,7 @@ In addition to supporting the goals of within-region data residency, Kaizala ser
 
 Currently, Kaizala has eight datacenters (primary and backup) in three regions and one country:
 
-- APAC (Serves Asia Pacific except India) - Datacenters in Singapore and Hong Kong
+- APAC (Serves Asia Pacific except India) - Datacenters in Singapore and Hong Kong Special Administrative Region
 - EMEA (EU, MEA) - Datacenters in Dublin and Amsterdam
 - AMER (North and South Americas) - Datacenters in Texas and Illinois
 - India (Go-Local) - Datacenters in Chennai and Pune
