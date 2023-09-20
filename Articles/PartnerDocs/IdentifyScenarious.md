@@ -1,3 +1,6 @@
+---
+description: Explore Kaizala use cases for your organization with Microsoft's guide. Learn to manage tasks, collect data, engage employees, and more.
+---
 # Identify scenarios 
 It is advisable to have a few use cases for Kaizala in mind for your organization before you begin the deployment. Here are some videos depicting Kaizala use cases, created with inspiration from real customers using Kaizala.<p>
 #### Introducing Microsoft Kaizala to help collect data from the field and get insights

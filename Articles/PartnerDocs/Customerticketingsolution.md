@@ -1,3 +1,6 @@
+---
+description: Learn how to set up a customer support ticket management system on Kaizala with this step-by-step guide from Microsoft.
+---
 # Customer ticketing solution on Kaizala
 ![](Images/Customer%20ticketing%20solution.PNG)
 <br>

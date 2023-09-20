@@ -1,3 +1,6 @@
+---
+description: Learn how to verify your webhook service endpoint with Microsoft's Kaizala. Understand the process of validation token exchange for successful registration.
+---
 # Callback URL Validation
 
 To ensure your webhook service endpoint is authentic and working we will verify your callback URL before creating subscription.
