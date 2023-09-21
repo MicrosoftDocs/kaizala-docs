@@ -95,14 +95,14 @@ You can download sample Kaizala Action packages from [here](https://manage.kaiza
  
  
 *   **Step 5:** Use the Kaizala Forms JS SDK to submit form   
-    * Add the following code snippet in the <head> element of your “CreationView.html” to refer to the Kaizala Forms JS SDK 
+    * Add the following code snippet in the `<head>` element of your “CreationView.html” to refer to the Kaizala Forms JS SDK 
         `````
         <head> 
             <script type="text/javascript" src="KASClient.js"></script> 
         </head> 
         `````
     * Now, when the user clicks submit, we need to verify that he has entered a question to ask feedback on – and create the Form Instance  
-    * We also need to instantiate the form on page load. Add the following JavaScript snippet to your “CreationView.html” inside the <head> element 
+    * We also need to instantiate the form on page load. Add the following JavaScript snippet to your “CreationView.html” inside the `<head>` element 
         `````
             <script type="text/javascript"> 
                 var _form; // type: KASForm
