@@ -1,3 +1,6 @@
+---
+description: Learn about Microsoft Kaizala's industry-leading privacy and security commitments, certified for compliance tier C by Office 365. Discover its compliance features.
+---
 # Office 365 Compliance Framework and Microsoft Kaizala
 
 Presently, Microsoft Kaizala is certified for compliance tier C by the internal Microsoft Office 365 compliance team, which is responsible for managing [this framework](https://download.microsoft.com/download/0/4/9/049F6894-3B22-4EC6-8DBD-E4FA27019820/Microsoft_Compliance_Framework_for_Online_Services.pdf). This means that Microsoft Kaizala has industry leading privacy and security commitments and is verified with international and regional standards and terms, including:

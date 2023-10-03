@@ -1,3 +1,6 @@
+---
+description: Master creating a custom Kaizala Action with our step-by-step tutorial. Learn to build an 'Ask Feedback' Action for user ratings and comments.
+---
 # Practice Tutorial: Creating a new Kaizala Action 
 
 ## Overview 
