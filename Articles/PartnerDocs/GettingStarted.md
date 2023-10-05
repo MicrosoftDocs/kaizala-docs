@@ -1,3 +1,6 @@
+---
+description: Start using Microsoft Kaizala today! This guide provides step-by-step instructions on installation, identifying scenarios, defining groups, and more.
+---
 # Getting Started with Microsoft Kaizala
 ## A Quick Reference Guide 
   Welcome, we’re glad you’re here! This quick reference guide will help you to get your organization started on Kaizala. <br/> <br/>

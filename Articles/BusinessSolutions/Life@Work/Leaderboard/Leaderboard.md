@@ -1,3 +1,6 @@
+---
+description: Boost team performance with Microsoft's leaderboard solution. Track individual/team KPIs, incentivize efforts, and foster a competitive spirit. Learn how to implement it.
+---
 # Drive Performance using Leaderboard
 A leaderboard is a rich visual representation of participants to provide an understanding of where they rank in comparison to peers. Leveraging the power of gamification, leaderboards are the best way to instill competitive spirit among teams and also track individual/team performance against business targets. They provide instant feedback to course-correct and identify patterns in KPIs that could help employees improvise.
 
