@@ -1,3 +1,6 @@
+---
+description: Explore Microsoft Kaizala's robust security features for end users, including data protection, authentication, and advanced application management.
+---
 # Security for end users
 ## Client data protection
 

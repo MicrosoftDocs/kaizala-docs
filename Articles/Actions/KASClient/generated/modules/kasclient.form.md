@@ -1,3 +1,6 @@
+---
+description: Master Microsoft's KASClient Form module with this comprehensive guide. Learn to create, update, and manage forms, handle responses, and more.
+---
 [](../README.md) > [KASClient](../modules/kasclient.md) > [Form](../modules/kasclient.form.md)
 
 # Module: Form
