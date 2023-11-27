@@ -1,3 +1,6 @@
+---
+description: Learn how to install and use Kaizala, Microsoft's organizational app. Discover methods to drive app installation, monitor usage, and engage users effectively.
+---
 [3]: https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer&hl=en
 [4]: https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399?mt=8
 [5]: http://manage.kaiza.la/
