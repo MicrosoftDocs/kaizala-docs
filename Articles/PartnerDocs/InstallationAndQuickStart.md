@@ -1,3 +1,6 @@
+---
+description: Learn how to install and start using Kaizala. Download from Google Play or App Store, activate, create a group, and send your first action.
+---
 [3]: https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer&hl=en
 [4]: https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399?mt=8
 

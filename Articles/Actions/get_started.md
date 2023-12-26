@@ -1,3 +1,6 @@
+---
+description: Learn to create custom Kaizala Actions with our step-by-step guide. Design, implement, and activate your Action for effective data collection.
+---
 # Get Started with custom Kaizala Actions
 
 ## Kaizala Action Development Lifecycle
