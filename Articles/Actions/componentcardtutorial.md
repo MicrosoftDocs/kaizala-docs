@@ -1,3 +1,6 @@
+---
+description: Learn to create an action using component card controls with Microsoft's detailed tutorial. Master text boxes, dropdowns, date controls, and more.
+---
 # Create an Action using Component Card Controls 
 
 ## Overview

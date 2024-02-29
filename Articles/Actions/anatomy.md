@@ -1,3 +1,6 @@
+---
+description: Discover the anatomy of a Kaizala Action package on Microsoft's official site. Learn about its components, settings, and how to leverage its capabilities.
+---
 # Anatomy of a Kaizala Action package
 
 A Kaizala Action package is a regular ZIP file which is not password protected and has a maximum size of 1MB. The resources in the package are at the root of the zip file and not in any directory structure. The resources also cannot reference any external resources other than those present in the package.

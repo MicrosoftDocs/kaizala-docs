@@ -1,3 +1,6 @@
+---
+description: Explore the KAS Client SDK for Kaizala app. Learn about Form and App APIs, creation, response, and summary flow APIs. Download the Javascript file.
+---
 ## KAS Client
 
 KAS Client SDK provides a bridge between the Kaizala app's native interface (Objective-C for iOS, Java for Android) and your Kaizala Action's javascript.

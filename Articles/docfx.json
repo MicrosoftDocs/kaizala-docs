@@ -30,6 +30,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "Standard",
       "ms.service": "kaizala",
       "uhfHeaderId": "MSDocsHeader-Dev_Office",
       "breadcrumb_path": "/kaizala/breadcrumb/toc.json",
