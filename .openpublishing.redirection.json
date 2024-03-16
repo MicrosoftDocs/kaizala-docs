@@ -1,0 +1,959 @@
+{
+  "redirections": [
+    {
+      "source_path": "/Articles/Actions/ActionLifecycle.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/anatomy.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/appModel_schema.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/ChatCanvasCardView.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/componentcardtutorial.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/develop.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/EditAction.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/get_started.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/app.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/form_creation.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/form_response.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/form_summary.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasactionlocalcacheprop.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasactionpackageproperties.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasactionproperties.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasattachment.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasattachmentlistquestionconfig.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasattachmentlistquestionresult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasaudioattachment.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasconversationdetails.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kascountryphonecode.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kaserror.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasform.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformaggregatedsummary.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformflatsummary.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasforminfo.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasforminforequest.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasforminforesponse.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformprocessedsummary.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformproperty.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformpropertyfactory.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformpropertyupdatefactory.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformpropertyupdateinfo.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformreaction.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformresponse.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformresponsenotificationmodel.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformsubgroupsummary.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformsummaryforgroup.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasformusercapabilities.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasforwardcontext.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasimageattachment.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasimagequestionconfig.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kaslocation.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kaslocationaddressparams.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kaslocationstaticmapimageparams.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasnativetoolbarproperties.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasnumericquestionresult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kaso365user.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasocrsemanticmediapackage.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasoptionquestionresult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasoptionresult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasparticipantdata.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasphonenumber.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasquestion.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasquestionconfig.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasquestionoption.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasquestionresult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasquestionvalidationresponse.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasrichimageattachment.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasshareobject.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasuser.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasvalidationrule.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasvideoattachment.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.kasvisibilityrule.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.tenantattribute.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.tenantattributedata.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/classes/kasclient.tenantuserprofile.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.attachmentlistresponsetype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.cachescope.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.cachevisibility.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.camerafiltermode.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.formstatus.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.imagemetadatafetchstate.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.imagepickersource.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasactionpropertytype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasattachmenttype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasauthenticationtype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kaserrorcode.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasformconversationtype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasformmessagesendstatus.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasformpropertytype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasformpropertyupdateoperation.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasformresponsenotificationtarget.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasformresultvisibility.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasparticipantrole.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasparticipanttype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasquestiondisplaytype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasquestiontype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasreportingdatatype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasreportingresponseformat.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasreportingresponsemode.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.kasshareobjecttype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.notificationpriority.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.tenantattributedatatype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.urlaction.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/enums/kasclient.urltype.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/modules/kasclient.app.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/modules/kasclient.form.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/modules/kasclient.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/generated/README.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASForm.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASFormFlatSummary.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASFormProcessedSummary.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASFormProperty.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASFormPropertyType.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASFormReaction.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASFormResponse.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASFormResultVisibility.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASLocation.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASNumericQuestionResult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASOptionQuestionResult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASOptionResult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASQuestion.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASQuestionOption.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASQuestionResult.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASQuestionType.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/KASUser.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/objects.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/KASClient/README.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/Operator.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/package_manifest_schema.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/publish.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/README.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/test.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/tutorial.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/UrlWhitelisting.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Actions/validation.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/ActionSDKLicense.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BreakingChanges.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BusinessSolutions/CorporateCommunications/CorporateCommunications.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BusinessSolutions/Life@Work/EmployeeHelpDesk/EmployeeHelpDesk.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BusinessSolutions/Life@Work/Leaderboard/Leaderboard.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BusinessSolutions/Life@Work/Life@Work.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/BusinessSolutions/Life@Work/QnA/QnA.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/actionDetails.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/actions.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/actions_get.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/actions_post.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/action_responses.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/API.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/EventSchema.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/groups.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/media.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/members.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/messages.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/permission.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/reactions.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/README.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/setup.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/subGroups.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/subscribers.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/Tokens.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/UserToken.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/webHooks.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/connectors/WebHookValidaton.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/DevChangelist.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/developer-platform.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/FAQ.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/feedback.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/install.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/LICENSE-CODE.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/LICENSE.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Licenses.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/Compliance.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/ContactUs.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/Customerticketingsolution.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/DataResidency.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/DefineGroupsInKaizalaForYourOrg.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/EndUserTrainings.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/ExcelAddinforKaizala.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/GettingStarted.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/IdentifyScenarious.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/InstallationAndQuickStart.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/IntegrateKaizalaandMailflow.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/IntegratingKaizalaData.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/KaizalaActionCards.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/KaizalaDownloadlinks.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/KaizalaManagementPortal.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/Kaizala_overview.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/PartnerTrainings.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/Privacy.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/Security.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/SecurityFeaturesforendcustomers.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/SecurityOverview.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/StartUsingKaizala.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/PartnerDocs/Support.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/README.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/Articles/Samples/sample.md",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    }
+  ]
+}
