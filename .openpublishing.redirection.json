@@ -954,6 +954,56 @@
       "source_path": "Articles/Samples/sample.md",
       "redirect_url": "/microsoftteams/get-started-kaizala-teams",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/GetRssFeedsonKaizala-SolutionPackage.zip",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementOnKaizala-SolutionPackage.zip",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/BusinessSolutions/Life@Work/EmployeeHelpDesk/EmployeeHelpdesk-SolutionPackage.zip",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/BusinessSolutions/Life@Work/EmployeeHelpDesk/HelpdeskTemplate.xlsx",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/BusinessSolutions/Life@Work/Leaderboard/Leaderboard-SolutionPackage.zip",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/BusinessSolutions/Life@Work/Leaderboard/Leaderboard.csv",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/BusinessSolutions/Life@Work/QnA/QnA-SolutionPackage.zip",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/index.yml",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Articles/Samples/Gettingstartedwith.docx",
+      "redirect_url": "/microsoftteams/get-started-kaizala-teams",
+      "redirect_document_id": false
     }
   ]
 }
