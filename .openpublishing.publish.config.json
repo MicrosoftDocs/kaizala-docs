@@ -18,6 +18,9 @@
     }
   ],
   "notification_subscribers": [],
+  "redirection_files": [
+    ".openpublishing.redirection.admin.json"
+  ],
   "sync_notification_subscribers": null,
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
