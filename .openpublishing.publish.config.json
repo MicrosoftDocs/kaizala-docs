@@ -1,31 +1,8 @@
 {
-  "docsets_to_publish": [
-    {
-      "docset_name": "Kaizala-Docs",
-      "build_source_folder": "Articles",
-      "build_output_subfolder": "Kaizala-Docs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    }
-  ],
+  "docsets_to_publish": [],
   "notification_subscribers": [],
-  "redirection_files": [
-    ".openpublishing.redirection.admin.json"
-  ],
-  "sync_notification_subscribers": null,
   "branches_to_filter": [],
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -35,8 +12,11 @@
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false,
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  "docs_build_engine": {},
+  "redirection_files": [
+    ".openpublishing.redirection.admin.json"
+  ],
+  "skip_source_output_uploading": false,
+  "contribution_branch_mappings": {},
+  "need_generate_pdf_url_template": false
 }
